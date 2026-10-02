@@ -1,39 +1,29 @@
-# PCAP — Packet Capture, Explained
+# anything2explainer-anima — explainer films
 
-Two motion-graphics explainer films about **network packet capture**, built as [Remotion](https://remotion.dev) projects with the [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) template & method.
+Original motion-graphics explainer films built as [Remotion](https://remotion.dev) projects with the [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) template & method. Rendered videos are published under [Releases](../../releases).
 
-- **`film-pcap-wide/`** — Landscape **1280×720** (16:9) for **YouTube**: 5 min 17 s, English, 4 chapters / 42 shots, detailed & rigorous.
-- **`film-pcap-vert/`** — Portrait **720×1280** (9:16) for **TikTok**: 69 s, English, 13 shots, fast-paced & mobile-first.
+## Films
 
-Both films share one story spine — a checkout page that takes 9 seconds while server logs say 60 ms → packets as envelopes → capture vantage points → Wireshark's three panes → retransmission backoff (1+2+4 = 7 s of waiting) → "The wire doesn't lie."
+| Film | Dir | Format | Length | Notes |
+|---|---|---|---|---|
+| **PCAP — Packet Capture, Explained** | `film-pcap-wide/` | 1280×720 (YouTube) | 5 min 17 s | 4 chapters / 42 shots |
+| | `film-pcap-vert/` | 720×1280 (TikTok) | 69 s | 13 shots |
+| **TCP & UDP — Two Ways to Travel** | `film-tcpudp-wide/` | 1280×720 (YouTube) | 5 min 45 s | 4 chapters / 37 shots, incl. real Commons photos |
+| | `film-tcpudp-vert/` | 720×1280 (TikTok) | 61 s | 12 shots |
 
-Rendered videos are published under [Releases](../../releases).
+Both TCP/UDP films share one story spine — a video call where you send a photo mid-call: voice and photo share one wire but need opposite guarantees → IP promises almost nothing (RFC 791) → TCP the courier (handshake, sequence numbers, doubling retransmits) vs UDP the postcard (8-byte header, late = dead) → QUIC rebuilds it all above the wire → "TCP never loses. UDP never waits."
 
-## Repository layout
-
-```
-film-pcap-wide/          # YouTube 16:9 film (Remotion project)
-  src/shots/G1..G8/      # 42 shot components, one file per shot
-  src/common/            # timeline, subtitles, progress bar, background, easing
-  src/overlay/           # title / chapter cards / HUD / ending layers
-  src/ui.tsx, fx.tsx     # shared primitives (envelopes, windows, glitch, sweeps…)
-  script/                # narration.txt, timeline.json/md, storyboard_src.md
-  分镜表.md               # full storyboard with frame numbers
-  research/              # fact sheet with sources (tcpdump 1988, BPF 1992, RFC 6298, TLS 1.3…)
-  scripts/               # tts_build.py, render.sh, still.sh, QC tooling
-film-pcap-vert/          # TikTok 9:16 film (canvas/subtitles/progress bar/HUD adapted)
-docs/                    # delivery notes (Chinese) for both films
-```
+Production workflow for all films: see [`docs/制作流程.md`](docs/制作流程.md) (a distilled SOP: research → narration → TTS timeline → storyboard → parallel shot-building → chunked rendering → rhythm QC with `motion_check.py` → progress-bar pixel verification → delivery).
 
 ## Rendering
 
 ```bash
-cd film-pcap-wide            # or film-pcap-vert
+cd film-tcpudp-wide            # or film-tcpudp-vert
 npm install
 
 # narration audio is not committed (regenerable); either regenerate it:
 python3 scripts/tts_build.py          # needs edge-tts; rebuilds audio + timeline + subtitles
-# …or drop the release's audio.wav into public/assets/pcapwide/ (or pcapvert/)
+# …or drop the release's audio.wav into public/assets/tcpudpwide/ (or tcpudpvert/)
 
 npx remotion render src/index.ts Video out.mp4 --codec=h264
 # or: bash scripts/render.sh          # bundles + renders + contact sheet
@@ -45,13 +35,15 @@ Notes:
 - On machines where a single render exceeds your tool timeout, use chunked rendering (`scripts/render_chunk.sh`) and concatenate with ffmpeg `-c copy` — that is how the release builds were produced.
 - `scripts/still.sh Video <frame> <outdir>` renders frame-exact stills for inspection.
 
-## v3 delivery revisions (this version)
+## Facts & assets
 
-1. **Removed the trailing "built with Anything2Explainer" attribution screen** in both films; the ending now holds ≈1.2–1.4 s of black after the fade (wide 9575→9517 frames, vert 2132→2074).
-2. **Fixed the vertical progress bar** — `BAR_H` was computed from the landscape canvas height (`720 - BAR_TOP < 0`), which made the whole bar invisible; it now derives from `H = 1280`, and the fill position matches elapsed time within ~1 px (pixel-verified).
-3. **Fixed landscape progress-bar alignment** — chapter dividers and label slots now sit at the *actual* chapter boundaries (the chapter-card appearance frame) instead of equal-width quarters, so the fill edge crosses a divider exactly when that chapter's label lights up. Dividers: x = 341 / 692 / 1045.
-4. Full re-inspection of every shot (mid-shot + entry + chapter-card + ending frames, both films) — no content defects; known intentional motifs (typewriter transcript, subtitle lingering over the end fade) confirmed by design.
+- Every on-screen number/term is sourced in each film's `research/` folder (TCP/UDP facts verified directly against RFC texts from rfc-editor.org: RFC 768, 793, 791, 1035, 3550/3551, 5681, 6298, 9000, 9114, plus the Cerf & Kahn 1974 citation in RFC 793's references).
+- The TCP/UDP landscape film uses five freely-licensed Wikimedia Commons photos (fiber cable, Vint Cerf, Bob Kahn) rendered through a `PhotoCard` primitive with an on-screen credit line; full attribution and licenses in `film-tcpudp-wide/public/assets/tcpudpwide/MANIFEST.md`.
+- Illustrative numbers (3 MB photo → 2,000+ envelopes, call timer, connection ID `7f3a`, TEST-NET IPs) are marked as such in the delivery notes.
 
-## Fact basis
+## v2 delivery notes (TCP/UDP films)
 
-All on-screen claims are sourced in `film-pcap-wide/research/pcap-research.md` — tcpdump (1988, Berkeley Lab), the BPF paper (1992, McCanne & Jacobson), Ethereal → Wireshark rename (2006), pcap = timestamp + length + raw bytes, SPAN/mirroring and taps, promiscuous mode, libpcap/Npcap, TLS 1.3 (RFC 8446), RTO exponential backoff (RFC 6298, the story's 1 s → 2 s → 4 s), and the legal caveat. Illustrative numbers (9.0 s page load, 60 ms server log, 0.9 s after the fix, TEST-NET IPs) are marked as such.
+1. Rhythm QC: authoritative `motion_check.py --frames` re-measure passes with **0 failing shots** in both films (longest-still ≤3 s; every paragraph-end shot holds ≥30 frames before exit).
+2. Progress bars pixel-verified (fill edge within 0–1 px of expected at 14 sampled frames across both films; the vertical film's bar derives from the portrait canvas, no landscape hard-coding remains).
+3. Glitch/sweep whitelists match source exactly (10/10 and 7/7 GlitchIn shots; LightSweep only in the storyboarded set-piece shots).
+4. AI vision spot-checks were unavailable during production (gateway rate-limits); QC fell back to systematic pixel checks (content presence, subtitle-band intrusion, edge cropping, boundary continuity) — all pass. A quick human pass over the final renders is recommended before publishing.

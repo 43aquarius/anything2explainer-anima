@@ -1,0 +1,120 @@
+# TCP & UDP — Two Ways to Travel — narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 The Best-Effort Wire
+You're on a video call with a friend,|and mid-sentence, you send a photo.
+Your voice and your photo|leave the same machine,|over the same wire.
+They will not travel the same way.
+
+Underneath every app,|the internet has one delivery service:|packets — small envelopes of data.
+Each envelope carries about 1,500 bytes,|addressed to your friend's machine.
+Your photo is three megabytes —|more than two thousand envelopes.
+
+That delivery service is called IP,|the Internet Protocol.
+And here is the strange part:|IP promises you almost nothing.
+No acknowledgments. No retransmissions.|No ordering. No flow control.
+
+That is not a flaw.|It's the design.
+Keep the network simple;|put the intelligence at the endpoints.
+
+So in transit, an envelope can be lost,|delivered out of order,|or copied twice.
+For your photo, that would be fatal.
+For your voice, it might not matter.
+
+Two kinds of traffic, one careless wire.
+The internet's answer was never|one perfect protocol.
+It was two —|with opposite promises.
+## gap 15
+## gap 15
+
+# CHAPTER 2 TCP — The Courier
+The first is TCP,|from a 1974 paper by Vint Cerf and Bob Kahn,|sealed as RFC 793 in 1981.
+
+Before TCP moves any data, it makes a call.
+SYN — "Can you hear me?"
+SYN-ACK — "I hear you. Can you hear me?"
+ACK — "I hear you."
+Three messages, and both sides agree|on where the numbering starts.
+## gap 12
+
+Then the rules of the courier.
+Every envelope is numbered.|Every number is acknowledged.
+If a receipt doesn't come back in time,|the letter is sent again —|and the wait doubles:|one second, two, then four.
+
+On the other end,|the receiver re-stacks the envelopes in order,|and holds the gap open|until the missing one arrives.
+
+The receiver also advertises|how much it can hold — a window —|so a fast sender|never drowns a slow one.
+## gap 12
+
+And TCP listens to the network.
+When envelopes start disappearing,|it cuts its sending rate in half;|when they flow again,|it ramps carefully back up.
+
+That's the contract:|what you send arrives —|complete and in order —|or the connection tells you it failed.
+The price: talk before you talk,|remember everything,|and pay at least twenty bytes|of instructions on every envelope.
+
+Your photo rides TCP,|and it arrives perfect.
+But your voice can't dial before every word.|Fifty times a second,|it has something to say.
+Sometimes, waiting is worse than losing.
+## gap 15
+
+# CHAPTER 3 UDP — The Postcard
+For that, there is a second protocol:|UDP, from RFC 768, 1980, by Jon Postel.
+
+A UDP packet is a postcard.
+You write it, you address it,|you drop it in the mail.|That's the whole ceremony.
+No handshake. No numbers. No receipts.|Eight bytes of header, four small fields.
+
+The spec is honest:|delivery is not guaranteed.
+Even duplicate protection|is not guaranteed.
+## gap 15
+
+And still, the internet runs on it.
+
+Because sometimes the exchange is smaller|than the ceremony would be.
+A DNS lookup is one small question|and one small answer —|usually one packet each way.
+A handshake would cost more|than the delivery.
+## gap 15
+
+And sometimes, late means dead.
+Your voice is a stream of packets,|one every twenty milliseconds.
+If one is lost, the call doesn't wait|a second for the copy to arrive.
+The moment is already gone.
+It plays a tiny gap, and moves on.
+
+A multiplayer game makes the same choice:|your position right now|matters more than|your position a second ago.
+## gap 12
+
+UDP isn't careless.
+It's honest about what the wire already is —|and it lets the application decide|what is worth waiting for.
+## gap 12
+## gap 15
+
+# CHAPTER 4 Choosing Sides
+So the rule of thumb.
+Need every byte?|TCP: web pages, files, email, banking.
+Need it live?|UDP: calls, games, lookups.
+
+Both protocols share one trick: ports —|sixteen-bit numbers,|zero to sixty-five thousand|five hundred thirty-five.
+A space for TCP,|and a separate space for UDP.
+Port 443 speaks TCP.|Port 53 speaks UDP.
+
+And the story has one more twist.
+The newest version of HTTP —|HTTP/3, standardized in 2022 —|no longer rides TCP. It rides QUIC.
+And QUIC, standardized in 2021,|is built on UDP.
+
+Handshakes, sequence numbers,|recovery, encryption —|everything TCP does,|rebuilt above the wire,|where apps can evolve.
+A QUIC connection carries an ID,|not an address —|switch from Wi-Fi to cellular,|and it survives.
+## gap 15
+
+So the real question|was never "reliable or fast".
+It's where the reliability lives:|frozen in every kernel,|or in the application,|one update away.
+## gap 15
+
+Back to your call.
+Your voice rides UDP —|unnumbered, unwaited, alive.
+Your photo rides TCP —|numbered, receipted, perfect.
+Same wire. Same envelopes.|Two promises.
+## gap 15
+
+TCP never loses.
+UDP never waits.
+## gap 15
+## gap 15

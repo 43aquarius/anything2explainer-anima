@@ -1,0 +1,25 @@
+# TCP & UDP vertical (TikTok) — narration v1 (| splits subtitles only; EN block <=42 chars)
+Your voice and your photos|ride the same wire —|under two different sets of rules.
+
+Everything you send becomes packets —|envelopes of data.
+And the network underneath, IP,|promises nothing.
+No receipts. No retries. No order.
+
+So your photo rides TCP — the courier.
+First, a handshake:|SYN. SYN-ACK. ACK.
+Every envelope numbered,|every number receipted.
+Lost in transit? Sent again —|on a timer that doubles.
+## gap 12
+
+Your voice rides UDP — the postcard.
+No handshake. No receipts.|Eight bytes of header.
+A late packet is a dead packet —|the call plays a gap, and moves on.
+## gap 10
+
+Plot twist: the newest HTTP rides UDP.
+QUIC rebuilt TCP's promises|above the wire,|where apps can evolve.
+## gap 12
+
+TCP never loses.
+UDP never waits.
+## gap 15
