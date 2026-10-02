@@ -1,0 +1,334 @@
+{
+ "fps": 30,
+ "total_frames": 2132,
+ "engine": "edge",
+ "voice": "en-US-AndrewNeural",
+ "rate": "+0%",
+ "gap": 10,
+ "para_gap": 20,
+ "chapter_gap": 45,
+ "lead": 40,
+ "tail": 90,
+ "lang": "en",
+ "chapters": [],
+ "sentences": [
+  {
+   "id": "S01",
+   "chapter": 0,
+   "from": 41,
+   "to": 143,
+   "text": "Your page takes nine seconds to load. Customers are leaving.",
+   "para": false,
+   "subs": [
+    {
+     "from": 41,
+     "to": 111,
+     "text": "Your page takes nine seconds to load."
+    },
+    {
+     "from": 112,
+     "to": 143,
+     "text": "Customers are leaving."
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "chapter": 0,
+   "from": 154,
+   "to": 212,
+   "text": "The logs say sixty milliseconds.",
+   "para": false,
+   "subs": [
+    {
+     "from": 154,
+     "to": 212,
+     "text": "The logs say sixty milliseconds."
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "chapter": 0,
+   "from": 223,
+   "to": 304,
+   "text": "Both are true. The missing time is on the wire.",
+   "para": true,
+   "subs": [
+    {
+     "from": 223,
+     "to": 252,
+     "text": "Both are true."
+    },
+    {
+     "from": 253,
+     "to": 304,
+     "text": "The missing time is on the wire."
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "chapter": 0,
+   "from": 335,
+   "to": 477,
+   "text": "Everything you send travels as packets — envelopes with a header and a payload.",
+   "para": false,
+   "subs": [
+    {
+     "from": 335,
+     "to": 413,
+     "text": "Everything you send travels as packets —"
+    },
+    {
+     "from": 414,
+     "to": 477,
+     "text": "envelopes with a header and a payload."
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "chapter": 0,
+   "from": 488,
+   "to": 635,
+   "text": "Packet capture means catching a copy of every envelope passing a point in the network.",
+   "para": true,
+   "subs": [
+    {
+     "from": 488,
+     "to": 551,
+     "text": "Packet capture means catching a copy"
+    },
+    {
+     "from": 552,
+     "to": 583,
+     "text": "of every envelope"
+    },
+    {
+     "from": 584,
+     "to": 635,
+     "text": "passing a point in the network."
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "chapter": 0,
+   "from": 666,
+   "to": 854,
+   "text": "Three places to stand: your own machine, a mirrored port on the switch, or a tap spliced into the cable.",
+   "para": false,
+   "subs": [
+    {
+     "from": 666,
+     "to": 712,
+     "text": "Three places to stand:"
+    },
+    {
+     "from": 713,
+     "to": 747,
+     "text": "your own machine,"
+    },
+    {
+     "from": 748,
+     "to": 797,
+     "text": "a mirrored port on the switch,"
+    },
+    {
+     "from": 798,
+     "to": 854,
+     "text": "or a tap spliced into the cable."
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "chapter": 0,
+   "from": 865,
+   "to": 1078,
+   "text": "Wireshark turns that copy into three panes: one row per packet, the layers peeled open, the raw bytes.",
+   "para": true,
+   "subs": [
+    {
+     "from": 865,
+     "to": 960,
+     "text": "Wireshark turns that copy into three panes:"
+    },
+    {
+     "from": 961,
+     "to": 1003,
+     "text": "one row per packet,"
+    },
+    {
+     "from": 1004,
+     "to": 1048,
+     "text": "the layers peeled open,"
+    },
+    {
+     "from": 1049,
+     "to": 1078,
+     "text": "the raw bytes."
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "chapter": 0,
+   "from": 1109,
+   "to": 1201,
+   "text": "Now follow one conversation and read the timestamps.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1109,
+     "to": 1158,
+     "text": "Now follow one conversation"
+    },
+    {
+     "from": 1159,
+     "to": 1201,
+     "text": "and read the timestamps."
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "chapter": 0,
+   "from": 1224,
+   "to": 1394,
+   "text": "The response is retransmitted, each wait doubling: one second, two, then four.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1224,
+     "to": 1280,
+     "text": "The response is retransmitted,"
+    },
+    {
+     "from": 1281,
+     "to": 1323,
+     "text": "each wait doubling:"
+    },
+    {
+     "from": 1324,
+     "to": 1394,
+     "text": "one second, two, then four."
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "chapter": 0,
+   "from": 1405,
+   "to": 1566,
+   "text": "Seven seconds of silence, inside a response the server logged as sixty milliseconds.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1405,
+     "to": 1458,
+     "text": "Seven seconds of silence,"
+    },
+    {
+     "from": 1459,
+     "to": 1489,
+     "text": "inside a response"
+    },
+    {
+     "from": 1490,
+     "to": 1566,
+     "text": "the server logged as sixty milliseconds."
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "chapter": 0,
+   "from": 1597,
+   "to": 1769,
+   "text": "TLS hides the letters, not the envelopes — who, when, and how much still shows.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1597,
+     "to": 1647,
+     "text": "TLS hides the letters,"
+    },
+    {
+     "from": 1648,
+     "to": 1686,
+     "text": "not the envelopes —"
+    },
+    {
+     "from": 1687,
+     "to": 1769,
+     "text": "who, when, and how much still shows."
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "chapter": 0,
+   "from": 1780,
+   "to": 1840,
+   "text": "So capture only what you're authorized to.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1780,
+     "to": 1840,
+     "text": "So capture only what you're authorized to."
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "chapter": 0,
+   "from": 1861,
+   "to": 1919,
+   "text": "A log tells you what a program believed.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1861,
+     "to": 1919,
+     "text": "A log tells you what a program believed."
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "chapter": 0,
+   "from": 1930,
+   "to": 1986,
+   "text": "A capture tells you what actually happened.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1930,
+     "to": 1986,
+     "text": "A capture tells you what actually happened."
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "chapter": 0,
+   "from": 1997,
+   "to": 2032,
+   "text": "The wire doesn't lie.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1997,
+     "to": 2032,
+     "text": "The wire doesn't lie."
+    }
+   ]
+  }
+ ],
+ "chars": 765,
+ "words": 166,
+ "speech_sec": 58.32
+}

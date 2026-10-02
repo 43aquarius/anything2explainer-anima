@@ -1,0 +1,22 @@
+# PCAP vertical (TikTok) — narration v1 (| splits subtitles only; EN block <=42 chars for 9:16)
+Your page takes nine seconds to load.|Customers are leaving.
+The logs say sixty milliseconds.
+Both are true.|The missing time is on the wire.
+
+Everything you send travels as packets —|envelopes with a header and a payload.
+Packet capture means catching a copy|of every envelope|passing a point in the network.
+
+Three places to stand:|your own machine,|a mirrored port on the switch,|or a tap spliced into the cable.
+Wireshark turns that copy into three panes:|one row per packet,|the layers peeled open,|the raw bytes.
+
+Now follow one conversation|and read the timestamps.
+## gap 12
+The response is retransmitted,|each wait doubling:|one second, two, then four.
+Seven seconds of silence,|inside a response|the server logged as sixty milliseconds.
+
+TLS hides the letters,|not the envelopes —|who, when, and how much still shows.
+So capture only what you're authorized to.
+## gap 10
+A log tells you what a program believed.
+A capture tells you what actually happened.
+The wire doesn't lie.

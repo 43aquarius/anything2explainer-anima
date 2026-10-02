@@ -1,0 +1,1345 @@
+{
+ "fps": 30,
+ "total_frames": 9575,
+ "engine": "edge",
+ "voice": "en-US-AndrewNeural",
+ "rate": "+0%",
+ "gap": 10,
+ "para_gap": 20,
+ "chapter_gap": 45,
+ "lead": 40,
+ "tail": 90,
+ "lang": "en",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "The Mystery",
+   "from": 86
+  },
+  {
+   "n": 2,
+   "title": "How It Works",
+   "from": 2585
+  },
+  {
+   "n": 3,
+   "title": "Wireshark",
+   "from": 5198
+  },
+  {
+   "n": 4,
+   "title": "Limits & Laws",
+   "from": 7826
+  }
+ ],
+ "sentences": [
+  {
+   "id": "S01",
+   "chapter": 1,
+   "from": 86,
+   "to": 207,
+   "text": "Your checkout page takes nine seconds to load. Customers give up on it.",
+   "para": false,
+   "subs": [
+    {
+     "from": 86,
+     "to": 170,
+     "text": "Your checkout page takes nine seconds to load."
+    },
+    {
+     "from": 171,
+     "to": 207,
+     "text": "Customers give up on it."
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "chapter": 1,
+   "from": 218,
+   "to": 350,
+   "text": "The server logs say every request was answered in about sixty milliseconds.",
+   "para": false,
+   "subs": [
+    {
+     "from": 218,
+     "to": 252,
+     "text": "The server logs say"
+    },
+    {
+     "from": 253,
+     "to": 295,
+     "text": "every request was answered"
+    },
+    {
+     "from": 296,
+     "to": 350,
+     "text": "in about sixty milliseconds."
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "chapter": 1,
+   "from": 361,
+   "to": 460,
+   "text": "Both readings are true. The missing time lives somewhere between them.",
+   "para": true,
+   "subs": [
+    {
+     "from": 361,
+     "to": 403,
+     "text": "Both readings are true."
+    },
+    {
+     "from": 404,
+     "to": 460,
+     "text": "The missing time lives somewhere between them."
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "chapter": 1,
+   "from": 491,
+   "to": 583,
+   "text": "To find it, you have to see what the network actually carried.",
+   "para": false,
+   "subs": [
+    {
+     "from": 491,
+     "to": 531,
+     "text": "To find it, you have to see"
+    },
+    {
+     "from": 532,
+     "to": 583,
+     "text": "what the network actually carried."
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "chapter": 1,
+   "from": 594,
+   "to": 713,
+   "text": "Everything you send travels as packets — small envelopes of data.",
+   "para": false,
+   "subs": [
+    {
+     "from": 594,
+     "to": 668,
+     "text": "Everything you send travels as packets —"
+    },
+    {
+     "from": 669,
+     "to": 713,
+     "text": "small envelopes of data."
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "chapter": 1,
+   "from": 724,
+   "to": 872,
+   "text": "Each one has a header, the address on the envelope, and a payload, the letter inside.",
+   "para": false,
+   "subs": [
+    {
+     "from": 724,
+     "to": 761,
+     "text": "Each one has a header,"
+    },
+    {
+     "from": 762,
+     "to": 811,
+     "text": "the address on the envelope,"
+    },
+    {
+     "from": 812,
+     "to": 872,
+     "text": "and a payload, the letter inside."
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "chapter": 1,
+   "from": 883,
+   "to": 1033,
+   "text": "And they nest: TCP rides inside IP, IP rides inside Ethernet.",
+   "para": false,
+   "subs": [
+    {
+     "from": 883,
+     "to": 979,
+     "text": "And they nest: TCP rides inside IP,"
+    },
+    {
+     "from": 980,
+     "to": 1033,
+     "text": "IP rides inside Ethernet."
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "chapter": 1,
+   "from": 1044,
+   "to": 1205,
+   "text": "One packet carries about 1,500 bytes — roughly one paragraph of text.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1044,
+     "to": 1144,
+     "text": "One packet carries about 1,500 bytes —"
+    },
+    {
+     "from": 1145,
+     "to": 1205,
+     "text": "roughly one paragraph of text."
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "chapter": 1,
+   "from": 1236,
+   "to": 1423,
+   "text": "A packet capture is exactly what it sounds like: catching a copy of the packets as they pass a point in the network.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1236,
+     "to": 1319,
+     "text": "A packet capture is exactly what it sounds like:"
+    },
+    {
+     "from": 1320,
+     "to": 1367,
+     "text": "catching a copy of the packets"
+    },
+    {
+     "from": 1368,
+     "to": 1423,
+     "text": "as they pass a point in the network."
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "chapter": 1,
+   "from": 1434,
+   "to": 1639,
+   "text": "Not intercepting. Not changing. Just copying — a checkpoint that photocopies every envelope that drives past.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1434,
+     "to": 1498,
+     "text": "Not intercepting. Not changing."
+    },
+    {
+     "from": 1499,
+     "to": 1531,
+     "text": "Just copying —"
+    },
+    {
+     "from": 1532,
+     "to": 1577,
+     "text": "a checkpoint that photocopies"
+    },
+    {
+     "from": 1578,
+     "to": 1639,
+     "text": "every envelope that drives past."
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "chapter": 1,
+   "from": 1650,
+   "to": 1822,
+   "text": "With that copy in hand, you can replay the whole conversation: every byte, every timestamp.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1650,
+     "to": 1698,
+     "text": "With that copy in hand,"
+    },
+    {
+     "from": 1699,
+     "to": 1766,
+     "text": "you can replay the whole conversation:"
+    },
+    {
+     "from": 1767,
+     "to": 1822,
+     "text": "every byte, every timestamp."
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "chapter": 1,
+   "from": 1833,
+   "to": 1999,
+   "text": "It's how networks are debugged, how intrusions are caught, and how our nine seconds get explained.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1833,
+     "to": 1887,
+     "text": "It's how networks are debugged,"
+    },
+    {
+     "from": 1888,
+     "to": 1936,
+     "text": "how intrusions are caught,"
+    },
+    {
+     "from": 1937,
+     "to": 1999,
+     "text": "and how our nine seconds get explained."
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "chapter": 1,
+   "from": 2030,
+   "to": 2188,
+   "text": "Engineers have done this for decades. tcpdump was born at Berkeley Lab in 1988.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2030,
+     "to": 2094,
+     "text": "Engineers have done this for decades."
+    },
+    {
+     "from": 2095,
+     "to": 2188,
+     "text": "tcpdump was born at Berkeley Lab in 1988."
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "chapter": 1,
+   "from": 2199,
+   "to": 2431,
+   "text": "Ten years later, Gerald Combs built a graphical analyzer around it — Ethereal, renamed Wireshark in 2006.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2199,
+     "to": 2250,
+     "text": "Ten years later, Gerald Combs"
+    },
+    {
+     "from": 2251,
+     "to": 2329,
+     "text": "built a graphical analyzer around it —"
+    },
+    {
+     "from": 2330,
+     "to": 2431,
+     "text": "Ethereal, renamed Wireshark in 2006."
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "chapter": 1,
+   "from": 2442,
+   "to": 2529,
+   "text": "It's what most of the internet debugs its networks with.",
+   "para": true,
+   "subs": [
+    {
+     "from": 2442,
+     "to": 2481,
+     "text": "It's what most of the internet"
+    },
+    {
+     "from": 2482,
+     "to": 2529,
+     "text": "debugs its networks with."
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "chapter": 2,
+   "from": 2585,
+   "to": 2773,
+   "text": "The tool is the easy part. The real question is where you stand to get your copy of the packets. Three answers.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2585,
+     "to": 2638,
+     "text": "The tool is the easy part."
+    },
+    {
+     "from": 2639,
+     "to": 2690,
+     "text": "The real question is where you stand"
+    },
+    {
+     "from": 2691,
+     "to": 2748,
+     "text": "to get your copy of the packets."
+    },
+    {
+     "from": 2749,
+     "to": 2773,
+     "text": "Three answers."
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "chapter": 2,
+   "from": 2784,
+   "to": 2954,
+   "text": "On your own machine, the operating system already sees its own traffic — that's the easy one.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2784,
+     "to": 2853,
+     "text": "On your own machine, the operating system"
+    },
+    {
+     "from": 2854,
+     "to": 2921,
+     "text": "already sees its own traffic —"
+    },
+    {
+     "from": 2922,
+     "to": 2954,
+     "text": "that's the easy one."
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "chapter": 2,
+   "from": 2965,
+   "to": 3111,
+   "text": "On a shared switch, port mirroring copies one port's traffic to a monitoring port.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2965,
+     "to": 3001,
+     "text": "On a shared switch,"
+    },
+    {
+     "from": 3002,
+     "to": 3074,
+     "text": "port mirroring copies one port's traffic"
+    },
+    {
+     "from": 3075,
+     "to": 3111,
+     "text": "to a monitoring port."
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "chapter": 2,
+   "from": 3122,
+   "to": 3277,
+   "text": "And on the physical link, a network tap passively splits the signal and hands you a copy.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3122,
+     "to": 3161,
+     "text": "And on the physical link,"
+    },
+    {
+     "from": 3162,
+     "to": 3242,
+     "text": "a network tap passively splits the signal"
+    },
+    {
+     "from": 3243,
+     "to": 3277,
+     "text": "and hands you a copy."
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "chapter": 2,
+   "from": 3323,
+   "to": 3502,
+   "text": "On your own machine, one catch: a network card normally drops frames addressed to someone else.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3323,
+     "to": 3393,
+     "text": "On your own machine, one catch:"
+    },
+    {
+     "from": 3394,
+     "to": 3445,
+     "text": "a network card normally drops"
+    },
+    {
+     "from": 3446,
+     "to": 3502,
+     "text": "frames addressed to someone else."
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "chapter": 2,
+   "from": 3513,
+   "to": 3674,
+   "text": "Promiscuous mode tells it: keep everything you see. Wireshark turns this on by default.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3513,
+     "to": 3563,
+     "text": "Promiscuous mode tells it:"
+    },
+    {
+     "from": 3564,
+     "to": 3612,
+     "text": "keep everything you see."
+    },
+    {
+     "from": 3613,
+     "to": 3674,
+     "text": "Wireshark turns this on by default."
+    }
+   ]
+  },
+  {
+   "id": "S22",
+   "chapter": 2,
+   "from": 3705,
+   "to": 3951,
+   "text": "Between the hardware and the tool sits a small, old, brilliant stack: libpcap on Linux and macOS, Npcap on Windows.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3705,
+     "to": 3750,
+     "text": "Between the hardware and the tool"
+    },
+    {
+     "from": 3751,
+     "to": 3843,
+     "text": "sits a small, old, brilliant stack:"
+    },
+    {
+     "from": 3844,
+     "to": 3912,
+     "text": "libpcap on Linux and macOS,"
+    },
+    {
+     "from": 3913,
+     "to": 3951,
+     "text": "Npcap on Windows."
+    }
+   ]
+  },
+  {
+   "id": "S23",
+   "chapter": 2,
+   "from": 3962,
+   "to": 4107,
+   "text": "And underneath, a kernel filter from 1992: the Berkeley Packet Filter.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3962,
+     "to": 4063,
+     "text": "And underneath, a kernel filter from 1992:"
+    },
+    {
+     "from": 4064,
+     "to": 4107,
+     "text": "the Berkeley Packet Filter."
+    }
+   ]
+  },
+  {
+   "id": "S24",
+   "chapter": 2,
+   "from": 4118,
+   "to": 4288,
+   "text": "It drops the packets you don't want before they ever leave the kernel, so filtering a firehose stays cheap.",
+   "para": true,
+   "subs": [
+    {
+     "from": 4118,
+     "to": 4166,
+     "text": "It drops the packets you don't want"
+    },
+    {
+     "from": 4167,
+     "to": 4223,
+     "text": "before they ever leave the kernel,"
+    },
+    {
+     "from": 4224,
+     "to": 4288,
+     "text": "so filtering a firehose stays cheap."
+    }
+   ]
+  },
+  {
+   "id": "S25",
+   "chapter": 2,
+   "from": 4319,
+   "to": 4474,
+   "text": "Whatever survives the filter lands in a capture file. The classic format is called pcap.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4319,
+     "to": 4361,
+     "text": "Whatever survives the filter"
+    },
+    {
+     "from": 4362,
+     "to": 4414,
+     "text": "lands in a capture file."
+    },
+    {
+     "from": 4415,
+     "to": 4474,
+     "text": "The classic format is called pcap."
+    }
+   ]
+  },
+  {
+   "id": "S26",
+   "chapter": 2,
+   "from": 4485,
+   "to": 4656,
+   "text": "Per packet, it stores exactly three things: a timestamp, a length, and the raw bytes.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4485,
+     "to": 4571,
+     "text": "Per packet, it stores exactly three things:"
+    },
+    {
+     "from": 4572,
+     "to": 4623,
+     "text": "a timestamp, a length,"
+    },
+    {
+     "from": 4624,
+     "to": 4656,
+     "text": "and the raw bytes."
+    }
+   ]
+  },
+  {
+   "id": "S27",
+   "chapter": 2,
+   "from": 4667,
+   "to": 4787,
+   "text": "Its successor, pcapng, is what modern Wireshark saves by default.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4667,
+     "to": 4720,
+     "text": "Its successor, pcapng,"
+    },
+    {
+     "from": 4721,
+     "to": 4787,
+     "text": "is what modern Wireshark saves by default."
+    }
+   ]
+  },
+  {
+   "id": "S28",
+   "chapter": 2,
+   "from": 4798,
+   "to": 4977,
+   "text": "Nothing is decoded yet. Interpretation happens later, on your machine, every time you open it.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4798,
+     "to": 4846,
+     "text": "Nothing is decoded yet."
+    },
+    {
+     "from": 4847,
+     "to": 4908,
+     "text": "Interpretation happens later,"
+    },
+    {
+     "from": 4909,
+     "to": 4977,
+     "text": "on your machine, every time you open it."
+    }
+   ]
+  },
+  {
+   "id": "S29",
+   "chapter": 2,
+   "from": 4988,
+   "to": 5142,
+   "text": "Which makes the file evidence, not testimony. It never argues. It just remembers.",
+   "para": true,
+   "subs": [
+    {
+     "from": 4988,
+     "to": 5071,
+     "text": "Which makes the file evidence, not testimony."
+    },
+    {
+     "from": 5072,
+     "to": 5112,
+     "text": "It never argues."
+    },
+    {
+     "from": 5113,
+     "to": 5142,
+     "text": "It just remembers."
+    }
+   ]
+  },
+  {
+   "id": "S30",
+   "chapter": 3,
+   "from": 5218,
+   "to": 5350,
+   "text": "Open that file in Wireshark, and you get three zoom levels on the same evidence.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5218,
+     "to": 5272,
+     "text": "Open that file in Wireshark,"
+    },
+    {
+     "from": 5273,
+     "to": 5315,
+     "text": "and you get three zoom levels"
+    },
+    {
+     "from": 5316,
+     "to": 5350,
+     "text": "on the same evidence."
+    }
+   ]
+  },
+  {
+   "id": "S31",
+   "chapter": 3,
+   "from": 5361,
+   "to": 5535,
+   "text": "The packet list: one row per packet, time, source, destination, protocol.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5361,
+     "to": 5440,
+     "text": "The packet list: one row per packet,"
+    },
+    {
+     "from": 5441,
+     "to": 5535,
+     "text": "time, source, destination, protocol."
+    }
+   ]
+  },
+  {
+   "id": "S32",
+   "chapter": 3,
+   "from": 5546,
+   "to": 5772,
+   "text": "The packet details: the envelope peeled open layer by layer, Ethernet, IP, TCP, TLS.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5546,
+     "to": 5586,
+     "text": "The packet details:"
+    },
+    {
+     "from": 5587,
+     "to": 5668,
+     "text": "the envelope peeled open layer by layer,"
+    },
+    {
+     "from": 5669,
+     "to": 5772,
+     "text": "Ethernet, IP, TCP, TLS."
+    }
+   ]
+  },
+  {
+   "id": "S33",
+   "chapter": 3,
+   "from": 5783,
+   "to": 5913,
+   "text": "The packet bytes: raw hexadecimal, exactly as it crossed the wire.",
+   "para": true,
+   "subs": [
+    {
+     "from": 5783,
+     "to": 5859,
+     "text": "The packet bytes: raw hexadecimal,"
+    },
+    {
+     "from": 5860,
+     "to": 5913,
+     "text": "exactly as it crossed the wire."
+    }
+   ]
+  },
+  {
+   "id": "S34",
+   "chapter": 3,
+   "from": 5944,
+   "to": 6016,
+   "text": "Too many packets? Two different filters.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5944,
+     "to": 5982,
+     "text": "Too many packets?"
+    },
+    {
+     "from": 5983,
+     "to": 6016,
+     "text": "Two different filters."
+    }
+   ]
+  },
+  {
+   "id": "S35",
+   "chapter": 3,
+   "from": 6027,
+   "to": 6171,
+   "text": "A capture filter runs while recording: kernel-level, strict syntax, cheap.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6027,
+     "to": 6093,
+     "text": "A capture filter runs while recording:"
+    },
+    {
+     "from": 6094,
+     "to": 6171,
+     "text": "kernel-level, strict syntax, cheap."
+    }
+   ]
+  },
+  {
+   "id": "S36",
+   "chapter": 3,
+   "from": 6182,
+   "to": 6362,
+   "text": "A display filter runs after the fact: http or dns, just hiding what you don't need.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6182,
+     "to": 6254,
+     "text": "A display filter runs after the fact:"
+    },
+    {
+     "from": 6255,
+     "to": 6318,
+     "text": "http or dns,"
+    },
+    {
+     "from": 6319,
+     "to": 6362,
+     "text": "just hiding what you don't need."
+    }
+   ]
+  },
+  {
+   "id": "S37",
+   "chapter": 3,
+   "from": 6373,
+   "to": 6551,
+   "text": "And when you find one conversation, Follow TCP Stream reassembles it into a readable transcript.",
+   "para": true,
+   "subs": [
+    {
+     "from": 6373,
+     "to": 6429,
+     "text": "And when you find one conversation,"
+    },
+    {
+     "from": 6430,
+     "to": 6470,
+     "text": "Follow TCP Stream"
+    },
+    {
+     "from": 6471,
+     "to": 6551,
+     "text": "reassembles it into a readable transcript."
+    }
+   ]
+  },
+  {
+   "id": "S38",
+   "chapter": 3,
+   "from": 6582,
+   "to": 6769,
+   "text": "So — the checkout page. Filter to the API host, follow the stream, and read the timestamps.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6582,
+     "to": 6631,
+     "text": "So — the checkout page."
+    },
+    {
+     "from": 6632,
+     "to": 6691,
+     "text": "Filter to the API host,"
+    },
+    {
+     "from": 6692,
+     "to": 6725,
+     "text": "follow the stream,"
+    },
+    {
+     "from": 6726,
+     "to": 6769,
+     "text": "and read the timestamps."
+    }
+   ]
+  },
+  {
+   "id": "S39",
+   "chapter": 3,
+   "from": 6780,
+   "to": 6887,
+   "text": "The request leaves instantly. The response doesn't arrive.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6780,
+     "to": 6844,
+     "text": "The request leaves instantly."
+    },
+    {
+     "from": 6845,
+     "to": 6887,
+     "text": "The response doesn't arrive."
+    }
+   ]
+  },
+  {
+   "id": "S40",
+   "chapter": 3,
+   "from": 6898,
+   "to": 7094,
+   "text": "The same data is sent again, and again — each gap doubling: one second, two, then four.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6898,
+     "to": 6981,
+     "text": "The same data is sent again, and again —"
+    },
+    {
+     "from": 6982,
+     "to": 7023,
+     "text": "each gap doubling:"
+    },
+    {
+     "from": 7024,
+     "to": 7094,
+     "text": "one second, two, then four."
+    }
+   ]
+  },
+  {
+   "id": "S41",
+   "chapter": 3,
+   "from": 7105,
+   "to": 7298,
+   "text": "Those are retransmissions. A letter vanished in transit, and the sender waited by the mailbox on a doubling timer.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7105,
+     "to": 7155,
+     "text": "Those are retransmissions."
+    },
+    {
+     "from": 7156,
+     "to": 7208,
+     "text": "A letter vanished in transit,"
+    },
+    {
+     "from": 7209,
+     "to": 7262,
+     "text": "and the sender waited by the mailbox"
+    },
+    {
+     "from": 7263,
+     "to": 7298,
+     "text": "on a doubling timer."
+    }
+   ]
+  },
+  {
+   "id": "S42",
+   "chapter": 3,
+   "from": 7309,
+   "to": 7418,
+   "text": "Wireshark even marks them for you, in its expert information.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7309,
+     "to": 7372,
+     "text": "Wireshark even marks them for you,"
+    },
+    {
+     "from": 7373,
+     "to": 7418,
+     "text": "in its expert information."
+    }
+   ]
+  },
+  {
+   "id": "S43",
+   "chapter": 3,
+   "from": 7429,
+   "to": 7584,
+   "text": "Seven seconds of waiting, inside a response the server logged as sixty milliseconds.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7429,
+     "to": 7478,
+     "text": "Seven seconds of waiting,"
+    },
+    {
+     "from": 7479,
+     "to": 7507,
+     "text": "inside a response"
+    },
+    {
+     "from": 7508,
+     "to": 7584,
+     "text": "the server logged as sixty milliseconds."
+    }
+   ]
+  },
+  {
+   "id": "S44",
+   "chapter": 3,
+   "from": 7595,
+   "to": 7770,
+   "text": "Packet loss on the path. The server never knew. The browser couldn't say why. Only the wire saw it.",
+   "para": true,
+   "subs": [
+    {
+     "from": 7595,
+     "to": 7643,
+     "text": "Packet loss on the path."
+    },
+    {
+     "from": 7644,
+     "to": 7684,
+     "text": "The server never knew."
+    },
+    {
+     "from": 7685,
+     "to": 7736,
+     "text": "The browser couldn't say why."
+    },
+    {
+     "from": 7737,
+     "to": 7770,
+     "text": "Only the wire saw it."
+    }
+   ]
+  },
+  {
+   "id": "S45",
+   "chapter": 4,
+   "from": 7841,
+   "to": 7937,
+   "text": "Before you go capturing everything, two honest limits.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7841,
+     "to": 7900,
+     "text": "Before you go capturing everything,"
+    },
+    {
+     "from": 7901,
+     "to": 7937,
+     "text": "two honest limits."
+    }
+   ]
+  },
+  {
+   "id": "S46",
+   "chapter": 4,
+   "from": 7948,
+   "to": 8229,
+   "text": "First, encryption. Almost everything now rides TLS 1.3, whose handshake takes a single round trip, and whose content you cannot read.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7948,
+     "to": 7991,
+     "text": "First, encryption."
+    },
+    {
+     "from": 7992,
+     "to": 8106,
+     "text": "Almost everything now rides TLS 1.3,"
+    },
+    {
+     "from": 8107,
+     "to": 8178,
+     "text": "whose handshake takes a single round trip,"
+    },
+    {
+     "from": 8179,
+     "to": 8229,
+     "text": "and whose content you cannot read."
+    }
+   ]
+  },
+  {
+   "id": "S47",
+   "chapter": 4,
+   "from": 8240,
+   "to": 8366,
+   "text": "You still see the envelopes: who talked to whom, when, and how much.",
+   "para": false,
+   "subs": [
+    {
+     "from": 8240,
+     "to": 8288,
+     "text": "You still see the envelopes:"
+    },
+    {
+     "from": 8289,
+     "to": 8366,
+     "text": "who talked to whom, when, and how much."
+    }
+   ]
+  },
+  {
+   "id": "S48",
+   "chapter": 4,
+   "from": 8377,
+   "to": 8517,
+   "text": "That was enough for our mystery — we never read the checkout data, only its timing.",
+   "para": true,
+   "subs": [
+    {
+     "from": 8377,
+     "to": 8432,
+     "text": "That was enough for our mystery —"
+    },
+    {
+     "from": 8433,
+     "to": 8489,
+     "text": "we never read the checkout data,"
+    },
+    {
+     "from": 8490,
+     "to": 8517,
+     "text": "only its timing."
+    }
+   ]
+  },
+  {
+   "id": "S49",
+   "chapter": 4,
+   "from": 8568,
+   "to": 8805,
+   "text": "Second, permission. Capturing traffic you're not authorized to see is a crime in many places, and a firing offense almost anywhere.",
+   "para": false,
+   "subs": [
+    {
+     "from": 8568,
+     "to": 8612,
+     "text": "Second, permission."
+    },
+    {
+     "from": 8613,
+     "to": 8685,
+     "text": "Capturing traffic you're not authorized to see"
+    },
+    {
+     "from": 8686,
+     "to": 8741,
+     "text": "is a crime in many places,"
+    },
+    {
+     "from": 8742,
+     "to": 8805,
+     "text": "and a firing offense almost anywhere."
+    }
+   ]
+  },
+  {
+   "id": "S50",
+   "chapter": 4,
+   "from": 8816,
+   "to": 8869,
+   "text": "So get explicit permission first.",
+   "para": false,
+   "subs": [
+    {
+     "from": 8816,
+     "to": 8869,
+     "text": "So get explicit permission first."
+    }
+   ]
+  },
+  {
+   "id": "S51",
+   "chapter": 4,
+   "from": 8880,
+   "to": 9014,
+   "text": "On networks you own, capture everything. It's the best way to learn this craft.",
+   "para": true,
+   "subs": [
+    {
+     "from": 8880,
+     "to": 8958,
+     "text": "On networks you own, capture everything."
+    },
+    {
+     "from": 8959,
+     "to": 9014,
+     "text": "It's the best way to learn this craft."
+    }
+   ]
+  },
+  {
+   "id": "S52",
+   "chapter": 4,
+   "from": 9045,
+   "to": 9218,
+   "text": "As for our checkout page: the loss traced to a failing switch port, and nine seconds became under one.",
+   "para": false,
+   "subs": [
+    {
+     "from": 9045,
+     "to": 9090,
+     "text": "As for our checkout page:"
+    },
+    {
+     "from": 9091,
+     "to": 9159,
+     "text": "the loss traced to a failing switch port,"
+    },
+    {
+     "from": 9160,
+     "to": 9218,
+     "text": "and nine seconds became under one."
+    }
+   ]
+  },
+  {
+   "id": "S53",
+   "chapter": 4,
+   "from": 9229,
+   "to": 9283,
+   "text": "The lesson outlives the story.",
+   "para": false,
+   "subs": [
+    {
+     "from": 9229,
+     "to": 9283,
+     "text": "The lesson outlives the story."
+    }
+   ]
+  },
+  {
+   "id": "S54",
+   "chapter": 4,
+   "from": 9294,
+   "to": 9362,
+   "text": "A log tells you what a program believed happened.",
+   "para": false,
+   "subs": [
+    {
+     "from": 9294,
+     "to": 9315,
+     "text": "A log tells you"
+    },
+    {
+     "from": 9316,
+     "to": 9362,
+     "text": "what a program believed happened."
+    }
+   ]
+  },
+  {
+   "id": "S55",
+   "chapter": 4,
+   "from": 9373,
+   "to": 9429,
+   "text": "A capture tells you what actually happened.",
+   "para": false,
+   "subs": [
+    {
+     "from": 9373,
+     "to": 9396,
+     "text": "A capture tells you"
+    },
+    {
+     "from": 9397,
+     "to": 9429,
+     "text": "what actually happened."
+    }
+   ]
+  },
+  {
+   "id": "S56",
+   "chapter": 4,
+   "from": 9440,
+   "to": 9475,
+   "text": "The wire doesn't lie.",
+   "para": true,
+   "subs": [
+    {
+     "from": 9440,
+     "to": 9475,
+     "text": "The wire doesn't lie."
+    }
+   ]
+  }
+ ],
+ "chars": 3610,
+ "words": 770,
+ "speech_sec": 281.15
+}
