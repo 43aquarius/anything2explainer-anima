@@ -1,0 +1,355 @@
+ 
+ App signing  |  Security  |  Android Open Source Project 
+ Skip to main content
+ Docs
+ What's new? 
+ Release notes
+ Latest security bulletins
+ Latest Compatibility Definition Document (CDD)
+ Site updates
+ Getting Started 
+ About
+ Start
+ Download
+ Builds
+ Test
+ Create
+ Contribute
+ Community
+ Tools, build, and related reference
+ Security 
+ Overview
+ Bulletins
+ Features
+ Testing
+ Best Practices
+ Core Topics 
+ Architecture
+ Audio
+ Camera
+ Connectivity
+ Data
+ Display
+ Fonts
+ Graphics
+ Interaction
+ Media
+ Performance
+ Permissions
+ Power
+ Runtime
+ Settings
+ Storage
+ Tests
+ Updates
+ Virtualization
+ Compatibility 
+ Compatibility Definition Document (CDD)
+ Compatibility Test Suite (CTS)
+ Android Devices 
+ Overview
+ Cuttlefish
+ Enterprise
+ TV
+ Automotive 
+ Overview
+ Software Defined Vehicle
+ In-vehicle Infotainment
+ Release Details
+ Reference 
+ HIDL
+ HAL
+ Trade Federation
+ Security Test Suite
+ Android Code Search
+ More 
+ / 
+ English 
+ Deutsch 
+ Español – América Latina 
+ Français 
+ Indonesia 
+ Italiano 
+ Polski 
+ Português – Brasil 
+ Tiếng Việt 
+ Türkçe 
+ Русский 
+ עברית 
+ العربيّة 
+ فارسی 
+ हिंदी 
+ বাংলা 
+ ภาษาไทย 
+ 中文 – 简体 
+ 中文 – 繁體 
+ 日本語 
+ 한국어 
+ Sign in 
+ Docs
+ Security
+ Overview
+ Features
+ Testing
+ Best practices
+ AOSP bulletins
+ Pixel & Wear bulletins
+ Automotive & Ecosystem bulletins
+ More 
+ Docs
+ More
+ Overview
+ Features
+ Testing
+ Best practices
+ AOSP bulletins
+ Pixel & Wear bulletins
+ Automotive & Ecosystem bulletins
+ Android Code Search
+ Features 
+ Overview 
+ Application Sandbox 
+ OMAPI vendor stable interface 
+ App signing 
+ Overview APK signature scheme v2 APK signature scheme v3 APK signature scheme v3. 1 APK signature scheme v3. 2 APK signature scheme v4 
+ Authentication 
+ Overview Gatekeeper Rate-limiting Weaver 
+ Biometrics 
+ Overview Measure biometric security Fingerprint HIDL Face authentication HIDL 
+ Android Protected Confirmation 
+ Overview Implementation UI design Accessibility 
+ DICE 
+ Overview Applications 
+ Encryption 
+ Overview File-based encryption Full-disk encryption Metadata encryption Enable Adiantum Hardware-wrapped keys 
+ Keystore 
+ Overview Features Key and ID attestation Version binding Authorization tags KeyMint functions 
+ Identity Credential APIs 
+ Overview 
+ SELinux 
+ Overview Concepts Implementation Customization Build sepolicy Policy compatibility Validation Write policy Vendor init 
+ Trusty TEE 
+ Overview Download and build Trusty API reference 
+ Verified Boot 
+ Overview Device state Use Verified Boot Boot flow Implement dm-verity Verify system_other partition Reference implementation On-device signing 
+ Safety Center 
+ Overview 
+ Cellular security 
+ Overview Disable 2G 2G connectivity toggle Mobile network security 
+ Private space 
+ GPU syscall filtering 
+ What's new?
+ Release notes
+ Latest security bulletins
+ Latest Compatibility Definition Document (CDD)
+ Site updates
+ Getting Started
+ About
+ Start
+ Download
+ Builds
+ Test
+ Create
+ Contribute
+ Community
+ Tools, build, and related reference
+ Security
+ Overview
+ Bulletins
+ Features
+ Testing
+ Best Practices
+ Core Topics
+ Architecture
+ Audio
+ Camera
+ Connectivity
+ Data
+ Display
+ Fonts
+ Graphics
+ Interaction
+ Media
+ Performance
+ Permissions
+ Power
+ Runtime
+ Settings
+ Storage
+ Tests
+ Updates
+ Virtualization
+ Compatibility
+ Compatibility Definition Document (CDD)
+ Compatibility Test Suite (CTS)
+ Android Devices
+ Overview
+ Cuttlefish
+ Enterprise
+ TV
+ Automotive
+ Overview
+ Software Defined Vehicle
+ In-vehicle Infotainment
+ Release Details
+ Reference
+ HIDL
+ HAL
+ Trade Federation
+ Security Test Suite
+ On this page APK signing schemes JAR signing (v1 scheme) APK signature scheme v2 and v3 (v2+ scheme) 
+ Effective in 2026, to align with our trunk stable development model and ensure platform stability for the ecosystem, we will publish source code to AOSP in Q2 and Q4. For building and contributing to AOSP, use android-latest-release . The android-latest-release manifest branch will always reference the most recent release pushed to AOSP. For more information, see Changes to AOSP . 
+ AOSP
+ Docs
+ Security
+ Features
+ App signing 
+ Stay organized with collections
+ Save and categorize content based on your preferences. 
+ On this page APK signing schemes JAR signing (v1 scheme) APK signature scheme v2 and v3 (v2+ scheme) 
+ Note: If you are using
+ Android App Links 
+ make sure to update the SHA256 fingerprints of your keys in the corresponding
+ Digital
+ Asset Links JSON file on your website.
+App signing allows developers to identify the author of the app
+and to update their app without creating complicated interfaces and
+permissions. Every app that is run on the Android platform must be
+signed by the developer .
+Apps that attempt to install without being signed
+are rejected by either Google Play or the package installer on the Android
+device.
+On Google Play, app signing bridges the trust Google has with the
+developer and the trust the developer has with their app. Developers
+know their app is provided, unmodified, to the Android device; and
+developers can be held accountable for behavior of their app.
+On Android, app signing is the first step to placing an app in
+its Application Sandbox. The signed app certificate defines which user
+ID is associated with which app; different apps run under
+different user IDs. App signing ensures that one app can't
+access any other app except through well-defined IPC.
+When an app (APK file) is installed onto an Android device, the Package
+Manager verifies that the APK has been properly signed with the certificate
+included in that APK. If the certificate (or, more accurately, the public key in
+the certificate) matches the key used to sign any other APK on the device, the
+new APK has the option to specify in the manifest that it shares a UID with
+the other similarly signed APKs.
+Apps can be signed by a third-party (OEM, operator, alternative market)
+or self-signed. Android provides code signing using self-signed certificates
+that developers can generate without external assistance or permission.
+Apps don't have to be signed by a central authority. Android currently
+doesn't perform CA verification for app certificates.
+Apps are also able to declare security permissions at the Signature
+protection level, restricting access only to apps signed with the same
+key while maintaining distinct UIDs and Application Sandboxes. A closer
+relationship with a shared Application Sandbox is allowed using the
+shared UID feature where two or more apps signed with same
+developer key can declare a shared UID in their manifest.
+ Note: As of Android 13, shared UIDs are deprecated. Users of
+ Android 13 or higher should put the line
+ android:sharedUserMaxSdkVersion="32" in their manifest. This entry prevents
+ new users from getting a shared UID. 
+ APK signing schemes 
+Android supports three app signing schemes: 
+ v1 scheme: based on JAR signing 
+ v2 scheme: APK Signature Scheme v2 ,
+ which was introduced in Android 7.0. 
+ v3 scheme: APK Signature Scheme v3 ,
+ which was introduced in Android 9. 
+For maximum compatibility, sign apps with all
+schemes, first with v1, then v2, and then v3. Android 7.0+ and newer devices
+install apps signed with v2+ schemes more quickly than those signed only with
+v1 scheme. Older Android platforms ignore v2+ signatures and thus need apps to
+contain v1 signatures.
+ JAR signing (v1 scheme) 
+APK signing has been a part of Android from the beginning. It is based on 
+signed JAR . For details on using this scheme, see the Android Studio
+documentation on
+Signing your app .
+v1 signatures don't protect some parts of the APK, such as ZIP metadata. The
+APK verifier needs to process lots of untrusted (not yet verified) data
+structures and then discard data not covered by the signatures. This offers a
+sizeable attack surface. Moreover, the APK verifier must uncompress all
+compressed entries, consuming more time and memory. To address these issues,
+Android 7.0 introduced APK Signature Scheme v2.
+ APK signature scheme v2 and v3 (v2+ scheme) 
+Devices running Android 7.0 and later support APK signature scheme v2 (v2
+scheme) and later. (v2 scheme was updated to v3 in
+Android 9 to include
+additional information in the signing block, but otherwise works the same.) The
+contents of the APK are hashed and signed, then the resulting APK signing block
+is inserted into the APK. For details on applying the v2+ scheme to an app, see
+APK Signature Scheme v2 .
+During validation, v2+ scheme treats the APK file as a blob and performs signature
+checking across the entire file. Any modification to the APK, including ZIP metadata
+modifications, invalidates the APK signature. This form of APK verification is
+substantially faster and enables detection of more classes of unauthorized
+modifications.
+The new format is backwards compatible, so APKs signed with the new signature
+format can be installed on older Android devices (which simply ignore the extra
+data added to the APK), as long as these APKs are also v1-signed.
+ Figure 1. APK signature verification
+process 
+Whole-file hash of the APK is verified against the v2+ signature stored in the
+APK signing block. The hash covers everything except the APK signing block,
+which contains the v2+ signature. Any modification to the APK outside of the APK
+signing block invalidates the APK's v2+ signature. APKs with stripped v2+
+signature are rejected as well, because their v1 signature specifies that the
+APK was v2-signed, which makes Android 7.0 and newer refuse to verify APKs
+using their v1 signatures.
+ For details on the APK signature verification process, see the 
+Verification section of APK Signature Scheme v2. 
+ Content and code samples on this page are subject to the licenses described in the Content License . Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. 
+ Last updated 2026-09-30 UTC. 
+ [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-30 UTC."],[],[]]
+ Build 
+ Android repository
+ Requirements
+ Downloading
+ Preview binaries
+ Factory images
+ Driver binaries
+ Connect 
+ @Android on X
+ @AndroidDev on X
+ Android Blog
+ Google Security Blog
+ Platform on Google Groups
+ Building on Google Groups
+ Porting on Google Groups
+ Get help 
+ Android Help Center
+ Pixel Help Center
+ www.android.com
+ Google Mobile Services
+ Stack Overflow
+ Issue Tracker
+ About Android
+ Community
+ Legal
+ License
+ Privacy
+ Site feedback
+ Manage cookies
+ English 
+ Deutsch 
+ Español – América Latina 
+ Français 
+ Indonesia 
+ Italiano 
+ Polski 
+ Português – Brasil 
+ Tiếng Việt 
+ Türkçe 
+ Русский 
+ עברית 
+ العربيّة 
+ فارسی 
+ हिंदी 
+ বাংলা 
+ ภาษาไทย 
+ 中文 – 简体 
+ 中文 – 繁體 
+ 日本語 
+ 한국어 
+ 

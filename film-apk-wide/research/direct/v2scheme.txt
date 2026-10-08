@@ -1,0 +1,461 @@
+ 
+ APK signature scheme v2  |  Security  |  Android Open Source Project 
+ Skip to main content
+ Docs
+ What's new? 
+ Release notes
+ Latest security bulletins
+ Latest Compatibility Definition Document (CDD)
+ Site updates
+ Getting Started 
+ About
+ Start
+ Download
+ Builds
+ Test
+ Create
+ Contribute
+ Community
+ Tools, build, and related reference
+ Security 
+ Overview
+ Bulletins
+ Features
+ Testing
+ Best Practices
+ Core Topics 
+ Architecture
+ Audio
+ Camera
+ Connectivity
+ Data
+ Display
+ Fonts
+ Graphics
+ Interaction
+ Media
+ Performance
+ Permissions
+ Power
+ Runtime
+ Settings
+ Storage
+ Tests
+ Updates
+ Virtualization
+ Compatibility 
+ Compatibility Definition Document (CDD)
+ Compatibility Test Suite (CTS)
+ Android Devices 
+ Overview
+ Cuttlefish
+ Enterprise
+ TV
+ Automotive 
+ Overview
+ Software Defined Vehicle
+ In-vehicle Infotainment
+ Release Details
+ Reference 
+ HIDL
+ HAL
+ Trade Federation
+ Security Test Suite
+ Android Code Search
+ More 
+ / 
+ English 
+ Deutsch 
+ Español – América Latina 
+ Français 
+ Indonesia 
+ Italiano 
+ Polski 
+ Português – Brasil 
+ Tiếng Việt 
+ Türkçe 
+ Русский 
+ עברית 
+ العربيّة 
+ فارسی 
+ हिंदी 
+ বাংলা 
+ ภาษาไทย 
+ 中文 – 简体 
+ 中文 – 繁體 
+ 日本語 
+ 한국어 
+ Sign in
+ Docs
+ Security
+ Overview
+ Features
+ Testing
+ Best practices
+ AOSP bulletins
+ Pixel & Wear bulletins
+ Automotive & Ecosystem bulletins
+ More 
+ Docs
+ More
+ Overview
+ Features
+ Testing
+ Best practices
+ AOSP bulletins
+ Pixel & Wear bulletins
+ Automotive & Ecosystem bulletins
+ Android Code Search
+ Features 
+ Overview 
+ Application Sandbox 
+ OMAPI vendor stable interface 
+ App signing 
+ Overview APK signature scheme v2 APK signature scheme v3 APK signature scheme v3. 1 APK signature scheme v3. 2 APK signature scheme v4 
+ Authentication 
+ Overview Gatekeeper Rate-limiting Weaver 
+ Biometrics 
+ Overview Measure biometric security Fingerprint HIDL Face authentication HIDL 
+ Android Protected Confirmation 
+ Overview Implementation UI design Accessibility 
+ DICE 
+ Overview Applications 
+ Encryption 
+ Overview File-based encryption Full-disk encryption Metadata encryption Enable Adiantum Hardware-wrapped keys 
+ Keystore 
+ Overview Features Key and ID attestation Version binding Authorization tags KeyMint functions 
+ Identity Credential APIs 
+ Overview 
+ SELinux 
+ Overview Concepts Implementation Customization Build sepolicy Policy compatibility Validation Write policy Vendor init 
+ Trusty TEE 
+ Overview Download and build Trusty API reference 
+ Verified Boot 
+ Overview Device state Use Verified Boot Boot flow Implement dm-verity Verify system_other partition Reference implementation On-device signing 
+ Safety Center 
+ Overview 
+ Cellular security 
+ Overview Disable 2G 2G connectivity toggle Mobile network security 
+ Private space 
+ GPU syscall filtering 
+ What's new?
+ Release notes
+ Latest security bulletins
+ Latest Compatibility Definition Document (CDD)
+ Site updates
+ Getting Started
+ About
+ Start
+ Download
+ Builds
+ Test
+ Create
+ Contribute
+ Community
+ Tools, build, and related reference
+ Security
+ Overview
+ Bulletins
+ Features
+ Testing
+ Best Practices
+ Core Topics
+ Architecture
+ Audio
+ Camera
+ Connectivity
+ Data
+ Display
+ Fonts
+ Graphics
+ Interaction
+ Media
+ Performance
+ Permissions
+ Power
+ Runtime
+ Settings
+ Storage
+ Tests
+ Updates
+ Virtualization
+ Compatibility
+ Compatibility Definition Document (CDD)
+ Compatibility Test Suite (CTS)
+ Android Devices
+ Overview
+ Cuttlefish
+ Enterprise
+ TV
+ Automotive
+ Overview
+ Software Defined Vehicle
+ In-vehicle Infotainment
+ Release Details
+ Reference
+ HIDL
+ HAL
+ Trade Federation
+ Security Test Suite
+ On this page APK signing block Format APK signature scheme v2 block Format Integrity-protected contents Rollback protections Verification APK signature scheme v2 verification JAR-signed APK verification (v1 scheme) 
+ Effective in 2026, to align with our trunk stable development model and ensure platform stability for the ecosystem, we will publish source code to AOSP in Q2 and Q4. For building and contributing to AOSP, use android-latest-release . The android-latest-release manifest branch will always reference the most recent release pushed to AOSP. For more information, see Changes to AOSP . 
+ AOSP
+ Docs
+ Security
+ Features
+ Was this helpful? 
+ APK signature scheme v2 
+ Stay organized with collections
+ Save and categorize content based on your preferences. 
+ On this page APK signing block Format APK signature scheme v2 block Format Integrity-protected contents Rollback protections Verification APK signature scheme v2 verification JAR-signed APK verification (v1 scheme) 
+APK signature scheme v2 is a whole-file signature scheme that increases
+verification speed and strengthens integrity guarantees by
+detecting any changes to the protected parts of the APK.
+Signing using APK signature scheme v2 inserts an APK signing block into the APK file immediately
+before the ZIP Central Directory section. Inside the APK signing block, v2
+signatures and signer identity information are stored in an APK signature scheme v2 block .
+ Figure 1. APK before and after signing 
+APK signature scheme v2 was introduced in Android 7.0 (Nougat). To make
+a APK installable on Android 6.0 (Marshmallow) and older devices, the
+APK should be signed using JAR signing before being
+signed with the v2 scheme.
+ APK signing block 
+To maintain backward-compatibility with the v1 APK format, v2 and newer APK
+signatures are stored inside an APK signing block, a new container introduced to
+support APK signature scheme v2. In an APK file, the APK signing block is located
+immediately before the ZIP Central Directory, which is located at the end of the file.
+The block contains ID-value pairs wrapped in a way that makes it easier to
+locate the block in the APK. The v2 signature of the APK is stored as an ID-value
+pair with ID 0x7109871a.
+ Format 
+The format of the APK signing block is as follows (all numeric fields are
+little-endian):
+ size of block in bytes (excluding this field) (uint64) 
+ Sequence of uint64-length-prefixed ID-value pairs:
+ ID (uint32) 
+ value (variable-length: length of the pair - 4 bytes) 
+ size of block in bytes—same as the very first field (uint64) 
+ magic “APK Sig Block 42” (16 bytes) 
+APK is parsed by first finding the start of the ZIP Central Directory (by
+finding the ZIP End of Central Directory record at the end of the file, then
+reading the start offset of the Central Directory from the record). The
+ magic value provides a quick way to establish that what precedes
+Central Directory is likely the APK signing block. The size of
+block value then efficiently points to the start of the block in the
+file.
+ID-value pairs with unknown IDs should be ignored when interpreting the
+block.
+ APK signature scheme v2 block 
+APK is signed by one or more signers/identities, each represented by a signing
+key. This information is stored as an APK signature scheme v2 block. For each
+signer, the following information is stored:
+ (signature algorithm, digest, signature) tuples. The digest is stored to
+decouple signature verification from integrity checking of the APK’s contents. 
+ X.509 certificate chain representing the signer’s identity. 
+ Additional attributes as key-value pairs. 
+For each signer, the APK is verified using a supported signature from the
+provided list. Signatures with unknown signature algorithms are ignored. It is
+up to each implementation to choose which signature to use when multiple
+supported signatures are encountered. This enables the introduction of stronger
+signing methods in the future in a backward-compatible way. The suggested
+approach is to verify the strongest signature.
+ Format 
+APK signature scheme v2 block is stored inside the APK signing block under ID
+ 0x7109871a .
+The format of the APK signature scheme v2 block is as follows (all numeric
+values are little-endian, all length-prefixed fields use uint32 for length):
+ length-prefixed sequence of length-prefixed signer :
+ length-prefixed signed data :
+ length-prefixed sequence of length-prefixed digests :
+ signature algorithm ID (uint32) 
+ (length-prefixed) digest —see
+ Integrity-protected Contents 
+ length-prefixed sequence of X.509 certificates :
+ length-prefixed X.509 certificate (ASN.1 DER form) 
+ length-prefixed sequence of length-prefixed additional attributes :
+ ID (uint32) 
+ value (variable-length: length of the additional
+ attribute - 4 bytes) 
+ length-prefixed sequence of length-prefixed signatures :
+ signature algorithm ID (uint32) 
+ length-prefixed signature over signed data 
+ length-prefixed public key (SubjectPublicKeyInfo, ASN.1 DER form) 
+ Signature algorithm IDs 
+ 0x0101—RSASSA-PSS with SHA2-256 digest, SHA2-256 MGF1, 32 bytes of salt,
+ trailer: 0xbc 
+ 0x0102—RSASSA-PSS with SHA2-512 digest, SHA2-512 MGF1, 64 bytes of salt,
+ trailer: 0xbc 
+ 0x0103—RSASSA-PKCS1-v1_5 with SHA2-256 digest. This is for build systems
+ which require deterministic signatures. 
+ 0x0104—RSASSA-PKCS1-v1_5 with SHA2-512 digest. This is for build systems
+ which require deterministic signatures. 
+ 0x0201—ECDSA with SHA2-256 digest 
+ 0x0202—ECDSA with SHA2-512 digest 
+ 0x0301—DSA with SHA2-256 digest 
+All of the above signature algorithms are supported by the Android platform.
+Signing tools can support a subset of the algorithms.
+ Supported keys sizes and EC curves: 
+ RSA: 1024, 2048, 4096, 8192, 16384 
+ EC: NIST P-256, P-384, P-521 
+ DSA: 1024, 2048, 3072 
+ Integrity-protected contents 
+For the purposes of protecting APK contents, an APK consists of four sections:
+ Contents of ZIP entries (from offset 0 until the start of APK signing block) 
+ APK signing block 
+ ZIP Central Directory 
+ ZIP End of Central Directory 
+ Figure 2. APK sections after signing 
+APK signature scheme v2 protects the integrity of sections 1, 3, 4, and the
+ signed data blocks of the APK signature scheme v2 block contained
+inside section 2.
+The integrity of sections 1, 3, and 4 is protected by one or more digests of
+their contents stored in signed data blocks which are, in
+turn, protected by one or more signatures.
+The digest over sections 1, 3, and 4 is computed as follows, similar to a
+two-level Merkle tree .
+Each section is split into consecutive 1 MB (2 20 bytes) chunks. The last chunk
+in each section might be shorter. The digest of each chunk is computed over the
+concatenation of byte 0xa5 , the chunk's length in bytes
+(little-endian uint32), and the chunk's contents. The top-level digest is
+computed over the concatenation of byte 0x5a , the number of chunks
+(little-endian uint32), and the concatenation of digests of the chunks in the
+order the chunks appear in the APK. The digest is computed in chunked fashion to
+enable to speed up the computation by parallelizing it.
+ Figure 3. APK digest 
+Protection of section 4 (ZIP End of Central Directory) is complicated by the
+section containing the offset of ZIP Central Directory. The offset changes when
+the size of the APK signing block changes, for instance, when a new signature is
+added. Thus, when computing digest over the ZIP End of Central Directory, the
+field containing the offset of ZIP Central Directory must be treated as
+containing the offset of the APK signing block.
+ Rollback protections 
+An attacker could attempt to have a v2-signed APK verified as a v1-signed APK on
+Android platforms that support verifying v2-signed APK. To mitigate this attack,
+v2-signed APKs that are also v1-signed must contain an X-Android-APK-Signed
+attribute in the main section of their META-INF/*.SF files. The value of the
+attribute is a comma-separated set of APK signature scheme IDs (the ID of this
+scheme is 2). When verifying the v1 signature, APK verifier is required to
+reject APKs which do not have a signature for the APK signature scheme the
+verifier prefers from this set (e.g., v2 scheme). This protection relies on the
+fact that contents META-INF/*.SF files are protected by v1 signatures. See the
+section on
+ JAR signed APK verification .
+An attacker could attempt to strip stronger signatures from the APK Signature
+Scheme v2 block. To mitigate this attack, the list of signature algorithm IDs
+with which the APK was being signed is stored in the signed data 
+block which is protected by each signature.
+ Verification 
+ In Android 7.0 and later, APKs can be verified according to the APK
+signature scheme v2+ or JAR signing (v1 scheme). Older platforms ignore v2 signatures
+and only verify v1 signatures.
+ Figure 4. APK signature verification
+process (new steps in red) 
+ APK signature scheme v2 verification 
+ Locate the APK signing block and verify that:
+ Two size fields of APK signing block contain the same value. 
+ ZIP Central Directory is immediately followed by ZIP End of Central
+ Directory record. 
+ ZIP End of Central Directory is not followed by more data. 
+ Locate the first APK signature scheme v2 block inside the APK signing block.
+ If the v2 block if present, proceed to step 3. Otherwise, fall back to
+ verifying the APK
+ using v1 scheme . 
+ For each signer in the APK signature scheme v2 block:
+ Choose the strongest supported signature algorithm ID from
+ signatures . The strength ordering is up to each
+ implementation/platform version. 
+ Verify the corresponding signature from
+ signatures against signed data using public
+ key . (It is now safe to parse signed data .) 
+ Verify that the ordered list of signature algorithm IDs in
+ digests and signatures is identical. (This is to
+ prevent signature stripping/addition.) 
+ Compute the digest of APK
+ contents using the same digest algorithm as the digest algorithm used by the
+ signature algorithm. 
+ Verify that the computed digest is identical to the corresponding
+ digest from digests . 
+ Verify that SubjectPublicKeyInfo of the first certificate of
+ certificates is identical to public key . 
+ Verification succeeds if at least one signer was found and
+ step 3 succeeded for each found signer . 
+ Note : APK must not be verified using
+the v1 scheme if a failure occurs in step 3 or 4.
+ JAR-signed APK verification (v1 scheme) 
+The JAR-signed APK is a
+ standard
+signed JAR , which must contain exactly the entries listed in
+META-INF/MANIFEST.MF and where all entries must be signed by the same set of
+signers. Its integrity is verified as follows:
+ Each signer is represented by a META-INF/<signer>.SF and
+ META-INF/<signer>.(RSA|DSA|EC) JAR entry. 
+ <signer>.(RSA|DSA|EC) is a
+ PKCS #7 CMS ContentInfo
+ with SignedData structure whose signature is verified over the
+ <signer>.SF file. 
+ <signer>.SF file contains a whole-file digest of the META-INF/MANIFEST.MF
+ and digests of each section of META-INF/MANIFEST.MF. The whole-file digest of
+ the MANIFEST.MF is verified. If that fails, the digest of each MANIFEST.MF
+ section is verified instead. 
+ META-INF/MANIFEST.MF contains, for each integrity-protected JAR entry, a
+ correspondingly named section containing the digest of the entry’s uncompressed
+ contents. All these digests are verified. 
+ APK verification fails if the APK contains JAR entries which are not listed
+ in the MANIFEST.MF and are not part of JAR signature. 
+The protection chain is thus <signer>.(RSA|DSA|EC) -> <signer>.SF -> MANIFEST.MF
+-> contents of each integrity-protected JAR entry.
+ Was this helpful? 
+ Content and code samples on this page are subject to the licenses described in the Content License . Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. 
+ Last updated 2026-09-30 UTC. 
+ [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-09-30 UTC."],[],[]]
+ Build 
+ Android repository
+ Requirements
+ Downloading
+ Preview binaries
+ Factory images
+ Driver binaries
+ Connect 
+ @Android on X
+ @AndroidDev on X
+ Android Blog
+ Google Security Blog
+ Platform on Google Groups
+ Building on Google Groups
+ Porting on Google Groups
+ Get help 
+ Android Help Center
+ Pixel Help Center
+ www.android.com
+ Google Mobile Services
+ Stack Overflow
+ Issue Tracker
+ About Android
+ Community
+ Legal
+ License
+ Privacy
+ Site feedback
+ Manage cookies
+ English 
+ Deutsch 
+ Español – América Latina 
+ Français 
+ Indonesia 
+ Italiano 
+ Polski 
+ Português – Brasil 
+ Tiếng Việt 
+ Türkçe 
+ Русский 
+ עברית 
+ العربيّة 
+ فارسی 
+ हिंदी 
+ বাংলা 
+ ภาษาไทย 
+ 中文 – 简体 
+ 中文 – 繁體 
+ 日本語 
+ 한국어 
+ 

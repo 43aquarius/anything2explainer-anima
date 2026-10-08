@@ -1,0 +1,1019 @@
+ 
+
+ zipalign  |  Android Studio  |  Android Developers 
+
+ Skip to main content
+
+ Essentials
+
+ Build AI experiences
+
+ Build AI-powered Android apps with Gemini APIs and more.
+
+ Get started
+
+ Get started
+
+ Create your first app. Use Compose for UI and adaptive app development to support multiple device form factors.
+
+ Hello, world!
+
+ Developer Verification
+
+ Adaptive apps
+
+ Compose for UI
+
+ AI-powered IDE
+
+ Training
+
+ Monetization with Play ↗️
+
+ Optimize by form factor
+
+ Build apps that optimize the user experience on phones, tablets, foldables, cars, XR, and more.
+
+ Phones, tablets, foldables
+
+ Android for Cars
+
+ Android TV
+
+ Android XR
+
+ Googlebook
+
+ ChromeOS
+
+ Wear OS
+
+ Build by category
+
+ Learn to build for your use case by following Google's prescriptive and opinionated guidance.
+
+ Games
+
+ Camera & media
+
+ Social & messaging
+
+ Health & fitness
+
+ Productivity
+
+ Enterprise apps
+
+ Get the latest
+
+ Stay in touch with the latest releases throughout the year, join our preview programs, and give us your feedback.
+
+ Latest updates
+
+ Experimental updates
+
+ Android Studio preview
+
+ Jetpack & Compose libraries
+
+ Wear OS releases
+
+ Privacy Sandbox ↗️
+
+ Develop
+
+ Gemini in Android Studio
+
+ Your AI development companion for Android development.
+
+ Learn more
+
+ Get Android Studio
+
+ Core areas
+
+ Get the samples and docs for the features you need.
+
+ Samples
+
+ Multidevice support
+
+ User interfaces
+
+ Background work
+
+ Data and files
+
+ Connectivity
+
+ All core areas ⤵️
+
+ Tools and workflow
+
+ Use the IDE to write and build your app, or create your own pipeline.
+
+ Write and debug code
+
+ Build projects
+
+ Test your app
+
+ Performance
+
+ Command-line tools
+
+ Gradle plugin API
+
+ Android Bench
+
+ Device tech
+
+ Write code for form factors. Connect devices and share data.
+
+ Phones, tablets, foldables
+
+ Googlebook
+
+ ChromeOS
+
+ Android for Cars
+
+ Android TV
+
+ Android XR
+
+ Wear OS
+
+ Android Health
+
+ Better Together
+
+ All devices ⤵️
+
+ Libraries
+
+ Browse API reference documentation with all the details.
+
+ Android platform
+
+ Jetpack libraries
+
+ Compose libraries
+
+ Google Play services ↗️
+
+ Google Play SDK index ↗️
+
+ More 
+
+ Design & Plan
+
+ Excellent Experiences
+
+ Build the best experiences for your best users.
+
+ Learn more
+
+ UI Design
+
+ Design a beautiful user interface using Android best practices.
+
+ Design for Android
+
+ Mobile
+
+ Desktop experiences
+
+ XR Headsets & XR Glasses
+
+ AI Glasses
+
+ Widgets
+
+ Wear OS
+
+ Android TV
+
+ Android for Cars
+
+ Architecture
+
+ Design robust, testable, and maintainable app logic and services.
+
+ Introduction
+
+ Libraries
+
+ Navigation
+
+ Modularization
+
+ Testing
+
+ Kotlin Multiplatform
+
+ Quality
+
+ Plan for app quality and align with Play store guidelines.
+
+ Overview
+
+ Core value
+
+ User experience
+
+ Accessibility
+
+ Technical quality
+
+ Excellent Experiences
+
+ Security
+
+ Safeguard users against threats and ensure a secure Android experience.
+
+ Overview
+
+ Privacy
+
+ Permissions
+
+ Identity
+
+ Fraud prevention
+
+ Google Play
+
+ Play Console
+
+ Publish your app or game and grow your business on Google Play.
+
+ Go to Play Console
+
+ Learn more ↗️
+
+ Fundamentals
+
+ Learn how to engage users, monitize, and secure your app.
+
+ Play Monetization
+
+ Play Integrity
+
+ Android vitals
+
+ Play Policies
+
+ Play Programs ↗️
+
+ Games Dev Center
+
+ Develop and deliver games. Get tools, downloads, and samples.
+
+ Overview
+
+ Play Asset Delivery
+
+ Play Games Services
+
+ Play Games on PC
+
+ Level Up guidelines
+
+ All Play guides ⤵️
+
+ Libraries
+
+ Browse API reference documentation with all the details.
+
+ Play Feature Delivery
+
+ Play In-app Updates
+
+ Play In-app Reviews
+
+ Play Install Referrer
+
+ Google Play services ↗️
+
+ Google Play SDK index ↗️
+
+ All Play libraries ⤵️
+
+ Tools & resources
+
+ Tools for publishing, promoting, and managing your app.
+
+ Android App Bundles
+
+ Brand & marketing
+
+ Play Console APIs ↗️
+
+ Blog
+
+ the Android Developer's Blog
+
+ Read the latest
+
+ Explore the authors →
+
+ Explore categories
+
+ Product News
+
+ Stay in the loop with the latest updates, feature releases, and behind-the-scenes looks at how we’re evolving.
+
+ Community
+
+ Discover stories from our users, spotlight features, and the collaborative projects that bring us all together.
+
+ How-tos
+
+ From quick tips to deep-dive tutorials, these step-by-step guides are designed to help you work smarter and faster.
+
+ Case Studies
+
+ Real-world results from real-world users. Explore how different teams use our tools to achieve their goals.
+
+ Events & Programs
+
+ Get the details on upcoming webinars, workshops, meetups, and special initiatives designed to help you grow.
+
+ Documentation
+
+ Access detailed manuals, API references, and technical specifications to help you build and integrate with confidence.
+
+ / 
+
+ English 
+
+ Deutsch 
+
+ Español – América Latina 
+
+ Français 
+
+ Indonesia 
+
+ Italiano 
+
+ Polski 
+
+ Português – Brasil 
+
+ Tiếng Việt 
+
+ Türkçe 
+
+ Русский 
+
+ עברית 
+
+ العربيّة 
+
+ فارسی 
+
+ हिंदी 
+
+ বাংলা 
+
+ ภาษาไทย 
+
+ 中文 – 简体 
+
+ 中文 – 繁體 
+
+ 日本語 
+
+ 한국어 
+
+ Android Studio
+
+ Sign in
+
+ Android Studio
+
+ Download
+
+ IDE guides
+
+ Android Studio AI agent
+
+ Agent tools and resources
+
+ Android Studio preview
+
+ SDK tools guides
+
+ More 
+
+ Gradle build guides
+
+ Essentials
+
+ More
+
+ Design & Plan
+
+ More
+
+ Develop
+
+ More
+
+ Download
+
+ IDE guides
+
+ Android Studio AI agent
+
+ Agent tools and resources
+
+ Android Studio preview
+
+ Gradle build guides
+
+ SDK tools guides
+
+ Google Play
+
+ More
+
+ Blog
+
+ More
+
+ Android Studio
+
+ What's new in SDK Tools 
+
+ SDK build tools release notes 
+ SDK command line tools release notes 
+ SDK platform release notes 
+ SDK platform tools release notes 
+
+ Command line tools 
+
+ Overview 
+ aapt2 
+ adb 
+ android ⍈ 
+ apkanalyzer 
+ apksigner 
+ avdmanager 
+ bmgr 
+ bundletool 
+ d8 
+ dmtracedump 
+ dumpsys 
+ etc1tool 
+ jetifier-standalone 
+ logcat 
+ mksdcard 
+ retrace 
+ sdkmanager 
+ sqlite3 
+ systrace ⍈ 
+ perfetto 
+ zipalign 
+ Environment variables 
+
+ Build AI experiences
+
+ Get started
+
+ Get started
+
+ Hello, world!
+
+ Developer Verification
+
+ Adaptive apps
+
+ Compose for UI
+
+ AI-powered IDE
+
+ Training
+
+ Monetization with Play ↗️
+
+ Optimize by form factor
+
+ Phones, tablets, foldables
+
+ Android for Cars
+
+ Android TV
+
+ Android XR
+
+ Googlebook
+
+ ChromeOS
+
+ Wear OS
+
+ Build by category
+
+ Games
+
+ Camera & media
+
+ Social & messaging
+
+ Health & fitness
+
+ Productivity
+
+ Enterprise apps
+
+ Get the latest
+
+ Latest updates
+
+ Experimental updates
+
+ Android Studio preview
+
+ Jetpack & Compose libraries
+
+ Wear OS releases
+
+ Privacy Sandbox ↗️
+
+ Excellent Experiences
+
+ Learn more
+
+ UI Design
+
+ Design for Android
+
+ Mobile
+
+ Desktop experiences
+
+ XR Headsets & XR Glasses
+
+ AI Glasses
+
+ Widgets
+
+ Wear OS
+
+ Android TV
+
+ Android for Cars
+
+ Architecture
+
+ Introduction
+
+ Libraries
+
+ Navigation
+
+ Modularization
+
+ Testing
+
+ Kotlin Multiplatform
+
+ Quality
+
+ Overview
+
+ Core value
+
+ User experience
+
+ Accessibility
+
+ Technical quality
+
+ Excellent Experiences
+
+ Security
+
+ Overview
+
+ Privacy
+
+ Permissions
+
+ Identity
+
+ Fraud prevention
+
+ Gemini in Android Studio
+
+ Learn more
+
+ Get Android Studio
+
+ Core areas
+
+ Samples
+
+ Multidevice support
+
+ User interfaces
+
+ Background work
+
+ Data and files
+
+ Connectivity
+
+ All core areas ⤵️
+
+ Tools and workflow
+
+ Write and debug code
+
+ Build projects
+
+ Test your app
+
+ Performance
+
+ Command-line tools
+
+ Gradle plugin API
+
+ Android Bench
+
+ Device tech
+
+ Phones, tablets, foldables
+
+ Googlebook
+
+ ChromeOS
+
+ Android for Cars
+
+ Android TV
+
+ Android XR
+
+ Wear OS
+
+ Android Health
+
+ Better Together
+
+ All devices ⤵️
+
+ Libraries
+
+ Android platform
+
+ Jetpack libraries
+
+ Compose libraries
+
+ Google Play services ↗️
+
+ Google Play SDK index ↗️
+
+ Play Console
+
+ Go to Play Console
+
+ Learn more ↗️
+
+ Fundamentals
+
+ Play Monetization
+
+ Play Integrity
+
+ Android vitals
+
+ Play Policies
+
+ Play Programs ↗️
+
+ Games Dev Center
+
+ Overview
+
+ Play Asset Delivery
+
+ Play Games Services
+
+ Play Games on PC
+
+ Level Up guidelines
+
+ All Play guides ⤵️
+
+ Libraries
+
+ Play Feature Delivery
+
+ Play In-app Updates
+
+ Play In-app Reviews
+
+ Play Install Referrer
+
+ Google Play services ↗️
+
+ Google Play SDK index ↗️
+
+ All Play libraries ⤵️
+
+ Tools & resources
+
+ Android App Bundles
+
+ Brand & marketing
+
+ Play Console APIs ↗️
+
+ the Android Developer's Blog
+
+ Read the latest
+
+ Explore the authors →
+
+ Explore categories
+
+ Product News
+
+ Community
+
+ How-tos
+
+ Case Studies
+
+ Events & Programs
+
+ Documentation
+
+ On this page 
+ Usage Options 
+
+ Android Developers
+
+ Develop
+
+ Android Studio
+
+ SDK tools guides
+
+ Was this helpful?
+
+ zipalign 
+
+ Stay organized with collections
+
+ Save and categorize content based on your preferences. 
+
+ On this page 
+ Usage Options 
+
+ zipalign is a zip archive alignment tool that helps ensure that all uncompressed files
+in the archive
+are aligned relative to the start of the file. This lets the files be accessed directly via
+ mmap(2) 
+ , removing the need to copy this data in RAM and reducing your app's memory usage.
+
+ Use zipalign to optimize your APK file before distributing it to
+end users. If you build using Android Studio, which uses the Android Gradle plugin (AGP), this is
+done automatically. In this case, you should still use zipalign to verify that the APK
+is aligned, but you don't need to align it. This documentation is mainly for maintainers of
+custom build systems.
+
+ Caution: You must use zipalign at a specific point in
+ the build process. That point depends on which app-signing tool you use:
+
+ If you use apksigner , zipalign 
+ must be used before the APK file has been signed. If you sign your
+ APK using apksigner and make further changes to the APK, its signature is invalidated.
+
+ If you use jarsigner 
+ (not recommended), zipalign must be used after the APK file has
+ been signed.
+
+ To achieve alignment, zipalign alters the size of the "extra" field in the zip Local File Header 
+sections. This process can also alter existing data in the "extra" fields.
+
+ Usage 
+
+ If your APK contains shared libraries ( .so files), use -P 16 
+to ensure that they're aligned to a 16KiB page boundary suitable for mmap(2) 
+in both 16KiB and 4KiB devices. For other files, whose alignment is determined by the
+mandatory alignment argument to zipalign , should be aligned to 4 bytes
+on both 32-bit and 64-bit systems.
+
+ To align infile.apk and save it as outfile.apk :
+
+ zipalign -P 16 -f -v 4 infile.apk outfile.apk 
+
+ To confirm the alignment of existing.apk , use the following command.
+
+ zipalign -c -P 16 -v 4 existing.apk 
+
+ Options
+
+ The following table lists the available zipalign options:
+
+ Option 
+ Description 
+
+ -c 
+ Checks alignment only (does not modify file). 
+
+ -f 
+ Overwrites existing output file. 
+
+ -h 
+ Displays tool help. 
+
+ -P <pagesize_kb> 
+ aligns uncompressed . so files to the specified page size in KiB. Valid options
+ for <pagesize_ kb> are 4, 16, and 64. 
+
+ -p 
+ 4KiB page-aligns uncompressed . so files. It is recommended to use
+ -P 16 instead, as -p is deprecated. 
+
+ -v 
+ Verbose output. 
+
+ -z 
+ Recompresses using Zopfli. 
+
+ Was this helpful?
+
+ Content and code samples on this page are subject to the licenses described in the Content License . Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates.
+
+ Last updated 2024-08-15 UTC.
+
+ [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2024-08-15 UTC."],[],[]]
+
+ X
+
+ Follow @AndroidDev on X
+
+ YouTube
+
+ Check out Android Developers on YouTube
+
+ LinkedIn
+
+ Connect with the Android Developers community on LinkedIn
+
+ More Android
+
+ Android
+
+ Android for Enterprise
+
+ Security
+
+ Source
+
+ News
+
+ Blog
+
+ Podcasts
+
+ Discover
+
+ Gaming
+
+ Machine Learning
+
+ Health & Fitness
+
+ Camera & Media
+
+ Privacy
+
+ 5G
+
+ Android Devices
+
+ Large screens
+
+ Wear OS
+
+ ChromeOS devices
+
+ Android for cars
+
+ Android TV
+
+ Releases
+
+ Android 17
+
+ Android 16
+
+ Android 15
+
+ Android 14
+
+ Android 13
+
+ Android 12
+
+ Android 11
+
+ Documentation and Downloads
+
+ Android Studio guide
+
+ Developers guides
+
+ API reference
+
+ Download Studio
+
+ Android NDK
+
+ Support
+
+ Report platform bug
+
+ Report documentation bug
+
+ Google Play support
+
+ Join research studies
+
+ Android
+
+ Chrome
+
+ Firebase
+
+ Google Cloud Platform
+
+ All products
+
+ Privacy
+
+ License
+
+ Brand guidelines
+
+ Manage cookies
+
+ Get news and tips by email 
+
+ Subscribe
+
+ English 
+
+ Deutsch 
+
+ Español – América Latina 
+
+ Français 
+
+ Indonesia 
+
+ Italiano 
+
+ Polski 
+
+ Português – Brasil 
+
+ Tiếng Việt 
+
+ Türkçe 
+
+ Русский 
+
+ עברית 
+
+ العربيّة 
+
+ فارسی 
+
+ हिंदी 
+
+ বাংলা 
+
+ ภาษาไทย 
+
+ 中文 – 简体 
+
+ 中文 – 繁體 
+
+ 日本語 
+
+ 한국어 
+
+ Help us improve the Android Developer experience by taking a survey.
+ No, thanks Take survey 
+
+ 

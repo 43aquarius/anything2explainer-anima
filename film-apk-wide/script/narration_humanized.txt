@@ -1,0 +1,55 @@
+# CHAPTER 1 The Trick
+
+You just downloaded a chat app. One hundred and twenty megabytes. Your thumb is hovering over Install.
+
+But before you tap that button, try something. Rename the file. apk to zip.
+
+It opens. Every file is right there. A manifest. Code. Resources. Signatures. Every Android app on Earth ships as a ZIP archive.
+
+In 2008, Google needed a way to hand apps to a brand-new phone operating system. They picked a format from 1989.
+
+Why would the world's biggest mobile OS wrap its apps in a DOS-era compression format? And what actually happens in the ten seconds after you tap Install?
+
+# CHAPTER 2 The Box
+
+1989. Phil Katz, PKWARE, Milwaukee. He had just been sued by a rival archiver, and his answer to the lawsuit was a new format: ZIP. His initials are still in the file. Open any zip in a hex editor and the first two bytes are P, K. Fifty, 4B. Every APK on your phone starts with them.
+
+A zip is not really about compression, though. It is an index. Local file headers, a central directory, and at the very end a record that says where everything is.
+
+That index is why Android picked it. The system can open one file inside the package without unpacking the rest. The tooling was everywhere, too — twenty years of it by 2008. And Android was built on Java, and a Java app already shipped as a jar, which is a zip with a manifest inside.
+
+One more twist. Not everything in an APK is compressed. resources.arsc has to be stored uncompressed and aligned to four-byte boundaries, so Android can map it straight into memory. The box is smarter than it looks.
+
+# CHAPTER 3 The Seal
+
+So you tap Install. The phone is holding a zip from the internet — a hundred and twenty megabytes from a stranger.
+
+First question: has anyone tampered with it?
+
+The old scheme, v1, was JAR signing from the Java world: a signed receipt for every file inside the box. To check it, Android had to walk every entry and hash it, one at a time.
+
+Android 7.0 added scheme v2, and it works like a wax seal around the whole package. The signing block sits between the files and the central directory, and the signature covers the entire APK. Change one byte anywhere and the install dies.
+
+The key is the developer's identity. There is no certificate authority. You sign your own app, and only the same key can ship an update.
+
+Verification passes. Now Android reads the label. The manifest is binary XML — name, version, every permission the app wants, every screen it can show.
+
+The package gets copied to /data/app. Then the real magic: dex2oat. The runtime compiles classes.dex into machine code for your exact CPU. That is the optimizing bar you see when your phone updates itself — every app on the device, recompiled.
+
+A single dex file tops out at 65,536 methods. Big apps just carry more of them.
+
+Finally, a sandbox: /data/data, one Linux user per app. The icon appears. Ten seconds, done.
+
+And here is the thing — the app never got unzipped. The zip is still sitting there in /data/app, being read in pieces.
+
+# CHAPTER 4 Still a Zip
+
+In 2018, Google announced the App Bundle. Since August 2021, every new app on the Play Store has to use one.
+
+You no longer download one universal package with every language and every CPU architecture inside. Play assembles the splits for your exact device and signs them on the way out. Your phone downloads only its own pieces.
+
+base.apk plus config APKs — still APKs. Still signed zips. The format that started as shareware on a BBS in 1989 now ships the apps of billions of phones.
+
+Open any app in /data/app on a rooted phone and check. Two bytes, right at the front. P, K.
+
+Every app is a zip you can read.

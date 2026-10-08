@@ -1,0 +1,19 @@
+# CHAPTER 1 One Tap
+
+Rename any .apk to .zip — it just opens.
+
+Every Android app is a ZIP archive. The format comes from 1989. A programmer named Phil Katz invented it after getting sued, and his initials, P, K, are still the first two bytes of the file.
+
+When you hit Install, the phone checks the wax seal — one signature over the entire file. Flip one byte, the install dies.
+
+It reads the label — a binary manifest: permissions, screens, version.
+
+Then it compiles the code into machine language for your exact CPU.
+
+And builds a sandbox — one hidden Linux user per app.
+
+The zip itself? Never unzipped. It just sits in /data/app, being read in pieces.
+
+Google's app bundles from 2021? Still zips underneath.
+
+Every app is a zip you can read.

@@ -1,0 +1,538 @@
+ 
+ Android Runtime - Wikipedia 
+ Jump to content 
+ Main menu 
+ Main menu 
+ move to sidebar 
+ hide 
+ Navigation
+ Main page Contents Current events Random article About Wikipedia Contact us 
+ Contribute
+ Help Learn to edit Community portal Recent changes Upload file Special pages 
+ Search 
+ Search 
+ Appearance 
+ Donate 
+ Create account 
+ Log in 
+ Personal tools 
+ Donate 
+ Create account 
+ Log in 
+ Contents 
+ move to sidebar 
+ hide 
+ (Top) 
+ 1 
+ Overview 
+ 2 
+ History 
+ 3 
+ See also 
+ 4 
+ References 
+ 5 
+ External links 
+ Toggle the table of contents 
+ Android Runtime 
+ 20 languages 
+ العربية Català Čeština Deutsch Español فارسی Suomi Français Magyar Italiano 日本語 한국어 മലയാളം Polski Português Русский Slovenčina Türkçe Tiếng Việt 中文 
+ Edit links 
+ Article 
+ Talk 
+ English 
+ Read 
+ Edit 
+ View history 
+ Tools 
+ Tools 
+ move to sidebar 
+ hide 
+ Actions
+ Read 
+ Edit 
+ View history 
+ General
+ What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser 
+ Print/export
+ Download as PDF Printable version 
+ In other projects
+ Wikimedia Commons Wikidata item 
+ Appearance 
+ move to sidebar 
+ hide 
+ From Wikipedia, the free encyclopedia 
+ (Redirected from Android runtime ) 
+ Runtime environment used by Android 
+ ART Developer Google Written in C++ Operating system Android Platform ARM64 RISC-V x86 Included with Android Predecessor Dalvik Type Runtime environment License Apache License 2.0 [ 1 ] Website source .android .com /docs /core /runtime   Repository android .googlesource .com /platform /art / 
+ Program execution 
+General concepts 
+ Code 
+ Translation 
+ Compiler 
+ Compile time 
+ Optimizing compiler 
+ Linking 
+ Execution 
+ Runtime system 
+ Executable 
+ Interpreter 
+ Virtual machine 
+ Intermediate representation (IR) 
+Types of code 
+ Source code 
+ Object code 
+ Bytecode 
+ Machine code 
+ Microcode 
+Compilation strategies 
+ Ahead-of-time (AOT) 
+ Just-in-time (JIT)
+ Tracing just-in-time 
+ Compile and go system 
+ Precompilation 
+ Transcompilation 
+ Recompilation 
+ Meta-tracing 
+Notable runtimes 
+ Android Runtime (ART) 
+ BEAM (Erlang) 
+ Common Language Runtime (CLR) and   Mono 
+ CPython and   PyPy 
+ crt0 ( C target-specific initializer) 
+ Java virtual machine (JVM) 
+ LuaJIT 
+ Objective-C and   Swift 's 
+ V8 and   Node.js 
+ Zend Engine (PHP) 
+Notable compilers & toolchains 
+ GNU Compiler Collection (GCC) 
+ LLVM and   Clang 
+ MSVC 
+ Glasgow Haskell Compiler (GHC) 
+ v t e 
+ Android Runtime ( ART ) is an application runtime environment used by the Android operating system . Replacing Dalvik , the process virtual machine originally used by Android, ART performs the translation of some of the application's bytecode into native instructions that are later executed by the device's runtime environment. [ 2 ] 
+ Overview [ edit ] 
+ A comparison of Dalvik and ART architectures 
+ Android 2.2 "Froyo" brought trace-based just-in-time (JIT) compilation into Dalvik, optimizing the execution of applications by continually profiling applications each time they run and dynamically compiling frequently executed short segments of their bytecode into native machine code . While Dalvik interprets the rest of an application's bytecode, native execution of those short bytecode segments, called "traces", provides significant performance improvements. [ 3 ] [ 4 ] 
+ Unlike Dalvik, ART introduces the use of ahead-of-time (AOT) compilation by compiling the most performance-critical parts of applications (previously, the entire app) into native machine code upon their installation. This way, ART improves the overall execution efficiency and reduces power consumption, which results in improved battery autonomy on mobile devices . At the same time, ART brings faster execution of applications, improved memory allocation and garbage collection (GC) mechanisms, new applications debugging features, and more accurate high-level profiling of applications. [ 2 ] [ 5 ] [ 6 ] 
+ To maintain backward compatibility , ART uses the same input bytecode as Dalvik, supplied through standard .dex files as part of APK files , while the .odex files are replaced with Executable and Linkable Format (ELF) executables. Once an application is compiled by using ART's on-device dex2oat utility, it is run from the compiled ELF executable; as a result, ART eliminates various application execution overheads associated with Dalvik's interpretation and trace-based JIT compilation. 
+ Initially, a disadvantage of ART was that additional time was required for compilation when an application was installed, and applications took up slightly more secondary storage (usually flash memory ) to store the compiled code. [ 2 ] [ 5 ] [ 6 ] Long AOT compilation became especially problematic when monthly security updates became the norm, locking users out of the OS for a long time after each update. 
+ To improve on this, a hybrid approach was introduced in Android 7.0 (Nougat). Newly installed apps run using JIT compilation, and get profiled by the runtime. When the device is idle and charging, the runtime performs AOT compilation on the most frequently used ("hot") code. [ 7 ] 
+ History [ edit ] 
+ Android 4.4 "KitKat" introduced a technology preview of ART as an alternative runtime environment to Dalvik, which remained the default virtual machine. [ 8 ] [ 9 ] In the subsequent major Android release, Android 5.0 "Lollipop" , Dalvik was entirely replaced by ART. 
+ Android 7.0 "Nougat" turned the ART from a pure AOT to a hybrid JIT/AOT solution, while switching its Java Runtime Environment from the discontinued Apache Harmony to OpenJDK , introducing a JIT compiler with code profiling. [ 10 ] The JIT compiler complements ART's AOT compiler, helping to improve runtime performance and save storage space by identifying "hot code" (code which is frequently used, runs on the UI thread or affects startup time), which the AOT compiler compiles to machine code while the device is idle and charging. Less-frequently used code relies on JIT compilation. [ 11 ] [ 12 ] 
+ Android 9 "Pie" reduced the amount of storage used by APKs by using compressed bytecode files, and profiler data can be uploaded to Google Play servers to be bundled with apps when downloaded by users with a similar device, which shortens download time from Google Play by up to 40%. Google Play cloud profiles allow apps to be optimized on installation, which helps avoid the initial performance issues present on Android 7.0 to 8.1. [ 13 ] 
+ In July 2021, [ 14 ] the concept of baseline profiles was introduced. Baseline profiles are ART profiles that define methods and classes which should undergo AOT compilation from an app's first launch, and are compatible with Android 7.0 and later. They provide similar functionality to Android 9's Google Play cloud profiles when they are not available and automatically merge with cloud profiles when they are available. Baseline profiles are included with releases of AndroidX libraries and Jetpack Compose . [ 15 ] 
+ ART was updated with a new garbage collector (GC) utilizing the Linux userfaultfd system call in Android 13 . [ 16 ] [ 17 ] [ 18 ] It reduces memory pressure, compiled code size and jank , and prevents the risk of killing apps because of low memory during garbage collection . [ 18 ] Other changes also improve app startup, reduce jank and improve performance. [ 18 ] Because of the Mainline project, Android 12 's ART will also be updated. [ 16 ] 
+ See also [ edit ] 
+ Computer programming portal 
+ Android software development   – various concepts and software development utilities used for the creation of Android applications 
+ Android version history   – a history and descriptions of Android releases, listed primarily by their official API levels 
+ Comparison of application virtualization software   – various portable and scripting language virtual machines 
+ Virtual machine   – an emulation of a particular computer system, with different degrees of implemented functionality 
+ References [ edit ] 
+ ↑ "NOTICE - platform/art - Git at Google" . Archived from the original on March 4, 2023 . Retrieved June 25, 2021 . 
+ 1 2 3 Andrei Frumusanu (July 1, 2014). "A Closer Look at Android RunTime (ART) in Android L" . AnandTech . Archived from the original on July 5, 2014 . Retrieved July 5, 2014 . 
+ ↑ Ben Cheng; Bill Buzbee (May 2010). "A JIT Compiler for Android's Dalvik VM" (PDF) . android-app-developer.co.uk . Google . pp.   5– 14. Archived from the original (PDF) on November 6, 2015 . Retrieved March 18, 2015 . 
+ ↑ Phil Nickinson (May 26, 2010). "Google Android developer explains more about Dalvik and the JIT in Froyo" . androidcentral.com . Archived from the original on April 8, 2017 . Retrieved July 8, 2014 . 
+ 1 2 "Android Developers: ART and Dalvik" . source.android.com . March 9, 2015. Archived from the original on March 15, 2015 . Retrieved March 18, 2015 . 
+ 1 2 "Android Developers: Configuring ART – How ART works" . source.android.com . March 9, 2015 . Retrieved March 18, 2015 . 
+ ↑ Amadeo, Ron (August 22, 2016). "Android 7.0 Nougat review—Do more on your gigantic smartphone" . Ars Technica . Retrieved April 5, 2023 . 
+ ↑ Sean Buckley (November 6, 2013). " 'ART' experiment in Android KitKat improves battery life and speeds up apps" . Engadget . Archived from the original on January 27, 2017 . Retrieved July 5, 2014 . 
+ ↑ Daniel P. (November 7, 2013). "Experimental Google ART runtime in Android KitKat can bring twice faster app executions" . phonearena.com . Retrieved July 5, 2014 . {{ cite web }} : CS1 maint: deprecated archival service ( link ) 
+ ↑ "Android 7.0 for Developers" . Android Developers . Retrieved March 22, 2021 . 
+ ↑ Amadeo, Ron (August 22, 2016). "Android 7.0 Nougat review—Do more on your gigantic smartphone" . Ars Technica . Retrieved April 5, 2023 . 
+ ↑ "Implementing ART Just-In-Time (JIT) Compiler" . source.android.com . January 22, 2017. Archived from the original on August 8, 2023 . Retrieved January 22, 2017 . 
+ ↑ Amadeo, Ron (September 13, 2018). "Android 9 Pie, thoroughly reviewed" . Ars Technica . Archived from the original on November 30, 2018 . Retrieved August 16, 2022 . 
+ ↑ "ProfileInstaller | Jetpack" . Android Developers . Archived from the original on August 8, 2023 . Retrieved July 5, 2023 . 
+ ↑ Semenova, Kateryna; Ravikumar, Rahul; Craik, Chris (January 28, 2022). "Improving App Performance with Baseline Profiles" . Android Developers Blog . Archived from the original on August 8, 2023 . Retrieved July 5, 2023 . 
+ 1 2 Gidra, Lokesh (May 12, 2022), What's new in app performance , archived from the original on August 16, 2022 , retrieved August 16, 2022 
+ ↑ Gidra, Lokesh; Boehm, Hans-J.; Fernandes, Joel (October 12, 2020). "Utilizing the Linux Userfaultfd System Call in a Compaction Phase of a Garbage Collection Process" . Defensive Publications Series . Archived from the original on August 16, 2022 . Retrieved August 16, 2022 . 
+ 1 2 3 "Android 13 is in AOSP!" . Android Developers Blog . Archived from the original on August 15, 2022 . Retrieved August 16, 2022 . 
+ External links [ edit ] 
+ Wikimedia Commons has media related to Android Runtime . 
+ Official website 
+ Android Basics 101: Understanding ART, the Android Runtime on YouTube , XDA Developers , February 12, 2014 
+ ART: Android's Runtime Evolved on YouTube , Google I/O 2014, by Anwar Ghuloum, Brian Carlstrom and Ian Rogers 
+ A JIT Compiler for Android's Dalvik VM on YouTube , Google I/O 2010, by Ben Cheng and Bill Buzbee 
+ Delivering Highly Optimized Android Runtime (ART) and Web Runtime on Intel Architecture , Intel , August 4, 2015, by Haitao Feng and Jonathan Ding 
+ Android   7.1 for Developers: Profile-guided JIT/AOT compilation , Android Developers, describes ART changes in Android 7.1 
+ v t e Android 
+ Android Go 
+ Comparison of products 
+ Software development Development tools Official 
+ Android Runtime (ART) 
+ Software development kit (SDK)
+ Android Debug Bridge (ADB) 
+ Fastboot 
+ Android App Bundle 
+ Android application package (APK) 
+ Bionic 
+ Dalvik 
+ Firebase 
+ Google Cloud Messaging (GCM) 
+ Firebase Cloud Messaging (FCM) 
+ Google Mobile Services (GMS) 
+ Jetpack Compose 
+ Native development kit (NDK) 
+ Open accessory development kit (OADK) 
+ RenderScript 
+ Skia 
+ AdMob 
+ Material Design 
+ Fonts 
+ Droid 
+ Roboto 
+ Noto 
+ Google Sans 
+ Google Developers 
+ Other 
+ OpenBinder 
+ Apache Harmony 
+ OpenJDK 
+ Gradle 
+ GSON 
+ Integrated development environments (IDE) 
+ Android Studio 
+ IntelliJ IDEA 
+ Eclipse 
+ Android Development Tools (ADT) 
+ MIT App Inventor 
+ Languages , databases 
+ Java 
+ Kotlin 
+ XML 
+ KML 
+ C 
+ C++ 
+ SQLite 
+ Augmented , virtual reality 
+ Android XR 
+ Cardboard 
+ Daydream 
+ Events, communities 
+ Google I/O 
+ Developer Challenge 
+ Developer Lab 
+ Android Open Source Project (AOSP) 
+ Releases 
+ Cupcake (1.5) 
+ Donut (1.6) 
+ Eclair (2.0–2.1) 
+ Froyo (2.2) 
+ Gingerbread (2.3) 
+ Honeycomb (3.x) 
+ Ice Cream Sandwich (4.0) 
+ Jelly Bean (4.1–4.3) 
+ KitKat (4.4) 
+ Lollipop (5.x) 
+ Marshmallow (6.x) 
+ Nougat (7.x) 
+ Oreo (8.x) 
+ Pie (9) 
+ 10 
+ 11 
+ 12 
+ 13 
+ 14 
+ 15 
+ 16 
+ 17 
+ Derivatives 
+ Android Automotive 
+ Android Things 
+ TV 
+ devices 
+ Android XR 
+ Wear OS 
+ Devices Pixel 
+ C 
+ Pixel, Pixel XL 
+ 2, 2 XL 
+ 3, 3 XL 
+ 3a, 3a XL 
+ 4, 4 XL 
+ 4a, 4a (5G) 
+ 5 
+ 5a 
+ 6, 6 Pro 
+ 6a 
+ 7, 7 Pro 
+ 7a 
+ Fold 
+ Tablet 
+ 8, 8 Pro 
+ 8a 
+ 9, 9 Pro, 9 Pro XL 
+ 9 Pro Fold 
+ 9a 
+ Pixel 10 
+ 10 Pro, 10 Pro XL 
+ 10 Pro Fold 
+ 10a 
+ Pixel 11 
+ 11 Pro, 11 Pro XL 
+ 11 Pro Fold 
+ Nexus 
+ One 
+ S 
+ Galaxy Nexus 
+ 4 
+ 10 
+ Q 
+ 5 
+ 5X 
+ 6 
+ 6P 
+ 7
+ 2012 
+ 2013 
+ 9 
+ Player 
+ Play edition 
+ HTC One (M7) 
+ HTC One (M8) 
+ LG G Pad 8.3 
+ Moto G 
+ Samsung Galaxy S4 
+ Sony Xperia Z Ultra 
+ Android One 
+ other smartphones 
+ Custom distributions 
+ AliOS 
+ Android-x86 
+ Remix OS 
+ AOKP 
+ Baidu Yi 
+ Barnes & Noble Nook 
+ CalyxOS 
+ ColorOS 
+ OxygenOS 
+ Realme UI 
+ CopperheadOS 
+ EMUI 
+ MagicOS 
+ Fire OS 
+ Flyme OS 
+ GrapheneOS 
+ LeWa OS 
+ LineageOS 
+ /e/ 
+ CrDroid 
+ CyanogenMod 
+ DivestOS 
+ iodéOS 
+ Kali NetHunter 
+ LiteOS 
+ Meta Horizon OS 
+ Nokia X software platform 
+ OmniROM 
+ OPhone 
+ PixelExperience 
+ Pixel UI 
+ Replicant 
+ Resurrection Remix OS 
+ SlimRoms 
+ TCL UI 
+ Ubuntu for Android 
+ Xiaomi HyperOS 
+ MIUI 
+ ZUI 
+ Booting, recovery 
+ Booting process 
+ Recovery mode 
+ TWRP 
+ ClockworkMod 
+ Fastboot 
+ APIs 
+ Google Maps 
+ Google Play Services 
+ Play Integrity API (formerly SafetyNet) 
+ Google Search 
+ Alternative UIs 
+ Cherry OS 
+ ColorOS 
+ EMUI 
+ Funtouch OS 
+ Flyme OS 
+ HiOS 
+ Hive UI (XOLO Hive) 
+ HTC Sense 
+ LG UX 
+ Optimus UI 
+ Motoblur 
+ Nothing OS 
+ One UI 
+ Experience 
+ TouchWiz 
+ Origin OS 
+ OxygenOS 
+ Pixel UI 
+ XOS 
+ Xperia UI 
+ ZenUI 
+ Rooting 
+ SuperSU 
+ Xposed 
+ Magisk 
+ Kingo Root 
+ Kernel Assisted Superuser 
+ Lists 
+ App stores 
+ Custom distributions 
+ Features 
+ Free and open-source applications 
+ Google apps 
+ Launchers 
+ Related topics 
+ Index of articles 
+ Androidland 
+ Chromecast 
+ Google 
+ Java vs. Android API 
+ Lawn statues 
+ BlueStacks 
+ Legal issues
+ Google v. Oracle 
+ smartphone patent wars 
+ Android Runtime for Chrome 
+ Portals : Software • Telecommunication Categories : Android development • Mobile telecommunications 
+ v t e Java virtual machines ( comparison ) Sun , Oracle 
+ HotSpot 
+ C1 
+ C2 
+ GraalVM 
+ Graal 
+ Substrate 
+ discontinued 
+ Maxine 
+ Squawk 
+ KVM 
+ Major implementations 
+ HotSpot 
+ GraalVM 
+ IKVM 
+ Jikes RVM 
+ OpenJ9 
+ LeJOS 
+ Embedded 
+ LeJOS 
+ ART 
+ Others 
+ IcedTea 
+ List of JVMs 
+ Discontinued 
+ Harmony 
+ Dalvik 
+ GCJ 
+ JamVM 
+ JOP 
+ Juice 
+ Jupiter 
+ Kaffe 
+ SableVM 
+ Mika VM 
+ MSJVM 
+ SuperWaba 
+ TakaTuka 
+ NanoVM 
+ TinyVM 
+ Wonka VM 
+ Category of discontinued JVMs 
+ v t e Java (software platform) Platforms 
+ Java ME (Micro) 
+ Java SE (Standard) 
+ Jakarta EE (Enterprise) 
+ Java Card 
+ Android SDK 
+ Technologies Sun, Oracle 
+ JDK 
+ OpenJDK 
+ JVM 
+ HotSpot 
+ Graal 
+ Maxine 
+ Squawk 
+ JavaFX 
+ Platform 
+ Applets 
+ Servlets 
+ MIDlets 
+ JSP 
+ JSF 
+ Web Start (JNLP) 
+ Pack200 
+ Modules 
+ Major third-party 
+ ART 
+ Blackdown 
+ Eclipse 
+ GNU Classpath 
+ GWT 
+ Harmony 
+ Hibernate 
+ IcedTea 
+ Jazelle 
+ OpenJ9 
+ Spring 
+ Struts 
+ TopLink 
+ WildFly 
+ History 
+ Java version history 
+ Java Community Process 
+ Sun Microsystems 
+ Free Java implementations 
+ Slogan: Write once, run anywhere 
+ Platform languages 
+ Java 
+ BeanShell 
+ Ceylon 
+ Clojure 
+ Gosu 
+ Groovy 
+ JRuby 
+ Jython 
+ Kotlin 
+ Processing 
+ Rhino 
+ Scala 
+ Oxygene 
+ Community Conferences 
+ JavaOne 
+ Devoxx 
+ Organizations 
+ Apache Software Foundation 
+ Eclipse Foundation 
+ Java Community Process 
+ Oracle Corporation 
+ Sun Microsystems , Sun Microsystems Laboratories 
+ People 
+ James Gosling 
+ Arthur van Hoff 
+ Urs Hölzle 
+ Computer programming portal • Category 
+ Retrieved from " https://en.wikipedia.org/w/index.php?title=Android_Runtime&oldid=1345637505 " 
+ Categories : Android (operating system) Java virtual machine Software using the Apache license Hidden categories: Articles with short description Short description is different from Wikidata Use mdy dates from August 2014 CS1 maint: deprecated archival service Commons category link from Wikidata 
+ This page was last edited on 27 March 2026, at 06:02  (UTC) . 
+ Page was rendered with Parsoid . 
+ Text is available under the Creative Commons Attribution-ShareAlike 4.0 License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy . Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+ Privacy policy 
+ About Wikipedia 
+ Disclaimers 
+ Contact Wikipedia 
+ Legal & safety contacts 
+ Code of Conduct 
+ Developers 
+ Statistics 
+ Cookie statement 
+ Mobile view 
+ Search 
+ Search 
+ Toggle the table of contents 
+ Android Runtime 
+ 20 languages 
+ Add topic 
+ 

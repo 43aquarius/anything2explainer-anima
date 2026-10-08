@@ -1,0 +1,1260 @@
+{
+ "fps": 30,
+ "total_frames": 8999,
+ "engine": "edge",
+ "voice": "en-US-AndrewNeural",
+ "rate": "+0%",
+ "gap": 10,
+ "para_gap": 20,
+ "chapter_gap": 45,
+ "lead": 40,
+ "tail": 90,
+ "lang": "en",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "The Trick",
+   "from": 86
+  },
+  {
+   "n": 2,
+   "title": "The Box",
+   "from": 1585
+  },
+  {
+   "n": 3,
+   "title": "The Seal",
+   "from": 3722
+  },
+  {
+   "n": 4,
+   "title": "Still a Zip",
+   "from": 7315
+  }
+ ],
+ "sentences": [
+  {
+   "id": "S01",
+   "chapter": 1,
+   "from": 86,
+   "to": 249,
+   "text": "You just downloaded a chat app. One hundred and twenty megabytes. Your thumb is hovering over Install.",
+   "para": false,
+   "subs": [
+    {
+     "from": 86,
+     "to": 137,
+     "text": "You just downloaded a chat app."
+    },
+    {
+     "from": 138,
+     "to": 192,
+     "text": "One hundred and twenty megabytes."
+    },
+    {
+     "from": 193,
+     "to": 249,
+     "text": "Your thumb is hovering over Install."
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "chapter": 1,
+   "from": 260,
+   "to": 329,
+   "text": "But before you tap that button, try something.",
+   "para": false,
+   "subs": [
+    {
+     "from": 260,
+     "to": 304,
+     "text": "But before you tap that button,"
+    },
+    {
+     "from": 305,
+     "to": 329,
+     "text": "try something."
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "chapter": 1,
+   "from": 340,
+   "to": 408,
+   "text": "Rename the file. APK to ZIP.",
+   "para": true,
+   "subs": [
+    {
+     "from": 340,
+     "to": 372,
+     "text": "Rename the file."
+    },
+    {
+     "from": 373,
+     "to": 408,
+     "text": "APK to ZIP."
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "chapter": 1,
+   "from": 454,
+   "to": 649,
+   "text": "It opens. Every file is right there: the manifest, the code, the resources, the signatures.",
+   "para": false,
+   "subs": [
+    {
+     "from": 454,
+     "to": 482,
+     "text": "It opens."
+    },
+    {
+     "from": 483,
+     "to": 532,
+     "text": "Every file is right there:"
+    },
+    {
+     "from": 533,
+     "to": 588,
+     "text": "the manifest, the code,"
+    },
+    {
+     "from": 589,
+     "to": 649,
+     "text": "the resources, the signatures."
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "chapter": 1,
+   "from": 660,
+   "to": 868,
+   "text": "AndroidManifest.xml. classes.dex. resources.arsc, res, META-INF.",
+   "para": false,
+   "subs": [
+    {
+     "from": 660,
+     "to": 721,
+     "text": "AndroidManifest.xml."
+    },
+    {
+     "from": 722,
+     "to": 773,
+     "text": "classes.dex."
+    },
+    {
+     "from": 774,
+     "to": 868,
+     "text": "resources.arsc, res, META-INF."
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "chapter": 1,
+   "from": 879,
+   "to": 971,
+   "text": "Every Android app on Earth ships as a ZIP archive.",
+   "para": true,
+   "subs": [
+    {
+     "from": 879,
+     "to": 916,
+     "text": "Every Android app on Earth"
+    },
+    {
+     "from": 917,
+     "to": 971,
+     "text": "ships as a ZIP archive."
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "chapter": 1,
+   "from": 1002,
+   "to": 1152,
+   "text": "In 2008, Google needed a package format for a brand-new phone operating system.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1002,
+     "to": 1083,
+     "text": "In 2008, Google needed a package format"
+    },
+    {
+     "from": 1084,
+     "to": 1152,
+     "text": "for a brand-new phone operating system."
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "chapter": 1,
+   "from": 1163,
+   "to": 1222,
+   "text": "They picked one from 1989.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1163,
+     "to": 1222,
+     "text": "They picked one from 1989."
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "chapter": 1,
+   "from": 1268,
+   "to": 1423,
+   "text": "Why would the world's biggest mobile OS wrap its apps in a DOS-era compression format?",
+   "para": false,
+   "subs": [
+    {
+     "from": 1268,
+     "to": 1329,
+     "text": "Why would the world's biggest mobile OS"
+    },
+    {
+     "from": 1330,
+     "to": 1423,
+     "text": "wrap its apps in a DOS-era compression format?"
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "chapter": 1,
+   "from": 1434,
+   "to": 1529,
+   "text": "And what actually happens in the ten seconds after you tap Install?",
+   "para": true,
+   "subs": [
+    {
+     "from": 1434,
+     "to": 1465,
+     "text": "And what actually happens"
+    },
+    {
+     "from": 1466,
+     "to": 1529,
+     "text": "in the ten seconds after you tap Install?"
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "chapter": 2,
+   "from": 1605,
+   "to": 1711,
+   "text": "1989. Phil Katz, PKWARE, Milwaukee.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1605,
+     "to": 1644,
+     "text": "1989."
+    },
+    {
+     "from": 1645,
+     "to": 1711,
+     "text": "Phil Katz, PKWARE, Milwaukee."
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "chapter": 2,
+   "from": 1722,
+   "to": 1941,
+   "text": "He had just been sued over his archiver, PKARC, by the makers of ARC, and his answer to the lawsuit was a new format: ZIP.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1722,
+     "to": 1806,
+     "text": "He had just been sued over his archiver, PKARC,"
+    },
+    {
+     "from": 1807,
+     "to": 1847,
+     "text": "by the makers of ARC,"
+    },
+    {
+     "from": 1848,
+     "to": 1882,
+     "text": "and his answer to the lawsuit"
+    },
+    {
+     "from": 1883,
+     "to": 1941,
+     "text": "was a new format: ZIP."
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "chapter": 2,
+   "from": 1972,
+   "to": 2021,
+   "text": "His initials are still in the file.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1972,
+     "to": 2021,
+     "text": "His initials are still in the file."
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "chapter": 2,
+   "from": 2032,
+   "to": 2168,
+   "text": "Open any zip in a hex editor: the first two bytes are P, K.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2032,
+     "to": 2097,
+     "text": "Open any zip in a hex editor:"
+    },
+    {
+     "from": 2098,
+     "to": 2168,
+     "text": "the first two bytes are P, K."
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "chapter": 2,
+   "from": 2179,
+   "to": 2288,
+   "text": "Fifty, 4B. Every APK on your phone starts with them.",
+   "para": true,
+   "subs": [
+    {
+     "from": 2179,
+     "to": 2216,
+     "text": "Fifty, 4B."
+    },
+    {
+     "from": 2217,
+     "to": 2288,
+     "text": "Every APK on your phone starts with them."
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "chapter": 2,
+   "from": 2334,
+   "to": 2437,
+   "text": "A zip is not really about compression, though. It is an index.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2334,
+     "to": 2408,
+     "text": "A zip is not really about compression, though."
+    },
+    {
+     "from": 2409,
+     "to": 2437,
+     "text": "It is an index."
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "chapter": 2,
+   "from": 2448,
+   "to": 2635,
+   "text": "Local file headers, a central directory, and at the very end, a record that says where everything is.",
+   "para": true,
+   "subs": [
+    {
+     "from": 2448,
+     "to": 2485,
+     "text": "Local file headers,"
+    },
+    {
+     "from": 2486,
+     "to": 2525,
+     "text": "a central directory,"
+    },
+    {
+     "from": 2526,
+     "to": 2567,
+     "text": "and at the very end,"
+    },
+    {
+     "from": 2568,
+     "to": 2635,
+     "text": "a record that says where everything is."
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "chapter": 2,
+   "from": 2666,
+   "to": 2718,
+   "text": "That index is why Android picked it.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2666,
+     "to": 2718,
+     "text": "That index is why Android picked it."
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "chapter": 2,
+   "from": 2729,
+   "to": 2856,
+   "text": "The system can open one file inside the package without unpacking the rest.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2729,
+     "to": 2803,
+     "text": "The system can open one file inside the package"
+    },
+    {
+     "from": 2804,
+     "to": 2856,
+     "text": "without unpacking the rest."
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "chapter": 2,
+   "from": 2867,
+   "to": 2992,
+   "text": "The tooling was everywhere, too, twenty years of it by 2008.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2867,
+     "to": 2929,
+     "text": "The tooling was everywhere, too,"
+    },
+    {
+     "from": 2930,
+     "to": 2992,
+     "text": "twenty years of it by 2008."
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "chapter": 2,
+   "from": 3003,
+   "to": 3206,
+   "text": "And Android was built on Java: a Java app already shipped as a JAR, which is a zip with a manifest inside.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3003,
+     "to": 3064,
+     "text": "And Android was built on Java:"
+    },
+    {
+     "from": 3065,
+     "to": 3143,
+     "text": "a Java app already shipped as a JAR,"
+    },
+    {
+     "from": 3144,
+     "to": 3206,
+     "text": "which is a zip with a manifest inside."
+    }
+   ]
+  },
+  {
+   "id": "S22",
+   "chapter": 2,
+   "from": 3252,
+   "to": 3277,
+   "text": "One more twist.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3252,
+     "to": 3277,
+     "text": "One more twist."
+    }
+   ]
+  },
+  {
+   "id": "S23",
+   "chapter": 2,
+   "from": 3288,
+   "to": 3363,
+   "text": "Not everything in an APK is compressed.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3288,
+     "to": 3363,
+     "text": "Not everything in an APK is compressed."
+    }
+   ]
+  },
+  {
+   "id": "S24",
+   "chapter": 2,
+   "from": 3374,
+   "to": 3602,
+   "text": "The resource table must be stored uncompressed, aligned to four-byte boundaries, so Android can map it straight into memory.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3374,
+     "to": 3469,
+     "text": "The resource table must be stored uncompressed,"
+    },
+    {
+     "from": 3470,
+     "to": 3527,
+     "text": "aligned to four-byte boundaries,"
+    },
+    {
+     "from": 3528,
+     "to": 3602,
+     "text": "so Android can map it straight into memory."
+    }
+   ]
+  },
+  {
+   "id": "S25",
+   "chapter": 2,
+   "from": 3613,
+   "to": 3666,
+   "text": "The box is smarter than it looks.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3613,
+     "to": 3666,
+     "text": "The box is smarter than it looks."
+    }
+   ]
+  },
+  {
+   "id": "S26",
+   "chapter": 3,
+   "from": 3742,
+   "to": 3772,
+   "text": "So you tap Install.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3742,
+     "to": 3772,
+     "text": "So you tap Install."
+    }
+   ]
+  },
+  {
+   "id": "S27",
+   "chapter": 3,
+   "from": 3783,
+   "to": 3919,
+   "text": "The phone is holding a zip from the internet, a hundred and twenty megabytes from a stranger.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3783,
+     "to": 3850,
+     "text": "The phone is holding a zip from the internet,"
+    },
+    {
+     "from": 3851,
+     "to": 3919,
+     "text": "a hundred and twenty megabytes from a stranger."
+    }
+   ]
+  },
+  {
+   "id": "S28",
+   "chapter": 3,
+   "from": 3930,
+   "to": 3994,
+   "text": "First question: has anyone tampered with it?",
+   "para": true,
+   "subs": [
+    {
+     "from": 3930,
+     "to": 3957,
+     "text": "First question:"
+    },
+    {
+     "from": 3958,
+     "to": 3994,
+     "text": "has anyone tampered with it?"
+    }
+   ]
+  },
+  {
+   "id": "S29",
+   "chapter": 3,
+   "from": 4040,
+   "to": 4261,
+   "text": "The old scheme, v1, was JAR signing from the Java world: a signed receipt for every file inside the box.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4040,
+     "to": 4133,
+     "text": "The old scheme, v1, was JAR signing"
+    },
+    {
+     "from": 4134,
+     "to": 4173,
+     "text": "from the Java world:"
+    },
+    {
+     "from": 4174,
+     "to": 4261,
+     "text": "a signed receipt for every file inside the box."
+    }
+   ]
+  },
+  {
+   "id": "S30",
+   "chapter": 3,
+   "from": 4272,
+   "to": 4408,
+   "text": "To check it, Android had to walk every entry and hash it, one at a time.",
+   "para": true,
+   "subs": [
+    {
+     "from": 4272,
+     "to": 4331,
+     "text": "To check it, Android had to walk"
+    },
+    {
+     "from": 4332,
+     "to": 4408,
+     "text": "every entry and hash it, one at a time."
+    }
+   ]
+  },
+  {
+   "id": "S31",
+   "chapter": 3,
+   "from": 4439,
+   "to": 4615,
+   "text": "Android 7.0 added scheme v2, and it works like a wax seal around the whole package.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4439,
+     "to": 4528,
+     "text": "Android 7.0 added scheme v2,"
+    },
+    {
+     "from": 4529,
+     "to": 4575,
+     "text": "and it works like a wax seal"
+    },
+    {
+     "from": 4576,
+     "to": 4615,
+     "text": "around the whole package."
+    }
+   ]
+  },
+  {
+   "id": "S32",
+   "chapter": 3,
+   "from": 4626,
+   "to": 4817,
+   "text": "The signing block sits between the files and the central directory, and the signature covers the entire APK.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4626,
+     "to": 4690,
+     "text": "The signing block sits between the files"
+    },
+    {
+     "from": 4691,
+     "to": 4735,
+     "text": "and the central directory,"
+    },
+    {
+     "from": 4736,
+     "to": 4817,
+     "text": "and the signature covers the entire APK."
+    }
+   ]
+  },
+  {
+   "id": "S33",
+   "chapter": 3,
+   "from": 4828,
+   "to": 4909,
+   "text": "Change one byte anywhere, and the install dies.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4828,
+     "to": 4872,
+     "text": "Change one byte anywhere,"
+    },
+    {
+     "from": 4873,
+     "to": 4909,
+     "text": "and the install dies."
+    }
+   ]
+  },
+  {
+   "id": "S34",
+   "chapter": 3,
+   "from": 4920,
+   "to": 5020,
+   "text": "And installs got faster: no more walking every file.",
+   "para": true,
+   "subs": [
+    {
+     "from": 4920,
+     "to": 4969,
+     "text": "And installs got faster:"
+    },
+    {
+     "from": 4970,
+     "to": 5020,
+     "text": "no more walking every file."
+    }
+   ]
+  },
+  {
+   "id": "S35",
+   "chapter": 3,
+   "from": 5066,
+   "to": 5180,
+   "text": "The key is the developer's identity. There is no certificate authority.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5066,
+     "to": 5131,
+     "text": "The key is the developer's identity."
+    },
+    {
+     "from": 5132,
+     "to": 5180,
+     "text": "There is no certificate authority."
+    }
+   ]
+  },
+  {
+   "id": "S36",
+   "chapter": 3,
+   "from": 5191,
+   "to": 5294,
+   "text": "You sign your own app, and only the same key can ship an update.",
+   "para": true,
+   "subs": [
+    {
+     "from": 5191,
+     "to": 5228,
+     "text": "You sign your own app,"
+    },
+    {
+     "from": 5229,
+     "to": 5294,
+     "text": "and only the same key can ship an update."
+    }
+   ]
+  },
+  {
+   "id": "S37",
+   "chapter": 3,
+   "from": 5337,
+   "to": 5434,
+   "text": "Verification passes. Now Android reads the label.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5337,
+     "to": 5384,
+     "text": "Verification passes."
+    },
+    {
+     "from": 5385,
+     "to": 5434,
+     "text": "Now Android reads the label."
+    }
+   ]
+  },
+  {
+   "id": "S38",
+   "chapter": 3,
+   "from": 5445,
+   "to": 5658,
+   "text": "The manifest is binary XML: name, version, every permission the app wants, every screen it can show.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5445,
+     "to": 5516,
+     "text": "The manifest is binary XML:"
+    },
+    {
+     "from": 5517,
+     "to": 5618,
+     "text": "name, version, every permission the app wants,"
+    },
+    {
+     "from": 5619,
+     "to": 5658,
+     "text": "every screen it can show."
+    }
+   ]
+  },
+  {
+   "id": "S39",
+   "chapter": 3,
+   "from": 5669,
+   "to": 5789,
+   "text": "The package gets copied to its home, under /data/app.",
+   "para": true,
+   "subs": [
+    {
+     "from": 5669,
+     "to": 5731,
+     "text": "The package gets copied to its home,"
+    },
+    {
+     "from": 5732,
+     "to": 5789,
+     "text": "under /data/app."
+    }
+   ]
+  },
+  {
+   "id": "S40",
+   "chapter": 3,
+   "from": 5832,
+   "to": 5899,
+   "text": "Then the real magic: dex2oat.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5832,
+     "to": 5899,
+     "text": "Then the real magic: dex2oat."
+    }
+   ]
+  },
+  {
+   "id": "S41",
+   "chapter": 3,
+   "from": 5910,
+   "to": 6047,
+   "text": "Older Android ran apps through an interpreter, Dalvik, a few lines at a time.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5910,
+     "to": 5987,
+     "text": "Older Android ran apps through an interpreter,"
+    },
+    {
+     "from": 5988,
+     "to": 6047,
+     "text": "Dalvik, a few lines at a time."
+    }
+   ]
+  },
+  {
+   "id": "S42",
+   "chapter": 3,
+   "from": 6058,
+   "to": 6305,
+   "text": "Since Android 5.0, the runtime is ART, and at install it compiles classes.dex into machine code for your exact CPU.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6058,
+     "to": 6164,
+     "text": "Since Android 5.0, the runtime is ART,"
+    },
+    {
+     "from": 6165,
+     "to": 6236,
+     "text": "and at install it compiles classes.dex"
+    },
+    {
+     "from": 6237,
+     "to": 6305,
+     "text": "into machine code for your exact CPU."
+    }
+   ]
+  },
+  {
+   "id": "S43",
+   "chapter": 3,
+   "from": 6316,
+   "to": 6500,
+   "text": "That is the optimizing bar you see when your phone updates itself: every app on the device, recompiled.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6316,
+     "to": 6370,
+     "text": "That is the optimizing bar you see"
+    },
+    {
+     "from": 6371,
+     "to": 6432,
+     "text": "when your phone updates itself:"
+    },
+    {
+     "from": 6433,
+     "to": 6500,
+     "text": "every app on the device, recompiled."
+    }
+   ]
+  },
+  {
+   "id": "S44",
+   "chapter": 3,
+   "from": 6511,
+   "to": 6711,
+   "text": "A single dex file tops out at 65,536 methods. Big apps just carry more of them.",
+   "para": true,
+   "subs": [
+    {
+     "from": 6511,
+     "to": 6556,
+     "text": "A single dex file tops out"
+    },
+    {
+     "from": 6557,
+     "to": 6659,
+     "text": "at 65,536 methods."
+    },
+    {
+     "from": 6660,
+     "to": 6711,
+     "text": "Big apps just carry more of them."
+    }
+   ]
+  },
+  {
+   "id": "S45",
+   "chapter": 3,
+   "from": 6757,
+   "to": 6894,
+   "text": "Finally, a sandbox: /data/data, one Linux user per app.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6757,
+     "to": 6799,
+     "text": "Finally, a sandbox:"
+    },
+    {
+     "from": 6800,
+     "to": 6894,
+     "text": "/data/data, one Linux user per app."
+    }
+   ]
+  },
+  {
+   "id": "S46",
+   "chapter": 3,
+   "from": 6905,
+   "to": 6987,
+   "text": "The icon appears. Ten seconds, done.",
+   "para": true,
+   "subs": [
+    {
+     "from": 6905,
+     "to": 6948,
+     "text": "The icon appears."
+    },
+    {
+     "from": 6949,
+     "to": 6987,
+     "text": "Ten seconds, done."
+    }
+   ]
+  },
+  {
+   "id": "S47",
+   "chapter": 3,
+   "from": 7033,
+   "to": 7114,
+   "text": "And here is the thing: the app never got unzipped.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7033,
+     "to": 7068,
+     "text": "And here is the thing:"
+    },
+    {
+     "from": 7069,
+     "to": 7114,
+     "text": "the app never got unzipped."
+    }
+   ]
+  },
+  {
+   "id": "S48",
+   "chapter": 3,
+   "from": 7125,
+   "to": 7259,
+   "text": "The zip is still sitting there in /data/app, being read in pieces.",
+   "para": true,
+   "subs": [
+    {
+     "from": 7125,
+     "to": 7220,
+     "text": "The zip is still sitting there in /data/app,"
+    },
+    {
+     "from": 7221,
+     "to": 7259,
+     "text": "being read in pieces."
+    }
+   ]
+  },
+  {
+   "id": "S49",
+   "chapter": 4,
+   "from": 7335,
+   "to": 7428,
+   "text": "In 2018, Google announced the App Bundle.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7335,
+     "to": 7428,
+     "text": "In 2018, Google announced the App Bundle."
+    }
+   ]
+  },
+  {
+   "id": "S50",
+   "chapter": 4,
+   "from": 7439,
+   "to": 7579,
+   "text": "Since August 2021, every new app on the Play Store has to use one.",
+   "para": true,
+   "subs": [
+    {
+     "from": 7439,
+     "to": 7498,
+     "text": "Since August 2021,"
+    },
+    {
+     "from": 7499,
+     "to": 7548,
+     "text": "every new app on the Play Store"
+    },
+    {
+     "from": 7549,
+     "to": 7579,
+     "text": "has to use one."
+    }
+   ]
+  },
+  {
+   "id": "S51",
+   "chapter": 4,
+   "from": 7625,
+   "to": 7811,
+   "text": "You no longer download one universal package with every language and every CPU architecture inside.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7625,
+     "to": 7699,
+     "text": "You no longer download one universal package"
+    },
+    {
+     "from": 7700,
+     "to": 7738,
+     "text": "with every language"
+    },
+    {
+     "from": 7739,
+     "to": 7811,
+     "text": "and every CPU architecture inside."
+    }
+   ]
+  },
+  {
+   "id": "S52",
+   "chapter": 4,
+   "from": 7822,
+   "to": 7936,
+   "text": "Play assembles the splits for your exact device and signs them on the way out.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7822,
+     "to": 7892,
+     "text": "Play assembles the splits for your exact device"
+    },
+    {
+     "from": 7893,
+     "to": 7936,
+     "text": "and signs them on the way out."
+    }
+   ]
+  },
+  {
+   "id": "S53",
+   "chapter": 4,
+   "from": 7947,
+   "to": 8018,
+   "text": "Your phone downloads only its own pieces.",
+   "para": true,
+   "subs": [
+    {
+     "from": 7947,
+     "to": 8018,
+     "text": "Your phone downloads only its own pieces."
+    }
+   ]
+  },
+  {
+   "id": "S54",
+   "chapter": 4,
+   "from": 8064,
+   "to": 8243,
+   "text": "base.apk plus config APKs. Still APKs. Still signed zips.",
+   "para": true,
+   "subs": [
+    {
+     "from": 8064,
+     "to": 8160,
+     "text": "base.apk plus config APKs."
+    },
+    {
+     "from": 8161,
+     "to": 8243,
+     "text": "Still APKs. Still signed zips."
+    }
+   ]
+  },
+  {
+   "id": "S55",
+   "chapter": 4,
+   "from": 8274,
+   "to": 8407,
+   "text": "Outside Google's headquarters, the lawn is full of giant green robots.",
+   "para": false,
+   "subs": [
+    {
+     "from": 8274,
+     "to": 8326,
+     "text": "Outside Google's headquarters,"
+    },
+    {
+     "from": 8327,
+     "to": 8407,
+     "text": "the lawn is full of giant green robots."
+    }
+   ]
+  },
+  {
+   "id": "S56",
+   "chapter": 4,
+   "from": 8418,
+   "to": 8539,
+   "text": "Under every app they represent: a format from 1989.",
+   "para": true,
+   "subs": [
+    {
+     "from": 8418,
+     "to": 8482,
+     "text": "Under every app they represent:"
+    },
+    {
+     "from": 8483,
+     "to": 8539,
+     "text": "a format from 1989."
+    }
+   ]
+  },
+  {
+   "id": "S57",
+   "chapter": 4,
+   "from": 8585,
+   "to": 8711,
+   "text": "Open any app under /data/app on a rooted phone and check.",
+   "para": false,
+   "subs": [
+    {
+     "from": 8585,
+     "to": 8658,
+     "text": "Open any app under /data/app"
+    },
+    {
+     "from": 8659,
+     "to": 8711,
+     "text": "on a rooted phone and check."
+    }
+   ]
+  },
+  {
+   "id": "S58",
+   "chapter": 4,
+   "from": 8722,
+   "to": 8797,
+   "text": "Two bytes, right at the front. P, K.",
+   "para": true,
+   "subs": [
+    {
+     "from": 8722,
+     "to": 8778,
+     "text": "Two bytes, right at the front."
+    },
+    {
+     "from": 8779,
+     "to": 8797,
+     "text": "P, K."
+    }
+   ]
+  },
+  {
+   "id": "S59",
+   "chapter": 4,
+   "from": 8848,
+   "to": 8899,
+   "text": "Every app is a zip you can read.",
+   "para": true,
+   "subs": [
+    {
+     "from": 8848,
+     "to": 8899,
+     "text": "Every app is a zip you can read."
+    }
+   ]
+  }
+ ],
+ "chars": 3016,
+ "words": 683,
+ "speech_sec": 248.32
+}

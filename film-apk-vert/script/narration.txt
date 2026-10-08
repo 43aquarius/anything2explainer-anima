@@ -1,0 +1,31 @@
+# APK — The Zip That Becomes an App — TikTok narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 One Tap
+Rename any APK to ZIP —|it just opens.
+The manifest, the code, the signatures:|it's all right there.
+Every Android app ships as a ZIP archive.
+## gap 12
+
+The format comes from 1989.|A programmer named Phil Katz invented it|after getting sued,|and his initials, P, K,|are still the first two bytes of the file.
+## gap 15
+
+When you hit Install,|the phone checks the wax seal:|one signature over the entire file.
+Flip one byte,|the install dies.
+## gap 15
+
+It reads the label:|a binary manifest,|permissions, screens, version.
+
+Then it compiles the code|into machine language for your exact CPU.
+That is the "optimizing apps" bar|you see after a big update.
+
+And builds a sandbox:|one hidden Linux user per app.
+## gap 15
+
+The zip itself? Never unzipped.
+It just sits in /data/app,|being read in pieces.
+## gap 15
+
+Google's app bundles from 2021?|Still zips underneath.
+Two bytes in: P, K.
+## gap 15
+
+Every app is a zip you can read.

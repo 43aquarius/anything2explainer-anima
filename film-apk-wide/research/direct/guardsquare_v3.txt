@@ -1,0 +1,199 @@
+ 
+ -->
+ This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our Privacy Policy. If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked. Cookies settings Accept Decline 
+ Platform 
+ Why Guardsquare? 
+ Mobile application security across the entire dev lifecycle, in a single intuitive platform 
+ Why Guardsquare 
+ Discover the platform 
+ Platform tools across the dev lifecycle 
+ Android Protection 
+ DexGuard protects Android mobile apps & SDKs with multilayered code hardening & RASP. 
+ iOS Protection 
+ iXGuard protects iOS mobile apps & SDKs with multilayered code hardening & RASP. 
+ Security Testing 
+ AppSweep scans mobile app code & dependencies to resolve issues quickly. 
+ Threat Monitoring 
+ ThreatCast gives real-time visibility into the global threat landscape to respond before a breach. 
+ API Security 
+ App attestation ensures the app calling your APIs is authentic, untampered, and trustworthy. 
+ The highest level protection with ease 
+ Our guided workflow automates deep, code-level mobile app protection. 
+ Discover our guided workflow 
+ Solutions 
+ Case study 
+ Mobile Developer in Central Asia Finds Protection for Sensitive KYC Systems 
+ Read the customer story 
+ Case Study 
+ Driver and Vehicle Compliance Tech Company Protects Android App with DexGuard 
+ Read the customer story 
+ By Use Case 
+ Fraud protection 
+ Stop revenue loss, impersonation, and tampering. 
+ Regulatory compliance 
+ Meet strict mandates for high-trust mobile apps. 
+ IP protection 
+ Shield code, trade secrets, and sensitive assets. 
+ Pentest readiness 
+ Pass security reviews and audits with confidence. 
+ Malware protection 
+ Defend users and data against active malware. 
+ API security 
+ Protect the bridge between mobile apps and APIs. 
+ By Industry 
+ Fintech 
+ Retail & E-Commerce 
+ Banking 
+ Healthcare 
+ Entertainment 
+ Resources 
+ Discover 
+ Featured Blog 
+ Debunking Mobile App Security Misconceptions 
+ Read the blog 
+ Blog 
+ Case Studies New 
+ Learn 
+ Mobile application security 
+ SDK protection 
+ Code obfuscation 
+ Runtime application self-protection (RASP) 
+ Mobile application shielding 
+ Mobile application security testing (MAST) 
+ Malware protection 
+ Code hardening 
+ Technical 
+ Security Research Center 
+ ProGuard 
+ ProGuard manual 
+ ProGuardCORE 
+ ProGuard Playground 
+ Resource Library FAQs Events & Webinars News 
+ Company 
+ Our Story 
+ About us 
+ Careers 
+ Our customers 
+ Business partners 
+ Technical partners 
+ News 
+ Get the latest Guardsquare news 
+ Visit our newsroom 
+ We're coming to a security event near you 
+ Let's connect 
+ Pricing 
+ Request pricing 
+ Login 
+ Platform 
+ Why Guardsquare? 
+ Mobile application security across the entire dev lifecycle, in a single intuitive platform 
+ Why Guardsquare Discover the platform 
+ Platform tools across the dev lifecycle 
+ Android Protection 
+ DexGuard protects Android mobile apps & SDKs with multilayered code hardening & RASP. 
+ iOS Protection 
+ iXGuard protects iOS mobile apps & SDKs with multilayered code hardening & RASP. 
+ Security Testing 
+ AppSweep scans mobile app code & dependencies to resolve issues quickly. 
+ Threat Monitoring 
+ ThreatCast gives real-time visibility into the global threat landscape to respond before a breach. 
+ API Security 
+ App attestation ensures the app calling your APIs is authentic, untampered, and trustworthy. 
+ Solutions 
+ Case study 
+ Mobile Developer in Central Asia Finds Protection for Sensitive KYC Systems 
+ Read the customer story 
+ Case Study 
+ Driver and Vehicle Compliance Tech Company Protects Android App with DexGuard 
+ Read the customer story 
+ By Use Case 
+ Fraud protection 
+ Stop revenue loss, impersonation, and tampering. 
+ Regulatory compliance 
+ Meet strict mandates for high-trust mobile apps. 
+ IP protection 
+ Shield code, trade secrets, and sensitive assets. 
+ Pentest readiness 
+ Pass security reviews and audits with confidence. 
+ Malware protection 
+ Defend users and data against active malware. 
+ API security 
+ Protect the bridge between mobile apps and APIs. 
+ By Industry 
+ Fintech 
+ Retail & E-Commerce 
+ Banking 
+ Healthcare 
+ Entertainment 
+ Resources 
+ Discover 
+ Featured Blog 
+ Debunking Mobile App Security Misconceptions 
+ Read the blog 
+ Blog 
+ Case Studies New 
+ Learn 
+ Mobile application security 
+ SDK protection 
+ Code obfuscation 
+ Runtime application self-protection (RASP) 
+ Mobile application shielding 
+ Mobile application security testing (MAST) 
+ Malware protection 
+ Code hardening 
+ Technical 
+ Security Research Center 
+ ProGuard 
+ ProGuard manual 
+ ProGuardCORE 
+ ProGuard Playground 
+ Company 
+ Our Story 
+ About us 
+ Careers 
+ Our customers 
+ Business partners 
+ Technical partners 
+ News 
+ Get the latest Guardsquare news 
+ Visit our newsroom 
+ Pricing 
+ Request pricing 
+ Login 
+ 404 Error - We're sorry the page you're looking for isn't available. 
+ Please use the main menu or search the site to find what you're looking for. 
+ Mobile AppSec by Industry 
+ Finance 
+ Gaming & Entertainment 
+ Retail & E-commerce 
+ Healthcare 
+ Technology 
+ What is Mobile App Security? 
+ Code Hardening 
+ RASP 
+ Mobile AppSec Testing (MAST) 
+ Threat Monitoring 
+ Android Malware 
+ Products 
+ Pricing 
+ DexGuard 
+ iXGuard 
+ ThreatCast 
+ AppSweep 
+ ProGuard 
+ Resources 
+ Blog 
+ Resource Library 
+ FAQs 
+ Security Research Center 
+ Company 
+ About 
+ Careers 
+ Contact Us 
+ Events 
+ Press 
+ General Terms | Privacy Policy | Cookie Policy | Security 
+ Tervuursevest 362 bus 1, 3000 Leuven, Belgium | 
+ VAT: BE0550675829 | 
+ © 2016-2026 Guardsquare nv. All rights reserved. 
+ 

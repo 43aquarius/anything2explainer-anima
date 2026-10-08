@@ -1,0 +1,477 @@
+ 
+ apk (file format) - Wikipedia 
+ Jump to content 
+ Main menu 
+ Main menu 
+ move to sidebar 
+ hide 
+ Navigation
+ Main page Contents Current events Random article About Wikipedia Contact us 
+ Contribute
+ Help Learn to edit Community portal Recent changes Upload file Special pages 
+ Search 
+ Search 
+ Appearance 
+ Donate 
+ Create account 
+ Log in 
+ Personal tools 
+ Donate 
+ Create account 
+ Log in 
+ Contents 
+ move to sidebar 
+ hide 
+ (Top) 
+ 1 
+ Overview 
+ 2 
+ Use on other operating systems 
+ 3 
+ Package contents 
+ 4 
+ See also 
+ 5 
+ Further reading 
+ 6 
+ References 
+ Toggle the table of contents 
+ apk (file format) 
+ 31 languages 
+ العربية Azərbaycanca Български Català کوردی Čeština Deutsch Español فارسی Suomi Français Magyar Bahasa Indonesia Italiano 日本語 한국어 മലയാളം Nederlands Polski Português Русский Simple English Svenska தமிழ் ไทย Tagalog Türkçe Українська اردو Tiếng Việt 中文 
+ Edit links 
+ Article 
+ Talk 
+ English 
+ Read 
+ Edit 
+ View history 
+ Tools 
+ Tools 
+ move to sidebar 
+ hide 
+ Actions
+ Read 
+ Edit 
+ View history 
+ General
+ What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser 
+ Print/export
+ Download as PDF Printable version 
+ In other projects
+ Wikidata item 
+ Appearance 
+ move to sidebar 
+ hide 
+ From Wikipedia, the free encyclopedia 
+ Package format used by Android 
+ This article is about the Android package format. For the Alpine Linux package format, see Alpine Linux . 
+ APK Internet media   type 
+ application/vnd.android.package-archive Developed   by Google Type of format Package format Extended   from JAR 
+ The Android Package with the file extension apk [ 1 ] is a package format used by Android and a number of other Android-based operating systems for distribution and installation of mobile apps , mobile games and middleware . A file using this format can be built from source code written in either Java or Kotlin . 
+ APK files can be generated and signed from Android App Bundles . [ 2 ] 
+ Overview [ edit ] 
+ APK is analogous to other software packages such as APPX in Microsoft Windows , APP for HarmonyOS or a Debian package in Debian -based operating systems. To make an APK file, a program for Android is first compiled using a tool such as Android Studio [ 3 ] or Visual Studio and then all of its parts are packaged into one container file. An APK file contains all of a program's code (such as .dex files), resources, assets, certificates, and manifest file . As is the case with many file formats, APK files can have any desired name but, for the system to recognize them, the .apk filename suffix may be necessary. [ 4 ] 
+ Most Android implementations allow users to manually install APK files ( sideloading ) only after they turn on an "Unknown Sources" setting that allows installation from sources other than trusted ones such as Google Play . This may be done for many reasons, such as during the development of apps, to install apps not available on the store, or to install an older version of an app in the Play Store. [ 5 ] 
+ In August 2025, Google announced that the "Unknown sources" toggle will be replaced with a process that involves enabling developer mode and a 24-hour pause before allowing sideloading from unverified developers. Verification requires an identity document and $25 payment. It has come into force for Brazil, Singapore, Thailand and Indonesia by September 2026 [ 6 ] and will come worldwide by 2027. [ 7 ] 
+ Use on other operating systems [ edit ] 
+ The QNX -based BlackBerry 10 included an Android runtime environment; initially, apps were required to be packaged in the operating system's native format, and installed via the BlackBerry World app store or sideloading. [ 8 ] Beginning on BlackBerry 10.2.1, the operating system added support for sideloading APK files directly. [ 9 ] [ 10 ] 
+ At Build 2015, Microsoft announced an Android runtime environment for Windows 10 Mobile codenamed "Astoria" (later renamed Windows Bridge for Android ), which would allow Android apps to run in an emulated environment with minimal changes, and have access to Microsoft platform APIs such as Bing Maps and Xbox Live as nearly drop-in replacements for equivalent Google Mobile Services . Google Mobile Services and certain core APIs would not be available, and apps with "deep integration into background tasks" were said to poorly support the environment. [ 11 ] [ 12 ] On February 25, 2016, after already having delayed it in November 2015, [ 13 ] [ 14 ] Microsoft announced that Windows Bridge for Android would be shelved, in favor of focusing on Windows Bridge for iOS (a native implementation of the iOS Objective-C APIs, which allows Xcode projects to be converted to Visual Studio projects targeting Windows platforms) and cross-platform development using the C# language instead. [ 15 ] [ 16 ] Portions of Astoria were used as a basis for Windows Subsystem for Linux (WSL) on the PC version of Windows 10. [ 17 ] 
+ On August 9, 2019, HarmonyOS came with APK compatibility via AOSP base with Linux kernel on HarmonyOS 1.0 for TVs and also June 2, 2021, HarmonyOS 2.0 version expanded to smartphones and tablets until Galaxy Edition version under HarmonyOS NEXT system for the next iterative HarmonyOS 5 beta to commercial version, starting in November 26, 2024 stable, officially dropping APK support. [ 18 ] [ 19 ] [ 20 ] 
+ In June 2021, Microsoft announced the "Windows Subsystem for Android" (WSA), an AOSP-based layer for sideloading Android apps on Windows 11 . The software utilized a runtime compiler developed by Intel , and apps could be sideloaded, published via Microsoft Store , or obtained via an Amazon Appstore client. [ 21 ] [ 22 ] [ 23 ] Microsoft deprecated and discontinued WSA in March 2025. [ 24 ] 
+ Package contents [ edit ] 
+ An APK file is a ZIP archive that usually contains the following files and directories: 
+ META-INF directory:
+ MANIFEST.MF : the Manifest file 
+ The certificate of the application. 
+ CERT.SF : The list of resources and a SHA-1 digest of the corresponding lines in the MANIFEST.MF file; for example: Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: wxqnEAI0UA5nO5QJ8CGMwjkGGWE=
+...
+Name: res/layout/exchange_component_back_bottom.xml
+SHA1-Digest: eACjMjESj7Zkf0cBFTZ0nqWrt7w=
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: DGEqylP8W0n0iV/ZzBx3MW0WGCA=
+ lib : the directory containing the compiled code that is platform dependent, for example native libraries that can be loaded through JNI ; the directory is split into more directories within it:
+ armeabi-v7a : compiled code for all ARMv7 and above based processors only 
+ arm64-v8a : compiled code for all ARMv8 arm64 and above based processors only [ 25 ] 
+ x86 : compiled code for x86 processors only 
+ x86_64 : compiled code for x86-64 processors only 
+ mips and armeabi , deprecated since NDK r17 [ 26 ] [ 27 ] 
+ res : the directory containing resources not compiled into resources.arsc (see below). 
+ assets : a directory containing applications assets, which can be retrieved by AssetManager . 
+ AndroidManifest.xml : An additional Android manifest file, describing the name, version, access rights, referenced library files for the application. This file may be in Android binary XML that can be converted into human-readable plaintext XML with tools such as AXMLPrinter2, Apktool M, or Androguard. 
+ classes.dex : The classes compiled in the dex file format executed by Android Runtime (or by Dalvik virtual machine used in Android 4.4 KitKat ). 
+ resources.arsc : a file containing precompiled resources, such as binary XML, for example. 
+ See also [ edit ] 
+ Android software development 
+ .ipa 
+ App (file format) 
+ Android Studio 
+ Further reading [ edit ] 
+ Hildenbrand, Jerry (2017-01-27). "Is sideloading APK files considered piracy?" . Android Central . Retrieved 2023-02-10 . 
+ References [ edit ] 
+ ↑ "Application Fundamentals" . Android Developers . Archived from the original on 21 November 2020 . Retrieved 3 December 2018 . 
+ ↑ Peters, Jay (30 June 2021). "Google is moving away from APKs on the Play Store" . The Verge . Archived from the original on 4 August 2021 . Retrieved 15 August 2021 . 
+ ↑ "Application Studio" . Android Developers . Archived from the original on 2021-09-12 . Retrieved 2020-02-22 . 
+ ↑ "Inside the Android Application Framework" (video) . Google Sites . 2008. Archived from the original on 2011-12-24 . Retrieved 2008-10-22 . 
+ ↑ "Unknown Sources: Everything you need to know!" . Android Central . 27 July 2018. Archived from the original on 1 September 2021 . Retrieved 4 March 2020 . 
+ ↑ Ro. "Android's new sideloading guardrails are now official in four countries" . GSMArena.com . Retrieved 2026-10-04 . 
+ ↑ Whitwam, Ryan (March 20, 2026). "Google details new 24-hour process to sideload unverified Android apps" . Ars Technica . Retrieved April 3, 2026 . 
+ ↑ Segan, Sascha (January 31, 2013). "How BlackBerry 10 Runs 28,000 Android Apps Without a Back Button" . PC Magazine . Archived from the original on 5 June 2023 . Retrieved 18 June 2014 . 
+ ↑ Kastrenakes, Jacob (June 18, 2014). "BlackBerry will bring thousands of apps from Amazon's store to its phones" . The Verge . Archived from the original on June 4, 2023 . Retrieved June 18, 2014 . 
+ ↑ "There was no mention of Android app support in the official BlackBerry 10.2.1 announcement, but it's there!" . CrackBerry . 2014-01-28 . Retrieved 2025-11-22 . 
+ ↑ "How will Android support work in Windows 10 for Phones?" . TechRadar Pro . Archived from the original on May 19, 2015 . Retrieved May 22, 2015 . 
+ ↑ "Microsoft brings Android, iOS apps to Windows 10" . Ars Technica . April 29, 2015. Archived from the original on July 8, 2017 . Retrieved April 30, 2015 . 
+ ↑ "Microsoft might not bring Android apps to Windows after all" . The Verge . Vox Media. November 16, 2015. Archived from the original on November 17, 2015 . Retrieved November 16, 2015 . 
+ ↑ Collins, Katie (November 16, 2015). "Microsoft presses pause on tool for porting Android apps to Windows 10" . CNET . CBS Interactive . Archived from the original on July 9, 2017 . Retrieved May 26, 2022 . 
+ ↑ "Microsoft confirms: Android-on-Windows Astoria tech is gone" . Ars Technica . Conde Nast. February 25, 2016. Archived from the original on February 25, 2016 . Retrieved February 25, 2016 . 
+ ↑ "An Update on the Developer Opportunity and Windows 10" . Building Apps for Windows blog . Microsoft. February 25, 2016. Archived from the original on February 26, 2016 . Retrieved February 25, 2016 . 
+ ↑ Bright, Peter (April 6, 2016). "Why Microsoft needed to make Windows run Linux software" . Ars Technica . Condé Nast . Archived from the original on April 6, 2016 . Retrieved May 26, 2022 . 
+ ↑ "Google apps still working after upgrading to HarmonyOS from EMUI, don't need to panic" . Huawei . 2021-06-11. Archived from the original on 2025-06-07 . Retrieved 2025-05-26 . 
+ ↑ Matsui, Emiko (7 February 2024). "HarmonyOS NEXT Galaxy will officially meet users in Spring: Huawei" . HC Newsroom . Archived from the original on 14 September 2024 . Retrieved 12 February 2024 . 
+ ↑ Matsui, Emiko (2024-04-11). "Huawei to launch HarmonyOS NEXT beta at HDC 2024 event in June" . Huawei Central . Archived from the original on 2024-05-29 . Retrieved 2024-04-11 . 
+ ↑ Jordan, Novet; Leswing, Kif; Haselton, Todd (June 24, 2021). "Microsoft Windows 11 will support Android apps" . CNBC . Archived from the original on June 24, 2021 . Retrieved June 24, 2021 . 
+ ↑ Warren, Tom (June 24, 2021). "Microsoft is bringing Android apps to Windows 11 with Amazon's Appstore" . The Verge . Archived from the original on June 24, 2021 . Retrieved June 24, 2021 . 
+ ↑ Gartenberg, Chaim (June 24, 2021). "Windows 11's Intel-powered Android apps will run on AMD and Arm processors, too" . The Verge . Archived from the original on June 24, 2021 . Retrieved June 24, 2021 . 
+ ↑ Warren, Tom (5 March 2024). "Microsoft to end its Android apps on Windows 11 subsystem in 2025" . The Verge . Archived from the original on 5 May 2024 . Retrieved 5 March 2024 . 
+ ↑ "ABI Management | Android Developers" . developer.android.com . Archived from the original on 31 May 2019 . Retrieved 16 June 2018 . 
+ ↑ "Android ABIs | Android NDK" . Android Developers . Archived from the original on 2019-04-08 . Retrieved 2020-08-14 . Note: Historically the NDK supported ARMv5 (armeabi), and 32-bit and 64-bit MIPS , but support for these ABIs was removed in NDK r17. 
+ ↑ Dan, Albert (Sep 5, 2018). "Changelog r17" . GitHub . Archived from the original on 2020-08-28 . Retrieved 2020-08-14 . Support for ARMv5 (armeabi), MIPS, and MIPS64 has been removed. Attempting to build any of these ABIs will result in an error. 
+ v t e Android 
+ Android Go 
+ Comparison of products 
+ Software development Development tools Official 
+ Android Runtime (ART) 
+ Software development kit (SDK)
+ Android Debug Bridge (ADB) 
+ Fastboot 
+ Android App Bundle 
+ Android application package (APK) 
+ Bionic 
+ Dalvik 
+ Firebase 
+ Google Cloud Messaging (GCM) 
+ Firebase Cloud Messaging (FCM) 
+ Google Mobile Services (GMS) 
+ Jetpack Compose 
+ Native development kit (NDK) 
+ Open accessory development kit (OADK) 
+ RenderScript 
+ Skia 
+ AdMob 
+ Material Design 
+ Fonts 
+ Droid 
+ Roboto 
+ Noto 
+ Google Sans 
+ Google Developers 
+ Other 
+ OpenBinder 
+ Apache Harmony 
+ OpenJDK 
+ Gradle 
+ GSON 
+ Integrated development environments (IDE) 
+ Android Studio 
+ IntelliJ IDEA 
+ Eclipse 
+ Android Development Tools (ADT) 
+ MIT App Inventor 
+ Languages , databases 
+ Java 
+ Kotlin 
+ XML 
+ KML 
+ C 
+ C++ 
+ SQLite 
+ Augmented , virtual reality 
+ Android XR 
+ Cardboard 
+ Daydream 
+ Events, communities 
+ Google I/O 
+ Developer Challenge 
+ Developer Lab 
+ Android Open Source Project (AOSP) 
+ Releases 
+ Cupcake (1.5) 
+ Donut (1.6) 
+ Eclair (2.0–2.1) 
+ Froyo (2.2) 
+ Gingerbread (2.3) 
+ Honeycomb (3.x) 
+ Ice Cream Sandwich (4.0) 
+ Jelly Bean (4.1–4.3) 
+ KitKat (4.4) 
+ Lollipop (5.x) 
+ Marshmallow (6.x) 
+ Nougat (7.x) 
+ Oreo (8.x) 
+ Pie (9) 
+ 10 
+ 11 
+ 12 
+ 13 
+ 14 
+ 15 
+ 16 
+ 17 
+ Derivatives 
+ Android Automotive 
+ Android Things 
+ TV 
+ devices 
+ Android XR 
+ Wear OS 
+ Devices Pixel 
+ C 
+ Pixel, Pixel XL 
+ 2, 2 XL 
+ 3, 3 XL 
+ 3a, 3a XL 
+ 4, 4 XL 
+ 4a, 4a (5G) 
+ 5 
+ 5a 
+ 6, 6 Pro 
+ 6a 
+ 7, 7 Pro 
+ 7a 
+ Fold 
+ Tablet 
+ 8, 8 Pro 
+ 8a 
+ 9, 9 Pro, 9 Pro XL 
+ 9 Pro Fold 
+ 9a 
+ Pixel 10 
+ 10 Pro, 10 Pro XL 
+ 10 Pro Fold 
+ 10a 
+ Pixel 11 
+ 11 Pro, 11 Pro XL 
+ 11 Pro Fold 
+ Nexus 
+ One 
+ S 
+ Galaxy Nexus 
+ 4 
+ 10 
+ Q 
+ 5 
+ 5X 
+ 6 
+ 6P 
+ 7
+ 2012 
+ 2013 
+ 9 
+ Player 
+ Play edition 
+ HTC One (M7) 
+ HTC One (M8) 
+ LG G Pad 8.3 
+ Moto G 
+ Samsung Galaxy S4 
+ Sony Xperia Z Ultra 
+ Android One 
+ other smartphones 
+ Custom distributions 
+ AliOS 
+ Android-x86 
+ Remix OS 
+ AOKP 
+ Baidu Yi 
+ Barnes & Noble Nook 
+ CalyxOS 
+ ColorOS 
+ OxygenOS 
+ Realme UI 
+ CopperheadOS 
+ EMUI 
+ MagicOS 
+ Fire OS 
+ Flyme OS 
+ GrapheneOS 
+ LeWa OS 
+ LineageOS 
+ /e/ 
+ CrDroid 
+ CyanogenMod 
+ DivestOS 
+ iodéOS 
+ Kali NetHunter 
+ LiteOS 
+ Meta Horizon OS 
+ Nokia X software platform 
+ OmniROM 
+ OPhone 
+ PixelExperience 
+ Pixel UI 
+ Replicant 
+ Resurrection Remix OS 
+ SlimRoms 
+ TCL UI 
+ Ubuntu for Android 
+ Xiaomi HyperOS 
+ MIUI 
+ ZUI 
+ Booting, recovery 
+ Booting process 
+ Recovery mode 
+ TWRP 
+ ClockworkMod 
+ Fastboot 
+ APIs 
+ Google Maps 
+ Google Play Services 
+ Play Integrity API (formerly SafetyNet) 
+ Google Search 
+ Alternative UIs 
+ Cherry OS 
+ ColorOS 
+ EMUI 
+ Funtouch OS 
+ Flyme OS 
+ HiOS 
+ Hive UI (XOLO Hive) 
+ HTC Sense 
+ LG UX 
+ Optimus UI 
+ Motoblur 
+ Nothing OS 
+ One UI 
+ Experience 
+ TouchWiz 
+ Origin OS 
+ OxygenOS 
+ Pixel UI 
+ XOS 
+ Xperia UI 
+ ZenUI 
+ Rooting 
+ SuperSU 
+ Xposed 
+ Magisk 
+ Kingo Root 
+ Kernel Assisted Superuser 
+ Lists 
+ App stores 
+ Custom distributions 
+ Features 
+ Free and open-source applications 
+ Google apps 
+ Launchers 
+ Related topics 
+ Index of articles 
+ Androidland 
+ Chromecast 
+ Google 
+ Java vs. Android API 
+ Lawn statues 
+ BlueStacks 
+ Legal issues
+ Google v. Oracle 
+ smartphone patent wars 
+ Android Runtime for Chrome 
+ Portals : Software • Telecommunication Categories : Android development • Mobile telecommunications 
+ v t e Archive formats Archiving only 
+ ar 
+ cpio 
+ shar 
+ tar 
+ LBR 
+ WAD 
+ WARC 
+ Compressing only 
+ Brotli 
+ bzip2 
+ compress 
+ gzip 
+ Zopfli 
+ LZMA 
+ LZ4 
+ lzip 
+ lzop 
+ SQ 
+ xz 
+ Zstandard 
+ PAQ 
+ Archiving and compressing 
+ 7z 
+ ACE 
+ ARC 
+ ARJ 
+ B1 
+ Cabinet 
+ cpt 
+ dar 
+ DGCA 
+ .dmg 
+ .egg 
+ kgb 
+ LHA 
+ lrzip 
+ LZX 
+ MPQ 
+ PEA 
+ RAR 
+ rzip 
+ sit 
+ sitx 
+ SQX 
+ UDA 
+ Xar 
+ zoo 
+ ZIP 
+ ZPAQ 
+ Software packaging and distributing 
+ apk 
+ App 
+ APPX 
+ deb 
+ HAP 
+ ipa 
+ JAR 
+ WAR 
+ Jakarta EE RAR 
+ EAR 
+ MSI 
+ MSIX 
+ Package (macOS) 
+ RPM 
+ XAP 
+ XBAP 
+ Document packaging and distributing 
+ OEB Package Format 
+ OEBPS Container Format 
+ Open Packaging Conventions 
+ Comparison 
+ List 
+ Category 
+ Retrieved from " https://en.wikipedia.org/w/index.php?title=Apk_(file_format)&oldid=1378332354 " 
+ Categories : Android (operating system) Archive formats Windows 11 Hidden categories: Articles with short description Short description is different from Wikidata 
+ This page was last edited on 4 October 2026, at 00:57  (UTC) . 
+ Page was rendered with Parsoid . 
+ Text is available under the Creative Commons Attribution-ShareAlike 4.0 License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy . Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+ Privacy policy 
+ About Wikipedia 
+ Disclaimers 
+ Contact Wikipedia 
+ Legal & safety contacts 
+ Code of Conduct 
+ Developers 
+ Statistics 
+ Cookie statement 
+ Mobile view 
+ Search 
+ Search 
+ Toggle the table of contents 
+ apk (file format) 
+ 31 languages 
+ Add topic 
+ 

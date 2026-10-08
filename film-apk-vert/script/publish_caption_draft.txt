@@ -1,0 +1,1 @@
+Rename any APK to .zip — it just opens. Every Android app is a ZIP file from 1989, and your phone never even unzips it.

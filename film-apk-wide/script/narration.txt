@@ -1,0 +1,103 @@
+# APK — The Zip That Becomes an App — narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 The Trick
+You just downloaded a chat app.|One hundred and twenty megabytes.|Your thumb is hovering over Install.
+But before you tap that button,|try something.
+Rename the file.|APK to ZIP.
+## gap 15
+
+It opens.|Every file is right there:|the manifest, the code,|the resources, the signatures.
+AndroidManifest.xml.|classes.dex.|resources.arsc, res, META-INF.
+Every Android app on Earth|ships as a ZIP archive.
+
+In 2008, Google needed a package format|for a brand-new phone operating system.
+They picked one from 1989.
+## gap 15
+
+Why would the world's biggest mobile OS|wrap its apps in a DOS-era compression format?
+And what actually happens|in the ten seconds after you tap Install?
+## gap 20
+
+# CHAPTER 2 The Box
+1989.|Phil Katz, PKWARE, Milwaukee.
+He had just been sued over his archiver, PKARC,|by the makers of ARC,|and his answer to the lawsuit|was a new format: ZIP.
+
+His initials are still in the file.
+Open any zip in a hex editor:|the first two bytes are P, K.
+Fifty, 4B.|Every APK on your phone starts with them.
+## gap 15
+
+A zip is not really about compression, though.|It is an index.
+Local file headers,|a central directory,|and at the very end,|a record that says where everything is.
+
+That index is why Android picked it.
+The system can open one file inside the package|without unpacking the rest.
+The tooling was everywhere, too,|twenty years of it by 2008.
+And Android was built on Java:|a Java app already shipped as a JAR,|which is a zip with a manifest inside.
+## gap 15
+
+One more twist.
+Not everything in an APK is compressed.
+The resource table must be stored uncompressed,|aligned to four-byte boundaries,|so Android can map it straight into memory.
+The box is smarter than it looks.
+## gap 20
+
+# CHAPTER 3 The Seal
+So you tap Install.
+The phone is holding a zip from the internet,|a hundred and twenty megabytes from a stranger.
+First question:|has anyone tampered with it?
+## gap 15
+
+The old scheme, v1, was JAR signing|from the Java world:|a signed receipt for every file inside the box.
+To check it, Android had to walk|every entry and hash it, one at a time.
+
+Android 7.0 added scheme v2,|and it works like a wax seal|around the whole package.
+The signing block sits between the files|and the central directory,|and the signature covers the entire APK.
+Change one byte anywhere,|and the install dies.
+And installs got faster:|no more walking every file.
+## gap 15
+
+The key is the developer's identity.|There is no certificate authority.
+You sign your own app,|and only the same key can ship an update.
+## gap 12
+
+Verification passes.|Now Android reads the label.
+The manifest is binary XML:|name, version, every permission the app wants,|every screen it can show.
+The package gets copied to its home,|under /data/app.
+## gap 12
+
+Then the real magic: dex2oat.
+Older Android ran apps through an interpreter,|Dalvik, a few lines at a time.
+Since Android 5.0, the runtime is ART,|and at install it compiles classes.dex|into machine code for your exact CPU.
+That is the optimizing bar you see|when your phone updates itself:|every app on the device, recompiled.
+A single dex file tops out|at 65,536 methods.|Big apps just carry more of them.
+## gap 15
+
+Finally, a sandbox:|/data/data, one Linux user per app.
+The icon appears.|Ten seconds, done.
+## gap 15
+
+And here is the thing:|the app never got unzipped.
+The zip is still sitting there in /data/app,|being read in pieces.
+## gap 20
+
+# CHAPTER 4 Still a Zip
+In 2018, Google announced the App Bundle.
+Since August 2021,|every new app on the Play Store|has to use one.
+## gap 15
+
+You no longer download one universal package|with every language|and every CPU architecture inside.
+Play assembles the splits for your exact device|and signs them on the way out.
+Your phone downloads only its own pieces.
+## gap 15
+
+base.apk plus config APKs.|Still APKs. Still signed zips.
+
+Outside Google's headquarters,|the lawn is full of giant green robots.
+Under every app they represent:|a format from 1989.
+## gap 15
+
+Open any app under /data/app|on a rooted phone and check.
+Two bytes, right at the front.|P, K.
+## gap 20
+
+Every app is a zip you can read.
