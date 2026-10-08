@@ -1,0 +1,1 @@
+TCP sends a registered letter. UDP throws a postcard. Your video call uses both.

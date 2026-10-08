@@ -1,0 +1,1 @@
+Your packets travel as readable envelopes. This is what packet capture actually sees.

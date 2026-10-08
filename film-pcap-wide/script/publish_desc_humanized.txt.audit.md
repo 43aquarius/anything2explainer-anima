@@ -1,0 +1,8 @@
+# humanize audit
+
+- input: film-pcap-wide/script/publish_desc_draft.txt
+- output: film-pcap-wide/script/publish_desc_humanized.txt
+- genre: description
+- numbers checked: 7, missing: 0
+- proper nouns checked: 13, missing: 0
+- verdict: all facts survived

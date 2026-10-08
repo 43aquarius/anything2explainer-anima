@@ -12,6 +12,7 @@ import {PreviewG6} from './shots/G6/Preview';
 import {PreviewG7} from './shots/G7/Preview';
 import {PreviewG8} from './shots/G8/Preview';
 import {ProbeIcons} from './probe';
+import {Cover} from './Cover';
 
 // 主合成 Video + 覆盖层预览 + 8 个构建组预览（预览合成 = 覆盖层 + 本组镜头，无音频）
 export const Root: React.FC = () => (
@@ -26,6 +27,7 @@ export const Root: React.FC = () => (
     <Composition id="G6" component={PreviewG6} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
     <Composition id="G7" component={PreviewG7} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
     <Composition id="Icons" component={ProbeIcons} durationInFrames={90} fps={FPS} width={W} height={H} />
+    <Composition id="Cover" component={Cover} durationInFrames={1} fps={FPS} width={W} height={H} />
     <Composition id="G8" component={PreviewG8} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
   </>
 );

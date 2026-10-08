@@ -1,0 +1,14 @@
+One network, two couriers. TCP numbers every envelope, waits for receipts, and re-sends lost packets — good for a photo, bad for a live call. UDP just throws an 8-byte header with no ceremony; if they arrive late, they're useless. Your video call uses UDP for the voice and TCP for signaling. DNS asks questions over UDP. QUIC rebuilt some of TCP's guarantees on top of UDP.
+
+Chapters:
+0:02 The Best-Effort Wire
+1:14 TCP — The Courier
+2:48 UDP — The Postcard
+4:09 Choosing Sides
+
+Sources:
+- RFC 793 (TCP) — https://www.rfc-editor.org/rfc/rfc793
+- RFC 768 (UDP) — https://www.rfc-editor.org/rfc/rfc768
+- RFC 791 (IP, best-effort) — https://www.rfc-editor.org/rfc/rfc791
+- RFC 6298 (retransmission timer) — https://www.rfc-editor.org/rfc/rfc6298
+- RFC 9000 (QUIC) — https://www.rfc-editor.org/rfc/rfc9000
