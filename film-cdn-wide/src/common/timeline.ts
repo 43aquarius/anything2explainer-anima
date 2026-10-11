@@ -1,5 +1,5 @@
 // 自动生成：scripts/tts_build.py。帧号 1 起含端点。
-export const TOTAL_FRAMES = 4465;
+export const TOTAL_FRAMES = 4464;
 export const CHAPTER_STARTS: Array<{n: number; title: string; from: number}> = [
   {n: 1, title: "The Distance Problem", from: 86},
   {n: 2, title: "The Edge Network", from: 894},
@@ -27,10 +27,10 @@ export const SENTENCES: Sentence[] = [
   {id: "S17", chapter: 4, from: 2814, to: 3023, text: "In the nineties at MIT, a hard question circulated: if the whole world hits one server, that server will melt."},
   {id: "S18", chapter: 4, from: 3034, to: 3290, text: "Akamai, spun out of MIT in 1998, became the answer — today its platform carries a meaningful share of the internet's traffic."},
   {id: "S19", chapter: 4, from: 3301, to: 3474, text: "Others followed: open appliances inside ISPs, edges in three hundred-plus cities."},
-  {id: "S20", chapter: 4, from: 3520, to: 3559, text: "And the failure mode flipped."},
-  {id: "S21", chapter: 4, from: 3570, to: 3778, text: "In 2021, one bad config at an edge provider took down roughly a tenth of the internet for forty-nine minutes."},
-  {id: "S22", chapter: 4, from: 3789, to: 4003, text: "The trick that beat distance also concentrates trust: the edge became a single point of failure for everyone at once."},
-  {id: "S23", chapter: 4, from: 4049, to: 4110, text: "So — Friday night, your movie."},
-  {id: "S24", chapter: 4, from: 4121, to: 4278, text: "One second in, it plays. Not because the network is fast — because the copy was close."},
-  {id: "S25", chapter: 4, from: 4289, to: 4365, text: "The internet isn't fast. It's close."},
+  {id: "S20", chapter: 4, from: 3520, to: 3558, text: "And the failure mode flipped."},
+  {id: "S21", chapter: 4, from: 3569, to: 3778, text: "In 2021, one bad config at an edge provider took down roughly a tenth of the internet for forty-nine minutes."},
+  {id: "S22", chapter: 4, from: 3789, to: 4002, text: "The trick that beat distance also concentrates trust: the edge became a single point of failure for everyone at once."},
+  {id: "S23", chapter: 4, from: 4048, to: 4109, text: "So — Friday night, your movie."},
+  {id: "S24", chapter: 4, from: 4120, to: 4277, text: "One second in, it plays. Not because the network is fast — because the copy was close."},
+  {id: "S25", chapter: 4, from: 4288, to: 4364, text: "The internet isn't fast. It's close."},
 ];

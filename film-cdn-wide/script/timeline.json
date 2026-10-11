@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total_frames": 4465,
+ "total_frames": 4464,
  "engine": "edge",
  "voice": "en-US-AndrewNeural",
  "rate": "+0%",
@@ -502,13 +502,13 @@
    "id": "S20",
    "chapter": 4,
    "from": 3520,
-   "to": 3559,
+   "to": 3558,
    "text": "And the failure mode flipped.",
    "para": false,
    "subs": [
     {
      "from": 3520,
-     "to": 3559,
+     "to": 3558,
      "text": "And the failure mode flipped."
     }
    ]
@@ -516,23 +516,23 @@
   {
    "id": "S21",
    "chapter": 4,
-   "from": 3570,
+   "from": 3569,
    "to": 3778,
    "text": "In 2021, one bad config at an edge provider took down roughly a tenth of the internet for forty-nine minutes.",
    "para": false,
    "subs": [
     {
-     "from": 3570,
-     "to": 3665,
+     "from": 3569,
+     "to": 3664,
      "text": "In 2021, one bad config at an edge provider"
     },
     {
-     "from": 3666,
-     "to": 3736,
+     "from": 3665,
+     "to": 3735,
      "text": "took down roughly a tenth of the internet"
     },
     {
-     "from": 3737,
+     "from": 3736,
      "to": 3778,
      "text": "for forty-nine minutes."
     }
@@ -542,17 +542,17 @@
    "id": "S22",
    "chapter": 4,
    "from": 3789,
-   "to": 4003,
+   "to": 4002,
    "text": "The trick that beat distance also concentrates trust: the edge became a single point of failure for everyone at once.",
    "para": true,
    "subs": [
     {
      "from": 3789,
-     "to": 3838,
+     "to": 3837,
      "text": "The trick that beat distance"
     },
     {
-     "from": 3839,
+     "from": 3838,
      "to": 3894,
      "text": "also concentrates trust:"
     },
@@ -563,7 +563,7 @@
     },
     {
      "from": 3959,
-     "to": 4003,
+     "to": 4002,
      "text": "for everyone at once."
     }
    ]
@@ -571,14 +571,14 @@
   {
    "id": "S23",
    "chapter": 4,
-   "from": 4049,
-   "to": 4110,
+   "from": 4048,
+   "to": 4109,
    "text": "So — Friday night, your movie.",
    "para": false,
    "subs": [
     {
-     "from": 4049,
-     "to": 4110,
+     "from": 4048,
+     "to": 4109,
      "text": "So — Friday night, your movie."
     }
    ]
@@ -586,24 +586,24 @@
   {
    "id": "S24",
    "chapter": 4,
-   "from": 4121,
-   "to": 4278,
+   "from": 4120,
+   "to": 4277,
    "text": "One second in, it plays. Not because the network is fast — because the copy was close.",
    "para": false,
    "subs": [
     {
-     "from": 4121,
-     "to": 4171,
+     "from": 4120,
+     "to": 4170,
      "text": "One second in, it plays."
     },
     {
-     "from": 4172,
-     "to": 4230,
+     "from": 4171,
+     "to": 4229,
      "text": "Not because the network is fast —"
     },
     {
-     "from": 4231,
-     "to": 4278,
+     "from": 4230,
+     "to": 4277,
      "text": "because the copy was close."
     }
    ]
@@ -611,19 +611,19 @@
   {
    "id": "S25",
    "chapter": 4,
-   "from": 4289,
-   "to": 4365,
+   "from": 4288,
+   "to": 4364,
    "text": "The internet isn't fast. It's close.",
    "para": true,
    "subs": [
     {
-     "from": 4289,
+     "from": 4288,
      "to": 4343,
      "text": "The internet isn't fast."
     },
     {
      "from": 4344,
-     "to": 4365,
+     "to": 4364,
      "text": "It's close."
     }
    ]
@@ -631,5 +631,5 @@
  ],
  "chars": 1658,
  "words": 380,
- "speech_sec": 126.15
+ "speech_sec": 126.13
 }

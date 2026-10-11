@@ -1,4 +1,4 @@
-# 时间轴（edge · en-US-AndrewNeural +0%，共 4465 帧 = 148.8s，380 词，语速 3.01 词/s）
+# 时间轴（edge · en-US-AndrewNeural +0%，共 4464 帧 = 148.8s，380 词，语速 3.01 词/s）
 
 | 句 | 章 | 帧 from–to | 时长 | 末块 | 段末 | 文本（| 为字幕切分） |
 |---|---|---|---|---|---|---|
@@ -21,12 +21,12 @@
 | S17 | 4 | 2814–3023 | 7.0s | 38 |  | In the nineties at MIT,｜a hard question circulated:｜if the whole world hits one server,｜that server will melt. |
 | S18 | 4 | 3034–3290 | 8.6s | 81 |  | Akamai, spun out of MIT in 1998,｜became the answer —｜today its platform carries｜a meaningful share of the internet's traffic. |
 | S19 | 4 | 3301–3474 | 5.8s | 59 | ¶ | Others followed:｜open appliances inside ISPs,｜edges in three hundred-plus cities. |
-| S20 | 4 | 3520–3559 | 1.3s | 40 |  | And the failure mode flipped. |
-| S21 | 4 | 3570–3778 | 7.0s | 42 |  | In 2021, one bad config at an edge provider｜took down roughly a tenth of the internet｜for forty-nine minutes. |
-| S22 | 4 | 3789–4003 | 7.2s | 45 | ¶ | The trick that beat distance｜also concentrates trust:｜the edge became a single point of failure｜for everyone at once. |
-| S23 | 4 | 4049–4110 | 2.1s | 62 |  | So — Friday night, your movie. |
-| S24 | 4 | 4121–4278 | 5.3s | 48 |  | One second in, it plays.｜Not because the network is fast —｜because the copy was close. |
-| S25 | 4 | 4289–4365 | 2.6s | 22⚠ | ¶ | The internet isn't fast.｜It's close. |
+| S20 | 4 | 3520–3558 | 1.3s | 39 |  | And the failure mode flipped. |
+| S21 | 4 | 3569–3778 | 7.0s | 43 |  | In 2021, one bad config at an edge provider｜took down roughly a tenth of the internet｜for forty-nine minutes. |
+| S22 | 4 | 3789–4002 | 7.1s | 44⚠ | ¶ | The trick that beat distance｜also concentrates trust:｜the edge became a single point of failure｜for everyone at once. |
+| S23 | 4 | 4048–4109 | 2.1s | 62 |  | So — Friday night, your movie. |
+| S24 | 4 | 4120–4277 | 5.3s | 48 |  | One second in, it plays.｜Not because the network is fast —｜because the copy was close. |
+| S25 | 4 | 4288–4364 | 2.6s | 21⚠ | ¶ | The internet isn't fast.｜It's close. |
 
 ## 章节起始帧
 - 第1章 The Distance Problem：f86

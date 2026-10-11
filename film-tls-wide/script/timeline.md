@@ -18,7 +18,7 @@
 | S14 | 2 | 1922–2098 | 5.9s | 49 | ¶ | Then something strange happens:｜both sides compute the same secret —｜without either one sending it. |
 | S15 | 2 | 2154–2341 | 6.3s | 55 |  | From here on, everything is｜symmetric encryption, AES-GCM.｜Fast, stream-like, sealed. |
 | S16 | 2 | 2352–2442 | 3.0s | 55 |  | The person at the next table｜still sees every packet. |
-| S17 | 2 | 2453–2598 | 4.9s | 37 |  | The handshake itself is public.｜The envelopes still fly,｜addressed and timed. |
+| S17 | 2 | 2453–2598 | 4.9s | 36 |  | The handshake itself is public.｜The envelopes still fly,｜addressed and timed. |
 | S18 | 2 | 2609–2671 | 2.1s | 34⚠ | ¶ | But the letters inside｜have become noise. |
 | S19 | 3 | 2747–2866 | 4.0s | 56 |  | How do two strangers agree on a secret｜on a channel everyone can read? |
 | S20 | 3 | 2877–3033 | 5.2s | 33 |  | This is the Diffie-Hellman trick,｜published in 1976 —｜fifty years ago. |
