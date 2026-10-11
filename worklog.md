@@ -37,3 +37,23 @@ Stage Summary:
   3. 两片的竖版 TikTok（照 EP2 竖版流程：15 句压缩 + 3 组）
   4. 全部完成后统一 git commit + 推 GitHub（需用户提供 remote/token——本会话无 gh CLI 无凭证）
 - 关键工程记忆（下轮直接用）：渲染改码后必须 rm build_full（bundle 缓存陷阱）；ffmpeg 拼接用 concat demuxer + 绝对路径；长命令超时会截断 ffmpeg（mp4 moov 损坏重拼即好）；motion_check 组级通过后仍须成片复测；frame_metrics 的 fin_frames 必须从最新成片重抽；Task 子代理与 z-ai API（vision/web_search）间歇 429——遇到就等 60s 重试或换 curl 直抓
+
+---
+Task ID: 4
+Agent: main
+Task: EP3《TLS — The Little Lock》横版 YouTube 全流程（容器灾难恢复 + 27 镜构建 + 渲染 + QC）
+
+Work Log:
+- 【容器灾难】会话中容器被重置为 PCAP 时代旧快照（DNS/TLS/CDN 工作全失）；靠 GitHub 上的 268b700 squash 提交完整恢复（DNS 成片源码 + TLS/CDN 前期材料）
+- 【TTS 重生成】edge-tts AndrewNeural 重跑与原时间轴完全一致（TLS 6027f/200.9s 章界 86/1546/2727/4147；CDN 4464f）；TTS 逐句缓存入库（git add -f audio/cache），永久免网络重生成
+- 【架构修复】分镜表 v2：段末镜头跨段间隙延伸到下一镜头首帧前（SC04→912 / SC10→2145 / SC16→3459 / SC23→5012 / SC25→5513）；章首镜头从章节卡后一帧起（SC13→2719 / SC20→4139）——消除帧覆盖空洞 + 段末 hold 问题的根源修复
+- 【子代理经验】Task 池跨多容器（有新有旧），并行重载荷派单父调用必超时但后台代理仍会写盘；「WRONG-SANDBOX 快速校验」+「Git 中继（分支推送）」协议可续用
+- 【构建】G1/G2/G4 + G3 前半由后台代理完成；G3 SC10 + G5–G8（15 镜）主会话亲建；selfcheck 0 问题 / tsc 0 错
+- 【QC 迭代】三轮：①段末 hold（钥匙摆动衰减 / 传送带冻结 / 噪声温和闪烁 / 终镜双 glitch 减一）②空场与主体折叠（连体外框法：SC19 墙框 + SC24 卡排框 + 实心亮条头）③SC17 大字提前/加大
+- 【motion_check 判据理解】薄宽物按 min(w,4h)/2.5 折算——卡片要宽 ≥200 或加连体框；纯边框空心盒组件可能被连通域打散——实心条最稳
+- 【渲染】分块 3 块 × ~4.5 分钟（2 核机）；concat demuxer + 绝对路径；帧抽取后置后台 + flag 文件防超时
+
+Stage Summary:
+- **EP3 TLS 横版成片交付：TLS_Explained_YouTube_1280x720.mp4（3:21 / 38.8MB / 4 章 27 镜）**，已 commit 6be06eb + push
+- 质检：motion_check 成片复测段末全过（42–159f）、终镜 33f ✓；frame_metrics 高0/中0/低29；selfcheck 0
+- 下一步：EP4 CDN 横版（narration/TTS 已重生成就绪，待 config HUD + 分镜 + 图元 + 构建 + 渲染）→ TLS/CDN 竖版 → 封面/发布物料回补 → GitHub Releases（v4 DNS / v5 TLS / v6 CDN）
