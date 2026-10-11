@@ -1,2 +1,10 @@
+node_modules/
 out_probe/
-node_modules
+skills/
+.env
+anything2explainer/
+film-*/research/**/*.html
+film-*/research/**/*.htm
+research_cdn_search/
+research_dns_search/
+research_search/

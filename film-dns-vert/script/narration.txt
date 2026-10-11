@@ -1,0 +1,24 @@
+# DNS — The Internet's Phonebook — vertical cut (| splits subtitles only; EN block <=48 chars)
+You type shop.example and press Enter.|The page appears in half a second.
+But no machine on the internet|is named shop.example.|The internet only speaks numbers.
+
+So someone has to translate —|every single time.
+Before 1983: one text file,|one office, one phone line.
+Then DNS: a hierarchy|with no center at all.
+## gap 25
+
+Your resolver asks the root:|"who handles .example?"
+The root only points|to the next counter.
+The TLD counter points|to the shop's own server.
+That server holds the answer:|192.0.2.33.
+## gap 15
+
+The whole walk?|Under a tenth of a second.
+And most walks never happen —|answers live on sticky notes.
+Each note has a TTL —|an expiry date.
+In 2021, Facebook went dark:|caches held the last correct copies|for eleven minutes.
+## gap 25
+
+One resolver alone answers|1.9 trillion lookups a day.
+A name is a question.|DNS is the answer.
+## gap 30

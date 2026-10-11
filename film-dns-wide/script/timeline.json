@@ -1,0 +1,1275 @@
+{
+ "fps": 30,
+ "total_frames": 8644,
+ "engine": "edge",
+ "voice": "en-US-AndrewNeural",
+ "rate": "+0%",
+ "gap": 10,
+ "para_gap": 20,
+ "chapter_gap": 45,
+ "lead": 40,
+ "tail": 90,
+ "lang": "en",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "The Mystery",
+   "from": 86
+  },
+  {
+   "n": 2,
+   "title": "The Lookup",
+   "from": 2266
+  },
+  {
+   "n": 3,
+   "title": "The Cache",
+   "from": 4193
+  },
+  {
+   "n": 4,
+   "title": "When It Breaks",
+   "from": 6204
+  }
+ ],
+ "sentences": [
+  {
+   "id": "S01",
+   "chapter": 1,
+   "from": 86,
+   "to": 227,
+   "text": "You type shop.example and press Enter. Half a second later, the page appears.",
+   "para": false,
+   "subs": [
+    {
+     "from": 86,
+     "to": 162,
+     "text": "You type shop.example and press Enter."
+    },
+    {
+     "from": 163,
+     "to": 227,
+     "text": "Half a second later, the page appears."
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "chapter": 1,
+   "from": 238,
+   "to": 374,
+   "text": "Here is the strange part: no machine on the internet is named shop.example.",
+   "para": false,
+   "subs": [
+    {
+     "from": 238,
+     "to": 283,
+     "text": "Here is the strange part:"
+    },
+    {
+     "from": 284,
+     "to": 321,
+     "text": "no machine on the internet"
+    },
+    {
+     "from": 322,
+     "to": 374,
+     "text": "is named shop.example."
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "chapter": 1,
+   "from": 385,
+   "to": 478,
+   "text": "The internet doesn't speak names. It speaks numbers.",
+   "para": false,
+   "subs": [
+    {
+     "from": 385,
+     "to": 446,
+     "text": "The internet doesn't speak names."
+    },
+    {
+     "from": 447,
+     "to": 478,
+     "text": "It speaks numbers."
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "chapter": 1,
+   "from": 489,
+   "to": 567,
+   "text": "Names are for humans. Routing is for machines.",
+   "para": true,
+   "subs": [
+    {
+     "from": 489,
+     "to": 530,
+     "text": "Names are for humans."
+    },
+    {
+     "from": 531,
+     "to": 567,
+     "text": "Routing is for machines."
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "chapter": 1,
+   "from": 613,
+   "to": 758,
+   "text": "So in the first millisecond, your browser is holding an envelope with no address on it.",
+   "para": false,
+   "subs": [
+    {
+     "from": 613,
+     "to": 663,
+     "text": "So in the first millisecond,"
+    },
+    {
+     "from": 664,
+     "to": 696,
+     "text": "your browser is holding"
+    },
+    {
+     "from": 697,
+     "to": 758,
+     "text": "an envelope with no address on it."
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "chapter": 1,
+   "from": 769,
+   "to": 873,
+   "text": "Before anything can be sent, the name has to become a number.",
+   "para": false,
+   "subs": [
+    {
+     "from": 769,
+     "to": 823,
+     "text": "Before anything can be sent,"
+    },
+    {
+     "from": 824,
+     "to": 873,
+     "text": "the name has to become a number."
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "chapter": 1,
+   "from": 884,
+   "to": 1000,
+   "text": "Somebody has to run that translation — every single time you press Enter.",
+   "para": true,
+   "subs": [
+    {
+     "from": 884,
+     "to": 948,
+     "text": "Somebody has to run that translation —"
+    },
+    {
+     "from": 949,
+     "to": 1000,
+     "text": "every single time you press Enter."
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "chapter": 1,
+   "from": 1031,
+   "to": 1076,
+   "text": "It didn't always work this way.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1031,
+     "to": 1076,
+     "text": "It didn't always work this way."
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "chapter": 1,
+   "from": 1087,
+   "to": 1297,
+   "text": "For the internet's first decade, there was one text file, HOSTS.TXT — the whole network's contact list,",
+   "para": false,
+   "subs": [
+    {
+     "from": 1087,
+     "to": 1141,
+     "text": "For the internet's first decade,"
+    },
+    {
+     "from": 1142,
+     "to": 1240,
+     "text": "there was one text file, HOSTS.TXT —"
+    },
+    {
+     "from": 1241,
+     "to": 1297,
+     "text": "the whole network's contact list,"
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "chapter": 1,
+   "from": 1308,
+   "to": 1433,
+   "text": "maintained by one office at SRI, updated when you phoned in a change.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1308,
+     "to": 1373,
+     "text": "maintained by one office at SRI,"
+    },
+    {
+     "from": 1374,
+     "to": 1433,
+     "text": "updated when you phoned in a change."
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "chapter": 1,
+   "from": 1444,
+   "to": 1602,
+   "text": "Thousands of hosts, one file, one office, one phone line. That was the ceiling.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1444,
+     "to": 1510,
+     "text": "Thousands of hosts, one file,"
+    },
+    {
+     "from": 1511,
+     "to": 1574,
+     "text": "one office, one phone line."
+    },
+    {
+     "from": 1575,
+     "to": 1602,
+     "text": "That was the ceiling."
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "chapter": 1,
+   "from": 1653,
+   "to": 1816,
+   "text": "In 1983, Paul Mockapetris proposed a different design: no central book at all.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1653,
+     "to": 1721,
+     "text": "In 1983, Paul Mockapetris"
+    },
+    {
+     "from": 1722,
+     "to": 1778,
+     "text": "proposed a different design:"
+    },
+    {
+     "from": 1779,
+     "to": 1816,
+     "text": "no central book at all."
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "chapter": 1,
+   "from": 1827,
+   "to": 1940,
+   "text": "A hierarchy, distributed worldwide — the Domain Name System.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1827,
+     "to": 1902,
+     "text": "A hierarchy, distributed worldwide —"
+    },
+    {
+     "from": 1903,
+     "to": 1940,
+     "text": "the Domain Name System."
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "chapter": 1,
+   "from": 1951,
+   "to": 2126,
+   "text": "The spec we still run today was written in November 1987. It predates the web itself.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1951,
+     "to": 1991,
+     "text": "The spec we still run today"
+    },
+    {
+     "from": 1992,
+     "to": 2078,
+     "text": "was written in November 1987."
+    },
+    {
+     "from": 2079,
+     "to": 2126,
+     "text": "It predates the web itself."
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "chapter": 1,
+   "from": 2137,
+   "to": 2210,
+   "text": "So how do you look things up in a book that has no center?",
+   "para": true,
+   "subs": [
+    {
+     "from": 2137,
+     "to": 2167,
+     "text": "So how do you look things up"
+    },
+    {
+     "from": 2168,
+     "to": 2210,
+     "text": "in a book that has no center?"
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "chapter": 2,
+   "from": 2281,
+   "to": 2509,
+   "text": "Your browser doesn't do the walking. It hands the question to a resolver — yours, or a public one like 1.1.1.1.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2281,
+     "to": 2337,
+     "text": "Your browser doesn't do the walking."
+    },
+    {
+     "from": 2338,
+     "to": 2402,
+     "text": "It hands the question to a resolver —"
+    },
+    {
+     "from": 2403,
+     "to": 2509,
+     "text": "yours, or a public one like 1.1.1.1."
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "chapter": 2,
+   "from": 2520,
+   "to": 2628,
+   "text": "Think of the resolver as a librarian you've hired to fetch one book.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2520,
+     "to": 2577,
+     "text": "Think of the resolver as a librarian"
+    },
+    {
+     "from": 2578,
+     "to": 2628,
+     "text": "you've hired to fetch one book."
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "chapter": 2,
+   "from": 2639,
+   "to": 2726,
+   "text": "The librarian starts at the top: the root servers.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2639,
+     "to": 2695,
+     "text": "The librarian starts at the top:"
+    },
+    {
+     "from": 2696,
+     "to": 2726,
+     "text": "the root servers."
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "chapter": 2,
+   "from": 2737,
+   "to": 2826,
+   "text": "The root doesn't know shop.example. It never will.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2737,
+     "to": 2803,
+     "text": "The root doesn't know shop.example."
+    },
+    {
+     "from": 2804,
+     "to": 2826,
+     "text": "It never will."
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "chapter": 2,
+   "from": 2837,
+   "to": 2970,
+   "text": "It answers one smaller question: who handles names ending in .example?",
+   "para": true,
+   "subs": [
+    {
+     "from": 2837,
+     "to": 2899,
+     "text": "It answers one smaller question:"
+    },
+    {
+     "from": 2900,
+     "to": 2970,
+     "text": "who handles names ending in .example?"
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "chapter": 2,
+   "from": 3001,
+   "to": 3117,
+   "text": "That's a referral — not the answer, just the address of the next counter.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3001,
+     "to": 3034,
+     "text": "That's a referral —"
+    },
+    {
+     "from": 3035,
+     "to": 3062,
+     "text": "not the answer,"
+    },
+    {
+     "from": 3063,
+     "to": 3117,
+     "text": "just the address of the next counter."
+    }
+   ]
+  },
+  {
+   "id": "S22",
+   "chapter": 2,
+   "from": 3128,
+   "to": 3218,
+   "text": "The next counter is the TLD server for .example.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3128,
+     "to": 3182,
+     "text": "The next counter is the TLD server"
+    },
+    {
+     "from": 3183,
+     "to": 3218,
+     "text": "for .example."
+    }
+   ]
+  },
+  {
+   "id": "S23",
+   "chapter": 2,
+   "from": 3229,
+   "to": 3338,
+   "text": "Same move: it points to the shop's authoritative name server.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3229,
+     "to": 3290,
+     "text": "Same move: it points to the shop's"
+    },
+    {
+     "from": 3291,
+     "to": 3338,
+     "text": "authoritative name server."
+    }
+   ]
+  },
+  {
+   "id": "S24",
+   "chapter": 2,
+   "from": 3349,
+   "to": 3554,
+   "text": "That server, finally, holds the record: shop.example — 192.0.2.33.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3349,
+     "to": 3434,
+     "text": "That server, finally, holds the record:"
+    },
+    {
+     "from": 3435,
+     "to": 3554,
+     "text": "shop.example — 192.0.2.33."
+    }
+   ]
+  },
+  {
+   "id": "S25",
+   "chapter": 2,
+   "from": 3565,
+   "to": 3681,
+   "text": "The answer travels back to your browser. The envelope gets its address.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3565,
+     "to": 3631,
+     "text": "The answer travels back to your browser."
+    },
+    {
+     "from": 3632,
+     "to": 3681,
+     "text": "The envelope gets its address."
+    }
+   ]
+  },
+  {
+   "id": "S26",
+   "chapter": 2,
+   "from": 3692,
+   "to": 3770,
+   "text": "Four counters, and none of them knew the whole book.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3692,
+     "to": 3735,
+     "text": "Four counters, and none of them"
+    },
+    {
+     "from": 3736,
+     "to": 3770,
+     "text": "knew the whole book."
+    }
+   ]
+  },
+  {
+   "id": "S27",
+   "chapter": 2,
+   "from": 3781,
+   "to": 3881,
+   "text": "The whole walk usually finishes in well under a tenth of a second.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3781,
+     "to": 3825,
+     "text": "The whole walk usually finishes"
+    },
+    {
+     "from": 3826,
+     "to": 3881,
+     "text": "in well under a tenth of a second."
+    }
+   ]
+  },
+  {
+   "id": "S28",
+   "chapter": 2,
+   "from": 3927,
+   "to": 4025,
+   "text": "But if every Enter paid that full price, the root would melt.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3927,
+     "to": 3994,
+     "text": "But if every Enter paid that full price,"
+    },
+    {
+     "from": 3995,
+     "to": 4025,
+     "text": "the root would melt."
+    }
+   ]
+  },
+  {
+   "id": "S29",
+   "chapter": 2,
+   "from": 4036,
+   "to": 4137,
+   "text": "Most of the time, nobody is actually walking the hallway at all.",
+   "para": true,
+   "subs": [
+    {
+     "from": 4036,
+     "to": 4095,
+     "text": "Most of the time, nobody is actually"
+    },
+    {
+     "from": 4096,
+     "to": 4137,
+     "text": "walking the hallway at all."
+    }
+   ]
+  },
+  {
+   "id": "S30",
+   "chapter": 3,
+   "from": 4213,
+   "to": 4303,
+   "text": "Every answer along the way gets written on a sticky note.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4213,
+     "to": 4250,
+     "text": "Every answer along the way"
+    },
+    {
+     "from": 4251,
+     "to": 4303,
+     "text": "gets written on a sticky note."
+    }
+   ]
+  },
+  {
+   "id": "S31",
+   "chapter": 3,
+   "from": 4314,
+   "to": 4490,
+   "text": "Your browser keeps notes. Your operating system keeps notes. Your resolver keeps the biggest stack.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4314,
+     "to": 4362,
+     "text": "Your browser keeps notes."
+    },
+    {
+     "from": 4363,
+     "to": 4424,
+     "text": "Your operating system keeps notes."
+    },
+    {
+     "from": 4425,
+     "to": 4490,
+     "text": "Your resolver keeps the biggest stack."
+    }
+   ]
+  },
+  {
+   "id": "S32",
+   "chapter": 3,
+   "from": 4501,
+   "to": 4656,
+   "text": "Next time you ask, the note answers in about a millisecond — faster than a camera shutter.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4501,
+     "to": 4536,
+     "text": "Next time you ask,"
+    },
+    {
+     "from": 4537,
+     "to": 4608,
+     "text": "the note answers in about a millisecond —"
+    },
+    {
+     "from": 4609,
+     "to": 4656,
+     "text": "faster than a camera shutter."
+    }
+   ]
+  },
+  {
+   "id": "S33",
+   "chapter": 3,
+   "from": 4667,
+   "to": 4796,
+   "text": "Each note carries a TTL — time to live — set by the record's owner.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4667,
+     "to": 4725,
+     "text": "Each note carries a TTL —"
+    },
+    {
+     "from": 4726,
+     "to": 4756,
+     "text": "time to live —"
+    },
+    {
+     "from": 4757,
+     "to": 4796,
+     "text": "set by the record's owner."
+    }
+   ]
+  },
+  {
+   "id": "S34",
+   "chapter": 3,
+   "from": 4807,
+   "to": 4936,
+   "text": "It's the expiry date on the carton. Fresh until then. Questioned after.",
+   "para": true,
+   "subs": [
+    {
+     "from": 4807,
+     "to": 4873,
+     "text": "It's the expiry date on the carton."
+    },
+    {
+     "from": 4874,
+     "to": 4909,
+     "text": "Fresh until then."
+    },
+    {
+     "from": 4910,
+     "to": 4936,
+     "text": "Questioned after."
+    }
+   ]
+  },
+  {
+   "id": "S35",
+   "chapter": 3,
+   "from": 4982,
+   "to": 5098,
+   "text": "That's what people call \"DNS propagation\" — but nothing is pushed.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4982,
+     "to": 5014,
+     "text": "That's what people call"
+    },
+    {
+     "from": 5015,
+     "to": 5098,
+     "text": "\"DNS propagation\" — but nothing is pushed."
+    }
+   ]
+  },
+  {
+   "id": "S36",
+   "chapter": 3,
+   "from": 5109,
+   "to": 5256,
+   "text": "You change the record, and old answers simply sit in caches until their dates pass.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5109,
+     "to": 5145,
+     "text": "You change the record,"
+    },
+    {
+     "from": 5146,
+     "to": 5215,
+     "text": "and old answers simply sit in caches"
+    },
+    {
+     "from": 5216,
+     "to": 5256,
+     "text": "until their dates pass."
+    }
+   ]
+  },
+  {
+   "id": "S37",
+   "chapter": 3,
+   "from": 5267,
+   "to": 5388,
+   "text": "In 2021, Facebook's nameservers went dark mid-maintenance.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5267,
+     "to": 5339,
+     "text": "In 2021, Facebook's nameservers"
+    },
+    {
+     "from": 5340,
+     "to": 5388,
+     "text": "went dark mid-maintenance."
+    }
+   ]
+  },
+  {
+   "id": "S38",
+   "chapter": 3,
+   "from": 5399,
+   "to": 5542,
+   "text": "For about eleven minutes, the world's caches still served the last correct copies.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5399,
+     "to": 5438,
+     "text": "For about eleven minutes,"
+    },
+    {
+     "from": 5439,
+     "to": 5492,
+     "text": "the world's caches still served"
+    },
+    {
+     "from": 5493,
+     "to": 5542,
+     "text": "the last correct copies."
+    }
+   ]
+  },
+  {
+   "id": "S39",
+   "chapter": 3,
+   "from": 5553,
+   "to": 5695,
+   "text": "Then they expired — and facebook.com simply stopped being an answer anywhere.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5553,
+     "to": 5587,
+     "text": "Then they expired —"
+    },
+    {
+     "from": 5588,
+     "to": 5640,
+     "text": "and facebook.com simply"
+    },
+    {
+     "from": 5641,
+     "to": 5695,
+     "text": "stopped being an answer anywhere."
+    }
+   ]
+  },
+  {
+   "id": "S40",
+   "chapter": 3,
+   "from": 5706,
+   "to": 5943,
+   "text": "That is how much of this system runs on sticky notes: 1.1.1.1 alone answers about 1.9 trillion lookups a day.",
+   "para": true,
+   "subs": [
+    {
+     "from": 5706,
+     "to": 5748,
+     "text": "That is how much of this system"
+    },
+    {
+     "from": 5749,
+     "to": 5798,
+     "text": "runs on sticky notes:"
+    },
+    {
+     "from": 5799,
+     "to": 5864,
+     "text": "1.1.1.1 alone answers"
+    },
+    {
+     "from": 5865,
+     "to": 5943,
+     "text": "about 1.9 trillion lookups a day."
+    }
+   ]
+  },
+  {
+   "id": "S41",
+   "chapter": 3,
+   "from": 5989,
+   "to": 6148,
+   "text": "A phonebook this size, this fast, this uncritical — what could possibly go wrong?",
+   "para": true,
+   "subs": [
+    {
+     "from": 5989,
+     "to": 6062,
+     "text": "A phonebook this size, this fast,"
+    },
+    {
+     "from": 6063,
+     "to": 6103,
+     "text": "this uncritical —"
+    },
+    {
+     "from": 6104,
+     "to": 6148,
+     "text": "what could possibly go wrong?"
+    }
+   ]
+  },
+  {
+   "id": "S42",
+   "chapter": 4,
+   "from": 6204,
+   "to": 6237,
+   "text": "Three honest answers.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6204,
+     "to": 6237,
+     "text": "Three honest answers."
+    }
+   ]
+  },
+  {
+   "id": "S43",
+   "chapter": 4,
+   "from": 6248,
+   "to": 6379,
+   "text": "First: the questions themselves were open postcards for 33 years.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6248,
+     "to": 6301,
+     "text": "First: the questions themselves"
+    },
+    {
+     "from": 6302,
+     "to": 6379,
+     "text": "were open postcards for 33 years."
+    }
+   ]
+  },
+  {
+   "id": "S44",
+   "chapter": 4,
+   "from": 6390,
+   "to": 6573,
+   "text": "Classic DNS rides plaintext UDP. Anyone on the path could read every name you looked up.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6390,
+     "to": 6479,
+     "text": "Classic DNS rides plaintext UDP."
+    },
+    {
+     "from": 6480,
+     "to": 6535,
+     "text": "Anyone on the path could read"
+    },
+    {
+     "from": 6536,
+     "to": 6573,
+     "text": "every name you looked up."
+    }
+   ]
+  },
+  {
+   "id": "S45",
+   "chapter": 4,
+   "from": 6584,
+   "to": 6811,
+   "text": "The fixes came in 2016 and 2018: DNS over TLS, DNS over HTTPS.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6584,
+     "to": 6690,
+     "text": "The fixes came in 2016 and 2018:"
+    },
+    {
+     "from": 6691,
+     "to": 6747,
+     "text": "DNS over TLS,"
+    },
+    {
+     "from": 6748,
+     "to": 6811,
+     "text": "DNS over HTTPS."
+    }
+   ]
+  },
+  {
+   "id": "S46",
+   "chapter": 4,
+   "from": 6822,
+   "to": 6871,
+   "text": "Second: the book can lie.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6822,
+     "to": 6871,
+     "text": "Second: the book can lie."
+    }
+   ]
+  },
+  {
+   "id": "S47",
+   "chapter": 4,
+   "from": 6882,
+   "to": 7083,
+   "text": "For 19 days in 2003, every mistyped .com name on Earth landed on one company's ad page.",
+   "para": false,
+   "subs": [
+    {
+     "from": 6882,
+     "to": 6950,
+     "text": "For 19 days in 2003,"
+    },
+    {
+     "from": 6951,
+     "to": 7016,
+     "text": "every mistyped .com name on Earth"
+    },
+    {
+     "from": 7017,
+     "to": 7083,
+     "text": "landed on one company's ad page."
+    }
+   ]
+  },
+  {
+   "id": "S48",
+   "chapter": 4,
+   "from": 7094,
+   "to": 7269,
+   "text": "No such domain — NXDOMAIN — is a signal the internet depends on. That wildcard broke it.",
+   "para": true,
+   "subs": [
+    {
+     "from": 7094,
+     "to": 7163,
+     "text": "No such domain — NXDOMAIN —"
+    },
+    {
+     "from": 7164,
+     "to": 7231,
+     "text": "is a signal the internet depends on."
+    },
+    {
+     "from": 7232,
+     "to": 7269,
+     "text": "That wildcard broke it."
+    }
+   ]
+  },
+  {
+   "id": "S49",
+   "chapter": 4,
+   "from": 7325,
+   "to": 7463,
+   "text": "So the answers got signatures: DNSSEC — a chain of trust from the root down.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7325,
+     "to": 7379,
+     "text": "So the answers got signatures:"
+    },
+    {
+     "from": 7380,
+     "to": 7432,
+     "text": "DNSSEC — a chain of trust"
+    },
+    {
+     "from": 7433,
+     "to": 7463,
+     "text": "from the root down."
+    }
+   ]
+  },
+  {
+   "id": "S50",
+   "chapter": 4,
+   "from": 7474,
+   "to": 7626,
+   "text": "The root itself was signed in 2010, 27 years after DNS was born.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7474,
+     "to": 7555,
+     "text": "The root itself was signed in 2010,"
+    },
+    {
+     "from": 7556,
+     "to": 7626,
+     "text": "27 years after DNS was born."
+    }
+   ]
+  },
+  {
+   "id": "S51",
+   "chapter": 4,
+   "from": 7637,
+   "to": 7741,
+   "text": "Third: attack the book, and the readers go down with it.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7637,
+     "to": 7695,
+     "text": "Third: attack the book,"
+    },
+    {
+     "from": 7696,
+     "to": 7741,
+     "text": "and the readers go down with it."
+    }
+   ]
+  },
+  {
+   "id": "S52",
+   "chapter": 4,
+   "from": 7752,
+   "to": 7969,
+   "text": "In 2016, a botnet of hijacked cameras, printers and baby monitors flooded one DNS provider.",
+   "para": false,
+   "subs": [
+    {
+     "from": 7752,
+     "to": 7837,
+     "text": "In 2016, a botnet of hijacked"
+    },
+    {
+     "from": 7838,
+     "to": 7912,
+     "text": "cameras, printers and baby monitors"
+    },
+    {
+     "from": 7913,
+     "to": 7969,
+     "text": "flooded one DNS provider."
+    }
+   ]
+  },
+  {
+   "id": "S53",
+   "chapter": 4,
+   "from": 7980,
+   "to": 8161,
+   "text": "Twitter, Netflix, Spotify — gone. Their own servers never crashed. Only the shared phonebook did.",
+   "para": true,
+   "subs": [
+    {
+     "from": 7980,
+     "to": 8061,
+     "text": "Twitter, Netflix, Spotify — gone."
+    },
+    {
+     "from": 8062,
+     "to": 8117,
+     "text": "Their own servers never crashed."
+    },
+    {
+     "from": 8118,
+     "to": 8161,
+     "text": "Only the shared phonebook did."
+    }
+   ]
+  },
+  {
+   "id": "S54",
+   "chapter": 4,
+   "from": 8212,
+   "to": 8293,
+   "text": "So — you pressed Enter, half a second ago.",
+   "para": false,
+   "subs": [
+    {
+     "from": 8212,
+     "to": 8262,
+     "text": "So — you pressed Enter,"
+    },
+    {
+     "from": 8263,
+     "to": 8293,
+     "text": "half a second ago."
+    }
+   ]
+  },
+  {
+   "id": "S55",
+   "chapter": 4,
+   "from": 8304,
+   "to": 8452,
+   "text": "One question, four counters, a stack of sticky notes, one envelope addressed.",
+   "para": false,
+   "subs": [
+    {
+     "from": 8304,
+     "to": 8364,
+     "text": "One question, four counters,"
+    },
+    {
+     "from": 8365,
+     "to": 8408,
+     "text": "a stack of sticky notes,"
+    },
+    {
+     "from": 8409,
+     "to": 8452,
+     "text": "one envelope addressed."
+    }
+   ]
+  },
+  {
+   "id": "S56",
+   "chapter": 4,
+   "from": 8463,
+   "to": 8544,
+   "text": "A name is a question. DNS is the answer.",
+   "para": true,
+   "subs": [
+    {
+     "from": 8463,
+     "to": 8502,
+     "text": "A name is a question."
+    },
+    {
+     "from": 8503,
+     "to": 8544,
+     "text": "DNS is the answer."
+    }
+   ]
+  }
+ ],
+ "chars": 3072,
+ "words": 690,
+ "speech_sec": 247.8
+}

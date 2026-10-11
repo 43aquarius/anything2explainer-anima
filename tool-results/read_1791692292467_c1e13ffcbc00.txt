@@ -1,0 +1,257 @@
+     1→# TLS — The Little Lock: Research Document
+     2→
+     3→- **Series**: "The Invisible Internet" EP3 (EP1: Packet Capture / Wireshark; EP2: DNS)
+     4→- **Deliverable**: Fact research doc for a ~4.5–5 min English motion-graphics explainer
+     5→- **Research date**: 2026-10-11
+     6→- **Core puzzle**: Same café, same free WiFi, someone in the room is sniffing with Wireshark (callback to EP1). They can see every site you visit and every request in plaintext — but your password is gibberish. Why is the same network half transparent, half opaque?
+     7→- **Recurring visual motif**: envelope = packet; running example context: `shop.example` checkout page, typing a password.
+     8→
+     9→**Source confidence legend (used in §7 and throughout):**
+    10→- ★★★ = primary source (RFC, original paper, official spec/standard)
+    11→- ★★ = official blog / authoritative single dataset (vendor telemetry, CA stats)
+    12→- ★ = secondary (reputable tech media, widely cited but not primary)
+    13→
+    14→**Status note**: Document written incrementally during research; each section filled as verified. Items not yet confirmed are marked 【to verify】.
+    15→
+    16→---
+    17→
+    18→## 0. Executive summary
+    19→
+    20→*(1-minute version: what this is, why it matters, most counter-intuitive point — filled after body research)*
+    21→
+    22→## 1. Situation & the mystery
+    23→
+    24→*Status: DRAFT — facts pending verification via web sources; verification timestamps below each block.*
+    25→
+    26→### 1.1 HTTP is a postcard
+    27→
+    28→*Verified 2026-10-11.*
+    29→
+    30→- HTTP carries everything as plaintext: the full URL (path, query string), headers (cookies, user agent), and the request body — including anything you type into a form. On the wire, a login POST to `http://shop.example/login` shows the password as literal text in the packet's payload bytes (exactly what the Wireshark "Follow TCP Stream" view from EP1 reveals).
+    31→  - Primary cite: RFC 2818 "HTTP Over TLS" (E. Rescorla, May 2000): *"HTTP was originally used in the clear on the Internet. However, increased use of HTTP for sensitive applications has required security measures."* — https://www.rfc-editor.org/rfc/rfc2818.txt (★★★)
+    32→- Analogy: an HTTP packet is a **postcard** — everyone handling it (WiFi access point, café router, ISP, backbone, the site's host) can read it, not just the recipient.
+    33→- On a shared WiFi network, a sniffer in monitor mode sees every packet broadcast in the air, not just ones addressed to them. This is the EP1 callback: EP1 already showed "packet capture sees everything on the line."
+    34→
+    35→### 1.2 Firesheep (2010): the moment "open WiFi hijacking" became one-click news
+    36→
+    37→*Verified 2026-10-11.*
+    38→
+    39→- **Firesheep**, a **Firefox extension by Eric Butler**, released **October 2010**, demonstrated at **ToorCon 12** (annual security conference, San Diego, late Oct 2010). It used a packet sniffer to intercept **unencrypted session cookies** on open WiFi (Facebook, Twitter, Google, etc.), showed victims in a sidebar, and let the attacker **double-click a name to take over that session** ("sidejacking"). Sites encrypted the login page but dropped back to HTTP afterward — the cookie was the plaintext key to the account.
+    40→  - Sources: Wikipedia "Firesheep" (★) — https://en.wikipedia.org/wiki/Firesheep ; GRC "Security Now!" episode 272 transcript (Nov 3, 2010) (★) — https://www.grc.com/sn/sn-272.htm — quote: *"a 'buddy list' of people's online accounts being used around you, and lets you simply double-click to hijack them."* 【to verify: primary source = Eric Butler's original post at codebutler.com/firesheep (site now offline; Wayback unreachable from research sandbox — cite via archive URL: web.archive.org/web/20120820220335/http://codebutler.com/firesheep)】
+    41→- Why it made headlines: session hijacking over open WiFi was well known among experts; Firesheep made it a **one-click tool** for anyone. Mozilla initially declined to blacklist it ("no kill switch," Computerworld, Oct 28, 2010 — cited in Wikipedia article above). Firesheep was later removed from the Firefox add-on store.
+    42→- Consequence often credited to it: push for HTTPS-everywhere on major sites (EFF's **HTTPS Everywhere** extension predates it — June 2010; see §6 note on release date verification). State causality carefully: Firesheep *popularized* awareness; it didn't single-handedly flip the web.
+    43→
+    44→### 1.3 The moment you type your password
+    45→
+    46→- What changes between the two worlds: at `https://shop.example/checkout`, the same TCP flow that EP1 captured is wrapped in a TLS session. The sniffer still sees envelopes (packets: IP addresses, sizes, timing, SNI hostname) — but the letter inside (the password, the cart, the card number) is ciphertext.
+    47→- The mystery stated for the video: the sniffer can still see *that* you're talking to `shop.example` and roughly how much you're saying — but not *what* you're saying. Half-transparent, half-opaque. (Note for honesty: DNS lookups may also be visible unless encrypted — EP2 tie-in; mark as optional line.)
+    48→
+    49→### 1.4 What the attacker still sees on an HTTPS connection (worth stating for accuracy)
+    50→
+    51→- Destination IP, SNI hostname (unless ECH), certificate (public info), packet sizes and timing. TLS hides *content*, not the existence of the conversation.
+    52→  - Primary cite: RFC 8446 §E.3 (Traffic Analysis): *"TLS is susceptible to a variety of traffic analysis attacks based on observing the length and timing of encrypted packets."* — https://www.rfc-editor.org/rfc/rfc8446.txt (★★★)
+    53→- Optional 2026-current angle: **Encrypted Client Hello (ECH)** and encrypted DNS (EP2 tie-in) shrink the remaining visible metadata. 【to verify status】
+    54→- Post-quantum note (2024+): Chrome 131 / Firefox 132 default to hybrid post-quantum key exchange (X25519MLKEM768) — an optional "the lock is being upgraded again" beat. ★ via Wikipedia citing Chromium blog — https://blog.chromium.org/2024/05/advancing-our-amazing-bet-on-asymmetric.html
+    55→
+    56→## 2. Origins & key milestones
+    57→
+    58→*Verified 2026-10-11 against RFCs (primary) + Wikipedia TLS history (secondary, well-sourced).*
+    59→
+    60→| Year | Event | Verification |
+    61→|---|---|---|
+    62→| 1994–96 | Netscape develops SSL "for adding the HTTPS protocol to their Netscape Navigator web browser." **Taher Elgamal** (Netscape chief scientist 1995–98) is described as the **"father of SSL"** (Network World, 2011/2012) | ★ Wikipedia (citing Network World): https://en.wikipedia.org/wiki/Transport_Layer_Security |
+    63→| (unreleased) | **SSL 1.0 never publicly released** — "serious security flaws in the protocol" | ★ same article |
+    64→| Feb 1995 | **SSL 2.0 released**; "quickly found to contain a number of security and usability flaws" (same keys for MAC+encryption, weak MD5 MAC, no handshake protection, MITM could go undetected). Deprecated later by RFC 6176 (2011) | ★ Wikipedia + ★★★ RFC 6176 |
+    65→| 1996 | **SSL 3.0 released** — a complete redesign: **Paul Kocher** working with Netscape engineers **Phil Karlton & Alan Freier**; reference implementation by Christopher Allen & Tim Dierks (Certicom). "Newer versions of SSL/TLS are based on SSL 3.0." The 1996 SSL 3.0 draft was later published by the IETF as **RFC 6101** (Historic, 2011) | ★ Wikipedia + ★★★ RFC 6101 header (A. Freier, P. Karlton, P. Kocher, August 2011) — https://www.rfc-editor.org/rfc/rfc6101.txt |
+    66→| Jan 1999 | **TLS 1.0 = RFC 2246** — authors **T. Dierks & C. Allen (Certicom)**. RFC: differences from SSL 3.0 "are not dramatic, but they are significant enough to preclude interoperability." | ★★★ RFC 2246 — https://www.rfc-editor.org/rfc/rfc2246.txt |
+    67→| — | **The rename, from the horse's mouth**: Tim Dierks (2014): changes + renaming SSL→TLS were "a face-saving gesture to Microsoft, so it wouldn't look [like] the IETF was just rubberstamping Netscape's protocol" … "And thus was born TLS 1.0 (which was really SSL 3.1)." | ★★★ primary blog: http://tim.dierks.org/2014/05/security-standards-and-name-changes-in.html |
+    68→| Apr 2006 | TLS 1.1 = RFC 4346 (CBC fixes; skip in video) | ★★★ |
+    69→| Aug 2008 | **TLS 1.2 = RFC 5246** (T. Dierks, E. Rescorla) — adds SHA-256 cipher suites and AEAD (AES-GCM); the workhorse of the 2010s | ★★★ RFC 5246 — https://www.rfc-editor.org/rfc/rfc5246.txt |
+    70→| Oct 2014 | POODLE (CVE-2014-3566) breaks SSL 3.0's CBC ciphers; browsers drop SSL 3.0 that autumn | ★ Wikipedia (CVE given) 【to verify exact browser-removal dates if used on screen】 |
+    71→| Aug 2018 | **TLS 1.3 = RFC 8446** (E. Rescorla, Mozilla; obsoletes 5246) | ★★★ https://www.rfc-editor.org/rfc/rfc8446.txt |
+    72→| Oct 2018 → Mar 2020 | Apple/Google/Microsoft/Mozilla jointly announce deprecation of TLS 1.0/1.1 (Ars Technica, Oct 17, 2018); disabled in browsers ~2020; **formally deprecated by RFC 8996 (March 2021)** | ★ + ★★★ RFC 8996 — https://www.rfc-editor.org/rfc/rfc8996.txt |
+    73→
+    74→**TLS 1.3's own "what changed" list (RFC 8446 §1.2, verbatim points)** — this is the primary-source gold for the "delete weak crypto / force forward secrecy" claims:
+    75→- "The list of supported symmetric encryption algorithms has been pruned of all algorithms that are considered legacy. Those that remain are all Authenticated Encryption with Associated Data (AEAD) algorithms."
+    76→- "A zero round-trip time (0-RTT) mode was added, saving a round trip at connection setup for some application data, at the cost of certain security properties."
+    77→- "Static RSA and Diffie-Hellman cipher suites have been removed; **all public-key based key exchange mechanisms now provide forward secrecy**."
+    78→- "All handshake messages after the ServerHello are now encrypted."
+    79→- "Elliptic curve algorithms are now in the base spec"; RSA padding → RSASSA-PSS; compression and DSA removed.
+    80→
+    81→**TLS 1.3 cipher suites — exactly 5, all AEAD** (RFC 8446 §B.4): `TLS_AES_128_GCM_SHA256` (MUST implement), `TLS_AES_256_GCM_SHA384`, `TLS_CHACHA20_POLY1305_SHA256` (both SHOULD), `TLS_AES_128_CCM_SHA256`, `TLS_AES_128_CCM_8_SHA256`.
+    82→
+    83→- Origin-story framing for the video: Netscape's goal was making people **dare to type a credit-card number on an open network** into the brand-new commercial web (Navigator + early e-commerce, 1994–95). 【to verify: a good contemporaneous quote — candidate sources: the 1996 Netscape SSL spec intro, press coverage of Netscape Secure Merchant Server; the RFC 6101 foreword may suffice as the "why"】
+    84→- Bonus future-facing fact (optional "what's next" beat): Chrome 131 (Nov 2024) and Firefox 132 enabled **X25519MLKEM768** (post-quantum key exchange) by default (Chromium blog, May 2024; Firefox 132 release notes). ★ via Wikipedia — https://blog.chromium.org/2024/05/advancing-our-amazing-bet-on-asymmetric.html
+    85→
+    86→## 3. How it works (TLS 1.3 handshake)
+    87→
+    88→*Verified 2026-10-11 against RFC 8446 (primary). Message flow from RFC 8446 Figure 1 (full handshake):*
+    89→
+    90→```
+    91→       Client                                               Server
+    92→       ClientHello
+    93→       + key_share             -------->
+    94→                                                 ServerHello
+    95→                                                 + key_share
+    96→                                       {EncryptedExtensions}
+    97→                                       {CertificateRequest*}
+    98→                                              {Certificate*}
+    99→                                        {CertificateVerify*}
+   100→                                                  {Finished}
+   101→                                <--------     [Application Data*]
+   102→       {Certificate*}
+   103→       {CertificateVerify*}
+   104→       {Finished}              -------->
+   105→       [Application Data]      <------->      [Application Data]
+   106→```
+   107→*(braces = encrypted; RFC 8446 §2.1 — every server message after ServerHello is already encrypted.)*
+   108→
+   109→- **Key facts, all from RFC 8446:**
+   110→  - ClientHello carries a `key_share` extension — the client's **ephemeral ECDHE public value** — in the very first message. Cipher suites and the SNI hostname also ride in ClientHello. (RFC 8446 §4.1.2, §4.2.8)
+   111→  - ServerHello returns the server's `key_share`; then EncryptedExtensions, Certificate, CertificateVerify (a signature over the whole handshake transcript), and Finished — **all encrypted** (§1.2: "All handshake messages after the ServerHello are now encrypted").
+   112→  - Both sides derive the same session keys locally: "the client and server derive the keying material required by the record layer to exchange application-layer data protected through authenticated encryption" (§2.1).
+   113→  - **CertificateVerify + Finished kill the man-in-the-middle**: the Finished message is a MAC over the entire transcript; CertificateVerify binds the server's certified identity to the exchanged keys — an attacker without `shop.example`'s certified private key cannot produce a valid signature, so a MITM cannot complete both handshakes undetected. (§4.4.3, §4.4.4)
+   114→  - **1-RTT**: one round trip, then application data flows. RFC 8446 §2.3 refers to the baseline as "the 1-RTT handshake"; the optional 0-RTT mode "sav[es] a round trip" on top of it. 【to verify: an explicit "TLS 1.2 = 2-RTT full handshake" comparison source — candidate: Cloudflare blog "Why TLS 1.3 isn't in browsers yet" (Nick Sullivan, Dec 2017); state as "roughly twice the round trips" if no clean citation】
+   115→  - **0-RTT (optional beat)**: with a pre-shared key from a prior connection the client may send "early data" in its first flight; "the security properties for 0-RTT data are weaker" (RFC 8446 §2.3, IMPORTANT NOTE; replay risk).
+   116→- **After the handshake** every record is AEAD-protected; TLS 1.3 permits only AEAD suites: `TLS_AES_128_GCM_SHA256` (MUST), `TLS_AES_256_GCM_SHA384`, `TLS_CHACHA20_POLY1305_SHA256` (SHOULD), + 2 CCM variants (RFC 8446 §B.4; ChaCha20-Poly1305 specified in RFC 8439). AES-GCM = hardware-fast on servers/desktops; ChaCha20-Poly1305 = fast in software on phones without AES acceleration 【to verify a citable motivation source, e.g., RFC 8439 §1 or Cloudflare ChaCha20 blog】.
+   117→- **Forward secrecy**: "Static RSA and Diffie-Hellman cipher suites have been removed; all public-key based key exchange mechanisms now provide forward secrecy" (RFC 8446 §1.2). Ephemeral keys are discarded after use — a later leak of the server's long-term key cannot decrypt yesterday's captured traffic. Contrast: in TLS ≤1.2 RSA-key-transport sessions, the server's private key alone decrypts any recorded traffic.
+   118→
+   119→## 4. The key exchange (Diffie–Hellman)
+   120→
+   121→*Verified 2026-10-11: paper PDF fetched from Stanford (primary) + Wikipedia citation details.*
+   122→
+   123→- **The paper**: **Whitfield Diffie & Martin E. Hellman, "New Directions in Cryptography," *IEEE Transactions on Information Theory*, vol. IT-22, no. 6, pp. 644–654, November 1976** (DOI 10.1109/TIT.1976.1055638). Primary copy (fetched & read): https://ee.stanford.edu/~hellman/publications/24.pdf (★★★)
+   124→  - Abstract framing (why it mattered): new systems that "minimize the need for **secure key distribution channels**" — before 1976, encrypted communication required first exchanging keys by a secure physical means (couriers, paper key lists). DH removed the courier.
+   125→  - The paper itself credits **Ralph Merkle** ("Merkle has independently studied the problem... a partial solution of a different form" — Merkle puzzles). Hellman has since argued the name should be "Diffie–Hellman–Merkle." (★ Wikipedia: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
+   126→  - Recognition: **Diffie & Hellman received the 2015 ACM A.M. Turing Award** (announced March 2016). ★ Wikipedia (Whitfield Diffie) — https://en.wikipedia.org/wiki/Whitfield_Diffie 【note: Merkle did NOT share this award — correct if the draft says otherwise】
+   127→  - Declassified history nugget (optional): GCHQ's James Ellis, Clifford Cocks, and Malcolm Williamson had shown public-key cryptography was possible in the late 1960s–70s; revealed publicly in 1997. (★ Wikipedia DH article, citing BBC/GCHQ documents)
+   128→- **The core trick**: two people who have never met **agree on a shared secret while an eavesdropper hears every single word** — math where going forward is easy but going backward is (believed) infeasible.
+   129→- The mechanism in one breath: agree publicly on a prime *p* and generator *g*; Alice picks secret *a*, sends *g^a mod p*; Bob picks secret *b*, sends *g^b mod p*; each raises the other's public value to their own secret: (g^b)^a = (g^a)^b = g^(ab) mod p. The eavesdropper sees *g*, *p*, *g^a*, *g^b* — recovering *a* or *b* is the **discrete logarithm problem**, believed infeasible for well-chosen parameters.
+   130→- **Paint-mixing analogy** (canonical version, used in the Wikipedia DH article — public yellow base; Alice's red & Bob's cyan kept secret; mixed pots cross the table; each adds their own secret to the received pot; both end at the identical "yellow-brown"; eavesdropper sees the pots but can't un-mix):
+   131→  - *Fits*: commutative combination (order doesn't matter), everything transits publicly, secret ingredients never travel.
+   132→  - *Distorts*: paint is *physically* un-mixable (chemistry), DH is only *computationally* hard — and specifically falls to a large quantum computer running **Shor's algorithm** (invented 1994 by Peter Shor) — ★ https://en.wikipedia.org/wiki/Shor%27s_algorithm. Also paint is continuous/analog, DH is discrete arithmetic.
+   133→- TLS 1.3 uses the elliptic-curve variant **ECDHE** (Elliptic-curve Diffie–Hellman Ephemeral), typically the curve **X25519** (RFC 7748, Langley/Hamburg/Turner, Jan 2016 — fetched: https://www.rfc-editor.org/rfc/rfc7748.txt) — same idea, points on a curve, tiny keys for high security (a 32-byte public value vs multi-kilobyte finite-field numbers for comparable security — 【to verify the "32-byte" figure from RFC 7748 §4.1/§5 if quoted on screen】). 【to verify X25519's real-world share of handshakes — Cloudflare Radar or Mozilla telemetry, if a % is needed; otherwise say "the default in Chrome/Firefox/OpenSSL"】
+   134→- One-line wonder for the video: the café sniffer sees *every message* of the key exchange — and it doesn't help. Public ≠ secret.
+   135→
+   136→
+   137→## 5. Certificates & trust
+   138→
+   139→*Partially verified 2026-10-11; remaining items flagged.*
+   140→
+   141→- **Why keys alone aren't enough**: DH solves "we both end up with a secret nobody else knows" — but the café sniffer could simply *interpose* themselves: run DH with you, run DH with `shop.example`, and relay both (a **man-in-the-middle attack**). Shared secret ≠ known identity. You'd have a private line — to the wrong person. (RFC 8446 handles this via CertificateVerify/Finished — see §3.)
+   142→- **Certificate = a CA's stamp binding a domain name to a public key**: "the party that controls `shop.example` owns this public key," signed by a **Certificate Authority (CA)** whose own key the browser already trusts.
+   143→- **Chain of trust**: leaf (website) ← **intermediate CA** ← **root CA**. Roots are trusted because they ship *inside* the browser/OS (**root store**).
+   144→- **Root store counts (citable, as of Aug 24, 2020 — Wikipedia "Certificate authority", citing MozillaWiki / Apple / CCADB)**:
+   145→  - Mozilla Firefox: **147 root certificates, 52 organizations**
+   146→  - macOS: 168 roots, 60 organizations; Microsoft Windows: 255 roots, 101 organizations; Android: "over 100 CAs"
+   147→  - Sanity check, Oct 2026: this research sandbox's Debian ca-certificates (Mozilla-synced) contains **150** Mozilla root files. Source: Wikipedia — https://en.wikipedia.org/wiki/Certificate_authority (★, citing official lists; 【to verify current 2026 numbers via CCADB if an exact on-screen count is needed】)
+   148→  - On-screen phrasing: "your browser ships with roughly 150 pre-installed 'passport stamps' from ~50 companies."
+   149→- **Why the MITM fails**: the attacker can't forge `shop.example`'s certificate — no CA will issue for a domain the requester doesn't control (domain validation), and the browser shows a full-page error if the chain doesn't verify.
+   150→- **Let's Encrypt** — verified via Wikipedia + live official stats:
+   151→  - Formed Nov 18, 2014 (EFF, Mozilla, University of Michigan, Akamai, Cisco; run by ISRG). **Public beta Dec 3, 2015** (free certificates). ACME protocol submitted to IETF in 2015; **ACME v2 + wildcard certs March 2018**; ACME standardized as **RFC 8555 (March 2019)**. Source: https://en.wikipedia.org/wiki/Let%27s_Encrypt (★) + https://www.rfc-editor.org/rfc/rfc8555.txt (★★★, fetched, header verified: March 2019)
+   152→  - **Live adoption numbers (official Let's Encrypt daily stats, fetched 2026-10-11)** — https://d1dfn7jg27m4cf.cloudfront.net/cert-daily-stats.tsv (the data behind https://letsencrypt.org/stats/):
+   153→    - 2026-10-10: **710,175,412 active certificates**; 726,653,577 fully-qualified domains; 234,091,719 registered domains
+   154→    - End-2015: 228k active certs → end-2018: 87.7M → end-2021: 219.7M → end-2024: 464.6M → end-2025: 653.1M (all from same dataset; ★★ official)
+   155→  - Everyday-scale line: "more active certificates than there are people in Europe — twice over." (710M vs EU ~450M 【EU population figure needs its own cite if used on screen — use 'roughly one cert per ten humans alive' instead: ~8.2B world pop → 710M ≈ 1 per 12】)
+   156→- **Certificate Transparency (CT)** — RFC 6962 (Laurie, Langley, Kasper; June 2013, Experimental) — "publicly logging the existence of TLS certificates as they are issued or observed, in a manner that allows anyone to audit certificate authority (CA) activity" (abstract, verbatim). Successor: **RFC 9162 (Dec 2021)**. Chrome requires certs to be CT-logged (SCTs) to be trusted. (★★★ RFC 6962 fetched — https://www.rfc-editor.org/rfc/rfc6962.txt; RFC 9162 fetched — https://www.rfc-editor.org/rfc/rfc9162.txt 【to verify the Chrome-requires-CT statement with a Chrome source】)
+   157→- **DigiNotar (2011) — the canonical "why CT exists" story** (all from Wikipedia, well-sourced):
+   158→  - Dutch CA, hacked **June 2011** (intrusion detected internally July 19, 2011; not disclosed then). On **July 10, 2011** the attacker issued a **wildcard certificate for Google**, used for MITM interception of Google services (incl. Gmail) on Iranian ISPs.
+   159→  - **531+ fraudulent certificates** ultimately identified (Google blacklisted 247 in Chromium within days). Source: Gervase Markham's CN list, Sept 4, 2011.
+   160→  - Browsers removed DigiNotar roots; Dutch government took over its systems Sept 3, 2011; **bankruptcy filed Sept 20, 2011** — a company that had operated since 1998 was dead in ~3 months.
+   161→  - Primary Google blog: "An update on attempted man-in-the-middle attacks" (Heather Adkins, Aug 29, 2011) — https://googleonlinesecurity.blogspot.com/2011/08/update-on-attempted-man-in-middle.html
+   162→  - Slate explainer (Josephine Wolff, Dec 21, 2016): "How a 2011 Hack You've Never Heard of Changed the Internet's Infrastructure" — https://slate.com/technology/2016/12/how-the-2011-hack-of-diginotar-changed-the-internets-infrastructure.html (★)
+   163→- **Heartbleed (April 2014)** — verified via heartbleed.com (primary, run by the discoverers at Codenomicon) + Wikipedia:
+   164→  - **CVE-2014-0160**; bug in OpenSSL's TLS heartbeat extension implementation (not in the TLS protocol). **OpenSSL 1.0.1 through 1.0.1f vulnerable; 1.0.1g (released April 7, 2014) fixes it.**
+   165→  - Leak size: "the attacker... can keep reconnecting or during an active TLS connection keep requesting arbitrary number of 64 kilobyte chunks" — **64 KB per heartbeat, repeatable** (heartbleed.com FAQ).
+   166→  - Discovered independently by **Neel Mehta (Google Security)** and **Codenomicon** (their discovery date: April 3, 2014); name + logo + heartbleed.com by Codenomicon.
+   167→  - Scale: **"some 17% (around half a million) of the Internet's secure web servers certified by trusted authorities were believed to be vulnerable"** — Netcraft (Paul Mutton), April 8, 2014 — http://news.netcraft.com/archives/2014/04/08/half-a-million-widely-trusted-websites-vulnerable-to-heartbleed-bug.html
+   168→  - Video framing: *the math was fine; the code wasn't* — protocol security vs implementation bugs. (EFF's companion piece: "Why the Web Needs Perfect Forward Secrecy More Than Ever," Yan Zhu, April 8, 2014 — https://www.eff.org/deeplinks/2014/04/why-web-needs-perfect-forward-secrecy)
+   169→
+   170→## 6. HTTPS today
+   171→
+   172→*Verified 2026-10-11. The telemetry numbers below were computed from the raw Firefox-telemetry dataset that powers Let's Encrypt's "HTTPS adoption" chart (probe `HTTP_PAGELOAD_IS_SSL`; aggregation methodology per Mozilla bug 1414839 comment 19: SUM(ratio × normalized_pageloads) over included countries).*
+   173→
+   174→### 6.1 Chrome's "Not secure" escalation (all official ★★ sources, fetched & read)
+   175→
+   176→| Milestone | What changed | Source |
+   177→|---|---|---|
+   178→| **Chrome 56, January 2017** | HTTP pages **with password or credit-card fields** marked "Not secure" in the omnibox | Google Online Security Blog, "Next Steps Toward More Connection Security" (Emily Schechter, April 27, 2017): "In January, we began our quest… Chrome now marks HTTP pages as 'Not secure' if they have password or credit card fields." — https://security.googleblog.com/2017/04/next-steps-toward-more-connection.html |
+   179→| **Chrome 62, October 2017** | Extended to HTTP pages **with any data entry**, and **all HTTP pages in Incognito** | same post: "Beginning in October 2017, Chrome will show the 'Not secure' warning in two additional situations: when users enter data on an HTTP page, and on all HTTP pages visited in Incognito mode." |
+   180→| **Chrome 68, July 2018** | **Every** HTTP page marked "Not secure" | Chromium Blog, "A secure web is here to stay" (Emily Schechter, Feb 8, 2018): "Beginning in July 2018 with the release of Chrome 68, Chrome will mark all HTTP sites as 'not secure'." — https://blog.chromium.org/2018/02/a-secure-web-is-here-to-stay.html |
+   181→
+   182→- Bonus stat from the Feb 2018 post: *"Over 68% of Chrome traffic on both Android and Windows is now protected; over 78% on Chrome OS and Mac; 81 of the top 100 sites use HTTPS by default"* (as of Feb 2018).
+   183→- Bonus stat from the Apr 2017 post: after Chrome 56's marking, **"a 23% reduction in the fraction of navigations to HTTP pages with password or credit card forms on desktop."** — a great causal-flip number for the video.
+   184→- Chrome's traffic grew so much that Google discontinued its HTTPS Transparency Report (archived 2023) — 【optional; verify if mentioned on screen】.
+   185→
+   186→### 6.2 Firefox telemetry: share of page loads over HTTPS (HTTP_PAGELOAD_IS_SSL)
+   187→
+   188→Dataset: https://d1dfn7jg27m4cf.cloudfront.net/current-https-adoption.csv + historical-https-adoption.csv (fetched 2026-10-11; these are the files behind the chart at https://letsencrypt.org/stats/ — Let's Encrypt republishes Mozilla's public telemetry because the original Firefox Public Data Report was retired). Aggregation per Mozilla bug 1414839#c19 (fetched: https://bugzilla.mozilla.org/show_bug.cgi?id=1414839#c19).
+   189→
+   190→Monthly, "all users" (US+JP+OTHER weighted):
+   191→
+   192→| Date | HTTPS share | Context |
+   193→|---|---|---|
+   194→| Oct 2013 (first month of data) | **28.9%** | dataset begins |
+   195→| Jan 2016 | 38.3% | |
+   196→| Nov 2016 | ~49% | crossed 50% around here |
+   197→| Jan 2017 | 51.2% | Chrome 56 marking begins |
+   198→| Jul 2018 | 73.0% | Chrome 68 marking lands |
+   199→| Apr 2020 | 85.6% | pandemic-era peak (monthly avg) |
+   200→| 2024 (monthly range) | **79.5% – 82.7%** | |
+   201→| 2025 (monthly range) | **81.6% – 85.8%** | |
+   202→| Sep 2026 | 83.1% | most recent full month |
+   203→
+   204→- Per-line detail (the LE chart shows three lines): **US-only ran ~94–96%** in 2025–26; **Japan-only ~90–94%**; global "all users" ~80–86% — i.e., the brief's "80–93% (2024–2025)" range corresponds to the spread between the global line and the US/JP lines.
+   205→- **Important honesty note for the video**: this measures *Firefox page loads* (one browser, its users skew technical); it is *not* "the web is X% HTTPS." Phrase as "of every page Firefox users loaded last month, ~5 in 6 came over HTTPS."
+   206→- The 2010 Firesheep-era baseline: this dataset starts Oct 2013 (28.9%) — 【to verify: a defensible 2010-era HTTPS share if the video wants a "then vs now" number; candidates: Firefox telemetry pre-2013 is not in this dataset — likely keep "under a third" (2013) instead of guessing 2010】.
+   207→
+   208→### 6.3 Where it's going (2025–2026 status)
+   209→
+   210→- Browsers have moved beyond warnings to **HTTPS-by-default/HTTPS-First** upgrade strategies (Firefox HTTPS-First in Private Browsing since 2021; broader rollout ongoing). 【to verify current 2026 rollout status — candidate sources: Mozilla blog "HTTPS-First", Chrome's "HTTPS-First Mode" on chromestatus.com — not yet fetched】
+   211→- TLS 1.3 + post-quantum hybrid (X25519MLKEM768) default in Chrome 131 (Nov 2024) & Firefox 132 — see §2.
+   212→- ECH (Encrypted Client Hello) — hides the SNI hostname: 【to verify deployment status 2026; Wikipedia ECH article fetch failed (redirect); Cloudflare blog + Firefox/Chrome docs pending】.
+   213→- Suggested closer beat: the padlock, once a checkout-page luxury, is now the default; plaintext is the flagged exception. The invisible layer became the norm so quietly most people never noticed the flip.
+   214→
+   215→
+   216→## 7. Numbers & analogies list
+   217→
+   218→*Status: DRAFT — every number below must carry a verified source + confidence rating before final. Placeholder ratings marked (?).*
+   219→
+   220→### 7.1 Numbers (candidates — verify all before use)
+   221→
+   222→1. **1 round trip** — TLS 1.3 full handshake RTT cost (vs 2 in TLS 1.2). Everyday scale: two friends coordinating — in old TLS you had to shout twice before secrets; now once. (★★★ RFC 8446)
+   223→2. **TLS 1.3 cipher suites: just 5 defined** (down from ~37 in TLS 1.2's registry / 30+ commonly negotiated) — 3 AEAD algorithms only, zero non-AEAD. Everyday scale: a menu cut from 37 dishes to a tight 5-course chef's choice. (★★★ RFC 8446 App. B.4 【to verify TLS 1.2 count from IANA registry】)
+   224→3. **1976 — 50 years ago** — Diffie–Hellman paper age (as of 2026): public-key crypto is half a century old. Everyday scale: older than the PC, older than the CD. (★★★ IEEE paper)
+   225→4. **Firesheep: ~100k+ downloads in its first week** 【to verify — number & window; codebutler page/coverage】
+   226→5. **Let's Encrypt active certificates: hundreds of millions** (current stat from letsencrypt.org/stats) 【to verify exact current number + date】
+   227→6. **Firefox page loads over HTTPS: ~93% (2025)** 【to verify exact monthly figure + source; brief says 80–93% 2024–2025】
+   228→7. **~140 root certificates** in Mozilla's root store 【to verify current count】; everyday scale: ~140 passport offices the whole world trusts, pre-programmed in your browser.
+   229→8. **64 KB per heartbeat** — max memory leak per Heartbleed request, repeatable indefinitely; ~500k vulnerable servers (2014 estimate) 【to verify estimate source — Netcraft?】
+   230→9. **Chrome 68, July 2018** — date every plain-HTTP page started being flagged "Not secure" (★★ Chromium blog) 【to verify】
+   231→10. **2010 — Firesheep's year** — HTTPS adoption at the time was ~15–25% of page loads (Firefox telemetry) 【to verify — historical Firefox HTTPS % for 2010/2011, source may be hard; candidate: Firefox Public Data Report historical / EFF / Cloudflare】
+   232→11. **95%+ of handshakes (ECDHE adoption)** or X25519 share of TLS 1.3 key exchanges 【to verify — Cloudflare Radar / Mozilla telemetry】
+   233→12. **3 messages / 2 envelopes** — TLS 1.3 handshake flight count for the animation (ClientHello → ServerHello+cert+Finished ← Finished) — counts as a "made-for-video" number, cite RFC 8446 message flow figure.
+   234→13. **2^256 ≈ 1.1 × 10^77** — keyspace of a 256-bit symmetric key; more keys than atoms in the observable universe (~10^80 within an order of magnitude) 【to verify atom count source phrasing; use as "scale of brute force" line】
+   235→14. **Let's Encrypt price point: $0 vs. typical $50–300/yr pre-2015** for a DV certificate 【to verify historical price range — cite contemporaneous source】
+   236→15. **DigiNotar: bankruptcy Sept. 2011**, ~1 month after fraud detected (Aug 2011) 【to verify dates】
+   237→16. **RFC 2246 (Jan 1999) — 27 years ago**; TLS outlived its creator's company by decades (Netscape dissolved/absorbed ~1999–2003) 【to verify phrasing; Netscape's end date is messy — say "the company that created SSL is long gone; its protocol now carries most of the web"】
+   238→
+   239→### 7.2 Analogies (5, each with fit & distortion)
+   240→
+   241→1. **Postcard vs. tamper-evident envelope** — HTTP = postcard (every handler reads it); HTTPS = sealed envelope (address visible, contents private). *Fit*: addresses/contents split maps to metadata vs. payload. *Distortion*: a paper envelope can be steamed open; TLS's sealing is cryptographic and tamper-*evident* (AEAD tag breaks if any bit is flipped), not just tamper-resistant.
+   242→2. **Agreeing on a secret password by shouting across a crowded room** (DH) — everything spoken is public, yet only the two parties can compute the result. *Fit*: captures "public channel, private result," the single most counter-intuitive fact of the episode. *Distortion*: shouting feels like it *should* leak the secret; the math's one-wayness has no everyday equivalent — hence the paint analogy to bridge it.
+   243→3. **Paint mixing** (DH visual) — public base color + secret colors; mixed pots cross the table; each adds their secret to the other's pot; same final color. *Fit*: commutative combination (order doesn't matter), visible intermediates, hidden ingredients. *Distortion*: paint is truly un-mixable (chemistry), DH is *computationally* hard (could fall to quantum computers — Shor's algorithm); also paint mixes are continuous, DH values are discrete.
+   244→4. **Notary seal / official stamp on a letter** (certificate) — a CA is a notary: it checks you own the domain, then stamps your public key. *Distortion*: a physical notary checks identity face-to-face and takes responsibility; CAs do automated domain checks at scale (the cheap "Domain Validation" tier doesn't prove *who* you are, only that you control the name) — and there are ~140 trusted ones, any of which can stamp for any domain (the CT logs exist precisely because that trust is broad).
+   245→5. **Registered-mail envelope: you can see it's addressed to shop.example, but not read the letter** (what the café sniffer gets) — the final state of the cold open. *Fit*: SNI/IP remain visible; payload encrypted. *Distortion*: "registered" implies the courier *knows* the contents' value/handles them specially — TLS hides from *everyone* en route, including the postman; and TLS also proves *sender identity* (server authentication), which registered mail doesn't.
+   246→
+   247→## 8. Terminology
+   248→
+   249→*Status: DRAFT — final spelling pass at the end.*
+   250→
+   251→TLS, SSL, HTTPS, HTTP, handshake, ClientHello, ServerHello, key exchange, Diffie–Hellman, ECDHE, ephemeral, session key, symmetric encryption, AEAD, AES-GCM, ChaCha20-Poly1305, forward secrecy, certificate, certificate authority (CA), root CA, intermediate CA, chain of trust, root store, Let's Encrypt, ACME, Certificate Transparency, Heartbleed, SNI, sniffing, man-in-the-middle (MITM), plaintext/ciphertext, sidejacking, Firesheep, monitor mode, Wireshark, postcard analogy, discrete logarithm problem, X25519.
+   252→
+   253→## Appendix: Unverified / unresolved points
+   254→
+   255→*(filled at end of research — candidates: historical Firefox HTTPS % for 2010; Firesheep download count; X25519 share stats; ECH deployment status; browser root store exact counts)*
+   256→
+   257→

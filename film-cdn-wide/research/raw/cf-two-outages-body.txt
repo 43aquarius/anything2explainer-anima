@@ -1,0 +1,884 @@
+Blog
+BGP
+Hurricane
+Network
++1
+Show 1 more tags
+4 Tags
+Show 4 tags
+Post Tags
+BGP
+Hurricane
+Network
+Outage
+All tags
+Matching tags
+No tags found
+1.1.1.1
+2FA
+Abuse
+Access
+Access Control Lists (ACLs)
+Accessibility
+Account Takeover
+Acquisitions
+Addressing
+Advanced Certificate Manager
+Advanced DDoS
+Advertising
+Aegis
+AEO
+Africa
+Afroflare
+Agent Cloud
+Agent Development Lifecycle
+Agent Readiness
+Agents
+Agents Week
+Agents Week 2026
+AI
+AI Bots
+AI Gateway
+AI Search
+AI WAF
+AI Week
+AI-SPM
+Alertmanager
+Always Online
+AMD
+AMP
+Analytics
+Anonymous
+Anti Malware
+Anycast
+API
+API Gateway
+API Security
+API Shield
+APJC
+Apple
+Application Security
+Application Services
+Area 1 Security
+Argo Smart Routing
+ASCII
+Asia
+Athenian Project
+Atlassian
+Attacks
+Audit Logs
+Austin
+Australia
+Authentication
+Authy
+Auto Rag
+Automatic HTTPS
+Automatic Platform Optimization
+Automation
+AutoMinify
+Awards
+AWS
+Baidu
+Bandwidth Alliance
+Bandwidth Costs
+Best Practices
+Beta
+Better Internet
+BGP
+Billing
+Birthday Week
+Black Friday
+Blackbird
+Bot Fight Mode
+Bot Management
+Botnet
+Bots
+BPF
+Brand
+Brand Protection
+Brazil
+Browser Insights
+Browser Rendering
+Browser Run
+Bug Bounty
+Bugs
+BYOIP
+Cache
+Cache Purge
+Cache Reserve
+Cache Rules
+California
+Canada
+Cap'n Proto
+CAPTCHA
+Careers
+CASB
+Categories
+CDN
+CDNJS
+Certificate Authority
+Certificate Pinning
+Certificate Transparency
+Certification
+CFSSL
+Challenge Page
+ChatGPT
+China
+China Network
+Christmas
+Chrome
+CIO Week
+CISA
+Claire
+CLI
+ClickHouse
+Clientless
+Clientless Web Isolation
+Cloud Connector
+Cloud Email Security
+Cloudflare Access
+Cloudflare Apps
+Cloudflare Area 1
+Cloudflare Calls
+Cloudflare Email Service
+Cloudflare for Campaigns
+Cloudflare for SaaS
+Cloudflare for Startups
+Cloudflare Gateway
+Cloudflare History
+Cloudflare Images
+Cloudflare Media Platform
+Cloudflare Meetups
+Cloudflare Network
+Cloudflare One
+Cloudflare One Client
+Cloudflare One User Risk Score
+Cloudflare One Week
+Cloudflare OS
+Cloudflare Pages
+Cloudflare Polish
+Cloudflare Queues
+Cloudflare Realtime
+Cloudflare Stream
+Cloudflare Tunnel
+Cloudflare TV
+Cloudflare Workers
+Cloudflare Workers (PT)
+Cloudflare Workers KV
+Cloudflare Workers KV (ES)
+Cloudflare Zero Trust
+Cloudforce One
+Cloudy
+Code Orange
+Coinbase
+Colombia
+Community
+Compliance
+Compression
+Config Rules
+Configuration Management
+Congestion Control
+Connectivity
+Connectivity Cloud
+Consumer Services
+Containers
+Content Independence Day
+Content Scanning
+Context
+Core
+COVID-19
+Crawler Hints
+CrowdStrike
+Crypto Week
+Cryptography
+CSAM Reporting
+Customer Success
+Customer Zero
+Customers
+CVE
+CVE-2023-50387
+Cyber Readiness
+Cybersecurity
+D1
+Dashboard
+Data
+Data Catalog
+Data Center
+Data Localization
+Data Localization Suite
+Data Loss
+Data Loss Prevention
+Data Platform
+Data Privacy Day
+Data Protection
+Data Sovereignty
+Data Transfer Bucket
+Database
+DDoS
+DDoS Alerts
+DDoS Reports
+Debugging
+Deep Dive
+Descaler
+Design
+Deskope
+Developer Documentation
+Developer Platform
+Developer Spotlight
+Developer Week
+Developers
+Developers Storage
+Device Security
+DevOps
+DEX
+Digital Experience Monitoring
+Digital Forensics
+Disrupt
+Distributed
+Distributed Systems
+Distributed Web
+Diversity
+DLP
+DMARC
+DNS
+DNS Filtering
+DNS Flood
+DNS Security
+DNSSEC
+Dogfooding
+DoH
+Domain Rankings
+Domain Scoped Roles
+dosd
+Drupal
+Due Process
+Durable Execution
+Durable Objects
+Early Hints
+Earth Day
+eBPF
+EC2
+eCommerce
+Edge
+Edge Computing
+Edge Database
+Edge Rules
+Education
+Egress
+Elastic
+Election Security
+Elections
+Elliptic Curves
+Email
+Email Routing
+Email Security
+Email Workers
+EmDash
+Emissions
+Employee Resource Groups
+Encrypted SNI
+Encryption
+Engineering
+Enterprise
+Entropy
+EPYC
+Ethereum
+Europe
+European Union
+Events
+Exploit
+Facebook
+Fancy Bear
+Fast Fonts
+FCC
+Feature Flags
+FedRAMP
+FedRAMP High
+FedRAMP Moderate
+Firefox
+Firewall
+Firmware
+Florida
+Football
+Formal Methods
+Forrester
+Fortran
+Foundation DNS
+Founders' Letter
+France
+Fraud
+Free
+Freedom of Speech
+Front End
+Full Stack
+Full Stack Week
+Fun
+GA Week
+Gartner
+Gatebot
+GDPR
+Gen X
+General Availability
+Generative AI
+Geo Key Manager
+Germany
+GitHub
+Go
+Google
+Google Analytics
+Google Cloud
+Google Workspace
+Government Innovation
+Grace Hopper
+Grafana
+GraphQL
+Green
+Grinch
+Growth
+gRPC
+Guest Post
+Hackathon
+Halloween
+Hardware
+HashiCorp
+Hertzbleed
+Heuristics
+History
+Holidays
+Holocaust
+Hong Kong
+Hosting Con
+Hostnames
+HTTP2
+HTTP3
+HTTPS
+Human Rights
+Hurricane
+Hybrid Cloud
+Hyperdrive
+I'm Under Attack Mode
+IBM
+ICANN
+iCloud Private Relay
+Identity
+IETF
+IETF Standards
+IL4
+Image Optimization
+Image Recognition
+Image Resizing
+Image Storage
+Impact
+Impact Week
+Incident Report
+Incident Response
+India
+Indicators of Compromise
+Indonesian
+Inference
+Infrastructure
+Infrastructure as Code
+Insights
+Intel
+Interconnection
+Internal DNS
+Internet Performance
+Internet Quality
+Internet Regulation
+Internet Shutdown
+Internet Summit
+Internet Traffic
+Internet Trends
+Internship Experience
+Intrusion Detection
+Investors
+IoCs
+iOS
+IoT
+IPFS
+IPsec
+IPv4
+IPv6
+IRAP
+Israel
+Italy
+IWD
+JAMstack
+Japan
+JavaScript
+Jengo
+Jengo Policy
+Joomla
+Judeoflare
+Kafka
+Kernel
+Key Value
+Keyless SSL
+KeyTrap
+Killnet
+Korea
+Kubernetes
+LangChain
+Latency
+Latin America
+Latinflare
+LavaRand
+Lazarus group
+Leaked Credential Checks
+Legal
+Legal Patents Sable
+LGBTQIA+
+Life at Cloudflare
+Linux
+Lisbon
+Live Streaming
+Llama
+LLM
+Load Balancing
+Localization
+Log Push
+Log4J
+Log4Shell
+Logging
+Logs
+LUA
+Machine Learning
+Magecart
+Magic Firewall
+Magic Network Monitoring
+Magic Transit
+Magic WAN
+Magic WAN Connector
+Malicious JavaScript
+Malware
+Managed Components
+Managed Rules
+March of Cloudflare
+MASQUE
+MCP
+Meerkat
+MeetUp
+Meris
+Message Protocol
+Mexico
+Micro-frontends
+Microsoft
+Microsoft 365
+Microsoft Azure
+Middle East
+Migration Hub
+Milestones
+Miniflare
+Mirage
+Mirai
+Mitel
+Mitigation
+Mixed Content Errors
+MLops
+Mobile
+Mobile SDK
+Model Context Protocol
+Moldova
+Monitoring
+Multi-Cloud
+Multi-User
+MySQL
+NaaS
+Net Neutrality
+Network
+Network Interconnect
+Network Performance Update
+Network Protection
+Network Services
+Networking
+New Year
+NGINX
+Ninjas
+NIST
+Node.js
+North America
+Notebooks
+Notifications
+NSEC3
+OAuth
+Observability
+Oceania
+OCSP
+Offices
+Okta
+Olympics
+Onboarding
+Open API
+Open Source
+OpenAI
+OpenBMC
+OpenDNS
+OpenSSL
+OpenTelemetry
+Optimization
+Origin Rules
+Outage
+Oxy
+Pacific Northwest
+Page Rules
+Page Shield
+Parallels
+Partners
+Partnership
+Password-reuse
+Passwords
+Passwords (PT)
+Patents
+Pay Per Crawl
+PAYGO
+Payments
+PCI Certified
+Peering
+Performance
+Performance Optimization
+Phishing
+php
+Phython
+Pingora
+Pipelines
+PlanetScale
+Plans
+Platform Engineering
+Platform Week
+Plesk
+Policy & Legal
+Politics
+Portugal
+Post Mortem
+Post-Quantum
+Postgres
+Precursor
+Prepared Statements
+Prisma
+Privacy
+Privacy Pass
+Privacy Week
+Private IP
+Private Network
+Product Design
+Product News
+Programming
+Programming (PT)
+Project Fair Shot
+Project Galileo
+Project Honey Pot
+Project Pangea
+Project Safekeeping
+Project Turpentine
+Prometheus
+Protocols
+Proudflare
+Proxying
+Public Sector
+Python
+Python Workers
+Quantization
+Queues
+QUIC
+QUICHE
+Quicksilver
+R2
+R2 Super Slurper
+Radar
+Radar Alerts
+Radar API
+Radar Maps
+Railgun
+Randomness
+Ransom Attacks
+Rapid Reset
+Raspberry Pi
+Rate Limiting
+RC4
+RDDoS
+React
+Reading List
+Real-time
+Recruiting
+Regional Services
+Registrar
+Reliability
+Remote Browser Isolation
+Remote Desktop Protocol
+Remote Work
+Replication
+Research
+Resolver
+Restreaming
+Retreat
+Reverse Engineering
+REvil
+Risk Management
+Road to Zero Trust
+Rocket Loader
+RocksDB
+Routing
+Routing Security
+RPC
+RPKI
+RRDNS
+RSA
+Russia
+Rust
+Rust Workers
+SaaS
+SAAS Security
+Sable
+Salt
+Sampling
+Sandbox
+SASE
+Save The Web
+SDK
+Search Engine
+Secrets Store
+Secure Web Gateway
+Security
+Security Analytics
+Security Center
+Security Posture
+Security Posture Management
+Security Service Edge
+Security Week
+security.txt
+SEO
+Server Push
+Serverless
+Serverless (PT)
+Serverless AI
+Serverless Week
+Servers
+SIEM
+Signed Exchanges (SXG)
+SIM
+Singapore
+Single Sign On (SSO)
+Smart Placement
+Smart Shield
+Snippets
+SOC as a Service
+South Africa
+South America
+Spain
+spdy
+Spectrum
+Speed
+Speed & Reliability
+Speed Brain
+Speed Week
+Spoofing
+Sports
+SQL
+SRE
+SSE
+SSH
+SSL
+Standards
+Startup Enterprise Plan
+Statistics
+StopTheHacker
+Storage
+Sumo Logic
+Super Bowl
+Supercloud
+Supply Chain Attacks
+Support
+Sustainability
+SWAG
+SWG
+Swift
+Switzerland
+SXSW
+SYN
+SYN Flood
+Syria
+TCP
+Team
+Teams Dashboard
+Tech Talks
+TechCrunch
+Technical Writing
+Terraform
+Testimonials
+Testing
+Texas
+Thanksgiving
+The Serverlist Newsletter
+Threat Data
+Threat Feeds
+Threat Intelligence
+Threat Operations
+Threat Report
+Threats
+Tiered Cache
+TikTok
+TLS
+TLS 1.3
+Tools
+Tor
+Tracing
+Traffic
+Transform Rules
+Transparency
+Trends
+Trust & Safety
+TTFB
+TTL
+TURN
+TURN Server
+Turnstile
+TypeScript
+UDP
+Ukraine
+United Kingdom
+Universal SSL
+URL Scanner
+USA
+User Research
+VDI
+Vectorize
+Vetflare
+Video
+Visibility
+Vite
+VoIP
+VPC
+VPN
+Vulnerabilities
+WAF
+WAF Attack Score
+WAF Rules
+Waiting Room
+WARP
+WARP Connector
+WASM
+Web Application Firewall
+Web Asset Discovery
+Web3
+WebAssembly
+Webinars
+WebMCP
+WebP
+WebRTC
+WebSockets
+Wildebeest
+Womenflare
+WordPress
+Workers AI
+Workers Launchpad
+Workers Logs
+Workers Observability
+Workers Sites
+Workers Unbound
+Workers VPC
+Workflows
+World IPv6 Day
+Wrangler
+x402
+Year in Review
+Z3
+Zaraz
+Zero Day Threats
+Zero Trust
+Zero Trust Week
+Zone Versioning
+Artificial Intelligence
+Workers
+Client-Side Security
+Architecture
+Multi-tenant Secuity
+Multi-tenant Security
+cf
+BEACON
+Outage
+BGP
+Hurricane
+Network
+Outage
+September 7, 2017
+The Story of Two Outages
+Louis Poinsignon
+3 minute read
+COPY URL
+Over the last two days, Cloudflare observed two events that had effects on global Internet traffic levels. Cloudflare handles approximately 10% of all Internet requests, so we have significant visibility into traffic from countries and networks across the world.
+On
+Tuesday, September 5th
+, the
+government of Togo decided to restrict Internet access
+in the country following political protests. The government blocked social networks and rate-limited traffic, which had an impact on Cloudflare.
+This adds Togo to the list of countries like
+Syria
+(
+twice
+),
+Iraq
+,
+Turkey
+,
+Libya, Tunisia, etc
+that have restricted or revoked Internet access.
+The second event happened on
+Wednesday, September 6th
+, when a category 5 hurricane ravaged the Caribbean Islands.
+The affected countries at the moment are:
+Anguilla
+Antigua and Barbuda
+British Virgin Islands
+Puerto Rico
+Saint Barthelemy
+Saint Kitts and Nevis
+Saint Martin
+Sint Maarten
+U.S. Virgin Islands
+Losing the routes
+Most of the network cables are buried underground or laying at the bottom of the oceans but the hardware which relies on electricity is the first one to go down.
+Cell towers sometime have their own power source thus allowing local phone calls but without a backbone no outside access is possible.
+The Réseaux IP Européens (RIPE) is an Internet registry that collects routes announced over the Internet and can display the reachability of a country.A few networks went black in Saint Martin island.
+Orange Caraïbes announced in a press release
+that they repaired their network at 14:00 local time (18:00 UTC). On the graph we can see that it recovered at 19:00 UTC.
+Losing the traffic
+While the routers were going back online, the end-user traffic was severely reduced on the edge of Cloudflare.
+Saint Kitts
+did not go offline, but traffic was reduced at 08:00 am local time on Wednesday.
+Both
+Saint Martin
+and
+Sint Maarten
+share the same island, which was one of the most affected by the hurricane. According to the
+New York Times
+, the island was badly hit at around 10:00 am local time on September 6th.
+Antigua and Barbuda
+started losing connectivity when the storm approached at 10:00 pm local time on Tuesday 5th September.
+The
+U.S. Virgin Islands
+and
+Puerto Rico
+were also strongly affected.
+This final image shows the different times when the hurricane reaches every island:
+Conclusions
+While the Internet was designed to sustain a nuclear attack and can re-route within seconds, islands are often isolated with fewer routing options for provider than on the mainland (3 or 4 instead of 10 or 15).During natural events like this one, the Internet is crucial as a resource for communication, since people use it to tell their family abroad they are safe and to find shelter, food and clean water.
+If you live in these islands and have Internet access,
+Google lists
+the shelters and has
+public alerts
+.
+On this page
+Discuss Online
+Related tags
+BGP
+Hurricane
+Network
+Outage
+Follow on Social Media
+Cloudflare
+Louis Poinsignon
+Subscribe to receive notifications of new posts
+Email address
+We’ll never share your email address.
+Subscribe
+Thanks for subscribing! Check your inbox to confirm.

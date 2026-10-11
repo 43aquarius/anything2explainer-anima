@@ -1,0 +1,1227 @@
+URL: https://en.wikipedia.org/wiki/Content_delivery_network
+
+Jump to content
+
+Main menu
+
+Main menu
+
+move to sidebar
+
+hide
+
+Navigation
+
+-   Main page
+-   Contents
+-   Current events
+-   Random article
+-   About Wikipedia
+-   Contact us
+
+Contribute
+
+-   Help
+-   Learn to edit
+-   Community portal
+-   Recent changes
+-   Upload file
+-   Special pages
+
+[] [Wikipedia] [The Free Encyclopedia]
+
+Search
+
+Search
+
+Appearance
+
+-   Donate
+-   Create account
+-   Log in
+
+Personal tools
+
+-    Donate
+-    Create account
+-    Log in
+
+Contents
+
+move to sidebar
+
+hide
+
+-   
+    (Top)
+-   
+    1 Technology
+-   
+    2 Security and privacy
+-   
+    3 Content networking techniques
+
+    Toggle Content networking techniques subsection
+    -   
+        3.1 Content service protocols
+    -   
+        3.2 Peer-to-peer CDNs
+    -   
+        3.3 Private CDNs
+-   
+    4 CDN trends
+
+    Toggle CDN trends subsection
+    -   
+        4.1 Emergence of telco CDNs
+    -   
+        4.2 Telco CDN advantages
+    -   
+        4.3 Federated CDNs and Open Caching
+    -   
+        4.4 Multi CDN and CDN selection
+    -   
+        4.5 Improving CDN performance using Extension Mechanisms for DNS
+    -   
+        4.6 Virtual CDN (vCDN)
+    -   
+        4.7 CDN using non-HTTP delivery
+    -   
+        4.8 Image Optimization and Delivery (Image CDNs)
+-   
+    5 Content delivery service and technology providers
+
+    Toggle Content delivery service and technology providers subsection
+    -   
+        5.1 Commercial or free software vendors (build your own CDN)
+    -   
+        5.2 Free-as-a-Service
+    -   
+        5.3 Commercial-as-a-Service
+    -   
+        5.4 Others
+    -   
+        5.5 Telco CDNs
+    -   
+        5.6 Commercial using P2P for delivery
+    -   
+        5.7 Multi
+    -   
+        5.8 In-house
+-   
+    6 See also
+-   
+    7 References
+-   
+    8 Further reading
+
+Toggle the table of contents
+
+Content delivery network
+
+32 languages
+
+-   العربية
+-   Azərbaycanca
+-   Български
+-   Català
+-   Čeština
+-   Dansk
+-   Deutsch
+-   Español
+-   Eesti
+-   Euskara
+-   فارسی
+-   Suomi
+-   Français
+-   עברית
+-   Bahasa Indonesia
+-   Italiano
+-   日本語
+-   한국어
+-   Кыргызча
+-   Bahasa Melayu
+-   Nederlands
+-   Polski
+-   Português
+-   Română
+-   Русский
+-   Српски / srpski
+-   Svenska
+-   Türkçe
+-   Українська
+-   اردو
+-   Oʻzbekcha / ўзбекча
+-   中文
+
+Edit links
+
+-   Article
+-   Talk
+
+English
+
+-   Read
+-   Edit
+-   View history
+
+Tools
+
+Tools
+
+move to sidebar
+
+hide
+
+Actions
+
+-    Read
+-    Edit
+-    View history
+
+General
+
+-   What links here
+-   Related changes
+-   Upload file
+-   Permanent link
+-   Page information
+-   Cite this page
+-   Get shortened URL
+-   Switch to legacy parser
+
+Print/export
+
+-   Download as PDF
+-   Printable version
+
+In other projects
+
+-   Wikimedia Commons
+-   Wikidata item
+
+Appearance
+
+move to sidebar
+
+hide
+
+From Wikipedia, the free encyclopedia
+
+Internet ecosystem layer that addresses bottlenecks
+
+[]
+
+(Left) Single server distribution
+(Right) CDN scheme of distribution
+
+A content delivery network (CDN) or content distribution network is a geographically distributed network of proxy servers and corresponding data centers. CDNs provide high availability and performance by distributing content geographically closer to end users, and arose in the late 1990s to alleviate the performance bottlenecks of the Internet^([1][2]) as it was becoming a critical medium. Since then, CDNs have grown to serve a large portion of Internet content, including text, graphics and scripts, downloadable objects (media files, software, and documents), applications (e-commerce, portals), live streaming media, on-demand streaming media, and social media services.^([3])
+
+CDNs are a layer in the internet ecosystem. Content owners such as media companies and e-commerce vendors pay CDN operators to deliver their content to their end users. In turn, a CDN pays Internet service providers (ISPs), carriers, and network operators for hosting its servers in their data centers.
+
+CDN is an umbrella term spanning different types of content delivery services: video streaming, software downloads, web and mobile content acceleration, licensed/managed CDN, transparent caching, and services to measure CDN performance, load balancing, Multi CDN switching, analytics, and cloud intelligence. CDN vendors may cross over into other industries like security, DDoS protection and web application firewalls (WAF), and WAN optimization.
+
+Content delivery service providers include Akamai Technologies, Cloudflare, Amazon CloudFront, Qwilt (Cisco), Fastly, CDN77, BunnyCDN, EdgeNext, and Google Cloud CDN.
+
+Technology
+
+[edit]
+
+CDN nodes are usually deployed in multiple locations, often over multiple Internet backbones. Benefits include reducing bandwidth costs, improving page load times, and increasing the global availability of content. The number of nodes and servers making up a CDN varies, depending on the architecture, with some reaching thousands of nodes with tens of thousands of servers on many remote points of presence (PoPs). Others build a global network and have a small number of geographical PoPs.^([4])
+
+Requests for content are typically algorithmically directed to nodes that are optimal in some way. When optimizing for performance, locations that are best for serving content to the user may be chosen. This may be measured by choosing locations that are the fewest hops or the shortest time to the requesting client, or the highest server performance, to optimize delivery across local networks. When optimizing for cost, locations that are the least expensive may be chosen instead. In an optimal scenario, these two goals tend to align, as edge servers that are close to the end user at the edge of the network may have an advantage in performance and cost.
+
+Most CDN providers will provide their services over a varying, defined set of PoPs, depending on the coverage desired, such as the United States, Asia-Pacific, International or Global, etc. These sets of PoPs can be called "edges", "edge nodes", "edge servers", or "edge networks" as they would be the closest edge of CDN assets to the end user.^([5])
+
+CDN concepts:
+
+-   Content Provider Origin Server: the web server providing the source content
+-   CDN entry point(s): the servers within the CDN that fetch the content from the origin
+-   CDN Origin Shield: the CDN service helping to protect the origin server in case of heavy traffic
+-   CDN Edge Servers: the CDN servers serving the content request from the clients
+-   CDN footprint: the geographic areas where the CDN Edge Servers can effectively serve clients' requests
+-   CDN selector: in the context of multi-CDN, a decision-making service to choose among multiple CDNs
+-   CDN offloading: in the context of Peer-to-Peer CDN, a mechanism to help deliver the content between clients who are consuming it, in addition to CDN Edge Server delivery
+
+Security and privacy
+
+[edit]
+
+CDN providers profit either from direct fees paid by content providers using their network, or profit from the user analytics and tracking data collected as their scripts are being loaded onto customers' websites inside their browser origin. As such these services are being pointed out as potential privacy intrusions for behavioral targeting^([6]) and solutions are being created to restore single-origin serving and caching of resources.^([7])
+
+In particular, a website using a CDN may violate the EU's General Data Protection Regulation (GDPR). For example, in 2021 a German court forbade the use of a CDN on a university website, because this caused the transmission of the user's IP address to the CDN, which violated the GDPR.^([8])
+
+CDNs serving JavaScript have also been targeted as a way to inject malicious content into pages using them. Subresource Integrity mechanism was created in response to ensure that the page loads a script whose content is known and constrained to a hash referenced by the website author.^([9])
+
+Content networking techniques
+
+[edit]
+
+The Internet was designed according to the end-to-end principle.^([10]) This principle keeps the core network relatively simple and moves the intelligence as much as possible to the network end-points: the hosts and clients. As a result, the core network is specialized, optimized, and simplified to only forward data packets.
+
+Content Delivery Networks extend the transport network by distributing on it a variety of intelligent applications employing techniques designed to optimize content delivery. The resulting tightly integrated overlay uses web caching, server-load balancing, request routing, and content services.^([11])
+
+Web caches store popular content on servers that have the greatest demand for the content requested. These shared network appliances reduce bandwidth requirements, reduce server load, and improve the client response times for content stored in the cache. Web caches are populated based on requests from users (pull caching) or based on preloaded content disseminated from content servers (push caching).^([12])
+
+Server-load balancing uses one or more techniques, including service-based (global load balancing) or hardware-based (i.e. layer 4–7 switches, also known as a web switch, content switch, or multilayer switch) to share traffic among several servers or web caches. Here the switch is assigned a single virtual IP address. Traffic arriving at the switch is then directed to one of the real web servers attached to the switch. This has the advantage of balancing load, increasing total capacity, improving scalability, and providing increased reliability by redistributing the load of a failed web server and providing server health checks.
+
+A content cluster or service node can be formed using a layer 4–7 switch to balance load across several servers or several web caches within the network.
+
+Request routing directs client requests to the content source best able to serve the request. This may involve directing a client request to the service node that is closest to the client, or to the one with the most capacity. A variety of algorithms are used to route the request. These include Global Server Load Balancing, DNS-based request routing, Dynamic metafile generation, HTML rewriting,^([13]) and anycasting.^([14]) Proximity—choosing the closest service node—is estimated using a variety of techniques including reactive probing, proactive probing, and connection monitoring.^([11])
+
+CDNs use a variety of methods of content delivery including, but not limited to, manual asset copying, active web caches, and global hardware load balancers.
+
+Content service protocols
+
+[edit]
+
+Several protocol suites are designed to provide access to a wide variety of content services distributed throughout a content network. The Internet Content Adaptation Protocol (ICAP) was developed in the late 1990s^([15][16]) to provide an open standard for connecting application servers. A more recently defined and robust solution is provided by the Open Pluggable Edge Services (OPES) protocol.^([17]) This architecture defines OPES service applications that can reside on the OPES processor itself or be executed remotely on a Callout Server. Edge Side Includes or ESI is a small markup language for edge-level dynamic web content assembly. It is fairly common for websites to have generated content. It could be because of changing content like catalogs or forums, or because of personalization. This creates a problem for caching systems. To overcome this problem, a group of companies created ESI.
+
+Peer-to-peer CDNs
+
+[edit]
+
+Further information: Peer-to-peer network
+
+In peer-to-peer (P2P) content-delivery networks, clients provide resources as well as use them. This means that, unlike client–server systems, the content-centric networks can actually perform better as more users begin to access the content (especially with protocols such as Bittorrent that require users to share). This property is one of the major advantages of using P2P networks because it makes the setup and running costs very small for the original content distributor.^([18][19])
+
+To incentivize peers to participate in the P2P network, web3 and blockchain technologies can be used: participating nodes receive crypto tokens in exchange for their involvement.
+
+Private CDNs
+
+[edit]
+
+If content owners are not satisfied with the options or costs of a commercial CDN service, they can create their own CDN. This is called a private CDN. A private CDN consists of PoPs (points of presence) that are only serving content for their owner. These PoPs can be caching servers,^([20]) reverse proxies or application delivery controllers.^([21]) It can be as simple as two caching servers,^([20]) or large enough to serve petabytes of content.^([22]) When a private CDN is deployed within a company network, it is also referred as Entreprise CDN or eCDN.
+
+Large content distribution networks may even build and set up their own private network to distribute copies of content across cache locations.^([23][24]) Such private networks are usually used in conjunction with public networks as a backup option in case the capacity of the private network is not enough or there is a failure which leads to capacity reduction. Since the same content has to be distributed across many locations, a variety of multicasting techniques may be used to reduce bandwidth consumption. Over private networks, it has also been proposed to select multicast trees according to network load conditions to more efficiently utilize available network capacity.^([25][26])
+
+CDN trends
+
+[edit]
+
+Emergence of telco CDNs
+
+[edit]
+
+The rapid growth of streaming video traffic^([27]) required large capital expenditures by broadband providers^([28]) in order to meet this demand and retain subscribers by delivering a sufficiently good quality of experience.
+
+To address this, telecommunications service providers have begun to launch their own content delivery networks as a means to lessen the demands on the network backbone and reduce infrastructure investments.
+
+Telco CDN advantages
+
+[edit]
+
+Because they own the networks over which video content is transmitted, telco CDNs have advantages over traditional CDNs. They own the last mile and can deliver content closer to the end-user because it can be cached deep in their networks. This deep caching minimizes the distance that video data travels over the general Internet and delivers it more quickly and reliably.
+
+Telco CDNs also have a built-in cost advantage since traditional CDNs must lease bandwidth from them and build the operator's margin into their own cost model. In addition, by operating their own content delivery infrastructure, telco operators have better control over the utilization of their resources. Content management operations performed by CDNs are usually applied without (or with very limited) information about the network (e.g., topology, utilization, etc.) of the telco operators with which they interact or have business relationships. These pose several challenges for the telco operators who have a limited sphere of action in the face of the impact of these operations on the utilization of their resources.
+
+In contrast, the deployment of telco-CDNs allows operators to implement their own content management operations,^([29][30]) which enables them to have better control over the utilization of their resources and, as such, provide better quality of service and experience to their end users.
+
+Federated CDNs and Open Caching
+
+[edit]
+
++-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [icon]                            | This section needs more citations. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (June 2021) (Learn how and when to remove this message) |
++-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+In June 2011, StreamingMedia.com reported that a group of TSPs had founded an Operator Carrier Exchange (OCX)^([31]) to interconnect their networks and compete more directly against large traditional CDNs like Akamai and Limelight Networks, which have extensive PoPs worldwide. This way, telcos are building a Federated CDN offering, which is more interesting for a content provider willing to deliver its content to the aggregated audience of this federation. The IETF has standardized a framework and a request-routing interface for interconnecting CDNs, so that a request handled by one CDN can be redirected to another.^([32][33])
+
+It is likely that in the near future, other telco CDN federations will be created. They will grow by enrollment of new telcos joining the federation and bringing network presence and their Internet subscriber bases to the existing ones. ^([citation needed])
+
+The Open Caching specification by Streaming Video Technology Alliance defines a set of APIs that allows a Content Provider to deliver its content using several CDNs in a consistent way, seeing each CDN provider the same way through these APIs.
+
+Multi CDN and CDN selection
+
+[edit]
+
+Combining several CDN services allows Content Providers to not rely on a single CDN service, especially concerned to deal with high peak audience during live events. There are several ways to allocate traffic to a particular CDN among the list, either client-side CDN selection, server-side (at the Content Provider's origin), or cloud-side (in the middle, between the content origin and the audience). CDN selection criteria can be performance, availability, and cost.
+
+Improving CDN performance using Extension Mechanisms for DNS
+
+[edit]
+
+[]
+
+The latency (RTT) experienced by clients with non-local resolvers ("high") reduced drastically when a CDN rolled-out the EDNS0 extension in April 2014, while the latency of clients with local resolvers are unimpacted by the change ("low").^([34])
+
+Traditionally, CDNs have used the IP of the client's recursive DNS resolver to geo-locate the client. While this is a sound approach in many situations, this leads to poor client performance if the client uses a non-local recursive DNS resolver that is far away. For instance, a CDN may route requests from a client in India to its edge server in Singapore, if that client uses a public DNS resolver in Singapore, causing poor performance for that client. Indeed, a recent study^([34]) showed that in many countries where public DNS resolvers are in popular use, the median distance between the clients and their recursive DNS resolvers can be as high as a thousand miles. In August 2011, a global consortium of leading Internet service providers led by Google announced their official implementation of the edns-client-subnet IETF Internet Draft,^([35]) which is intended to accurately localize DNS resolution responses. The initiative involves a limited number of leading DNS service providers, such as Google Public DNS,^([36]) and CDN service providers as well. With the edns-client-subnet EDNS0 option, CDNs can now utilize the IP address of the requesting client's subnet when resolving DNS requests. This approach, called end-user mapping,^([34]) has been adopted by CDNs, and it has been shown to drastically reduce the round-trip latencies and improve performance for clients who use public DNS or other non-local resolvers. However, the use of EDNS0 also has drawbacks as it decreases the effectiveness of caching resolutions at the recursive resolvers,^([34]) increases the total DNS resolution traffic,^([34]) and raises a privacy concern of exposing the client's subnet.
+
+Virtual CDN (vCDN)
+
+[edit]
+
+Virtualization technologies are being used to deploy virtual CDNs (vCDNs) (also known as a software-defined CDN or sd-CDN) to reduce content provider costs, and at the same time, increase elasticity and decrease service delay. With vCDNs, it is possible to avoid traditional CDN limitations, such as performance, reliability, and availability, since virtual caches are deployed dynamically (as virtual machines or containers) in physical servers distributed across the provider's geographical coverage. As the virtual cache placement is based on both the content type and server or end-user geographic location, the vCDNs have a significant impact on service delivery and network congestion.^([37][38][39][40])
+
+CDN using non-HTTP delivery
+
+[edit]
+
+To boost performance, delivery to clients from servers can use alternate non-HTTP protocols such as WebRTC and WebSockets.
+
+Image Optimization and Delivery (Image CDNs)
+
+[edit]
+
+In 2017, Addy Osmani of Google started referring to software solutions that could integrate naturally with the Responsive Web Design paradigm (with particular reference to the <picture> element) as Image CDNs.^([41]) The expression referred to the ability of a web architecture to serve multiple versions of the same image through HTTP, depending on the properties of the browser requesting it, as determined by either the browser or the server-side logic. The purpose of Image CDNs was, in Google's vision, to serve high-quality images (or, better, images perceived as high-quality by the human eye) while preserving download speed, thus contributing to a great User experience (UX).^([citation needed])
+
+Arguably, the Image CDN term was originally a misnomer, as neither Cloudinary nor Imgix (the examples quoted by Google in the 2017 guide by Addy Osmani) were, at the time, a CDN in the classical sense of the term.^([41]) Shortly afterwards, though, several companies offered solutions that allowed developers to serve different versions of their graphical assets according to several strategies. Many of these solutions were built on top of traditional CDNs, such as Akamai, CloudFront, Fastly, Edgecast and Cloudflare. At the same time, other solutions that already provided an image multi-serving service joined the Image CDN definition by either offering CDN functionality natively (ImageEngine)^([42]) or integrating with one of the existing CDNs (Cloudinary/Akamai, Imgix/Fastly).
+
+While providing a universally agreed-on definition of what an Image CDN is may not be possible, generally speaking, an Image CDN supports the following three components:^([43])
+
+-   A Content Delivery Network (CDN) for the fast serving of images.
+-   Image manipulation and optimization, either on-the-fly through URL directives, in batch mode (through manual upload of images) or fully automatic (or a combination of these).
+-   Device Detection (also known as Device Intelligence), i.e. the ability to determine the properties of the requesting browser and/or device through analysis of the User-Agent string, HTTP Accept headers, Client-Hints or JavaScript.^([43])
+
+The following table summarizes the current situation with the main software CDNs in this space:^([44])
+
+  --------------------- ---------------- ----------------------- ------------------------------------
+  Name                  CDN              Image Optimization      Device Detection
+  Akamai ImageManager   Y                Batch mode              based on HTTP Accept header
+  Cloudflare Polish     Y                fully-automatic         based on HTTP Accept header
+  Cloudinary            Through Akamai   Batch, URL directives   Accept header, Client-Hints
+  Fastly IO             Y                URL directives          based on HTTP Accept header
+  ImageEngine           Y                fully-automatic         WURFL, Client-Hints, Accept header
+  Imgix                 Through Fastly   fully-automatic         Accept header / Client-Hints
+  PageCDN               Y                URL directives          based on HTTP Accept header
+  Tinify CDN            Multiple         fully-automatic         based on HTTP Accept header
+  --------------------- ---------------- ----------------------- ------------------------------------
+
+  : Main Image CDNs on the market {#mwAX0}
+
+Content delivery service and technology providers
+
+[edit]
+
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| []                                | This article is in list format but may read better as prose. You can help by converting this article, if appropriate. Editing help is available. (June 2024) |
++-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Commercial or free software vendors (build your own CDN)
+
+[edit]
+
+-   Ateme
+-   BlazingCDN
+-   Broadpeak
+-   Gcore
+-   Go-Fast CDN
+-   Nginx
+-   Varnish Software
+-   Vecima Networks
+-   Velocix (spin-off Nokia)
+
+Free-as-a-Service
+
+[edit]
+
+-   cdnjs^([45][46])
+-   Cloudflare
+-   JSDelivr
+
+Commercial-as-a-Service
+
+[edit]
+
+-   5centsCDN
+-   Akamai Technologies^([47])
+-   Alibaba Cloud
+-   Amazon CloudFront^([47])
+-   Baidu CDN
+-   BaishanCloud EdgeNext
+-   BelugaCDN
+-   Bunny.net
+-   ByteDance BytePlus
+-   CacheFly
+-   CDN77
+-   CDNetworks (ChinaNetCenter)^([47])
+-   CDNsun
+-   ChinaCache
+-   ChinaNetCenter
+-   Cloudflare^([48])
+-   Comcast Technology Solutions
+-   EdgeCast Cloud Services (Pulse)
+-   Fastly
+-   Gcore
+-   GlobalConnect
+-   Google Cloud CDN
+-   Huawei Cloud
+-   Jet-Stream Cloud
+-   KeyCDN
+-   Kingsoft Cloud
+-   MainStreaming
+-   Medianova
+-   Microsoft Azure Front Door
+-   Netskrt
+-   Ngenix
+-   Ora Streaming (Varnish Software Group)
+-   OVHcloud
+-   ProCDN.net
+-   Qwilt
+-   Tata Communications
+-   Tencent Cloud
+-   Wangsu Science & Technology
+
+Others
+
+[edit]
+
+-   Aryaka
+-   CenterServ^([47])
+-   Imperva
+-   INAP
+-   LeaseWeb
+-   MetaCDN
+-   Virtuozzo OnApp CDN
+-   Rackspace Cloud Files
+-   Jet-Stream StreamZilla
+-   Yottaa
+
+Telco CDNs
+
+[edit]
+
+-   AT&T Inc.
+-   Bharti Airtel
+-   Bell Canada
+-   BT Group
+-   China Telecom
+-   Chunghwa Telecom
+-   Deutsche Telekom
+-   KT
+-   KPN
+-   Megafon
+-   NTT
+-   Orange CDN
+-   Pacnet
+-   PCCW
+-   Singtel
+-   SK Broadband
+-   Tata Communications
+-   Telecom Argentina
+-   Telefonica
+-   Telenor
+-   TeliaSonera
+-   Telin
+-   Telstra
+-   Telus
+-   TIM
+-   Türk Telekom
+-   Verizon
+
+Commercial using P2P for delivery
+
+[edit]
+
+-   Ace Stream
+-   Ant Media
+-   BitTorrent, Inc.
+-   DLive
+-   Dolby Milicast
+-   Goalbit Solutions
+-   Haivision Teltoo
+-   Hola SparkCDN
+-   Livepeer
+-   Nano Cosmos
+-   Novage
+-   PeerFlow
+-   Peervadoo
+-   Phenix Real Time Solutions
+-   Quanteec
+-   Teleport Media
+-   Theta EdgeCloud
+
+Multi
+
+[edit]
+
+-   Jet-Stream
+-   MetaCDN
+-   NPAW CDN Balancer
+-   Velocix
+-   Warpcache^([49][50])
+
+In-house
+
+[edit]
+
+-   TF1
+-   BBC^([51])
+-   Netflix^([52])
+
+See also
+
+[edit]
+
+-   [icon]Internet portal
+
+-   Application software
+-   Bel Air Circuit
+-   Comparison of streaming media systems
+-   Comparison of video services
+-   Content delivery network interconnection
+-   Content delivery platform
+-   Data center
+-   Digital television
+-   Dynamic site acceleration
+-   Edge computing
+-   Internet radio
+-   Internet television
+-   InterPlanetary File System
+-   IPTV
+-   List of music streaming services
+-   List of streaming media systems
+-   Multicast
+-   NetMind
+-   Open Music Model
+-   Over-the-top content
+-   P2PTV
+-   Protection of Broadcasts and Broadcasting Organizations Treaty
+-   Push technology
+-   Software as a service
+-   Streaming media
+-   Webcast
+-   Web syndication
+-   Web television
+
+References
+
+[edit]
+
+1.  ↑ "Globally Distributed Content Delivery, by J. Dilley, B. Maggs, J. Parikh, H. Prokop, R. Sitaraman and B. Weihl, IEEE Internet Computing, Volume 6, Issue 5, November 2002" (PDF). Archived (PDF) from the original on 2017-08-09. Retrieved 2019-10-25.
+2.  ↑ Nygren., E.; Sitaraman R. K.; Sun, J. (2010). "The Akamai Network: A Platform for High-Performance Internet Applications" (PDF). ACM SIGOPS Operating Systems Review. 44 (3): 2–19. doi:10.1145/1842733.1842736. S2CID 207181702. Archived (PDF) from the original on September 13, 2012. Retrieved November 19, 2012.
+3.  ↑ Evi, Nemeth (2018). "Chapter 19, Web hosting, Content delivery networks". UNIX and Linux system administration handbook (Fifth ed.). Boston: Pearson Education. p. 690. ISBN 978-0-13-427755-4. OCLC 1005898086.
+4.  ↑ "How Content Delivery Networks Work". CDNetworks. Archived from the original on 5 September 2015. Retrieved 22 September 2015.
+5.  ↑ "How Content Delivery Networks (CDNs) Work". NCZOnline. 29 November 2011. Archived from the original on 1 December 2011. Retrieved 22 September 2015.
+6.  ↑ Security, Help Net (2014-08-27). "470 million sites exist for 24 hours, 22% are malicious". Help Net Security. Archived from the original on 2019-07-01. Retrieved 2019-07-01.
+7.  ↑ "Decentraleyes: Block CDN Tracking". Collin M. Barrett. 2016-02-03. Archived from the original on 2019-07-01. Retrieved 2019-07-01.
+8.  ↑ "VG Wiesbaden verbietet die Nutzung von Content Delivery Networks". www.taylorwessing.com (in German). 2021-12-14. Retrieved 2023-03-02.
+9.  ↑ "Subresource Integrity". MDN Web Docs. Archived from the original on 2019-06-26. Retrieved 2019-07-01.
+10. ↑ Saltzer, Jerry; Reed, David; Clark, David Dana (1984). "End-to-end arguments in system design" (PDF). ACM Transactions on Computer Systems. 2 (4): 277–288. doi:10.1145/357401.357402. S2CID 215746877. Wikidata Q56503280. Retrieved 2006-11-11.
+11. 1 2 Hofmann, Markus; Beaumont, Leland R. (2005). Content Networking: Architecture, Protocols, and Practice. Morgan Kaufmann Publisher. ISBN 1-55860-834-6.
+12. ↑ Bestavros, Azer (March 1996). "Speculative Data Dissemination and Service to Reduce Server Load, Network Traffic and Service Time for Distributed Information Systems" (PDF). Proceedings of ICDE'96: The 1996 International Conference on Data Engineering. 1996: 180–189. Archived (PDF) from the original on 2010-07-03. Retrieved 2017-05-28.
+13. ↑ RFC 3568 Barbir, A., Cain, B., Nair, R., Spatscheck, O.: "Known Content Network (CN) Request-Routing Mechanisms," July 2003
+14. ↑ RFC 1546 Partridge, C., Mendez, T., Milliken, W.: "Host Anycasting Services," November 1993.
+15. ↑ RFC 3507 Elson, J., Cerpa, A.: "Internet Content Adaptation Protocol (ICAP)," April 2003.
+16. ↑ ICAP Forum
+17. ↑ RFC 3835 Barbir, A., Penno, R., Chen, R., Hofmann, M., and Orman, H.: "An Architecture for Open Pluggable Edge Services (OPES)," August 2004.
+18. ↑ Li, Jin (2008). "On peer-to-peer (P2P) content delivery" (PDF). Peer-to-Peer Networking and Applications. 1 (1): 45–63. doi:10.1007/s12083-007-0003-1. S2CID 16438304. Archived (PDF) from the original on 2013-10-04. Retrieved 2013-08-11.
+19. ↑ Stutzbach, Daniel; et al. (2005). "The scalability of swarming peer-to-peer content delivery" (PDF). In Boutaba, Raouf; et al. (eds.). NETWORKING 2005 -- Networking Technologies, Services, and Protocols; Performance of Computer and Communication Networks; Mobile and Wireless Communications Systems. Springer. pp. 15–26. ISBN 978-3-540-25809-4.
+20. 1 2 "How to build your own CDN using BIND, GeoIP, Nginx, Varnish - UNIXy". 2010-07-18. Archived from the original on 2010-07-21. Retrieved 2014-10-15.
+21. ↑ "How to Create Your Content Delivery Network With aiScaler". Archived from the original on 2014-10-06. Retrieved 2014-10-15.
+22. ↑ "Netflix Shifts Traffic To Its Own CDN; Akamai, Limelight Shrs Hit". Forbes. 5 June 2012. Archived from the original on 19 October 2017. Retrieved 26 August 2017.
+23. ↑ Mikel Jimenez; et al. (May 1, 2017). "Building Express Backbone: Facebook's new long-haul network". Archived from the original on October 24, 2017. Retrieved October 27, 2017.
+24. ↑ "Inter-Datacenter WAN with centralized TE using SDN and OpenFlow" (PDF). 2012. Archived (PDF) from the original on October 28, 2017. Retrieved October 27, 2017.
+25. ↑ M. Noormohammadpour; et al. (July 10, 2017). "DCCast: Efficient Point to Multipoint Transfers Across Datacenters". USENIX. Retrieved July 26, 2017.
+26. ↑ M. Noormohammadpour; et al. (2018). "QuickCast: Fast and Efficient Inter-Datacenter Transfers using Forwarding Tree Cohorts". Retrieved January 23, 2018.
+27. ↑ "Online Video Sees Tremendous Growth, Spurs some Major Updates". SiliconANGLE. 2011-03-03. Archived from the original on 2011-08-30. Retrieved 2011-07-22.
+28. ↑ "Overall Telecom CAPEX to Rise in 2011 Due to Video, 3G, LTE Investments". cellular-news. Archived from the original on 2011-03-25. Retrieved 2011-07-22.
+29. ↑ D. Tuncer, M. Charalambides, R. Landa, G. Pavlou, "More Control Over Network Resources: an ISP Caching Perspective", proceedings of IEEE/IFIP Conference on Network and Service Management (CNSM), Zurich, Switzerland, October 2013.
+30. ↑ M. Claeys, D. Tuncer, J. Famaey, M. Charalambides, S. Latre, F. De Turck, G. Pavlou, "Proactive Multi-tenant Cache Management for Virtualized ISP Networks", proceedings of IEEE/IFIP Conference on Network and Service Management (CNSM), Rio de Janeiro, Brazil, November 2014.
+31. ↑ "Telcos and Carriers Forming New Federated CDN Group Called OCX (Operator Carrier Exchange)". Dan Rayburn – StreamingMediaBlog.com. 2017-12-13. Archived from the original on 2011-07-20. Retrieved 2011-07-22.
+32. ↑ Peterson, L.; Davie, B.; van Brandenburg, R. (August 2014). "Framework for Content Distribution Network Interconnection (CDNI)". Internet Engineering Task Force. doi:10.17487/RFC7336. RFC 7336.
+33. ↑ Niven-Jenkins, B.; van Brandenburg, R. (October 2016). "Request Routing Redirection Interface for Content Delivery Network (CDN) Interconnection". Internet Engineering Task Force. doi:10.17487/RFC7975. RFC 7975.
+34. 1 2 3 4 5 "End-User Mapping: Next Generation Request Routing for Content Delivery, by F. Chen, R. Sitaraman, and M. Torres, ACM SIGCOMM conference, Aug 2015" (PDF). Archived (PDF) from the original on 2017-08-12. Retrieved 2019-10-31.
+35. ↑ "Client Subnet in DNS Requests".
+36. ↑ "Where are your servers currently located?". Archived from the original on 2013-01-15.
+37. ↑ Filelis-Papadopoulos, Christos K.; Giannoutakis, Konstantinos M.; Gravvanis, George A.; Endo, Patricia Takako; Tzovaras, Dimitrios; Svorobej, Sergej; Lynn, Theo (2019-04-01). "Simulating large vCDN networks: A parallel approach". Simulation Modelling Practice and Theory. 92: 100–114. doi:10.1016/j.simpat.2019.01.001. ISSN 1569-190X. S2CID 67752426.
+38. ↑ Filelis-Papadopoulos, Christos K.; Endo, Patricia Takako; Bendechache, Malika; Svorobej, Sergej; Giannoutakis, Konstantinos M.; Gravvanis, George A.; Tzovaras, Dimitrios; Byrne, James; Lynn, Theo (2020-01-01). "Towards simulation and optimization of cache placement on large virtual content distribution networks". Journal of Computational Science. 39 101052. doi:10.1016/j.jocs.2019.101052. ISSN 1877-7503.
+39. ↑ Ibn-Khedher, Hatem; Abd-Elrahman, Emad; Kamal, Ahmed E.; Afifi, Hossam (2017-06-19). "OPAC: An optimal placement algorithm for virtual CDN". Computer Networks. 120: 12–27. doi:10.1016/j.comnet.2017.04.009. ISSN 1389-1286.
+40. ↑ Khedher, Hatem; Abd-Elrahman, Emad; Afifi, Hossam; Marot, Michel (October 2017). "Optimal and Cost Efficient Algorithm for Virtual CDN Orchestration". 2017 IEEE 42nd Conference on Local Computer Networks (LCN). Singapore: IEEE. pp. 61–69. doi:10.1109/LCN.2017.115. ISBN 978-1-5090-6523-3. S2CID 44243386.
+41. 1 2 Osmani, Addy. "Essential Image Optimization". Retrieved May 13, 2020.
+42. ↑ Jon Arne Sæterås (26 April 2017). "Let The Content Delivery Network Optimize Your Images". Retrieved May 13, 2020.
+43. 1 2 Katie Hempenius. "Use image CDNs to optimize images". Retrieved May 13, 2020.
+44. ↑ Maximiliano Firtman (18 September 2019). "Faster Paint Metrics with Responsive Image Optimization CDNs". Retrieved May 13, 2020.
+45. ↑ "Top 4 CDN services for hosting open source libraries | opensource.com". opensource.com. Archived from the original on 18 April 2019. Retrieved 18 April 2019.
+46. ↑ "Usage Statistics and Market Share of JavaScript Content Delivery Networks for Websites". W3Techs. Archived from the original on 12 April 2019. Retrieved 17 April 2019.
+47. 1 2 3 4 "How CDN and International Servers Networking Facilitate Globalization". The Huffington Post. Delarno Delvix. 2016-09-06. Archived from the original on 19 September 2016. Retrieved 9 September 2016.
+48. ↑ "Cloud Content Delivery Network (CDN) Market Investigation Report". 2019-10-05. Archived from the original on 2019-10-07. Retrieved 2019-10-07.
+49. ↑ "CDN: Was Sie über Content Delivery Networks wissen müssen". www.computerwoche.de. Archived from the original on 2019-03-21. Retrieved 2019-03-21.
+50. ↑ Williams, Mike (22 August 2017). "Warpcache review". TechRadar. Archived from the original on 2019-03-21. Retrieved 2019-03-21.
+51. ↑ BIDI: The BBC Internet Distribution Infrastructure explained
+52. ↑ How Netflix works: the (hugely simplified) complex stuff that happens every time you hit Play
+
+Further reading
+
+[edit]
+
+-   Buyya, R.; Pathan, M.; Vakali, A. (2008). "Content Delivery Networks: State of the Art, Insights, and Imperatives". Content Delivery Networks. Lecture Notes Electrical Engineering. Vol. 9. Springer. pp. 3–32. doi:10.1007/978-3-540-77887-5_1. ISBN 978-3-540-77886-8. Archived from the original on 2017-09-27. Retrieved 2008-07-07.
+-   Hau, T.; Burghardt, D.; Brenner, W. (2011). "Multihoming, Content Delivery Networks, and the Market for Internet Connectivity". Telecommunications Policy. 35 (6): 532–542. doi:10.1016/j.telpol.2011.04.002.
+-   Majumdar, S.; Kulkarni, D.; Ravishankar, C. (2007). "Addressing Click Fraud in Content Delivery Systems" (PDF). Infocom. IEEE. doi:10.1109/INFCOM.2007.36.
+-   Nygren., E.; Sitaraman R. K.; Sun, J. (2010). "The Akamai Network: A Platform for High-Performance Internet Applications" (PDF). ACM SIGOPS Operating Systems Review. 44 (3): 2–19. doi:10.1145/1842733.1842736. S2CID 207181702. Retrieved November 19, 2012.
+-   Vakali, A.; Pallis, G. (2003). "Content Delivery Networks: Status and Trends". IEEE Internet Computing. 7 (6): 68–74. doi:10.1109/MIC.2003.1250586. S2CID 2861167.
+
++--------------------------------------+-----------------------------------+
+| -   v                                |                                   |
+| -   t                                |                                   |
+| -   e                                |                                   |
+|                                      |                                   |
+| Ebook digital distribution platforms |                                   |
++--------------------------------------+-----------------------------------+
+| Active                               | -   Archive of Our Own            |
+|                                      | -   FanFiction.Net                |
+|                                      | -   Internet Archive              |
+|                                      | -   Project Gutenberg             |
+|                                      | -   Standard Ebooks               |
+|                                      | -   Wikibooks                     |
++--------------------------------------+-----------------------------------+
+| Commercial                           | -   Amazon Kindle                 |
+|                                      | -   Apple Books                   |
+|                                      | -   Barnes & Noble Nook           |
+|                                      | -   BookWalker                    |
+|                                      | -   cloudLibrary                  |
+|                                      | -   DLsite                        |
+|                                      | -   DMM.com                       |
+|                                      | -   Google Play Books             |
+|                                      | -   Hoopla Digital                |
+|                                      | -   Jinjiang Literature City      |
+|                                      | -   Kindle Direct Publishing      |
+|                                      | -   Kindle Store                  |
+|                                      | -   Kobo                          |
+|                                      | -   Lulu                          |
+|                                      | -   OverDrive, Inc.               |
+|                                      | -   Perlego                       |
+|                                      | -   PocketBook Reader             |
+|                                      | -   Qidian                        |
+|                                      | -   Rokomari.com                  |
+|                                      | -   Scribd                        |
+|                                      | -   Shōsetsuka ni Narō            |
+|                                      | -   Smashwords                    |
+|                                      | -   Wattpad                       |
++--------------------------------------+-----------------------------------+
+| Discontinued                         | -   NoiseTrade                    |
+|                                      | -   OkadaBooks                    |
+|                                      | -   Oyster                        |
+|                                      | -   Pronoun                       |
+|                                      | -   Sony Reader                   |
++--------------------------------------+-----------------------------------+
+
++--------------------------------------+----------------------------------------+
+| -   v                                |                                        |
+| -   t                                |                                        |
+| -   e                                |                                        |
+|                                      |                                        |
+| Music digital distribution platforms |                                        |
++--------------------------------------+----------------------------------------+
+| -   Digital library                  |                                        |
+| -   Music streaming service          |                                        |
+| -   Digital music store              |                                        |
+| -   Music download                   |                                        |
++--------------------------------------+----------------------------------------+
+| Active                               | -   7digital                           |
+|                                      | -   Amazon Music                       |
+|                                      | -   Amuse                              |
+|                                      | -   Apple Music                        |
+|                                      | -   Anghami                            |
+|                                      | -   Audacy                             |
+|                                      | -   Audiomack                          |
+|                                      | -   Bandcamp                           |
+|                                      | -   Beatport                           |
+|                                      | -   Believe                            |
+|                                      | -   Bleep.com                          |
+|                                      | -   Boomplay                           |
+|                                      | -   CD Baby                            |
+|                                      | -   Classical Archives                 |
+|                                      | -   cloudLibrary                       |
+|                                      | -   Deezer                             |
+|                                      | -   Digitally Imported                 |
+|                                      | -   DistroKid                          |
+|                                      | -   Ditto Music                        |
+|                                      | -   Djshop                             |
+|                                      | -   EmuBands                           |
+|                                      | -   eMusic                             |
+|                                      | -   HDtracks                           |
+|                                      | -   Hoopla                             |
+|                                      | -   Icecast                            |
+|                                      | -   IDAGIO                             |
+|                                      | -   iHeartRadio                        |
+|                                      | -   iTunes Store                       |
+|                                      | -   Jamendo                            |
+|                                      | -   Juno Records                       |
+|                                      | -   Label Engine                       |
+|                                      | -   LANDR                              |
+|                                      | -   Last.fm                            |
+|                                      | -   Line Music                         |
+|                                      | -   Live365                            |
+|                                      | -   LiveOne (Live X Live / Slacker)    |
+|                                      | -   MAD Solutions                      |
+|                                      | -   Melon                              |
+|                                      | -   Mixcloud                           |
+|                                      | -   MOOV                               |
+|                                      | -   mora                               |
+|                                      | -   Music Glue                         |
+|                                      | -   Napster (Rhapsody)                 |
+|                                      | -   Nintendo Music                     |
+|                                      | -   ONErpm                             |
+|                                      | -   Pandora                            |
+|                                      | -   Patari                             |
+|                                      | -   Qobuz                              |
+|                                      | -   RockMyRun                          |
+|                                      | -   ROXi                               |
+|                                      | -   Spinlet                            |
+|                                      | -   Spotify                            |
+|                                      | -   SoundCloud                         |
+|                                      | -   Sua Música                         |
+|                                      | -   Symphonic Distribution             |
+|                                      | -   Tidal                              |
+|                                      | -   TuneCore                           |
+|                                      | -   UnitedMasters                      |
+|                                      | -   Yandex Music                       |
+|                                      | -   YouTube Music                      |
++--------------------------------------+----------------------------------------+
+| Discontinued                         | -   8tracks.com                        |
+|                                      | -   AOL Radio/Radio@AOL                |
+|                                      | -   AllOfMP3                           |
+|                                      | -   Amie Street                        |
+|                                      | -   Aupeo                              |
+|                                      | -   Bandit.fm                          |
+|                                      | -   BlackBerry World                   |
+|                                      | -   BuyMusic                           |
+|                                      | -   Electric Jukebox                   |
+|                                      | -   GhostTunes                         |
+|                                      | -   GoMusicNow                         |
+|                                      | -   Google Play Music                  |
+|                                      | -   Grooveshark                        |
+|                                      | -   Guvera                             |
+|                                      | -   Internet Underground Music Archive |
+|                                      | -   imeem                              |
+|                                      | -   iMesh                              |
+|                                      | -   Kazaa                              |
+|                                      | -   Magnatune                          |
+|                                      | -   Mixcrate                           |
+|                                      | -   Mog                                |
+|                                      | -   MP3.com                            |
+|                                      | -   MSN Music                          |
+|                                      | -   Murfie                             |
+|                                      | -   Music Unlimited                    |
+|                                      | -   Nokia Store                        |
+|                                      | -   MixRadio                           |
+|                                      | -   MusicStation                       |
+|                                      | -   Nimbit                             |
+|                                      | -   NoiseTrade                         |
+|                                      | -   Play.com                           |
+|                                      | -   PlayNow Arena                      |
+|                                      | -   Pono                               |
+|                                      | -   PressPlay                          |
+|                                      | -   Puretracks                         |
+|                                      | -   Radical.fm                         |
+|                                      | -   Radionomy                          |
+|                                      | -   rara                               |
+|                                      | -   Simfy                              |
+|                                      | -   Sony Connect                       |
+|                                      | -   Spinner                            |
+|                                      | -   SpiralFrog                         |
+|                                      | -   Stardock Central                   |
+|                                      | -   Streamwaves                        |
+|                                      | -   Style Jukebox                      |
+|                                      | -   Taazi                              |
+|                                      | -   TuneTribe                          |
+|                                      | -   WiMP                               |
+|                                      | -   Wowloud                            |
+|                                      | -   Yahoo! Music Radio / LAUNCHcast    |
+|                                      | -   Yahoo! Music Unlimited             |
+|                                      | -   Zune Marketplace                   |
++--------------------------------------+----------------------------------------+
+
++----------------------------------------------------------+---------------------------------------------------------------------------+
+| -   v                                                    |                                                                           |
+| -   t                                                    |                                                                           |
+| -   e                                                    |                                                                           |
+|                                                          |                                                                           |
+| Software digital distribution platforms                  |                                                                           |
++----------------------------------------------------------+---------------------------------------------------------------------------+
+| -   App store                                            |                                                                           |
+| -   Cloud gaming                                         |                                                                           |
+| -   Content delivery network                             |                                                                           |
+| -   Digital library                                      |                                                                           |
+| -   Digital distribution of video games                  |                                                                           |
+| -   Over-the-air update                                  |                                                                           |
+| -   Package manager                                      |                                                                           |
+| -   Software distribution                                |                                                                           |
+| -   List of mobile app distribution platforms            |                                                                           |
+|     -   Android                                          |                                                                           |
++----------------------------------------------------------+---------------------------------------------------------------------------+
+| Active                                                   | +-----------------------------------+-----------------------------------+ |
+|                                                          | | Personal                          | -   Amazon Digital Game Store     | |
+|                                                          | | computers                         | -   Battle.net                    | |
+|                                                          | |                                   | -   Big Fish Games                | |
+|                                                          | |                                   | -   Chrome Web Store              | |
+|                                                          | |                                   | -   Direct2Drive                  | |
+|                                                          | |                                   | -   Discord                       | |
+|                                                          | |                                   | -   DLsite                        | |
+|                                                          | |                                   | -   Discover                      | |
+|                                                          | |                                   | -   DMM Games                     | |
+|                                                          | |                                   | -   EA                            | |
+|                                                          | |                                   | -   Epic Games Store              | |
+|                                                          | |                                   | -   Flathub                       | |
+|                                                          | |                                   | -   GameHouse                     | |
+|                                                          | |                                   | -   GamersGate                    | |
+|                                                          | |                                   | -   Gamesplanet                   | |
+|                                                          | |                                   | -   Game Jolt                     | |
+|                                                          | |                                   | -   GOG.com                       | |
+|                                                          | |                                   | -   Humble Store                  | |
+|                                                          | |                                   | -   IndieGala                     | |
+|                                                          | |                                   | -   itch.io                       | |
+|                                                          | |                                   | -   iWin                          | |
+|                                                          | |                                   | -   MacGameStore                  | |
+|                                                          | |                                   | -   MacUpdate                     | |
+|                                                          | |                                   | -   Mac App Store                 | |
+|                                                          | |                                   | -   Meta Horizon Store            | |
+|                                                          | |                                   | -   Microsoft Store               | |
+|                                                          | |                                   | -   MSN Games                     | |
+|                                                          | |                                   | -   Nutaku                        | |
+|                                                          | |                                   | -   Pogo.com                      | |
+|                                                          | |                                   | -   Pokki                         | |
+|                                                          | |                                   | -   PureOS Software Center        | |
+|                                                          | |                                   | -   Rockstar Games Social Club    | |
+|                                                          | |                                   | -   Snap Store                    | |
+|                                                          | |                                   | -   Steam                         | |
+|                                                          | |                                   | -   Ubisoft Connect               | |
+|                                                          | |                                   | -   Viveport                      | |
+|                                                          | |                                   | -   WeGame                        | |
+|                                                          | |                                   | -   WildTangent                   | |
+|                                                          | +-----------------------------------+-----------------------------------+ |
+|                                                          | | Consoles                          | -   Microsoft Store               | |
+|                                                          | |                                   | -   Nintendo eShop                | |
+|                                                          | |                                   | -   PlayStation Store             | |
+|                                                          | +-----------------------------------+-----------------------------------+ |
+|                                                          | | Mobile                            | -   Amazon Appstore               | |
+|                                                          | | devices §                         | -   Apple App Store               | |
+|                                                          | |                                   | -   Appland                       | |
+|                                                          | |                                   | -   Aptoide                       | |
+|                                                          | |                                   | -   Cafe Bazaar                   | |
+|                                                          | |                                   | -   Cydia                         | |
+|                                                          | |                                   | -   DLsite                        | |
+|                                                          | |                                   | -   DMM Games                     | |
+|                                                          | |                                   | -   Epic Games Store              | |
+|                                                          | |                                   | -   F-Droid                       | |
+|                                                          | |                                   | -   Galaxy Store                  | |
+|                                                          | |                                   | -   GetJar                        | |
+|                                                          | |                                   | -   Google Play                   | |
+|                                                          | |                                   | -   Huawei AppGallery             | |
+|                                                          | |                                   | -   Meta Horizon Store            | |
+|                                                          | |                                   | -   MiKandi                       | |
+|                                                          | |                                   | -   Nutaku                        | |
+|                                                          | |                                   | -   OpenStore                     | |
+|                                                          | |                                   | -   PureOS Software Center        | |
+|                                                          | |                                   | -   RuStore                       | |
+|                                                          | |                                   | -   Tencent Appstore              | |
+|                                                          | |                                   | -   SlideME                       | |
+|                                                          | |                                   | -   TapTap                        | |
+|                                                          | |                                   | -   Viveport                      | |
+|                                                          | +-----------------------------------+-----------------------------------+ |
+|                                                          | | Arcade                            | -   NESiCAxLive                   | |
+|                                                          | +-----------------------------------+-----------------------------------+ |
++----------------------------------------------------------+---------------------------------------------------------------------------+
+| Defunct                                                  | -   Allmyapps                                                             |
+|                                                          | -   BlackBerry World                                                      |
+|                                                          | -   Club Nokia                                                            |
+|                                                          | -   Desura                                                                |
+|                                                          | -   Digital River                                                         |
+|                                                          | -   Download!                                                             |
+|                                                          | -   GameAgent                                                             |
+|                                                          | -   GameLine                                                              |
+|                                                          | -   GameShadow                                                            |
+|                                                          | -   GameTap                                                               |
+|                                                          | -   Games for Windows Marketplace                                         |
+|                                                          | -   Handango                                                              |
+|                                                          | -   Impulse                                                               |
+|                                                          | -   Indie Royale                                                          |
+|                                                          | -   Intel AppUp                                                           |
+|                                                          | -   Kartridge                                                             |
+|                                                          | -   Kazaa                                                                 |
+|                                                          | -   N-Gage                                                                |
+|                                                          | -   Nokia Store                                                           |
+|                                                          | -   Opera Mobile Store                                                    |
+|                                                          | -   PlayCable                                                             |
+|                                                          | -   Playism                                                               |
+|                                                          | -   PlayNow Arena                                                         |
+|                                                          | -   RealArcade                                                            |
+|                                                          | -   Robot Cache                                                           |
+|                                                          | -   Satellaview                                                           |
+|                                                          | -   Sega Channel                                                          |
+|                                                          | -   Sega Meganet                                                          |
+|                                                          | -   Stardock Central                                                      |
+|                                                          | -   Triton                                                                |
+|                                                          | -   Ubuntu App Store                                                      |
+|                                                          | -   Ubuntu Software Center                                                |
+|                                                          | -   Vodafone live!                                                        |
+|                                                          | -   Wii Shop Channel                                                      |
+|                                                          | -   Windows Marketplace                                                   |
+|                                                          | -   Windows Marketplace for Mobile                                        |
+|                                                          | -   Windows Phone Store                                                   |
+|                                                          | -   Xbox Games Store                                                      |
+|                                                          | -   Xbox Live Arcade                                                      |
+|                                                          | -   Yahoo! Games                                                          |
+|                                                          | -   Zune Marketplace                                                      |
++----------------------------------------------------------+---------------------------------------------------------------------------+
+| -   § Also includes smart TVs and standalone VR headsets |                                                                           |
+| -   [] Category                                          |                                                                           |
+| -   [] Portal                                            |                                                                           |
++----------------------------------------------------------+---------------------------------------------------------------------------+
+
++------------------------------------+-----------------------------------+
+| -   v                              |                                   |
+| -   t                              |                                   |
+| -   e                              |                                   |
+|                                    |                                   |
+| Online video and sharing platforms |                                   |
++------------------------------------+-----------------------------------+
+| -   Digital library                |                                   |
+| -   Streaming media                |                                   |
+| -   Video on demand                |                                   |
++------------------------------------+-----------------------------------+
+| Free                               | -   56.com                        |
+|                                    | -   Aparat                        |
+|                                    | -   Apple TV                      |
+|                                    | -   AcFun                         |
+|                                    | -   Bilibili                      |
+|                                    | -   Binge                         |
+|                                    | -   Bioscope                      |
+|                                    | -   BitChute                      |
+|                                    | -   Bigo Live                     |
+|                                    | -   Bongo BD                      |
+|                                    | -   Brightcove                    |
+|                                    | -   Buzznet                       |
+|                                    | -   Chorki                        |
+|                                    | -   CHZZK                         |
+|                                    | -   cloudLibrary                  |
+|                                    | -   Dailymotion                   |
+|                                    | -   Daum                          |
+|                                    | -   Dlive                         |
+|                                    | -   Endeavor Streaming            |
+|                                    | -   The Film Detective            |
+|                                    | -   FilmOn                        |
+|                                    | -   Flickr                        |
+|                                    | -   Fotki                         |
+|                                    | -   Funny or Die                  |
+|                                    | -   Funshion                      |
+|                                    | -   GOG.com                       |
+|                                    | -   hoopla                        |
+|                                    | -   iQIYI                         |
+|                                    | -   Kanopy                        |
+|                                    | -   Kick                          |
+|                                    | -   LBRY                          |
+|                                    | -   Live TV on PS5                |
+|                                    | -   Odysee                        |
+|                                    | -   Le                            |
+|                                    | -   Mango TV                      |
+|                                    | -   Medici.tv                     |
+|                                    | -   meWATCH                       |
+|                                    | -   Niconico                      |
+|                                    | -   Odnoklassniki                 |
+|                                    | -   PeerTube                      |
+|                                    | -   PictureBox Films              |
+|                                    | -   Plex                          |
+|                                    | -   Pluto TV                      |
+|                                    | -   puhutv                        |
+|                                    | -   Rumble                        |
+|                                    | -   Rutube                        |
+|                                    | -   SchoolTube                    |
+|                                    | -   Showroom                      |
+|                                    | -   Sohu                          |
+|                                    | -   SOOP                          |
+|                                    | -   TeacherTube                   |
+|                                    | -   Teaching Channel              |
+|                                    | -   Telly                         |
+|                                    | -   thePlatform                   |
+|                                    | -   TikTok                        |
+|                                    | -   Toffee                        |
+|                                    | -   Tudou                         |
+|                                    | -   Triller                       |
+|                                    | -   Twitch                        |
+|                                    | -   TwitCasting                   |
+|                                    | -   VBox7                         |
+|                                    | -   Vimeo                         |
+|                                    | -   Vudu                          |
+|                                    | -   VK Video                      |
+|                                    | -   WeTV                          |
+|                                    | -   Xigua Video                   |
+|                                    | -   Xunlei Kankan                 |
+|                                    | -   Youku                         |
+|                                    | -   YouTube                       |
+|                                    |     -   Kids                      |
+|                                    | -   YouNow                        |
+|                                    | -   Zattoo                        |
++------------------------------------+-----------------------------------+
+| Rental and                         | -   Aha                           |
+| purchase                           | -   Amazon Prime Video            |
+|                                    | -   Apple TV                      |
+|                                    | -   Exxen                         |
+|                                    | -   Fandango                      |
+|                                    |     -   Fandango at Home          |
+|                                    | -   Google                        |
+|                                    |     -   Google TV                 |
+|                                    |     -   YouTube Movies & TV       |
+|                                    | -   iTunes Store                  |
+|                                    | -   Microsoft Movies & TV         |
+|                                    | -   Movies Anywhere               |
+|                                    | -   Nintendo eShop                |
+|                                    | -   Plex                          |
+|                                    | -   Rakuten TV                    |
+|                                    | -   Sony Pictures Core            |
++------------------------------------+-----------------------------------+
+| Others                             | -   AMC+                          |
+|                                    | -   Apple TV+                     |
+|                                    | -   Bioscope                      |
+|                                    | -   Bongo BD                      |
+|                                    | -   Chorki                        |
+|                                    | -   Crunchyroll                   |
+|                                    | -   Curiosity Stream              |
+|                                    | -   Disney+                       |
+|                                    | -   ESPN+                         |
+|                                    | -   HBO Max                       |
+|                                    | -   Hidive                        |
+|                                    | -   Hulu                          |
+|                                    | -   Netflix                       |
+|                                    | -   Paramount+                    |
+|                                    | -   Peacock                       |
+|                                    | -   Pluto TV                      |
+|                                    | -   Starz                         |
+|                                    | -   Showtime                      |
+|                                    | -   Toffee                        |
+|                                    | -   Tubi                          |
++------------------------------------+-----------------------------------+
+| Discontinued                       | -   Amazon Freevee                |
+|                                    | -   Azubu                         |
+|                                    | -   BBC Store                     |
+|                                    | -   Blip.tv                       |
+|                                    | -   BluTV                         |
+|                                    | -   Break.com                     |
+|                                    | -   Chicken Pork Adobo            |
+|                                    | -   CinemaNow                     |
+|                                    | -   Daisuki                       |
+|                                    | -   Disney Movies Anywhere        |
+|                                    | -   Fearnet                       |
+|                                    | -   FilmStruck                    |
+|                                    | -   Flixster                      |
+|                                    | -   Funimation                    |
+|                                    | -   Global Wrestling Network      |
+|                                    | -   Google Video                  |
+|                                    | -   Hitbox                        |
+|                                    | -   imeem                         |
+|                                    | -   iMesh                         |
+|                                    | -   Intel AppUp                   |
+|                                    | -   In2TV                         |
+|                                    | -   Joost                         |
+|                                    | -   Justin.tv                     |
+|                                    | -   Kazaa                         |
+|                                    | -   LiveLeak                      |
+|                                    | -   LoveFilm                      |
+|                                    | -   Megaupload                    |
+|                                    | -   Mixer                         |
+|                                    | -   MUZU.TV                       |
+|                                    | -   Metacafe                      |
+|                                    | -   MyVideo                       |
+|                                    | -   Nintendo Channel              |
+|                                    | -   Nintendo Video                |
+|                                    | -   Noggin                        |
+|                                    | -   Nokia Store                   |
+|                                    | -   Openfilm                      |
+|                                    | -   Openload                      |
+|                                    | -   Pandora TV                    |
+|                                    | -   PlayStation Video             |
+|                                    | -   PLUS7                         |
+|                                    | -   Presto                        |
+|                                    | -   Putlocker                     |
+|                                    | -   Quickflix                     |
+|                                    | -   Redbox                        |
+|                                    | -   Revver                        |
+|                                    | -   Sony Connect                  |
+|                                    | -   Sony Entertainment Network    |
+|                                    | -   Stage6                        |
+|                                    | -   Starlight Networks            |
+|                                    | -   Streamworks International     |
+|                                    | -   Super Deluxe                  |
+|                                    | -   TalkTalk TV Store             |
+|                                    | -   Tank Top TV                   |
+|                                    | -   TouchVision                   |
+|                                    | -   Trilulilu                     |
+|                                    | -   Triton                        |
+|                                    | -   TroopTube                     |
+|                                    | -   Toons.TV                      |
+|                                    | -   Twango                        |
+|                                    | -   UltraViolet                   |
+|                                    | -   Total Access Impact Wrestling |
+|                                    | -   Vdio                          |
+|                                    | -   Vessel                        |
+|                                    | -   Viddler                       |
+|                                    | -   Vidme                         |
+|                                    | -   Vine                          |
+|                                    | -   Vongo                         |
+|                                    | -   Warner Archive Instant        |
+|                                    | -   WeShow                        |
+|                                    | -   Windows Media Center          |
+|                                    | -   WWE Classics on Demand        |
++------------------------------------+-----------------------------------+
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=Content_delivery_network&oldid=1379503582"
+
+Categories:
+
+-   Computer networks engineering
+-   Content delivery networks
+-   Applications of distributed computing
+-   Cloud storage
+-   Digital television
+-   Distributed algorithms
+-   Distributed data storage
+-   Distributed data storage systems
+-   File sharing
+-   File sharing networks
+-   Film and video technology
+-   Internet broadcasting
+-   Internet radio
+-   Streaming television
+-   Multimedia
+-   Online content distribution
+-   Peer-to-peer computing
+-   Peercasting
+-   Streaming
+-   Streaming media systems
+-   Video hosting
+-   Video on demand
+
+Hidden categories:
+
+-   Articles with short description
+-   Short description is different from Wikidata
+-   CS1 German-language sources (de)
+-   Articles needing additional references from June 2021
+-   All articles needing additional references
+-   All articles with unsourced statements
+-   Articles with unsourced statements from April 2020
+-   Articles with unsourced statements from August 2023
+-   Articles needing cleanup from June 2024
+-   All pages needing cleanup
+-   Articles with sections that need to be turned into prose from June 2024
+
+-   This page was last edited on 10 October 2026, at 10:56 (UTC).
+-   Page was rendered with Parsoid.
+-   Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+-   Privacy policy
+-   About Wikipedia
+-   Disclaimers
+-   Contact Wikipedia
+-   Legal & safety contacts
+-   Code of Conduct
+-   Developers
+-   Statistics
+-   Cookie statement
+-   Mobile view
+
+-   [Wikimedia Foundation]
+-   [Powered by MediaWiki]
+
+Search
+
+Search
+
+Toggle the table of contents
+
+Content delivery network
+
+32 languages
+
+Add topic

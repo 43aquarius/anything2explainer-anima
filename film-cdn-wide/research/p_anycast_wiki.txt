@@ -1,0 +1,381 @@
+URL: https://en.wikipedia.org/wiki/Anycast
+
+Jump to content
+
+Main menu
+
+Main menu
+
+move to sidebar
+
+hide
+
+Navigation
+
+-   Main page
+-   Contents
+-   Current events
+-   Random article
+-   About Wikipedia
+-   Contact us
+
+Contribute
+
+-   Help
+-   Learn to edit
+-   Community portal
+-   Recent changes
+-   Upload file
+-   Special pages
+
+[] [Wikipedia] [The Free Encyclopedia]
+
+Search
+
+Search
+
+Appearance
+
+-   Donate
+-   Create account
+-   Log in
+
+Personal tools
+
+-    Donate
+-    Create account
+-    Log in
+
+Contents
+
+move to sidebar
+
+hide
+
+-   
+    (Top)
+-   
+    1 History
+
+    Toggle History subsection
+    -   
+        1.1 Early objections
+-   
+    2 Internet Protocol version 4
+-   
+    3 Internet Protocol version 6
+-   
+    4 Applications
+
+    Toggle Applications subsection
+    -   
+        4.1 Domain Name System
+    -   
+        4.2 IPv6 transition
+    -   
+        4.3 Content delivery networks
+    -   
+        4.4 Connectivity between Anycast and Multicast network
+-   
+    5 Security
+-   
+    6 Reliability
+-   
+    7 Mitigation of denial-of-service attacks
+-   
+    8 Local and global nodes
+-   
+    9 See also
+-   
+    10 References
+-   
+    11 External links
+
+Toggle the table of contents
+
+Anycast
+
+23 languages
+
+-   العربية
+-   Català
+-   Dansk
+-   Deutsch
+-   Ελληνικά
+-   Español
+-   Euskara
+-   فارسی
+-   Suomi
+-   Français
+-   Հայերեն
+-   Italiano
+-   日本語
+-   한국어
+-   Nederlands
+-   Polski
+-   Português
+-   Русский
+-   Svenska
+-   Türkçe
+-   Tiếng Việt
+-   吴语
+-   中文
+
+Edit links
+
+-   Article
+-   Talk
+
+English
+
+-   Read
+-   Edit
+-   View history
+
+Tools
+
+Tools
+
+move to sidebar
+
+hide
+
+Actions
+
+-    Read
+-    Edit
+-    View history
+
+General
+
+-   What links here
+-   Related changes
+-   Upload file
+-   Permanent link
+-   Page information
+-   Cite this page
+-   Get shortened URL
+-   Switch to legacy parser
+
+Print/export
+
+-   Download as PDF
+-   Printable version
+
+In other projects
+
+-   Wikidata item
+
+Appearance
+
+move to sidebar
+
+hide
+
+From Wikipedia, the free encyclopedia
+
+Network addressing and routing methodology
+
+See also: Internet Protocol § Addressing methods
+
++-----------------------------------+--------------------------------------------------------+
+| Communication protocol            |                                                        |
++-----------------------------------+--------------------------------------------------------+
+| []                                |                                                        |
+|                                   |                                                        |
+| Visualization of anycast routing  |                                                        |
++-----------------------------------+--------------------------------------------------------+
+| Purpose                           | To route traffic to the closest server                 |
++-----------------------------------+--------------------------------------------------------+
+| Developers                        | Craig Partridge, Trevor Mendez, Walter Milliken at BBN |
++-----------------------------------+--------------------------------------------------------+
+| Introduction                      | 1989; 37 years ago (1989)                              |
++-----------------------------------+--------------------------------------------------------+
+| RFCs                              | 1546, 2526, 4291, 4786...                              |
++-----------------------------------+--------------------------------------------------------+
+
+: Anycast {#mwCw}
+
+Anycast is a network addressing and routing methodology in which a single IP address is shared by devices (generally servers) in multiple locations. Routers direct packets addressed to this destination to the location nearest the sender, using their normal decision-making algorithms, typically the lowest number of BGP network hops. Anycast routing is widely used by content delivery networks such as web and name servers, to bring their content closer to end users.
+
+History
+
+[edit]
+
+The first documented use of anycast routing for topological load-balancing of Internet-connected services was in 1989;^([1][2]) the technique was first formally documented in the IETF four years later.^([3]) It was first applied to critical infrastructure in 2001 with the anycasting of the I-root nameserver.^([2])
+
+Early objections
+
+[edit]
+
+Early objections to the deployment of anycast routing centered on the perceived conflict between long-lived TCP connections and the volatility of the Internet's routed topology. In concept, a long-lived connection, such as an FTP file transfer (which can take hours to complete for large files) might be re-routed to a different anycast instance in mid-connection due to changes in network topology or routing, with the result that the server changes mid-connection, and the new server is not aware of the connection and does not possess the TCP connection state of the previous anycast instance.
+
+In practice, such problems were not observed, and these objections dissipated by the early 2000s. Many initial anycast deployments consisted of DNS servers, using principally UDP transport.^([4][2]) Measurements of long-term anycast flows revealed very few failures due to mid-connection instance switches, far fewer (less than 0.017%^([5]) or "less than one flow per ten thousand per hour of duration"^([1]) according to various sources) than were attributed to other causes of failure. Numerous mechanisms were developed to efficiently share state between anycast instances.^([6]) And some TCP-based protocols, notably HTTP, incorporated "redirect" mechanisms, whereby anycast service addresses could be used to locate the nearest instance of a service, whereupon a user would be redirected to that specific instance prior to the initiation of any long-lived stateful transaction.^([1][7])
+
+Internet Protocol version 4
+
+[edit]
+
+Anycast is implemented in the Internet via Border Gateway Protocol (BGP), where multiple hosts (usually in different geographic areas) are given the same anycast IP address and they all announce it to their BGP table. Routers consider these to be alternative routes to the same destination, even though they are actually routes to different destinations with the same address. Routers will often select the path with fewer hops, which leads to the one closer to the client as being selected (often faster). It doesn't always happen, as some routers will choose other metrics (least congested, cheapest).
+
+Internet Protocol version 6
+
+[edit]
+
+Anycast is supported explicitly in the IPv6 addressing architecture.^([8]) The lowest address within an IPv6 subnet (interface identifier 0) is reserved as the "Subnet Router" anycast address. In addition, the highest 128 interface identifiers within a subnet are also reserved as anycast addresses.^([9])
+
+  ------------------ --------------- -------------------------------------------- ---------------------------
+                     Subnet Prefix   interface identifier                         CIDR notation
+  Subnet router      any             ::                                           ::0/124
+  Anycast            any             ffff:ffff:ffff:ff80 to ffff:ffff:ffff:ffff   ::ffff:ffff:ffff:ff80/121
+  Mobility Support   any             ffff:ffff:ffff:fffe                          ::ffff:ffff:ffff:fffe/124
+  ------------------ --------------- -------------------------------------------- ---------------------------
+
+  : Reserved Anycast addresses {#mwXA}
+
+Most IPv6 routers on the path of an anycast packet through the network will not distinguish it from a unicast packet, but special handling is required from the routers near the destination (that is, within the scope of the anycast address) as they are required to route an anycast packet to the "nearest" interface within that scope which has the proper anycast address, according to whatever measure of distance (hops, cost, etc.) is being used.
+
+The method used in IPv4 of advertising multiple routes in BGP to multiply-assigned unicast addresses also still works in IPv6, and can be used to route packets to the nearest of several geographically dispersed hosts with the same address. This approach, which does not depend on anycast-aware routers, has the same use cases together with the same problems and limitations as in IPv4.
+
+Applications
+
+[edit]
+
+With the growth of the Internet, network services increasingly have high-availability requirements. As a result, operation of anycast services has grown in popularity among network operators.^([10])
+
+Domain Name System
+
+[edit]
+
+All Internet root nameservers are implemented as clusters of hosts using anycast addressing.^([11]) All 13 root servers A–M exist in multiple locations, with 11 on multiple continents. (Root servers B and H exist in two U.S. locations.)^([12][13][14]) The servers use anycast address announcements to provide a decentralized service. This has accelerated the deployment of physical (rather than logical) root servers outside the United States. Many commercial DNS providers have switched to an IP anycast environment to increase query performance and redundancy, and to implement load balancing.^([2])
+
+IPv6 transition
+
+[edit]
+
+In IPv4 to IPv6 transitioning, anycast addressing may be deployed to provide IPv6 compatibility to IPv4 hosts. This method, 6to4, uses a default gateway with the IP address 192.88.99.1.^([15]) This allows multiple providers to implement 6to4 gateways without hosts having to know each individual provider's gateway addresses. 6to4 has been deprecated^([16]) in response to native IPv6 becoming more prevalent.
+
+Content delivery networks
+
+[edit]
+
+Content delivery networks may use anycast for actual HTTP connections to their distribution centers, or for DNS. Because most HTTP connections to such networks request static content such as images and style sheets, they are generally short-lived and stateless across subsequent TCP sessions. The general stability of routes and statelessness of connections makes anycast suitable for this application, even though it uses TCP.^([5][1])
+
+Connectivity between Anycast and Multicast network
+
+[edit]
+
+Anycast rendezvous point can be used in Multicast Source Discovery Protocol (MSDP) and its advantageous application as Anycast RP is an intra-domain feature that provides redundancy and load-sharing capabilities. If the multiple anycast rendezvous point is used, IP routing automatically will select the topologically closest rendezvous point for each source and receiver. It would provide a multicast network with the fault tolerance requirements.^([17])
+
+Security
+
+[edit]
+
+Anycast allows any operator whose routing information is accepted by an intermediate router to hijack any packets intended for the anycast address. While this at first sight appears insecure, it is no different from the routing of ordinary IP packets, and no more or less secure. As with conventional IP routing, careful filtering of who is and is not allowed to propagate route announcements is crucial to prevent man-in-the-middle or blackhole attacks. The former can also be prevented by encrypting and authenticating messages, such as using Transport Layer Security, while the latter can be frustrated by onion routing.
+
+Reliability
+
+[edit]
+
+Anycast is normally highly reliable, as it can provide automatic failover without adding complexity or new potential points of failure. Anycast applications typically feature external "heartbeat" monitoring of the server's function, and withdraw the route announcement if the server fails. In some cases this is done by the actual servers announcing the anycast prefix to the router over OSPF or another IGP. If the servers die, the router will automatically withdraw the announcement. "Heartbeat" functionality is important because, if the announcement continues for a failed server, the server will act as a "black hole" for nearby clients; this is the most serious mode of failure for an anycast system. Even in this event, this kind of failure will only cause a total failure for clients that are closer to this server than any other, and will not cause a global failure. However, even the automation necessary to implement "heartbeat" routing withdrawal can itself add a potential point of failure, as seen in the 2021 Facebook outage.
+
+Mitigation of denial-of-service attacks
+
+[edit]
+
+In denial-of-service attacks, a rogue network host may advertise itself as an anycast server for a vital network service, to provide false information or simply block service.
+
+Anycast methodologies on the Internet may be exploited to distribute DDoS attacks and reduce their effectiveness: As traffic is routed to the closest node, a process over which the attacker has no control, the DDoS traffic flow will be distributed amongst the closest nodes. Thus, not all nodes might be affected. This may be a reason to deploy anycast addressing.^([18]) The effectiveness of this technique depends upon maintaining the secrecy of any unicast addresses associated with anycast service nodes, however, since an attacker in possession of the unicast addresses of individual nodes can attack them from any location, bypassing anycast addressing methods.^([19])
+
+Local and global nodes
+
+[edit]
+
+Some anycast deployments on the Internet distinguish between local and global nodes to benefit the local community, by addressing local nodes preferentially. An example is the Domain Name System. Local nodes are often announced with the no-export BGP community to prevent hosts from announcing them to their peers, i.e. the announcement is kept in the local area. Where both local and global nodes are deployed, the announcements from global nodes are often AS prepended (i.e. the AS is added a few more times) to make the path longer so that a local node announcement is preferred over a global node announcement.^([20])
+
+See also
+
+[edit]
+
+-   [icon]Internet portal
+
+-   Multihoming
+-   Line hunting, for an equivalent system for telephones
+
+References
+
+[edit]
+
+1.  1 2 3 4 Woodcock, Bill (June 1996). "Best Practices in Anycast Routing" (PDF). Packet Clearing House.
+2.  1 2 3 4 Hernandez, Gael (October 10, 2017). "Building and Operating a Global Anycast Network" (PDF). Eurasia Network Operators Group.
+3.  ↑ C. Partridge; T. Mendez; W. Milliken (November 1993). Host Anycasting Service. Network Working Group. doi:10.17487/RFC1546. RFC 1546. Informational.
+4.  ↑ Woodcock, Bill (November 14, 2019). "TCP and Anycast". NANOG mailing list archive. North American Network Operators Group.
+5.  1 2 Levine, Matt; Lyon, Barrett; Underwood, Todd (June 2006). "TCP Anycast: Don't Believe the FUD - Operational experience with TCP and Anycast" (PDF). North American Network Operators Group.
+6.  ↑ Herrin, William. "Anycast TCP Architecture". Retrieved October 11, 2021.
+7.  ↑ Katz-Bassett, Ethan; Gao, Ryan (July 2019). "Impact of TCP Loss on Regional Application Performance" (PDF). Microsoft. “Azure Frontdoor uses anycast redirection to direct users to a nearby edge.”
+8.  ↑ R. Hinden; S. Deering (February 2006). IP Version 6 Addressing Architecture. Network Working Group. doi:10.17487/RFC4291. RFC 4291. Draft Standard. Obsoletes RFC 3513. Updated by RFC 5952, 6052, 7136, 7346, 7371 and 8064.
+9.  ↑ D. Johnson; S. Deering (March 1999). Reserved IPv6 Subnet Anycast Addresses. Network Working Group. doi:10.17487/RFC2526. RFC 2526. Proposed Standard.
+10. ↑ J. Abley; K. Lindqvist (December 2006). Operation of Anycast Services. IETF Network Working Group. doi:10.17487/RFC4786. BCP 126. RFC 4786. Best Current Practice 126.
+11. ↑ T. Hardie (April 2002). Distributing Authoritative Name Servers via Shared Unicast Addresses. Network Working Group. doi:10.17487/RFC3258. RFC 3258. Informational.
+12. ↑ Home-page B-root DNS server, visited 8 Feb. 2015
+13. ↑ "Report on Root Nameserver Locations". Packet Clearing House. Retrieved February 21, 2011.
+14. ↑ "Root Server Technical Operations Assn". root-servers.org. Retrieved February 16, 2013.
+15. ↑ C. Huitema (June 2001). An Anycast Prefix for 6to4 Relay Routers. Network Working Group. doi:10.17487/RFC3068. RFC 3068. Informational. Obsoleted by RFC 7526.
+16. ↑ O. Troan (May 2015). B. Carpenter (ed.). Deprecating the Anycast Prefix for 6to4 Relay Routers. Internet Engineering Task Force. doi:10.17487/RFC7526. BCP 196. RFC 7526. Best Current Practice 196. Obsoletes RFC 3068 and 6732.
+17. ↑ "Anycast Rendezvous Point". Cisco Systems. June 1, 2001.
+18. ↑ "ICANN Factsheet on root server attack on 6 February 2007" (PDF). Factsheet. The Internet Corporation for Assigned Names and Numbers (ICANN). March 1, 2007. Retrieved February 21, 2011.
+19. ↑ Metz, C. (2002). "IP Anycast: Point-to-(Any) Point Communication (sign-in required)". IEEE Internet Computing. 6 (2). IEEE: 94–98. doi:10.1109/4236.991450.
+20. ↑ Oki, Eiji; Rojas-Cessa, Roberto; Tatipamula, Mallikarjun; Vogt, Christian (April 24, 2012). Advanced Internet Protocols, Services, and Applications. John Wiley & Sons. pp. 102 & 103. ISBN 978-0-470-49903-0. Archived from the original on January 5, 2020.
+
+External links
+
+[edit]
+
+-   Best Practices in IPv4 Anycast Routing Tutorial on anycast routing configuration.
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=Anycast&oldid=1375332185"
+
+Categories:
+
+-   Computer network technology
+-   Internet architecture
+-   Multihoming
+-   Domain Name System
+
+Hidden categories:
+
+-   Articles with short description
+-   Short description matches Wikidata
+-   Use mdy dates from September 2021
+-   Use American English from January 2019
+-   All Wikipedia articles written in American English
+
+-   This page was last edited on 17 September 2026, at 04:23 (UTC).
+-   Page was rendered with Parsoid.
+-   Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+-   Privacy policy
+-   About Wikipedia
+-   Disclaimers
+-   Contact Wikipedia
+-   Legal & safety contacts
+-   Code of Conduct
+-   Developers
+-   Statistics
+-   Cookie statement
+-   Mobile view
+
+-   [Wikimedia Foundation]
+-   [Powered by MediaWiki]
+
+Search
+
+Search
+
+Toggle the table of contents
+
+Anycast
+
+23 languages
+
+Add topic

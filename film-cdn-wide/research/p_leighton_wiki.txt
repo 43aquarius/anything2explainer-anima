@@ -1,0 +1,336 @@
+URL: https://en.wikipedia.org/wiki/F._Thomson_Leighton
+
+Jump to content
+
+Main menu
+
+Main menu
+
+move to sidebar
+
+hide
+
+Navigation
+
+-   Main page
+-   Contents
+-   Current events
+-   Random article
+-   About Wikipedia
+-   Contact us
+
+Contribute
+
+-   Help
+-   Learn to edit
+-   Community portal
+-   Recent changes
+-   Upload file
+-   Special pages
+
+[] [Wikipedia] [The Free Encyclopedia]
+
+Search
+
+Search
+
+Appearance
+
+-   Donate
+-   Create account
+-   Log in
+
+Personal tools
+
+-    Donate
+-    Create account
+-    Log in
+
+Contents
+
+move to sidebar
+
+hide
+
+-   
+    (Top)
+-   
+    1 Early life and education
+-   
+    2 Career
+-   
+    3 Awards and honors
+-   
+    4 Personal life
+-   
+    5 Books
+-   
+    6 References
+-   
+    7 External links
+
+Toggle the table of contents
+
+F. Thomson Leighton
+
+2 languages
+
+-   العربية
+-   فارسی
+
+Edit links
+
+-   Article
+-   Talk
+
+English
+
+-   Read
+-   Edit
+-   View history
+
+Tools
+
+Tools
+
+move to sidebar
+
+hide
+
+Actions
+
+-    Read
+-    Edit
+-    View history
+
+General
+
+-   What links here
+-   Related changes
+-   Upload file
+-   Permanent link
+-   Page information
+-   Cite this page
+-   Get shortened URL
+-   Switch to legacy parser
+
+Print/export
+
+-   Download as PDF
+-   Printable version
+
+In other projects
+
+-   Wikimedia Commons
+-   Wikisource
+-   Wikidata item
+
+Appearance
+
+move to sidebar
+
+hide
+
+From Wikipedia, the free encyclopedia
+
+American computer scientist (born 1956)
+
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Frank Thomson Leighton            |                                                                                   |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| []                                |                                                                                   |
+|                                   |                                                                                   |
+| Leighton in 2022                  |                                                                                   |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Born                              | (1956-10-28) October 28, 1956 (age 69)                                            |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Education                         | Princeton University (BSE)                                                        |
+|                                   | Massachusetts Institute of Technology (PhD)                                       |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Spouse                            | Bonnie Berger                                                                     |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Awards                            | -   IEEE John von Neumann Medal (2023)                                            |
+|                                   | -   Marconi Prize (2018)                                                          |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Scientific career                 |                                                                                   |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Fields                            | Applied mathematics                                                               |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Workplaces                        | Akamai Technologies                                                               |
+|                                   | Massachusetts Institute of Technology                                             |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Thesis                            | Layouts for the shuffle-exchange graph and lower bound techniques for VLSI (1981) |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Doctoral advisor                  | Gary Lee Miller                                                                   |
++-----------------------------------+-----------------------------------------------------------------------------------+
+| Doctoral students                 | Peter Shor, Mohammad Hajiaghayi, Robert Kleinberg, Satish Rao^([1])               |
++-----------------------------------+-----------------------------------------------------------------------------------+
+|                                   |                                                                                   |
++-----------------------------------+-----------------------------------------------------------------------------------+
+
+Frank Thomson "Tom" Leighton (born 1956) is an American mathematician and computer scientist who is the CEO of Akamai Technologies, the company he co-founded with Daniel Lewin in 1998,^([2]) and a professor of applied mathematics at the Massachusetts Institute of Technology (MIT). He is a member of the Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT.
+
+Early life and education
+
+[edit]
+
+Leighton's father was a U.S. Navy colleague and friend of Admiral Hyman G. Rickover, the father of naval nuclear propulsion and a founder of the Research Science Institute (RSI). His brother, David T. Leighton, is a professor at the University of Notre Dame specializing in transport phenomena.^([3])
+
+As a senior in high school, Leighton won second prize at the 1974 Science Talent Search (STS) for developing a computational algorithm to predict prime number sequences.^([4]) He received his B.S.E. in electrical engineering from Princeton University in 1978, followed by his Ph.D. in mathematics from MIT in 1981, advised by Gary Lee Miller.^([5])
+
+Career
+
+[edit]
+
+Leighton discovered a solution to free up web congestion using applied mathematics and distributed computing.^([6])
+
+Leighton worked on algorithms for network applications and has published over 100 papers on algorithms, cryptography, parallel architectures, distributed computing, combinatorial optimization, and graph theory. He also holds patents involving content delivery, Internet protocols, algorithms for networks, cryptography and digital rights management.
+
+Leighton served on the President's Information Technology Advisory Committee (PITAC) from 2003 to 2005 and chaired its subcommittee on cybersecurity.^([7]) He serves on the boards of trustees of the Society for Science & the Public (SSP) and the Center for Excellence in Education (CEE), and he has participated in the Distinguished Lecture Series at CEE's flagship program for high school students, the Research Science Institute (RSI).
+
+Awards and honors
+
+[edit]
+
+-   The Institute of Electrical and Electronics Engineers (IEEE) awarded Leighton the John von Neumann Medal in 2023 for "fundamental contributions to algorithm design and their application to content delivery networks."^([8])
+-   In 2018, Leighton won the Marconi Prize from the Marconi Society for "his fundamental contributions to the technology and establishment of content delivery networks".^([9])
+-   He was elected as an ACM Fellow in 2018 for "his leadership in the establishment of content delivery networks, and his contributions to algorithm design".^([10])
+-   In 2017, Leighton and Lewin were inducted into the National Inventors Hall of Fame, for Content Delivery Network methods.^([11])
+-   He is a Fellow of the American Academy of Arts and Sciences
+-   In 2012, Leighton became a fellow of the American Mathematical Society.^([12])
+-   In 2009, Leighton became a Fellow of the Society for Industrial and Applied Mathematics.^([13])
+-   In 2008, Leighton was appointed as a member of the United States National Academy of Sciences.
+-   In 2004, Leighton was elected a member of the National Academy of Engineering for contributions to the design of networks and circuits and for technology for Web content delivery.
+-   In 2001, Leighton received the IEEE Computer Society Charles Babbage Award.
+-   In 1981, Leighton was named the first winner of the Machtey Award.
+
+Personal life
+
+[edit]
+
+He is married to the MIT professor Bonnie Berger, American mathematician and computer scientist,^([14][15]) and they have two children.^([citation needed])
+
+Books
+
+[edit]
+
+-   Mathematics for Computer Science (with Eric Lehman and Albert R. Meyer, 2010)
+-   Introduction to Parallel Algorithms and Architectures: Arrays, Trees, Hypercubes (Morgan Kaufmann, 1991), ISBN 1-55860-117-1.
+-   Complexity Issues in VLSI: Optimal layouts for the shuffle-exchange graph and other networks, (MIT Press, 1983), ISBN 0-262-12104-2.
+
+References
+
+[edit]
+
+1.  ↑ "F. Thomson (Frank) Leighton". Mathematics Genealogy Project. Department of Mathematics, North Dakota State University. Retrieved 18 September 2020.
+2.  ↑ Erik Nygren, Ramesh Sitaraman, and Jennifer Sun. "The Akamai Network: A Platform for High-Performance Internet Applications, ACM SIGOPS" (PDF). Operating Systems Review. 44. July 2010.
+3.  ↑ "David Leighton – College of Engineering". Engineering.nd.edu. Retrieved 2017-03-09.
+4.  ↑ "Tom Leighton". Society for Science. Retrieved 9 October 2026.
+5.  ↑ Leighton, Frank Thomson (1981). Layouts for the shuffle-exchange graph and lower bound techniques for VLSI (Ph.D.). Massachusetts Institute of Technology. OCLC 4433998366. ProQuest 303188814.
+6.  ↑ "National Inventors Hall of Fame". www.invent.org. Retrieved 2019-01-10.
+7.  ↑ "Dr. Tom Leighton, CEO | Executive Team". Akamai.com. Retrieved 2017-03-09.
+8.  ↑ "CSAIL pioneer Tom Leighton awarded IEEE John von Neumann Medal" MIT CSAIL News, December 2, 2022
+9.  ↑ "Professor Tom Leighton wins 2018 Marconi Prize" MIT News, March 23, 2018.
+10. ↑ 2018 ACM Fellows Honored for Pivotal Achievements that Underpin the Digital Age, Association for Computing Machinery, December 5, 2018
+11. ↑ "Professor Tom Leighton and Danny Lewin SM '98 named to National Inventors Hall of Fame," MIT News, February 2, 2017.
+12. ↑ "List of Fellows of the American Mathematical Society". Ams.org. 2015-04-13. Retrieved 2017-03-09.
+13. ↑ "Fellows of the Society for Industrial and Applied Mathematics (SIAM)". siam.org.
+14. ↑ Eisenberg, David (July 28, 2022). "Bonnie Berger '83 Establishes Junior Professorship in Mathematics with $2.5 Million Gift". Brandeis.
+15. ↑ "A renewed home for the MIT Mathematics Department". MIT Science. June 10, 2016.
+
+External links
+
+[edit]
+
+F. Thomson Leighton at Wikipedia's sister projects
+
+-   [Wikimedia Commons logo]Media from Commons
+-   [Wikisource logo]Texts from Wikisource
+-   []Data from Wikidata
+
+-   MIT Mathematics Department bio
+-   Computer Science and Artificial Intelligence Laboratory (CSAIL) bio
+-   Akamai bio
+
++-----------------------------------------------------+-----------------------------------+
+| Authority control databases [Edit this at Wikidata] |                                   |
++-----------------------------------------------------+-----------------------------------+
+| International                                       | -   ISNI                          |
+|                                                     | -   VIAF                          |
+|                                                     | -   WorldCat                      |
++-----------------------------------------------------+-----------------------------------+
+| National                                            | -   United States                 |
+|                                                     | -   France                        |
+|                                                     | -   BnF data                      |
+|                                                     | -   Czech Republic                |
+|                                                     | -   Netherlands                   |
+|                                                     | -   Israel                        |
++-----------------------------------------------------+-----------------------------------+
+| Academics                                           | -   Mathematics Genealogy Project |
+|                                                     | -   zbMATH                        |
+|                                                     | -   DBLP                          |
+|                                                     | -   MathSciNet                    |
++-----------------------------------------------------+-----------------------------------+
+| Other                                               | -   IdRef                         |
+|                                                     | -   Yale LUX                      |
++-----------------------------------------------------+-----------------------------------+
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=F._Thomson_Leighton&oldid=1379360472"
+
+Categories:
+
+-   American theoretical computer scientists
+-   Living people
+-   Fellows of the American Mathematical Society
+-   Fellows of the Society for Industrial and Applied Mathematics
+-   Fellows of the Association for Computing Machinery
+-   Members of the United States National Academy of Engineering
+-   Members of the United States National Academy of Sciences
+-   Princeton University School of Engineering and Applied Science alumni
+-   MIT School of Science alumni
+-   Massachusetts Institute of Technology faculty
+-   20th-century American engineers
+-   21st-century American engineers
+-   20th-century American scientists
+-   21st-century American scientists
+-   1956 births
+-   Akamai Technologies people
+
+Hidden categories:
+
+-   Articles with short description
+-   Short description is different from Wikidata
+-   Articles with hCards
+-   All articles with unsourced statements
+-   Articles with unsourced statements from November 2023
+-   Pages using Sister project links with hidden wikidata
+
+-   This page was last edited on 9 October 2026, at 14:02 (UTC).
+-   Page was rendered with Parsoid.
+-   Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+-   Privacy policy
+-   About Wikipedia
+-   Disclaimers
+-   Contact Wikipedia
+-   Legal & safety contacts
+-   Code of Conduct
+-   Developers
+-   Statistics
+-   Cookie statement
+-   Mobile view
+
+-   [Wikimedia Foundation]
+-   [Powered by MediaWiki]
+
+Search
+
+Search
+
+Toggle the table of contents
+
+F. Thomson Leighton
+
+2 languages
+
+Add topic

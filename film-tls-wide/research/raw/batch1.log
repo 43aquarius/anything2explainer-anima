@@ -1,0 +1,13 @@
+attempt 1 failed, sleeping 60s (s_tls13.json)
+attempt 2 failed, sleeping 75s (s_tls13.json)
+attempt 3 failed, sleeping 90s (s_tls13.json)
+attempt 4 failed, sleeping 105s (s_tls13.json)
+attempt 5 failed, sleeping 120s (s_tls13.json)
+attempt 6 failed, sleeping 135s (s_tls13.json)
+attempt 7 failed, sleeping 150s (s_tls13.json)
+attempt 8 failed, sleeping 165s (s_tls13.json)
+attempt 9 failed, sleeping 180s (s_tls13.json)
+attempt 10 failed, sleeping 195s (s_tls13.json)
+attempt 11 failed, sleeping 210s (s_tls13.json)
+attempt 12 failed, sleeping 225s (s_tls13.json)
+GAVE UP: s_tls13.json

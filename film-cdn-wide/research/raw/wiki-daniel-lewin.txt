@@ -1,0 +1,45 @@
+# Wikipedia article: Daniel Lewin
+# URL: https://en.wikipedia.org/wiki/Daniel_Lewin
+# Fetched: 2026-10-11 via MediaWiki API (explaintext)
+# Length: 4818 chars
+
+Daniel Mark Lewin (Hebrew: דניאל "דני" מארק לוין; May 14, 1970 – September 11, 2001) was an American-Israeli mathematician and entrepreneur who co-founded Akamai Technologies. He was a passenger on American Airlines Flight 11, and it is believed that he had his throat slashed by Satam al-Suqami, one of the hijackers of that flight, making him the first victim of the September 11 attacks.
+
+
+== Early life ==
+Daniel Mark Lewin was born on May 14, 1970, in Denver, Colorado, to a Jewish family. He was one of three brothers. He moved to Israel with his family at age 14 and spent the remainder of his childhood living in Jerusalem. He completed his secondary education at an ORT high school.
+
+
+== Career and personal life ==
+After finishing high school, Lewin was drafted into the Israel Defense Forces (IDF) and served in the elite Sayeret Matkal commando unit, eventually becoming an officer. He rose to the rank of captain.
+After his discharge, Lewin studied electronic engineering at the Technion – Israel Institute of Technology in Haifa while working at IBM's research laboratory in the city. Despite his university studies, he became a full‑time research fellow and project leader. At IBM, he developed the Genesys system, a processor verification tool widely used within IBM and in other companies such as Advanced Micro Devices and SGS-Thomson.
+Lewin received a Bachelor of Arts and a Bachelor of Science, summa cum laude from the Technion and was named as the university's outstanding student in Computer Engineering in 1995. He moved to Cambridge, Massachusetts, in 1996 to begin graduate studies toward a Ph.D at MIT. There, he and his advisor, F. Thomson Leighton, developed consistent hashing, an algorithm for optimizing Internet traffic. These algorithms became the basis for Akamai Technologies, which they founded in 1998. Lewin was the company's chief technology officer and a board member and accumulated substantial wealth during the Internet boom.
+Lewin was married and had two sons.
+
+
+== Death and legacy ==
+
+Lewin was reportedly stabbed aboard American Airlines Flight 11 during its hijacking in the September 11 attacks while traveling to a business meeting in Los Angeles. A 2001 FAA memo suggests he may have been stabbed by Satam al-Suqami after attempting to thwart the hijacking. According to the memo, Lewin was seated in business class in seat 9B, near hijackers Mohamed Atta, Abdulaziz al-Omari, and al-Suqami. Initial reports indicated that he had been shot by al-Suqami, but the final draft of the memo omitted all references to gunfire.
+According to the 9/11 Commission Report, Lewin was stabbed by one of the hijackers. The Commission speculated that Lewin, being a veteran of the Israeli military, may have attempted to confront Atta or Omari, who had been seated in front of him, unaware that Satam al-Suqami was sitting behind him, who proceeded to withdraw his blade and kill him.
+Flight attendants who contacted airline officials from the plane, including Betty Ong, reported that Lewin's throat was slashed, presumably by al-Suqami. Lewin was identified as the first victim of the September 11 attacks.
+In July 2004, it was reported that Lewin's recovered remains had been identified from Ground Zero.
+Canadian actor Brad Hampton portrayed Lewin in the BBC docudrama Zero Hour Season 1: Episode 2 (2004), titled "The Last Hour of Flight 11".
+After his death, the intersection of Main and Vassar streets in Cambridge, Massachusetts, was renamed Danny Lewin Square in his honor. The award for the best student-written paper at the ACM Symposium on Theory of Computing (STOC) was also named the Danny Lewin Best Student Paper Award. In 2011, on the tenth anniversary of his death, Lewin's contributions to the internet were memorialized by friends and colleagues.
+At the National September 11 Memorial & Museum, Lewin is memorialized at the North Pool on Panel N-75.
+Lewin is the subject of the 2013 biography No Better Time: The Brief, Remarkable Life of Danny Lewin, the Genius Who Transformed the Internet by Molly Knight Raskin. According to Raskin, "Because of Akamai, almost every major news site remained up and running [on September 11], a feat that proved everything Danny promised to be possible".
+
+
+== Awards ==
+1995 – The Technion named him the year's Outstanding Student in Computer Engineering.
+1998 – Morris Joseph Levin Award for Best Masterworks Thesis Presentation at MIT.
+
+
+== References ==
+
+
+== External links ==
+
+Consistent hashing for relieving hot spots on the world wide web, Akamai Technologies
+Daniel was an inspiration, Ynetnews
+The Akamai Network: A Platform for High-Performance Internet Applications, Erik Nygren, Ramesh K. Sitaraman, and Jennifer Sun, ACM SIGOPS Operating Systems Review, Vol. 44, No.3, July 2010
+Daniel Mark Lewin at Find a Grave

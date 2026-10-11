@@ -1,0 +1,5235 @@
+THE GLOBAL INTERNET PHENOMENA REPORT JANUARY 2023
+
+How have the past two years
+changed us?
+The ‘Big 6’ now led by Netflix
+Video permeates,
+streaming dominates
+The Rise of the ‘Super App’
+Mobile is reshaping app usage
+Telecom reaching inflection point
+SPOTLIGHTS
+QUIC is here to stay
+FIFA World Cup: are sports the
+next frontier for streaming?
+
+2
+
+A word from Sandvine CEO
+Lyn Cantor
+Apps have become extensions of
+ourselves, helping us navigate all
+aspects of life, whether our connections
+to others, our health, our education, our
+work, our happiness through escapism
+and entertainment. The average person
+spends as much as 5 hours per day on
+mobile apps, in addition to those they
+use at work or in learning, which can
+bring the total time on apps to as much
+as 7 or 8 hours per day.
+Lyn Cantor
+CEO Sandvine
+
+Applications are therefore becoming a
+manifestation of all that operators do to
+build and optimize their networks. Customer
+satisfaction is inextricably tied to application
+quality of experience (App QoE). This is why
+we are committed to App QoE, becoming
+Sandvine, the App QoE company.
+For the purposes of this report, we tap into
+what makes us the App QoE experts:
+advanced heuristics and machine learning to
+classify network traffic by application, as
+well as by the content within those
+applications (as you’ll see on pages 10-15).
+By calculating throughput at 250ms
+intervals, we “score” App QoE through the
+lens of 10 app categories, which we stratify
+on pages 12-14 and in our regional trends,
+starting on page 27.
+By examining the volumetric trends within
+each category, we reveal which individual
+applications are exerting the most pressure
+on networks. We can see that this year, in
+H1 2022, eight of the top-10 apps by
+volume are based on video, and we further
+identify the biggest culprits, such as
+Netflix, YouTube (and its QUIC traffic),
+
+Disney, TikTok and others. We even glance
+at the impact HD and UHD devices may
+have, motivating streaming platforms to
+create 4K plans that promise high picture
+quality and QoE (mind you, without any
+input from the operators over whose
+networks the app traffic will travel).
+Additionally, we take a closer look at the
+meteoric rise of individual content creators
+over short-form video phenomena like
+TikTok, YouTube Shorts, and Instagram
+Reels, and how different categories of apps,
+like social networking and messaging, are
+trying to capitalize on that fervor to make up
+for now-flailing engagement, as the younger
+generation continues to move away from
+apps they view as staid and stodgy.
+As you read through the different sections of
+the report, you’ll see what’s behind the 24%
+increase in video traffic, and the 23%
+increase in overall internet traffic – despite
+the fact people in most regions have
+returned to in-person socializing, learning,
+and working. We put context around those
+trends on page 6, where we explain how the
+pandemic accelerated digitization, catalyzing
+the momentum toward new digital behavior
+and app usage.
+In our Spotlights on pages 25 and 32, we take
+a closer look at the impact the 2022 FIFA
+World Cup may have on streaming video, and
+at the growing volume of QUIC traffic
+obfuscating views into traffic worldwide.
+On page 22, you’ll see how the growing
+penetration of smartphones worldwide, and
+the higher comfort levels with consumption
+
+3
+
+and creation of content over mobile devices
+have had a profound impact on overall
+traffic, as well as on downstream and
+upstream traffic.
+Whether COVID, or large sporting events, or
+natural disasters, or even war, almost every
+vicissitude life has to offer now affects fixed
+and mobile networks. Because apps are so
+central to who we are and what we do,
+operators are expected to deliver the highest
+level of App QoE. With a greater magnitude
+of volumetric pressure on their networks,
+operators try to scale with huge investments
+in infrastructure. But continuously building
+networks around network tonnage is proving
+unsustainable, with profit margins already
+squeezed and profitable growth difficult to
+achieve. On page 20, we look at how
+constant capital-intensive investments will
+fail to keep up with unrelenting app and
+traffic growth, and what’s being done to
+foster more equitable business models.
+This Report is just a taste of the in-depth
+analyses we do for individual customers. We
+encourage service providers that want
+customized reports on their network traffic to
+contact us for a one-on-one meetings with
+our subject matter experts. We can help
+build customized use cases for CTOs,
+network planners, big data teams, marketing, and customer care.
+
+Customer satisfaction
+is inextricably tied to
+Application Quality of
+Experience (App QoE).
+This is why we are
+committed to App QoE,
+becoming Sandvine,
+the App QoE company
+Lyn Cantor, CEO, Sandvine
+
+4
+
+Application QoE
+
+DEFINITION
+
+Global Internet
+Phenomena Report
+
+METHODOLOGY
+
+App QoE [Definition]: The degree of
+delight or annoyance of application users
+resulting from their expectations regarding
+the utility/enjoyment of the application.
+It includes subjective and objective quality
+needs and experiences arising from the
+interaction of a user with applications in
+a particular context. It is based on human
+factors, such as demographics and
+behaviors; network factors, such as access
+type, bandwidth, speed, and latency;
+device factors, such as performance; and
+contextual factors, such as location, time
+of day, and frequency of use.
+
+Sandvine’s 260+ Tier 1 and Tier 2 customers represent an installed base of more
+than 2.5 billion Internet subscribers around
+the world. For the purposes of this 2023
+Global Internet Phenomena Report, we’ve
+analyzed First Half 2022 data from 177
+customers representing almost 300 million
+subscribers across access types (Fixed,
+Mobile, cable, and Satellite) and regions
+(Americas, Asia Pacific, Europe, Middle
+East, and Africa).
+
+In this Report
+6 One Giant Leap
+COVID accelerated digitization and elevated app usage.. What Now?
+10 When Netflix and MAMAA Rule The Internet
+The ‘Big 6’ still generate disproportionate traffic volume
+14 Video Permeates, Streaming Dominates
+Streaming video exerts ever-more volumetric pressure
+16 The Rise of the Super App
+Apps are more intricate, defined by mashups and fusions
+of previously distinct content
+20 Telecom is Reaching an Inflection Point
+Building networks for tonnage is not sustainable (edited)
+22 Mobile is the Way to Go Smartphones are reshaping app usage
+25 Spotlight: QUIC Is Here to Stay – Growing in apps from YouTube,
+Facebook, Apple and others
+26 Regional Application Popularity Trends Americas, APAC, EMEA
+32 Spotlight: FIFA World Cup – Is Sport the Next Frontier of Streaming?
+34 Conclusion: So What?
+36 About Sandvine Contact Us
+
+5
+
+CONTENTS
+
+6
+
+WHAT JUST HAPPENED?!
+
+ONE
+GIANT
+LEAP
+
+BLINDSIDED BY COVID IN 2020 AND 2021,
+TELECOM ROSE TO THE CHALLENGE
+Here, we examine the past to see what may lie ahead.
+
+7
+
+download, and short-form) as well as
+encrypted traffic and operators’ growing
+menu of OTT services and TV content.
+
+No event since Neil Armstrong stepped foot on the moon has
+accelerated technological advancement the way COVID-19 did
+(and continues to do). Millions of people around the world instantly changed the way they lived, worked, and learned to protect
+themselves and loved ones, and to buy time for frontline workers
+and scientists early in the pandemic.
+For most people around the world,
+COVID drove changes to how they used
+technology. For the millions of people
+without digital access, the digital divide
+widened between the “haves” and the
+“have-nots,” with digitization crucial
+to connecting, working, and learning
+during not only the pandemic, but 2020
+and 2021’s upheavals from social unrest,
+climate change, and even war.
+For fixed and mobile networks, unpredictable traffic caused gigabyte surges.
+This forced operators to rapidly engineer
+what they had to better utilize preexisting
+capacity. To deliver pre-COVID reliability,
+many expedited capital expenditures for
+optical fiber, 5G, 5G Ultra Wideband, virtual
+private networks, and mobile cell sites.
+For enterprises, COVID accelerated
+digitization by several years. For example,
+a McKinsey Global survey of 899 C-level
+
+The sudden surges of 2020 and the
+moderate but steady bumps of 2021 had
+a significant impact on internet traffic
+over fixed broadband, mobile, and WiFi
+networks (see “Netflix and Big MAMAA
+Rule the Internet” on Page 10).
+
+executives and senior managers in APAC,
+Europe and North America found that
+digital and digitally enabled products in
+portfolios accelerated by as much as 7
+years, and digitization in customer and
+supply-chain interactions and internal
+operations by about 3 to 4 years.
+
+How big were Internet traffic surges
+during COVID?
+Reporting by operators around the world
+the past two years indicates that fixed
+broadband increases ranged from about
+20% to 50%, and mobile increases ranged
+from about 15% to 35%. People and
+businesses with reliable ISP services used
+fixed broadband for key applications and
+services throughout 2020 and 2021, while
+those without reliable fixed broadband
+relied more heavily on mobile.
+
+These rapid changes supported the surging
+popularity of video streaming, enterprise
+conferencing, gaming, social media, messaging and chat, and other categories of
+traffic we examined in our 2020 and 2021
+Global Internet Phenomena Reports.
+This year, with COVID becoming more
+endemic in many parts of the world, we
+see a change in overall traffic trends as
+people go back to work and school.
+
+In some regions, fixed data traffic
+increased by a greater percentage in the
+first month of the pandemic than in the
+previous 12 months. For example, in Italy
+and Spain during the Spring of 2020, operators reported surges of up to 50%, with
+
+Our data show that traffic volume is 23%
+higher in 2022 than it was in 2021, due to
+significant increases in video (streaming,
+
+Source: Sandvine
+
+Data Volume for Apps Before, During and “Post” COVID
+COVID-19 START
+
+900
+800
+
+VOLUME IN TB
+
+700
+600
+500
+400
+300
+200
+100
+0
+2019
+
+2020
+
+2021
+
+2022
+
+YouTube
+
+Netflix
+
+Generic QUIC
+
+Facebook
+
+HTTP Media Stream
+
+Disney+
+
+TikTok
+
+Xbox Live
+
+Playstation Downloads
+
+Amazon Prime
+
+8
+
+One Giant Leap (Cont’d)
+average increases of about 35%-40%.
+Telefónica’s Movistar, Orange, Vodafone,
+Masmovil, and Euskaltel all reported
+increases of about 40% in their networks’
+traffic, while BT reported a range of 35%
+to 60% for daytime weekday fixed broadband usage.
+Also interesting, Orange noted an
+explosion of data over transatlantic links,
+with 80% of the traffic generated by
+French internet users going to the USA for
+Facebook, YouTube, Netflix, Messenger,
+and WhatsApp.
+During the first two years of the pandemic, there were also upstream and
+downstream pattern shifts. Vodafone, for
+one, saw upstream increases as high as
+100%, which it attributed to cloud video
+conferencing services, with downstream
+increases of about 44% primarily due
+mostly to streaming video.
+In North America, the increases were also
+significant. In March 2020, Verizon reported a 20% increase in Web traffic, and a
+whopping 75% increase in online gaming,
+along with a 34% increase for VPN traffic
+(by May that increased to 52%), and a
+12% increase in streaming video.
+AT&T reported a similar 20% increase
+of traffic across its core network traffic –
+which includes business, home broadband
+and wireless usage – which amounted
+to 391.8 petabytes of data traffic on an average day. That increased 40% year-overyear to 468 petabytes by 2021.
+
+circumstances. One Sandvine customer,
+a cable operator, deployed 18 months of
+planned capacity in four months during
+Covid. This expansion of broadband among
+cable cos, telcos, fiber providers, and
+satellite companies is helping to support
+the current increases in demand for more
+high-speed and high-quality services.
+
+tion interpretation of the current world situation around COVID-19, many countries are
+at a better point now than they were this
+time last year. However, globally, we are
+not out of the woods. Most people around
+the world have returned to varying degrees
+of in-person social engagement, as well as
+in-person and hybrid work and learning.
+
+What impact was there on ‘heavy
+usage’ during the pandemic?
+We showed in our 2021 Global Internet
+Phenomena Report that per-household
+usage during 2021 increased. In Q1 2022,
+we saw this heavy usage trend continue,
+as you can see in the table “Volume Usage
+by Subscriber Type.” There, you see approximately 8% of users are “excessive,”
+responsible for approximately 55% of the
+volume, and just over 12% are “heavy”
+users responsible for more than 20% of
+the volume. We believe that with the
+continued spike in video, gaming and other
+categories of bandwidth-intensive apps,
+per-household usage will continue to climb.
+
+In this year’s data, we see internet traffic
+steadily rising year over year, which we
+explain in the next section. What we see
+is not so much a “lingering” of COVID-induced behaviors, but rather permanent
+habits people grew into, and the comfort
+level developed with certain apps that
+have now become commonplace around
+the world:
+
+In addition to significant volume increases
+during 2020 and 2021, operators also
+saw a shift of when “peak usage” and
+“congestion” took place, with usage more
+evenly spread out during weekdays –
+resembling what had traditionally been
+“weekend” or “holiday” patterns.
+
+In Japan and Asia Pacific, NTT reported a 30
+to 40% increase of data usage, while South
+Korean operators saw increases of 13%.
+
+The origins and destinations of traffic also
+changed with everyone at home. A report
+from the Internet Architecture Board (IAB)
+notes congestion that used to characterize interconnect points and last-mile
+networks diminished, with a decrease
+in download throughput to certain cloud
+regions, perhaps because of the increased
+use of cloud services.
+
+It’s astonishing these increases took place
+within weeks, not months or years, as
+would have been the case under normal
+
+Is our current ‘normal’ the
+‘new normal’?
+When looking at World Health Organiza-
+
+• Online Grocery Shopping and Food
+Boxes
+• Online shopping and home delivery
+of... everything (clothing, electronics,
+shoes, toys, pet supplies/meds, etc.)
+• Marketplace apps for investing online
+• Health Checks and digital communications via Telehealth apps
+• Grandparents and relatives Zooming
+in for regular family check-ins
+• Online college education still growing
+• K-12 schools increasingly integrating
+digital apps into in-person instruction
+• Work-from-home becoming permanent or a hybrid with enterprise apps
+• Government process for Drivers
+Licenses, Professional Licenses,
+Social Security, Employment Eligibility, Passports, etc
+
+• Entertainment through streaming, live
+and downloaded video services
+• Growing Content Creator market
+(TikTok, YouTube, YouTube Shorts,
+Instagram)
+• Gaming online, in the cloud, mobile
+
+9
+
+The continuation of these behaviors has
+contributed to a 23% increase in traffic
+volume, which we cover in the next
+section. In general, what was “high”
+pre-COVID is “normal” now. Back-to-work
+and school means the consumption might
+be happening at different times of the day
+this year than was the case the past two
+years, but it doesn’t mean a reduction in
+that consumption. It’s just happening at
+different times, in different places, over
+different networks (at home, office, or
+while commuting).
+
+Old-Fashioned Voice Calls Became ‘Cool’ Again!
+In the first two months of the pandemic, people wanted to hear their loved one’s voices, making voice the preferred channel for keeping in touch initially. There was a
+184% increase in voice call traffic, a 3x increase over pre-pandemic numbers.
+Operators across the board reported approximately 30% to 35% increases in voice,
+with many also reporting longer durations of the calls. Verizon, for instance, reported
+800 million wireless calls per day, and a 33% increase in the duration of calls .
+Into 2022, with hybrid work models and now-engrained habits and behaviors, voice
+continues to be more popular than it was pre-pandemic. Today, this once “obsolete”
+technology is more popular than it was pre-pandemic.
+
+One thing that will not change is the
+perception people have about the internet
+as an essential part of day-to-day life
+in terms of individual, local, and global
+economies.
+
+In the table below, we show that over several networks in APAC, approximately 8% of the users are responsible for 55% of volume, and
+12% are “heavy” users responsible for more than 20% of volume. As heavy usage grows, it will further complicate resource planning,
+service profitability, service running cost, ROI, and quality of experience for the greater whole of customers.
+
+Volume Usage by Subscriber Type
+
+Total Usage
+
+Subscribers
+
+60%
+
+50%
+
+40%
+
+30%
+
+20%
+
+10%
+
+0%
+
+Excessive
+
+Heavy
+
+Moderate
+
+Light
+
+10
+
+Netflix + MAMAA (Microsoft, Alphabet, Meta, Amazon,
+Apple) generate 48% of growing internet traffic, but their
+percentage contribution has gone down amid data surges
+from new app categories and new apps.
+“MAMAA” is a widely used acronym
+coined to represent the five large-cap
+technology giants, but when talking about
+terabytes, gigabytes, and petabytes
+traversing the internet, we cannot exclude
+Netflix, whose 45% growth in internet
+volume during H1 2022 moves it into the
+top spot for traffic generated by an
+individual application in what we call the
+“Big 6” (MAMAA + Netflix). As you’ll see in
+the charts on the next page, the Big 6
+generated nearly 48% of internet traffic in
+H1 2022. Though these companies still
+Brand
+
+2021
+
+2022
+
+1
+
+Google
+
+20.99%
+
+13.85%
+
+2
+
+Netflix
+
+9.39%
+
+13.74%
+
+3
+
+Facebook
+
+15.11%
+
+6.45%
+
+4
+
+Microsoft
+
+3.32%
+
+5.11%
+
+5
+
+Apple
+
+4.18%
+
+4.59%
+
+6
+
+Amazon
+
+3.36%
+
+4.24%
+
+56.35%
+
+47.98%
+
+TOTAL
+
+generate a substantial amount of overall
+internet traffic, there’s a 9% decline in
+terms of their percentage contribution to
+total internet volume. This means their
+traffic is now couched amid an expanding
+number of app categories and greater
+number of apps, which are producing more
+data overall. This is contributing to the
+23% increase in overall traffic volume we
+saw in our H1 2022 data, which we
+mention in the previous section.
+The role of video in this overall surge
+cannot be overstated, as video from not
+only the Big 6, but also up-and-comers like
+TikTok and Disney+, is contributing a sizable
+volume of traffic (something we explore in
+the next section, “Video Permeates,
+Streaming Dominates” on page 14).
+It’s this gluttony of video that now sets
+Netflix apart from MAMAA, as a video
+pure play that accounts for 13.74% of total
+internet volume, and for 8.78% of
+
+11
+
+upstream volume, and 14.93% downstream. This is how Netflix has taken the
+throne from Google’s YouTube, whose
+percentage of total internet volume
+declined in H1 2022.
+The power of Netflix’s streaming content
+has enabled the company to claw its way
+back from its highly publicized subscriber
+losses of Q1 2022. The billions-of-dollars
+Netflix invested in video content seems to
+be paying off, with titles like the Queen’s
+Gambit, The Crown, and renewals like
+Squid Games helping it beat even its own
+expectations. With a gain of 2.41 million
+subscribers in Q3 of 2022, Netflix has
+replenished much of what it lost in Q1
+and Q2.
+But, Google still reigns supreme!
+Even with Netflix’s substantial volumetric
+growth, it languishes in the number-two
+spot in terms of volume “by brand” (as
+opposed to individual application). In H1
+
+2022, Alphabet’s Google was responsible
+for 13.85% of Internet traffic, despite a
+decline from what we saw this time last
+year. Google’s continued dominance is
+attributable primarily to YouTube, but also
+traffic generated by a growing empire of
+platforms and services including: YouTube
+Shorts, Google Web Apps, Android Market,
+Ad Analytics, Google Analytics, Google
+Cloud Storage, Google Docs, Google Drive,
+Gmail, Google Maps, Google Cloud
+Messaging, Google Maps, YouTube TV,
+Waze, Fitbit, and Nest.
+Amid these vast properties, YouTube is
+the biggest bandwidth hog at nearly 11%.
+YouTube remains a tour de force in the
+“creator economy,” which Forbes now
+estimates is worth $100 billion, globally.
+To put it in perspective, YouTube’s biggest
+content creator, T-Series, earns $450
+Million US Dollars (Rupees 3,590 Crore),
+boasting 186 million subscribers (as of
+Q3 2022).
+
+12
+
+In the Downstream chart on the next page,
+YouTube’s 11.62% is a decline from last
+year during the same period, in part
+because of returns to in-person, but also
+because of growing interest in viewing
+TikTok and other short-form videos.
+To counter the losses, Google has hitched
+itself to the TikTok-inspired short-form
+video craze with YouTube Shorts, which by
+Q3 2022 reached 5 trillion all-time views.
+Google plans to monetize that momentum
+with a 45% revenue split for creators,
+incentivizing anyone with at least 1,000
+subscribers and 10 million Shorts views
+over 90 days. That will raise the ante in its
+competition with not only TikTok, but also
+Pinterest and Instagram Reels – all of
+which are vying for more views and
+engagement to attract more video ads.
+We think that this aggressive jockeying for
+position in video and short-form video will
+mean Google traffic will exert significant
+volumetric pressure on networks the rest of
+this year.
+We also need to note a significant portion of
+YouTube traffic is encrypted QUIC (Quick
+UDP Internet Connections), which in our H1
+2022 data is the third-biggest contributor to
+volume at 5.41%, an increase from 2021.
+Google’s platforms aren’t the only ones
+using QUIC, as we see many big platforms
+using QUIC for more stable, fast, and
+
+encrypted video content-based applications, as we explore in “QUIC Is Here to
+Stay,” on page 34.
+Conspicuously, you will see Facebook
+dropped from its number two position to
+number three in the overall “Brands” chart
+on page 10. It’s no secret that in early
+2022, Facebook’s Daily Active Users started
+to decline for the first time in 18 years.
+Other social platfoms, like Twitter, have
+had their own share of challenges due to
+many factors. For one, there’s the disappearance of pandemic consumption habits,
+as during COVID, Facebook saw huge
+increases in Messenger group video calls,
+Facebook Live, Instagram Live, and
+WhatsApp – especially in places hardest
+hit by lockdowns and social distancing. It’s
+not surprising that back to school and back
+to work means less reliance on group video
+calls and messaging, and hence, a drop in
+that type of traffic.
+Additionally, advertisers are spending less
+on social platforms, recognizing that a
+bigger percentage of younger audiences
+find rival platforms like TikTok and YouTube
+more appealing, which we cover below.
+Another challenge has been an increasing
+desire for user privacy, as evidenced by the
+use of Apple’s App Tracking Transparency
+policy, which empowers users to limit how
+much of their information can be shared
+with advertisers.
+
+But what about social networking
+as a category?
+Though we see a drop in social networking traffic as a percentage of total traffic
+volume, as short-form videos rise in
+popularity, social networking is still a
+significant contributor.
+However, there is a movement away from
+social media by younger people.They are a
+demographic craving less depth, more
+variety, more lightheartedness, and more
+personalization and engagement through
+personalized feeds. TikTok satisfies that
+desire with a “For You” feed of clips that are
+based on the viewer’s usage and habits.
+Some Instagram content creators are trying
+to do more with Reels to see if video can
+bring the platform back some of its bygone
+luster, but some digital marketing studies
+blame ads and bombardment by influencers for the loss of reach.
+With the writing possibly on the wall for
+traditional social networking, Mark
+Zuckerberg is going “all in” with
+Metaverse and social virtual reality,
+investing $100 Billion in RealityLabs for the
+creation of 3D virtual spaces.
+There’s been no shortage of criticism by
+pundits, who question whether doing so
+now will pay off fast enough amid Meta’s
+first-ever revenue declines in H1 2022,
+and market forces like inflation driving
+
+Global Top 10 Applications by Category
+Video
+
+Games
+
+Social
+
+Messaging
+
+1
+
+Netflix
+
+Playstation Downloads
+
+Facebook
+
+Generic Messaging
+
+2
+
+YouTube
+
+Steam
+
+Twitch
+
+WhatsApp
+
+3
+
+Generic QUIC
+
+ROBLOX
+
+Instagram
+
+Facebook
+
+4
+
+HTTP Media Stream
+
+Epic Games Launcher
+
+Snapchat
+
+Discord Voice
+
+5
+
+Disney+
+
+Nintendo Online
+
+Reddit
+
+Wattpad
+
+6
+
+Tik Tok
+
+Xbox Live TLS
+
+Wordpress
+
+Telegram
+
+7
+
+Amazon Prime
+
+Steam Client
+
+Pinterest
+
+Discord
+
+8
+
+Hulu
+
+Kayo Sports
+
+Twitter
+
+Microsoft Teams
+
+9
+
+Facebook Video
+
+Generic Gaming
+
+VK
+
+WeChat
+
+10 Operator Content
+
+League of Legends
+
+LinkedIn
+
+LINE
+
+Despite the tribulations, Facebook is still
+the dominant social network worldwide,
+with 2.96 billion monthly active users as of
+the third quarter of 2022. And Meta is
+making video a bigger component of its
+platforms to try and improve interest and
+engagement. As reported by the Evolution
+of Facebook Watch, 1.25 billion people visit
+Facebook to watch videos every month,
+and Facebook’s partnership with Ray-Ban
+for smart glasses may mean more videos
+and photos (rolled up into Facebook View).
+As we mention in the next section, Meta is
+striving to close some of the generational
+divide by encouraging shorter, more
+
+The Big 6, 2022
+65%
+
+60%
+
+55%
+
+50%
+
+frequent postings on Facebook Video, as
+well as Facebook video chat. It seems
+though the popularity of instant messaging
+and videoing friends might have been
+popular during COVID, but is less so now.
+To make up some of its momentum,
+Facebook is offering video-on-demand for
+Facebook users who want to stream
+premium content. Time will tell if these
+efforts will be fruitful enough to stave off
+its first-ever drop in the Nasdaq index and
+financial losses.
+
+13
+
+down ad revenues over platforms like
+Facebook and Instagram. For now,
+Zuckerberg expects WhatsApp and
+Messenger to tide Meta over with sales
+growth, until Metaverse takes off in what
+he predicts will be the “2030s.”
+
+APP TOTAL VOLUME 2022
+Application
+
+Total
+Volume
+
+1
+
+Netflix
+
+13.74%
+
+2
+
+YouTube
+
+10.51%
+
+3
+
+Generic QUIC
+
+5.41%
+
+4
+
+HTTP Media Stream
+
+4.33%
+
+5
+
+Disney+
+
+4.20%
+
+6
+
+Tik Tok
+
+3.55%
+
+7
+
+Facebook
+
+2.83%
+
+8
+
+Xbox Live
+
+2.71%
+
+9
+
+Playstation Downloads
+
+2.70%
+
+10 Amazon Prime
+
+2.67%
+
+45%
+
+40%
+
+TOP APPS 2022
+
+TOP APPS 2022
+
+35%
+
+DOWNSTREAM TRAFFIC
+
+UPSTREAM TRAFFIC
+
+Application
+
+Total
+Volume
+
+Application
+
+Total
+Volume
+
+1
+
+Netflix
+
+14.93%
+
+1
+
+Netflix
+
+8.78%
+
+2
+
+YouTube
+
+11.62%
+
+2
+
+HTTP Media Stream
+
+6.89%
+
+3
+
+Generic QUIC
+
+5.88%
+
+3
+
+YouTube
+
+5.90%
+
+4
+
+Disney+
+
+4.49%
+
+4
+
+Generic Web Browsing
+
+3.85%
+
+5
+
+TikTok
+
+3.93%
+
+5
+
+HTTP download
+
+3.70%
+
+6
+
+HTTP Media Stream
+
+3.72%
+
+6
+
+Generic QUIC
+
+3.43%
+
+30%
+
+25%
+
+20%
+
+15%
+
+10%
+
+5%
+
+0%
+
+Other
+
+7
+
+Playstation Downloads
+
+2.95%
+
+7
+
+Generic Messaging
+
+3.17%
+
+8
+
+Xbox Live
+
+2.91%
+
+8
+
+Disney+
+
+2.98%
+
+9
+
+Facebook
+
+2.87%
+
+9
+
+Hulu
+
+2.79%
+
+10 Amazon Prime
+
+2.83%
+
+10 Facebook
+
+2.67%
+
+14
+
+Video Permeates, Streaming Dominates
+APP CATEGORY TOTAL VOLUME
+
+1
+
+2022 Categories
+
+Total
+Volume
+
+Video
+
+65.93%
+
+2
+
+Marketplace
+
+5.83%
+
+3
+
+Gaming
+
+5.58%
+
+4
+
+Social Networking
+
+5.26%
+
+5
+
+Cloud
+
+4.98%
+
+6
+
+Web Browsing
+
+4.63%
+
+7
+
+File Sharing
+
+3.39%
+
+8
+
+Messaging
+
+2.30%
+
+9
+
+VPN
+
+1.13%
+
+10 Audio
+
+0.95%
+
+Demand for video content is soaring, so
+most platforms are embedding and
+spreading video within apps to increase
+views and engagement. Our data show in
+first half of 2022, video accounted for a hefty
+65.93% of total volume over the Internet.
+That’s a 24% increase over H1 2021.
+“Video” includes TV, video, and streaming
+download, but with video and other
+categories becoming more complex (see
+“The Rise of the Super App,” page 16), we
+will, in subsequent reports, have more
+granular stratification of not only the video
+category, but also gaming, video conferencing, and others that have significant impacts
+on mobile and fixed networks.
+Netflix race against Disney+ and
+other streamers
+Netflix’s 223 million paid subscribers are
+putting a lot of pressure on networks, as
+they watch 1 billion hours of content per
+week. With increasingly popular HD plans,
+subscribers can use as much as 3GB data
+per hour, and for 4K resolution, as much as
+7GB per hour. Multiplied across 223 million
+subscribers, and you get an idea of what’s to
+come in the next couple years. Check out the
+sidebar in this section, “HD and UHD Impact
+on Networks.”
+
+Netflix has said it is spending $13.6 billion
+USD on content, as it is feeling the heat
+from fast-encroaching Disney+ (4.20% of
+traffic); Amazon Prime, which still registers
+in the top-10 in terms of total volume (at
+2.67%); and HBO Max, which did not make
+the top-10 in terms of internet volume.
+Family Friendly Disney+ packs a
+powerful bandwidth punch
+Not to be outdone in terms of spending,
+Disney+ is reportedly spending $33 billion
+on content in 2022. In H1 2022, Disney+
+content comprised 4.20% of volume, a
+199% increase over last year. Boasting the
+“best stories in one place,” Disney+ is
+propelling Walt Disney into the future with
+Star Wars, Marvel, Pixar, National
+Geographic, and Disney. Building a
+reputation for family-friendly films and
+franchises, it has rapidly grown to 164.2
+million subscribers, or, 235 million
+subscribers if you include Hulu and ESPN+,
+which are also part of Disney+.
+TikTok makes short-form video-sharing
+the next ‘big thing’
+TikTok fell one spot in the total-volume
+ranking, but its decline is probably due to
+the other-worldly increases it had during
+2021, something that we did not expect
+would be sustained once its subscriber base
+– primarily younger people – went back to
+school. With 3.55% of total volume, TikTok
+is also dealiing more with the encroachment
+of competitors that took notice of TikTok’s
+meteoric rise last year. As younger people
+increasingly consider social networking and
+messaging relics for adults, YouTube Shorts
+and Instagrams Reels are jockeying for
+position in this fairly new market. So far,
+TikTok’s “For You” feeds, AR features, and
+green-screen options are making it the most
+downloaded app in the world, with more
+than 1 billion active monthly users (or should
+we say very active users with 83% of
+TikTokers posting video, and 52 minutes of
+
+average viewing time, with heavier users
+going as high as 80 to 90 minutes of viewing
+time per day)!
+HTTP Media Stream – What is it and
+why it shouldn’t be ignored?
+If we’re going to talk about what’s hot on
+the Internet and generating more traffic,
+we have to address the “HTTP Media
+Stream” category, which takes the #4 spot
+for top video app volume (at 4.3%). We see
+in our data that some of this traffic is adult
+content, which during COVID, the
+consumption of which increased substantially. As much as one-quarter to one-third
+of online searches during the pandemic
+pertained to pornography, and consumers
+in this category generally want new
+content regularly. That demand leads to
+supply, in the form of thousands of new
+pages, daily. Compounded over tens of
+millions of visitors per day, there’s a disproportionate upstream jump as compared to
+downstream, which decreased 18%. That
+may be due to the fact people are back to
+in-person socializing, work and school.
+Other contributors to upstream traffic can
+be apps like OnlyFans, TikTok and You Tube
+Shorts, all of which encourage content
+creation for engagement and monetization
+purposes. As they grow in popularity, slow
+or choppy uploads of live or prerecorded
+content become less tolerable.
+Can video save social networking
+and messaging?
+As we mentioned in the previous section
+“Netflix and MAMAA Rule the Internet,”
+and as we confirm in the “Top Apps by
+Volume” chart, Facebook is in 7th place,
+a drop from last year, because the
+generational divide is widening. Younger
+people are, for the most part, fleeing social
+networking and messaging platforms for
+more quirky, short, algorithmically personalized video content, which they get on TikTok,
+Instagram Reels., and YouTube Shorts.
+
+15
+
+As we show in the table on the right, App
+Category Total Volume, Social networking
+accounts for 5.26% of app category volume,
+representing a 61% drop from last year. We
+do think part of the drop is due to a
+normalization of the extraordinary surges
+that came with COVID-driven behaviors of
+2020 and 2021, especially for messaging
+and chat platforms like Facebook Video and
+Facebook Video Chat. With 1.3 billion people
+still logging onto Facebook every day, Meta
+may gain some ground by embedding and
+spreading of video within its , as we’re sure
+we will see across all platforms and
+categories.
+
+HD and UHD Impact on Networks
+Netflix and other streaming platforms are starting to offer “picture quality options” as
+subscribers start to buy hardware capable of Ultra High Def of 4K and even 8K now
+becoming available.
+According to Cisco’s Annual Internet Report, one Internet-enabled HD television
+streaming for two or three hours can generate as much Internet traffic as an entire
+household in a day. UHD bit rates will be double HD rates, and 9x greater than SD.
+Cisco estimates that 66% of flat-panel TV sets will be UHD in 2023, with average
+global fixed broadband speed going from 46 Mbps in 2022 to 110 Mbps in 2023.
+The average 5G speed will be 575 mbps or 13x faster than the average mobile
+connection.
+When considering what HD requires, it amounts to approx. 3GB/hour,
+with Ultra-High Def requiring about 7GB/hour.
+For mobile, SD at 480p uses 700MB/hour; HD at 2K requires 3GB/hour; and
+Ultra-high Def at 4K requires 7.2GB/hour.
+As people move beyond just voice calls and texting on mobile devices, with AR/VR
+and UHD video becoming more popular, we expect there will be tremendous growth
+in demand and traffic.
+
+TOP 10 VIDEO APPS 2022
+
+TOP VIDEO APPS 2022
+
+TOP VIDEO APPS 2022
+
+TOTAL TRAFFIC
+
+UPSTREAM TRAFFIC
+
+DOWNSTREAM TRAFFIC
+
+Application
+
+Total
+Volume
+
+1
+
+Netflix
+
+13.74%
+
+2
+
+YouTube
+
+10.51%
+
+Application
+
+Total
+Volume
+
+1
+
+Netflix
+
+8.91%
+
+2
+
+HTTP Media Stream
+
+6.98%
+
+Application
+
+Total
+Volume
+
+1
+
+Netflix
+
+14.92%
+
+2
+
+YouTube
+
+11.61%
+
+3
+
+Generic QUIC
+
+5.41%
+
+3
+
+YouTube
+
+5.98%
+
+3
+
+Generic QUIC
+
+5.87%
+
+4
+
+HTTP Video Stream
+
+4.33%
+
+4
+
+Generic QUIC
+
+3.48%
+
+4
+
+Disney+
+
+4.49%
+
+5
+
+Disney+
+
+4.20%
+
+5
+
+Disney+
+
+3.02%
+
+5
+
+Tik Tok
+
+3.92%
+
+6
+
+Tik Tok
+
+3.55%
+
+6
+
+Hulu
+
+2.83%
+
+6
+
+HTTP Media Stream
+
+3.72%
+
+7
+
+Amazon Prime
+
+2.67%
+
+7
+
+Amazon Prime
+
+2.04%
+
+7
+
+Amazon Prime
+
+2.83%
+
+8
+
+Hulu
+
+2.50%
+
+8
+
+Tik Tok
+
+1.99%
+
+8
+
+Hulu
+
+2.44%
+
+9
+
+Facebook Video
+
+1.98%
+
+9
+
+FaceTime
+
+1.71%
+
+9
+
+Facebook Video
+
+2.23%
+
+10 Operator Content
+
+1.91%
+
+10 HBO MAX
+
+1.64%
+
+10 Operator Content
+
+2.18%
+
+10 Total Traffic Volume
+
+50.74%
+
+10 Total Traffic Volume
+
+38.57%
+
+10 Total Traffic Volume
+
+54.20%
+
+16
+Does More ‘Simplicity’ for the User Mean More Complexity
+for the Operator?
+In H1 2022, we see App Complexity not only continuing, but accelerating. The
+number of applications has increased, and applications have become magnitudes
+more intricate, defined by mashups and fusions of previously distinct content. This
+is leading to the demise of the Web Browser, as everything is becoming a Web App,
+containing multiple web pages, feeds and functions – all within a single app.
+Within one app, you might have video, voice, chat, and gaming content all in the same flow.
+For example, Uber is not a single app but rather a series of apps, such as Uber, Uber Eats,
+Uber Freight, Uber Same-Day Package Delivery, Google Maps, 3rd-party geolocation services,
+GPS tracking, and payment services.
+As the delivery of quality of experience becomes more of a differentiator, network operators will
+have to be able to see within the app to know what parts of the content are latency sensitive,
+and which are not. For example, for a gaming users, gaming quality would be prioritized over
+voice and video, or someone watching a streaming video. Someone attending a Zoom would
+want visual fidelity, so video packets would have the same priority as voice packets.
+To take a closer look, consider the intricate blends of capabilities and content now prevalent in
+messaging and Chat apps, particularly WhatsApp, Facebook Messenger, and Weixin/WeChat
+(see image “What’s in an App?” on the next page). All are becoming complex composites of
+voice, video calling, videos, texts, photos, files, payments, and advertisements.
+
+17
+As people become more comfortable with messaging and chat, both consumers and
+businesses seek more frictionless digital engagement. As a result, these apps are building
+functionality to enable people to seamlessly transition from simple messaging to audio and
+video, when needed. This is converting once-simple “messaging apps” into sophisticated
+ecosystems, within which people and businesses are engaging across many applications and
+platforms – and all from one place.
+
+One of the prime examples of this is Tencent’s WeChat, which is the #1 home screen for 1.26
+billion active users across China, Hong Kong SAR, Taiwan, India, United States, and Indonesia.
+It’s not shy about saying it wants to be a “super app” with multipurpose capabilities, building
+
+18
+
+The Rise of the Super App (cont’d)
+Apps no longer deal with just one type of traffic
+
+On-demand Video
+Live Streaming
+File Sharing
+Browsing
+
+Messaging
+Voice Call
+Video Call
+
+3.5 million app-driven “miniprograms”
+intended to create all-encompassing
+experiences for individuals and businesses
+alike. Just some of what it offers consumers
+are messaging and calling, location sharing,
+search, QR codes, eWallet, money transfers,
+and news feeds. For businesses, it offers
+payment services, CRM, paid blogs and
+tiered content, advertising services around
+targeted content, flash sales, promotions
+and giveaway campaigns, as well as
+partnership programs with local influencers
+who run pay-per-click campaigns.
+Similarly, Meta is quickly expanding what
+it offers individuals and businesses through
+its Facebook Messenger, Meta for
+Business, and WhatsApp platforms.
+Facebook Messenger, at 100 billion
+messages per day, and WhatsApp at 65
+billion messages per day, are promoting
+seamless transitions from chat, to audio, to
+video so that businesses can improve user
+experiences with customers that prefer
+online engagement to in-store interactions.
+They are also doing more to incorporate
+payments and debit card transactions. And,
+they too are doing more to integrate
+gaming and location features into
+
+individual and group messages so people
+can initiate multiplayer gaming through
+individual and group messages.
+
+over South Korea’s ISP networks to soar
+from 50 Gigabits-per-second in May 2018
+to 1,200 Gbps by September of 2021.
+
+Another category in which content
+diversification and scaling up is taking place
+is video conferencing and collaboration.
+Platforms like Zoom, Microsoft Teams, Cisco
+Webex, GoToMeeting, Skype, and Google
+Meet have the staples of VoIP, video, chat,
+and screen sharing, but also a slew of new
+features like virtual whiteboards, live
+transcription, clip-and-share, app marketplaces, customized and immersive
+backgrounds, as well as enhanced privacy
+features. And if you look at how Microsoft
+Teams allows in-app access to Office 365,
+you see an expansion of capabilities within
+Teams that others may follow.
+
+But toward the end of 2021, Netflix had
+highly publicized subscriber losses and
+oncoming heat from competitors like
+Disney+, HBO Max, Amazon Prime and
+others (see Most Popular Apps on page
+26). In November 2021, the company
+launched Netflix Games, including a couple
+of Stranger Things-based games intended
+to help customers immerse themselves in
+the characters and stories of the popular
+series. By combining streaming and gaming
+content, the company managed to add 2.4
+million subscribers in Q1 2022.
+
+Even the “pure” single-category app in the
+top 6, Netflix, is morphing into an amalgam
+of different content categories. Primarily a
+streaming video platform since 2018, the
+rapid rise of Squid Games made Netflix a
+global phenomena early on in the
+pandemic. It accounted for 15% of the
+world’s internet bandwidth, with an
+exponential increase that caused traffic
+
+This and the previous examples illustrate
+how multiple streams of content within
+applications can increase engagement
+and stickiness through more compelling
+and comprehensive user experiences.
+While this benefits the application
+provider, it means more volume and
+complexity for the network operator. It
+will affect how operators manage
+capacity, and the ease with which they
+can see what’s happening for the sake of
+
+19
+
+network optimization, revenue assurance,
+regulatory compliance, troubleshooting,
+customer care, and monetization.
+To ensure optimal performance even amid
+the groundswell of content and hence
+data generated by different applications,
+there’s going to be a greater need to see
+the composition of the traffic and to more
+intelligently prioritize latency-sensitive
+content within apps, like transmitting VoIP
+traffic before content or chat in a video
+conferencing app. Or, choosing a network
+connection with lower ping and lower
+bandwidth for more urgent data. The ability to recognize a live streaming event that
+can tolerate delay of 20 to 120 seconds
+without mitigating the user experience.
+With a streaming a video, users would
+need a minimum of 4 Mbps to 7 Mbps for
+standard quality, but for 4K experiences
+as much as 25 Mbps.
+The ability to rapidly assess and manage
+traffic will become all the more important
+when performance ties directly to safety
+or even life and death. For example, in the
+IoT, 5 to 10 millisecond speeds will be
+needed for sensors, actuators and
+machine learning systems in autonomous
+car and smart machine applications.
+Once autonomous, IoT, 5G and 5G slicing
+are more the norm than exception,
+operators will have to find ways to improve
+the experience for the most people across
+the most applications and platforms.
+They’ll have to classify different categories
+of applications and see what within each
+application is mission-critical and in what
+way. Is it latency, throughput, or bandwidth
+that matters, and which is the optimal
+“order” of the traffic to preserve the
+quality of experience for the performance-sensitive and less performance-sensitive traffic across the most
+users, devices, and access types?
+
+What’s in an App?
+• Video (streaming, live, download, P2P)
+• Audio
+• Voice
+• Chat (video and/or voice chat)
+• Messaging
+• Location services (maps, GPS, navigation etc.)
+• Rich messaging (message + multimedia content,
+such as pictures, audio, videos, contacts, and other
+rich forms of media)
+• Purchases and Payments (can include crypto,
+in app/microtransactions, browser based, mobile,
+contactless)
+• Encryption (symmetric, asymmetric)
+• Privacy services (Apple Private Relay)
+• Advertisements
+
+This higher degree of application and
+network intelligence will be fueled by
+sophisticated analysis and visibility into
+the what, when, where, how, and why of
+what’s affecting networks. That will drive
+service providers’ use cases to analyze,
+optimize, and monetize what’s happening
+over their networks.
+
+20
+As we showed in section 2 of this report, the “Big 6” application giants exerting
+more volumetric pressure on networks than everyone else, combined (this year at
+47.98% of total internet traffic). Alphabet (Google), Meta (Facebook), Netflix,
+Amazon, Apple, and Microsoft are expecting to redefine user experiences, and to
+do it without any input from or payment to those who own the networks on top of
+which those user experiences will be fulfilled.
+
+TELECOM IS REACHING
+AN INFLECTION POINT
+Their contribution is just part of what’s
+making the Internet grow so rapidly.
+According to statistics from Cisco Systems,
+global average Internet traffic will have
+increased 3.2-fold from 2018 to 2021 (with a
+compound annual growth rate of 26%).
+Various industry stats estimate that by the
+end of 2023, between 63% and 66% of the
+global population will be using the Internet.
+As revealed during the two past years of
+COVID, digitization was accelerated and the
+digital divide widened by the pandemic. It
+became very clear that people, businesses,
+institutions, and government can rapidly
+increase their digital comfort levels,
+engagement, and acumen once the
+technologies are there to use. As 5G, IoT,
+Metaverse, and AI come into their own,
+shared customers of telecom and big tech
+will have increasingly high expectations
+about how applications and services should
+perform, and network operators will be
+expected to do what’s necessary to fuel the
+optimal application experience.
+THIS IS THE INFLECTION POINT.
+With innovation, everyone will inevitably
+want more…of everything. And commensurate with the growing demand for bandwidth, throughput, and latency will be a
+flood of Internet traffic across networks.
+Today, operators throw as much CAPEX as
+they can at their networks, and squeeze out
+more efficiency to the detriment of their own
+
+bottomline and sustainability. They operate
+under fairly slim net profit margins
+(approximately 12 to 13% in 2022), with
+extremely high expenses mitigating their
+gross profits.
+In 2020, CAPEX was $79.4 billion for U.S.
+operators, bringing the cumulative total to
+$1.9 trillion in communications CAPEX
+since the Telecommunications Act was
+passed in 1996.
+In 2021, telcos in Europe spent 52.5 billion
+euros ($59.4 billion) in 2021 for investments in
+networks, 5G trials, licenses, planning, and
+deployment. It was recently predicted by
+Omdia that monthly ARPU combined across
+both mobile and fixed broadband will fall by
+4.2% from €7.48 in 2022 to €7.16 in 2027.
+Even with aggressive fiber rollouts, telcos
+can’t expect any big changes to their profit
+margins under current rules. They either
+have to continue building out capacity in
+perpetuity, or try to push back with proof
+points they deliver to regulators and
+policymakers that help them secure their
+own sustainability and place in world
+markets going forward.
+There is still time to balance currently
+unchecked actions of those riding on top of
+networks by developing profit-sharing and
+ROI models that help operators reinvest in
+their networks.
+
+21
+
+Regulators and policymakers in the United
+States, Europe, and Asia (Singapore, South
+Korea, Japan, India) are reevaluating current
+net-neutrality regulations in the context of
+what happened with COVID. The digital
+need, and digital divide, revealed how
+expected and unexpected catastrophes
+(pandemics, weather calamities, wars) – as
+well as day-to-day usage and special events
+(sports, music, entertainment) –require
+enormous resilience and adaptability.
+
+O
+
+The World Economic Forum predicts
+democratization of computing with
+high-speed Internet worldwide can unleash
+trillions-of-dollars in economic gains and
+tens-of-millions of jobs. Networks will be
+the lifeblood of those gains, but only with
+massive broadband and wireless investment. Those building the infrastructure have
+to get a return on investment to make
+continuous innovation possible, and to
+ensure adaptability, performance, and
+resilience going forward.
+In 2021, the leaders of 12 telecom service
+providers put out a joint statement about the
+need for big tech to help fund network costs.
+Stating that the current situation is not
+sustainable, Vodafone CEO Nick Read joined
+CEO Timotheus Höttges of Deutsche
+Telekom (DT), former chairman and CEO of
+Orange Stéphane Richard, Chairman and
+CEO of Telefónica José María Álvarez-Pallete and eight others.
+In 2022, AT&T and Verizon put out their own
+statement, urging the FCC to use money
+from the “broader Internet economy” to prop
+up the flailing Universal Service Fund.
+Currently, the European Commission and the
+Body of European Regulators for Electronic
+Communications (BEREC) are reviewing how
+the Netflix, Meta, Alphabet, Microsoft,
+Apple, and Amazon use telecom operators’
+bandwidth, and a consultation is open with
+OfCom about current usage and future usage
+with metaverse and other innovations.
+
+In the United States, there is some
+investment from the federal government
+through the Inflation Reduction Act
+(P.L.117-18) and the Infrastructure Investment and Jobs Act (P.L.117-58), which
+include billions-of-dollars for broadband
+investment and tax breaks to push
+communications innovations.
+In automotive, manufacturing, and
+healthcare, there will be amalgamations of
+video, robotics, AI, sensors, AR/VR, and
+more. More performance-dependent
+applications will exert even more pressure
+on operators’ networks in terms of latency,
+responsiveness, and speed.
+The time has come for network operators and
+service providers in telecom to be unshackled
+from outdated rules and regulations so that
+networks can keep pace with the trajectory of
+innovation that is coming.
+As that happens, it will be imperative that
+operators up their game with data quality
+and data accuracy, and more sophisticated
+machine learning, heuristics, and application
+content classification. As we covered in
+section four in “Rise of the Super App,”
+applications will be magnitudes more
+demanding and complex, and a greater
+degree of application and network
+intelligence will be needed to ensure the
+best application quality of experience for the
+most customers of fixed and mobile
+networks.
+
+22
+
+Mobile is the Way to Go
+Smartphone usage is reshaping
+app usage and internet traffic
+around the world.
+In 2028, all growth in mobile data traffic
+will come from 5G, according to
+Ericsson, which expects total mobile
+network traffic to reach approximately
+115 EB per month by the end of 2022,
+and to 453 EB per month by the end of
+2028 (that’s including fixed wireless
+access, FWA).
+
+YouTube is the main driver of video traffic
+over mobile, with 16.24% of total volume,
+and 17.17% of downstream. If we were to
+combine Facebook and Facebook Video
+(which we separate in our rankings),
+Facebook would be the #1 culprit for total
+and downstream volume over mobile. As
+you see below, Facebook is the biggest
+“brand” when it comes to traffic, with
+Google 2nd because of its YouTube traffic.
+Application Group
+
+Total
+Volume
+
+We see that time spent on mobile apps has
+grown from about three hours pre-pandemic
+to a global average of about 5 hours per day,
+currently. People used their mobiles for
+things they had not previously used them for:
+viewing longer videos, video conferencing,
+file sharing, remote learning, delivery apps
+(groceries, goods, etc.), gaming, and more.
+
+1
+
+Facebook
+
+27.82%
+
+2
+
+Google
+
+19.09%
+
+3
+
+TikTok
+
+13.76%
+
+4
+
+Netflix
+
+2.41%
+
+5
+
+Microsoft
+
+1.96%
+
+6
+
+Apple
+
+1.51%
+
+7
+
+Amazon
+
+0.38%
+
+In 1H 2022, with people on the go again,
+some COVID habits linger on, with
+video-watching and uploading content
+growing as people leave their homes and do
+more on the move. Video traffic now
+accounts for a whopping 67.60% of volume.
+
+TikTok moves to 3rd in both the brands
+ranking of traffic and ranking of volume by
+app. It also makes a big move in upstream
+traffic from 9th place last year to 2nd this
+year, which we cover later in this section.
+Further down in the ranking, we see Netflix
+
+TOTAL
+
+66.93%
+
+creeping into the top-10 for both total traffic
+(9th place), and downstream traffic (8th
+place). That is a change from last year, when
+Netflix traffic did not show up in the top 15
+apps for mobile traffic. This means more
+people are viewing Netflix content on
+mobile, as opposed to just watching and
+binging at home on bigger screens.
+We also see that social networking ranks
+higher for traffic volume over mobile, with
+12.16%, as compared to the global traffic
+ranking, where it holds fourth place at
+5.26%. A large part of that volume is
+attributable to Facebook Video, which has
+made a rapid rise from 8th place last year to
+2nd, with 14.37% of total traffic. This
+popularity on mobile indicates people are
+using Facebook Video for posting and
+viewing videos and one-to-one video chats
+on their mobiles. To further drive interest in
+the platform, Meta announced in Q1 2022
+that creators could receive a 20% revenue
+share (a share of in-stream ad revenue) for
+eligible videos that use licensed music. This
+is part of a broader initiative to help
+Facebook users monetize short-form and
+longer videos, expanding eligibility to a
+
+Global Mobile Application Category Volume Totals
+TOTAL MOBILE VOLUME
+
+DOWNSTREAM VOLUME
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+1
+
+Video
+
+67.60%
+
+1
+
+Video
+
+70.35%
+
+2
+
+Social Networking
+
+12.16%
+
+2
+
+Social Networking
+
+3
+
+Messaging
+
+5.89%
+
+3
+
+4
+
+Web Browsing
+
+4.51%
+
+4
+
+UPSTREAM VOLUME
+Category
+
+Total
+Volume
+
+1
+
+Video
+
+37.11%
+
+12.27%
+
+2
+
+Messaging
+
+18.23%
+
+Messaging
+
+4.78%
+
+3
+
+Web Browsing
+
+11.95%
+
+Web Browsing
+
+3.83%
+
+4
+
+Social Networking
+
+10.96%
+
+5
+
+Marketplace
+
+2.77%
+
+5
+
+Marketplace
+
+2.86%
+
+5
+
+Cloud
+
+9.81%
+
+6
+
+Gaming
+
+2.41%
+
+6
+
+Gaming
+
+2.43%
+
+6
+
+File Sharing
+
+4.27%
+
+7
+
+File Sharing
+
+1.97%
+
+7
+
+File Sharing
+
+1.77%
+
+7
+
+VPN
+
+3.65%
+
+8
+
+Cloud
+
+1.79%
+
+8
+
+Cloud
+
+1.06%
+
+8
+
+Gaming
+
+2.11%
+
+9
+
+VPN
+
+0.79%
+
+9
+
+VPN
+
+0.53%
+
+9
+
+Marketplace
+
+1.82%
+
+10 Audio
+
+0.11%
+
+10 Audio
+
+0.12%
+
+10 Audio
+
+0.10%
+
+23
+
+greater number of content creators, and
+allowing creators to earn money from
+viewer contributions.
+Another Meta property, Instagram, appears
+in 6th place for total volume and downstream volume, and 7th place for upstream.
+With 1.21 billion active users, Instagram has
+become more popular among celebrities and
+brands that have celebrities and people
+promoting their products. During the World
+Cup, Instagram got global attention when
+Lionel Messi’s photo montage of his
+experience became the most-liked ever, with
+57 million likes (see FIFA World Cup
+spotlight on Page 32).
+We also want to point out that short-form
+video is represented in the top-10 for the
+video category, with third-place TikTok
+doubling its mobile traffic since last year,
+now with 14% of the total volume and
+about the same for downstream. Though
+TikTok traffic decreased as a percentage of
+total internet volume, it continues to drive
+significant mobile traffic. This makes sense,
+since younger people are its base, and they
+tend to rely on mobile more for viewing and
+
+uploading content.
+Also worth mentioning is another short-form
+specialist, a newcomer in terms of our traffic
+ranking: Kwai, a Chinese-originated and San
+Paolo-based short-form video platform that
+is becoming very popular in Latin America.
+Appealing to a younger base of 379 million
+active users, the platform is trying to reach a
+potential market of 600 million people by
+taking what it calls a more “democratic” and
+“community building” approach in the way it
+ranks followers.
+myCanal is yet another new name in our
+ranking, whose “anytime, anywhere”
+feature of CANAL+ pay TV service allows
+people to watch movies and series on their
+mobiles. (Note: in the 2023 Global Internet
+Phenomena Report, rankings will parse out
+TV, streaming and download video in a more
+granular way to further distinguish and
+categorize “video” traffic.)
+Before examining upstream and downstream trends, we want to touch on the
+messaging category, which includes apps
+like WeChat, WhatsApp, Wattpad, Slack,
+
+Google Chat, Telegram, Discord, as well as
+generic ones like WebRTC and RTP. As these
+apps incorporate more audio and video
+capabilities, their volume contribution will
+increase. Right now, messaging is in 3rd
+place for mobile traffic (a contrast to its 8th
+place ranking in global networks, which
+include fixed, mobile, satellite, cable, etc).
+Upstream and Downstream
+When looking at upstream trends, we see
+that TikTok has gone from 9th place last year
+to 2nd place this year, with little more than a
+percentage point separating it from
+Facebook traffic. Downstream, TikTok traffic
+has almost doubled from last year in the
+same time period, with 14.30% of the traffic
+– not far behind the leaders of YouTube and
+Facebook Video at 17.17% and 15.44%,
+respectively. Short-form video like TikTok
+could be regarded as the new guard in terms
+of “heavy usage” that can impact operators’
+expansions, much like peer-to-peer (P2P) did
+in the early 2000s.
+Here we also see QUIC traffic holding a
+prominent position, with Google, Meta,
+Facebook, Netflix, Snapchat, Apple, and
+
+Global Mobile Application Volume Totals
+TOTAL MOBILE VOLUME
+
+DOWNSTREAM VOLUME
+
+Application
+
+Total
+Volume
+
+Application
+
+Total
+Volume
+
+1
+
+YouTube
+
+16.24%
+
+1
+
+YouTube
+
+17.17%
+
+2
+
+Facebook Video
+
+14.37%
+
+2
+
+Facebook Video
+
+3
+
+TikTok
+
+13.76%
+
+3
+
+4
+
+Generic QUIC
+
+9.49%
+
+4
+
+UPSTREAM VOLUME
+Application
+
+Total
+Volume
+
+1
+
+Facebook
+
+9.15%
+
+15.44%
+
+2
+
+TikTok
+
+7.68%
+
+TikTok
+
+14.30%
+
+3
+
+Generic Messaging
+
+6.83%
+
+Generic QUIC
+
+9.89%
+
+4
+
+myCanal
+
+6.04%
+
+5
+
+Facebook
+
+5.94%
+
+5
+
+Facebook
+
+5.65%
+
+5
+
+Google
+
+6.00%
+
+6
+
+Instagram
+
+4.82%
+
+6
+
+Instagram
+
+4.80%
+
+6
+
+YouTube
+
+5.86%
+
+7
+
+HTTP Media Stream
+
+4.09%
+
+7
+
+HTTP Media Stream
+
+4.35%
+
+7
+
+Instagram
+
+5.12%
+
+8
+
+WhatsApp
+
+2.68%
+
+8
+
+Netflix
+
+2.58%
+
+8
+
+Generic QUIC
+
+5.07%
+
+9
+
+Netflix
+
+2.41%
+
+9
+
+WhatsApp
+
+2.48%
+
+9
+
+WhatsApp
+
+4.84%
+
+10 Snapchat
+
+1.60%
+
+10 Snapchat
+
+1.62%
+
+10 Amazon AWS
+
+3.25%
+
+24
+
+Mobile is the Way to Go (Cont’d)
+other big platforms increasingly employing
+QUIC to improve QoE metrics. As they do so,
+app traffic increases, obfuscating visibility
+for less-sophisticated analytics systems,
+which then classify it as “unknown.” This
+makes it more difficult for network planning
+and operations to see what’s happening in
+downstream and upstream traffic.
+Devices Matter
+When talking about mobile traffic and the
+apps driving that traffic, it’s important to
+understand the devices over which people
+are consuming or creating video, or engaging
+in conversations either with voice or
+messaging, chat, or text. Approximately 70%
+of the global population will have mobile
+connectivity by 2023, with 5G devices and
+connections becoming possible for over 10%
+of global mobile devices and connections by
+end of 2023, according to Cisco.
+Of those devices, Android is the predominant OS worldwide, with 3 billion active
+Android devices, 75% market share, and
+85% market share in Brazil, India, Indonesia,
+Turkey and Vietnam.
+
+though global smartphone shipments fell
+11% in Q1 2022 and 9% in Q2. Apple also
+achieved a record revenue of $124 billion for
+Q1 and $97.3 billion for Q2 (9% YoY growth),
+despite supply chain issues and production
+woes during COVID recovery.
+
+65%
+
+60%
+
+55%
+
+50%
+
+Apple also boasted an all-time high in terms
+of installed base, which hit 2 billion devices
+in Q3. Of those 2 billion devices, approximately 1.2 billion are iPhones. With
+saturation in its mainstay markets like Japan
+and the United States, Apple did attract new
+users in Europe, Middle East and Africa –
+even though there was market contraction
+in all of those regions the past year.
+
+45%
+
+40%
+
+35%
+
+30%
+
+25%
+
+Some speculate Apple’s focus on making its
+iPhones from series 12 on “5G compatible”
+might drive further growth, with the iPhone
+acting as a driver to other Apple devices
+(i.e., Airpods, Mac, iPad, Wearables, Home
+and Accessories, and Services). Apple may
+be approaching what some feel is a
+“supercycle,” as supply chain issues that
+affected iPhone 14 Pro, Pro Max, and Apple
+Watch Ultra shipments become less of an
+issue going into 2023.
+
+20%
+
+15%
+
+10%
+
+5%
+
+0%
+
+Other
+
+But interestingly, we see Apple is making up
+some ground. It was the only smartphone
+company that saw growth in H1 2022, even
+
+Global Top 10 Mobile Applications by Category
+Video
+
+Games
+
+Social
+
+Messaging
+
+1
+
+YouTube
+
+Playstation Downloads
+
+Facebook
+
+WhatsApp
+
+2
+
+Facebook Video
+
+Steam
+
+Instagram
+
+Generic Messaging
+
+3
+
+TikTok
+
+PUBG
+
+Snapchat
+
+Telegram
+
+4
+
+Generic QUIC
+
+ROBLOX
+
+VK
+
+Facebook
+
+5
+
+HTTP Media Stream
+
+Garena Free Fire
+
+Twitch
+
+Discord Voice
+
+6
+
+Netflix
+
+Epic Games Launcher
+
+Twitter Broadcast
+
+Wattpad
+
+7
+
+Kwai Video
+
+Media Fire
+
+Pinterest
+
+Agora.io
+
+8
+
+myCanal
+
+Steam Client
+
+Twitter
+
+Microsoft Teams
+
+9
+
+XNXX
+
+Generic Gaming
+
+GIPHY
+
+Skype
+
+MEGA
+
+Reddit
+
+Google Generic Call
+
+10 Disney+
+
+25
+
+Spotlight: QUIC Is Here to Stay
+Facebook
+
+30% QUIC
+
+YouTube
+
+QUIC
+Traffic Analysis
+
+Other Apps
+3-6% other QUIC traffic
+
+QUIC (Quick UDP Internet Connections)
+traffic is almost as high as TCP in today’s
+networks (though major high bandwidth
+applications still continue to migrate to
+TLS 1.3). As you’ll see in our “total
+volume” chart on Page 13, where we
+talk about the Big-brands that dominate
+internet traffic, QUIC is a prominent
+driver of traffic volume: it holds the #3
+position in total volume, #6 position in
+upstream traffic, and #3 in downstream.
+Indeed, privacy and security are extremely
+salient to both application developers and
+users, and this is driving more investments
+in encryption technologies like SSL v3, TLS
+for TCP, and QUIC for UDP traffic.
+YouTube is the biggest user of QUIC,
+understandably, as Google did create QUIC
+for better performance (i.e., less packet loss,
+faster Web browsing, reduced page loading
+times), and YouTube is its biggest driver of
+internet traffic volume. QUIC is used in more
+than half of all connections from its Chrome
+web browser to Google servers.
+Once IETF QUIC came into being, Facebook
+used it to achieve better QoE for video
+content-based applications and as much as
+75% of its traffic uses QUIC.
+Apps from Apple, TikTok, HBO Max, Amazon
+Prime, and others are now following suite for
+more stable, fast, and encrypted connections.
+Microsoft Edge (a derivative of the opensource Chromium browser) and Firefox
+support it. Safari implements the protocol,
+however it is not enabled by default.
+
+Additionally, VPNs and communication and
+conferencing applications are also making
+more use of QUIC.
+In examining data from several networks,
+below we show a breakdown of what we see
+in terms of QUIC volumes for Google, Meta,
+FaceTime, TikTok, and HBO Max.
+Does video QoE have to mean a
+visibility tradeoff?
+The answer is “no.” The challenge for
+operators is that QUIC and obfuscate what’s
+
+happening on networks. That’s true overall
+with the rise in encryption(i.e., Apple iCloud
+Private Relay), QUIC, and HTTP/3 traffic, all
+of which leads to a flood of “unknown” or
+“other” traffic, especially on networks that
+rely on more basic techniques to identify
+app traffic.
+Using increasingly sophisticated app
+classification techniques, it is possible to
+classify “unknown” traffic to gauge what’s
+happening on networks and measure the
+application experiences of subscribers.
+
+Applications using IETF QUIC
+46.05%
+
+YouTube
+Instagram Video
+
+17.00%
+
+Facebook
+
+16.19%
+
+Facebook Video 5.05%
+Google Cloud Storage
+
+4.23%
+
+Google Play
+
+2.99%
+
+iCloud Private Relay
+
+2.46%
+
+Google
+
+1.76%
+
+FaceTime
+
+1.48%
+
+TikTok
+
+1.13%
+
+YouTube Web
+
+0.96%
+
+HBO Max
+
+0.71%
+
+26
+
+Regional Application Popularity Trends
+Netflix is King in Americas and
+APAC, but YouTube retains the
+crown in EMEA
+While video dominates traffic in all
+regions, don’t discount the impact
+gaming, marketplace, social networking, and cloud storage services are
+having on total traffic and upstream/
+downstream symmetry
+The volume exerted by video over fixed and
+mobile networks is quite obvious in our
+regional charts, as video is by far the top
+traffic category in all regions, with the
+Americas seeing the largest composition of
+total video traffic at 73.74%, APAC at
+66.11%, and EMEA at 62.46%. As we saw
+in our rankings on page 13, Netflix
+dethroned YouTube as king in terms of total
+volume, and that trend holds true in America
+and APAC, where Netflix comprises 22%
+and 20% of traffic, respectively. It also is
+responsible for the most downstream traffic
+at 23% in Americas, and 22% in APAC.
+In EMEA, however, it’s still YouTube that
+reigns, with 18% of the total, 19%
+downstream, 11% upstream. Netflix is in
+5th place for total and downstream traffic,
+with Facebook Video and Facebook social
+networking apps generating the most
+internet traffic.
+Below is a closer look at a few key trends
+that will drive up internet traffic:
+Netflix is streaming king in Americas
+and APAC
+We believe Netflix traffic will continue to
+grow in volume as it expands beyond its
+previously American-centric view into other
+regions of the world. Netflix has indicated it
+has runway to spend as much as $50 billion
+on content to appeal to different geographies and cultures. Some recent examples
+include dozens of anime titles, Korean
+
+content that is increasingly appealing to U.S.
+and U.K. audiences, local-language content,
+and original films, series, and games tailored
+to different languages and countries.
+As it expands, Netflix recognizes it has to
+extend its reach to mobile-first developing
+markets in Asia & Oceania, EMEA, Latin
+America & the Caribbean, where fixed-network penetration averages about 60%, and
+mobile about 80%. It is starting off by
+offering some free or low-cost content over
+Android and iOS apps, even offering a
+mobile-only plan as an experiment in India
+at 250 rupees/$3.63/month.
+The impact of its heavy content acquisition
+and production will be more traffic over fixed
+and mobile networks around the world.
+Whether it will be Netflix in the number-one
+spot next year remains to be seen, as Disney
+surpassed Netflix in terms of subscribers
+with 221.1 million subscribers in Q3,
+surpassing Netflix’s 220.7 million. But Disney
+is still far behind in revenue, and in traffic
+volume. That could change. Time will tell.
+More Gaming… on the Go!
+Americas and APAC are similar in that the
+#2 category is gaming for both total and
+downstream traffic, whereas EMEA sees
+social networking in the 2nd spot for total
+and downstream (with messaging 2nd for
+upstream). APAC, however, represents the
+world’s largest gaming market. In China, for
+instance, there are between 685 million and
+720 million gamers.
+India also is a huge gaming market, with
+507 million gamers and a market valued at
+$2.6 billion. Because of the large youth
+population with disposable income, that
+number is expected to quadruple by 2027.
+Other regions that have seen gaming take
+off during and after COVID are Japan the
+Republic of Korea, Malaysia, Thailand,
+
+Vietnam, Singapore and the Philippines.
+It seems that in most regions, mobile games
+are growing at a faster rate than PC online
+and console games, namely because of the
+value mobility/portability brings. With
+MMORPGs offering online versions, and
+mobile device RAM improving all the time,
+people are increasingly willing to forego
+graphical advances and 4K resolution while
+on the move. While PC and console gaming
+aren’t going anywhere, we do believe that
+online gaming will continue to climb, and
+hence, traffic from mobile devices will
+steadily increase.
+Worldwide, mobile gaming is expected to
+advance at a CAGR of 12.3% and reach USD
+338 billion by 2030. That growth will be
+driven not only in APAC (particularly
+Southeast Asia), but also Latin and South
+Americas, where smartphone penetration is
+high across Brazil, Chile, Argentina, and
+Mexico (geographically Central America). In
+these countries, eSports are proving to be a
+big driver of online gaming, thanks to the
+popularity of fútbol, the South American
+Games (XII Juegos Suramericanos Asunción
+2022), and massively multiplayer online role
+playing games (MMORPGs). Approximately
+274 million people play mobile games in
+Latin America, so it represents a huge
+untapped market thanks to the sheer size of
+the population and the mobile-first mindset
+of people there.
+In Europe, about there are 330 million
+gamers, with 201 million of them on mobile
+– a figure set to rise to 218 million by 2023,
+with the United Kingdom and Germany
+representing two of the biggest markets.
+In North America, there are approximately
+304 million mobile gamers, with the average
+gameplay time at 8 hours per week. Overall
+average weekly play time has increased
+27% despite out-of-home activities
+
+27
+
+Regional Category Traffic Share Total
+AMERICAS CATEGORY SHARE
+
+APAC CATEGORY SHARE
+
+EMEA CATEGORY SHARE
+
+TOTAL TRAFFIC
+
+TOTAL TRAFFIC
+
+TOTAL TRAFFIC
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+1
+
+Video
+
+73.74%
+
+2
+
+Gaming
+
+3
+4
+
+Category
+
+Total
+Volume
+
+1
+
+Video
+
+66.11%
+
+1
+
+Video
+
+62.46%
+
+5.77%
+
+2
+
+Gaming
+
+7.33%
+
+2
+
+Social Networking
+
+14.22%
+
+Marketplace
+
+4.19%
+
+3
+
+Marketplace
+
+7.19%
+
+3
+
+Messaging
+
+4.94%
+
+Social Networking
+
+3.77%
+
+4
+
+Cloud
+
+5.11%
+
+4
+
+Web Browsing
+
+4.38%
+
+5
+
+Cloud
+
+3.52%
+
+5
+
+File Sharing
+
+3.37%
+
+5
+
+Marketplace
+
+4.20%
+
+6
+
+Web Browsing
+
+3.34%
+
+6
+
+Social Networking
+
+3.30%
+
+6
+
+Gaming
+
+3.01%
+
+7
+
+Messaging
+
+2.48%
+
+7
+
+Web Browsing
+
+2.90%
+
+7
+
+File Sharing
+
+2.59%
+
+8
+
+File Sharing
+
+1.43%
+
+8
+
+Messaging
+
+2.25%
+
+8
+
+Cloud
+
+2.58%
+
+9
+
+Audio
+
+0.92%
+
+9
+
+VPN
+
+1.62%
+
+9
+
+VPN
+
+1.33%
+
+10 VPN
+
+0.83%
+
+10 Audio
+
+0.80%
+
+10 Audio
+
+0.30%
+
+Regional Application Traffic Share Total
+AMERICAS APP SHARE
+
+APAC APP SHARE
+
+EMEA APP SHARE
+
+TOTAL TRAFFIC
+
+TOTAL TRAFFIC
+
+TOTAL TRAFFIC
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+1
+
+Netflix
+
+22.19%
+
+1
+
+Netflix
+
+20.10%
+
+1
+
+YouTube
+
+18.30%
+
+2
+
+YouTube
+
+15.69%
+
+2
+
+YouTube
+
+10.77%
+
+2
+
+Facebook Video
+
+11.68%
+
+3
+
+Generic QUIC
+
+13.56%
+
+3
+
+Generic QUIC
+
+10.50%
+
+3
+
+Facebook
+
+10.58%
+
+4
+
+Disney+
+
+3.37%
+
+4
+
+Disney+
+
+6.22%
+
+4
+
+Generic QUIC
+
+9.09%
+
+5
+
+Playstation Downloads
+
+3.03%
+
+5
+
+Akamai CDN
+
+4.25%
+
+5
+
+Netflix
+
+5.50%
+
+6
+
+Amazon Prime
+
+2.79%
+
+6
+
+Playstation Downloads
+
+3.66%
+
+6
+
+Instagram
+
+5.09%
+
+7
+
+HTTP Media Stream
+
+2.62%
+
+7
+
+Xbox Live
+
+3.59%
+
+7
+
+HTTP Media Stream
+
+3.79%
+
+8
+
+Xbox Live
+
+1.74%
+
+8
+
+Amazon Prime
+
+2.25%
+
+8
+
+WhatsApp
+
+2.80%
+
+9
+
+Hulu
+
+1.57%
+
+9
+
+iTunes Store
+
+1.81%
+
+9
+
+Android Market
+
+10 HbbTV
+
+1.51%
+
+10 HTTP Media Stream
+
+1.69%
+
+10 Google
+
+1.58%
+1.50%
+
+28
+
+Regional Application Popularity Trends (cont’d)
+resuming after the first two years of COVID,
+and players are contributing 16% more
+revenue than they did in 2020. In the United
+States, smartphone penetration is expected
+to reach 86% by 2025 (328 million mobile
+phones), so that fact combined with 5G will
+further drive interest.
+Marketplaces are Booming
+Global online sales reached 4.29 trillion in
+2020, and in 2021, digital, third-party
+marketplaces grew 81% with some
+predicting this market will reach 6.5 Trillion
+dollars in sales by 2023. In our data, we see
+marketplace apps are generating more
+traffic, as people find them a safe, convenient way to shop for goods and services.
+Some popular marketplaces people access
+over iOS and Android App Stores include:
+Amazon, eBay, Rakuten, AliExpress, Etsy,
+Alibaba, eBay, Taobao, Tmall, Groupon, Uber
+Eats, DoorDash – to name just a few. This
+category is flourishing and even luxury
+brands are taking note, as with italist,
+Farfetch, Luxify, and James Edition.
+Also popular are stock market apps from
+Fidelity, TD Ameritrade, Robinhood, and SoFi
+appeal to neophytes and pros alike.
+As people get more comfortable, we also
+see more niche marketplaces emerging. For
+example, Docplanner connects patients to
+medical professionals; Upwork connects
+freelancers and specialists with employers;
+Startupmatcher is a Nordic marketplace for
+connecting developers to start-ups.
+Cloud services driving increase in
+upstream volume
+Upstream cloud traffic has increased 20% in
+Americas, 23% in APAC, and 11% in EMEA,
+perhaps because people are doing more
+posting of files and media to cloud storage
+services (Dropbox, Google Drive, OneDrive,
+Media Fire, Microsoft Azure, Oracle Cloud,
+Amazon AWS, Tencent Cloud, etc), while
+
+also creating more content for upload to
+social media, blogging, and video sites.
+Traditionally, upstream capacity wasn’t a big
+concern, but now with more performancesensitive videoconferencing requiring two
+-way communications, and with more video
+and content being uploaded to the cloud,
+there may be more network asymmetry.
+Though upstream traffic was markedly
+higher during 2020 and 2021, with increases
+as high as 56% to 96%, even more subtle
+increases of 5% to 10% could impact
+symmetrical downstream/upstream speeds.
+To avoid network asymmetry, operators may
+have to change how they view upstream
+capacity and choose to add more fiber or
+virtualization and automation technologies.
+Social networking traffic still a top
+category in EMEA, despite drop
+elsewhere
+In this category, Europe would be where
+Netflix traffic would be highest, especially in
+four key markets Netflix targets: Belgium,
+Romania, Spain, and Sweden, but it’s diluted
+by traffic trends from other regions. For
+example, the Middle East has been more
+complex for Netflix (as well as Disney and
+other streamers) in terms of creating and
+offering content appropriate to the norms
+and regulations of various Middle Eastern
+countries. And in Africa, streaming
+platforms are dealing with the fact South
+Africa, Nigeria, Kenya and other developing
+nations are still in the throes of building out
+stable internet.
+For these reasons, YouTube and Facebook
+Video remain prominent in the traffic ranking.
+You’ll also see QUIC is high in the ranking for
+total and downstream traffic, as QUIC goes
+hand-in-hand with YouTube and Facebook
+traffic because both Google and Meta are big
+users of QUIC. For more on that, check out
+“QUIC is Here to Stay” page 35.
+
+Also prominent in EMEA is traffic from
+Meta’s Instagram for photo and video
+sharing and WhatsApp for messaging.
+While these platforms have seen drops
+among younger people in more developed
+regions like North America and Europe (as
+people flock to Netflix and TikTok, for
+example), they still remain popular in areas
+where reliable broadband and internet is in
+early stages.
+
+29
+
+Regional Category Traffic Share Downstream
+AMERICAS CATEGORY SHARE
+
+APAC CATEGORY SHARE
+
+EMEA CATEGORY SHARE
+
+DOWNSTREAM TRAFFIC
+
+DOWNSTREAM TRAFFIC
+
+DOWNSTREAM TRAFFIC
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+1
+
+Video
+
+76.43%
+
+2
+
+Gaming
+
+3
+4
+
+Category
+
+Total
+Volume
+
+1
+
+Video
+
+69.45%
+
+1
+
+Video
+
+65.29%
+
+5.99%
+
+2
+
+Gaming
+
+7.72%
+
+2
+
+Social Networking
+
+14.76%
+
+Marketplace
+
+4.27%
+
+3
+
+Marketplace
+
+7.57%
+
+3
+
+Marketplace
+
+4.04%
+
+Social Networking
+
+3.83%
+
+4
+
+Cloud
+
+3.37%
+
+4
+
+Messaging
+
+4.01%
+
+5
+
+Web Browsing
+
+2.67%
+
+5
+
+Social Networking
+
+3.31%
+
+5
+
+Web Browsing
+
+3.77%
+
+6
+
+Cloud
+
+2.18%
+
+6
+
+Web Browsing
+
+2.48%
+
+6
+
+Gaming
+
+3.14%
+
+7
+
+Messaging
+
+1.93%
+
+7
+
+File Sharing
+
+2.35%
+
+7
+
+File Sharing
+
+2.23%
+
+8
+
+File Sharing
+
+1.19%
+
+8
+
+Messaging
+
+1.59%
+
+8
+
+Cloud
+
+1.57%
+
+9
+
+Audio
+
+0.95%
+
+9
+
+VPN
+
+1.32%
+
+9
+
+VPN
+
+0.89%
+
+10 VPN
+
+0.55%
+
+10 Audio
+
+0.85%
+
+10 Audio
+
+0.31%
+
+Regional Application Traffic Share Downstream
+AMERICAS APP SHARE
+
+APAC APP SHARE
+
+EMEA APP SHARE
+
+DOWNSTREAM TRAFFIC
+
+DOWNSTREAM TRAFFIC
+
+DOWNSTREAM TRAFFIC
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+1
+
+Netflix
+
+23.48%
+
+1
+
+Netflix
+
+21.72%
+
+1
+
+YouTube
+
+19.22%
+
+2
+
+YouTube
+
+16.57%
+
+2
+
+YouTube
+
+11.51%
+
+2
+
+Facebook Video
+
+12.68%
+
+3
+
+Generic QUIC
+
+13.88%
+
+3
+
+Generic QUIC
+
+11.02%
+
+3
+
+Facebook
+
+10.71%
+
+4
+
+Disney+
+
+3.53%
+
+4
+
+Disney+
+
+6.65%
+
+4
+
+Generic QUIC
+
+9.62%
+
+5
+
+Playstation Downloads
+
+3.20%
+
+5
+
+Akamai CDN
+
+4.56%
+
+5
+
+Netflix
+
+5.71%
+
+6
+
+Amazon Prime
+
+2.93%
+
+6
+
+Playstation Downloads
+
+3.87%
+
+6
+
+Instagram
+
+5.32%
+
+7
+
+HTTP Media Stream
+
+2.79%
+
+7
+
+Xbox Live
+
+3.85%
+
+7
+
+HTTP Media Stream
+
+4.16%
+
+8
+
+Xbox Live
+
+1.84%
+
+8
+
+Amazon Prime
+
+2.42%
+
+8
+
+WhatsApp
+
+2.44%
+
+9
+
+Hulu
+
+1.65%
+
+9
+
+iTunes Store
+
+1.93%
+
+9
+
+Generic Web Browsing
+
+10 HbbTV
+
+1.62%
+
+10 Steam
+
+1.59%
+
+10 Android Market
+
+1.43%
+1.30%
+
+30
+
+Regional Application Popularity Trends (cont’d)
+Regional Category Traffic Share Upstream
+AMERICAS CATEGORY SHARE
+
+APAC CATEGORY SHARE
+
+EMEA CATEGORY SHARE
+
+UPSTREAM TRAFFIC
+
+UPSTREAM TRAFFIC
+
+UPSTREAM TRAFFIC
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+1
+
+Video
+
+39.96%
+
+2
+
+Cloud
+
+3
+4
+
+Category
+
+Total
+Volume
+
+1
+
+Video
+
+31.91%
+
+1
+
+Video
+
+39.65%
+
+20.39%
+
+2
+
+Cloud
+
+22.97%
+
+2
+
+Messaging
+
+12.40%
+
+Web Browsing
+
+11.76%
+
+3
+
+File Sharing
+
+13.90%
+
+3
+
+Cloud
+
+10.64%
+
+Messaging
+
+9.39%
+
+4
+
+Messaging
+
+9.09%
+
+4
+
+Social Networking
+
+9.93%
+
+5
+
+File Sharing
+
+4.45%
+
+5
+
+Web Browsing
+
+7.24%
+
+5
+
+Web Browsing
+
+9.30%
+
+6
+
+VPN
+
+4.39%
+
+6
+
+VPN
+
+4.73%
+
+6
+
+Marketplace
+
+5.47%
+
+7
+
+Marketplace
+
+3.19%
+
+7
+
+Gaming
+
+3.35%
+
+7
+
+File Sharing
+
+5.45%
+
+8
+
+Gaming
+
+3.03%
+
+8
+
+Marketplace
+
+3.31%
+
+8
+
+VPN
+
+4.95%
+
+9
+
+Social Networking
+
+2.91%
+
+9
+
+Social Networking
+
+3.16%
+
+9
+
+Gaming
+
+1.96%
+
+0.53%
+
+10 Audio
+
+0.35%
+
+10 Audio
+
+10 Audio
+
+0.26%
+
+Regional Application Traffic Share Upstream
+AMERICAS APP SHARE
+
+APAC APP SHARE
+
+EMEA APP SHARE
+
+UPSTREAM TRAFFIC
+
+UPSTREAM TRAFFIC
+
+UPSTREAM TRAFFIC
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+Category
+
+Total
+Volume
+
+1
+
+Generic QUIC
+
+9.49%
+
+1
+
+iCloud
+
+10.41%
+
+1
+
+YouTube
+
+11.39%
+
+2
+
+Google
+
+8.19%
+
+2
+
+Generic QUIC
+
+5.23%
+
+2
+
+Facebook
+
+9.61%
+
+3
+
+Amazon AWS
+
+6.62%
+
+3
+
+BitTorrent transfer
+
+4.98%
+
+3
+
+WhatsApp
+
+5.59%
+
+4
+
+Netflix
+
+6.17%
+
+4
+
+Generic Messaging
+
+4.04%
+
+4
+
+Google
+
+5.34%
+
+5
+
+FaceTime
+
+5.89%
+
+5
+
+Netflix
+
+3.59%
+
+5
+
+Generic QUIC
+
+5.10%
+
+6
+
+iCloud
+
+5.52%
+
+6
+
+BitTorrent KRPC
+
+3.54%
+
+6
+
+Facebook Video
+
+4.07%
+
+7
+
+YouTube
+
+4.78%
+
+7
+
+Google
+
+3.52%
+
+7
+
+Netflix
+
+3.89%
+
+8
+
+Google Cloud Storage
+
+3.26%
+
+8
+
+Microsoft Teams
+
+3.41%
+
+8
+
+Android Market
+
+3.73%
+
+9
+
+Generic Messaging
+
+3.07%
+
+9
+
+YouTube
+
+3.32%
+
+9
+
+Instagram
+
+2.99%
+
+10 Generic File Sharing
+
+3.04%
+
+10 Generic Messaging
+
+10 WhatsApp
+
+3.42%
+3.09%
+
+31
+
+Americas Top 10 Applications by Category
+Video
+
+Games
+
+Social
+
+Messaging
+
+1
+
+Netflix
+
+Playstation Downloads
+
+Twitch
+
+WhatsApp
+
+2
+
+YouTube
+
+Steam
+
+Facebook
+
+Generic Messaging
+
+3
+
+Generic QUIC
+
+ROBLOX
+
+Instagram
+
+Discord Voice
+
+4
+
+Tik Tok
+
+Epic Games Launcher
+
+Snapchat
+
+Telegram
+
+5
+
+Disney+
+
+Steam Client
+
+Reddit
+
+Wattpad
+
+6
+
+Amazon Prime
+
+Nintendo Online
+
+Pinterest
+
+Facebook
+
+7
+
+HTTP Media Stream
+
+Xbox Live TLS
+
+Twitter
+
+WeChat
+
+8
+
+Hulu
+
+MediaFire
+
+Baidu
+
+WeChat voice
+
+9
+
+HbbTV
+
+League of Legends
+
+QQ
+
+Google Generic Call
+
+MEGA
+
+LinkedIn
+
+Discord
+
+Social
+
+Messaging
+
+10 HBO MAX
+
+APAC Top 10 Applications by Category
+Video
+
+Games
+
+1
+
+Netflix
+
+Playstation Downloads
+
+Twitch
+
+Generic Messaging
+
+2
+
+YouTube
+
+Steam
+
+Facebook
+
+Wattpad
+
+3
+
+Generic QUIC
+
+Epic Games Launcher
+
+Snapchat
+
+WhatsApp
+
+4
+
+Disney+
+
+ROBLOX
+
+Reddit
+
+LINE
+
+5
+
+Akamai CDN
+
+Nintendo Online
+
+Instagram
+
+Discord Voice
+
+6
+
+Tik Tok
+
+Steam Client
+
+Naver
+
+Facebook
+
+7
+
+Amazon Prime
+
+MEGA
+
+Pinterest
+
+Telegram
+
+8
+
+HTTP Media Stream
+
+League of Legends
+
+Twitter
+
+Discord
+
+9
+
+CloudFront CDN
+
+Generic Gaming
+
+Baidu
+
+WeChat
+
+EA Game
+
+QQ
+
+WeChat voice
+
+10 Foxtel Now
+
+EMEA Top 10 Applications by Category
+Video
+
+Games
+
+Social
+
+Messaging
+
+1
+
+YouTube
+
+Playstation Downloads
+
+Facebook
+
+WhatsApp
+
+2
+
+Tik Tok
+
+Steam
+
+Instagram
+
+Facebook
+
+3
+
+Facebook Video
+
+Epic Games Launcher
+
+Snapchat
+
+Telegram
+
+4
+
+Generic QUIC
+
+ROBLOX
+
+Twitch
+
+Generic Messaging
+
+5
+
+Netflix
+
+PUBG
+
+VK
+
+Discord Voice
+
+6
+
+HTTP Media Stream
+
+Garena Free Fire
+
+Pinterest
+
+Wattpad
+
+7
+
+Instagram
+
+Steam Client
+
+Twitter Broadcast
+
+Microsoft Teams
+
+8
+
+XNXX
+
+League of Legends
+
+Twitter
+
+Agora.io
+
+9
+
+Kwai Video
+
+MediaFire
+
+Reddit
+
+Skype
+
+Xbox Live TLS
+
+LinkedIn
+
+Google Generic Call
+
+10 Disney+
+
+The epic final led by Argentina’s Lionel
+Messi and France’s Kylian Mbappé
+was one of the most dramatic and most
+viewed sporting events ever, generating unprecedented internet traffic
+volumes worldwide for an individual
+sporting event. Is it a harbinger of
+what’s to come?
+Sports and sports fandom are the modern-day “tribes” through which people unite
+in a common purpose. Playing, viewing,
+debating, betting – it all feeds a human
+need for excitement and solidarity. Combine
+the passion for sports with the passion for
+digital access anytime, anywhere, and
+you’ve got a new frontier. With younger,
+
+more digitally native audiences craving new
+experiences and formats for sports, the 2022
+FIFA World Cup in Qatar became a case
+study of how apps and streaming services
+could bring the type of mobility, flexibility,
+and engagement traditional TV could not.
+FIFA President Gianni Infantino had
+predicted the World Cup in Qatar would be
+watched by at least 5 billion people around
+the world. That’s not hard to fathom, given
+the growing popularity of the sport
+worldwide (particularly in huge markets like
+India, for instance) and growing penetration
+of mobile devices and digital platforms
+worldwide. Once completed, FIFA data for
+2022 may shatter previous records set in
+
+Figure 1: North America (NA) Trends
+18,000 GB
+16,000 GB
+14,000 GB
+
+Bandwidth
+
+12,000 GB
+10,000 GB
+8,000 GB
+6,000 GB
+4,000 GB
+2,000 GB
+0 GB
+9 Nov
+TLS 1.3
+
+11 Nov
+
+13 Nov
+15 Nov
+17 Nov
+Day of Stats Time (November 2022)
+
+Peacock
+
+Hulu Live
+
+fuboTV
+
+19 Nov
+
+21 Nov
+
+FOX
+
+Figure 2: Europe (EU) Trends
+
+240 GB
+220 GB
+200 GB
+180 GB
+160 GB
+140 GB
+Bandwidth
+
+32
+
+Spotlight: FIFA World Cup – Is Sport the Next Frontier of Str
+
+120 GB
+100 GB
+80 GB
+60 GB
+40 GB
+20 GB
+0 GB
+4 Nov
+Twitter Broadcast
+
+9 Nov
+14 Nov
+Day of Stats Time (November 2022)
+fuboTV
+
+Fox
+
+Facebook Live
+
+19 Nov
+
+2018, when 3.575 billion people watched
+the World Cup, and 1.12 billion tuned in for
+France’s final with Croatia.
+To get an idea of what the impact of
+increased streaming and VoD might have
+been, let’s look at our own data from a few
+networks around the world:
+Overall, in Figures 1 and 2, you see volumes
+more than double after the kickoff on 21
+November. In Figure 3, we show how one
+major operator in EMEA experienced 7x
+normal traffic from end of November to
+beginning of December, when semi-final and
+final matches took place.
+Not only were there significant increases in
+streaming VOD and live streaming during
+matches, but surges of traffic within matches
+as digital engagement was triggered by
+goals, yellow cards, and penalties. In Figure 4,
+a North American Cable Operator sees traffic
+steadily climb in each 10-minute increments
+of the Argentina-France final, reflective of the
+excitement generated by each goal and each
+yellow card as the match grew more
+contentious, and as the urgency of the
+situation was conveyed across digital
+platforms (messaging, social networks, chat).
+We saw, for example, a network on which
+Twitter traffic surged from about 60 GB to
+130 GB once the World Cup starts. These
+upticks in internet traffic volume are not
+surprising when one considers what was
+being widely reported about record-breaking
+viewing on TV, VoD, and streaming platforms
+country by country. In the United States, the
+showdown between Argentina and France
+became the most-streamed and mostwatched match in U.S. history, averaged
+approximately 26 million viewers across Fox
+and Telemundo (including Peacock)
+channels, a 158% increase in streaming
+since the 2018 World Cup.
+
+In Japan, youth-focused streamer Abema
+procured streaming rights for all FIFA World
+Cup games in Japan, it didn’t realize each
+match Japan won would spur more interest
+for the next match, growing from 10 million
+to 30 million active daily viewers by the time
+Japan was playing Croatia at the end of
+November. To keep up, Abema engineers
+reportedly had to temporarily restrict access,
+which caused a flood of Twitter complaints
+from its younger viewers
+
+33
+
+reaming?
+These trends are just some of what’s driving
+Amazon, Apple, Walt Disney Co. (and ESPN
+and streaming app ESPN+), as well as other
+big platforms, to jockey for rights to the
+2030 World Cup. It’ll be interesting to see
+
+Figure 3: EMEA Major Operator Traffic
+
+240 GB
+
+9 December: Big day in the tournament. Brazil
+knocked out on penalties against Croatia while
+Argentina beat Netherlands in a shoot-out later
+
+240 GB
+
+In Spain, France, and the United Kingdom,
+viewership ranged from 14 million to almost
+30 million, with about one-third to one-half
+streaming the content.
+
+220 GB
+200 GB
+
+THE FINAL
+France v
+Argentina
+
+As the tournament progresses,
+traffic levels go up with excitement:
+6-7 times normal levels
+
+180 GB
+160 GB
+Bandwidth
+
+In Mexico, viewership peaked with 20.96
+million viewers, about 67.9% of the viewing
+population, watching the Mexico-Argentina
+match, which also became the largest FIFA
+World Cup Group Stage match in Spanish-language history when televised by
+Telemundo in the United States.
+
+just how much streaming and VOD viewing
+increases by the time the Cup gets to the
+Uruguayan capital of Montevideo, and how
+much more internet traffic volumes will
+grow by then!
+
+140 GB
+120 GB
+100 GB
+
+Semi
+Finals
+
+FIFA Tournament starts.
+BW usage spikes to 300%
+
+80 GB
+60 GB
+
+Normal levels of Twitter traffic
+
+40 GB
+20 GB
+0 GB
+
+2 Nov
+
+Figure 4: North American Operator traffic climb during FIFA World Cup Final
+
+7 Nov
+
+12 Nov
+
+17 Nov
+
+22 Nov
+
+27 Nov
+
+2 Dec
+
+7 Dec
+
+12 Dec
+
+17 Dec
+
+34
+
+CONCLUSION:
+THE ‘SO WHAT?’
+Telecom is Reaching
+an Inflection Point
+
+expected to do what’s necessary to fuel the
+optimal application experience.
+
+As we showed in section 2 of this
+report, the “Big 6” application giants
+exerting more volumetric pressure on
+networks than everyone else, combined
+(this year at 47.98% of total internet
+traffic). Alphabet (Google), Meta
+(Facebook), Netflix, Amazon, Apple, and
+Microsoft are expecting to redefine
+user experiences, and to do it without
+any input from or payment to those who
+own the networks on top of which
+those user experiences will be fulfilled.
+
+This is the inflection point.
+
+Their contribution is just part of what’s
+making the Internet grow so rapidly.
+According to statistics from Cisco Systems,
+global average Internet traffic will have
+increased 3.2-fold from 2018 to 2021 (with a
+compound annual growth rate of 26%).
+Various industry stats estimate that by the
+end of 2023, between 63% and 66% of the
+global population will be using the Internet.
+As revealed during the two past years of
+COVID, digitization was accelerated and the
+digital divide widened by the pandemic. It
+became very clear that people, businesses,
+institutions, and government can rapidly
+increase their digital comfort levels,
+engagement, and acumen once the
+technologies are there to use. As 5G, IoT,
+Metaverse, and AI come into their own,
+shared customers of telecom and big tech
+will have increasingly high expectations
+about how applications and services should
+perform, and network operators will be
+
+With innovation, everyone will inevitably
+want more… of everything. And commensurate with the growing demand for bandwidth, throughput, and latency will be a flood
+of Internet traffic across networks. Today,
+operators throw as much CAPEX as they can
+at their networks, and squeeze out more
+efficiency to the detriment of their own
+bottomline and sustainability. They operate
+under fairly slim net profit margins (approximately 12 to 13% in 2022), with extremely
+high expenses mitigating their gross profits.
+In 2020, CAPEX was $79.4 billion for U.S.
+operators, bringing the cumulative total to
+$1.9 trillion in communications CAPEX
+since the Telecommunications Act was
+passed in 1996.
+In 2021, telcos in Europe spent 52.5 billion
+euros ($59.4 billion) in 2021 for investments in
+networks, 5G trials, licenses, planning, and
+deployment. It was recently predicted by
+Omdia that monthly ARPU combined across
+both mobile and fixed broadband will fall by
+4.2% from €7.48 in 2022 to €7.16 in 2027.
+Even with aggressive fiber rollouts, telcos
+can’t expect any big changes to their profit
+margins under current rules. They either
+have to continue building out capacity in
+perpetuity, or try to push back with proof
+points they deliver to regulators and
+policymakers that help them secure their
+own sustainability and place in world
+
+markets going forward.
+There is still time to balance currently
+unchecked actions of those riding on top of
+networks by developing profit-sharing and
+ROI models that help operators reinvest in
+their networks.
+Regulators and policymakers in the United
+States, Europe, and Asia (Singapore, South
+Korea, Japan, India) are reevaluating current
+net-neutrality regulations in the context of
+what happened with COVID. The digital
+need, and digital divide, revealed how
+expected and unexpected catastrophes
+(pandemics, weather calamities, wars) – as
+well as day-to-day usage and special events
+(sports, music, entertainment) –require
+enormous resilience and adaptability.
+The World Economic Forum predicts
+democratization of computing with
+high-speed Internet worldwide can unleash
+trillions-of-dollars in economic gains and
+tens-of-millions of jobs. Networks will be
+the lifeblood of those gains, but only with
+massive broadband and wireless investment. Those building the infrastructure have
+to get a return on investment to make
+continuous innovation possible, and to
+ensure adaptability, performance, and
+resilience going forward.
+In 2021, the leaders of 13 telecom service
+providers put out a joint statement about the
+need for big tech to help fund network costs.
+Stating that the current situation is not
+sustainable, Vodafone CEO Nick Read joined
+CEO Timotheus Höttges of Deutsche
+Telekom (DT), former chairman and CEO of
+
+35
+
+Orange Stéphane Richard, Chairman and
+CEO of Telefónica José María Álvarez-Pallete and eight others.
+In 2022, AT&T and Verizon put out their own
+statement, urging the FCC to use money
+from the “broader Internet economy” to prop
+up the flailing Universal Service Fund.
+Currently, the European Commission and the
+Body of European Regulators for Electronic
+Communications (BEREC) are reviewing how
+the Netflix, Meta, Alphabet, Microsoft,
+Apple, and Amazon use telecom operators’
+bandwidth, and a consultation is open with
+OfCom about current usage and future usage
+with metaverse and other innovations.
+In the United States, there is some
+investment from the federal government
+through the Inflation Reduction Act
+(P.L.117-18) and the Infrastructure Investment and Jobs Act (P.L.117-58), which
+include billions-of-dollars for broadband
+investment and tax breaks to push
+communications innovations.
+In automotive, manufacturing, and
+healthcare, there will be amalgamations of
+video, robotics, AI, sensors, AR/VR, and
+more. More performance-dependent
+applications will exert even more pressure
+on operators’ networks in terms of latency,
+responsiveness, and speed.
+The time has come for network operators and
+service providers in telecom to be unshackled
+from outdated rules and regulations so that
+networks can keep pace with the trajectory of
+innovation that is coming.
+
+As that happens, it will be imperative that
+operators up their game with data quality
+and data accuracy, and more sophisticated
+machine learning, heuristics, and application
+content classification. As we covered in
+section four in “Rise of the Super App,”
+applications will be magnitudes more
+demanding and complex, and a greater
+degree of application and network
+intelligence will be needed to ensure the
+best application quality of experience for the
+most customers of fixed and mobile
+networks.
+
+Network operators will be expected
+to do what’s necessary to fuel the optimal
+application experience
+
+36
+
+What next? Contact Us
+Next Steps with Sandvine
+Now that you know what applications are
+driving internet consumer trends, plan for
+2023 with Sandvine.
+Reach out to phenomena@sandvine.com
+if you have any questions or to meet with
+our team of experts.
+
+Do you have requests for insights?
+We love inbound requests for data from
+our customers, prospects, industry
+analysts, and press. Many of the topics we
+cover in the Phenomena Report cross
+boundaries from tech into entertainment,
+and we welcome inquiries where we can
+help give clarity to the market. If you have
+questions, please reach out to Sandvine at
+phenomena@sandvine.com
+We will also blog regularly; if you missed
+some of our recent ones, check out the
+Phenomena Spotlights:
+https://www.sandvine.com/blog
+
+Visit www.sandvine.com and read our
+blog at www.sandvine.com/blog to
+learn more about our Application and
+Network Intelligence portfolio.
+Resources
+Come see our Resources page for a wide
+range of videos, webinars, and whitepapers:
+www.sandvine.com/resources
+
+ABOUT SANDVINE
+
+To optimize App QoE to the most
+customers, application and network
+intelligence must be rooted in data
+that can drive better business
+outcomes. That’s why Sandvine
+uses a unique combination of data
+management, network infrastructure,
+and application solutions to
+accurately identify, categorize, and
+classify more than 95% of all internet
+traffic across all access types.
+Sandvine’s 20 years of experience
+with the world’s most innovative
+operators brings unparalleled
+expertise to analyze, optimize and
+monetize networks. Using advanced
+heuristics and machine-learning
+based App QoE scoring, we help
+service providers accurately identify
+who, what, when, and where App
+QoE issues are occurring, enabling
+operations teams to quickly resolve
+problems, and planning teams to
+precisely plan for future growth.
+From the CTO to customer care,
+Sandvine’s App QoE focus will
+improve operations and planning.
+while reducing costs and improving
+customer satisfaction.
+
+37
+
+Sandvine recognizes that telecom
+service provider brands are
+inextricably tied to application
+quality of experience (App QoE)
+– the best measure of real-time
+customer satisfaction. Whether
+video, messaging, social media, or
+collaboration, the application is the
+subscriber’s primary interface with
+the network.
+
+App QoE at multiple levels uncovers the unseen
+
+95%
+Accuracy
+2500+ APPS
+
+What is the application QoE:
+• per location?
+• by user segment?
+• per device?
+• by plan?
+
+Guided Workflows
+What
+
+Who
+
+Where
+
+When
+
+What is being
+impacted?
+
+Who is being
+impacted?
+
+Where is being
+impacted?
+
+When did
+it happen?
+
+Application
+
+Individual
+subscribers
+
+Locations
+
+Time of day
+
+App Category
+
+HVAs
+
+Slices
+
+Peak hours
+
+App Content Category
+
+Enterprises
+
+Specific nodes
+
+Trends
+
+Specific devices
+Drill down to “why?” – most likely cause with recommended next best action
+Closed-loop Automation to implement recommended next best action
+
+Better data accuracy leads to better planning,
+troubleshooting, and monetization
+
+For more information visit https://www.sandvine.com
+or follow Sandvine on Twitter @Sandvine.
+
+USA
+5800 Granite Parkway
+Suite 170
+Plano, TX 75024
+USA
+
+EUROPE
+Svärdfiskgatan 4
+432 40 Varberg,
+Halland
+Sweden
+T. +46 340.48 38 00
+
+CANADA
+410 Albert Street,
+Suite 201, Waterloo,
+Ontario N2L 3V3,
+Canada
+T. +1 519.880.2600
+
+ASIA
+RMZ Ecoworld,
+Building-1, Ground Floor,
+East Wing Devarabeesanahalli,
+Bellandur, Outer Ring Road,
+Bangalore 560103, India
+T. +91 80677.43333
+
+Copyright ©2023 Sandvine Corporation. All rights reserved. Any unauthorized reproduction prohibited. All other trademarks are the property of their respective owners.
+This documentation, including all documentation incorporated by reference herein such as documentation provided or made available on the Sandvine website, are provided or made accessible “AS IS” and “AS
+AVAILABLE” and without condition, endorsement, guarantee, representation, or warranty of any kind by Sandvine Corporation and its affiliated companies (“Sandvine”), and Sandvine assumes no responsibility for any
+typographical, technical, or other inaccuracies, errors, or omissions in this documentation. In order to protect Sandvine proprietary and confidential information and/or trade secrets, this documentation may describe
+some aspects of Sandvine technology in generalized terms. Sandvine reserves the right to periodically change information that is contained in this documentation; however, Sandvine makes no commitment to provide
+any such changes, updates, enhancements, or other additions to this documentation to you in a timely manner or at all.
+v20230119
+
+

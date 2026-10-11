@@ -1,0 +1,329 @@
+{
+ "fps": 30,
+ "total_frames": 2056,
+ "engine": "edge",
+ "voice": "en-US-AndrewNeural",
+ "rate": "+0%",
+ "gap": 10,
+ "para_gap": 20,
+ "chapter_gap": 45,
+ "lead": 40,
+ "tail": 90,
+ "lang": "en",
+ "chapters": [],
+ "sentences": [
+  {
+   "id": "S01",
+   "chapter": 0,
+   "from": 41,
+   "to": 173,
+   "text": "You type shop.example and press Enter. The page appears in half a second.",
+   "para": false,
+   "subs": [
+    {
+     "from": 41,
+     "to": 117,
+     "text": "You type shop.example and press Enter."
+    },
+    {
+     "from": 118,
+     "to": 173,
+     "text": "The page appears in half a second."
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "chapter": 0,
+   "from": 184,
+   "to": 337,
+   "text": "But no machine on the internet is named shop.example. The internet only speaks numbers.",
+   "para": true,
+   "subs": [
+    {
+     "from": 184,
+     "to": 224,
+     "text": "But no machine on the internet"
+    },
+    {
+     "from": 225,
+     "to": 280,
+     "text": "is named shop.example."
+    },
+    {
+     "from": 281,
+     "to": 337,
+     "text": "The internet only speaks numbers."
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "chapter": 0,
+   "from": 368,
+   "to": 446,
+   "text": "So someone has to translate — every single time.",
+   "para": false,
+   "subs": [
+    {
+     "from": 368,
+     "to": 416,
+     "text": "So someone has to translate —"
+    },
+    {
+     "from": 417,
+     "to": 446,
+     "text": "every single time."
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "chapter": 0,
+   "from": 457,
+   "to": 597,
+   "text": "Before 1983: one text file, one office, one phone line.",
+   "para": false,
+   "subs": [
+    {
+     "from": 457,
+     "to": 539,
+     "text": "Before 1983: one text file,"
+    },
+    {
+     "from": 540,
+     "to": 597,
+     "text": "one office, one phone line."
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "chapter": 0,
+   "from": 608,
+   "to": 705,
+   "text": "Then DNS: a hierarchy with no center at all.",
+   "para": true,
+   "subs": [
+    {
+     "from": 608,
+     "to": 666,
+     "text": "Then DNS: a hierarchy"
+    },
+    {
+     "from": 667,
+     "to": 705,
+     "text": "with no center at all."
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "chapter": 0,
+   "from": 761,
+   "to": 852,
+   "text": "Your resolver asks the root: \"who handles .example?\"",
+   "para": false,
+   "subs": [
+    {
+     "from": 761,
+     "to": 812,
+     "text": "Your resolver asks the root:"
+    },
+    {
+     "from": 813,
+     "to": 852,
+     "text": "\"who handles .example?\""
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "chapter": 0,
+   "from": 863,
+   "to": 924,
+   "text": "The root only points to the next counter.",
+   "para": false,
+   "subs": [
+    {
+     "from": 863,
+     "to": 894,
+     "text": "The root only points"
+    },
+    {
+     "from": 895,
+     "to": 924,
+     "text": "to the next counter."
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "chapter": 0,
+   "from": 935,
+   "to": 1010,
+   "text": "The TLD counter points to the shop's own server.",
+   "para": false,
+   "subs": [
+    {
+     "from": 935,
+     "to": 970,
+     "text": "The TLD counter points"
+    },
+    {
+     "from": 971,
+     "to": 1010,
+     "text": "to the shop's own server."
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "chapter": 0,
+   "from": 1021,
+   "to": 1164,
+   "text": "That server holds the answer: 192.0.2.33.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1021,
+     "to": 1070,
+     "text": "That server holds the answer:"
+    },
+    {
+     "from": 1071,
+     "to": 1164,
+     "text": "192.0.2.33."
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "chapter": 0,
+   "from": 1210,
+   "to": 1283,
+   "text": "The whole walk? Under a tenth of a second.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1210,
+     "to": 1241,
+     "text": "The whole walk?"
+    },
+    {
+     "from": 1242,
+     "to": 1283,
+     "text": "Under a tenth of a second."
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "chapter": 0,
+   "from": 1294,
+   "to": 1399,
+   "text": "And most walks never happen — answers live on sticky notes.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1294,
+     "to": 1345,
+     "text": "And most walks never happen —"
+    },
+    {
+     "from": 1346,
+     "to": 1399,
+     "text": "answers live on sticky notes."
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "chapter": 0,
+   "from": 1410,
+   "to": 1489,
+   "text": "Each note has a TTL — an expiry date.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1410,
+     "to": 1459,
+     "text": "Each note has a TTL —"
+    },
+    {
+     "from": 1460,
+     "to": 1489,
+     "text": "an expiry date."
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "chapter": 0,
+   "from": 1500,
+   "to": 1681,
+   "text": "In 2021, Facebook went dark: caches held the last correct copies for eleven minutes.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1500,
+     "to": 1584,
+     "text": "In 2021, Facebook went dark:"
+    },
+    {
+     "from": 1585,
+     "to": 1646,
+     "text": "caches held the last correct copies"
+    },
+    {
+     "from": 1647,
+     "to": 1681,
+     "text": "for eleven minutes."
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "chapter": 0,
+   "from": 1737,
+   "to": 1863,
+   "text": "One resolver alone answers 1.9 trillion lookups a day.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1737,
+     "to": 1784,
+     "text": "One resolver alone answers"
+    },
+    {
+     "from": 1785,
+     "to": 1863,
+     "text": "1.9 trillion lookups a day."
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "chapter": 0,
+   "from": 1874,
+   "to": 1955,
+   "text": "A name is a question. DNS is the answer.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1874,
+     "to": 1913,
+     "text": "A name is a question."
+    },
+    {
+     "from": 1914,
+     "to": 1955,
+     "text": "DNS is the answer."
+    }
+   ]
+  }
+ ],
+ "chars": 636,
+ "words": 147,
+ "speech_sec": 54.34
+}

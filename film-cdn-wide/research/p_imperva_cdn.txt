@@ -1,0 +1,536 @@
+URL: https://www.imperva.com/learn/performance/what-is-a-cdn/
+
+[Imperva] [Imperva]
+
+[Imperva] [Imperva]
+
+Under DDoS Attack?
+
+1-855-993-3676
+
+[]
+
+Login
+
+LoginCloud Security ConsoleRASP Console
+
+English
+
+EnglishENDeutschDEEspañolESFrançaisFRPortuguêsPT-BR日本語日本語한국어KR中文CNภาษาไทยTH
+
+Under DDoS Attack?
+
+1-855-993-3676
+
+Start for FreeContact UsStart for FreeContact Us
+
+Products
+
+Products
+
+-   []Application Security
+-   []Data Security
+-   Data Security Plans
+
+Application Security
+
+Application Security Overview
+
+Industry-leading application and API protection
+
+-   []
+    Web Application Firewall
+
+    Instantly secure applications from the latest threats
+-   []
+    Advanced Bot Protection
+
+    Identify and mitigate the most sophisticated bad bot
+-   []
+    Unified API Security Platform
+
+    Discover, detect, & mitigate API threats—all in one console
+-   []
+    DDoS Protection
+
+    Secure all assets at the edge with guaranteed uptime
+-   []
+    DNS Protection
+
+    Fast, secure DNS safeguarding applications everywhere
+-   []
+    Client-Side Protection
+
+    Visibility and control over third-party JavaScript code
+
+-   []
+    Account Takeover Protection
+
+    Protect login endpoints and prevent account-based fraud
+-   []
+    Content Delivery Network
+
+    Boost website performance with caching and compression
+-   []
+    AI Application Security
+
+    Secure AI applications for homegrown GenAI
+-   []
+    Imperva for AWS
+
+    Extend AWS application security with advanced WAAP protection
+-   []
+    Imperva for Google Cloud
+
+    Protect Google Cloud apps with integrated cloud-native security
+
+Imperva named a Leader in the SecureIQLab 2026 Cloud WAAP Report
+
+Read the report
+
+Data Security
+
+Data Security Overview
+
+Protect all data and ensure compliance at any scale
+
+[]
+
+Data Security Fabric
+
+Multicloud, hybrid security platform protecting all data types
+
+Business Capabilities
+
+-   []
+    Data security at scale
+-   []
+    Data security for multicloud
+-   []
+    Risk analytics & insights
+-   []
+    Data compliance at scale
+-   []
+    Data discovery & classification
+
+[]
+
+Data Security Posture Management
+
+Assess data risk, fortify data environment, and improve data governance
+
+The Imperva Advantage
+
+-   []
+    Broadest coverage
+-   []
+    Protect any data source
+-   []
+    Ecosystem integration
+-   []
+    Unified visibility
+
+The Rise in Unstructured Data and AI Security Risk
+
+Read the report
+
+Data Security Plans
+
+Solutions
+
+Solutions
+
+-   By Use Case
+-   By Industry
+-   Data Security Plans
+
+By Use Case
+
+-   
+    Application Security
+-   
+    Secure applications and APIs
+-   
+    Protect from DDoS attacks
+-   
+    Stop bad bots
+-   
+    Comply with PCI DSS 4.0
+-   
+    Accelerate application delivery
+
+-   
+    Data Security
+-   
+    Advance data governance
+-   
+    Assure data compliance and privacy
+-   
+    Data encryption and cryptographic solutions
+-   
+    Monitor user behavior analytics
+-   
+    Data risk visibility and scoring
+-   
+    Data security posture management
+-   
+    Securely move data to the cloud
+-   
+    Unstructured data security solutions
+
+A Unifying Approach to Data Protection
+
+Start guided tour
+
+By Industry
+
+Solutions by Industry
+
+Defense-in-depth security for every industry
+
+-   
+    Government
+-   
+    Healthcare
+-   
+    Financial Services
+
+-   
+    Telecom & ISPs
+-   
+    Retail
+
+Financial Services Edition: 2026 Thales Data Threat Report
+
+Get free report
+
+Data Security Plans
+
+Support
+
+Support
+
+Support
+
+Support
+
+Looking for technical support or services, please review our various channels below
+
+-   
+    Technical Support
+-   
+    Services
+-   
+    Imperva University
+-   
+    Community
+
+-   
+    Support Portal Login
+-   
+    Documentation
+-   
+    EOS Policy
+
+Partners
+
+Partners
+
+-   Channel Partners
+-   Technology Alliance Partners
+
+Channel Partners
+
+Channel Partners Program
+
+Looking for an Imperva partner? Find an approved one with the expertise to help you
+
+-   
+    Channel Partners
+-   
+    Find a Partner
+-   
+    Partner Portal Login
+
+Imperva reimagines partner program: Imperva Accelerate
+
+Learn how
+
+Technology Alliance Partners
+
+Technology Alliance Partners
+
+Imperva collaborates with the top technology companies
+
+-   
+    Technology Alliance Partners (TAP)
+-   
+    Become a TAP
+-   
+    Find a TAP
+
+Protect your Cloudera data with Imperva
+
+Learn more
+
+Customers
+
+Customers
+
+-   Application Security Customer Stories
+-   Data Security Customer Stories
+-   See all Customer Stories
+
+Application Security Customer Stories
+
+Application Security Customer Stories
+
+Learn how Imperva enables and protects industry leaders
+
+-   
+    Tower ensures website visibility and uninterrupted business operations
+-   
+    Smallpdf protects its customers and ensures availability
+
+Quálitas continues its quality services using Imperva Application Security
+
+Learn how
+
+Data Security Customer Stories
+
+Data Security Customer Stories
+
+Learn how Imperva enables and protects industry leaders
+
+-   
+    Banco Popular streamlines operations and lowers operational costs
+-   
+    Discovery Inc. tackles data compliance in public cloud with Imperva Data Security Fabric
+
+BSE bolsters data security and compliance
+
+Learn more
+
+See all Customer Stories
+
+Resources
+
+Resources
+
+-   Resources
+-   Threat Research
+-   Learning Assets
+
+Resources
+
+Resources
+
+Get all the information you need about Imperva products and solutions
+
+-   
+    Resource Library
+-   
+    Blog
+-   
+    Webinars
+-   
+    Case Studies
+-   
+    Data Security Demo Tours
+-   
+    Application Security Demo Tours
+-   
+    Privacy, Compliance & Trust Center
+-   
+    Imperva Certifications
+
+AI Application Security: Securing Your GenAI
+
+Read more
+
+Threat Research
+
+Threat Research
+
+Stay informed on the latest threats and vulnerabilities
+
+-   
+    Threat Research Overview
+-   
+    Cyber Threat Index
+-   
+    Cyber Attack Map
+-   
+    Free Tools
+-   
+    Network Map
+
+Cyber Threat Index
+
+Latest threat analysis
+
+Learning Assets
+
+Learning Assets
+
+Expand and share your knowledge
+
+-   
+    Learning Center
+-   
+    Application Security Guide
+-   
+    Data Security Guide
+-   
+    Network Security Guide
+-   
+    Imperva Community
+-   
+    Documentation Portal
+
+Browse the Imperva Learning Center for the latest cybersecurity topics
+
+Explore now
+
+Company
+
+Company
+
+Company
+
+Company
+
+Get to know us, beyond our products and services
+
+-   
+    About Us
+-   
+    Events
+-   
+    Careers
+
+-   
+    Press & Awards
+-   
+    Contact Information
+
+Imperva ESG Reports
+
+Read more
+
+Home > 404 
+
+[]
+
+404
+
+Page was not found. But I’m here, and I come in peace.
+
+Take me home
+
+Articles you don’t want to miss
+
+Report
+
+...
+
+-   Application Security
+
+2025 Bad Bot Report
+
+White Paper
+
+...
+
+-   Application Security
+
+Imperva API Security Buyer’s Guide
+
+Infographic
+
+...
+
+-   Application Security
+
+2024 Bad Bot Report Traffic Trends
+
+[Imperva]
+
++1 866 926 4678
+
+Partners
+
+-   Imperva Partner Ecosystem
+-   Channel Partners
+-   Technology Alliances
+-   Find a Partner
+-   Partner Portal Login
+
+Resources
+
+-   Imperva Blog
+-   Resource Library
+-   Case Studies
+-   Learning Center
+
+About Us
+
+-   Who We Are
+-   Events
+-   Careers
+-   Press & Awards
+-   Contact Information
+
+Network
+
+-   Network Map
+-   System Status
+
+Support
+
+-   Emergency DDoS Protection
+-   Support Portal
+-   Imperva Community
+-   Documentation Portal
+-   API Integration
+-   Trust Center
+
+Cookie Preferences Trust Center Modern Slavery Statement Privacy Legal
+
+English
+
+EnglishDeutschEspañolFrançaisPortuguês日本語中文ภาษาไทย
+
++1 866 926 4678
+
+English
+
+EnglishDeutschEspañolFrançaisPortuguês日本語中文ภาษาไทย
+
+-   []
+-   []
+-   []
+-   []
+-   []
+-   []
+-   []
+
+Cookie Preferences Trust Center Modern Slavery Statement Privacy Legal
+
+Copyright © 2026 Imperva. All rights reserved
+
+×
+
+Want to see Imperva in action? Fill out the form and our experts will be in touch shortly to book your personal demo.
+
+Thank you!
+
+[envelope]
+
+An Imperva security specialist will contact you shortly.
+
+×
+
+[] “Imperva prevented 10,000 attacks in the first 4 hours of Black Friday weekend with no latency to our online customers.”
+
+Top 3 US Retailer

@@ -1,0 +1,154 @@
+{{Short description|Network traffic analyzer}}
+{{Use mdy dates|date=May 2018}}
+
+{{Infobox software
+| name = Wireshark
+| logo = File:Wireshark Logo.svg
+| screenshot = [[File:Wireshark 3.6 screenshot.png|300px|Wireshark GUI]]
+| caption = Wireshark GUI
+| author = Gerald Combs<ref>{{cite web
+ | url          = https://www.wireshark.org/blog/2023-07-14-wireshark-is-25
+ | publisher    = The Wireshark Foundation
+ | title        = Wireshark Is 25: The email that started it all and the lessons learned along the way
+ | date         = July 14, 2023
+ | access-date  = April 16, 2026}}</ref>
+| developer = The Wireshark team
+| released = 1998
+| latest release version = {{wikidata|property|preferred|references|edit|Q403539|P348|P548=Q2804309}}
+| latest release date = {{wikidata|qualifier|preferred|single|Q403539|P348|P548=Q2804309|P577}}
+| latest preview version = {{wikidata|property|preferred|references|edit|Q403539|P348|P548=Q51930650}}
+| latest preview date = {{wikidata|qualifier|preferred|single|Q403539|P348|P548=Q51930650|P577}}
+| operating system = [[Cross-platform]]
+| programming language = [[C (programming language)|C]], [[C++]], [[Lua (programming language)|Lua]]
+| genre = [[Packet analyzer]]
+| license = [[GNU General Public License|GPL-2.0-or-later]]<ref>{{cite web
+ | url   = https://www.wireshark.org/faq.html#sec1
+ | title = Wireshark FAQ License}}</ref><ref>{{cite web
+ | url   = https://gitlab.com/wireshark/wireshark/-/blob/master/COPYING
+ | title = COPYING| date = July 20, 2022}}</ref>
+| website = {{official URL}}
+}}
+
+'''Wireshark''' is [[Free and open-source software|free and open-source]] [[packet analyzer]] software. It is used for [[computer network]] analysis and troubleshooting, software and [[communications protocol]] development, and education. Originally named '''Ethereal''', the project was renamed Wireshark in May 2006 due to trademark issues.<ref>{{cite web|url=https://www.wireshark.org/faq.html#q1.2|title=Wireshark FAQ|access-date=December 31, 2011}}</ref>
+
+Wireshark is [[cross-platform]], using the [[Qt (software)|Qt]] [[widget toolkit]] in current releases to implement its user interface, and using [[pcap]] to capture packets; it runs on [[Linux]], [[macOS]], [[BSD]], [[Solaris (operating system)|Solaris]], some other [[Unix-like]] operating systems, and [[Microsoft Windows]]. There is also a terminal-based (non-GUI) version called TShark. Wireshark, and the other programs distributed with it such as TShark, are [[free software]], released under the terms of the [[GNU General Public License]] version 2 or any later version.
+
+== Functionality ==
+Wireshark is very similar to [[tcpdump]], but has a [[Graphical user interface|graphical]] [[front-end and back-end|front-end]] and integrated sorting and filtering options. Wireshark is also widely used in cybersecurity to detect suspicious network activity, including packet sniffing and intrusion attempts.<ref>{{cite web |url=https://www.ibm.com/topics/packet-sniffing |title=What is packet sniffing? |publisher=IBM}}</ref>
+
+Wireshark lets the user put [[network interface controller]]s into [[promiscuous mode]] and is commonly used in ethical hacking and network security analysis.<ref>{{cite book |last=Sharma |first=Manish |title=Ethical Hacking and Network Analysis with Wireshark |year=2024}}</ref> (if supported by the [[network interface controller]]), so they can see all the traffic visible on that interface including [[unicast]] traffic not sent to that network interface controller's [[MAC address]]. However, when capturing with a [[packet analyzer]] in promiscuous mode on a port on a [[network switch]], not all traffic through the switch is necessarily sent to the port where the capture is done, so capturing in promiscuous mode is not necessarily sufficient to see all network traffic. [[Port mirroring]] or various [[network tap]]s extend capture to any point on the network. Simple passive taps are extremely resistant to tampering{{citation needed|date=June 2013}}.
+
+On Linux, BSD, and macOS, with [[pcap|libpcap]] 1.0.0 or later, Wireshark 1.4 and later can also put [[wireless network interface controller]]s into [[monitor mode]].
+
+If a remote machine captures packets and sends the captured packets to a machine running Wireshark using the [[TZSP]] protocol or the protocol used by [[OmniPeek]], Wireshark dissects those packets, so it can analyze packets captured on a remote machine at the time that they are captured.
+
+== History ==
+In the late 1990s, Gerald Combs, a computer science graduate of the [[University of Missouri–Kansas City]], was working for a small [[Internet service provider]], Network Integration Services. The commercial protocol analysis products at the time were priced around $1500<ref>{{cite magazine |url=https://books.google.com/books?id=PzwEAAAAMBAJ&q=netXray&pg=PA101-IA9 |magazine=[[InfoWorld]] |date=November 17, 1997 |title=Gussied-up NetXRay takes on enterprise features}}</ref> and did not run on the company's primary platforms (Solaris and Linux), so Gerald began writing Ethereal and released the first version around 1998.<ref name=geraldcombs>{{cite web |url=http://www.protocog.com/gerald_combs_interview.html |title= Q&A with the founder of Wireshark and Ethereal|work= Interview with Gerald Combs|publisher=protocolTesting.com |access-date=July 24, 2010 |archive-url=https://web.archive.org/web/20160307232509/http://www.protocog.com/gerald_combs_interview.html |archive-date=March 7, 2016}}</ref> The Ethereal [[trademark]] is owned by Network Integration Services.
+
+In May 2006, Combs accepted a job with CACE Technologies with Loris Degioanni. Combs still held copyright on most of Ethereal's source code (and the rest was re-distributable under the GNU GPL), so he used the contents of the Ethereal [[Subversion (software)|Subversion]] repository as the basis for the Wireshark repository. However, he did not own the Ethereal trademark, so he changed the name to Wireshark.<ref>{{cite web |url=https://www.wireshark.org/faq.html#q1.2 |title=What's up with the name change? Is Wireshark a fork? |work=Wireshark: Frequently Asked Questions |access-date=November 9, 2007}}</ref> In 2010 [[Riverbed Technology]] purchased CACE<ref>{{cite web|url=http://www.riverbed.com/us/company/news/press_releases/2010/press_102110.php |title=Riverbed Expands Further Into The Application-Aware Network Performance Management Market with the Acquisition of CACE Technologies |publisher=Riverbed Technology |date=October 21, 2010 |access-date=October 21, 2010}}</ref> and took over as the primary sponsor of Wireshark. Ethereal development has ceased, and an Ethereal security advisory recommended switching to Wireshark.<ref>{{cite web|url=http://ethereal.com/appnotes/enpa-sa-00024.html |title=enpa-sa-00024 |publisher=Ethereal |date=November 10, 2006 |access-date=June 8, 2010 |url-status=dead |archive-url=https://web.archive.org/web/20121023150134/http://ethereal.com/appnotes/enpa-sa-00024.html |archive-date=October 23, 2012}}</ref> In 2022, Sysdig took over as the primary sponsor of Wireshark, and, in 2023, established the Wireshark Foundation and put Wireshark into that foundation.<ref>{{Cite web |last=Bridgwater |first=Adrian |title=Sysdig Wireshark Foundation, We're Gonna Need A Safer Cloud |url=https://www.forbes.com/sites/adrianbridgwater/2023/03/01/sysdig-wireshark-foundation-were-gonna-need-a-safer-cloud/ |access-date=2023-04-20 |website=Forbes |language=en}}</ref>
+
+Wireshark has won several industry awards over the years,<ref>{{cite web |url=https://www.wireshark.org/about.html |title=Awards and Accolades |work=Wireshark: About |access-date=September 20, 2010}}</ref> including ''[[eWeek]]'',<ref>{{cite web |url=https://www.eweek.com/servers/the-most-important-open-source-apps-of-all-time/6/ |title=Wireshark |work=The Most Important Open-Source Apps of All Time |publisher=eWEEK |access-date=August 12, 2012 |date=May 28, 2012 }}</ref> ''[[InfoWorld]]'',<ref>{{cite web | url=http://www.infoworld.com/article/2649627/networking/best-of-open-source-in-networking.html | title=Best of open source in networking | work=InfoWorld | date=September 10, 2007 | access-date=December 1, 2014 | author=Yager, Tom}}</ref><ref>{{cite magazine|url=http://www.infoworld.com/article/2638694/techology-business/best-of-open-source-software-awards--networking.html |title=Best of open source software awards: Networking |magazine=InfoWorld |date=August 5, 2008 |access-date=April 28, 2015}}</ref><ref>{{cite web | url=http://www.infoworld.com/article/2606792/open-source-software/bossie-awards-2012--the-best-open-source-networking-and-security-software.html#slide15 | title=Bossie Awards 2012: The best open source networking and security software | work=InfoWorld | date=September 18, 2012 | access-date=April 28, 2015 | author=Mobley, High}}</ref><ref>{{cite web | url=http://www.infoworld.com/article/2687032/open-source-software/119872-Bossie-Awards-2012-The-best-open-source-networking-and-security-software.html#slide18 | title=Bossie Awards 2013: The best open source networking and security software | work=InfoWorld | date=September 17, 2013 | access-date=April 28, 2015 | author=Ferrill, Paul}}</ref><ref>{{cite web | url=http://www.infoworld.com/article/2688076/networking/networking-164815-bossie-awards-2014-the-best-open-source-networking-and-security-software.html#slide8 | title=Bossie Awards 2014: The best open source networking and security software | work=InfoWorld | date=September 29, 2014 | access-date=April 28, 2015 | author=Garza, Victor R.}}</ref> and ''[[PC Magazine]]''.<ref>{{cite news |url=https://www.pcmag.com/article2/0,2817,2360043,00.asp |title= Wireshark 1.2.6 | work = Wireshark 1.2.6 Review & Rating |publisher=PC Magazine |access-date=September 20, 2010 |first=Samara |last=Lynn}}</ref> It is also the top-rated packet sniffer in the Insecure.Org network security tools survey<ref>{{cite web |url=http://sectools.org/sniffers.html |title= Wireshark is No. 1 of Top 14 Packet Sniffers |publisher=Insecure.Org |access-date=August 12, 2012}}</ref> and was the [[SourceForge]] Project of the Month in August 2010.<ref>{{cite web |url=https://sourceforge.net/blog/blog/potm-201008/ |title= Wireshark, SourceForge Project of the Month, August 2010 |date= August 2, 2010 |publisher=SourceForge |access-date=August 12, 2012}}</ref>
+
+Combs continues to maintain the overall code of Wireshark and to issue releases of new versions of the software. The product website lists more than 2000 contributing authors.<ref>{{cite web | url=https://www.wireshark.org/about.html |title= Wireshark About Page | publisher=Wireshark | access-date= 21 March 2023}}</ref>
+
+== Features ==
+Wireshark is a data capturing program that "understands" the structure ([[encapsulation (networking)|encapsulation]]) of different networking protocols. It can parse and display the fields, along with their meanings as specified by different networking protocols. Wireshark uses [[pcap]] to capture packets, so it can only capture packets on the types of networks that pcap supports.
+
+* Data can be captured "from the wire" from a live network connection or read from a file of already-captured packets.<ref>{{cite web |url=https://www.wireshark.org/docs/wsug_html_chunked/ |title=Wireshark User’s Guide |publisher=Wireshark Foundation |access-date=April 29, 2026}}</ref>
+* Live data can be read from different types of networks, including [[Ethernet]], [[IEEE 802.11]], [[Point-to-Point Protocol|PPP]], and [[loopback]].
+* Captured network data can be browsed via a [[Graphical user interface|GUI]], or via the terminal ([[Command line interface|command line]]) version of the utility, TShark.
+* Captured files can be programmatically edited or converted via command-line switches to the "editcap" program.
+* Data display can be refined using a display filter.
+* [[Plug-in (computing)|Plug-ins]] can be created for dissecting new protocols.<ref>{{cite web|title=Dissector compilation example|work=OmniIDL|url=http://www.arena.free.fr/?article=Dev/Wireshark|access-date=April 18, 2013}}</ref>
+* [[Voice over IP|VoIP]] calls in the captured traffic can be detected. If encoded in a compatible encoding, the media flow can even be played.
+* Raw [[Universal Serial Bus|USB]] traffic can be captured.<ref>{{cite web|title=USB capture setup|work=Wireshark Wiki|url=http://wiki.wireshark.org/CaptureSetup/USB|access-date=December 31, 2011}}</ref>
+* Wireless connections can also be filtered as long as they traverse the monitored Ethernet.{{Clarify|reason="Wireless" in what sense? Wi-Fi or mobile phone network? And by "filtered" do you mean "captured"?|date=March 2015}}
+* Various settings, timers, and filters can be set to provide the facility of filtering the output of the captured traffic.
+
+Wireshark's native network trace file formats are the libpcap format read and written by [[pcap|libpcap, WinPcap, and Npcap]], so it can exchange captured network traces with other applications that use the same format, including [[tcpdump]] and [[CA, Inc.|CA]] NetMaster, and the pcapng format read by newer versions of libpcap. It can also read captures from other network analyzers, such as [[snoop (software)|snoop]],<ref>{{cite web | title=Snoop | url=https://wiki.wireshark.org/snoop#:~:text=Wireshark%20and%20TShark%20can%20read,in%20snoop's%20binary%20file%20format. | publisher=Wireshark | access-date=1 April 2024}}</ref> [[Network General]]'s<ref>{{cite web | title=NETSCOUT | publisher=Wireshark | url=https://www.wireshark.org/faq.html | access-date=21 March 2023}}</ref> [[Sniffer (protocol analyzer)|Sniffer]], and [[Microsoft Network Monitor]].<ref>{{cite web | title=Microsoft Network Monitor | publisher=Wireshark | url=https://ask.wireshark.org/question/3255/microsoft-network-monitor-cap-file-can-be-opened-by-wireshark-but-save-as-function-is-disabled/ | access-date=21 March 2023}}</ref>
+
+== Security ==
+Capturing raw network traffic from an interface typically requires elevated privileges on many platforms. Wireshark can also be used to analyze network traffic in cybersecurity research, including simulated attack traffic.<ref>{{cite journal |last=Koffi |title=AgentRed: Towards an agent-based approach to automated network attack traffic generation |journal=Algorithms |year=2026}}</ref> For this reason, older versions of Wireshark and TShark were often run with [[superuser]] permissions to access network interfaces directly. Considering the huge number of protocol dissectors that are called when traffic is captured and recognizing the possibility of a bug in a dissector, a serious security risk can be posed. Due to the rather large number of vulnerabilities in the past (of which many have allowed remote code execution) and developers' doubts for better future development, [[OpenBSD]] removed Ethereal from its ports tree prior to OpenBSD 3.6.<ref>{{cite web |url=https://cvsweb.openbsd.org/ports/net/ethereal/Attic/Makefile?only_with_tag=HEAD |title=CVS log for ports/net/ethereal/Attic/Makefile |publisher=Openbsd.org |access-date=March 25, 2023}}</ref>
+
+Elevated privileges are not needed for all operations. For example, an alternative is to run tcpdump or the ''dumpcap'' utility that comes with Wireshark with superuser privileges to capture packets into a file, and later analyze the packets by running Wireshark with restricted privileges. To emulate near realtime analysis, each captured file may be merged by ''mergecap'' into a growing file processed by Wireshark. On wireless networks, it is possible to use the [[Aircrack]] [[wireless security]] tools to capture [[IEEE 802.11]] frames and read the resulting dump files with Wireshark.
+
+As of Wireshark 0.99.7, Wireshark and TShark run dumpcap to perform traffic capture. Platforms that require special privileges to capture traffic need only arrange that dumpcap is run with those privileges. Neither Wireshark nor TShark need to or should be run with special privileges.<ref>{{Cite web |title=Wireshark 0.99.7 Release Notes |url=https://www.wireshark.org/docs/relnotes/wireshark-0.99.7.html |access-date=21 July 2025 |website=Wireshark.org}}</ref>
+
+== Color coding ==
+Wireshark can color packets based on rules that match particular fields in packets, to help the user identify the types of traffic at a glance. A default set of rules is provided; users can change existing rules for coloring packets, add new rules, or remove rules.<ref>{{cite web | url=https://www.wireshark.org/docs/wsug_html_chunked/ChCustColorizationSection.html | title=Packet colorization of Wireshark | publisher=Wireshark | access-date=21 March 2023}}</ref>
+
+== See also ==
+{{Portal|Free and open-source software}}
+* [[Capsa (software)]]
+* [[Comparison of packet analyzers]]
+* [[EtherApe]]
+* [[Fiddler (software)]]
+* [[netsniff-ng]]
+* [[ngrep]]
+* [[Omnipeek]]
+* [[tcptrace]]
+
+== Notes ==
+{{Reflist|30em}}
+
+== References ==
+{{refbegin}}
+* {{cite book
+ | first1     = Angela
+ | last1      = Orebaugh
+ | first2     = Gilbert
+ | last2      = Ramirez
+ | first3     = Jay
+ | last3      = Beale
+ | date       = February 14, 2007
+ | title      = Wireshark & Ethereal Network Protocol Analyzer Toolkit
+ | publisher  = Syngress
+ | page       = 448
+ | isbn       = 978-1-59749-073-3
+ | url        = http://www.syngress.com/hacking-and-penetration-testing/Wireshark-amp-Ethereal-Network-Protocol-Analyzer-Toolkit/
+ | archive-url = https://web.archive.org/web/20090929045916/http://www.syngress.com/hacking-and-penetration-testing/Wireshark-amp-Ethereal-Network-Protocol-Analyzer-Toolkit/
+ | archive-date = September 29, 2009
+ | url-status = usurped
+ }}
+* {{cite book
+ | first1     = Chris
+ | last1      = Sanders
+ | date       = May 23, 2007
+ | title      = Practical Packet Analysis: Using Wireshark to Solve Real-World Network Problems
+ | publisher  = [[No Starch Press]]
+ | page       = 192
+ | isbn       = 978-1-59327-149-7
+ | url        = http://nostarch.com/packet.htm
+ }}
+
+* {{cite journal
+ | first1     = Roy
+ | last1      = Cheok
+ | date       = July 1, 2014
+ | title      = Wireshark: A Guide to Color My Packets
+ | journal    = SANS Institute Reading Room
+ | publisher  = [[SANS Institute]]
+ | url        = http://www.sans.org/reading-room/whitepapers/detection/wireshark-guide-color-packets-35272
+ }}
+{{refend}}
+
+== External links ==
+{{Commons}}
+* {{Official website}}
+
+{{Authority control}}
+
+[[Category:Packet analyzer software for Linux]]
+[[Category:Software that uses Qt]]
+[[Category:Software that was ported from GTK to Qt]]
+[[Category:Free software programmed in C]]
+[[Category:Free software programmed in C++]]
+[[Category:Cross-platform free software]]
+[[Category:Lua (programming language)-scriptable software]] <!--uses Lua for scripting and prototyping-->
+[[Category:Network analyzers]]
+[[Category:Free network management software]]
+[[Category:Unix network-related software]]
+[[Category:Windows network-related software]]
+[[Category:MacOS network-related software]]
+[[Category:Web scraping]]
+[[Category:Pentesting software toolkits]]

@@ -1,0 +1,87 @@
+{{short description|American cryptographer}}
+{{Infobox scientist
+| name              = Taher A. Elgamal
+| image             = Taher Elgamal it-sa 2010.jpg
+| caption           = Taher A. Elgamal (2010)
+| birth_date        = {{birth date and age|1955|8|18|df=y}}
+| birth_place       = [[Cairo]], Egypt
+| death_date        = 
+| death_place       = 
+| ethnicity         = 
+| field             = [[Cryptography]]
+| workplaces        = [[Salesforce.com]]
+| education         = [[Cairo University]] (BSc)<br />[[Stanford University]] (MS, PhD)
+| doctoral_advisor  = [[Martin Hellman]]
+| doctoral_students = 
+| known_for         = [[Secure Sockets Layer|SSL]]<br />[[Public-key]]<br />[[ElGamal]]<br />[[Discrete logarithm cryptography]]
+| author_abbrev_bot = 
+| author_abbrev_zoo = 
+| awards            = [[RSA Conference Lifetime Achievement Award]] (2009)<br />[[Marconi Prize]] (2019)<br />[[National Academy of Engineering]] (2022)<br />[[Kuwait Informatics Award]] (2025)<ref>{{Cite web|title=Kuwait’s Informatics Award honors Dr Taher Elgamal|url=https://kuwaittimes.com/article/23771/kuwait/other-news/kuwaits-informatics-award-honors-dr-taher-elgamal/}}</ref>
+| religion          = 
+| footnotes         = 
+}}
+
+'''Taher Elgamal'''{{efn|The spellings ''El Gamal'' and ''ElGamal'' are also found in cryptographic literature. He himself spells it ''Elgamal'' (one word, singly capitalized), as it is less likely to be mangled in English.}} ({{langx|ar|طاهر الجمل}}) (born 18 August 1955) is an [[List of Egyptian Americans|Egyptian-American]] [[cryptographer]] and tech executive.<ref>{{Cite web|title=Father of SSL, Dr. Taher Elgamal, finds fast-moving IT projects in the Middle East|url=https://www.networkworld.com/article/666809/security-father-of-ssl-dr-taher-elgamal-finds-fast-moving-it-projects-in-the-middle-east.html}}</ref> Since January 2023, he has been a partner at venture capital firm [[Evolution Equity Partners]].<ref name=":5">{{Cite web |title=Evolution Equity Partners Appoints Taher Elgamal as General Partner |url=https://www.prnewswire.com/news-releases/evolution-equity-partners-appoints-taher-elgamal-as-general-partner-301725390.html}}</ref> Prior to that, he was the founder and CEO of Securify and the director of engineering at RSA Security. From 1995 to 1998, he was the chief scientist at [[Netscape|Netscape Communications.]] From 2013 to 2023, he served as the Chief Technology Officer (CTO) of Security at [[Salesforce]].<ref>{{Cite web |title=Taher Elgamel LinkedIn |url=https://www.linkedin.com/in/taherelgamal/}}</ref><ref name = ":4">{{Cite web|url=https://www.bloomberg.com/news/articles/2023-01-11/salesforce-loses-another-security-leader-in-executive-exodus|title=Salesforce Loses Another Security Leader in Executive Exodus|date=January 11, 2023|website=Bloomberg}}</ref>
+
+Elgamal's 1985 paper entitled "A Public Key Cryptosystem and A Signature Scheme Based on Discrete Logarithms" proposed the design of the [[ElGamal encryption|ElGamal discrete log cryptosystem]] and of the [[ElGamal signature scheme]].<ref name=":0">{{cite journal |last=Elgamal |first=Taher |year=1985 |title=A Public key Cryptosystem and A Signature Scheme based on discrete Logarithms |journal=IEEE Transactions on Information Theory |volume=31 |issue=4 |pages=469–472 |doi=10.1109/TIT.1985.1057074 |citeseerx=10.1.1.476.4791 |s2cid=2973271 }}</ref> The latter scheme became the basis for [[Digital Signature Algorithm]] (DSA) adopted by [[National Institute of Standards and Technology]] (NIST) as the [[Digital Signature Standard]] (DSS). His development of the [[Secure Sockets Layer]] (SSL) [[cryptographic protocol]] at Netscape in the 1990s was also the basis for the [[Transport Layer Security]] (TLS) and [[HTTPS]] [[Internet protocols]].<ref name=":1" /><ref name="Oppliger">{{cite book |last=Oppliger |first=Rolf |title=SSL and TLS: Theory and Practice |publisher=[[Artech House]] |year=2016 |isbn=978-1-60807-999-5 |edition=2nd |page=13 |chapter=Introduction |access-date=2018-03-01 |chapter-url=https://books.google.com/books?id=jm6uDgAAQBAJ&pg=PA15 |via=Google Books}}</ref><ref name=":6">{{cite book |last=Walls |first=Colin |url=https://books.google.com/books?id=FLvsis4_QhEC&pg=PA344 |title=Embedded Software: The Works |publisher=Newnes |year=2005 |isbn=0-7506-7954-9 |pages=344 |access-date=20 October 2018 |archive-url=https://web.archive.org/web/20190209055124/https://books.google.com/books?id=FLvsis4_QhEC&pg=PA344 |archive-date=9 February 2019 |url-status=live}}</ref>
+
+== Biography ==
+
+=== Early life ===
+Elgamal was born in Egypt.<ref name=":3">{{Cite web|url=https://engineering.salesforce.com/solving-puzzles-to-protect-the-cloud-cto-taher-elgamal-on-his-role-at-salesforce-and-the-future-of-94c469b9ec0e|title=Solving Puzzles to Protect the Cloud: CTO Taher Elgamal on His Role at Salesforce and the Future of Cryptography|last=Lindeman|first=Laura|date=May 16, 2019|website=Salesforce Engineering Blog: Medium|access-date=October 17, 2019}}</ref> He earned a BSc in [[electrical engineering]] from [[Cairo University]] in 1977, and an MS and PhD in the same field from [[Stanford University]] in 1981 and 1984, respectively.<ref name="mollin2005" /><ref name=":3" /> [[Martin Hellman]] was his dissertation advisor.<ref name="mollin2005">{{cite book |first=Richard A. |last=Mollin |title=Codes: The Guide to Secrecy from Ancient to Modern Times |location=Boca Raton |publisher=Chapman & Hall |year=2005 |isbn=978-1-58488-470-5 |page=185 }}</ref>
+
+=== Career ===
+Elgamal joined the technical staff at [[HP Labs]] in 1984.  He served as chief scientist at Netscape Communications from 1995 to 1998,<ref>{{Cite news|url=https://www.wsj.com/articles/SB907022385139963000|title=Netscape's Chief Scientist Leaves Firm To Form a Computer-Security Start-Up|last=Journal|first=Don ClarkStaff Reporter of The Wall Street|date=1998-09-29|work=Wall Street Journal|access-date=2019-10-17|language=en-US|issn=0099-9660}}</ref> where he was a driving force behind [[Secure Sockets Layer]].<ref>{{Cite web|url=https://www.businesswire.com/news/home/20190313005174/en/Cryptographers-Paul-Kocher-Taher-Elgamal-Awarded-2019|title=Cryptographers Paul Kocher and Taher Elgamal Awarded the 2019 Marconi Prize|date=2019-03-13|website=www.businesswire.com|language=en|access-date=2019-10-17}}</ref> ''Network World'' described him as the "father of [[Secure Sockets Layer|SSL]]."<ref name=":1">{{cite web |last=Messmer |first=Ellen |date=2012-12-04 |title=Father of SSL, Dr. Taher Elgamal, finds fast-moving IT projects in the Middle East |url=https://www.networkworld.com/article/2161851/father-of-ssl--dr--taher-elgamal--finds-fast-moving-it-projects-in-the-middle-east.html |url-status=live |archive-url=https://web.archive.org/web/20200622112805/https://www.networkworld.com/article/2161851/father-of-ssl--dr--taher-elgamal--finds-fast-moving-it-projects-in-the-middle-east.html |archive-date=2020-06-22 |access-date=2020-06-22 |website=Network World}}</ref> SSL was the basis for the [[Transport Layer Security]] (TLS)<ref name="Oppliger" /> and [[HTTPS]] [[Internet protocols]].<ref name=":6" /><ref name=":02">{{Cite web |title=A secure web is here to stay |url=https://blog.chromium.org/2018/02/a-secure-web-is-here-to-stay.html |url-status=live |archive-url=https://web.archive.org/web/20190424215132/https://blog.chromium.org/2018/02/a-secure-web-is-here-to-stay.html |archive-date=24 April 2019 |access-date=22 April 2019 |website=Chromium Blog}}</ref>
+
+He also was the director of engineering at [[RSA Security]] Inc.<ref name=":2" /> before founding [[Securify]] in 1998 and becoming its [[chief executive officer]]. According to an interview with Elgamal,<ref>{{Cite web|url=https://www.sramanamitra.com/2007/04/01/serial-entrepreneur-taher-elgamal-part-9/|title=Serial Entrepreneur: Taher Elgamal (Part 9)|date=2007-04-01|website=Sramana Mitra|language=en-US|access-date=2019-10-17}}</ref> when Securify was acquired by [[Kroll-O'Gara]],<ref>{{Cite news|url=https://www.wsj.com/articles/SB915406340199903000|title=Kroll-O'Gara Acquires Securify For About $64 Million in Stock|last=Reporter|first=a Wall Street Journal Staff|date=1999-01-04|work=Wall Street Journal|access-date=2019-10-17|language=en-US|issn=0099-9660}}</ref> he became the president of its [[information security]] group. After helping Securify spin out from Kroll-O'Gara,<ref>{{Cite news|url=https://www.bizjournals.com/cincinnati/stories/2000/10/23/daily12.html|title=Kroll-O'Gara announces private financing of Securify|work=Cincinnati Business Courier|access-date=2021-04-27}}</ref> Taher served as the company's chief technology officer (CTO) from 2001 to 2004.<ref>{{Cite web|url=http://investor.zixcorp.com/news-releases/news-release-details/dr-taher-elgamal-joins-zix-corporations-board-directors|title=Dr. Taher Elgamal Joins Zix Corporation's Board of Directors|website=Zixcorp Blog|access-date=2021-04-27}}</ref> In late 2008, Securify was acquired by Secure Computing<ref>{{Cite web|url=https://www.silicontap.com/securify_acquired_by_secure_computing/s-0017204.html|title=Securify Acquired By Secure Computing|website=www.silicontap.com|access-date=2019-10-17}}</ref> and is now part of [[McAfee]].<ref>{{Cite web|url=https://www.businesswire.com/news/home/20081118006560/en/McAfee-Completes-Acquisition-Secure-Computing|title=McAfee, Inc. Completes Acquisition of Secure Computing|date=2008-11-18|website=www.businesswire.com|language=en|access-date=2019-10-17}}</ref> In October 2006, he joined [[Tumbleweed Communications]] as a CTO.<ref>{{cite web|title=Taher Elgamal joins Tumbleweed as Chief Technology Officer|url=http://www.tumbleweed.com/news/press_releases/2006/2006-10-03a.html|archive-url=https://web.archive.org/web/20090924220510/http://www.tumbleweed.com/news/press_releases/2006/2006-10-03a.html|archive-date=2009-09-24}}</ref> Tumbleweed was acquired in 2008 by Axway Inc. Until 2023, Elgamal was CTO for security at Salesforce.com.<ref name=":4" /><ref name=":3" /><ref>{{Cite web|url=https://blogs.salesforce.com/company/2013/03/taher-elgamal-salesforce-cto-of-security.html.html|title=Renowned Cryptographer Taher Elgamal is Our New CTO of Security|website=Salesforce Blog|language=en|access-date=2019-10-17}}</ref> He now works as a partner at Evolution Equity Partners.<ref name=":5" />
+
+==== Entrepreneurial ventures ====
+Elgamal is a co-founder of NokNok Labs<ref>{{Cite web|url=https://www.networkworld.com/article/2163448/startup-nok-nok-labs-pitches-strong-new-authentication-process.html|title=Startup Nok Nok Labs pitches strong new authentication process|last=Messmer|first=Ellen|date=2013-02-12|website=Network World|language=en|access-date=2019-10-17}}</ref> and InfoSec Global.{{citation needed|date=November 2019}} He serves as a director of Vindicia, Inc.,<ref>{{Cite web|url=https://www.bloomberg.com/profile/person/1715824|title=Taher A Elgamal, Evolution Equity Partners: Profile and Biography |date=October 17, 2019|website=Bloomberg Markets}}</ref> which provides online payment services, [[Zix]] Corporation, which provides email encryption services, and Bay Dynamics.<ref>{{Cite web|url=https://www.marketwatch.com/investing/stock/zixi|title=Zix Corp.|website=www.marketwatch.com|language=en|access-date=2019-10-17}}</ref> He has served as an adviser to Cyphort, Bitglass, Onset Ventures, Glenbrook Partners, PGP corporation, Arcot Systems, Finjan, Actiance, Symplified, and Zetta. He served as Chief Security Officer of [[Axway Software|Axway]], Inc. He is vice chairman of SecureMisr.
+
+==== Executive roles ====
+Elgamal has also held executive roles at technology and security companies, including
+
+* CTO of Security at Salesforce.com from 2013 to 2023,<ref>{{Cite web|url=https://www.bloomberg.com/news/articles/2023-01-11/salesforce-loses-another-security-leader-in-executive-exodus|title=Salesforce Loses Another Security Leader in Executive Exodus|date=January 11, 2023|website=Bloomberg}}</ref>
+* CSO at Axway, Inc. from 2008 to 2011,
+* CTO at Tumbleweed Communications from 2006 to 2008,
+* CTO at Securify, Inc. from 2001 to 2004,
+* CEO and President of Securify, Inc. from 1998 to 2001 and,
+* Chief Scientist of Netscape Communications from 1995 to 1998.<ref name=":2" />
+
+=== Recognition ===
+
+* Elgamal is a recipient of the RSA Conference 2009 Lifetime Achievement Award,<ref name=":2">{{cite web|url=https://www.reuters.com/article/2009/04/22/idUS122120+22-Apr-2009+BW20090422|title=RSA Conference Recognizes Axway CSO Dr. Taher Elgamal for Lifetime Achievement in Information Security|date=2009-04-22|publisher=Reuters|url-status=dead|archive-url=https://web.archive.org/web/20131110185021/http://www.reuters.com/article/2009/04/22/idUS122120+22-Apr-2009+BW20090422|archive-date=2013-11-10|access-date=2013-03-20}}</ref> and he is recognized as the "father of SSL,"<ref name=":1" /> the Internet security standard Secure Sockets Layer. 
+* Elgamal and [[Paul Carl Kocher|Paul Kocher]] were jointly awarded the 2019 [[Marconi Prize]] for "their development of [[Secure Sockets Layer|SSL]]/[[Transport Layer Security|TLS]] and other contributions to the security of communications".<ref>{{Cite web|url=http://marconisociety.org/cryptographers-paul-kocher-and-taher-elgamal-awarded-the-2019-marconi-prize/|title=Cryptographers Paul Kocher and Taher Elgamal Awarded The 2019 Marconi Prize}}</ref>
+* Election to the [[National Academy of Engineering]], 2022, for contributions to cryptography, e-commerce, and protocols for secure internet transactions.<ref>{{Cite web |title=National Academy of Engineering Elects 111 Members and 22 International Members |url=https://nae.edu/270224/National-Academy-of-Engineering-Elects-111-Members-and-22-International-Members |access-date=2022-03-25 |website=NAE Website}}</ref>
+
+== Publications ==
+As a scholar, Elgamal published 4 articles:
+
+* T. ElGamal, "A subexponential-time algorithm for computing discrete logarithms over ''GF''(''p''<sup>2</sup>)", IEEE Trans. Inf. Theory, vol. 31, no. 4, pp.&nbsp;473–481, 1985.<ref>{{Cite journal|last=Elgamal|first=T.|date=July 1985|title=A subexponential-time algorithm for computing discrete logarithms over ''GF''(''p''²)|journal=IEEE Transactions on Information Theory|volume=31|issue=4|pages=473–481|doi=10.1109/TIT.1985.1057075}}</ref>
+* T. Elgamal, "A public key cryptosystem and a signature scheme based on discrete logarithms", IEEE Trans. Inf. Theory, vol. 31, no. 4, pp.&nbsp;469–472, Jul. 1985.<ref name=":0" />
+* T. ElGamal, "On Computing Logarithms Over Finite Fields", in Advances in Cryptology – CRYPTO ’85 Proceedings, 1986, pp.&nbsp;396–402.<ref>{{Cite book|last=ElGamal|first=Taher|title=Advances in Cryptology — CRYPTO '85 Proceedings |chapter=On Computing Logarithms over Finite Fields |date=1986|editor-last=Williams|editor-first=Hugh C.|volume=218|series=Lecture Notes in Computer Science|language=en|publisher=Springer Berlin Heidelberg|pages=396–402|doi=10.1007/3-540-39799-x_28|isbn=9783540397991|doi-access=free}}</ref>
+* T. Elgamal, "The new predicaments of security practitioners", Computer Fraud & Security, vol. 2009, no. 11, pp.&nbsp;12–14, Nov. 2009.<ref>{{Cite journal|last=Elgamal|first=Taher|date=2009-11-01|title=The new predicaments of security practitioners|journal=Computer Fraud & Security|volume=2009|issue=11|pages=12–14|doi=10.1016/S1361-3723(09)70140-X|issn=1361-3723}}</ref>
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist}}
+
+== External links ==
+*{{cite web |url=http://itknowledgeexchange.techtarget.com/security-wire-weekly/attacks-against-ssl/ |last=Westervelt |first=Robert |title=Attacks against SSL |date=25 February 2009 |access-date=5 June 2009 |archive-date=20 February 2016 |archive-url=https://web.archive.org/web/20160220002755/http://itknowledgeexchange.techtarget.com/security-wire-weekly/attacks-against-ssl/ |url-status=dead }}
+* [http://www.sramanamitra.com/2007/03/24/serial-entrepreneur-taher-elgamal-part-1/ Serial Entrepreneur Interview with Sramana Mitra]
+
+{{Authority control}}
+
+{{DEFAULTSORT:Gamal, Taher}}
+[[Category:1955 births]]
+[[Category:American people of Egyptian descent]]
+[[Category:Egyptian electrical engineers]]
+[[Category:Public-key cryptographers]]
+[[Category:Egyptian cryptographers]]
+[[Category:American cryptographers]]
+[[Category:Cairo University alumni]]
+[[Category:Stanford University alumni]]
+[[Category:Living people]]
+[[Category:American chief technology officers]]

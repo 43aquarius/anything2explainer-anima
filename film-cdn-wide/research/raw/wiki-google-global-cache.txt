@@ -1,0 +1,5 @@
+# Wikipedia article: Google Global Cache
+# URL: https://en.wikipedia.org/wiki/Google_Global_Cache
+# Fetched: 2026-10-11 via MediaWiki API (explaintext)
+# Length: 0 chars
+

@@ -1,0 +1,635 @@
+{
+ "fps": 30,
+ "total_frames": 4465,
+ "engine": "edge",
+ "voice": "en-US-AndrewNeural",
+ "rate": "+0%",
+ "gap": 10,
+ "para_gap": 20,
+ "chapter_gap": 45,
+ "lead": 40,
+ "tail": 90,
+ "lang": "en",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "The Distance Problem",
+   "from": 86
+  },
+  {
+   "n": 2,
+   "title": "The Edge Network",
+   "from": 894
+  },
+  {
+   "n": 3,
+   "title": "The Cache Hit",
+   "from": 1958
+  },
+  {
+   "n": 4,
+   "title": "The Invisible Half",
+   "from": 2732
+  }
+ ],
+ "sentences": [
+  {
+   "id": "S01",
+   "chapter": 1,
+   "from": 86,
+   "to": 208,
+   "text": "Friday night, eight o'clock. You press play on a two-gigabyte movie.",
+   "para": false,
+   "subs": [
+    {
+     "from": 86,
+     "to": 142,
+     "text": "Friday night, eight o'clock."
+    },
+    {
+     "from": 143,
+     "to": 208,
+     "text": "You press play on a two-gigabyte movie."
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "chapter": 1,
+   "from": 219,
+   "to": 354,
+   "text": "The origin server sits on another continent — eight thousand kilometers away.",
+   "para": false,
+   "subs": [
+    {
+     "from": 219,
+     "to": 300,
+     "text": "The origin server sits on another continent —"
+    },
+    {
+     "from": 301,
+     "to": 354,
+     "text": "eight thousand kilometers away."
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "chapter": 1,
+   "from": 365,
+   "to": 507,
+   "text": "Light itself needs real time to cross that. Fiber carries it at two-thirds of c.",
+   "para": false,
+   "subs": [
+    {
+     "from": 365,
+     "to": 444,
+     "text": "Light itself needs real time to cross that."
+    },
+    {
+     "from": 445,
+     "to": 507,
+     "text": "Fiber carries it at two-thirds of c."
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "chapter": 1,
+   "from": 518,
+   "to": 666,
+   "text": "Even on a perfect 100-megabit line, two gigabytes would take about three minutes.",
+   "para": false,
+   "subs": [
+    {
+     "from": 518,
+     "to": 593,
+     "text": "Even on a perfect 100-megabit line,"
+    },
+    {
+     "from": 594,
+     "to": 666,
+     "text": "two gigabytes would take about three minutes."
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "chapter": 1,
+   "from": 677,
+   "to": 730,
+   "text": "Yet your movie starts in one second.",
+   "para": false,
+   "subs": [
+    {
+     "from": 677,
+     "to": 730,
+     "text": "Yet your movie starts in one second."
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "chapter": 1,
+   "from": 741,
+   "to": 838,
+   "text": "The data didn't come that far. It was already waiting in your city.",
+   "para": true,
+   "subs": [
+    {
+     "from": 741,
+     "to": 791,
+     "text": "The data didn't come that far."
+    },
+    {
+     "from": 792,
+     "to": 838,
+     "text": "It was already waiting in your city."
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "chapter": 2,
+   "from": 914,
+   "to": 993,
+   "text": "Bandwidth can be bought. The speed of light cannot.",
+   "para": false,
+   "subs": [
+    {
+     "from": 914,
+     "to": 955,
+     "text": "Bandwidth can be bought."
+    },
+    {
+     "from": 956,
+     "to": 993,
+     "text": "The speed of light cannot."
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "chapter": 2,
+   "from": 1004,
+   "to": 1093,
+   "text": "The fix is not a faster network — it's a shorter one.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1004,
+     "to": 1065,
+     "text": "The fix is not a faster network —"
+    },
+    {
+     "from": 1066,
+     "to": 1093,
+     "text": "it's a shorter one."
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "chapter": 2,
+   "from": 1104,
+   "to": 1274,
+   "text": "A CDN puts copies of the content in hundreds of cities — points of presence, edge nodes.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1104,
+     "to": 1164,
+     "text": "A CDN puts copies of the content"
+    },
+    {
+     "from": 1165,
+     "to": 1208,
+     "text": "in hundreds of cities —"
+    },
+    {
+     "from": 1209,
+     "to": 1274,
+     "text": "points of presence, edge nodes."
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "chapter": 2,
+   "from": 1285,
+   "to": 1416,
+   "text": "When you press play, you're not talking to the origin. You're talking to the nearest shelf.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1285,
+     "to": 1318,
+     "text": "When you press play,"
+    },
+    {
+     "from": 1319,
+     "to": 1370,
+     "text": "you're not talking to the origin."
+    },
+    {
+     "from": 1371,
+     "to": 1416,
+     "text": "You're talking to the nearest shelf."
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "chapter": 2,
+   "from": 1427,
+   "to": 1666,
+   "text": "The trick that routes you there is called anycast: one address, announced from everywhere. The network itself picks the closest copy.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1427,
+     "to": 1467,
+     "text": "The trick that routes you there"
+    },
+    {
+     "from": 1468,
+     "to": 1516,
+     "text": "is called anycast:"
+    },
+    {
+     "from": 1517,
+     "to": 1592,
+     "text": "one address, announced from everywhere."
+    },
+    {
+     "from": 1593,
+     "to": 1666,
+     "text": "The network itself picks the closest copy."
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "chapter": 2,
+   "from": 1692,
+   "to": 1902,
+   "text": "And the first question of your request is answered by DNS — the name you type points to the edge, not to the origin.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1692,
+     "to": 1751,
+     "text": "And the first question of your request"
+    },
+    {
+     "from": 1752,
+     "to": 1804,
+     "text": "is answered by DNS —"
+    },
+    {
+     "from": 1805,
+     "to": 1827,
+     "text": "the name you type"
+    },
+    {
+     "from": 1828,
+     "to": 1870,
+     "text": "points to the edge,"
+    },
+    {
+     "from": 1871,
+     "to": 1902,
+     "text": "not to the origin."
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "chapter": 3,
+   "from": 1958,
+   "to": 2122,
+   "text": "Most requests never reach the origin at all. The edge answers from its cache — a cache hit.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1958,
+     "to": 2042,
+     "text": "Most requests never reach the origin at all."
+    },
+    {
+     "from": 2043,
+     "to": 2098,
+     "text": "The edge answers from its cache —"
+    },
+    {
+     "from": 2099,
+     "to": 2122,
+     "text": "a cache hit."
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "chapter": 3,
+   "from": 2133,
+   "to": 2393,
+   "text": "The content lives there until its TTL expires; then the edge pulls one fresh copy from the origin — a cache miss — and the timer starts again.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2133,
+     "to": 2165,
+     "text": "The content lives there"
+    },
+    {
+     "from": 2166,
+     "to": 2224,
+     "text": "until its TTL expires;"
+    },
+    {
+     "from": 2225,
+     "to": 2287,
+     "text": "then the edge pulls one fresh copy"
+    },
+    {
+     "from": 2288,
+     "to": 2353,
+     "text": "from the origin — a cache miss —"
+    },
+    {
+     "from": 2354,
+     "to": 2393,
+     "text": "and the timer starts again."
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "chapter": 3,
+   "from": 2404,
+   "to": 2676,
+   "text": "This is why most of what you stream never crosses an ocean. Video is more than half of all traffic now, and nearly all of it is served from someone's edge.",
+   "para": true,
+   "subs": [
+    {
+     "from": 2404,
+     "to": 2458,
+     "text": "This is why most of what you stream"
+    },
+    {
+     "from": 2459,
+     "to": 2506,
+     "text": "never crosses an ocean."
+    },
+    {
+     "from": 2507,
+     "to": 2597,
+     "text": "Video is more than half of all traffic now,"
+    },
+    {
+     "from": 2598,
+     "to": 2625,
+     "text": "and nearly all of it"
+    },
+    {
+     "from": 2626,
+     "to": 2676,
+     "text": "is served from someone's edge."
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "chapter": 4,
+   "from": 2747,
+   "to": 2803,
+   "text": "The idea predates the web boom.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2747,
+     "to": 2803,
+     "text": "The idea predates the web boom."
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "chapter": 4,
+   "from": 2814,
+   "to": 3023,
+   "text": "In the nineties at MIT, a hard question circulated: if the whole world hits one server, that server will melt.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2814,
+     "to": 2863,
+     "text": "In the nineties at MIT,"
+    },
+    {
+     "from": 2864,
+     "to": 2921,
+     "text": "a hard question circulated:"
+    },
+    {
+     "from": 2922,
+     "to": 2985,
+     "text": "if the whole world hits one server,"
+    },
+    {
+     "from": 2986,
+     "to": 3023,
+     "text": "that server will melt."
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "chapter": 4,
+   "from": 3034,
+   "to": 3290,
+   "text": "Akamai, spun out of MIT in 1998, became the answer — today its platform carries a meaningful share of the internet's traffic.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3034,
+     "to": 3132,
+     "text": "Akamai, spun out of MIT in 1998,"
+    },
+    {
+     "from": 3133,
+     "to": 3167,
+     "text": "became the answer —"
+    },
+    {
+     "from": 3168,
+     "to": 3209,
+     "text": "today its platform carries"
+    },
+    {
+     "from": 3210,
+     "to": 3290,
+     "text": "a meaningful share of the internet's traffic."
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "chapter": 4,
+   "from": 3301,
+   "to": 3474,
+   "text": "Others followed: open appliances inside ISPs, edges in three hundred-plus cities.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3301,
+     "to": 3335,
+     "text": "Others followed:"
+    },
+    {
+     "from": 3336,
+     "to": 3415,
+     "text": "open appliances inside ISPs,"
+    },
+    {
+     "from": 3416,
+     "to": 3474,
+     "text": "edges in three hundred-plus cities."
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "chapter": 4,
+   "from": 3520,
+   "to": 3559,
+   "text": "And the failure mode flipped.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3520,
+     "to": 3559,
+     "text": "And the failure mode flipped."
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "chapter": 4,
+   "from": 3570,
+   "to": 3778,
+   "text": "In 2021, one bad config at an edge provider took down roughly a tenth of the internet for forty-nine minutes.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3570,
+     "to": 3665,
+     "text": "In 2021, one bad config at an edge provider"
+    },
+    {
+     "from": 3666,
+     "to": 3736,
+     "text": "took down roughly a tenth of the internet"
+    },
+    {
+     "from": 3737,
+     "to": 3778,
+     "text": "for forty-nine minutes."
+    }
+   ]
+  },
+  {
+   "id": "S22",
+   "chapter": 4,
+   "from": 3789,
+   "to": 4003,
+   "text": "The trick that beat distance also concentrates trust: the edge became a single point of failure for everyone at once.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3789,
+     "to": 3838,
+     "text": "The trick that beat distance"
+    },
+    {
+     "from": 3839,
+     "to": 3894,
+     "text": "also concentrates trust:"
+    },
+    {
+     "from": 3895,
+     "to": 3958,
+     "text": "the edge became a single point of failure"
+    },
+    {
+     "from": 3959,
+     "to": 4003,
+     "text": "for everyone at once."
+    }
+   ]
+  },
+  {
+   "id": "S23",
+   "chapter": 4,
+   "from": 4049,
+   "to": 4110,
+   "text": "So — Friday night, your movie.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4049,
+     "to": 4110,
+     "text": "So — Friday night, your movie."
+    }
+   ]
+  },
+  {
+   "id": "S24",
+   "chapter": 4,
+   "from": 4121,
+   "to": 4278,
+   "text": "One second in, it plays. Not because the network is fast — because the copy was close.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4121,
+     "to": 4171,
+     "text": "One second in, it plays."
+    },
+    {
+     "from": 4172,
+     "to": 4230,
+     "text": "Not because the network is fast —"
+    },
+    {
+     "from": 4231,
+     "to": 4278,
+     "text": "because the copy was close."
+    }
+   ]
+  },
+  {
+   "id": "S25",
+   "chapter": 4,
+   "from": 4289,
+   "to": 4365,
+   "text": "The internet isn't fast. It's close.",
+   "para": true,
+   "subs": [
+    {
+     "from": 4289,
+     "to": 4343,
+     "text": "The internet isn't fast."
+    },
+    {
+     "from": 4344,
+     "to": 4365,
+     "text": "It's close."
+    }
+   ]
+  }
+ ],
+ "chars": 1658,
+ "words": 380,
+ "speech_sec": 126.15
+}

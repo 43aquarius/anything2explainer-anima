@@ -1,0 +1,783 @@
+URL: https://www.sandvine.com/blog/sandvines-2024-global-internet-phenomena-report-global-internet-usage-continues-to-grow
+
+[AppLogic Networks Logo]
+
+-   Who we serve []
+    We elevate observability for network service providers whose products are network-powered services.
+
+    -   [telco icon]
+
+        Communication Service Providers []
+
+         
+
+        -   [Telco]
+
+            CSPs
+
+            Communication Service Providers:
+            Elevated observability for CSPs: turn network data into app experience and behavior insights teams can then use and act inline to optimize traffic and unlock monetization.
+            CSP page →
+            Value Added Services →
+            Turn insights into outcomes. Our Value-Added Services team helps you Do More with network data: operationalize solutions faster, improve efficiency, and accelerate AI-driven innovation.
+            VAS page →
+
+        -   [Telco Solutions]
+
+            Who we help
+
+            Mobile and 5G / FWA Operators →
+            Transform your network and deliver high-quality application experiences.
+            Fixed Broadband (FTTx) →
+            Manage larger traffic volumes and deliver innovative services.
+            Cable / MSOs →
+            Classify and manage encrypted traffic with surgical precision.
+            Satellite and Non‑Terrestrial →
+            Reduce costs, and optimize service and network performance.
+            Solutions →
+
+        -   [Value Added Services Thumbnail]
+
+             
+
+            Small / Regional CSPs →
+            Scalable and affordable network visibility and traffic management.
+            CSP Cloud →
+            Valuable, real-time data and analytics.
+            Interconnect and Hub →
+            Seamlessly scale, connect customers, and launch new services.
+            Solutions →
+
+    -   [enterprise icon]
+
+        Enterprise []
+
+         
+
+        -   [Enterprise]
+
+            Enterprise
+
+            Convention Centers →
+            Exhibitor internet, VIP and sponsor packages as premium products.
+            Hospitality →
+            Guest and conference connectivity that matches your brand promise.
+            Maritime and Aviation →
+            See, shape, and prove application experience across constrained and changing connectivity paths.
+            GPUaaS →
+            Manage the front-end AI traffic that reduce cost and increase performance.
+            Enterprise page →
+
+        -   [Campus Thumbnail]
+
+            Campuses and Venues
+
+            Campuses and Higher Education
+            Prioritize learning, research and collaboration while keeping access fair.
+            Multi-Tenant Offices and Retail
+            Tenant and shopper connectivity treated as a differentiated amenity.
+            Enterprise Solutions →
+
+        -   [Enterprise Solutions]
+
+            How we help Enterprises
+
+            Observe
+            Per-property, per-zone and per-tenant experience visibility.
+            Optimize
+            Protect ticketing, POS, broadcast and learning apps.
+            Personalize and Secure
+            VIP, guest and tenant experiences with behavior-aware guardrails.
+
+    -   [managed service provider icon]
+
+        Managed Service Providers []
+         
+
+        -   [MSP]
+
+            Managed Service Providers
+
+            Venue and Hospitality MSPs
+            Premium, tiered connectivity for stadiums, hotels and expo halls.
+            Enterprise and SD-WAN MSPs
+            App-aware SLAs and managed connectivity for distributed enterprises.
+            Aviation, Maritime and Specialized MSPs
+            Experience-based services at sea, in air and on remote campuses.
+            MSP page →
+
+        -   [MSP Solutions]
+
+            How we help MSPs
+
+            Observe
+            Per-customer, per-site and per-app views for your NOC.
+            Optimize
+            App-aware policies across SD-WAN and carrier links.
+            Personalize
+            Vertical-specific bundles and white-label portals.
+
+    -   [cloud icon]
+
+        GPUaaS and AI Clouds []
+
+         
+
+        -   [GPUaaS and Cloud]
+
+            GPUaaS and AI Clouds
+
+            AI Inference Clouds
+            QoE-aware policies for stable, efficient inference workloads.
+            Training Farms and Data Centers
+            Smarter flows for high-intensity training traffic.
+            Multi-Tenant Cloud Providers
+            Per-tenant experience visibility and control across fabrics and regions.
+            GPUaaS and AI Clouds page →
+
+        -   [GPUaaS and Cloud Solutions]
+
+            How we help GPUaaS
+
+            Observe
+            Tenant-, job- and region-level QoE and behavior.
+            Optimize
+            QoE-aware routing and fabric planning to increase GPU utilization.
+            Monetize
+            Optional premium SLAs and latency tiers aligned to experience.
+
+    Not sure where you fit? We can help you map Elevated Observability to your network services.
+
+    Start with CSP →
+-   Suites & Portfolios []
+    Segment portfolios that bring Elevated Observability to life for CSPs, Enterprises and AI clouds.
+
+    -   [telco suite icon]
+
+        App QoE CSP Suite []
+
+         
+
+        -   [App QoE CSP Suite]
+
+            App QoE CSP Suite
+
+            For Telcos and CSPs
+            Elevated Observability for mobile, FWA, fixed, cable and satellite operators.
+            Included capabilities
+            ActiveLogic, AppLogic, AppLenX, Maestro Policy Engine, IDS, Ops Insights, AI Labs.
+            App QoE CSP Suite →
+
+        -   [Telco Solutions Suite]
+
+            What you can do
+
+            Analyze
+            Churn, QoE and behavior analytics.
+            Optimize
+            Traffic, fairness, IPTV/video and CGNAT.
+            Monetize
+            Experience-based tiers, roaming and sponsored data.
+
+    -   [enterrise suite icon]
+
+        Enterprise Suite []
+         
+
+        -   [Enterprise Suite]
+
+            Enterprise Suite
+
+            For Enterprises and Venues
+            Hospitality, venues, campuses and multi-tenant environments.
+            For MSPs
+            MSP motion that brings ForeSight to your enterprise customers.
+            Enterprise Suite →
+
+        -   [NetEnhance Solutions]
+
+            What you can do
+
+            Observe
+            Per-site, per-property and per-tenant experience.
+            Optimize
+            Protect ticketing, POS, broadcast and learning apps.
+            Personalize and Secure
+            VIP, guest, exhibitor and tenant connectivity offers.
+
+        -   [Featured Download Image]
+
+            Featured Whitepaper
+
+            The Impact of AI on Enterprise Networks
+            Most Network Professionals Aren’t ready for AI Traffic. Are you?
+            New EMA research explains why observability and optimization must evolve for AI traffic.
+            Download Whitepaper →
+
+    -   [cloud suite icon]
+
+        AI Suite []
+
+         
+
+        -   [AI Observability Suite]
+
+            AI Suite
+
+            For GPUaaS and AI Clouds
+            AI inference clouds, training farms and multi-tenant cloud providers.
+            AI and GPU Observability Suite →
+
+        -   [AI Observability Solutions]
+
+            What you can do
+
+            Observe
+            Tenant, job, and region-level QoE and behavior.
+            Optimize
+            QoE-aware routing, CGNAT and fabric planning.
+            Monetize
+            Premium SLAs and latency tiers aligned to experience.
+
+    All suites run on the same AppLogic Intelligence Stack.
+
+    Start with CSP Suite →
+-   Platform & Products []
+    One AppLogic Intelligence Stack across three layers: Visibility and Enforcement, Context and Enrichment, and Business Enablement.
+
+    -   [layer 1 icon]
+
+        Visibility and Enforcement layer []
+
+         
+
+        -   [Layer 1 Thumbnail]
+
+            Products
+
+            ActiveLogic →
+            Inline engine for real-time traffic visibility, QoS, shaping and enforcement.
+            AppLogic Engine →
+            Advanced application classification and QoE scoring.
+            AppLenX →
+            Flow/xDR-based classification and QoE for off-net domains.
+
+        -   [Layer 1 Solutions]
+
+            What this enables
+
+            Deep Visibility
+            See every app, subscriber, device and flow.
+            Real-Time Control
+            Shape, prioritize and protect critical experiences.
+
+    -   [layer 2 icon]
+
+        Context and Enrichment layer []
+         
+
+        -   [Layer 2]
+
+            Products
+
+            Maestro Policy Engine →
+            Turns business intent and experience rules into network behavior.
+            Insights Data Storage →
+            Enriched, AI-ready data fabric for analytics and models.
+
+        -   [Layer 2 Solutions]
+
+            Enabling Capabilities
+
+            Traffic Management and Policy Control
+            Fairness, heavy-user management and QoE-based prioritization.
+            CGNAT for Modern Networks
+            Application- and subscriber-aware CGNAT for better troubleshooting.
+            Managing Customer Churn →
+            Signals for churn propensity, save plays and proactive care.
+
+    -   [layer 3 icon]
+
+        Business Enablement layer []
+
+         
+
+        -   [Layer 3]
+
+            Products
+
+            Operations Insights with AI App Analyst →
+            Transform data into answers, actions, and better subscriber experiences.
+            Enterprise Insights →
+            Tenant, site, event and workload experience views.
+
+        -   [Layer 3 Solutions]
+
+            Who uses this?
+
+            NetOps and Care
+            Faster RCA, fewer tickets, better experience.
+            Product and Marketing
+            Experience-based offers and premium tiers.
+            Data and AI Teams
+            Reliable features for churn, capacity and monetization models.
+
+    See how the stack powers App QoE, ForeSight and AI and GPU portfolios.
+
+    See Platform overview →
+-   Resources []
+    Learn how leaders elevate observability and do more with network-powered services.
+
+    -   [solution brief icon]
+
+        Solutions and Datasheets []
+
+         
+
+        -   [Solutions Thumbnail]
+
+            Solutions
+
+            Heavy User Management →
+            Improve QoE by identifying and managing the network’s heaviest users.
+            Carrier Grade NAT →
+            Mitigate IPv4 address exhaustion while maintaining network visibility.
+            Solutions →
+
+        -   [Datasheets]
+
+            Datasheets
+
+            Simplified Installation Engine →
+            A one-click fully automated system that allows for installation, configuration, and auto-testing in less than 4 hours.
+            AppLogic →
+            Accurate App identification, categorization, and content classification for enhanced App QoE.
+            Datasheets →
+
+    -   [case study icon]
+
+        Case Studies and Whitepapers []
+         
+
+        -   [Case Studies]
+
+            Case Studies
+
+            Telenet and AppLogic Networks →
+            Improving Customer Satisfaction and Reducing Customer Churn.
+            OpNet and AppLogic Networks →
+            OpNet Reduces Congestion and Improves Customer Satisfaction Using ActiveLogic.
+            Case Studies →
+
+        -   [Whitepapers]
+
+            Whitepapers
+
+            Application QoE in the Cloud Era →
+            Analytics driven automation can process and suppress non-severe events while elevating only the most critical high impacting events.
+            Advanced Traffic Classification →
+            Provides a reliable and future-proof foundation for Application and Network Intelligence.
+            Whitepapers →
+
+    -   [video icon]
+
+        Videos and Webinars []
+
+         
+
+        -   [Videos]
+
+            Videos
+
+            Importance of App QoE to Inflight Wi-Fi →
+            How inflight wi-fi works and how AI-powered traffic management solutions from AppLogic Networks can help.
+            Introduction to AppLogic Networks →
+            See why AppLogic Networks is the market leader in App QoE.
+            Videos →
+
+        -   [Webinars]
+
+            Webinars
+
+            The Future of Network Optimization →
+            Optimize network performance and improve customer satisfaction.
+            Differentiated Personalized Service →
+            Ways small CSPs can enhance their personalization strategies.
+            Webinars →
+
+        -   [CTO Thumbnail]
+
+            CTO Corner
+
+            QoE For Critical Apps in Universities →
+            How AppLogic measures quality of experience (QoE) for critical apps in real time.
+            Building Quality Exhibition Centers →
+            How AppLogic Networks helps exhibition centers manage costs, shape traffic, and personalize exhibitor internet packages.
+            View all CTO Videos →
+
+    -   [internet trends icon]
+
+        Industry Trends []
+
+         
+
+        -   [Phenomena Reports]
+
+            Phenomena Reports
+
+            GIPR 2025 →
+            Understand how users are consuming internet bandwidth across different applications and platforms.
+            GIPR 2024 →
+            New data, new visualizations and new insights.
+            Phenomena Reports →
+
+        -   [Phenomena Blogs]
+
+            Phenomena Blogs
+
+            The 2025 Phenomena Report →
+            An annual analysis that provides detailed insights into global internet traffic patterns and the applications driving that traffic.
+            Global Internet Usage Continues to Grow →
+            Global traffic now over 33 exabytes per day, with users averaging 4.2GB a day.
+            Phenomena Blogs →
+
+    -   [blog icon]
+
+        Blogs []
+
+         
+
+        -   [Featured Blogs]
+
+            Featured Blogs
+
+            Sandvine’s Commitment on Earth Day and Beyond →
+            Every day has to be Earth Day if we are to individually and collectively protect our planet.
+            The Yin and Yang of Telecom and Big Tech →
+            Network operators want the right to negotiate new business models, but OTT players say everything...
+            All Blogs →
+
+        -   [App QoE Blogs]
+
+            App QoE Blogs
+
+            Onboard Connectivity Has to Do More Than Connect →
+            Why Maritime and Aviation Networks Need Application-Aware Connectivity.
+            Encryption Trends in Networks: What’s Changing, and What Is... →
+            Encryption has become the default for modern applications—and it continues to evolve. Through...
+            More App QoE Blogs →
+
+        -   [Blog Subscribe]
+
+            Subscribe
+
+            Subscribe to our blog
+            Get the latest on App QoE and Elevated Observability.
+            Subscribe →
+
+    -   [press icon]
+
+        Press Releases []
+
+         
+
+        -   [Press Releases]
+
+            Latest Press Releases
+
+            AppLogic Networks Aligns Profits with... →
+            Early this year, AppLogic Networks announced several ways in which it continued...
+            AppLogic Networks Completes Live Trial... →
+            AppLogic Networks Completes Live Trial at JANOG57 in Osaka, Powering New...
+            More Press Releases →
+
+        -   [App QoE Press Releases]
+
+            App QoE Press Releases
+
+            AppLogic Networks Unveils 2025 Global Internet Phenomena... →
+            Live sporting events drive new traffic peaks, while new encryption technologies complicate network...
+            Sandvine Introduces New AppLogic Product to Help Service... →
+            Advanced methods power highly accurate application identification, classification, and...
+            More App QoE Press Releases →
+
+        -   [Blog Subscribe]
+
+            Subscribe
+
+            Subscribe to our Press Releases
+            Get the latest AppLogic Networks news.
+            Subscribe →
+
+    Start with a customer story or dive straight into our technical documentation.
+
+    See all Resources →
+-   Company []
+    AppLogic Networks — elevating observability for network service providers worldwide.
+
+    -   [about us icon]
+
+        About and Vision []
+
+         
+
+        -   [About Thumbnail]
+
+            About AppLogic Networks
+
+            Our Story →
+            From deep traffic intelligence to Elevated Observability and business outcomes.
+            Vision and Values →
+            Exceptional Internet experiences, privacy-conscious and human-centered by design.
+
+        -   [Elevated Observability Thumbnail]
+
+            Elevated Observability
+
+            Elevated Observability →
+            Connecting experience, context, and action.
+            Observability-101 →
+            Understand what’s happening inside a network.
+            What’s Missing Today →
+            Observability should turn telemetry into answers, fast.
+            3‑layer stack →
+            How we create an Elevated Observability experience.
+
+        -   [Corporate Responsibility Thumbnail]
+
+            Corporate Responsibility
+
+            Our Responsibility →
+            Our commitment to responsible environmental, social, and governance policies and practices.
+            Integrity Moments →
+            Leaders from across AppLogic Networks share how integrity guides their work, their teams, and their decisions.
+
+    -   [careers icon]
+
+        Leadership Team []
+         
+
+        -   [Executives Thumbnail]
+
+            Leadership
+
+            Executive Team →
+            Leaders from networks, analytics and software-defined infrastructure.
+
+        -   [Directors Thumbnail]
+
+            Board of Directors
+
+            Learn More →
+
+    -   [positions icon]
+
+        Careers []
+         
+
+        -   [Careers Thumbnail]
+
+            Careers
+
+            Life at AppLogic Networks →
+            Help AppLogic Networks build a smarter internet.
+
+        -   [Positions Thumbnail]
+
+            Positions
+
+            Open Roles →
+            Help the world’s networks and service providers do more.
+
+    -   [news icon]
+
+        Partners and News []
+
+         
+
+        -   [Partners Thumbnail]
+
+            Partners and Ecosystem
+
+            Technology and Cloud Partners →
+            Integrations that extend the AppLogic Intelligence Stack.
+            Channel and GTM Partners →
+            Regional and global partners who bring AppLogic to market.
+            Partner Portal →
+
+        -   [News Thumbnail]
+
+            News and Press
+
+            Newsroom →
+            Announcements, coverage and media resources.
+            Blog Articles →
+            Learn more about Elevated Observability and Application Quality of Experience.
+
+    -   [events icon]
+
+        Events []
+
+         
+
+        -   [Events Thumbnail]
+
+            Upcoming Events
+
+            HITEC →
+            June 15-18, 2026
+            Booth 3158
+            JANOG58 →
+            July 15-17, 2026
+            Booth 3158
+            All Events →
+
+        -   [Sessions Thumbnail]
+
+            On-Demand Sessions
+
+            On-Demand Sessions →
+            Watch previous briefings and demos.
+            All Sessions →
+
+        -   
+
+            AppLogic Networks at MWC 2026
+
+            AppLogic Networks CEO Mark Driedger talks about the increase in AI Traffic and the impact that has on the quality of Experience on Telco and Enterprise Networks.
+
+    -   [support icon]
+
+        Customer Support []
+
+         
+
+        -   [Support Thumbnail]
+
+            Support
+
+            Support →
+            Get help from the AppLogic Networks support team.
+            Customer Portal →
+            Get help from the AppLogic Networks support team.
+            Customer Downloads →
+
+        -   [Training Thumbnail]
+
+            Training
+
+            Education and Training →
+            Instructor-led and online training.
+
+    AppLogic Networks — built on decades of learning how Internet traffic behaves.
+
+    Learn more about AppLogic Networks →
+
+Request a Demo
+
+[ALN Blog Banner]
+
+Sandvine’s 2024 Global Internet Phenomena Report: Global Internet Usage Continues to Grow
+
+[Subscribe] [Contact PR Team]
+
+[Samir Marwaha, Chief Solutions Officer]
+
+By Samir Marwaha, Chief Solutions Officer
+April 10, 2024
+
+Back to listing
+
+Recommended
+
+Onboard Connectivity Has to Do More Than Connect
+Read More
+
+Recommended
+
+Hospitality Networks Are Ready to Do More
+Read More
+
+Recommended
+
+Your GPUs Are Only as Good as the Traffic..
+Read More
+
+Recommended
+
+Why Responsible Technology Requires More Than..
+Read More
+
+Recommended
+
+Encryption Trends in Networks: What’s Changing,..
+Read More
+
+Global traffic now over 33 exabytes per day, with users averaging 4.2GB a day.
+
+[Screenshot 2024-04-10 at 16.00.37]Our 2024 Global Internet Phenomena Report shows a global volume of 33 exabytes per day, and a per-subscriber volume of 4.2 GB per day across the globe’s 6.4 billion mobile and 1.4 billion fixed connections.
+We also saw the continued dominance of the largest content providers, with companies like Google, Facebook, and Netflix driving 65% of all fixed traffic and 68% of all mobile traffic.
+
+Our 2024 GIPR measures three key metrics averaged across fixed and mobile networks around the world:
+
+-   Application Volume per Subscriber – daily volume for an application divided by the total number of subscribers.
+-   Application User Volume and Popularity – daily volume for an application divided by the number of subscribers using a particular application in the context of all active subscribers for an operator.
+-   Application Popularity Percentage – percentage of the subscriber base that use a particular application on a particular day.
+    [Screenshot 2024-04-10 at 16.02.06]
+
+ 
+
+Methodology
+
+For this year’s report, we used Sandvine’s AppLogic and its AI- and ML-driven propensity and prediction models to pull insights from a representative sample of anonymized and aggregated global data. That data covers both Application Categories as well as Content Categories.
+
+[Screenshot 2024-04-10 at 16.03.45]This data can help Engineering, Operations, and Customer Care departments address a number of challenges, such as:
+
+-   Build network capacity cost-effectively and efficiently.
+-   Quantify application costs and monetize network services.
+-   Improve quality of service and quality of experience for customers.
+
+With AppLogic’s industry-leading 95% accuracy, telecommunications providers and enterprises can reduce trouble tickets and escalations and increase customer satisfaction.
+
+Download the 2024 Global Internet Phenomena Report and watch the accompanying Q&A with Sandvine CTO Alexander Haväng and VP of Sales Bill Basquin. And contact us or schedule a demo to learn how you can gain these same insights into your network traffic.
+
+[SIGN UP TO OUR BLOG]
+
+Topics: Quality of Experience, Global Internet Phenomena, App QoE, App Quality of Experience, AppLogic
+
+About the Author
+
+Samir has over 30 years of experience in the communications industry and leads Strategy, Marketing and Product Management in his capacity as Chief Solutions Officer. Prior to AppLogic Networks, he served as VP & GM of New Markets BU and VP of Products & Portfolio Management for both Service Provider and Enterprise businesses at Netscout. He was instrumental in successfully harmonizing the portfolio of disparate businesses from Netscout’s acquisition of Danaher’s communication platform. He held several key leadership positions in the company in his 18 year tenure, including Product Management, Channel Sales, and Product and Commercial Marketing. Samir has worked in various capacities at Ericsson and Alcatel-Lucent in Engineering and Services organizations. He holds a Master of Science in Telecommunications from Southern Methodist University in Dallas, Texas.
+
+[LinkedIn Icon]
+
+[ALN CMYK White Logo Strapline]
+
+About Careers Contact
+
+Privacy Policy Legal Information Support
+
+ Subscribe
+ Accessibility
+
+ 
+
+[LinkedIn Icon]
+
+[YouTube Icon]
+
+[Facebook Icon]
+
+[Instagram Icon]
+
+[BlueSky Footer Icon]
+
+[LinkedIn Icon]
+
+[YouTube Icon]
+
+[Facebook Icon]
+
+[Instagram Icon]
+
+[BlueSky Footer Icon]

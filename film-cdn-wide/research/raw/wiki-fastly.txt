@@ -1,0 +1,76 @@
+# Wikipedia article: Fastly
+# URL: https://en.wikipedia.org/wiki/Fastly
+# Fetched: 2026-10-11 via MediaWiki API (explaintext)
+# Length: 7672 chars
+
+Fastly, Inc. is an American company based in San Francisco, which describes itself as a cloud computing company. Fastly provides content delivery network services, image optimization, and load balancing services. Fastly's cloud security services include denial-of-service attack protection, bot mitigation, and a web application firewall.
+
+
+== History ==
+
+
+=== Founding and IPO (2011–2019) ===
+Fastly was founded in 2011 by the Swedish-American entrepreneur Artur Bergman, previously chief technical officer at Wikia (now Fandom). In June 2013, Fastly raised $10 million in Series B funding. In April 2014, the company announced that it had acquired CDN Sumo, a CDN add-on for Heroku. In September 2014, Fastly raised a further $40 million in Series C funding, followed by a $75 million Series D round in August 2015.
+In September 2015, Google partnered with Fastly and other content delivery network providers to offer services to its users. In April 2017, Fastly launched its edge cloud platform along with image optimization, load balancing, and a web application firewall.
+Fastly raised $50 million in funding in May 2017, and another $40 million in July 2018. The company filed for an initial public offering (IPO) in April 2019 and debuted on the New York Stock Exchange on May 17, 2019.
+
+
+=== Joshua Bixby as CEO (2020–2022) ===
+In February 2020, Bergman stepped down as CEO and assumed the role of chief architect and executive chairperson; Joshua Bixby took over the CEO role.
+In August 2020, Fastly announced it was acquiring cybersecurity company Signal Sciences for $775 million ($200 million in cash and $575 million in stock).
+In June 2021, Ronald W. Kisling, previously employed by Alphabet as the CFO of the Fitbit division, was hired to serve as Fastly's CFO, succeeding Adriel Lares. He assumed the position in August 2021.
+On 8 June 2021, a software bug in Fastly's CDN, triggered by a valid customer configuration change, temporarily disrupted access to major websites, including Reddit, Twitch, Amazon, GOV.UK, The New York Times, The Guardian, and the BBC. According to Fastly, 95% of its network was operating normally within 49 minutes. The incident prompted discussion about the internet's reliance on a small number of CDN providers.
+In May 2022, Fastly announced it had acquired Glitch, a web coding platform with more than 1.8 million developers.
+
+
+=== Todd Nightingale as CEO (2022-2025) ===
+In August 2022, Todd Nightingale, previously an executive VP at Cisco, was hired to serve as Fastly's CEO, succeeding Joshua Bixby.
+In March 2023, Fastly made all of its network services and web application security products available to its partners. Previously, some of the company's partners had only been able to sell specific Fastly products, such as its web application firewall. Also in March 2023, Fastly announced an Oblivious HTTP relay service to enable clients, such as Google Chrome, to improve anonymity of end users while gathering data.
+In August 2023, Fastly announced that it had acquired the domain status API provider, Domainr. 
+In August of 2024, Fastly laid off 11% of its work force. Later in December 2024, Fastly issued $150 million in convertible senior notes due in 2028, carrying an annual interest rate of 7.75%..
+
+
+=== Kip Compton as CEO (2025–present) ===
+In June 2025, Kip Compton was appointed CEO. Kip was formerly Chief Product Officer, and previously held leadership roles at Cisco and Comcast.
+In November 2025, Fastly announced that it would transfer its stock exchange listing from the New York Stock Exchange to the Nasdaq Global Select Market. The company began trading on Nasdaq under the ticker symbol FSLY in December 2025.
+In March 2026, Fastly appointed Joan Jenkins as chief marketing officer.
+
+
+== Products and services ==
+Fastly provides content delivery, edge computing, security, and observability services.
+
+
+=== Content delivery ===
+Fastly operates a content delivery network (CDN) that caches web content, delivers live and on-demand video, and serves application programming interface (API) responses through geographically distributed points of presence. Its CDN follows a reverse-proxy model, routing requests through Fastly's servers. Content is retrieved from customers' origin servers and cached to reduce the time required for users to access it. Fastly also offers semantic caching through its AI Accelerator, which caches responses to similar AI prompts to reduce latency and API calls.
+The platform supports static and dynamic content delivery, configurable caching rules, and instant purging, which allows customers to invalidate cached content across the network. According to Fastly, its mean global cache purge time was less than 150 milliseconds as of December 31, 2025.
+Fastly supports the UDP-based HTTP/3 protocol, as well as digital rights management (DRM)-enabled content, encryption, and secure tokens to restrict media access. Its caching infrastructure uses a heavily modified version of Varnish. Fastly's network map listed 622 Tbps of connected global capacity as of June 30, 2026.
+
+
+=== Edge computing ===
+Fastly Compute, formerly called Compute@Edge, is a serverless edge computing platform that runs application code on Fastly's distributed network. It uses a WebAssembly (Wasm) runtime based on Wasmtime to execute code in isolated sandboxed environments close to end users. By default, each request starts a new sandbox.
+Fastly also co-founded the Bytecode Alliance, an organization supporting the development of WebAssembly technologies.
+Developers can write Compute applications in languages including JavaScript, Rust, C++, and Go. Support for other languages depends on compatibility with WebAssembly and the platform's interfaces.
+Fastly provides key-value and object storage services for applications using its platform, alongside Fanout for real-time publish-subscribe messaging. 
+
+
+=== Security ===
+Fastly provides web application security, API discovery and enforcement, bot management, and protection against distributed denial-of-service (DDoS) attacks. Its Next-Gen web application firewall (WAF) is based on technology from Signal Sciences, which Fastly acquired in 2020. The firewall analyzes HTTP requests and applies detection signals and rules to identify and block attacks such as SQL injection and cross-site scripting.
+
+In 2024, Fastly introduced Bot Management, which classifies automated traffic at the network edge and provides controls to allow, challenge, or block bots. Fastly also offers API Security, Client-Side Protection, and DDoS Protection.
+In 2025, Fastly reported that its Next-Gen WAF and Bot Management products protected more than 130,000 applications and APIs and inspected over 6.5 trillion requests per month.
+
+
+=== Observability ===
+Fastly provides observability tools for monitoring traffic, performance, and security events on its network. These include real-time log streaming to external analytics platforms and security information and event management (SIEM) systems. Its monitoring tools include Custom Dashboards, Log Explorer & Insights, Domain Inspector, and Origin Inspector.
+
+
+=== Research ===
+Fastly publishes security research based on traffic observed through its services, including analyses of AI crawlers and other automated requests. A 2025 report attributed 95% of the AI crawler traffic in its dataset to Meta, Google, and OpenAI. A report published in 2026 found that bots accounted for 49% of the requests analyzed during January of that year and classified 99% of that bot traffic as unwanted or unverifiable.
+
+
+== References ==
+
+
+== External links ==
+Official website 
+Business data for Fastly, Inc.:

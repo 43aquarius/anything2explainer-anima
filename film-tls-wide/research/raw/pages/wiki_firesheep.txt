@@ -1,0 +1,35 @@
+{{Short description|Firefox extension}}
+{{Infobox software
+| name                   = Firesheep
+| screenshot             = 
+| developer              = Eric Butler
+| latest_release_version = 0.1-1<ref>{{cite web|last=Butler|first=Eric|title=Firesheep – codebutler|url=http://codebutler.com/firesheep?c=1|accessdate=December 20, 2010|archive-date=August 20, 2012|archive-url=https://web.archive.org/web/20120820220335/http://codebutler.com/firesheep?c=1|url-status=live}}</ref>
+| latest release date    = 
+| language               = English
+| operating_system       = Microsoft Windows and {{nowrap|Mac OS X}} (highly unstable on Linux)
+| genre                  = [[Add-on (Mozilla)]]
+| license                = 
+| website                = {{URL|https://codebutler.com/firesheep}}
+}}
+
+'''Firesheep''' was an [[Add-on (Mozilla)#Extensions|extension]] for the [[Firefox]] web browser to [[Session hijacking|hijack sessions]]. It used a [[Packet analyzer|packet sniffer]] to [[HTTP cookie#Cookie theft and session hijacking|intercept unencrypted session cookies]] from websites such as [[Facebook]] and [[Twitter]]. The plugin eavesdropped on [[Wi-Fi]] communications, listening for session cookies. When it detected a session cookie, the tool used this cookie to obtain the identity belonging to that session. The collected identities (victims) are displayed in a side bar in Firefox. By clicking on a victim's name, the victim's session is taken over by the attacker.<ref name="securitynow">{{cite web |author=Steve Gibson, Gibson Research Corporation |url=http://www.grc.com/sn/sn-272.htm |title=Security Now! Transcript of Episode No. 272 |publisher=Grc.com |accessdate=November 2, 2010 |archive-date=October 1, 2012 |archive-url=https://web.archive.org/web/20121001055454/http://www.grc.com/sn/sn-272.htm |url-status=live }}</ref>
+
+The extension was released October 2010 as a demonstration of the security risk of [[session hijacking]] vulnerabilities to users of web sites that only encrypt the login process and not the [[HTTP cookie|cookie(s)]] created during the login process.<ref name="lifehacker-fs">{{cite web|title=Firesheep Sniffs Out Facebook and Other User Credentials on Wi-Fi Hotspots|date=October 25, 2010|url=http://lifehacker.com/5672313/sniff-out-user-credentials-at-wi+fi-hotspots-with-firesheep|publisher=Lifehacker|accessdate=October 28, 2010|archive-date=August 4, 2012|archive-url=https://web.archive.org/web/20120804025759/http://lifehacker.com/5672313/sniff-out-user-credentials-at-wi+fi-hotspots-with-firesheep|url-status=live}}</ref> It has been warned that the use of the extension to capture login details without permission would violate wiretapping laws and/or computer security laws in some countries. Despite the security threat surrounding Firesheep, representatives for [[Mozilla Add-ons]] stated initially that it would not use the browser's internal add-on blacklist to disable use of Firesheep, as the blacklist has only been used to disable [[spyware]] or add-ons which inadvertently create security vulnerabilities, as opposed to attack tools (which may legitimately be used in legitimate [[Penetration test|penetration tests]]).<ref name="cw-firesheep">{{cite web|last=Keizer|first=Gregg|title=Mozilla: No 'kill switch' for Firesheep add-on|date=October 28, 2010|url=http://www.computerworld.com/s/article/9193420/Mozilla_No_kill_switch_for_Firesheep_add_on|publisher=Computer World|accessdate=October 29, 2010|archive-date=October 10, 2012|archive-url=https://web.archive.org/web/20121010180113/http://www.computerworld.com/s/article/9193420/Mozilla_No_kill_switch_for_Firesheep_add_on|url-status=dead}}</ref> Since then, Firesheep has been removed from the Firefox addon store.
+
+A similar tool called Faceniff was released for Android mobile phones.<ref name="hns-faceniff">{{cite web|title=Sniff and intercept web session profiles on Android|date=June 2, 2011|url=http://www.net-security.org/secworld.php?id=11107|publisher=Help Net Security|accessdate=June 2, 2011|archive-date=July 12, 2012|archive-url=https://web.archive.org/web/20120712143712/http://www.net-security.org/secworld.php?id=11107|url-status=live}}</ref>
+
+==See also==
+*[[HTTPS]]
+*[[Transport Layer Security]]
+*[[HTTP Strict Transport Security]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website|https://codebutler.github.io/firesheep}}
+
+{{Use mdy dates|date=November 2022}}
+
+[[Category:Hacking (computer security)]]
+[[Category:Free Firefox legacy extensions]]

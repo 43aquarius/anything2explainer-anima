@@ -1,0 +1,85 @@
+# DNS — The Internet's Phonebook — narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 The Mystery
+You type shop.example and press Enter.|Half a second later, the page appears.
+Here is the strange part:|no machine on the internet|is named shop.example.
+The internet doesn't speak names.|It speaks numbers.
+Names are for humans.|Routing is for machines.
+## gap 15
+
+So in the first millisecond,|your browser is holding|an envelope with no address on it.
+Before anything can be sent,|the name has to become a number.
+Somebody has to run that translation —|every single time you press Enter.
+
+It didn't always work this way.
+For the internet's first decade,|there was one text file, HOSTS.TXT —|the whole network's contact list,
+maintained by one office at SRI,|updated when you phoned in a change.
+Thousands of hosts, one file,|one office, one phone line.|That was the ceiling.
+## gap 20
+
+In 1983, Paul Mockapetris|proposed a different design:|no central book at all.
+A hierarchy, distributed worldwide —|the Domain Name System.
+The spec we still run today|was written in November 1987.|It predates the web itself.
+So how do you look things up|in a book that has no center?
+## gap 15
+
+# CHAPTER 2 The Lookup
+Your browser doesn't do the walking.|It hands the question to a resolver —|yours, or a public one like 1.1.1.1.
+Think of the resolver as a librarian|you've hired to fetch one book.
+The librarian starts at the top:|the root servers.
+The root doesn't know shop.example.|It never will.
+It answers one smaller question:|who handles names ending in .example?
+
+That's a referral —|not the answer,|just the address of the next counter.
+The next counter is the TLD server|for .example.
+Same move: it points to the shop's|authoritative name server.
+That server, finally, holds the record:|shop.example — 192.0.2.33.
+The answer travels back to your browser.|The envelope gets its address.
+Four counters, and none of them|knew the whole book.
+The whole walk usually finishes|in well under a tenth of a second.
+## gap 15
+
+But if every Enter paid that full price,|the root would melt.
+Most of the time, nobody is actually|walking the hallway at all.
+## gap 20
+
+# CHAPTER 3 The Cache
+Every answer along the way|gets written on a sticky note.
+Your browser keeps notes.|Your operating system keeps notes.|Your resolver keeps the biggest stack.
+Next time you ask,|the note answers in about a millisecond —|faster than a camera shutter.
+Each note carries a TTL —|time to live —|set by the record's owner.
+It's the expiry date on the carton.|Fresh until then.|Questioned after.
+## gap 15
+
+That's what people call|"DNS propagation" — but nothing is pushed.
+You change the record,|and old answers simply sit in caches|until their dates pass.
+In 2021, Facebook's nameservers|went dark mid-maintenance.
+For about eleven minutes,|the world's caches still served|the last correct copies.
+Then they expired —|and facebook.com simply|stopped being an answer anywhere.
+That is how much of this system|runs on sticky notes:|1.1.1.1 alone answers|about 1.9 trillion lookups a day.
+## gap 15
+
+A phonebook this size, this fast,|this uncritical —|what could possibly go wrong?
+
+# CHAPTER 4 When It Breaks
+Three honest answers.
+First: the questions themselves|were open postcards for 33 years.
+Classic DNS rides plaintext UDP.|Anyone on the path could read|every name you looked up.
+The fixes came in 2016 and 2018:|DNS over TLS,|DNS over HTTPS.
+Second: the book can lie.
+For 19 days in 2003,|every mistyped .com name on Earth|landed on one company's ad page.
+No such domain — NXDOMAIN —|is a signal the internet depends on.|That wildcard broke it.
+## gap 25
+
+
+So the answers got signatures:|DNSSEC — a chain of trust|from the root down.
+The root itself was signed in 2010,|27 years after DNS was born.
+Third: attack the book,|and the readers go down with it.
+In 2016, a botnet of hijacked|cameras, printers and baby monitors|flooded one DNS provider.
+Twitter, Netflix, Spotify — gone.|Their own servers never crashed.|Only the shared phonebook did.
+## gap 20
+
+So — you pressed Enter,|half a second ago.
+One question, four counters,|a stack of sticky notes,|one envelope addressed.
+A name is a question.|DNS is the answer.
+## gap 25
+

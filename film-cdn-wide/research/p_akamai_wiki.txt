@@ -1,0 +1,1274 @@
+URL: https://en.wikipedia.org/wiki/Akamai_Technologies
+
+Jump to content
+
+Main menu
+
+Main menu
+
+move to sidebar
+
+hide
+
+Navigation
+
+-   Main page
+-   Contents
+-   Current events
+-   Random article
+-   About Wikipedia
+-   Contact us
+
+Contribute
+
+-   Help
+-   Learn to edit
+-   Community portal
+-   Recent changes
+-   Upload file
+-   Special pages
+
+[] [Wikipedia] [The Free Encyclopedia]
+
+Search
+
+Search
+
+Appearance
+
+-   Donate
+-   Create account
+-   Log in
+
+Personal tools
+
+-    Donate
+-    Create account
+-    Log in
+
+Contents
+
+move to sidebar
+
+hide
+
+-   
+    (Top)
+-   
+    1 History
+
+    Toggle History subsection
+    -   
+        1.1 Akamai Intelligent Edge Platform
+    -   
+        1.2 Content delivery process
+    -   
+        1.3 Peer-to-peer networking
+    -   
+        1.4 OPEN Initiative
+-   
+    2 Acquisitions
+-   
+    3 Key scientific publications
+-   
+    4 See also
+-   
+    5 References
+-   
+    6 External links
+
+Toggle the table of contents
+
+Akamai Technologies
+
+28 languages
+
+-   العربية
+-   Čeština
+-   Dansk
+-   Deutsch
+-   Español
+-   Euskara
+-   فارسی
+-   Suomi
+-   Français
+-   हिन्दी
+-   Հայերեն
+-   Bahasa Indonesia
+-   Igbo
+-   Italiano
+-   日本語
+-   한국어
+-   Bahasa Melayu
+-   Nederlands
+-   Polski
+-   Português
+-   Română
+-   Русский
+-   Kiswahili
+-   Türkçe
+-   Українська
+-   اردو
+-   Tiếng Việt
+-   中文
+
+Edit links
+
+-   Article
+-   Talk
+
+English
+
+-   Read
+-   Edit
+-   View history
+
+Tools
+
+Tools
+
+move to sidebar
+
+hide
+
+Actions
+
+-    Read
+-    Edit
+-    View history
+
+General
+
+-   What links here
+-   Related changes
+-   Upload file
+-   Permanent link
+-   Page information
+-   Cite this page
+-   Get shortened URL
+-   Switch to legacy parser
+
+Print/export
+
+-   Download as PDF
+-   Printable version
+
+In other projects
+
+-   Wikimedia Commons
+-   Wikidata item
+
+Appearance
+
+move to sidebar
+
+hide
+
+From Wikipedia, the free encyclopedia
+
+American computer networking company
+
++------------------------------------------+-----------------------------------+
+| []                                       |                                   |
++------------------------------------------+-----------------------------------+
+| []                                       |                                   |
+|                                          |                                   |
+| Headquarters in Cambridge, Massachusetts |                                   |
++------------------------------------------+-----------------------------------+
+| Type                                     | Public                            |
++------------------------------------------+-----------------------------------+
+| Traded as                                | -   Nasdaq: AKAM                  |
+|                                          | -   S&P 500 component             |
++------------------------------------------+-----------------------------------+
+| Industry                                 | -   Internet                      |
+|                                          | -   Cloud computing               |
++------------------------------------------+-----------------------------------+
+| Founded                                  | 1998; 28 years ago (1998)         |
++------------------------------------------+-----------------------------------+
+| Founders                                 | -   Daniel Lewin                  |
+|                                          | -   F. Thomson Leighton           |
+|                                          | -   Randall Kaplan                |
+|                                          | -   Preetish Nijhawan             |
+|                                          | -   Jonathan Seelig               |
++------------------------------------------+-----------------------------------+
+| Headquarters                             | Cambridge, Massachusetts, U.S.    |
++------------------------------------------+-----------------------------------+
+| Key people                               | -   F. Thomson Leighton (CEO)     |
+|                                          | -   Daniel Hesse (chairman)^([1]) |
++------------------------------------------+-----------------------------------+
+| Revenue                                  | [Increase] US$4.21 billion (2025) |
++------------------------------------------+-----------------------------------+
+| Operating income                         | [Increase] US$567 million (2025)  |
++------------------------------------------+-----------------------------------+
+| Net income                               | [Decrease] US$452 million (2025)  |
++------------------------------------------+-----------------------------------+
+| Total assets                             | [Increase] US$11.5 billion (2025) |
++------------------------------------------+-----------------------------------+
+| Total equity                             | [Increase] US$4.98 billion (2025) |
++------------------------------------------+-----------------------------------+
+| Number of employees                      | 11,000 (2025)                     |
++------------------------------------------+-----------------------------------+
+|                                          |                                   |
++------------------------------------------+-----------------------------------+
+| ASN                                      | -   20940                         |
++------------------------------------------+-----------------------------------+
+|                                          |                                   |
++------------------------------------------+-----------------------------------+
+| Website                                  | akamai.com                        |
++------------------------------------------+-----------------------------------+
+| Footnotes                                |                                   |
+| ^([2][3])                                |                                   |
++------------------------------------------+-----------------------------------+
+
+: Akamai Technologies, Inc.
+
+Akamai Technologies, Inc. is an American company specializing in content delivery network^([4]) (CDN), cybersecurity, DDoS mitigation, and cloud services.^([5][6]) It is headquartered in Cambridge, Massachusetts.
+
+History
+
+[edit]
+
+The company was named after akamai, which means 'clever', or more colloquially 'cool', in Hawaiian. Co-founder Daniel M. Lewin found the term in a Hawaiian–English dictionary after a colleague's suggestion.^([7])
+
+Akamai Technologies entered the 1998 MIT $50K competition (equivalent to $100K in 2025) with a business proposition based on their research on consistent hashing^([8]) and was selected as one of the finalists.^([9]) By August 1998, the team had developed a working prototype. Jonathan Seelig and Randall Kaplan joined F. Thomson Leighton and Daniel Lewin as founders, and Akamai Technologies was incorporated on August 20, 1998.^([10][11][12])
+
+In late 1998 and early 1999, a group of business professionals and scientists joined the founding team—most notably, Paul Sagan, former president of New Media for Time Inc., and George Conrades, former chairman and chief executive officer of BBN Corp. and senior vice president of US operations for IBM. Conrades became chief executive officer of Akamai in April 1999.^([13][14][15]) The company launched its commercial service in April 1999 and was listed on the NASDAQ Stock Market from October 29, 1999.^([16])
+
+On July 1, 2001, Akamai was added to the Russell 3000 Index and Russell 2000 Index.^([17])
+
+On September 11, 2001, co-founder Daniel M. Lewin died in the September 11 attacks at the age of 31, when he was stabbed by one of the hijackers aboard American Airlines Flight 11, the first plane to crash into the World Trade Center. He was seated closest to the hijackers and may have tried to stop them.^([18])
+
+Arabic news network Al Jazeera was an Akamai customer from March 28, 2003 to April 2, 2003, when Akamai decided to end the relationship,^([19]) which the network's English-language managing editor claimed was due to "political pressure".^([20])
+
+In 2005, Paul Sagan was named chief executive officer of Akamai, taking over from Conrades. Sagan worked to differentiate Akamai from its competitors by expanding its breadth of services.^([15]) Under his leadership, it grew to $1.37 billion in revenue.^([21])
+
+In July 2007, Akamai was added to the S&P 500 index.^([22])
+
+In 2013, co-founder Tom Leighton was elected chief executive officer, replacing Sagan.^([23])
+
+In 2013, the Securities and Exchange Commission charged a former executive at Akamai Technologies for illegally tipping non-public information about the company's financial predicament as part of the insider trading scheme operated by now-imprisoned Galleon Management hedge fund founder Raj Rajaratnam.^([24]) In 2014 it was reported that the National Security Agency and Federal Bureau of Investigation used Facebook's Akamai CDN to collect information on Facebook users.^([25])
+
+On February 9, 2021, Akamai announced that it would reorganize into two internal groups – Security Technology and Edge Technology. It also re-established the role of chief technology officer and named Robert Blumofe to that role.^([26]) Long-time chief security officer (CSO) Andy Ellis announced he would leave in March 2021.^([27])
+
+Akamai's headquarters are in Kendall Square. It started in Technology Square and later expanded to multiple buildings in Cambridge Center. It consolidated its offices in a purpose-built building at 145 Broadway in December 2019.^([28])
+
+The company's cloud infrastructure services primarily consist of compute and storage solutions developed based on Linode, a cloud hosting provider acquired by Akamai for $900 million in 2022.^([29][30])
+
+Akamai Intelligent Edge Platform
+
+[edit]
+
+The Akamai Intelligent Platform^([31]) is a distributed cloud computing platform that operates worldwide, a network of over approximately 365,000 servers in more than 135 countries.^([32]) These servers reside on roughly 1,350 of the world's networks, gathering real-time information about traffic, congestion, and trouble spots.^([32]) Each Akamai server is equipped with proprietary software that uses complex algorithms to process requests from nearby users.^([31])
+
+Content delivery process
+
+[edit]
+
+[]
+
+Akamai content delivery to a user
+
+The content delivery process begins with a user submitting a request to a browser. When a user enters a URL, a DNS request is triggered to Akamai's authoritative DNS,^([33]) and an IP address is retrieved. With the IP address, the browser can then directly contact the Akamai edge server for subsequent requests.^([34]) In a content delivery network (CDN) structure, the domain name of the URL is translated by the mapping system^([35]) into the IP address of an edge server to serve the content to the user.^([31])
+
+Akamai delivers web content over its Intelligent Platform by transparently mirroring elements such as HTML, CSS, software downloads, and media objects from customers' servers. The Akamai server is automatically chosen depending on the type of content and the user's network location. The servers are located in more than 200 countries and territories.^([36]) Receiving content from a server nearer to the user allows for faster downloads and less vulnerability to network congestion. Akamai claims to provide better scalability by delivering the content over the last mile from servers close to end-users, avoiding the middle-mile bottleneck of the Internet.^([37]) The Download Delivery product line includes HTTP downloads for large downloadable objects, a customizable application for consumers, and analytics tools with metrics that monitor and report on the download process.^([38])
+
+Peer-to-peer networking
+
+[edit]
+
+In addition to using its own servers, Akamai delivers certain content from other end-users' computers, in the form of peer-to-peer networking.^([39][40])
+
+OPEN Initiative
+
+[edit]
+
+On October 9, 2013, Akamai announced its Open Initiative at the 2013 Akamai Edge Conference. OPEN allows customers and partners to develop and customize how they interact with the Akamai Intelligent Platform. Its key components include system and development operations integration, real-time big data integration, and a single-point user interface.^([41])
+
+Acquisitions
+
+[edit]
+
+  ----------------------- ----------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------
+  Date                    Acquisition                                                                                                                               Paid
+  February 10, 2000       Network24 Communications^([42])                                                                                                           621,000 shares of common stock and $12.5 million in cash^([43])
+  April 20, 2000^([43])   InterVU Inc^([44])                                                                                                                        10.0 million shares of common stock
+  July 25, 2000           CallTheShots, Inc.                                                                                                                        aggregate purchase price of $3.7 million^([43])
+  June 10, 2005           Speedera Networks, Inc.                                                                                                                   10.6 million shares of Akamai common stock and options to purchase 1.7 million shares of Akamai common stock^([45])
+  December 13, 2006       Nine Systems, Inc.^([46])                                                                                                                 aggregate purchase price of $157.5 million^([47])
+  March 13, 2007          Netli Inc. (Netli)^([48])                                                                                                                 aggregate purchase price of $154.4 million
+  April 12, 2007          Red Swoosh Inc^([49])                                                                                                                     aggregate purchase price of $18.7 million^([50])
+  November 3, 2008        aCerno Inc.^([50])                                                                                                                        aggregate purchase price of $90.8 million^([51])
+  June 10, 2010           Velocitude LLC^([52])                                                                                                                     aggregate purchase price of $12 million^([53])
+  February 7, 2012        Blaze Software, Inc.^([54])                                                                                                               aggregate purchase price of $19.3 million^([55])
+  March 6, 2012           Cotendo, Inc.^([54])                                                                                                                      aggregate purchase price of $278.9 million^([56])
+  September 13, 2012      FastSoft, Inc.^([54])                                                                                                                     aggregate purchase price of $14.4 million^([57])
+  December 4, 2012        Verivue, Inc.^([54])                                                                                                                      aggregate purchase price of $30.9 million^([58])
+  November 8, 2013        Velocius Networks^([59])                                                                                                                  aggregate purchase price of $4.3 million^([60])
+  February 2014           cyber security provider Prolexic Technologies^([59])                                                                                      aggregate purchase price of $390 million^([61])
+  February 2015           Xerocole Inc., a domain name system technology company^([62])                                                                             
+  April 6, 2015           Octoshape, a cloud OTT IPTV service provider^([63])                                                                                       undisclosed amount^([64])
+  November 2, 2015        Bloxx, a provider of Secure Web Gateway (SWG) technology^([65])                                                                           undisclosed amount^([66])
+  September 28, 2016      Concord Systems, a provider of technology for the high performance processing of data at scale^([67])                                     undisclosed amount^([68])
+  October 4, 2016         Soha Systems, an enterprise secure access delivered as a service provider^([69])                                                          undisclosed amount^([70])
+  December 19, 2016       Cyberfend, a bot and automation detection solutions provider^([71])                                                                       undisclosed amount^([72])
+  March 29, 2017          SOASTA, a digital performance management company based in Mountain View, CA                                                               undisclosed all-cash amount^([73])
+  October 11, 2017        Nominum, a carrier-grade DNS and DHCP provider and one of the major players in the creation of the modern DNS                             an undisclosed all-cash amount^([74])
+  January 24, 2019        CIAM provider Janrain^([75])                                                                                                              
+  October 2019            security software provider ChameleonX                                                                                                     $20 million^([76][77])
+  October 27, 2020        IoT and mobile security provider Asavie^([78])                                                                                            
+  February 1, 2021        Inverse Inc. a Montreal Canadian based security company making an open source network access controller (NAC) called PacketFence^([79])   
+  September 29, 2021      Guardicore                                                                                                                                $600 million^([80])
+  February 15, 2022       Linode                                                                                                                                    $900 million^([81])
+  June 25, 2024           API Security vendor Noname Security                                                                                                       $450 million^([82][83])
+  December 1, 2025        Function-as-a-Service Company Fermyon^([84])                                                                                              
+                                                                                                                                                                    
+  ----------------------- ----------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------
+
+Key scientific publications
+
+[edit]
+
+These papers in scientific conferences and journals describe Akamai's technology in greater detail:
+
+-   Karger, D., Lehman, E., Leighton, T., Panigrahy, R., Levine, M., Lewin, D. "Consistent Hashing and Random Trees: Distributed Caching Protocols for Relieving Hot Spots on the World Wide Web". ACM Symposium on Theory of Computing, 1997, pp. 654–663.
+-   J. Dilley, B. Maggs, J. Parikh, H. Prokop, R. Sitaraman, and B. Weihl. "Globally Distributed Content Delivery", IEEE Internet Computing, September/October 2002, pp. 50–58.
+-   Bruce Maggs and Ramesh Sitaraman. "Algorithmic nuggets in content delivery". ACM SIGCOMM Computer Communication Review, Volume=45, Issue=3, 2015. Archived July 12, 2023, at the Wayback Machine
+-   F. Chen, R. Sitaraman, and M. Torres. "End-User Mapping: Next Generation Request Routing for Content Delivery". ACM SIGCOMM conference, Aug 2015.
+-   Kyle Schomp, Onkar Bhardwaj, Eymen Kurdoglu, Mashooq Muhaimen, and Ramesh K. Sitaraman. "Akamai DNS: Providing Authoritative Answers to the World's Queries", ACM SIGCOMM conference, Aug 2020.
+-   D. Gillman, Y. Lin, B. Maggs and R. K. Sitaraman. "Protecting Websites from Attack with Secure Delivery Networks", IEEE Computer, vol. 48, no. 4, pp. 26–34, Apr. 2015.
+
+See also
+
+[edit]
+
+-   []Companies portal
+
+-   Akamai Techs., Inc. v. Limelight Networks, Inc.
+
+References
+
+[edit]
+
+1.  ↑ "Akamai Announces Board Of Directors Changes". Akamai Technologies, Inc. March 18, 2021.
+2.  ↑ "Akamai Technologies, Inc. 2025 Form 10-K Annual Report". U.S. Securities and Exchange Commission. February 20, 2026.
+3.  ↑ "Form 8-K". U.S. Securities and Exchange Commission. February 20, 2025.
+4.  ↑ J. Dilley, B. Maggs, J. Parikh, H. Prokop, R. Sitaraman, and B. Weihl. "Globally Distributed Content Delivery, IEEE Internet Computing, September/October 2002, pp. 50–58" (PDF).
+5.  ↑ Hendy, Nina (March 3, 2020). "How to avoid falling victim to a cyber attack". The Sydney Morning Herald. Retrieved April 16, 2020.
+6.  ↑ "Akamai Stock Finds Support On Video Streaming Surge | Investor's Business Daily". Investor's Business Daily. March 17, 2020. Retrieved April 16, 2020.
+7.  ↑ "How these nine Mass. tech companies got their names". Boston Business Journal. April 28, 2014. Retrieved June 17, 2022.
+8.  ↑ Bruce Maggs and Ramesh Sitaraman (2015). "Algorithmic nuggets in content delivery" (PDF). ACM SIGCOMM Computer Communication Review. 45 (3). Archived from the original (PDF) on July 12, 2023. Retrieved March 4, 2021.
+9.  ↑ "Two teams win top prize in MIT $50K contest". MIT News. May 13, 1998. Retrieved June 11, 2014.
+10. ↑ "Akamai Technologies Inc". Reuters. Archived from the original on October 18, 2014. Retrieved June 11, 2014.
+11. ↑ "Company History". www.akamai.com.
+12. ↑ "Corrections & Clarifications: Archive". USA Today. July 20, 2015. Retrieved August 31, 2026.
+13. ↑ "Akamai Technologies, Inc. History". fundinguniverse.com. Retrieved June 9, 2014.
+14. ↑ "Conrades to resign from Akamai". Boston Business Journal. No. January 5, 2005. Retrieved January 11, 2015.
+15. 1 2 Frier, Sarah; Womack, Brian (April 26, 2012). "Akamai Says CEO Sagan to Leave; Profit Less Than Estimates". Bloomberg. Retrieved May 29, 2014.
+16. ↑ "AKAMAI TECHNOLOGIES INC (AKAM) IPO". NASDAQ. Retrieved June 16, 2014.
+17. ↑ "Akamai Technologies, Inc. Added to the Russell 3000 Index and Russell 2000 Index". July 17, 2001. Archived from the original on February 4, 2014. Retrieved June 20, 2014.
+18. ↑ Leopold, Todd (September 11, 2013). "The legacy of Danny Lewin, the first victims of 9/11". CNN. Retrieved July 22, 2014.
+19. ↑ "Akamai ends Al Jazeera server support". news.cnet.com. Archived from the original on November 4, 2012. Retrieved April 2, 2009.
+20. ↑ "Al Jazeera Denied Akamai Services". Tech.mit.edu. April 8, 2003. Archived from the original on November 7, 2013. Retrieved April 2, 2009.
+21. ↑ "Akamai Technologies, Inc. (AKAM) Income Statement". Yahoo! Finance. Archived from the original on March 16, 2014. Retrieved May 29, 2014.
+22. ↑ Frier, Sarah; Mulier, Thomas (July 10, 2007). "Akamai Names Leighton CEO After Eight-Month Search". DataCenterKnowledge. Retrieved November 17, 2020.
+23. ↑ Frier, Sarah; Mulier, Thomas (December 17, 2012). "Akamai Names Leighton CEO After Eight-Month Search". BloombergBusinessweek. Retrieved June 19, 2014.{{cite web}}: CS1 maint: deprecated archival service (link)
+24. ↑ "SEC Charges Former Technology Company Executive for Role in Rajaratnam Insider Trading Scheme". VentureBeat. September 20, 2013.
+25. ↑ Harrison Weber (May 15, 2014). "Facebook & Akamai respond to NSA slides alleging massive CDN vulnerability". VentureBeat.
+26. ↑ Gagliordi, Natalie (February 9, 2021). "Akamai tops Q4 expectations, announces reorganization and new CTO". ZDNet. Retrieved February 10, 2021.
+27. ↑ @csoandy (February 9, 2021). "Thread : Andy Ellis on Twitter..." (Tweet) – via Twitter.
+28. ↑ "Akamai Opens New HQ In Cambridge". www.wbur.org. November 2019.
+29. ↑ "Akamai Secures $100M Cloud Contract with Major Tech Company". HostDean. February 25, 2025. Retrieved February 26, 2025.
+30. ↑ Lardinois, Frederic (February 15, 2022). "Akamai acquires Linode for $900M". TechCrunch. Retrieved February 26, 2025.
+31. 1 2 3 Nygren, Erik; Sitaraman, Ramesh K.; Sun, Jennifer, The Akamai Network: A Platform for High-Performance Internet Applications (PDF)
+32. 1 2 "Facts & Figures". Akamai. Retrieved April 16, 2020.
+33. ↑ Schomp, Kyle; Bhardwaj, Onkar; Kurdoglu, Eymen; Muhaimen, Mashooq; Sitaraman, Ramesh K. (August 2020). "Akamai DNS: Providing Authoritative Answers to the World's Queries, ACM SIGCOMM conference" (PDF).
+34. ↑ Zakas, Nicholas C. (November 29, 2011). "How content delivery networks (CDNs) work". NCZOnline.
+35. ↑ Chen, F.; Sitaraman, R.; Torres, M. (August 2015). "End-User Mapping: Next Generation Request Routing for Content Delivery" (PDF). ACM SIGCOMM conference. Archived (PDF) from the original on August 12, 2017. Retrieved October 31, 2019.
+36. ↑ "Countries in which Akamai maintains Server Points of Presence" (PDF). June 6, 2022. Retrieved October 12, 2022.
+37. ↑ "Inside Akamai and the scary future of streaming video". GigaOm. August 19, 2011. Archived from the original on December 11, 2012. Retrieved March 12, 2012.
+38. ↑ "Download Delivery". Akamai Technologies. January 26, 2018. Archived from the original on January 18, 2018. Retrieved January 26, 2018.
+39. ↑ Ben Homer (January 26, 2010). "Akamai Using P2P for Enhanced Video Delivery". Online Video Watch. Archived from the original on May 15, 2013. Retrieved September 2, 2011.
+40. ↑ "Akamai NetSession Interface – Design Principles". Akamai Technologies. Archived from the original on October 29, 2013. Retrieved September 2, 2011.
+41. ↑ "Akamai Unveils Open Platform Initiative at Akamai Edge 2013 Customer Conference". Yahoo! Finance. October 9, 2013. Archived from the original on October 22, 2014. Retrieved September 23, 2014.
+42. ↑ "Akamai to Acquire Network24 Communications". StreamingMedia.com. January 18, 2000. Retrieved September 23, 2014.
+43. 1 2 3 "Akamai Annual Report 2000" (PDF). Akamai Technologies, Inc.
+44. ↑ Richtymyer, Richard (February 7, 2000). "Akamai buys InterVu". CNN Money. Archived from the original on March 10, 2002. Retrieved September 23, 2014.
+45. ↑ "Akamai Annual Report 2005" (PDF). Akamai Technologies, Inc.
+46. ↑ Kawamoto, Dawn (November 20, 2006). "Akamai to buy Nine Systems". CNET News. Retrieved September 23, 2014.
+47. ↑ "Akamai Annual Report 2006" (PDF). Akamai Technologies, Inc.
+48. ↑ Gross, Grant (February 5, 2007). "Akamai to acquire Netli for about $170 million". NetworkWorld. Retrieved September 23, 2014.
+49. ↑ Arrington, Michael (April 12, 2007). "Payday for Red Swoosh: $15 million from Akamai". Tech Crunch. Retrieved September 23, 2014.
+50. 1 2 "Akamai Annual Report 2009" (PDF). Akamai Technologies, Inc.
+51. ↑ Kaplan, David (October 21, 2008). "Branching Out, Akamai Acquires Ad Targeter Acerno For $95 Million". Tech Crunch. Archived from the original on October 6, 2014. Retrieved September 23, 2014.
+52. ↑ "Akamai Annual Report 2010" (PDF). Akamai Technologies, Inc.
+53. ↑ Boutin, Paul (June 10, 2010). "Akamai acquires mobile services company Velocitude". VentureBeat. Retrieved September 23, 2014.
+54. 1 2 3 4 "Akamai Annual Report 2012" (PDF). Akamai Technologies, Inc.
+55. ↑ Huang, Gregory T. (February 8, 2012). "Akamai Buys Blaze as Web Optimization Heats Up in Boston" (PDF). Xconomy. Archived from the original on April 20, 2013. Retrieved September 23, 2014.
+56. ↑ Wauters, Robin (December 22, 2011). "Done Deal – Akamai Buys Rival Cotendo For $268 Million". Tech Crunch. Retrieved September 23, 2014.
+57. ↑ McCarthy, Maureen (September 14, 2012). "Akamai Technologies snaps up FastSoft". Boston Business Journal. Retrieved September 23, 2014.
+58. ↑ Whittaker, Zack (November 13, 2012). "Akamai expands digital content delivery network, acquires Verivue". ZDNet. Retrieved September 23, 2014.
+59. 1 2 "Akamai Annual Report 2013" (PDF). Akamai Technologies, Inc.
+60. ↑ Dignan, Larry (November 11, 2013). "Akamai buys Velocious Networks". ZDNet. Retrieved September 23, 2014.
+61. ↑ Lunden, Ingrid (December 2, 2013). "Akamai Buys DDoS Prevention Specialist Prolexic For $370M To Ramp Up Security Offerings For Enterprises". TechCrunch. Retrieved September 23, 2014.
+62. ↑ Castellanos, Sara (March 2, 2015). "Akamai Technologies acquires Colorado domain name system tech firm Xerocole". Retrieved September 20, 2015.
+63. ↑ "Media Delivery Solutions for Streaming Video and Software Delivery - Akamai". www.akamai.com.
+64. ↑ "Akamai Acquires Octoshape to Optimize Streaming Video - 040615 - Akamai". www.akamai.com.
+65. ↑ "Bloxx - Real Time Web & Email Filtering". www.bloxx.com.
+66. ↑ "Akamai Acquires Bloxx for Cloud Security - Akamai". www.akamai.com. Archived from the original on March 4, 2016.
+67. ↑ "Concord: Concord.io". Archived from the original on December 17, 2016. Retrieved January 6, 2017.
+68. ↑ "Akamai Acquires Data Processing Provider Concord Systems - Akamai". www.akamai.com.
+69. ↑ "Secure Application Access - Akamai". www.akamai.com.
+70. ↑ "Akamai Acquires Soha Systems for Secure Remote Access to Enterprise Applications - Akamai". www.akamai.com.
+71. ↑ "Bot Manager - Akamai". www.akamai.com.
+72. ↑ "Akamai Acquires Cyberfend". www.akamai.com.
+73. ↑ "Akamai agrees to acquire SOASTA". Reuters. March 29, 2017. Retrieved October 11, 2017.
+74. ↑ "Akamai agrees to acquire Nominum". Reuters. October 11, 2017. Retrieved October 11, 2017.
+75. ↑ "Akamai Completes Acquisition Of Customer Identity Access Management Company Janrain Inc". www.Akamai.com. Retrieved December 6, 2020.
+76. ↑ "Akamai Technologies Announces Acquisition Of ChameleonX - Quick Facts | Markets Insider". markets.businessinsider.com. Insider Inc. and finanzen.net GmbH (Imprint). Archived from the original on March 20, 2020. Retrieved March 20, 2020 – via RTTNews.
+77. ↑ "Akamai Technologies Announces Acquisition Of ChameleonX - Quick Facts". www.nasdaq.com. Nasdaq, Inc. Retrieved March 20, 2020 – via RTTNews.
+78. ↑ "Akamai Technologies Advances 5G Security Strategy With Acquisition Of Asavie".
+79. ↑ "Akamai Technologies Acquires Inverse Inc., Adds To Zero Trust Security Platform". Retrieved June 22, 2021.
+80. ↑ Mirchevska, Sara (October 4, 2021). "Akamai Technologies Acquires Guardicore in A$600 Million Worth Deal". HostAdvice.
+81. ↑ "Akamai To Acquire Linode to Provide Businesses with a Developer-friendly and Massively-distributed Platform to Build, Run and Secure Next Generation Applications". Akamai. February 15, 2022.
+82. ↑ "Akamai to Acquire API Protection Startup Noname Security for $450 Million". SecurityWeek. May 7, 2024. Retrieved May 16, 2024.
+83. ↑ "Akamai doubles down on API security with Noname acquisition". SDxCentral. June 27, 2024. Retrieved July 24, 2024.
+84. ↑ "Akamai Technologies Announces Acquisition of Function-as-a-Service Company Fermyon | Akamai". Akamai. Archived from the original on February 1, 2026. Retrieved July 2, 2026.
+
+External links
+
+[edit]
+
+-   Official website [Edit this at Wikidata]
+-   Business data for Akamai Technologies, Inc.:
+    -   Google
+    -   SEC filings
+    -   Yahoo!
+
++-------------------------------------------------------+-----------------------------------+
+| -   v                                                 |                                   |
+| -   t                                                 |                                   |
+| -   e                                                 |                                   |
+|                                                       |                                   |
+| Major Internet companies                              |                                   |
++-------------------------------------------------------+-----------------------------------+
+| Companies with an annual revenue of over US$4 billion |                                   |
++-------------------------------------------------------+-----------------------------------+
+| Internet                                              | -   Adobe                         |
+|                                                       | -   Alibaba                       |
+|                                                       | -   Alphabet                      |
+|                                                       |     -   Google                    |
+|                                                       | -   Amazon                        |
+|                                                       | -   Apple                         |
+|                                                       | -   Baidu                         |
+|                                                       | -   IAC                           |
+|                                                       | -   Kakao                         |
+|                                                       | -   Meituan                       |
+|                                                       | -   Meta                          |
+|                                                       |     -   Facebook                  |
+|                                                       | -   Microsoft                     |
+|                                                       | -   Naver                         |
+|                                                       | -   NetEase                       |
+|                                                       | -   Tencent                       |
+|                                                       | -   Yandex                        |
++-------------------------------------------------------+-----------------------------------+
+| Cloud computing                                       | -   Akamai                        |
+|                                                       | -   Alibaba Cloud                 |
+|                                                       | -   AWS                           |
+|                                                       | -   Apple iCloud                  |
+|                                                       | -   Google                        |
+|                                                       | -   IBM                           |
+|                                                       | -   Microsoft Azure               |
+|                                                       | -   Oracle Corporation            |
+|                                                       | -   Salesforce                    |
+|                                                       | -   SAP                           |
+|                                                       | -   ServiceNow                    |
++-------------------------------------------------------+-----------------------------------+
+| E-commerce                                            | -   Amazon.com                    |
+|                                                       | -   Apple                         |
+|                                                       | -   Booking Holdings              |
+|                                                       | -   Coupang                       |
+|                                                       | -   eBay                          |
+|                                                       | -   Expedia                       |
+|                                                       | -   Flipkart                      |
+|                                                       | -   Groupon                       |
+|                                                       | -   JD.com                        |
+|                                                       | -   Lazada                        |
+|                                                       | -   Mercado Libre                 |
+|                                                       | -   Ozon                          |
+|                                                       | -   PDD Holdings                  |
+|                                                       | -   Rakuten                       |
+|                                                       | -   Shopee                        |
+|                                                       | -   Shopify                       |
+|                                                       | -   Suning.com                    |
+|                                                       | -   Trip.com                      |
+|                                                       | -   Uber                          |
+|                                                       | -   Wayfair                       |
+|                                                       | -   Wildberries                   |
+|                                                       | -   Zalando                       |
++-------------------------------------------------------+-----------------------------------+
+| Media                                                 | -   Bloomberg                     |
+|                                                       | -   BuzzFeed                      |
+|                                                       | -   ByteDance                     |
+|                                                       | -   Disney Streaming              |
+|                                                       | -   Kuaishou                      |
+|                                                       | -   Netflix                       |
+|                                                       | -   Paramount Streaming           |
+|                                                       | -   Spotify                       |
+|                                                       | -   Warner Bros. Discovery        |
++-------------------------------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------------------+
+| -   v                             |                                               |
+| -   t                             |                                               |
+| -   e                             |                                               |
+|                                   |                                               |
+| Dot-com bubble                    |                                               |
++-----------------------------------+-----------------------------------------------+
+| People                            | -   Daniel Aegerter                           |
+|                                   | -   Marc Andreessen                           |
+|                                   | -   Bob Bernard                               |
+|                                   | -   Jeff Bezos                                |
+|                                   | -   Henry Blodget                             |
+|                                   | -   James H. Clark                            |
+|                                   | -   Cynthia Cooper                            |
+|                                   | -   Bob Davis                                 |
+|                                   | -   Bernard Ebbers                            |
+|                                   | -   David Filo                                |
+|                                   | -   Charlie Gasparino                         |
+|                                   | -   Richard Grasso                            |
+|                                   | -   Alan Greenspan                            |
+|                                   | -   Jack Grubman                              |
+|                                   | -   Josh Harris                               |
+|                                   | -   Jeff Hawkins                              |
+|                                   | -   Howard Jonas                              |
+|                                   | -   Gerry Kearby                              |
+|                                   | -   Timothy Koogle                            |
+|                                   | -   Kenneth Lay                               |
+|                                   | -   Arthur Levitt                             |
+|                                   | -   Mary Meeker                               |
+|                                   | -   PayPal Mafia                              |
+|                                   | -   Kevin O'Leary                             |
+|                                   | -   Jason Olim                                |
+|                                   | -   Stephan Paternot                          |
+|                                   | -   Jim Rutt                                  |
+|                                   | -   Michael J. Saylor                         |
+|                                   | -   Jeffrey Skilling                          |
+|                                   | -   Eliot Spitzer                             |
+|                                   | -   Scott D. Sullivan                         |
+|                                   | -   Kaleil Isaza Tuzman                       |
+|                                   | -   Julie Wainwright                          |
+|                                   | -   Jerry Yang                                |
++-----------------------------------+-----------------------------------------------+
+| Companies                         | -   3Com                                      |
+|                                   | -   360networks                               |
+|                                   | -   AboveNet                                  |
+|                                   | -   Actua Corporation                         |
+|                                   | -   Airspan Networks                          |
+|                                   | -   Akamai Technologies                       |
+|                                   | -   Alteon WebSystems                         |
+|                                   | -   Amazon                                    |
+|                                   | -   America Online                            |
+|                                   | -   Arthur Andersen                           |
+|                                   | -   Ask Jeeves                                |
+|                                   | -   Blue Coat Systems                         |
+|                                   | -   Boo.com                                   |
+|                                   | -   Books-A-Million                           |
+|                                   | -   Broadband Sports                          |
+|                                   | -   Broadcast.com                             |
+|                                   | -   CDNow                                     |
+|                                   | -   Chemdex                                   |
+|                                   | -   CMGI Inc.                                 |
+|                                   | -   Cobalt Networks                           |
+|                                   | -   Commerce One                              |
+|                                   | -   Covad                                     |
+|                                   | -   Cyberian Outpost                          |
+|                                   | -   CyberRebate                               |
+|                                   | -   Digex                                     |
+|                                   | -   Digital Convergence Corporation           |
+|                                   | -   Digital Insight                           |
+|                                   | -   Divine                                    |
+|                                   | -   DoubleClick                               |
+|                                   | -   eBay                                      |
+|                                   | -   eGain                                     |
+|                                   | -   Egghead Software                          |
+|                                   | -   Enron                                     |
+|                                   | -   Epidemic Marketing                        |
+|                                   | -   Excite                                    |
+|                                   | -   Flooz.com                                 |
+|                                   | -   Freei                                     |
+|                                   | -   Gadzoox                                   |
+|                                   | -   GeoCities                                 |
+|                                   | -   Global Crossing                           |
+|                                   | -   govWorks                                  |
+|                                   | -   Handspring                                |
+|                                   | -   Healtheon                                 |
+|                                   | -   HomeGrocer                                |
+|                                   | -   HotBot                                    |
+|                                   | -   Infoseek                                  |
+|                                   | -   InfoSpace                                 |
+|                                   | -   Inktomi                                   |
+|                                   | -   Interactive Intelligence                  |
+|                                   | -   Internet America                          |
+|                                   | -   iVillage                                  |
+|                                   | -   iWon                                      |
+|                                   | -   Kozmo.com                                 |
+|                                   | -   lastminute.com                            |
+|                                   | -   The Learning Company                      |
+|                                   | -   Liquid Audio                              |
+|                                   | -   LookSmart                                 |
+|                                   | -   Lycos                                     |
+|                                   |     -   Angelfire                             |
+|                                   |     -   Tripod                                |
+|                                   | -   MarchFirst                                |
+|                                   | -   Merrill Lynch                             |
+|                                   | -   MicroStrategy                             |
+|                                   | -   Net2Phone                                 |
+|                                   | -   NetBank                                   |
+|                                   | -   Netscape                                  |
+|                                   | -   Network Solutions                         |
+|                                   | -   NorthPoint Communications                 |
+|                                   | -   OmniSky                                   |
+|                                   | -   Palm, Inc.                                |
+|                                   | -   PayPal                                    |
+|                                   | -   Pets.com                                  |
+|                                   | -   PFSweb                                    |
+|                                   | -   Pixelon                                   |
+|                                   | -   PLX Technology                            |
+|                                   | -   Prodigy                                   |
+|                                   | -   Pseudo.com                                |
+|                                   | -   Radvision                                 |
+|                                   | -   Razorfish                                 |
+|                                   | -   Redback Networks                          |
+|                                   | -   Register.com                              |
+|                                   | -   Ritmoteca.com                             |
+|                                   | -   Savvis                                    |
+|                                   | -   Scout Electromedia                        |
+|                                   |     -   modo                                  |
+|                                   | -   Terra                                     |
+|                                   | -   theGlobe.com                              |
+|                                   | -   Think Tools                               |
+|                                   | -   TIBCO Software                            |
+|                                   | -   Tradex Technologies                       |
+|                                   | -   Transmeta                                 |
+|                                   | -   uBid                                      |
+|                                   | -   United Online                             |
+|                                   | -   USinternetworking                         |
+|                                   | -   UUNET                                     |
+|                                   | -   VA Linux Systems                          |
+|                                   | -   Verio                                     |
+|                                   | -   VerticalNet                               |
+|                                   | -   Vignette Corporation                      |
+|                                   | -   WebChat Broadcasting System               |
+|                                   | -   Websense                                  |
+|                                   | -   Webvan                                    |
+|                                   | -   WorldCom                                  |
+|                                   | -   World Online                              |
+|                                   | -   Yahoo!                                    |
++-----------------------------------+-----------------------------------------------+
+| History                           | -   Enron scandal                             |
+|                                   | -   Irrational exuberance                     |
+|                                   | -   Sarbanes–Oxley Act                        |
+|                                   | -   Telecoms crash                            |
+|                                   | -   Trial of Kenneth Lay and Jeffrey Skilling |
+|                                   | -   WorldCom scandal                          |
++-----------------------------------+-----------------------------------------------+
+| Publications                      | -   Blood on the Street                       |
+|                                   | -   Conspiracy of Fools                       |
+|                                   | -   The Industry Standard                     |
+|                                   | -   The PayPal Wars                           |
++-----------------------------------+-----------------------------------------------+
+| Broadcast media                   | -   e-Dreams                                  |
+|                                   | -   Enron: The Smartest Guys in the Room      |
+|                                   | -   Startup.com                               |
+|                                   | -   Valley of the Boom                        |
++-----------------------------------+-----------------------------------------------+
+| -   [] Category                   |                                               |
++-----------------------------------+-----------------------------------------------+
+
++-----------------------------------+----------------------------------------+
+| -   v                             |                                        |
+| -   t                             |                                        |
+| -   e                             |                                        |
+|                                   |                                        |
+| S&P 500 companies                 |                                        |
++-----------------------------------+----------------------------------------+
+| Communication                     | -   Alphabet Inc.                      |
+| services                          | -   AT&T                               |
+|                                   | -   Charter Communications             |
+|                                   | -   Comcast                            |
+|                                   | -   EchoStar                           |
+|                                   | -   Fox Corporation                    |
+|                                   | -   Live Nation Entertainment          |
+|                                   | -   Meta Platforms                     |
+|                                   | -   Netflix                            |
+|                                   | -   News Corp                          |
+|                                   | -   Omnicom Group                      |
+|                                   | -   Skydance Corporation               |
+|                                   | -   Reddit                             |
+|                                   | -   T-Mobile                           |
+|                                   | -   Take-Two Interactive               |
+|                                   | -   TKO Group Holdings                 |
+|                                   | -   Verizon                            |
+|                                   | -   The Walt Disney Company            |
++-----------------------------------+----------------------------------------+
+| Consumer                          | -   Airbnb                             |
+| discretionary                     | -   Amazon                             |
+|                                   | -   Aptiv                              |
+|                                   | -   AutoZone                           |
+|                                   | -   Best Buy                           |
+|                                   | -   Booking Holdings                   |
+|                                   | -   Carnival                           |
+|                                   | -   Carvana                            |
+|                                   | -   Chipotle Mexican Grill             |
+|                                   | -   Darden Restaurants                 |
+|                                   | -   Deckers Brands                     |
+|                                   | -   Domino's                           |
+|                                   | -   DoorDash                           |
+|                                   | -   D. R. Horton                       |
+|                                   | -   eBay                               |
+|                                   | -   Expedia Group                      |
+|                                   | -   Ford Motor Company                 |
+|                                   | -   Garmin                             |
+|                                   | -   General Motors                     |
+|                                   | -   Genuine Parts Company              |
+|                                   | -   Hasbro                             |
+|                                   | -   Hilton Worldwide                   |
+|                                   | -   Home Depot                         |
+|                                   | -   Las Vegas Sands                    |
+|                                   | -   Lennar                             |
+|                                   | -   Lowe's                             |
+|                                   | -   Lululemon                          |
+|                                   | -   Marriott International             |
+|                                   | -   McDonald's                         |
+|                                   | -   MGM Resorts International          |
+|                                   | -   Nike, Inc.                         |
+|                                   | -   Norwegian Cruise Line Holdings     |
+|                                   | -   NVR, Inc.                          |
+|                                   | -   O'Reilly Auto Parts                |
+|                                   | -   PulteGroup                         |
+|                                   | -   Ralph Lauren Corporation           |
+|                                   | -   Ross Stores                        |
+|                                   | -   Royal Caribbean Group              |
+|                                   | -   Starbucks                          |
+|                                   | -   Tapestry, Inc.                     |
+|                                   | -   Tesla, Inc.                        |
+|                                   | -   TJX                                |
+|                                   | -   Tractor Supply Company             |
+|                                   | -   Ulta Beauty                        |
+|                                   | -   Williams-Sonoma, Inc.              |
+|                                   | -   Wynn Resorts                       |
+|                                   | -   Yum! Brands                        |
++-----------------------------------+----------------------------------------+
+| Consumer                          | -   Altria                             |
+| staples                           | -   Archer Daniels Midland             |
+|                                   | -   Brown-Forman                       |
+|                                   | -   Bunge Global                       |
+|                                   | -   Casey's                            |
+|                                   | -   Church & Dwight                    |
+|                                   | -   Clorox                             |
+|                                   | -   The Coca-Cola Company              |
+|                                   | -   Colgate-Palmolive                  |
+|                                   | -   Constellation Brands               |
+|                                   | -   Costco                             |
+|                                   | -   Dollar General                     |
+|                                   | -   Dollar Tree                        |
+|                                   | -   Estée Lauder Companies             |
+|                                   | -   General Mills                      |
+|                                   | -   The Hershey Company                |
+|                                   | -   Hormel Foods                       |
+|                                   | -   Kenvue                             |
+|                                   | -   Keurig Dr Pepper                   |
+|                                   | -   Kimberly-Clark                     |
+|                                   | -   Kraft Heinz                        |
+|                                   | -   Kroger                             |
+|                                   | -   McCormick & Company                |
+|                                   | -   Mondelez International             |
+|                                   | -   Monster Beverage                   |
+|                                   | -   PepsiCo                            |
+|                                   | -   Philip Morris International        |
+|                                   | -   Procter & Gamble                   |
+|                                   | -   The J.M. Smucker Company           |
+|                                   | -   Sysco                              |
+|                                   | -   Target Corporation                 |
+|                                   | -   Tyson Foods                        |
+|                                   | -   Vylor                              |
+|                                   | -   Walmart                            |
++-----------------------------------+----------------------------------------+
+| Energy                            | -   APA Corporation                    |
+|                                   | -   Baker Hughes                       |
+|                                   | -   Chevron Corporation                |
+|                                   | -   ConocoPhillips                     |
+|                                   | -   Devon Energy                       |
+|                                   | -   Diamondback Energy                 |
+|                                   | -   EOG Resources                      |
+|                                   | -   EQT Corporation                    |
+|                                   | -   Expand Energy                      |
+|                                   | -   ExxonMobil                         |
+|                                   | -   Halliburton                        |
+|                                   | -   Kinder Morgan                      |
+|                                   | -   Marathon Petroleum                 |
+|                                   | -   Occidental Petroleum               |
+|                                   | -   Oneok                              |
+|                                   | -   Phillips 66                        |
+|                                   | -   SLB                                |
+|                                   | -   Targa Resources                    |
+|                                   | -   Texas Pacific Land Corporation     |
+|                                   | -   Valero Energy                      |
+|                                   | -   Williams Companies                 |
++-----------------------------------+----------------------------------------+
+| Financials                        | -   Aflac                              |
+|                                   | -   Allstate                           |
+|                                   | -   American Express                   |
+|                                   | -   American International Group       |
+|                                   | -   Ameriprise Financial               |
+|                                   | -   Aon                                |
+|                                   | -   Apollo Global Management           |
+|                                   | -   Arch Capital Group                 |
+|                                   | -   Ares Management                    |
+|                                   | -   Arthur J. Gallagher & Co.          |
+|                                   | -   Assurant                           |
+|                                   | -   Bank of America                    |
+|                                   | -   Berkshire Hathaway                 |
+|                                   | -   BlackRock                          |
+|                                   | -   Blackstone Inc.                    |
+|                                   | -   Block, Inc.                        |
+|                                   | -   BNY                                |
+|                                   | -   Brown & Brown                      |
+|                                   | -   Capital One                        |
+|                                   | -   Cboe Global Markets                |
+|                                   | -   Charles Schwab Corporation         |
+|                                   | -   Chubb Limited                      |
+|                                   | -   Cincinnati Financial               |
+|                                   | -   Citigroup                          |
+|                                   | -   Citizens Financial Group           |
+|                                   | -   CME Group                          |
+|                                   | -   Coinbase                           |
+|                                   | -   Corpay                             |
+|                                   | -   Erie Indemnity                     |
+|                                   | -   Everest Group                      |
+|                                   | -   FactSet                            |
+|                                   | -   Fifth Third Bank                   |
+|                                   | -   FIS                                |
+|                                   | -   Fiserv                             |
+|                                   | -   Franklin Resources                 |
+|                                   | -   Global Payments                    |
+|                                   | -   Globe Life                         |
+|                                   | -   Goldman Sachs                      |
+|                                   | -   The Hartford                       |
+|                                   | -   Huntington Bancshares              |
+|                                   | -   Interactive Brokers                |
+|                                   | -   Intercontinental Exchange          |
+|                                   | -   Invesco                            |
+|                                   | -   Jack Henry & Associates            |
+|                                   | -   JPMorgan Chase                     |
+|                                   | -   KeyBank                            |
+|                                   | -   KKR & Co.                          |
+|                                   | -   Loews Corporation                  |
+|                                   | -   M&T Bank                           |
+|                                   | -   Marsh McLennan                     |
+|                                   | -   Mastercard                         |
+|                                   | -   MetLife                            |
+|                                   | -   Moody's Corporation                |
+|                                   | -   Morgan Stanley                     |
+|                                   | -   MSCI                               |
+|                                   | -   Nasdaq, Inc.                       |
+|                                   | -   Northern Trust                     |
+|                                   | -   PayPal                             |
+|                                   | -   PNC Financial Services             |
+|                                   | -   Principal Financial Group          |
+|                                   | -   Progressive Corporation            |
+|                                   | -   Prudential Financial               |
+|                                   | -   Raymond James Financial            |
+|                                   | -   Regions Financial Corporation      |
+|                                   | -   Robinhood Markets                  |
+|                                   | -   S&P Global                         |
+|                                   | -   State Street Corporation           |
+|                                   | -   Synchrony Financial                |
+|                                   | -   T. Rowe Price                      |
+|                                   | -   The Travelers Companies            |
+|                                   | -   Truist                             |
+|                                   | -   U.S. Bancorp                       |
+|                                   | -   Visa Inc.                          |
+|                                   | -   W. R. Berkley Corporation          |
+|                                   | -   Wells Fargo                        |
+|                                   | -   Willis Towers Watson               |
++-----------------------------------+----------------------------------------+
+| Health Care                       | -   Abbott Laboratories                |
+|                                   | -   AbbVie                             |
+|                                   | -   Agilent Technologies               |
+|                                   | -   Align Technology                   |
+|                                   | -   Amgen                              |
+|                                   | -   Baxter International               |
+|                                   | -   Becton Dickinson                   |
+|                                   | -   Bio-Techne                         |
+|                                   | -   Biogen                             |
+|                                   | -   Boston Scientific                  |
+|                                   | -   Bristol Myers Squibb               |
+|                                   | -   Cardinal Health                    |
+|                                   | -   Cencora                            |
+|                                   | -   Centene Corporation                |
+|                                   | -   Charles River Laboratories         |
+|                                   | -   The Cigna Group                    |
+|                                   | -   Cooper Companies                   |
+|                                   | -   CVS Health                         |
+|                                   | -   Danaher Corporation                |
+|                                   | -   DaVita                             |
+|                                   | -   Dexcom                             |
+|                                   | -   Edwards Lifesciences               |
+|                                   | -   Elevance Health                    |
+|                                   | -   GE HealthCare                      |
+|                                   | -   Gilead Sciences                    |
+|                                   | -   HCA Healthcare                     |
+|                                   | -   Henry Schein                       |
+|                                   | -   Humana                             |
+|                                   | -   Idexx Laboratories                 |
+|                                   | -   Illumina, Inc.                     |
+|                                   | -   Incyte                             |
+|                                   | -   Insulet                            |
+|                                   | -   Intuitive Surgical                 |
+|                                   | -   IQVIA                              |
+|                                   | -   Johnson & Johnson                  |
+|                                   | -   Labcorp                            |
+|                                   | -   Eli Lilly and Company              |
+|                                   | -   McKesson                           |
+|                                   | -   Medtronic                          |
+|                                   | -   Merck & Co.                        |
+|                                   | -   Mettler Toledo                     |
+|                                   | -   Moderna                            |
+|                                   | -   Pfizer                             |
+|                                   | -   Quest Diagnostics                  |
+|                                   | -   Regeneron Pharmaceuticals          |
+|                                   | -   ResMed                             |
+|                                   | -   Revvity                            |
+|                                   | -   Solventum                          |
+|                                   | -   Steris                             |
+|                                   | -   Stryker Corporation                |
+|                                   | -   Thermo Fisher Scientific           |
+|                                   | -   UnitedHealth Group                 |
+|                                   | -   Universal Health Services          |
+|                                   | -   Veeva Systems                      |
+|                                   | -   Vertex Pharmaceuticals             |
+|                                   | -   Viatris                            |
+|                                   | -   Waters Corporation                 |
+|                                   | -   West Pharmaceutical Services       |
+|                                   | -   Zimmer Biomet                      |
+|                                   | -   Zoetis                             |
++-----------------------------------+----------------------------------------+
+| Industrials                       | -   3M                                 |
+|                                   | -   A. O. Smith                        |
+|                                   | -   Allegion                           |
+|                                   | -   Ametek                             |
+|                                   | -   Automatic Data Processing          |
+|                                   | -   Axon Enterprise                    |
+|                                   | -   Bloom Energy                       |
+|                                   | -   Boeing                             |
+|                                   | -   Broadridge Financial Solutions     |
+|                                   | -   C. H. Robinson                     |
+|                                   | -   Carrier Global                     |
+|                                   | -   Caterpillar Inc.                   |
+|                                   | -   Cintas                             |
+|                                   | -   Comfort Systems USA                |
+|                                   | -   Copart                             |
+|                                   | -   CSX Corporation                    |
+|                                   | -   Cummins                            |
+|                                   | -   Deere & Company                    |
+|                                   | -   Delta Air Lines                    |
+|                                   | -   Dover Corporation                  |
+|                                   | -   Eaton Corporation                  |
+|                                   | -   Emcor                              |
+|                                   | -   Emerson Electric                   |
+|                                   | -   Equifax                            |
+|                                   | -   Expeditors International           |
+|                                   | -   Fastenal                           |
+|                                   | -   FedEx                              |
+|                                   | -   FedEx Freight                      |
+|                                   | -   Ferguson Enterprises               |
+|                                   | -   Fortive                            |
+|                                   | -   GE Aerospace                       |
+|                                   | -   GE Vernova                         |
+|                                   | -   Generac                            |
+|                                   | -   General Dynamics                   |
+|                                   | -   Honeywell Aerospace                |
+|                                   | -   Honeywell Technologies             |
+|                                   | -   Howmet Aerospace                   |
+|                                   | -   Hubbell Incorporated               |
+|                                   | -   Huntington Ingalls Industries      |
+|                                   | -   IDEX Corporation                   |
+|                                   | -   Illinois Tool Works                |
+|                                   | -   Ingersoll Rand                     |
+|                                   | -   J. B. Hunt                         |
+|                                   | -   Jacobs Solutions                   |
+|                                   | -   Johnson Controls                   |
+|                                   | -   L3Harris                           |
+|                                   | -   Leidos                             |
+|                                   | -   Lennox International               |
+|                                   | -   Lockheed Martin                    |
+|                                   | -   Masco                              |
+|                                   | -   Nordson Corporation                |
+|                                   | -   Norfolk Southern Railway           |
+|                                   | -   Northrop Grumman                   |
+|                                   | -   Old Dominion Freight Line          |
+|                                   | -   Otis Worldwide                     |
+|                                   | -   Paccar                             |
+|                                   | -   Parker Hannifin                    |
+|                                   | -   Paychex                            |
+|                                   | -   Pentair                            |
+|                                   | -   Quanta Services                    |
+|                                   | -   RTX Corporation                    |
+|                                   | -   Republic Services                  |
+|                                   | -   Rockwell Automation                |
+|                                   | -   Rollins, Inc.                      |
+|                                   | -   Snap-on                            |
+|                                   | -   Southwest Airlines                 |
+|                                   | -   Stanley Black & Decker             |
+|                                   | -   Textron                            |
+|                                   | -   Trane Technologies                 |
+|                                   | -   TransDigm Group                    |
+|                                   | -   Uber                               |
+|                                   | -   Union Pacific Corporation          |
+|                                   | -   United Airlines                    |
+|                                   | -   United Parcel Service              |
+|                                   | -   United Rentals                     |
+|                                   | -   Veralto                            |
+|                                   | -   Verisk Analytics                   |
+|                                   | -   Vertiv                             |
+|                                   | -   W. W. Grainger                     |
+|                                   | -   Wabtec                             |
+|                                   | -   Waste Management, Inc.             |
+|                                   | -   Xylem Inc.                         |
++-----------------------------------+----------------------------------------+
+| Information                       | -   Accenture                          |
+| technology                        | -   Adobe Inc.                         |
+|                                   | -   Akamai Technologies                |
+|                                   | -   AMD                                |
+|                                   | -   Amphenol                           |
+|                                   | -   Analog Devices                     |
+|                                   | -   Apple Inc.                         |
+|                                   | -   Applied Materials                  |
+|                                   | -   AppLovin                           |
+|                                   | -   Arista Networks                    |
+|                                   | -   Autodesk                           |
+|                                   | -   Broadcom                           |
+|                                   | -   Cadence Design Systems             |
+|                                   | -   CDW                                |
+|                                   | -   Ciena                              |
+|                                   | -   Cisco                              |
+|                                   | -   Cognizant                          |
+|                                   | -   Coherent Corp.                     |
+|                                   | -   Corning Inc.                       |
+|                                   | -   CrowdStrike                        |
+|                                   | -   Datadog                            |
+|                                   | -   Dell Technologies                  |
+|                                   | -   Everpure                           |
+|                                   | -   F5, Inc.                           |
+|                                   | -   FICO                               |
+|                                   | -   First Solar                        |
+|                                   | -   Flex Ltd.                          |
+|                                   | -   Fortinet                           |
+|                                   | -   Gartner                            |
+|                                   | -   Gen Digital                        |
+|                                   | -   GoDaddy                            |
+|                                   | -   Hewlett Packard Enterprise         |
+|                                   | -   HP Inc.                            |
+|                                   | -   IBM                                |
+|                                   | -   Intel                              |
+|                                   | -   Intuit                             |
+|                                   | -   Jabil                              |
+|                                   | -   Keysight                           |
+|                                   | -   KLA Corporation                    |
+|                                   | -   Lam Research                       |
+|                                   | -   Lumentum                           |
+|                                   | -   Marvell Technology                 |
+|                                   | -   Microchip Technology               |
+|                                   | -   Micron Technology                  |
+|                                   | -   Microsoft                          |
+|                                   | -   Monolithic Power Systems           |
+|                                   | -   Motorola Solutions                 |
+|                                   | -   NetApp                             |
+|                                   | -   Nvidia                             |
+|                                   | -   NXP Semiconductors                 |
+|                                   | -   onsemi                             |
+|                                   | -   Oracle Corporation                 |
+|                                   | -   Palantir                           |
+|                                   | -   Palo Alto Networks                 |
+|                                   | -   PTC Inc.                           |
+|                                   | -   Qualcomm                           |
+|                                   | -   Qnity Electronics                  |
+|                                   | -   Roper Technologies                 |
+|                                   | -   Salesforce                         |
+|                                   | -   Sandisk                            |
+|                                   | -   Seagate Technology                 |
+|                                   | -   ServiceNow                         |
+|                                   | -   Skyworks Solutions                 |
+|                                   | -   Supermicro                         |
+|                                   | -   Synopsys                           |
+|                                   | -   TE Connectivity                    |
+|                                   | -   Teledyne Technologies              |
+|                                   | -   Teradyne                           |
+|                                   | -   Texas Instruments                  |
+|                                   | -   Trimble Inc.                       |
+|                                   | -   Twilio                             |
+|                                   | -   Tyler Technologies                 |
+|                                   | -   Verisign                           |
+|                                   | -   Western Digital                    |
+|                                   | -   Workday, Inc.                      |
+|                                   | -   Zebra Technologies                 |
++-----------------------------------+----------------------------------------+
+| Materials                         | -   Air Products                       |
+|                                   | -   Albemarle Corporation              |
+|                                   | -   Amcor                              |
+|                                   | -   Avery Dennison                     |
+|                                   | -   Ball Corporation                   |
+|                                   | -   CF Industries                      |
+|                                   | -   CRH plc                            |
+|                                   | -   Dow Chemical Company               |
+|                                   | -   DuPont                             |
+|                                   | -   Ecolab                             |
+|                                   | -   Freeport-McMoRan                   |
+|                                   | -   International Flavors & Fragrances |
+|                                   | -   International Paper                |
+|                                   | -   Linde plc                          |
+|                                   | -   LyondellBasell                     |
+|                                   | -   Martin Marietta Materials          |
+|                                   | -   Newmont                            |
+|                                   | -   Nucor                              |
+|                                   | -   Packaging Corporation of America   |
+|                                   | -   PPG Industries                     |
+|                                   | -   Sherwin-Williams                   |
+|                                   | -   Smurfit Westrock                   |
+|                                   | -   Steel Dynamics                     |
+|                                   | -   Vulcan Materials Company           |
++-----------------------------------+----------------------------------------+
+| Real estate                       | -   Alexandria Real Estate Equities    |
+|                                   | -   American Tower                     |
+|                                   | -   BXP, Inc.                          |
+|                                   | -   Camden Property Trust              |
+|                                   | -   CBRE Group                         |
+|                                   | -   CoStar Group                       |
+|                                   | -   Crown Castle                       |
+|                                   | -   Digital Realty                     |
+|                                   | -   Equinix                            |
+|                                   | -   Essex Property Trust               |
+|                                   | -   Extra Space Storage                |
+|                                   | -   Federal Realty Investment Trust    |
+|                                   | -   Healthpeak Properties              |
+|                                   | -   Host Hotels & Resorts              |
+|                                   | -   Invitation Homes                   |
+|                                   | -   Iron Mountain                      |
+|                                   | -   Kimco Realty                       |
+|                                   | -   Mid-America Apartment Communities  |
+|                                   | -   Prologis                           |
+|                                   | -   Public Storage                     |
+|                                   | -   Realty Income                      |
+|                                   | -   Regency Centers                    |
+|                                   | -   SBA Communications                 |
+|                                   | -   Simon Property Group               |
+|                                   | -   UDR, Inc.                          |
+|                                   | -   Ventas                             |
+|                                   | -   Vici Properties                    |
+|                                   | -   Vivmark Residential                |
+|                                   | -   Welltower                          |
+|                                   | -   Weyerhaeuser                       |
++-----------------------------------+----------------------------------------+
+| Utilities                         | -   AES Corporation                    |
+|                                   | -   Alliant Energy                     |
+|                                   | -   Ameren                             |
+|                                   | -   American Electric Power            |
+|                                   | -   American Water Works               |
+|                                   | -   Atmos Energy                       |
+|                                   | -   CenterPoint Energy                 |
+|                                   | -   CMS Energy                         |
+|                                   | -   Consolidated Edison                |
+|                                   | -   Constellation Energy               |
+|                                   | -   Dominion Energy                    |
+|                                   | -   DTE Energy                         |
+|                                   | -   Duke Energy                        |
+|                                   | -   Edison International               |
+|                                   | -   Entergy                            |
+|                                   | -   Evergy                             |
+|                                   | -   Eversource Energy                  |
+|                                   | -   Exelon                             |
+|                                   | -   FirstEnergy                        |
+|                                   | -   NextEra Energy                     |
+|                                   | -   NiSource                           |
+|                                   | -   NRG Energy                         |
+|                                   | -   Pacific Gas and Electric Company   |
+|                                   | -   Pinnacle West Capital              |
+|                                   | -   PPL Corporation                    |
+|                                   | -   Public Service Enterprise Group    |
+|                                   | -   Sempra                             |
+|                                   | -   Southern Company                   |
+|                                   | -   Vistra Corp.                       |
+|                                   | -   WEC Energy Group                   |
+|                                   | -   Xcel Energy                        |
++-----------------------------------+----------------------------------------+
+
++-----------------------------------------------------+-----------------------------------+
+| Authority control databases [Edit this at Wikidata] |                                   |
++-----------------------------------------------------+-----------------------------------+
+| International                                       | -   ISNI                          |
+|                                                     | -   VIAF                          |
++-----------------------------------------------------+-----------------------------------+
+| National                                            | -   United States                 |
+|                                                     | -   Israel                        |
++-----------------------------------------------------+-----------------------------------+
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=Akamai_Technologies&oldid=1375491389"
+
+Categories:
+
+-   1998 establishments in Massachusetts
+-   1999 initial public offerings
+-   American companies established in 1998
+-   Apple Inc. partnerships
+-   Cloud computing providers
+-   Companies based in Cambridge, Massachusetts
+-   Companies listed on the Nasdaq
+-   Computer companies established in 1998
+-   Content delivery networks
+-   Internet technology companies of the United States
+-   Peer-to-peer computing
+-   Technology companies based in the Boston area
+
+Hidden categories:
+
+-   Articles with short description
+-   Short description is different from Wikidata
+-   Use American English from May 2023
+-   All Wikipedia articles written in American English
+-   Use mdy dates from May 2020
+-   Pages with non-numeric formatnum arguments
+-   Infobox network service provider ASN same as Wikidata
+-   Pages using infobox company with a logo from wikidata
+-   CS1 maint: deprecated archival service
+-   Webarchive template wayback links
+
+-   This page was last edited on 18 September 2026, at 02:52 (UTC).
+-   Page was rendered with Parsoid.
+-   Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+-   Privacy policy
+-   About Wikipedia
+-   Disclaimers
+-   Contact Wikipedia
+-   Legal & safety contacts
+-   Code of Conduct
+-   Developers
+-   Statistics
+-   Cookie statement
+-   Mobile view
+
+-   [Wikimedia Foundation]
+-   [Powered by MediaWiki]
+
+Search
+
+Search
+
+Toggle the table of contents
+
+Akamai Technologies
+
+28 languages
+
+Add topic

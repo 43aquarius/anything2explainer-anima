@@ -1,0 +1,915 @@
+{
+ "fps": 30,
+ "total_frames": 6027,
+ "engine": "edge",
+ "voice": "en-US-AndrewNeural",
+ "rate": "+0%",
+ "gap": 10,
+ "para_gap": 20,
+ "chapter_gap": 45,
+ "lead": 40,
+ "tail": 90,
+ "lang": "en",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "The Open Postcard",
+   "from": 86
+  },
+  {
+   "n": 2,
+   "title": "The Handshake",
+   "from": 1546
+  },
+  {
+   "n": 3,
+   "title": "The Magic Trick",
+   "from": 2727
+  },
+  {
+   "n": 4,
+   "title": "The Chain of Trust",
+   "from": 4147
+  }
+ ],
+ "sentences": [
+  {
+   "id": "S01",
+   "chapter": 1,
+   "from": 86,
+   "to": 190,
+   "text": "It's a coffee shop. You connect to the free Wi-Fi and log in.",
+   "para": false,
+   "subs": [
+    {
+     "from": 86,
+     "to": 123,
+     "text": "It's a coffee shop."
+    },
+    {
+     "from": 124,
+     "to": 190,
+     "text": "You connect to the free Wi-Fi and log in."
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "chapter": 1,
+   "from": 201,
+   "to": 289,
+   "text": "The person at the next table is running a packet capture.",
+   "para": false,
+   "subs": [
+    {
+     "from": 201,
+     "to": 242,
+     "text": "The person at the next table"
+    },
+    {
+     "from": 243,
+     "to": 289,
+     "text": "is running a packet capture."
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "chapter": 1,
+   "from": 300,
+   "to": 441,
+   "text": "They can see every site you visit, every request you send — in plain text.",
+   "para": false,
+   "subs": [
+    {
+     "from": 300,
+     "to": 361,
+     "text": "They can see every site you visit,"
+    },
+    {
+     "from": 362,
+     "to": 410,
+     "text": "every request you send —"
+    },
+    {
+     "from": 411,
+     "to": 441,
+     "text": "in plain text."
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "chapter": 1,
+   "from": 452,
+   "to": 599,
+   "text": "HTTP is a postcard. Anyone on the path can read it as it passes by.",
+   "para": false,
+   "subs": [
+    {
+     "from": 452,
+     "to": 513,
+     "text": "HTTP is a postcard."
+    },
+    {
+     "from": 514,
+     "to": 599,
+     "text": "Anyone on the path can read it as it passes by."
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "chapter": 1,
+   "from": 610,
+   "to": 860,
+   "text": "In 2010, a Firefox extension called Firesheep made this a one-click game — log in as someone else, sitting right next to them.",
+   "para": true,
+   "subs": [
+    {
+     "from": 610,
+     "to": 683,
+     "text": "In 2010, a Firefox extension"
+    },
+    {
+     "from": 684,
+     "to": 777,
+     "text": "called Firesheep made this a one-click game —"
+    },
+    {
+     "from": 778,
+     "to": 826,
+     "text": "log in as someone else,"
+    },
+    {
+     "from": 827,
+     "to": 860,
+     "text": "sitting right next to them."
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "chapter": 1,
+   "from": 921,
+   "to": 951,
+   "text": "The problem was old.",
+   "para": false,
+   "subs": [
+    {
+     "from": 921,
+     "to": 951,
+     "text": "The problem was old."
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "chapter": 1,
+   "from": 962,
+   "to": 1120,
+   "text": "In 1994, Netscape needed people to trust a credit-card number to an open network.",
+   "para": false,
+   "subs": [
+    {
+     "from": 962,
+     "to": 1035,
+     "text": "In 1994, Netscape needed people"
+    },
+    {
+     "from": 1036,
+     "to": 1082,
+     "text": "to trust a credit-card number"
+    },
+    {
+     "from": 1083,
+     "to": 1120,
+     "text": "to an open network."
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "chapter": 1,
+   "from": 1131,
+   "to": 1217,
+   "text": "Their answer was SSL — a lock on the envelope.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1131,
+     "to": 1180,
+     "text": "Their answer was SSL —"
+    },
+    {
+     "from": 1181,
+     "to": 1217,
+     "text": "a lock on the envelope."
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "chapter": 1,
+   "from": 1228,
+   "to": 1338,
+   "text": "It grew up, survived its mistakes, and became TLS.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1228,
+     "to": 1296,
+     "text": "It grew up, survived its mistakes,"
+    },
+    {
+     "from": 1297,
+     "to": 1338,
+     "text": "and became TLS."
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "chapter": 1,
+   "from": 1349,
+   "to": 1490,
+   "text": "Today's version, TLS 1.3, was published in 2018.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1349,
+     "to": 1430,
+     "text": "Today's version, TLS 1.3,"
+    },
+    {
+     "from": 1431,
+     "to": 1490,
+     "text": "was published in 2018."
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "chapter": 2,
+   "from": 1546,
+   "to": 1666,
+   "text": "Under the lock, the first move is a handshake that takes a single round trip.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1546,
+     "to": 1593,
+     "text": "Under the lock, the first move"
+    },
+    {
+     "from": 1594,
+     "to": 1666,
+     "text": "is a handshake that takes a single round trip."
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "chapter": 2,
+   "from": 1677,
+   "to": 1808,
+   "text": "Your browser sends a ClientHello — its list of ciphers and a key-share.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1677,
+     "to": 1736,
+     "text": "Your browser sends a ClientHello —"
+    },
+    {
+     "from": 1737,
+     "to": 1808,
+     "text": "its list of ciphers and a key-share."
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "chapter": 2,
+   "from": 1819,
+   "to": 1911,
+   "text": "The server answers with its own hello and its certificate.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1819,
+     "to": 1880,
+     "text": "The server answers with its own hello"
+    },
+    {
+     "from": 1881,
+     "to": 1911,
+     "text": "and its certificate."
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "chapter": 2,
+   "from": 1922,
+   "to": 2098,
+   "text": "Then something strange happens: both sides compute the same secret — without either one sending it.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1922,
+     "to": 1978,
+     "text": "Then something strange happens:"
+    },
+    {
+     "from": 1979,
+     "to": 2049,
+     "text": "both sides compute the same secret —"
+    },
+    {
+     "from": 2050,
+     "to": 2098,
+     "text": "without either one sending it."
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "chapter": 2,
+   "from": 2154,
+   "to": 2341,
+   "text": "From here on, everything is symmetric encryption, AES-GCM. Fast, stream-like, sealed.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2154,
+     "to": 2203,
+     "text": "From here on, everything is"
+    },
+    {
+     "from": 2204,
+     "to": 2286,
+     "text": "symmetric encryption, AES-GCM."
+    },
+    {
+     "from": 2287,
+     "to": 2341,
+     "text": "Fast, stream-like, sealed."
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "chapter": 2,
+   "from": 2352,
+   "to": 2442,
+   "text": "The person at the next table still sees every packet.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2352,
+     "to": 2387,
+     "text": "The person at the next table"
+    },
+    {
+     "from": 2388,
+     "to": 2442,
+     "text": "still sees every packet."
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "chapter": 2,
+   "from": 2453,
+   "to": 2598,
+   "text": "The handshake itself is public. The envelopes still fly, addressed and timed.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2453,
+     "to": 2512,
+     "text": "The handshake itself is public."
+    },
+    {
+     "from": 2513,
+     "to": 2561,
+     "text": "The envelopes still fly,"
+    },
+    {
+     "from": 2562,
+     "to": 2598,
+     "text": "addressed and timed."
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "chapter": 2,
+   "from": 2609,
+   "to": 2671,
+   "text": "But the letters inside have become noise.",
+   "para": true,
+   "subs": [
+    {
+     "from": 2609,
+     "to": 2637,
+     "text": "But the letters inside"
+    },
+    {
+     "from": 2638,
+     "to": 2671,
+     "text": "have become noise."
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "chapter": 3,
+   "from": 2747,
+   "to": 2866,
+   "text": "How do two strangers agree on a secret on a channel everyone can read?",
+   "para": false,
+   "subs": [
+    {
+     "from": 2747,
+     "to": 2810,
+     "text": "How do two strangers agree on a secret"
+    },
+    {
+     "from": 2811,
+     "to": 2866,
+     "text": "on a channel everyone can read?"
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "chapter": 3,
+   "from": 2877,
+   "to": 3033,
+   "text": "This is the Diffie-Hellman trick, published in 1976 — fifty years ago.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2877,
+     "to": 2935,
+     "text": "This is the Diffie-Hellman trick,"
+    },
+    {
+     "from": 2936,
+     "to": 3000,
+     "text": "published in 1976 —"
+    },
+    {
+     "from": 3001,
+     "to": 3033,
+     "text": "fifty years ago."
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "chapter": 3,
+   "from": 3044,
+   "to": 3138,
+   "text": "Each side mixes a private color into a public one.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3044,
+     "to": 3105,
+     "text": "Each side mixes a private color"
+    },
+    {
+     "from": 3106,
+     "to": 3138,
+     "text": "into a public one."
+    }
+   ]
+  },
+  {
+   "id": "S22",
+   "chapter": 3,
+   "from": 3149,
+   "to": 3248,
+   "text": "Anyone watching sees the mixes — and cannot un-mix them.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3149,
+     "to": 3209,
+     "text": "Anyone watching sees the mixes —"
+    },
+    {
+     "from": 3210,
+     "to": 3248,
+     "text": "and cannot un-mix them."
+    }
+   ]
+  },
+  {
+   "id": "S23",
+   "chapter": 3,
+   "from": 3259,
+   "to": 3422,
+   "text": "The math version relies on one-way doors: multiplying is easy, undoing it is not.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3259,
+     "to": 3281,
+     "text": "The math version"
+    },
+    {
+     "from": 3282,
+     "to": 3336,
+     "text": "relies on one-way doors:"
+    },
+    {
+     "from": 3337,
+     "to": 3381,
+     "text": "multiplying is easy,"
+    },
+    {
+     "from": 3382,
+     "to": 3422,
+     "text": "undoing it is not."
+    }
+   ]
+  },
+  {
+   "id": "S24",
+   "chapter": 3,
+   "from": 3468,
+   "to": 3592,
+   "text": "That gives TLS a property worth saying out loud: forward secrecy.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3468,
+     "to": 3515,
+     "text": "That gives TLS a property"
+    },
+    {
+     "from": 3516,
+     "to": 3561,
+     "text": "worth saying out loud:"
+    },
+    {
+     "from": 3562,
+     "to": 3592,
+     "text": "forward secrecy."
+    }
+   ]
+  },
+  {
+   "id": "S25",
+   "chapter": 3,
+   "from": 3603,
+   "to": 3781,
+   "text": "If the server's private key is stolen tomorrow, the recordings from yesterday still cannot be decrypted.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3603,
+     "to": 3648,
+     "text": "If the server's private key"
+    },
+    {
+     "from": 3649,
+     "to": 3689,
+     "text": "is stolen tomorrow,"
+    },
+    {
+     "from": 3690,
+     "to": 3732,
+     "text": "the recordings from yesterday"
+    },
+    {
+     "from": 3733,
+     "to": 3781,
+     "text": "still cannot be decrypted."
+    }
+   ]
+  },
+  {
+   "id": "S26",
+   "chapter": 3,
+   "from": 3792,
+   "to": 3827,
+   "text": "The past stays sealed.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3792,
+     "to": 3827,
+     "text": "The past stays sealed."
+    }
+   ]
+  },
+  {
+   "id": "S27",
+   "chapter": 3,
+   "from": 3838,
+   "to": 4091,
+   "text": "TLS 1.3 makes this mandatory. No exceptions, no weak suites — five cipher suites, down from thirty-one.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3838,
+     "to": 3933,
+     "text": "TLS 1.3 makes this mandatory."
+    },
+    {
+     "from": 3934,
+     "to": 4008,
+     "text": "No exceptions, no weak suites —"
+    },
+    {
+     "from": 4009,
+     "to": 4091,
+     "text": "five cipher suites, down from thirty-one."
+    }
+   ]
+  },
+  {
+   "id": "S28",
+   "chapter": 4,
+   "from": 4162,
+   "to": 4290,
+   "text": "One question is left: who vouches that this server really is shop.example?",
+   "para": false,
+   "subs": [
+    {
+     "from": 4162,
+     "to": 4204,
+     "text": "One question is left:"
+    },
+    {
+     "from": 4205,
+     "to": 4241,
+     "text": "who vouches that this server"
+    },
+    {
+     "from": 4242,
+     "to": 4290,
+     "text": "really is shop.example?"
+    }
+   ]
+  },
+  {
+   "id": "S29",
+   "chapter": 4,
+   "from": 4301,
+   "to": 4386,
+   "text": "A certificate — a stamp from a Certificate Authority.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4301,
+     "to": 4330,
+     "text": "A certificate —"
+    },
+    {
+     "from": 4331,
+     "to": 4386,
+     "text": "a stamp from a Certificate Authority."
+    }
+   ]
+  },
+  {
+   "id": "S30",
+   "chapter": 4,
+   "from": 4397,
+   "to": 4560,
+   "text": "Your browser ships with about a hundred and twenty of these authorities built in. Trust, pre-installed.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4397,
+     "to": 4429,
+     "text": "Your browser ships with"
+    },
+    {
+     "from": 4430,
+     "to": 4464,
+     "text": "about a hundred and twenty"
+    },
+    {
+     "from": 4465,
+     "to": 4518,
+     "text": "of these authorities built in."
+    },
+    {
+     "from": 4519,
+     "to": 4560,
+     "text": "Trust, pre-installed."
+    }
+   ]
+  },
+  {
+   "id": "S31",
+   "chapter": 4,
+   "from": 4571,
+   "to": 4748,
+   "text": "A man-in-the-middle attack fails here: the fake certificate isn't stamped by anyone your browser believes.",
+   "para": false,
+   "subs": [
+    {
+     "from": 4571,
+     "to": 4633,
+     "text": "A man-in-the-middle attack fails here:"
+    },
+    {
+     "from": 4634,
+     "to": 4689,
+     "text": "the fake certificate isn't stamped"
+    },
+    {
+     "from": 4690,
+     "to": 4748,
+     "text": "by anyone your browser believes."
+    }
+   ]
+  },
+  {
+   "id": "S32",
+   "chapter": 4,
+   "from": 4759,
+   "to": 4975,
+   "text": "In 2015, Let's Encrypt made certificates free and automatic. HTTPS stopped being a luxury.",
+   "para": true,
+   "subs": [
+    {
+     "from": 4759,
+     "to": 4823,
+     "text": "In 2015, Let's Encrypt"
+    },
+    {
+     "from": 4824,
+     "to": 4903,
+     "text": "made certificates free and automatic."
+    },
+    {
+     "from": 4904,
+     "to": 4975,
+     "text": "HTTPS stopped being a luxury."
+    }
+   ]
+  },
+  {
+   "id": "S33",
+   "chapter": 4,
+   "from": 5021,
+   "to": 5204,
+   "text": "Today, more than four out of five page loads travel over TLS. The little lock is just... normal.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5021,
+     "to": 5075,
+     "text": "Today, more than four out of five"
+    },
+    {
+     "from": 5076,
+     "to": 5151,
+     "text": "page loads travel over TLS."
+    },
+    {
+     "from": 5152,
+     "to": 5204,
+     "text": "The little lock is just... normal."
+    }
+   ]
+  },
+  {
+   "id": "S34",
+   "chapter": 4,
+   "from": 5215,
+   "to": 5491,
+   "text": "And the lock keeps being re-forged: encrypted ClientHello is now standard, and post-quantum key exchange already protects most browser traffic.",
+   "para": true,
+   "subs": [
+    {
+     "from": 5215,
+     "to": 5283,
+     "text": "And the lock keeps being re-forged:"
+    },
+    {
+     "from": 5284,
+     "to": 5365,
+     "text": "encrypted ClientHello is now standard,"
+    },
+    {
+     "from": 5366,
+     "to": 5419,
+     "text": "and post-quantum key exchange"
+    },
+    {
+     "from": 5420,
+     "to": 5491,
+     "text": "already protects most browser traffic."
+    }
+   ]
+  },
+  {
+   "id": "S35",
+   "chapter": 4,
+   "from": 5522,
+   "to": 5555,
+   "text": "So — the coffee shop.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5522,
+     "to": 5555,
+     "text": "So — the coffee shop."
+    }
+   ]
+  },
+  {
+   "id": "S36",
+   "chapter": 4,
+   "from": 5566,
+   "to": 5664,
+   "text": "The person at the next table captured thousands of envelopes.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5566,
+     "to": 5603,
+     "text": "The person at the next table"
+    },
+    {
+     "from": 5604,
+     "to": 5664,
+     "text": "captured thousands of envelopes."
+    }
+   ]
+  },
+  {
+   "id": "S37",
+   "chapter": 4,
+   "from": 5675,
+   "to": 5762,
+   "text": "They can see who you talked to, when, and how much.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5675,
+     "to": 5721,
+     "text": "They can see who you talked to,"
+    },
+    {
+     "from": 5722,
+     "to": 5762,
+     "text": "when, and how much."
+    }
+   ]
+  },
+  {
+   "id": "S38",
+   "chapter": 4,
+   "from": 5773,
+   "to": 5827,
+   "text": "But every letter they open is noise.",
+   "para": false,
+   "subs": [
+    {
+     "from": 5773,
+     "to": 5802,
+     "text": "But every letter they open"
+    },
+    {
+     "from": 5803,
+     "to": 5827,
+     "text": "is noise."
+    }
+   ]
+  },
+  {
+   "id": "S39",
+   "chapter": 4,
+   "from": 5838,
+   "to": 5926,
+   "text": "Everyone can see the envelope. No one can read the letter.",
+   "para": true,
+   "subs": [
+    {
+     "from": 5838,
+     "to": 5890,
+     "text": "Everyone can see the envelope."
+    },
+    {
+     "from": 5891,
+     "to": 5926,
+     "text": "No one can read the letter."
+    }
+   ]
+  }
+ ],
+ "chars": 2160,
+ "words": 472,
+ "speech_sec": 170.21
+}

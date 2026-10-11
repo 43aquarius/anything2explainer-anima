@@ -1,0 +1,59 @@
+# Wikipedia article: MIT $100K Entrepreneurship Competition
+# URL: https://en.wikipedia.org/wiki/MIT_$100K_Entrepreneurship_Competition
+# Fetched: 2026-10-11 via MediaWiki API (explaintext)
+# Length: 5712 chars
+
+The MIT $100K Entrepreneurship Competition is a student-managed business plan competition, where undergraduates and postgraduates from various programs and all levels at the Massachusetts Institute of Technology (MIT) organize and enter the competition. Teams must include at least one full-time MIT student, but membership is not limited to the MIT community.  The competition is supported by the MIT Entrepreneurship Center at the MIT Sloan School of Management. Every year a total of $300,000 is distributed as non-dilutive grant money. Since 1990, over 160 companies have been started as a result of the competition, generating 4,600 jobs, receiving over $1.3 billion in follow-up venture capital funding and totaling a cumulative market value of over $15 billion.
+
+
+== Process ==
+Throughout the academic year, the teams take part in a process that includes industry and legal mentorship, multiple live judging rounds, prototyping and pitch workshops, expense accounts for venture development, networking events with sponsors and alumni, and the awarding of roughly US$300,000 in non-dilutive prize money.
+The competition started in 1990 as the $10K competition and continued to grow throughout the 1990s. In 1996 the $10K evolved into the $50K, with $30K going to the winner and $10K to each of the two runners-up. In 2006, the $50K grant competition also added another aspect to the competition focused on business plans for low-income communities to complement the traditional business venture competition. Subsequently, the competition has rebranded itself with a larger grant amount of $100K and is called the MIT $100K Pitch Contest.
+
+
+== MIT $100K PITCH Contest ==
+The MIT $100K Pitch Contest is organized yearly by the MIT $100K organizing committee. Intended to provide a way for entrepreneurs with ideas to form teams, it is held in the fall. The contest is a warm-up event for the Executive Summary Contest, held in the winter, and the Business Plan Contest, held in the spring. In the Elevator Pitch Contest, each contestant is given 60 seconds in front of a crowd to give their "elevator pitch," with the winner receiving a cash prize. This contest is open to the public.
+
+
+== MIT $100K ACCELERATE Contest ==
+The MIT $100K ACCELERATE Contest replaced the MIT $100K Executive Summary Contest in 2011. It is held in the winter of the academic year and is intended to help teams build a robust prototype for their start-up idea. Teams work on creating a demonstration of their idea over December and January, and the best selected are the ACCELERATE Finale Show. MIT $100K provides resources and mentorship to help teams build their demonstrations, which will be reviewed by a panel of judges, with the winner receiving a cash prize.
+
+
+== MIT $100K LAUNCH - Business Plan Contest ==
+The MIT $100K Launch Contest is the flagship of the MIT $100K Entrepreneurship Competition. In the spring, semi-finalists are selected from all business plan submissions. LAUNCH is the final contest in the $100K cycle. Participants present full-scale business plans for the chance to win a $100,000 grand prize.
+
+
+=== Winners - Business Plan Contest ===
+
+
+== Notable companies formed through the competition ==
+Since its founding, the $100K Competition has helped launch more than 60 companies with an aggregate value of more than $10.5 billion. Prominent $100K alumni companies include Akamai, net. Genesis, and C-Bridge.
+
+
+== History: MIT $10K/$50K/$100K Entrepreneurial Competition ==
+The competition was founded in the 1989–1990 academic year and was initially intended as a promotional vehicle for the MIT Entrepreneurs Club and MIT New Ventures Association (which became the MIT E-Club.) Club members Richard Durling-Shyduroff, Marshall Van Alstyne, and Douglas Ling along with club Founder Peter Mui envisioned a cross-campus event that brought MIT's varied schools together to identify and support innovative ideas on campus. The goal was to create a safe, nurturing, (relatively controlled) sandbox environment where fledgling entrepreneurs could try their wings. The lead alumni donor was George Hatsopoulos of Thermo Electron. with additional generous support from other alumni, the Sloan School (Dean Lester Thurow) and Engineering School (Acting Dean Jack Kerrebrock.)
+
+
+=== Managing Directors ===
+
+
+== Entrepreneurship for Development Competition ==
+The Entrepreneurship for Development Competition is a competition for business plans that are judged on the following criteria: uniqueness of business idea, management strength, path to sustainability and social impact.  The competition was added in 2006 as a complement to the Business Venture Competition due to increasing demand and interest in socially conscious ideas.  In the spring, semi-finalists are selected from all business plan submissions.  Semi-finalists submit more detailed business plans, and 5-6 finalists are then chosen.  At the awards ceremony, the top team is awarded the Entrepreneurship for Development grand prize.
+
+
+=== Winners - Entrepreneurship for Development Competition ===
+In 1998, a dual award within the Venture Competition was awarded to a pair of finalists including Volunteer Community Connection.  At the time, VCC was a non-traditional entry into the competition and
+has since served as a motivating example for the genesis of the MIT $100K Developmental Entrepreneurship Competition.  As a result, they are listed as a winner and implicitly as an innovator within the Entrepreneurship for Development Competition.
+
+
+== See also ==
+Best of Biotech
+LiquiGlide
+
+
+== References ==
+
+
+== External links ==
+Official site
+A Look at 22 Years of the MIT $100K Entrepreneurship Competition & 10 Teams Who've Paved the Way

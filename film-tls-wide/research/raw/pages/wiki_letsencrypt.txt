@@ -1,0 +1,305 @@
+{{Short description|Non-profit certificate authority}}
+{{Use mdy dates|date=April 2016}}
+{{Infobox organization
+| name = Let's Encrypt
+| pronunciation = 
+| native_name = 
+| native_name_lang = 
+| named_after = 
+| image = 
+| image_size = 
+| image_alt = 
+| caption = 
+| logo = Let's Encrypt.svg
+| logo_size = 250px
+| logo_alt = 
+| logo_caption = 
+| map = 
+| map_size = 
+| map_alt = 
+| map_caption = 
+| map2 = 
+| map2_size = 
+| map2_alt = 
+| map2_caption = 
+| abbreviation = 
+| predecessor = 
+| merged_into = 
+| successor = 
+| formation = {{Start date and age|2014|11|18}}
+| founder = {{Plainlist|
+* [[Electronic Frontier Foundation]]
+* [[Mozilla Foundation]]
+* [[University of Michigan]]
+* [[Akamai Technologies]]
+* [[Cisco Systems]]
+}}
+| founding_location = 
+| extinction = <!-- use {{End date and age|YYYY|MM|DD}} -->
+| merger = 
+| type = 
+| tax_id = <!-- or | vat_id = (for European organizations) -->
+| registration_id = <!-- for non-profit org -->
+| status = 
+| purpose = 
+| headquarters = [[San Francisco]], [[California]], U.S.
+| location = 
+| coordinates = {{Coord|37.800322|-122.449951|display=inline, title}}
+| region_served = 
+| services = [[X.509]] [[certificate authority]]
+| products = 
+| methods = 
+| fields = 
+| membership = 
+| num_members_year = 
+| language = 
+| owner = <!-- or | owners = -->
+| secretary_general = 
+| leader_title = 
+| leader_name = 
+| leader_title2 = 
+| leader_name2 = 
+| leader_title3 = 
+| leader_name3 = 
+| leader_title4 = 
+| leader_name4 = 
+| board_of_directors = 
+| key_people = 
+| main_organ = 
+| parent_organization = [[Internet Security Research Group]]
+| subsidiaries = 
+| secessions = 
+| affiliations = 
+| budget = {{US$|3.6 million}}<ref name="budget-2019">{{Cite web|url=https://letsencrypt.org/2018/12/31/looking-forward-to-2019.html|title=Looking Forward to 2019|last=Aas|first=Josh|date=December 31, 2019|website=Let's Encrypt|language=en|access-date=January 26, 2019}}</ref>
+| budget_year = 2019
+| revenue = 
+| revenue_year = 
+| disbursements = 
+| expenses = 
+| expenses_year = 
+| endowment = 
+| endowment_year = 
+| num_staff = 27<ref name="2023-report">{{Cite web |date=2023-12-27 |title=Building A Better Internet - ISRG 2023 Annual Report |url=https://www.abetterinternet.org/documents/2023-ISRG-Annual-Report.pdf |access-date=2024-05-27 |website=[[Internet Security Research Group]]}}</ref>
+| num_staff_year = 2023
+| num_volunteers = 
+| num_volunteers_year = 
+| slogan = 
+| mission = 
+| website = {{Official URL}}
+| remarks = 
+| former_name = 
+| footnotes =
+}}
+'''Let's Encrypt''' is a [[Non-profit organisation|non-profit]] [[certificate authority]] run by the [[Internet Security Research Group]] (ISRG) that provides [[X.509]] [[public key certificate|certificates]] for [[Transport Layer Security]] (TLS) encryption without charging fees. It is the world's largest certificate authority,<ref name="2020-report">{{Cite web |date=2020-11-17 |title=For A Better Internet - ISRG 2020 Annual Report |url=https://www.abetterinternet.org/documents/2020-ISRG-Annual-Report.pdf |access-date=2021-05-11 |website=[[Internet Security Research Group]]}}</ref> used by more than 700 million [[website]]s,<ref name="le-stats" /> with the goal of creating a more secure and privacy-respecting web through the widespread adoption of [[HTTPS]]. The [[Internet Security Research Group]], the provider of the service, is a [[public benefit]] organization.<ref name="Lets-Encrypt-About"/> Major sponsors of the ISRG include the [[Electronic Frontier Foundation]] (EFF), the [[Mozilla Foundation]], [[OVHcloud]], [[Cisco|Cisco Systems]], [[Facebook]], [[Google Chrome]], the [[Internet Society]], [[Amazon Web Services|AWS]], [[nginx]], and the [[Gates Foundation]].<ref name="Lets-Encrypt-Sponsors"/> Other partners include the certificate authority [[IdenTrust]],<ref name="identrusted" /> the [[University of Michigan]],<ref name="founding"/> and the [[Linux Foundation]].<ref name="ISRG-LF"/><ref>{{cite press release |author=<!-- not stated --> |date=April 12, 2016 |title=Let's Encrypt Leaves Beta |url=https://www.linuxfoundation.org/press/press-release/lets-encrypt-leaves-beta |location=San Francisco |publisher=Linux Foundation |access-date=August 1, 2026}}</ref>
+
+== Overview ==
+[[File:HTTPS on Firefox 133 screenshot.webp|thumb|Example of a website using Let's Encrypt]]
+[[File:Let's Encrypt certificate example on Firefox 133 screenshot.webp|thumb|Example of a Let's Encrypt certificate]]
+The mission of the organization is to create a more secure and privacy-respecting [[World Wide Web]] by promoting the widespread adoption of HTTPS.<ref name="le-faq">{{Cite web |title=Let's Encrypt - FAQ |url=https://letsencrypt.org/docs/faq/ |access-date=2021-05-11 |website=Let's Encrypt}}</ref> Let's Encrypt certificates are valid for 90 days by default, during which renewal can take place at any time.<ref>{{Cite web|title=Why ninety-day lifetimes for certificates? - Let's Encrypt|url=https://letsencrypt.org/2015/11/09/why-90-days.html|access-date=2021-09-05|website=letsencrypt.org|date=November 9, 2015}}</ref> Optionally, certificates can be issued which are valid for 45 days (tlsserver profile) and 6 days (shortlived profile).<ref name="lencr-from-40-to-95">{{cite web |last=Matthew |first=McPherrin |date=December 2, 2025 |title=Decreasing Certificate Lifetimes to 45 Days |url=https://letsencrypt.org/2025/12/02/from-90-to-45 |website=Let's Encrypt |access-date=March 3, 2026}}</ref><ref name="lencr-6day-and-ip-general-availability">{{cite web |last=Matthew |first=McPherrin |date= January 15, 2026 |title=6-day and IP Address Certificates are Generally Available |url=https://letsencrypt.org/2026/01/15/6day-and-ip-general-availability |website=Let's Encrypt |access-date=March 3, 2026}}</ref> This is handled by an automated process designed to overcome manual creation, [[Acceptance testing|validation]], [[Digital signature|signing]], installation, and renewal of certificates for secure websites.<ref name="Lets-Encrypt-Aims-to-Improve-Security" /><ref name="Launching-2015-CA-to-Encrypt-Entire-Web" /> The project claims its goal is to make encrypted connections to World Wide Web servers ubiquitous.<ref>{{cite web|url=https://letsencrypt.org/howitworks/ |title=How It Works |website=Let's Encrypt |date= |access-date=July 9, 2016}}</ref> By eliminating payment, web server configuration, validation [[email management]] and certificate renewal tasks, it is meant to significantly lower the complexity of setting up and maintaining TLS encryption.<ref name="ZDNet20141109"/>
+
+On a [[Linux]] web server, execution of only two commands is sufficient to set up [[HTTPS]] encryption and acquire and install certificates.<ref name="heise20141119" /><ref name="SDTimes" /> To that end, a software package was included into the official [[Debian]] and [[Ubuntu (operating system)|Ubuntu]] [[software repository|software repositories]].<ref name="debian package1" /><ref name="debian package2" /> Current initiatives of major browser developers such as [[Mozilla]] and [[Google]] to [[deprecation|deprecate]] unencrypted [[Hypertext Transfer Protocol|HTTP]] are counting on the availability of Let's Encrypt.<ref name="deprecating HTTP Mozilla"/><ref name="deprecating HTTP Chromium"/> The project is acknowledged to have the potential to accomplish encrypted connections as the default case for the entire Web.<ref name="Moody"/>
+
+The service only issues [[domain-validated certificate]]s, since they can be fully automated. [[Organization Validation Certificate|Organization Validation]] and [[Extended Validation Certificate]]s both require human validation of any registrants, and are therefore not offered by Let's Encrypt.<ref name="ZDNet20150409"/> Support of [[ACME v2]] and [[wildcard certificate]]s was added in March 2018.<ref>{{cite web|url=https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579|title=ACME v2 and Wildcard Certificate Support is Live|website=Let's Encrypt|last=Aas|first=Josh|date=March 13, 2018|access-date=May 24, 2018}}</ref> The domain validation (DV) utilized by Let's Encrypt dates back to 2002 and was at first controversial when introduced by [[GeoTrust]] before becoming a widely accepted method for the issuance of SSL certificates.<ref>{{Cite web|url=https://www.theregister.com/2002/07/24/theres_certs_and_certs_verisign/|title=There's certs and certs – VeriSign badmouths rivals|website=www.theregister.com|access-date=August 20, 2020}}</ref>
+
+By being as transparent as possible, the organization hopes to both protect its own trustworthiness and guard against attacks and manipulation attempts. For that purpose it regularly publishes transparency reports,<ref name="transparency report"/> publicly logs all [[Automated Certificate Management Environment|ACME]] transactions (e.g. by using [[Certificate Transparency]]), and uses [[open standard]]s and [[free software]] as much as possible.<ref name="heise20141119"/>
+
+== History ==
+The Let's Encrypt project was started in 2012 by two Mozilla employees, Josh Aas and Eric Rescorla, together with [[Peter Eckersley (computer scientist)|Peter Eckersley]] at the Electronic Frontier Foundation and [[J. Alex Halderman]] at the [[University of Michigan]]. [[Internet Security Research Group]], the company behind Let's Encrypt, was incorporated in May 2013.<ref name="founding"/>
+
+Let's Encrypt was announced publicly on November 18, 2014.<ref name="out-of-stealth"/>
+
+On January 28, 2015, the ACME protocol was officially submitted to the IETF for standardization.<ref name="acme-draft-history"/>
+On April 9, 2015, the ISRG and the [[Linux Foundation]] declared their collaboration.<ref name="ISRG-LF"/>
+The root and intermediate certificates were generated in the beginning of June.<ref name="heise20150605"/>
+On June 16, 2015, the final launch schedule for the service was announced, with the first certificate expected to be issued sometime in the week of July 27, 2015, followed by a limited issuance period to test security and scalability. [[General availability release|General availability]] of the service was originally planned to begin sometime in the week of September 14, 2015.<ref name="schedule"/> On August 7, 2015, the launch schedule was amended to provide more time for ensuring system security and stability, with the first certificate to be issued in the week of September 7, 2015 followed by general availability in the week of November 16, 2015.<ref name="schedule2"/>
+
+On September 14, 2015, Let's Encrypt issued its first certificate, which was for the domain {{URL|https://helloworld.letsencrypt.org}}. On the same day, ISRG submitted its root program applications to [[Mozilla]], [[Microsoft]], [[Google]] and [[Apple Inc.|Apple]].<ref name="firstcert"/>
+
+On October 19, 2015, the intermediate certificates became cross-signed by [[IdenTrust]], causing all certificates issued by Let's Encrypt to be trusted by all major browsers.<ref name="identrusted"/>
+
+On November 12, 2015, Let's Encrypt announced that general availability would be pushed back and that the first [[public beta]] would commence on December 3, 2015.<ref name="schedule3"/> The public beta ran from December 3, 2015<ref>{{cite web|url=https://letsencrypt.org/2015/12/03/entering-public-beta.html |title=Entering Public Beta – Let's Encrypt – Free SSL/TLS Certificates |publisher=Let's Encrypt |date=December 3, 2015 |access-date=January 6, 2016}}</ref> to April 12, 2016.<ref name="outofbeta">{{cite web|title=Let's Encrypt Leaves Beta|url=http://www.linuxfoundation.org/news-media/announcements/2016/04/let-s-encrypt-leaves-beta|website=LinuxFoundation.org|access-date=17 April 2016|url-status=dead|archive-url=https://web.archive.org/web/20160415173611/http://www.linuxfoundation.org/news-media/announcements/2016/04/let-s-encrypt-leaves-beta|archive-date=April 15, 2016|df=mdy-all}}</ref> It launched on April 12, 2016.<ref name="launch"/><ref name="softpedia-launch"/><ref name="Lets-Encrypt-About"/>
+
+On March 3, 2020, Let's Encrypt announced that it would have to [[certificate revocation|revoke]] over 3 million certificates on March 4, due to a flaw in its Certificate Authority software.<ref>{{cite web|url=https://community.letsencrypt.org/t/revoking-certain-certificates-on-march-4/114864|title=Revoking certain certificates on March 4|date=March 3, 2020|access-date=4 March 2020}}</ref> Through working with software vendors and contacting site operators, Let's Encrypt was able to get 1.7 million of the affected certificates renewed before the deadline. They ultimately decided not to revoke the remaining affected certificates, as the security risk was low and the certificates were to expire within the next 90 days.<ref name="wired20200309">{{cite magazine|last1=Barrett|first1=Brian|date=9 March 2020|title=The Internet Avoided a Minor Disaster Last Week|magazine=Wired|publisher=Conde Nast|url=https://www.wired.com/story/lets-encrypt-internet-calamity-that-wasnt/|access-date=12 May 2020}}</ref> The mass-revocation event has significantly increased the global revocation rate.<ref>{{cite arXiv |title=Revocation Statuses on the Internet|year=2021 |eprint=2102.04288 |last1=Korzhitskii |first1=Nikita |last2=Carlsson |first2=Niklas |class=cs.NI}}</ref>
+
+In March 2020, Let's Encrypt was awarded the [[Free Software Foundation]]'s annual Award for Projects of Social Benefit.<ref>[https://www.fsf.org/news/lets-encrypt-jim-meyering-and-clarissa-lima-borges-receive-fsfs-2019-free-software-awards Let's Encrypt, Jim Meyering, and Clarissa Lima Borges receive FSF's 2019 Free Software Awards] Free Software Foundation, 2020</ref>
+
+On February 27, 2020, Let's Encrypt announced having issued a billion certificates.<ref>{{Cite web|title=Let's Encrypt Has Issued a Billion Certificates - Let's Encrypt - Free SSL/TLS Certificates|url=https://letsencrypt.org/2020/02/27/one-billion-certs.html|access-date=2021-04-03|website=letsencrypt.org|date=February 27, 2020}}</ref>
+
+In April 2022, Let's Encrypt was awarded the [[Levchin Prize]] for “fundamental improvements to the certificate ecosystem that provide free certificates for all”.<ref>{{cite web |title=The Levchin Prize for Real-World Cryptography |url=https://rwc.iacr.org/LevchinPrize/winners.html |website=Real World Crypto Symposium |publisher=International Association for Cryptologic Research |access-date=9 April 2024}}</ref>
+
+As of 2025, Let's Encrypt serves more than 700 million websites worldwide, making it the largest certificate authority in the world.<ref name="le-stats">{{Cite web |title=Let's Encrypt Stats - Let's Encrypt - Free SSL/TLS Certificates |url=https://letsencrypt.org/stats/ |access-date=2026-03-20 |website=letsencrypt.org}}</ref>
+
+In January 2025, Let's Encrypt announced the retirement of its free email expiry notifications and recommended [[Red Sift]] Certificates Lite as its certificate monitoring service.<ref>{{Cite web |last=Powar |first=Rahul |date=2025-01-22 |title=Red Sift becomes the recommended certificate monitoring service of Let's Encrypt |url=https://blog.redsift.com/news/red-sift-becomes-the-recommended-certificate-monitoring-service-of-lets-encrypt/ |access-date=2025-06-12 |website=Red Sift Blog |language=en-US}}</ref><ref>{{Cite web |title=Let's Encrypt recommends Red Sift as its certificate monitoring service |url=https://redsift.com/innovation/lets-encrypt |access-date=2025-06-12 |website=redsift.com |language=en-us}}</ref>
+
+== Technology ==
+
+=== Chain of trust ===
+
+==== ISRG Root X1 (RSA) ====
+In June 2015, Let's Encrypt announced the generation of their first [[RSA (cryptosystem)|RSA]] root certificate, ISRG Root X1.<ref name="certsgenerated">{{cite web|url=https://letsencrypt.org/2015/06/04/isrg-ca-certs.html |title=Let's Encrypt Root and Intermediate Certificates |website=Let's Encrypt |date=June 4, 2015 |last=Aas |first=Josh}}</ref> The root certificate was used to sign two [[Intermediate certificate authority|intermediate certificates]],<ref name="certsgenerated" /> which are also cross-signed by the certificate authority [[IdenTrust]].<ref name="identrusted" /><ref name="heise20150617" /> One of the intermediate certificates is used to sign issued certificates, while the other is kept offline as a backup in case of problems with the first intermediate certificate.<ref name="certsgenerated" /> Because the IdenTrust certificate was already widely trusted by major web browsers, Let's Encrypt certificates can normally be validated and accepted by relying parties<ref name="heise20150605" /> even before browser vendors include the [[Internet Security Research Group|ISRG]] root certificate as a [[trust anchor]].
+
+==== ISRG Root X2 (ECDSA) ====
+Let's Encrypt developers planned to generate an [[Elliptic Curve Digital Signature Algorithm|ECDSA]] root key back in 2015,<ref name="certsgenerated" /> but then pushed back the plan to early 2016, then to 2019, and finally to 2020. On September 3, 2020, Let's Encrypt issued six new certificates: one new ECDSA root named "ISRG Root X2", four intermediates, and one cross-sign. The new ISRG Root X2 is cross-signed with ISRG Root X1, Let's Encrypt's own root certificate. Let's Encrypt did not issue an OCSP responder for the new intermediate certificates and instead plans to rely solely on [[certificate revocation list]]s (CRLs) to recall compromised certificates and short validity periods to reduce danger of certificate compromise.<ref name="ecdsaannouncement">{{Cite web|last=Gable|first=Aaron|date=September 17, 2020|title=Let's Encrypt's New Root and Intermediate Certificates|url=https://letsencrypt.org/2020/09/17/new-root-and-intermediates.html|access-date=September 22, 2020|website=Let's Encrypt}}</ref>
+
+=== ACME protocol ===
+The [[challenge–response authentication|challenge–response]] protocol used to automate enrolling with the certificate authority is called [[Automatic Certificate Management Environment]] (ACME). It can query either Web servers or DNS servers controlled by the domain covered by the certificate to be issued.  Based on whether the resulting responses match the expectations, control of the enrollee over the domain is assured (domain validation). The ACME [[Client (computing)|client software]] can set up a dedicated TLS server that gets queried by the ACME certificate authority server with requests using [[Server Name Indication]] (Domain Validation using Server Name Indication, DVSNI), or it can use [[hooking|hooks]] to publish responses to existing Web and DNS servers.
+
+The validation processes are run multiple times over separate network paths. Checking whether DNS entries are provisioned is done from multiple geographically diverse locations to make [[DNS spoofing]] attacks harder to carry out.
+
+ACME interactions are based on exchanging [[JSON]] documents over HTTPS connections.<ref name="Threatpost"/> The specification developed by the [[Internet Engineering Task Force]] (IETF) is a proposed standard, RFC 8555.<ref name="RFC 8555">{{Cite web|url=https://www.rfc-editor.org/info/rfc8555|title=Automatic Certificate Management Environment (ACME)|rfc=8555|date=March 2019|author=R. Barnes, J. Hoffman-Andrews, D. McCarney and J. Kasten}}</ref>
+
+Prior to the completion and publication of RFC 8555, Let's Encrypt implemented a pre-standard draft of the ACME protocol. RFC 8555 introduced breaking changes and as such it has been dubbed ACMEv2. Let's Encrypt implemented the new version and started pushing existing clients into upgrades. The nudging was implemented with intermittent down-times of the ACMEv1 API. The end-of-lifetime was announced with dates and phases in "End of Life Plan for ACMEv1".<ref>{{Cite web|url=https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430|title=End of Life Plan for ACMEv1|date=March 11, 2019|website=Let's Encrypt Community Support|access-date=August 20, 2020}}</ref> Since November 8, 2019, ACMEv1 no longer accepts new account registrations. Since June 2020, ACMEv1 stopped accepting new domain validations. From January 2021, ACMEv1 underwent 24-hour [[Brownout (electricity)|brownouts]]. The ACMEv1 API was turned off completely on June 1, 2021.<ref name="acmev1-eol">{{Cite web |date=2021-05-05 |title=End of Life Plan for ACMEv1 - API Announcements |url=https://community.letsencrypt.org/t/end-of-life-plan-for-acmev1/88430/25 |access-date=2021-05-12 |website=Let's Encrypt Community Support}}</ref>
+
+=== Software implementation ===
+[[File:Letsencrypt screenshot 2 domain choice.png|thumb|Domain selection dialogue]]
+The certificate authority consists of a piece of software called Boulder, written in [[Go (programming language)|Go]], that implements the server side of the [[Automated Certificate Management Environment|ACME]] protocol. It is published as [[free software]] with [[source code]] under the terms of version 2 of the [[Mozilla Public License]] (MPL).<ref name="license-boulder"/> It provides a [[representational state transfer|REST]]ful [[application programming interface|API]] that can be accessed over a TLS-encrypted channel.
+
+An [[Apache License|Apache]]-licensed<ref name="license-letsencrypt"/> [[Python (programming language)|Python]] certificate management program called ''certbot'' (formerly ''letsencrypt'') gets installed on the client side (the Web server of an enrollee). This is used to order the certificate, to conduct the domain validation process, to install the certificate, to configure the HTTPS encryption in the HTTP server, and later to regularly renew the certificate.<ref name="heise20141119"/><ref name="techrepublic"/> After installation and agreeing to the user license, executing a single command is enough to get a valid certificate installed. Additional options like [[OCSP stapling]] or [[HTTP Strict Transport Security]] (HSTS) can also be enabled.<ref name="Threatpost"/> Automatic setup initially only works with [[Apache HTTP Server|Apache]] and [[nginx]].
+
+As of October 2026, Let's Encrypt issues certificates valid for 90 days. The reason given is that these certificates "limit damage from key compromise and mis-issuance" and encourage automation.<ref>{{Cite web |last=Aas |first=Josh |url=https://letsencrypt.org/2015/11/09/why-90-days.html|title=Why ninety-day lifetimes for certificates? |date=November 9, 2015 |website=Let's Encrypt |access-date=2016-06-26}}</ref> Starting February 10, 2027, Let's Encrypt plans to reduce certificate validity period to 64 days.<ref>{{Cite web |last=Indge |first=Nick |date=2026-10-08 |title=Let's Encrypt cuts certificate lifetimes to 64 days starting February 2027 |url=https://arstechnica.com/gadgets/2026/10/lets-encrypt-cuts-certificate-lifetimes-to-64-days-starting-february-2027/ |access-date=2026-10-09 |website=Ars Technica |language=en}}</ref>
+
+Initially, Let's Encrypt developed its own ACME client &ndash; Certbot &ndash; as an official implementation. This has been transferred to [[Electronic Frontier Foundation]] and its name "letsencrypt" has been changed to "certbot". There is a large selection of ACME clients and projects for a number of environments developed by the community.<ref>{{Cite web|url=https://letsencrypt.org/docs/client-options/|title=ACME Client Implementations - Let's Encrypt - Free SSL/TLS Certificates|website=letsencrypt.org|access-date=August 20, 2020}}</ref>
+{{notelist-lr}}
+
+== See also ==
+* [[HTTPS Everywhere]]
+
+== Further reading ==
+* {{cite IETF |title=Automatic Certificate Management Environment (ACME) RFC 8555 |rfc8555 |last1=Barnes |first1=R. |last2=Hoffman-Andrews|first2=J. |last3=McCarney |first3=D. |last4=Kasten |first4=J. |date=March 2019 |publisher=[[Internet Engineering Task Force|IETF]]}}
+
+== References ==
+{{Reflist|30em|refs=
+
+<ref name="Lets-Encrypt-Sponsors">{{cite web
+|url=https://letsencrypt.org/sponsors/
+|title=Current Sponsors and Funders
+|publisher=Let's Encrypt
+}}</ref>
+
+<ref name="Lets-Encrypt-About">{{cite web
+|url=https://letsencrypt.org/about/
+|title=About Let's Encrypt
+|publisher=Let's Encrypt
+}}</ref>
+
+<ref name="Lets-Encrypt-Aims-to-Improve-Security">{{cite web
+|url = http://www.eweek.com/security/lets-encrypt-effort-aims-to-improve-internet-security.html
+|archive-url = https://wayback.archive-it.org/all/20161213142314/http://www.eweek.com/security/lets%2Dencrypt%2Deffort%2Daims%2Dto%2Dimprove%2Dinternet%2Dsecurity.html
+|url-status = dead
+|archive-date = December 13, 2016
+|title = Let's Encrypt Effort Aims to Improve Internet Security
+|publisher = Quinstreet Enterprise
+|work = eWeek.com
+|date = November 18, 2014
+|access-date = February 27, 2015
+|author = Kerner, Sean Michael
+}}</ref>
+
+<ref name="Launching-2015-CA-to-Encrypt-Entire-Web">{{cite web
+|url = https://www.eff.org/deeplinks/2014/11/certificate-authority-encrypt-entire-web
+|title = Launching in 2015: A Certificate Authority to Encrypt the Entire Web
+|publisher = [[Electronic Frontier Foundation]]
+|date = November 18, 2014
+|access-date = February 27, 2015
+|author = Eckersley, Peter
+}}</ref>
+
+<ref name="heise20141119">
+{{cite web|author=Fabian Scherschel|publisher=heise.de|date=November 19, 2014|url=http://heise.de/-2460155|title=Let's Encrypt: Mozilla und die EFF mischen den CA-Markt auf|language=de}}
+</ref>
+
+<ref name="SDTimes">{{cite web|url=https://sdtimes.com/akamai/eff-wants-make-https-default/|title=EFF wants to make HTTPS the default protocol|last=Marvin|first=Rob|date=November 19, 2014|website=[[SD Times|Software Development Times]]|publisher=BZ Media|archive-url=https://web.archive.org/web/20160617201201/http://sdtimes.com/eff-wants-make-https-default/|archive-date=June 17, 2016|url-status=live|access-date=May 27, 2019}}</ref>
+
+<ref name="debian package1">{{cite web |first=Francois |last=Marier |date=January 1, 2015 |website=Debian Bug report logs |url=http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=774387 |title=ITP: letsencrypt – Let's Encrypt client that can update Apache configurations}}</ref>
+
+<ref name="debian package2">{{cite web |date=May 27, 2015 |title=python-letsencrypt |website=Debian Package Tracker |url=https://tracker.debian.org/pkg/python-letsencrypt}}</ref>
+
+<ref name="deprecating HTTP Mozilla">{{cite web |first=Richard |last=Barnes |publisher=Mozilla |date=April 30, 2015 |url=http://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/ |title=Deprecating Non-Secure HTTP |website=Mozilla Security Blog}}</ref>
+
+<ref name="deprecating HTTP Chromium">{{cite web |website=The Chromium Projects |url=http://www.chromium.org/Home/chromium-security/marking-http-as-non-secure |title=Marking HTTP As Non-Secure}}</ref>
+
+<ref name="ZDNet20141109">{{cite web |first=Liam |last=Tung |website=ZDNet |date=November 19, 2014 |url=https://www.zdnet.com/article/eff-mozilla-to-launch-free-one-click-website-encryption/ |title=EFF, Mozilla to launch free one-click website encryption |publisher=CBS Interactive}}</ref>
+
+<ref name="Moody">{{cite web |first=Glyn |last=Moody |date=November 25, 2014 |url=http://www.computerworlduk.com/blogs/open-enterprise/surveillance-3588605/ |title=The Coming War on Encryption, Tor, and VPNs |website=Computerworld UK |publisher=IDG UK}}</ref>
+
+<ref name="transparency report">{{cite web |first=Zeljka |last=Zorz |website=Help Net Security |date=July 6, 2015 |url=http://www.helpnetsecurity.com/2015/07/06/lets-encrypt-ca-releases-transparency-report-before-its-first-certificate/ |title=Let's Encrypt CA releases transparency report before its first certificate}}</ref>
+
+<ref name="ISRG-LF">{{cite web |first=Sean Michael |last=Kerner |website=eWeek |date=April 9, 2015 |url=http://www.eweek.com/security/lets-encrypt-becomes-linux-foundation-collaborative-project.html |title=Let's Encrypt Becomes Linux Foundation Collaborative Project |publisher=QuinStreet Enterprise}}{{Dead link|date=March 2023 |bot=InternetArchiveBot |fix-attempted=yes}}</ref>
+
+<ref name="ZDNet20150409">{{cite web |first=Steven J. |last=Vaughan-Nichols |website=ZDNet |date=April 9, 2015 |url=https://www.zdnet.com/home-and-office/networking/securing-the-web-once-and-for-all-the-open-encryption-project/ |title=Securing the web once and for all: The Let's Encrypt Project |publisher=CBS Interactive}}</ref>
+
+<ref name="Threatpost">{{cite web |first=Chris |last=Brook |website=Threatpost: The Kaspersky Lab Security News Service |date=November 18, 2014 |url=http://threatpost.com/eff-others-plan-to-make-encrypting-the-web-easier-in-2015/109451 |title=EFF, Others Plan to Make Encrypting the Web Easier in 2015}}</ref>
+
+<ref name="techrepublic">{{cite web |first=James |last=Sanders |website=TechRepublic |date=November 25, 2014 |url=http://www.techrepublic.com/article/lets-encrypt-initiative-to-provide-free-encryption-certificates/ |title=Let's Encrypt initiative to provide free encryption certificates |publisher=CBS Interactive}}</ref>
+
+<ref name="heise20150605">
+{{cite web|author=Reiko Kaps|publisher=heise.de|date=June 5, 2015|url=http://heise.de/-2679600|title=Let's Encrypt: Meilenstein zu kostenlosen SSL-Zertifikaten für alle|language=de}}
+</ref>
+
+<ref name="license-boulder">{{cite web|author=letsencrypt |url=https://github.com/letsencrypt/boulder/blob/master/LICENSE.txt |title=boulder/LICENSE.txt at master · letsencrypt/boulder · GitHub |publisher=Github.com |date= |access-date=January 6, 2016}}</ref>
+
+<ref name="license-letsencrypt">{{cite web|author=letsencrypt |url=https://github.com/letsencrypt/letsencrypt/blob/master/LICENSE.txt |title=letsencrypt/LICENSE.txt at master · letsencrypt/letsencrypt · GitHub |publisher=Github.com |date=November 23, 2015 |access-date=January 6, 2016}}</ref>
+
+<ref name="out-of-stealth">{{cite web |url=http://www.crn.com/news/cloud/300074840/lets-encrypt-a-free-and-automated-certificate-authority-comes-out-of-stealth-mode.htm |title=Let's Encrypt, A Free And Automated Certificate Authority, Comes Out Of Stealth Mode |author=Joseph Tsidulko |work=crn.com |language=en |date=November 18, 2014 |access-date=August 26, 2015
+}}</ref>
+
+<ref name="founding">{{cite web |last=Aas |first=Josh |url=https://boomswaggerboom.wordpress.com/2014/11/18/lets-encrypt/ |title=Let's Encrypt &#124; Boom Swagger Boom |publisher=Boomswaggerboom.wordpress.com |date=November 18, 2014 |access-date=January 6, 2016 |archive-url=https://web.archive.org/web/20151208115156/https://boomswaggerboom.wordpress.com/2014/11/18/lets-encrypt/ |archive-date=December 8, 2015 |url-status=dead}}</ref>
+
+<ref name="acme-draft-history">[//datatracker.ietf.org/doc/draft-barnes-acme/history/ History for draft-barnes-acme]</ref>
+
+<ref name="schedule">{{cite web
+|author = Josh Aas
+|title = Let's Encrypt Launch Schedule
+|url = https://letsencrypt.org/2015/06/16/lets-encrypt-launch-schedule.html
+|website = letsencrypt.org
+|publisher = Let's Encrypt
+|access-date = June 19, 2015
+|date = June 16, 2015
+}}</ref>
+
+<ref name="schedule2">{{cite web
+|url = https://letsencrypt.org/2015/08/07/updated-lets-encrypt-launch-schedule.html
+|title = Updated Let's Encrypt Launch Schedule
+|date = August 7, 2015
+}}</ref>
+
+<ref name="identrusted">{{cite web
+|url=https://letsencrypt.org/2015/10/19/lets-encrypt-is-trusted.html
+|title=Let's Encrypt is Trusted
+|date=October 19, 2015
+|last=Aas |first=Josh
+}}</ref>
+
+<ref name="schedule3">{{cite web
+|url = https://letsencrypt.org/2015/11/12/public-beta-timing.html
+|title = Public Beta: December 3, 2015
+|date = November 12, 2015
+}}</ref>
+
+<ref name="softpedia-launch">{{cite web|url=http://news.softpedia.com/news/let-s-encrypt-launched-today-currently-protects-3-8-million-domains-502857.shtml|title=Let's Encrypt Launched Today, Currently Protects 3.8 Million Domains|publisher=Softpedia News|author=Catalin Cimpanu|date=April 12, 2016 |access-date=April 12, 2016}}</ref>
+
+<ref name="launch">{{cite web|url=https://letsencrypt.org/2016/04/12/leaving-beta-new-sponsors.html|title=Leaving Beta, New Sponsors|publisher=EFF|author1=Josh Aas |author2=ISRG Executive Director |date=April 12, 2016 |access-date=April 12, 2016}}</ref>
+
+<ref name="heise20150617">
+{{cite web|author=Reiko Kaps|publisher=heise.de|date=June 17, 2015|url=http://heise.de/-2714819|title=SSL-Zertifizierungsstelle Lets Encrypt will Mitte September 2015 öffnen|language=de}}
+</ref>
+
+<ref name="firstcert">{{cite web|url=https://threatpost.com/first-lets-encrypt-free-certificate-goes-live/114675/|title=First Let's Encrypt Free Certificate Goes Live|publisher=Threatpost.com, Kaspersky Labs|author=Michael Mimoso|date=September 15, 2015 |access-date=September 16, 2015}}</ref>
+}}
+
+== External links ==
+{{Commons category}}
+* {{Official website|https://letsencrypt.org}}
+*  [https://certbot.eff.org Certbot] 
+* {{GitHub|letsencrypt|Let's Encrypt}}
+* [https://media.libreplanet.org/u/libreplanet/m/seth-schoen-lets-encrypt/ Seth Schoen's Libre Planet 2015 lecture on Let's Encrypt]
+* [[Peter Eckersley (computer scientist)|Peter Eckersley]]'s [https://media.ccc.de/browse/conferences/camp2015/camp2015-6907-let_s_encrypt.html#video talk on Let's Encrypt] at CCCamp 2015
+* [https://crt.sh/?Identity=%25&iCAID=7395 List of certificates issued by Let's Encrypt]
+* [https://letsencrypt.org/stats/ Let's Encrypt Stats] – interactive charts of Let's Encrypt certificates issued per day
+
+[[Category:Internet properties established in 2014]]
+[[Category:Certificate authorities]]
+[[Category:Transport Layer Security]]
+[[Category:Linux Foundation projects]]
+[[Category:Secure communication]]
+[[Category:Mozilla]]

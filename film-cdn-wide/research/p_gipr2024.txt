@@ -1,0 +1,6115 @@
+THE GLOBAL INTERNET PHENOMENA REPORT MARCH 2024
+
+Like our Cosmos,
+the Internet is a Vast,
+Expanding Universe
+
+Peering into its mysteries reveals
+its current and future impact on
+networks and App QoE
+
+SPOTLIGHTS
+The Truth About Gaming
+Upstream Traffic Matters
+More Than Ever
+Going Deeper With
+App User Volume
+
+2
+
+ABOUT SANDVINE
+
+In this Report
+
+Sandvine recognizes that telecom
+service provider brands are
+inextricably tied to application
+quality of experience (App QoE)
+– the best measure of real-time
+customer satisfaction. Whether
+video, messaging, social media, or
+collaboration, the application is the
+subscriber’s primary interface with
+the network.
+To optimize App QoE to the most
+customers, application and network
+intelligence must be rooted in data
+that can drive better business
+outcomes. That’s why Sandvine
+uses a unique combination of data
+management, network infrastructure,
+and application solutions to
+accurately identify, categorize, and
+classify more than 95% of all internet
+traffic across all access types.
+Sandvine’s 20+ years of experience
+with the world’s most innovative
+operators brings unparalleled
+expertise to analyze, optimize and
+monetize networks. Using advanced
+heuristics and machine learningbased App QoE scoring, we help
+service providers accurately identify
+who, what, when, and where App
+QoE issues are occurring, enabling
+operations teams to quickly resolve
+problems, and planning teams to
+precisely plan for future growth.
+From the CTO to customer care,
+Sandvine’s App QoE focus will
+improve operations and planning.
+while reducing costs and improving
+customer satisfaction
+
+4 Executive Summary
+5 New Methodology
+6 Like our Cosmos, the Internet is a Vast, Expanding Universe
+Thoughts from Sandvine CEO, Lyn Cantor
+8 Exploring the Internet’s Digital Giants
+The dominance of the Big 8 is growing
+10 Fixed and Mobile are Worlds Apart
+The gulf between fixed and mobile data may be greater than you think
+12 Going Deeper with ‘App User Volume’
+All users are equal, but some are more equal than others
+
+App QoE at multiple levels uncovers the unseen
+
+14 Upstream Traffic Matters More Than Ever
+Don’t let downstream volume distract you from the growth in upstream
+16 App Complexity Requires Advanced Visualization and Visibility
+
+95%
+Accuracy
+2500+ APPS
+
+What is the application QoE:
+
+17 The Truth About Gaming Which Consumes More Bandwidth – Video or Gaming?
+
+• per location?
+
+18 Regional Phenomena
+App Volumes for the Americas, Europe, and APAC
+
+• by user segment?
+• per device?
+
+22 Conclusion: Why Internet Phenomena Matter
+23 Contact Us
+
+• by plan?
+
+24 Appendix
+Downstream versus Upstream over Fixed and Mobile
+
+Guided Workflows
+What
+
+Who
+
+Where
+
+When
+
+What is being
+impacted?
+
+Who is being
+impacted?
+
+Where is the
+impact occuring?
+
+When did
+it happen?
+
+Application
+
+Individual
+subscribers
+
+Locations
+
+Time of day
+
+App Category
+
+HVAs
+
+Slices
+
+Peak hours
+
+App Content Category
+
+Enterprises
+
+Specific nodes
+
+Trends
+
+Specific devices
+Drill down to “why?” – most likely cause with recommended next best action
+Closed-loop Automation to implement recommended next best action
+
+Better data accuracy leads to better planning,
+troubleshooting, and monetization.
+
+3
+
+CONTENTS
+
+EXECUTIVE SUMMARY
+In this report, we use our AI-driven
+application identification, classification,
+and content categorization engine,
+AppLogic1, to discover and visualize the
+phenomena that characterize today’s
+broadband networks. By measuring
+Application Volume, Application User
+Volume, and Application Popularity, we
+can better understand the impact internet
+applications have on network resources
+and on subscribers’ App QoE. (See: New
+Methodology, Page 5).
+Using a powerful combination of state
+machines, parsers, analyzers, behavioral
+correlations, and machine learning,
+AppLogic detects phenomena across
+different access networks, devices,
+and regions.
+Using AppLogic’s identification and
+visualization, we see more clearly the
+internet phenomena that define today’s
+networks, and we convey their significance
+in the tabular data and insights in this
+report’s pages. Some of the highlights we
+will describe include:
+• The average total volume of internet
+traffic across all networks worldwide
+is nearly 33 EB per day – with
+approximately 22 EB of total volume
+over Fixed networks; and 11 EB
+over Mobile.
+• Meta, Apple, Microsoft, Amazon,
+Alphabet, and Netflix (MAMAAN),
+plus TikTok and Disney+, are the digital
+“super-giants” in terms of application
+volumes, accounting for 65% of total
+internet volume.
+• In our Application Categories, Video
+is by far the biggest culprit when it
+comes to downstream traffic volume
+
+over both Fixed and Mobile networks,
+responsible for 38% of the traffic at
+an average total volume of 15.7 GB
+per sub per day. Over Fixed alone,
+Video accounts for 39% at 5.7 GB per
+subscriber per day, while in Mobile, it
+accounts for 31% of the total volume,
+at 493 MB per subscriber per day.
+• In our Content Categories, On-Demand
+Streaming is the type of Video that
+generates the most traffic, with persubscriber volume of 7.9 GB per day
+(54% of total downstream volume).
+Of that volume, we find the app that
+drives the most traffic is YouTube,
+contributing 1.9 GB per sub, per day,
+with Netflix in second at 1.4 GB per
+sub per day.
+• As we explain on page 10, average
+downstream subscriber volume in Fixed
+networks is 14.5 GB; and 1.2 GB for
+upstream – much larger than Mobile’s
+averages of 1.6 GB and 0.1 GB. This
+indicates people are waiting to watch
+bigger videos over Wi-Fi, opting to
+instead do Social Media over mobile
+devices, while on the move.
+• Social Media is the biggest App
+Category in Mobile networks’
+downstream traffic, with 35%, and
+7 of the top 10 apps attributable
+to Facebook, TikTok, Instagram,
+Snapchat, WhatsApp, Telegram, and
+X. Social Media is also the largest
+contributor to upstream traffic on
+Mobile, due in large part to the sharing
+and posting of videos on apps like
+TikTok and Facebook Messenger.
+• Despite the volumetric power of Social
+Media over Mobile, YouTube still
+comes out on top for overall per-sub
+
+volume, with 233 MB per sub, per day.
+• File Sharing and File Delivery traffic is
+on the rise, with automatic phone back
+up and VPNs driving up Cloud Storage
+volumes in iCloud and Google Cloud.
+Upstream traffic is growing because
+of the increases in video and photo
+uploads to the cloud, as well as
+software updates, and greater
+numbers of smart and IoT devices
+communicating.
+• Applications are becoming more
+complex, with more intricate blends
+of content within, as shown by the
+tables on page 18, of WhatsApp,
+Slack, Steam, and Xbox – apps that
+offer combinations of video, audio, live
+streaming, messaging, and gaming.
+• In our regional phenomena across the
+Americas, Europe, and APAC, Video
+dominates downstream, regardless of
+whether a region has higher Mobile or
+Fixed penetration. Social Media traffic
+is high in Europe, whereas Device
+Gaming traffic is higher in APAC than
+other regions.
+• Across all regions, On-demand
+Streaming exerts the greatest
+volumetric pressure, with YouTube
+as the frontrunner in App volume and
+Subscriber volume in all regions.
+For context and insights around each
+of these phenomena, please check out
+the corresponding page numbers for
+more in-depth analysis and graphical
+representations in related tables
+
+4
+
+Sandvine 2024
+Global Internet Phenomena Report
+
+5
+
+Sandvine 2024
+Global Internet Phenomena Report
+
+NEW METHODOLOGY
+In this report, we’ve changed the
+format and the type of numbers we
+are publishing to more accurately and
+precisely reflect the phenomena of the
+ever-evolving application landscape.
+AppLogic’s library of 2,500+ application
+signatures and 5,000 traffic signatures
+classify more than 95% of the traffic
+in networks worldwide, despite the
+transport layer advancements that
+increasingly obfuscate traffic, such
+as encryption and flow multiplexing,
+even allowing for classification within
+tunneled apps or private relays.
+AppLogic’s unparalleled Application
+Identification across 14 App Categories
+and 11 Content Classification Categories
+illuminate truths otherwise obscured in
+internet traffic.
+For example, the granularity of 14 App
+Categories means “Video” as an App
+Category is now parsed into:
+• “On-Demand Streaming,” such as Netflix,
+YouTube, Amazon Prime, etc.
+• “Television,” such as Discovery Plus, Fox,
+HBO Max, Sky
+• “Operator Content,” like BT Sport, AT&T
+DirectTV, Verizon FiOS, Movistar+,
+Comcast Xfinity TV
+• “Communication”, like video embedded
+in Facebook Messenger, Snapchat,
+or Instagram.
+Going deeper into AppLogic’s 11 Content
+Categories means understanding the
+subcategories that drive volume. For
+example, in Video Apps, it’s important to
+identify what is:
+• Livestream
+• On-Demand
+
+• Video
+• Video Call
+Social Media, is another manifold App
+Category that AppLogic breaks into parts,
+such as:
+• On-Demand Video, Messaging
+• Video Call, Voice Call (as in apps
+like WhatsApp, Facebook, Instagram,
+or Twitter)
+• Game Play (as in apps like Steam)
+The data powering the report comes from
+a representative sample, derived from a
+pipeline of dozens of Sandvine customers
+reporting across tens of millions of Fixed and
+Mobile Network subscribers, globally. Data is
+anonymized and aggregated.
+The raw data is per-day App Volume
+(upstream and downstream), associated
+subscriber counts, and total subscriber counts
+in either a Fixed Network (Cable, FTTX, FWA,
+xDSL), or a Mobile Network (3G/4G/5G).
+Our sample of aggregated, anonymized
+data is interpreted for the first time through
+three visualizations:
+• “App Volume per Subscriber” (daily
+volume for an app divided by the total
+number of subscribers).
+• “App User Volume” (daily volume for an
+app divided by the number of subscribers
+using a particular app).
+• “App Popularity Percentage” (percentage
+of the subscriber base that use a
+particular app on a particular day).
+A “Subscriber” in a Fixed network is a
+household, including all members and
+devices using apps. The Subscriber may be
+connecting over wired or Wi-Fi connections
+
+– with the traffic carried over a Fixed internet
+service. In our “Popularity” calculations, that
+traffic counts as one subscriber.
+In a Mobile network, a “Subscriber” is an
+individual mobile phone user. The same
+person could be in one or more Fixed
+households, and could be counted as a
+Mobile or a Fixed Subscriber if connecting
+over Wi-Fi elsewhere. In other words, the
+same person could be in one or more Fixed
+households, and could be counted as a
+Mobile subscriber if connecting to Wi-Fi in
+another location.
+With this data-driven analysis, we intend
+to inform and improve decision-making
+around Operations Management, Capacity
+Planning, Fair Usage and Congestion, Cyber
+Threat Management, Video QoE, Gaming
+QoE, Usage-Based Services, and new
+monetization opportunities
+
+App Categories
+Video
+Television
+Social Media
+Communication
+
+App Content
+Categories
+Browsing
+File Delivery
+
+Conferencing
+
+On-demand
+Streaming
+
+Cloud Gaming
+
+Live Streaming
+
+Device Gaming
+
+Voice Call
+
+Audio
+
+Video Call
+
+File Sharing
+
+Messaging
+
+VPN
+
+Game Play
+
+IoT
+
+VR
+
+Other Apps
+
+Machine
+to Machine
+
+Infrastructure
+Protocols
+
+Other Content
+
+6
+
+7
+
+Like our Cosmos, the Internet is a Vast,
+Expanding Universe
+
+Peering into it, layer by layer, is the only way to understand how internet
+phenomena affect networks, customers, and costs.
+If you’ve ever gotten a headache
+trying to grasp the size of our
+universe in astronomical units, light
+years, or parsecs, you’d probably
+need an aspirin when trying to
+understand the internet’s size in
+giga-, exa-, peta-, or zettabytes.
+
+Lyn Cantor
+CEO Sandvine
+
+1. https://www.eff.org/deeplinks/2023/12/
+year-review-last-mile-encrypting-web
+2. https://www.theverge.com/2023/9/18/23879475/
+netflix-squid-game-sk-broadband-partnership
+
+Though it’s possible to measure the
+expansion of the physical universe, it’s more
+difficult to measure and quantify something
+as abstract as the Internet. Internet traffic is
+like Dark Matter, mysterious in both
+complexion and impact now that 95% of
+web traffic1 is encrypted through HTTPS,
+ECH, and other encryption methods.
+
+This is a baseline against which we can
+compare future findings, helping to
+determine if changes in the internet’s
+bandwidth volume are due to usage trends
+by subscribers, or bigger file sizes.
+In the upcoming tables and insights
+powered by AppLogic, you’ll get an idea
+of what’s driving today’s volumes, and see
+what a single source of truth can look
+like for Planning, Operations and Big
+Data teams that make decisions about
+when and where to extend and improve
+existing infrastructure.
+
+Much like the James Webb telescope goes
+beyond what the Hubble telescope has
+already done, AppLogic goes beyond
+Application and Network Intelligence to
+pierce the darkening web layer by layer,
+revealing what’s actually happening over
+your networks.
+
+Why do internet phenomena matter
+more than ever?
+It’s no secret that digital innovation requires
+massive connectivity. Just last year during
+MWC Barcelona, Mark Zuckerberg
+remarked that “creating a true sense of
+presence in virtual worlds delivered to
+smart glasses and VR headsets will require
+massive advances in connectivity.”
+
+AI-powered application classification and
+content categorization reveal average total
+volumes, app volumes, and per-subscriber
+app volumes at an application, content, and
+brand level. This is the industry’s most
+granular identification and visualization of
+internet trends in downstream and upstream
+traffic over fixed and mobile networks.
+
+As he and other influential tech leaders
+develop new technologies, your
+“innovator” and “early-adopter”
+subscribers will become hungry for the
+applications that front end innovations like
+AI, AR/VR, metaverse, smart city,
+autonomous, and the IoT (as we illustrate
+on page 16).
+
+With AppLogic, we can for the first time
+extrapolate that the average total usage
+across the world’s 6.4 billion mobile
+subscriptions and 1.4 billion fixed
+connections is approximately 33 Exabytes
+per day, with per-subscriber usage of about
+4.2 GB per day.
+
+This leaves you, the network operator,
+somewhat beholden to the decisions OTTs
+make and the data volumes they stimulate.
+This may feel like unjust enrichment, or a
+parasitic effect, with the world’s most
+profitable companies accelerating
+demands for throughput and speed, yet
+
+contributing nothing to the infrastructure
+that fuels record-breaking profits.
+Simultaneously, you are feeling mounting
+pressure to provide broadband equity and
+affordability to underserved rural and urban
+areas, where people remain socially and
+economically disadvantaged because of
+the Digital Divide.
+To recover the enormous costs of extending
+and improving infrastructure for both the
+already connected and the still
+unconnected, you have to “be ready”
+for possible network arbitrage with
+app-specific electronic detail records that
+quantify the impact of distinct categories
+of application traffic on network costs.
+Already there are examples of operators2
+that have used app-level insights to
+transform their positions in digital
+ecosystems, fostering collaborative and
+more symbiotic business models that
+deflect negative impacts on networks,
+customers, and costs.
+With ongoing discussions about faircontribution or fair-share financial
+models , and attempts to broaden the base
+of contributions to network infrastructure,
+this is the time to set up app-level insights
+and visualizations that will help you
+improve customer satisfaction, reduce
+churn, tame congestion, and establish a
+foundation for more innovative
+monetization and cost recovery.
+
+As the maxim goes, “insanity is doing the
+same thing over and over again and
+expecting different results.” Relying on
+Packet Gateway and probe data is not going
+to help you to know more about what’s
+actually happening on your network. You
+should close the gaps current “goodenough” solutions leave open so you can
+peer into the darkening web and fully
+understand the outsized impact certain apps
+are having on your customers and networks.
+We hope in these tables and in one-on-one
+meetings, you will see we’re the only
+
+vendor that does content classification and
+QoE scoring. We can beat out any vendor
+on application classification, consistently
+scoring 95%+, compared to the industry
+average of 60%. That’s critical now that
+encrypted traffic continues to grow, making
+it hard for you to see what’s taking place
+on your networks.
+With that said, let’s begin our exploration
+with an examination of the internet’s
+Digital Giants – brands responsible for the
+overwhelming majority of internet traffic
+volume around the world
+
+Internet traffic is like
+Dark Matter – mysterious
+in both complexion and
+impact on network
+resources and App QoE
+Lyn Cantor, CEO, Sandvine
+
+8
+
+9
+
+Exploring the Internet’s
+
+D I GITAL G I ANTS
+The top eight brands generate more internet
+traffic than everyone else combined.
+We know the internet is home
+to billions of websites, clouds,
+databases, social networks, platforms,
+marketplaces, and multimedia files.
+We all experience this digital universe
+through a macrocosm of applications
+that, like stars, possess their own
+distinct features and capabilities.
+The biggest are the digital
+“supergiants” that generate the
+largest application volumes, more than
+all others combined – Meta, Apple,
+Microsoft, Amazon, Alphabet, and
+Netflix (MAMAAN).
+As you’ll see in the graph and Table 1 to
+the right, MAMAAN generates more than
+half of all internet traffic across Fixed and
+Mobile networks, nearly identical to the
+totals from our 2023 report.
+What’s new this year is that both TikTok
+and Disney+ now generate enough
+traffic that they appear in the top eight
+in our Top Brands tables. These two,
+plus MAMAAN, are responsible for a
+whopping 65% of all Fixed traffic.
+We’d like to point out TikTok’s meteoric
+rise, as it generates more traffic than
+
+Top Brands
+Contribution to Daily
+Volume: Fixed v. Mobile
+
+all other providers, except Alphabet or
+Meta. As we show on page 13’s App
+User Volume tables (which measure
+subscriber volume for people using a
+particular app at least once in a particular
+day), TikTok contributes about 173 MB
+of daily average volume on Mobile, with
+at least 36% of mobile users accessing
+the service in a day. Over Fixed, at least
+64% of subscribers consume about 1.1
+GB of volume for TikTok. We, therefore,
+extrapolate a weighted average across
+networks of about 692 MB, which is very
+similar to usage of Facebook, and in some
+cases, exceeds it.
+If we zoom in on Mobile networks, the
+dominance of the Top 8 is quite apparent,
+with MAMAAN accounting for more than
+half the volume. The factors behind these
+phenomena are varied, but we do see
+stark differences in how and when people
+are engaging with their apps over Fixed
+and Mobile networks.
+We explore the factors driving these new
+consumption patterns in the next section,
+“Fixed and Mobile are Worlds Apart,” on
+page 10
+
+70%
+
+65%
+
+60%
+
+55%
+
+50%
+
+45%
+
+40%
+
+35%
+
+30%
+
+Table 1
+
+1
+2
+3
+4
+5
+6
+7
+8
+
+BRAND
+
+Fixed
+
+Mobile
+
+Alphabet
+
+18%
+
+20%
+
+Meta
+
+11%
+
+22%
+
+Netflix
+
+9%
+
+5%
+
+Microsoft
+
+7%
+
+2%
+
+Tik Tok
+
+6%
+
+12%
+
+Apple
+
+6%
+
+5%
+
+Amazon
+
+5%
+
+1%
+
+Disney
+
+4%
+
+2%
+
+66%
+
+69%
+
+25%
+
+20%
+
+15%
+
+10%
+
+5%
+
+0%
+
+Fixed
+
+Mobile
+
+Fixed and Mobile are Worlds Apart
+
+Table 3
+
+Top App Categories by Downstream Volume – Fixed
+
+When we drill into subscriber volumes,
+we notice that “Fixed is from Venus,
+Mobile is from Mars”.
+At first glance, downstream volumes are
+similar for both Fixed and Mobile; however,
+volume per user conveys a far different
+story. Fixed networks carry a deluge of
+On-Demand and Streaming video data from
+platforms like YouTube and Netflix, while
+Mobile networks see mostly shorter-form
+videos from social media-related apps
+like Facebook and TikTok. Subscribers
+are consuming large content over Fixed
+broadband and preserving their Mobile
+broadband for less bandwidth-intensive
+applications, like social media, messaging,
+and photos.
+In the “Top App Categories – downstream
+Volume” for Fixed and Mobile, you’ll see
+that Video accounts for nearly the same
+volume percentage (39% and 35%) on both
+networks, but at 5.7 GB per subscriber per
+day over Fixed, and 493 MB over Mobile,
+there’s a huge difference. Fixed carries
+more than 10X the volume of per-user
+video than Mobile.
+Where is the Fixed video volume coming
+from? We see in table 6 that YouTube
+and Netflix generate 1.9 GB and 1.4 GB,
+respectively, over Fixed.
+As for Mobile volumes, 7 of the top 10
+apps are in the Social Media category,
+namely: Facebook, TikTok, Instagram,
+Snapchat, WhatsApp, Telegram, and X.
+These apps are the top drivers of traffic
+volumes, averaging 558 MB per user per
+day, which exceeds even video volumes.
+Though YouTube holds the top spot for
+Mobile, it’s the social media platforms that
+are driving per-sub app volumes.
+
+If we look beyond just Video and Social,
+and combine the volumes of all the App
+Categories, we get a better sense of the
+volumes traversing Fixed and Mobile
+networks each day:
+In the downstream for Fixed networks,
+the total volume across all applications is
+14.5 GB per day. Further, if we combine
+both downstream and upstream volumes,
+we get a total volume of 15.7 GB per user,
+per day. Multiplied across 1.4 billion Fixed
+subscriptions globally, that amounts to 22
+EB per day – or two-thirds of the total global
+internet traffic. That’s significant, since Fixed
+networks account for only one-fifth of total
+internet connections worldwide.
+To extrapolate for Mobile networks, we
+took the total volume for downstream and
+upstream traffic, which came to 1.7 GB
+per user, and multiplied that across the
+world’s 6.4 billion mobile subscriptions, to
+get a total volume of 11 EB per day. Of that
+volume, On-Demand Streaming is by far
+the greatest contributor at 57% (or 900 MB
+per user, per day), due primarily to Social
+Media apps.
+For an even closer look, we leveraged our
+new AppLogic analytics capabilities to
+create a “popularity percentage,” which
+we describe in the next section, “Going
+Deeper with ‘App User Volume’.”
+For a side-by-side comparison of
+downstream versus upstream subscriber
+volume and percentage volume, view
+“Downstream versus Upstream over Fixed
+and Mobile” on page 28
+
+Top App Categories by Downstream Volume – Mobile
+
+Downstream Volume
+Application
+
+EVERY DAY
+
+6.4 billion
+mobile network
+
+subscriptions generate
+
+11
+EB
+of data traffic
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Downstream Volume
+% DS Vol
+
+Sub. Volume
+
+Video
+
+39%
+
+5.7 GB
+
+Social Media
+
+18%
+
+2.6 GB
+
+Television
+
+11%
+
+1.6 GB
+
+File Sharing
+
+9%
+
+1.3 GB
+
+Device Gaming
+
+7%
+
+1.1 GB
+
+General Web Apps
+
+6%
+
+889 MB
+
+Communication
+
+2%
+
+249 MB
+
+VPN
+
+2%
+
+234 MB
+
+Audio
+
+0.7%
+
+98 MB
+
+Conferencing
+
+0.3%
+
+47 MB
+
+Cloud Gaming
+
+0.07%
+
+11 MB
+
+IoT
+
+0.03%
+
+4 MB
+
+Peer To Peer
+
+0.03%
+
+4 MB
+
+Other Apps
+
+5%
+
+753 MB
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Application
+
+% DS Vol
+
+Sub. Volume
+
+Social Media
+
+35%
+
+558 MB
+
+Video
+
+31%
+
+493 MB
+
+Device Gaming
+
+7%
+
+117 MB
+
+File Sharing
+
+7%
+
+112 MB
+
+General Web Apps
+
+5%
+
+72 MB
+
+Communication
+
+4%
+
+57 MB
+
+VPN
+
+2%
+
+28 MB
+
+Television
+
+1%
+
+22 MB
+
+Audio
+
+0.9%
+
+14 MB
+
+Conferencing
+
+0.2%
+
+3 MB
+
+Cloud Gaming
+
+0.06%
+
+885 KB
+
+IoT
+
+0.02%
+
+238 KB
+
+Peer To Peer
+
+0.01%
+
+132 KB
+
+Other Apps
+
+6%
+
+98 MB
+
+14.5 GB
+Table 4
+
+1.6 GB
+Table 5
+
+Top Content Categories by Downstream Volume – Fixed
+
+Top Content Categories by Downstream Volume – Mobile
+
+Downstream Volume
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+EVERY DAY
+
+1.4 billion
+fixed network
+
+subscriptions generate
+
+22
+EB
+of data traffic
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+e
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Downstream Volume
+
+Content Category
+
+% DS Vol
+
+Sub. Volume
+
+On-Demand Streaming
+
+54%
+
+7.9 GB
+
+Live Streaming
+
+14%
+
+2.0 GB
+
+File Delivery
+
+13%
+
+2.0 GB
+
+Browsing
+
+3%
+
+441 MB
+
+Game Play
+
+3%
+
+398 MB
+
+Video Call
+
+2%
+
+300 MB
+
+Messaging
+
+0.6%
+
+81 MB
+
+Voice Call
+
+0.5%
+
+74 MB
+
+Machine to Machine
+
+0.01%
+
+2 MB
+
+AR/VR
+
+0.00%
+
+18 KB
+
+Other
+
+10%
+
+1.4 GB
+
+Table 6
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Content Category
+
+% DS Vol
+
+Sub. Volume
+
+On-Demand Streaming
+
+57%
+
+900 MB
+
+File Delivery
+
+11%
+
+173 MB
+
+Live Streaming
+
+7%
+
+107 MB
+
+Game Play
+
+5%
+
+75 MB
+
+Video Call
+
+5%
+
+73 MB
+
+Browsing
+
+2%
+
+38 MB
+
+Messaging
+
+2%
+
+29 MB
+
+Voice Call
+
+1%
+
+19 MB
+
+Machine to Machine
+
+0.00%
+
+68 KB
+
+AR/VR
+
+0.00%
+
+1 KB
+
+Other
+
+10%
+
+160 MB
+
+Table 7
+
+Top Apps by Downstream Volume – Fixed
+
+Top Apps by Downstream Volume – Mobile
+
+Downstream Volume
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+11
+
+10
+
+Table 2
+
+Downstream Volume
+% DS Vol
+
+Sub. Volume
+
+YouTube
+
+16%
+
+1.9 GB
+
+Netflix
+
+12%
+
+1.4 GB
+
+Facebook
+
+9%
+
+1.0 GB
+
+Tik Tok
+
+7%
+
+859 MB
+
+Operator Content
+
+7%
+
+850 MB
+
+Amazon Prime
+
+6%
+
+722 MB
+
+Disney+
+
+5%
+
+610 MB
+
+Xbox Live
+
+5%
+
+573 MB
+
+Instagram
+
+3%
+
+370 MB
+
+Snapchat
+
+2%
+
+231 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+% DS Vol
+
+Sub. Volume
+
+YouTube
+
+21%
+
+233 MB
+
+Facebook
+
+18%
+
+199 MB
+
+Tik Tok
+
+15%
+
+175 MB
+
+Instagram
+
+7%
+
+82 MB
+
+Snapchat
+
+7%
+
+76 MB
+
+Netflix
+
+6%
+
+73 MB
+
+Disney+
+
+2%
+
+25 MB
+
+WhatsApp
+
+2%
+
+24 MB
+
+Telegram
+
+1%
+
+15 MB
+
+X (Twitter)
+
+1%
+
+14 MB
+
+Going Deeper with ‘App User Volume’
+To help operators identify new
+opportunities for app bundling, creation
+of new plans, and more creativity in
+monetizing network resources, “App
+User Volume” reflects how many
+subscribers are using a service at least
+once in a day, in the context of all active
+subscribers for an operator. This is an
+indicator of “popularity,” and we break
+out the top 5 for each App Category in
+the tables on the right.
+Some points of interest in the App User
+Volume tables include:
+Social Media and Communication:
+Though separating Social Media traffic
+from Communication can be difficult, we
+are now able to make the distinction with
+AppLogic. “Communication” traffic includes
+video and photos that are embedded in apps
+like Facebook Messenger, Snapchat, and
+Instagram. We find in the data that Snapchat
+is very popular for instant messaging and
+sharing pictures, but also possesses an active
+Social Media component.
+On the flip side, we see Social Media traffic
+can have within it messaging, video calls,
+and voice calls. In Table 8 you will see that
+TikTok can be used for messaging, though
+it’s more commonly used for scrolling
+through content. In the table, you’ll see that
+TikTok is used a little every day by 36% of
+mobile subs at 173 MB, whereas Instagram
+is used daily by 35% of mobile users, but
+with a daily app volume per user of 961
+MB. Similarly, Facebook is used by 35% of
+mobile users daily, but only 190 MB per user,
+per day, suggesting a quick look and no real
+scrolling behavior.
+Operator Content: For the first time, this
+category is showing up in the top five of Top
+Apps for the “Television” category. Feeling
+the heat from OTTs, operators are providing
+a value-add to improve customer perception
+and customer satisfaction, while also getting
+
+a portion of the revenues from the pipe they
+provide. Some examples of operator offerings
+include BT Sport, AT&T DirectTV, Verizon
+FiOS, Movistar+, Comcast Xfinity TV.
+Audio Streaming: Looking at Fixed
+households, Spotify has a penetration of an
+impressive 49%, which means half of the
+households in our data generate Spotify
+traffic, compared to 32% for Apple Music and
+5% for Amazon Music. On Mobile, Spotify
+generates 23% of all traffic, Apple Music
+16%, and Amazon Music at 1%. That means
+that on any given day, people tend to listen
+to music in a household more than they do
+when “on the move.” To give an idea of the
+impact, the average of 30 minutes of Spotify
+streaming each day correlates to about 72 MB.
+Conferencing: In our data, we see that
+between Microsoft Teams and Zoom, Zoom
+is twice as popular as Teams, but daily app
+volume per subscriber for Teams is almost 3X
+that of Zoom. In our next report, we will be
+exploring if this is due to codecs or something
+behavioral, like more frequent camera use, or
+perhaps more sharing of content on the calls.
+IoT: The number of connected IoT devices
+is projected to grow to about 29 billion
+globally by 20303, with a large number of
+those devices going into the smart home
+market. The global smart home market size is
+projected to grow from $93.98 Billion in 2023
+to $338.28 Billion by 20304. In our data, for
+fixed networks, we see 21% of households
+with Alexa traffic, vs just 2% for Google Nest.
+Social Media: TikTok generates more traffic
+than any other provider, except Alphabet
+or Meta, with per-user, per-day volumes of
+173 MB over Mobile, and 1.1 GB over Fixed,
+with a weighted average across networks of
+about 348 MB.
+On Facebook, mobile users do a quick look,
+and not a lot of scrolling, whereas TikTok
+users do the contrary, with lots of scrolling
+but not a lot of messaging. Also, Snapchat is
+
+App Category and App
+
+increasingly popular for instant messaging
+and sharing pictures, with an active social
+media component as well.
+Gaming: As broadband speeds increase,
+and 5G becomes more pervasive, people will
+enjoy smoother and more responsive gaming
+experiences. This will continue to drive the
+popularity of both Device and Cloud gaming.
+Device Gaming is very bandwidth hungry,
+consuming more than even Video (though in
+aggregate, the latter is bigger). As we explore
+further in “The Truth about Gaming,” page
+25, game streaming consumes more than
+streaming HD video.
+Console games also consume considerable
+bandwidth, not only with actual game
+play, but also in-game downloads, patches
+and updates.
+In comprehending these App User Volumes,
+we identify the Application Categories and
+Applications that are most popular in a
+network at any given moment, which helps
+operators gain a better understanding of their
+subscribers’ data usage and the impact they
+have on network resources
+
+Table 8
+
+App Category
+and App
+Social Media
+Facebook
+Tik Tok
+Instagram
+Snapchat
+X (Twitter)
+Communication
+WhatsApp
+Facebook Messenger
+Telegram
+Discord
+FaceTime
+
+% of
+Users
+
+User
+Volume
+
+35%
+36%
+35%
+25%
+16%
+
+190 MB
+173 MB
+961 MB
+119 MB
+71 MB
+
+34%
+38%
+7%
+2%
+8%
+
+36 MB
+28 MB
+74 MB
+373 MB
+26 MB
+
+3. https://www.statista.com/statistics/1183457/iot-connected-devices-worldwide/
+4. https://www.fortunebusinessinsights.com/press-release/smart-home-market-9476
+
+Video
+YouTube
+Netflix
+Amazon Prime
+Disney+
+Hulu
+Social Media
+Facebook
+Tik Tok
+Instagram
+Snapchat
+X (Twitter)
+Device Gaming
+Playstation Downloads
+Xbox Live
+Steam
+ROBLOX
+Xbox Games
+Television
+Operator Content
+Discovery Plus
+Peacock
+Tubi TV
+Pluto TV
+Audio
+Spotify
+Podcast Services
+Apple Music
+Amazon Music
+SoundCloud
+Cloud Gaming
+Xbox Cloud Gaming
+GeForce Now
+Playstation Now
+Garena+
+Shadow
+Communication
+FaceTime
+WhatsApp
+Discord
+Telegram
+Facebook Messenger
+Conferencing
+Microsoft Teams
+Zoom
+Google Meet
+WebEx
+Skype
+IoT
+Nest
+Amazon Alexa
+EasyN Camera Service
+Apple Siri
+Arlo
+
+% of
+Users
+
+Table 9
+
+User
+Volume
+
+35%
+30%
+26%
+21%
+6%
+
+2.5 GB
+4.2 GB
+2.6 GB
+2.4 GB
+3.1 GB
+
+52%
+64%
+48%
+32%
+28%
+
+1.2 GB
+1.1 GB
+522 MB
+404 MB
+131 MB
+
+9%
+7%
+13%
+8%
+15%
+
+11.3 GB
+14.1 GB
+2.5 GB
+856 MB
+1.6 GB
+
+5%
+3%
+6%
+10%
+9%
+
+9.3 GB
+2.3 GB
+591 MB
+371 MB
+465 MB
+
+46%
+14%
+38%
+6%
+6%
+
+62 MB
+110 MB
+43 MB
+166 MB
+23 MB
+
+1%
+2%
+6%
+2%
+1%
+
+4.1 GB
+1.0 GB
+10 MB
+29 MB
+5.8 GB
+
+34%
+40%
+8%
+10%
+49%
+
+150 MB
+136 MB
+963 MB
+245 MB
+108 MB
+
+3%
+6%
+25%
+2%
+1%
+
+682 MB
+253 MB
+7 MB
+156 MB
+259 MB
+
+2%
+21%
+2%
+52%
+2%
+
+52 MB
+7 MB
+20 MB
+283 KB
+28 MB
+
+Top Apps in Category
+by App User Volume – Mobile
+App Category and App
+Video
+YouTube
+Netflix
+Disney+
+XVIDEOS
+Amazon Prime
+Social Media
+Facebook
+Tik Tok
+Instagram
+Snapchat
+X (Twitter)
+Device Gaming
+Playstation Downloads
+Xbox Live
+ROBLOX
+PUBG
+Epic Games
+Television
+Sky
+Operator Content
+Apple TV+
+Discovery Plus
+Jawwy TV
+Audio
+Spotify
+Apple Music
+Podcast Services
+Amazon Music
+SoundCloud
+Cloud Gaming
+Garena+
+GeForce Now
+Xbox Cloud Gaming
+Playstation Now
+Tencent Game server
+Communication
+WhatsApp
+Facebook Messenger
+Telegram
+Discord
+FaceTime
+Conferencing
+Microsoft Teams
+Zoom
+Google Meet
+Blackboard Collaborate
+Skype
+IoT
+Nest
+Apple Siri
+Amazon Alexa
+EasyN Camera Service
+Tesla
+
+Table 10
+
+% of
+Users
+
+User
+Volume
+
+23%
+5%
+3%
+6%
+2%
+
+334 MB
+1.1 GB
+565 MB
+148 MB
+1.3 GB
+
+35%
+36%
+35%
+25%
+16%
+
+190 MB
+173 MB
+961 MB
+119 MB
+71 MB
+
+1%
+1%
+2%
+2%
+1%
+
+5.8 GB
+8.6 GB
+365 MB
+383 MB
+217 MB
+
+3%
+3%
+1%
+2%
+1%
+
+244 MB
+28 MB
+71 MB
+39 MB
+41 MB
+
+19%
+11%
+3%
+1%
+2%
+
+20 MB
+15 MB
+53 MB
+57 MB
+16 MB
+
+2%
+1%
+1%
+1%
+3%
+
+20 MB
+431 MB
+992 MB
+3 MB
+703 KB
+
+34%
+38%
+7%
+2%
+8%
+
+36 MB
+28 MB
+74 MB
+373 MB
+26 MB
+
+1%
+1%
+13%
+1%
+1%
+
+202 MB
+79 MB
+2 MB
+78 MB
+102 MB
+
+1%
+31%
+2%
+1%
+1%
+
+8 MB
+99 KB
+2 MB
+24 MB
+26 MB
+
+13
+
+12
+
+Top Apps in Category
+by App User Volume – Fixed
+
+Upstream Traffic Matters More Than Ever
+
+Table 12
+
+Top App Categories by Upstream Volume 2023 – Fixed
+
+Traditionally, dimensioning of networks
+and estimating capacity have focused
+primarily on the downstream. But with
+more user-generated content, upstream
+traffic is becoming a force to consider
+when evaluating coverage and capacity,
+and how to optimize networks to deliver
+the App QoE subscribers expect.
+In the tables to the right, you’ll see that Fixed
+networks upstream traffic is more about
+file delivery, file sharing and video uploads,
+whereas Mobile upstream traffic is more
+about Social Media.
+As you’ll see in Tables 12, 14, and 16,
+the Top App Category on Fixed networks
+upstream traffic is File Sharing, with File
+Delivery and iCloud contributing the most to
+per-subscriber volume. That is in large part
+due to the default settings on iPhones for
+automatic backups to the Cloud which usually
+occur when people get to their home WiFi
+networks. The same is true for Androids,
+which explains why Google Cloud appears
+high on the list as well.
+As to be expected, BitTorrent continues to
+appear as a significant factor, with a small
+number of users generating a lot of data. For
+example, Academia and Science are sectors
+that use BitTorrent, usually using VPNs to
+protect the sizable files being transmitted.
+There is also the illegal sharing of copyrighted
+content that continues through torrenting.
+That said, usage of BitTorrent might go
+down as people use the cloud and tap the
+content that is increasingly available through
+streaming services.
+Another phenomena to keep an eye on is
+the emergence of Google in upstream traffic,
+in part because of the popularity of virtual
+assistants, voice assistants, and smart
+devices. We think these devices, as well as
+smart cars, AR/VR, Gaming, M2M, robots,
+
+App Category and App
+File Sharing
+Android Market
+iTunes Store
+iCloud
+Windows Update
+Xbox Live
+
+% of
+Users
+
+User
+Volume
+
+82.7%
+56.9%
+53.9%
+31.1%
+1.9%
+
+104 MB
+196 MB
+56 MB
+207 MB
+8,638 MB
+
+surveillance cameras, cloud, and the IoT will
+continue to drive services that have equal
+requirements for upstream and downstream
+traffic over both Fixed and Mobile networks.
+When it comes to Mobile networks, we
+see that Social Media is a big contributor
+to upstream traffic, as was the case in
+downstream (which we cover on page
+10). Here, in Table 13, Social Media’s
+contribution to upstream traffic is also
+evident. The story behind that can be found
+in Table 17, where you see TikTok, Facebook
+Messenger, Snapchat, YouTube, and
+Instagram are prominent.
+In our customers’ networks, the big story is
+TikTok, which creates the most upstream
+traffic per subscriber. In just a few years,
+TikTok has amassed more than 1 billion
+subscribers, globally5. It has become a key
+innovator, changing the mentality around
+the creation and sharing of user-generated
+short-form videos. Its growing community of
+creators and TikTok’s mushrooming number
+of followers make it the fastest-growing
+social media platform ever6. Currently, TikTok’s
+largest market is the United States, with
+approximately 150 million monthly active
+users, many of whom use the app every day,
+and in the case of younger people, use the
+app “almost constantly,” as was found in a
+recent Pew study7.
+This success means TikTok has inspired
+behavioral and usage changes across all
+major social media platforms, with Instagram,
+
+Snapchat, and YouTube attempting to
+replicate its success. That’s why in our data,
+there is a notable presence in upstream traffic
+of traffic from WhatsApp, Facebook
+Messenger, Instagram, and other Social
+Media platforms – all of which encourage
+video creation and uploads, as well as video
+calls, voice calls and even game play.
+You’ll also note in our tables that
+“Communication” is a category generating a
+lot of traffic, with video and photos embedded
+in apps like Facebook Messenger, Snapchat,
+and Instagram. FaceTime shows up in the
+No. 2 spot because subscribers not only make
+video calls, but also create audio and video
+messages they can leave if their FaceTime
+video calls go unanswered. That means more
+files will be uploaded and stored for call
+recipients to see or listen to “on demand.”
+Snapchat, Instagram and others are used
+for voice and video calling, and for watching
+videos and viewing content with others
+within the same call session. All seem to be
+moving toward not only mobile usage, but
+encouraging use on computers through web
+apps. It will be interesting to see how that
+affects traffic in the future
+
+5. https://newsroom.tiktok.com/en-us/1-billion-people-on-tiktok
+6. https://www.inc.com/jason-aten/tiktok-is-fastestgrowing-social-media-network-ever-why-us-mayban-it.html
+7. https://www.pewresearch.org/internet/2023/12/11/teens-social-media-and-technology-2023/
+
+Top App Categories by Upstream Volume – Mobile
+
+Upstream Volume
+Application Category
+
+Table 11
+
+Table 13
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Upstream Volume
+% US Vol
+
+Sub. Volume
+
+File Sharing
+
+28%
+
+319 MB
+
+Video
+
+13%
+
+153 MB
+
+Communication
+
+12%
+
+134 MB
+
+General Web Apps
+
+11%
+
+128 MB
+
+Social Media
+
+9%
+
+107 MB
+
+VPN
+
+5%
+
+61 MB
+
+Device Gaming
+
+4%
+
+52 MB
+
+Conferencing
+
+2%
+
+27 MB
+
+Television
+
+2%
+
+25 MB
+
+IoT
+
+1%
+
+15 MB
+
+Peer To Peer
+
+0.3%
+
+4 MB
+
+Audio
+
+0.3%
+
+3 MB
+
+Cloud Gaming
+
+0.03%
+
+312 KB
+
+Other Apps
+
+11%
+
+125 MB
+
+Application Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+% US Vol
+
+Sub. Volume
+
+Social Media
+
+23%
+
+29 MB
+
+Communication
+
+16%
+
+20 MB
+
+File Sharing
+
+15%
+
+20 MB
+
+General Web Apps
+
+12%
+
+16 MB
+
+Video
+
+10%
+
+12 MB
+
+Device Gaming
+
+4%
+
+5 MB
+
+VPN
+
+4%
+
+5 MB
+
+Conferencing
+
+1%
+
+1 MB
+
+Audio
+
+0.4%
+
+509 KB
+
+Television
+
+0.3%
+
+393 KB
+
+IoT
+
+0.2%
+
+234 KB
+
+Cloud Gaming
+
+0.04%
+
+54 KB
+
+Peer To Peer
+
+0.00%
+
+3 KB
+
+Other Apps
+
+15%
+
+19 MB
+
+1.2 GB
+Table 14
+
+0.1 GB
+Table 15
+
+Top Content Categories by Upstream Volume – Fixed
+
+Top Content Categories by Upstream Volume – Mobile
+
+Upstream Volume
+Content Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Upstream Volume
+% US Vol
+
+Sub. Volume
+
+File Delivery
+
+29%
+
+330 MB
+
+On-Demand Streaming
+
+19%
+
+222 MB
+
+Browsing
+
+9%
+
+99 MB
+
+Video Call
+
+7%
+
+85 MB
+
+Live Streaming
+
+7%
+
+85 MB
+
+Voice Call
+
+5%
+
+62 MB
+
+Game Play
+
+3%
+
+30 MB
+
+Messaging
+
+1%
+
+17 MB
+
+Machine to Machine
+
+0.06%
+
+731 KB
+
+AR/VR
+
+0.00%
+
+2 KB
+
+Other
+
+19%
+
+224 MB
+
+Table 16
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+% US Vol
+
+Sub. Volume
+
+20%
+
+26 MB
+
+File Delivery
+
+16%
+
+21 MB
+
+Voice Call
+
+13%
+
+17 MB
+
+Browsing
+
+8%
+
+10 MB
+
+Live Streaming
+
+7%
+
+9 MB
+
+Messaging
+
+5%
+
+7 MB
+
+Video Call
+
+4%
+
+5 MB
+
+Game Play
+
+3%
+
+4 MB
+
+Machine to Machine
+
+0.03%
+
+33 KB
+
+AR/VR
+
+0.00%
+
+82 KB
+
+Other
+
+23%
+
+29 MB
+
+Top Apps by Upstream Volume – Mobile
+
+Upstream Volume
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Content Category
+On-Demand Streaming
+
+Table 17
+
+Top Apps by Upstream Volume – Fixed
+
+Application
+
+15
+
+14
+
+SPOTLIGHT
+
+Upstream Volume
+% US Vol
+
+Sub. Volume
+
+iCloud
+
+9%
+
+101 MB
+
+FaceTime
+
+5%
+
+56 MB
+
+Google Cloud Storage
+
+4%
+
+47 MB
+
+Google
+
+4%
+
+46 MB
+
+YouTube
+
+4%
+
+46 MB
+
+BitTorrent
+
+4%
+
+46 MB
+
+Tik Tok
+
+3%
+
+40 MB
+
+Facebook
+
+3%
+
+31 MB
+
+Discord
+
+2%
+
+28 MB
+
+Amazon AWS
+
+2%
+
+25 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+% US Vol
+
+Sub. Volume
+
+Tik Tok
+
+8%
+
+10 MB
+
+Facebook Messenger
+
+8%
+
+10 MB
+
+Snapchat
+
+6%
+
+7 MB
+
+Amazon AWS
+
+6%
+
+7 MB
+
+YouTube
+
+5%
+
+6 MB
+
+Facebook
+
+5%
+
+6 MB
+
+iCloud
+
+5%
+
+6 MB
+
+Google
+
+4%
+
+5 MB
+
+WhatsApp
+
+4%
+
+5 MB
+
+Instagram
+
+3%
+
+4 MB
+
+SPOTLIGHT
+
+App Complexity Requires Advanced Visualization and Visibility
+Over the past few years, we’ve tracked
+the ways in which apps have
+continued to become more intricate
+and complex. Some, like Facebook, are
+becoming “super apps,” characterized
+by complex mashups of capabilities
+and content within a single app.
+With “app complexity” comes the need to
+better visualize traffic in order to truly grasp
+the content within the app and
+how that affects usage and ultimately
+network resources, and importantly,
+App QoE for customers.
+This visualization is increasingly important
+as encryption obfuscates traffic, making it
+more difficult for operators to understand
+what is happening over their networks.
+Industry estimates around 95% of internet
+traffic is now encrypted, with around 85%
+of attacks encrypted9.
+To the right in Table 18, we analyze a Fixed
+Network’s content within popular apps,
+showing the corresponding App User
+Volume per day, which is the average
+usage across all subscribers using the app
+in a day:
+Here, we give examples of the daily
+content category contribution to different
+applications’ volume. That’s the average
+usage across all subscribers using a
+particular app in a single day.
+In WhatsApp, most of the volume comes
+from the sharing of photos and files, with
+the rest generated by Voice and Video
+Calls, as well as some Messaging.
+In Xbox Live, you’ll see File Delivery volume
+is much greater than the actual “game
+play,” which we talk about on page 25’,
+“The Truth About Gaming.”
+
+In X (formerly, Twitter) traffic, per-day
+volume for Messaging content is smaller
+than of On-Demand and Live Streaming.
+The same is true in SnapChat, where
+On-Demand Video is responsible for
+more volume per day than Messaging
+or Voice Calls.
+What these tables convey is that there
+are multiple components of an app that
+can affect subscribers’ App QoE. For
+example, messaging could work well, but
+poor voice quality, or frozen video calls,
+could lead to a bad user experience, and
+hence, a downgraded perception of the
+network’s performance.
+Table 18
+
+In another instance, a positive on-demand
+streaming experience could be tainted if a
+concurrent messaging session doesn’t
+work, or vice versa.
+By seeing the components and
+corresponding usage, it’s more likely
+operators can understand the user’s
+experience during each stage of an
+interaction or engagement with an app.
+That informs more proactive responses to
+head off any dissatisfaction or negative
+feelings toward the operator’s brand
+
+Table 19
+
+Apps by Content Category
+Contribution in Daily Volume – Fixed
+App and Content
+
+Volume
+Per Day
+
+WhatsApp
+Other
+Voice Call
+Video Call
+Messaging
+X (Twitter)
+On-Demand Streaming
+Live Streaming
+Messaging
+Other
+Xbox Live
+File Delivery
+Game Play
+Other
+Live Streaming
+Messaging
+Steam
+Game Play
+Other
+Video Call
+
+112 MB
+68 MB
+22 MB
+19 MB
+3 MB
+15 MB
+11 MB
+3 MB
+377 KB
+7 KB
+479 MB
+446 MB
+30 MB
+2 MB
+71 KB
+1KB
+145 MB
+100 MB
+44 MB
+0.09 KB
+
+Apps by Content Category
+Contribution in Daily Volume – Mobile
+App and Content
+
+Volume
+Per Day
+
+WhatsApp
+Other
+Voice Call
+Video Call
+Messaging
+X (Twitter)
+On-Demand Streaming
+Live Streaming
+Messaging
+
+37 MB
+33 MB
+2 MB
+1 MB
+1 MB
+17 MB
+11 MB
+3 MB
+2 MB
+
+SnapChat
+On-Demand Streaming
+Messaging
+Voice Call
+
+107 MB
+91 MB
+10 MB
+6 MB
+
+The Truth About Gaming
+
+17
+
+16
+
+SPOTLIGHT
+
+Which consumes more bandwidth – Video or Gaming?
+As we show on page 13, video consumes the most bandwidth
+on the network in aggregate, but Device Gaming and Cloud
+Gaming are significantly more bandwidth hungry. In our
+Fixed network data, 15% of households have an Xbox. We
+estimate that at 50 Mbps, the data consumption in an hour
+would be 22 GB/hour – significantly more than HD streaming
+video consumes.
+In console games, it’s not only game play that consumes
+bandwidth, but also patches and in-game downloads. In our Fixed
+network data, 9% of households have PlayStation downloads on
+any given day, with an average daily volume for downloads at 11.3
+GB. Compared to Netflix’s average of 4.1 GB for roughly four hours
+of streaming, a gamer uses almost 3X the volume as a “Streamer”.
+Cloud gaming did not take off as quickly as anticipated because
+of ongoing latency and lag issues. But as these performance
+problems are resolved, gamers are discovering they can have an
+experience that is more comparable to what they get over their
+specialized consoles.
+For example, as of late 2023, NVIDIA reported that GeForce NOW
+had more than 25 million users. Sandvine app user volume data
+(as shown on page 13), shows that in Fixed networks, roughly 2%
+of households have GeForce NOW traffic in a day. Each one of
+those households uses 874 MB, which, depending on bandwidth
+(25-50 Mbps), would amount to just 5-10 minutes of game play.
+That could really add up over the course of an hour or more of
+game play.
+Microsoft’s Xbox Cloud Gaming service has been used by more
+than 20 million people, or a popularity of 1%, with each subscriber
+averaging 4.1 GB of daily usage.
+If projections by Fortune Business Insights are accurate, the global
+cloud gaming market will grow from $5.76 billion in 2023 to $84.97
+billion by 203012, which could trigger a tremendous flood of data
+over Fixed and Mobile networks
+
+15%
+
+of
+households
+
+have an Xbox
+
+each consuming up to
+
+22 GB/hour
+
+FOR CLOUD GAMING
+Table 44
+
+App Category and App
+Device Gaming
+Playstation Downloads
+Xbox Live
+Steam
+ROBLOX
+Xbox Games
+Cloud Gaming
+Xbox Cloud Gaming
+GeForce Now
+Playstation Now
+Garena+
+Shadow
+
+% of
+Users
+
+User
+Volume
+
+9%
+7%
+13%
+8%
+15%
+
+11.3 GB
+14.1 GB
+2.5 GB
+856 MB
+1.6 GB
+
+1%
+2%
+6%
+2%
+1%
+
+4.1 GB
+1.0 GB
+10 MB
+29 MB
+5.8 GB
+
+Regional Phenomena Americas, Europe, and APAC
+
+Regional Phenomena Americas
+Table 20
+
+Table 21
+
+Top App Categories by Downstream Volume 2023 – Americas
+
+Every geography has its own Mobile
+and Fixed Broadband landscape.
+Where some countries have a very
+high penetration of mobile phones,
+others have significant traction with
+both Fixed and Mobile.
+This means that in some regions,
+operators’ subscriber bases skew
+the data for application volumes. For
+example, there are some countries that
+have a big concentration of one OS
+over another, which means they have a
+dispproportionate and skewed impact on
+global volumes.
+In Japan, there is a closer division between
+iOS and Android, though Android has a
+slightly higher market share.
+The same is true in bigger countries within
+Latin America, as well as Africa. For these
+reasons, Android has a higher penetration
+worldwide, giving Google Play Store more
+influence on the data generated by apps
+(2.56 million apps versus Apple’s 1.85
+million apps).
+In the United States, which has a very
+large penetration of smartphones, iOS is
+the predominant operating system. Other
+countries with significant iOS presence
+include Canada, Australia, New Zealand,
+Denmark, Norway, and North Korea10.
+When we look at the Fixed broadband
+market, especially in terms of penetration
+and speed, there are certain countries that
+stand out. According to Ookla11, some
+of the top countries for performance are
+the United Arab Emirates, South Korea.
+Malaysia, India, and the Dominican
+Republic. Worth noting is the median
+global 5G download speed, which Ookla
+says increased by 20% in Q3 2023,
+reaching 203.04 Mbps (compared to 168.27
+Mbps in Q3 2022).
+
+For these reasons, our regional total
+volume data may be skewed toward
+Mobile, and more heavily toward iOS
+than would be the case if we had data
+beyond the aggregate of our customers’
+subscribers.
+With that in mind, we do want to point out
+some of the phenomena that caught our
+attention when comparing one region’s
+data to the others. This will help you look
+for certain phenomena as you look at each
+region’s tables:
+• In all regions’ downstream traffic,
+Video is the biggest traffic category
+for volume, with percentages ranging
+between 41% and 48%. In the
+Americas, Video makes up 48% of
+the volume, with most of that
+attributable to On-Demand Streaming,
+at approximately 5.6 GB per
+subscriber, which is comparable to
+APAC volume for video, but about
+double that of Europe.
+• On-Demand Streaming exerts the
+greatest volumetric pressure, with
+YouTube as the frontrunner in App
+volume and subscriber volume across
+all geographies. In all regions, YouTube
+drives between 14-17% of the volume,
+but APAC has the greatest per-user
+volume at 2.5 GB (as compared to the
+second-highest, approximately 1.5 GB
+in the Americas).
+• File Sharing is the leading factor in
+upstream traffic volumes, with iCloud
+showing up as the main driver. No
+doubt, iOS users are uploading a huge
+number of photos and videos, as well
+as subscribers sharing files and notes,
+which are then synced across all of the
+users’ devices. File Sharing volume per
+sub is much greater in APAC than other
+regions, with 493 MB per user, driven
+by iCloud and PlayStation Downloads.
+
+We also see higher per-sub volumes
+for Google and Google Cloud in APAC
+than other regions.
+• In the Americas, BitTorrent generates
+the third-largest volume in the
+upstream traffic, but it is much smaller
+in Europe, and not showing up at all in
+APAC’s top-10. BitTorrent is often used
+by more tech-savvy, heavy internet
+users such as those in Academia or
+Science, who also tend to use VPNs to
+protect their files.
+• Social Media is a popular app category
+in Europe, whereas in APAC, Device
+Gaming is more popular, which pushes
+Xbox Live and PlayStation Downloads
+into the higher-tier of the volume
+rankings. Device Gaming is, however,
+showing up in the top 4 for all regional
+DL traffic.
+• Netflix consistently appears in the top
+3 in all regions, although in Europe,
+DAZN, a sports and entertainment
+streaming service, shows up in the
+rankings. Disney+ and TikTok show up
+across all regions
+Interestingly, Operator Content
+appears in the top 10 for
+Americas and Europe. This
+is an important change as
+Operators have realized the
+change in the value chain and
+are now creating their own
+OTT offerings to be able to
+generate additional revenues.
+
+10. https://worldpopulationreview.com/country-rankings/iphone-market-share-by-country
+11. https://www.ookla.com/articles/worldwide-connectivity-mobile-fixed-networks-digital-divide-2023
+
+Top App Categories by Upstream Volume 2023 – Americas
+
+Downstream Volume
+Application Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Upstream Volume
+% DS Vol
+
+Sub. Volume
+
+Video
+
+48%
+
+5.643 GB
+
+Television
+
+17%
+
+1.978 GB
+
+Social Media
+
+10%
+
+1.122 GB
+
+Device Gaming
+
+9%
+
+1.086 GB
+
+File Sharing
+
+6%
+
+726 MB
+
+General Web Apps
+
+3%
+
+352 MB
+
+VPN
+
+1%
+
+173 MB
+
+Communication
+
+1%
+
+130 MB
+
+Audio
+
+0.9%
+
+110 MB
+
+Conferencing
+
+0.3%
+
+36 MB
+
+Cloud Gaming
+
+0.1%
+
+13 MB
+
+Peer To Peer
+
+0.08%
+
+9 MB
+
+IoT
+
+0.04%
+
+5 MB
+
+Other Apps
+
+3%
+
+405 MB
+
+Table 22
+
+Application Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+205 MB
+
+Communication
+
+14%
+
+101 MB
+
+Video
+
+11%
+
+85 MB
+
+General Web Apps
+
+7%
+
+54 MB
+
+Social Media
+
+6%
+
+44 MB
+
+VPN
+
+4%
+
+27 MB
+
+Device Gaming
+
+4%
+
+27 MB
+
+Television
+
+3%
+
+24 MB
+
+IoT
+
+3%
+
+21 MB
+
+Conferencing
+
+3%
+
+20 MB
+
+Peer To Peer
+
+1%
+
+9 MB
+
+Audio
+
+0.4%
+
+3 MB
+
+Cloud Gaming
+
+0.04%
+
+323 KB
+
+Other Apps
+
+17%
+
+129 MB
+
+Upstream Volume
+
+Content Category
+
+% DS Vol
+
+Sub. Volume
+
+On-Demand Streaming
+
+57%
+
+6.671 GB
+
+Live Streaming
+
+18%
+
+2.086 GB
+
+File Delivery
+
+11%
+
+1.312 GB
+
+Game Play
+
+3%
+
+322 MB
+
+Browsing
+
+3%
+
+301 MB
+
+Video Call
+
+0.9%
+
+108 MB
+
+Voice Call
+
+0.5%
+
+58 MB
+
+Messaging
+
+0.3%
+
+40 MB
+
+Machine to Machine
+
+0.02%
+
+2 MB
+
+AR/VR
+
+0.00%
+
+20 KB
+
+Other
+
+8%
+
+887 MB
+
+Table 24
+
+Content Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+% US Vol
+
+Sub. Volume
+
+File Delivery
+
+27%
+
+205 MB
+
+On-Demand Streaming
+
+15%
+
+111 MB
+
+Video Call
+
+10%
+
+74 MB
+
+Live Streaming
+
+9%
+
+67 MB
+
+Browsing
+
+7%
+
+50 MB
+
+Voice Call
+
+6%
+
+43 MB
+
+Game Play
+
+2%
+
+14 MB
+
+Messaging
+
+1%
+
+8 MB
+
+Machine to Machine
+
+0.08%
+
+632 KB
+
+AR/VR
+
+0.00%
+
+3 KB
+
+Other
+
+24%
+
+177 MB
+
+Table 25
+
+Top Apps by Downstream Volume 2023 – Americas
+
+Top Apps by Upstream Volume 2023 – Americas
+
+Downstream Volume
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Sub. Volume
+
+27%
+
+Top Content Categories by Upstream Volume 2023 – Americas
+
+Downstream Volume
+
+Application
+
+% US Vol
+
+File Sharing
+
+Table 23
+
+Top Content Categories by Downstream Volume 2023 – Americas
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+19
+
+18
+
+SPOTLIGHT
+
+Upstream Volume
+% DS Vol
+
+Sub. Volume
+
+YouTube
+
+14%
+
+1.477 GB
+
+Amazon Prime
+
+11%
+
+1.219 GB
+
+Netflix
+
+11%
+
+1.152 GB
+
+Operator Content
+
+9%
+
+928 MB
+
+Disney+
+
+6%
+
+646 MB
+
+Facebook
+
+4%
+
+480 MB
+
+Tik Tok
+
+3%
+
+353 MB
+
+Xbox Live
+
+3%
+
+288 MB
+
+Playstation Downloads
+
+2%
+
+270 MB
+
+Discovery Plus
+
+2%
+
+228 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+% US Vol
+
+Sub. Volume
+
+iCloud
+
+10%
+
+60 MB
+
+FaceTime
+
+9%
+
+56 MB
+
+BitTorrent
+
+8%
+
+51 MB
+
+YouTube
+
+4%
+
+26 MB
+
+Google Cloud Storage
+
+4%
+
+24 MB
+
+Nest
+
+3%
+
+20 MB
+
+Discord
+
+3%
+
+18 MB
+
+Facebook
+
+3%
+
+17 MB
+
+Google
+
+3%
+
+15 MB
+
+Amazon Prime
+
+2%
+
+14 MB
+
+20
+
+Regional Phenomena APAC
+
+Table 26
+
+Table 38
+
+Table 27
+
+Top App Categories by Downstream Volume 2023 – Europe
+
+Top App Categories by Upstream Volume 2023 – Europe
+
+Downstream Volume
+Application Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+% DS Vol
+
+Sub. Volume
+
+Video
+
+49%
+
+2.847 GB
+
+Social Media
+
+14%
+
+799 MB
+
+File Sharing
+
+9%
+
+561 MB
+
+Device Gaming
+
+7%
+
+414 MB
+
+Television
+
+5%
+
+274 MB
+
+General Web Apps
+
+3%
+
+168 MB
+
+Communication
+
+2%
+
+92 MB
+
+VPN
+
+0.7%
+
+38 MB
+
+Audio
+
+0.5%
+
+27 MB
+
+Conferencing
+
+0.2%
+
+9 MB
+
+Cloud Gaming
+
+0.1%
+
+6 MB
+
+IoT
+
+0.01%
+
+1 MB
+
+Peer To Peer
+
+0.01%
+
+1 MB
+
+Other Apps
+
+10%
+
+536 MB
+
+Table 28
+
+Application Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Content Category
+
+% DS Vol
+
+Sub. Volume
+
+63%
+
+3.664 GB
+
+File Delivery
+
+13%
+
+744 MB
+
+Live Streaming
+
+5%
+
+300 MB
+
+Game Play
+
+5%
+
+264 MB
+
+Browsing
+
+2%
+
+100 MB
+
+Messaging
+
+0.7%
+
+39 MB
+
+Voice Call
+
+0.4%
+
+23 MB
+
+Video Call
+
+0.3%
+
+16 MB
+
+Machine to Machine
+
+0.01%
+
+315 KB
+
+AR/VR
+
+NA
+
+NA
+
+Other
+
+11%
+
+623 MB
+
+Table 30
+
+File Sharing
+
+28%
+
+111 MB
+
+Video
+
+20%
+
+80 MB
+
+Communication
+
+10%
+
+39 MB
+
+General Web Apps
+
+7%
+
+29 MB
+
+Social Media
+
+7%
+
+29 MB
+
+Device Gaming
+
+5%
+
+19 MB
+
+Television
+
+2%
+
+9 MB
+
+VPN
+
+2%
+
+9 MB
+
+Conferencing
+
+1%
+
+5 MB
+
+Audio
+
+0.3%
+
+1 MB
+
+IoT
+
+0.1%
+
+439 KB
+
+Peer To Peer
+
+0.07%
+
+290 KB
+
+Cloud Gaming
+
+0.02%
+
+93 KB
+
+Other Apps
+
+15%
+
+59 MB
+
+Application Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Content Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Sub. Volume
+
+% US Vol
+
+Sub. Volume
+
+File Delivery
+
+29%
+
+115 MB
+
+On-Demand Streaming
+
+28%
+
+110 MB
+
+Browsing
+
+6%
+
+22 MB
+
+Voice Call
+
+5%
+
+20 MB
+
+Game Play
+
+3%
+
+14 MB
+
+Live Streaming
+
+3%
+
+13 MB
+
+Video Call
+
+3%
+
+11 MB
+
+Messaging
+
+1%
+
+5 MB
+
+Machine to Machine
+
+0.03%
+
+116 KB
+
+AR/VR
+
+NA
+
+NA
+
+Other
+
+21%
+
+82 MB
+
+YouTube
+
+15%
+
+699 MB
+
+Netflix
+
+15%
+
+682 MB
+
+DAZN
+
+7%
+
+331 MB
+
+Tik Tok
+
+6%
+
+289 MB
+
+Facebook
+
+6%
+
+269 MB
+
+Operator Content
+
+5%
+
+235 MB
+
+Playstation Downloads
+
+5%
+
+223 MB
+
+Instagram
+
+5%
+
+221 MB
+
+Disney+
+
+4%
+
+181 MB
+
+Amazon Prime
+
+4%
+
+176 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Sub. Volume
+
+Video
+
+41%
+
+6.943 GB
+
+Device Gaming
+
+17%
+
+2.917 GB
+
+Social Media
+
+15%
+
+2.540 GB
+
+File Sharing
+
+11%
+
+1.912 GB
+
+General Web Apps
+
+4%
+
+619 MB
+
+Television
+
+3%
+
+430 MB
+
+Communication
+
+2%
+
+321 MB
+
+VPN
+
+1%
+
+229 MB
+
+Audio
+
+0.8%
+
+130 MB
+
+Conferencing
+
+0.4%
+
+68 MB
+
+IoT
+
+0.03%
+
+5 MB
+
+Cloud Gaming
+
+0.02%
+
+3 MB
+
+Peer To Peer
+
+0.01%
+
+1 MB
+
+Other Apps
+
+5%
+
+819 MB
+
+Application Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+% DS Vol
+
+Sub. Volume
+
+On-Demand Streaming
+
+54%
+
+9.063 GB
+
+File Delivery
+
+23%
+
+3.829 GB
+
+Live Streaming
+
+9%
+
+1.495 GB
+
+Game Play
+
+5%
+
+918 MB
+
+Browsing
+
+3%
+
+547 MB
+
+Video Call
+
+1%
+
+193 MB
+
+Messaging
+
+0.8%
+
+128 MB
+
+Voice Call
+
+0.5%
+
+91 MB
+
+Machine to Machine
+
+0.01%
+
+2 MB
+
+AR/VR
+4%
+
+672 MB
+
+Table 42
+
+iCloud
+
+11%
+
+35 MB
+
+YouTube
+
+8%
+
+24 MB
+
+WhatsApp
+
+5%
+
+17 MB
+
+Netflix
+
+5%
+
+15 MB
+
+BitTorrent
+
+5%
+
+15 MB
+
+Google Cloud Storage
+
+4%
+
+14 MB
+
+Tik Tok
+
+4%
+
+14 MB
+
+Google Photos
+
+4%
+
+12 MB
+
+DAZN
+
+3%
+
+9 MB
+
+Instagram
+
+2%
+
+8 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+32%
+
+493 MB
+
+Video
+
+16%
+
+248 MB
+
+Device Gaming
+
+11%
+
+179 MB
+
+Communication
+
+11%
+
+169 MB
+
+Social Media
+
+9%
+
+146 MB
+
+General Web Apps
+
+8%
+
+127 MB
+
+VPN
+
+3%
+
+44 MB
+
+Conferencing
+
+3%
+
+41 MB
+
+Television
+
+1%
+
+17 MB
+
+Audio
+
+0.5%
+
+7 MB
+
+IoT
+
+0.4%
+
+6 MB
+
+Cloud Gaming
+
+0.02%
+
+317 KB
+
+Peer To Peer
+
+0.00%
+
+65 KB
+
+Other Apps
+
+5%
+
+81 MB
+
+Top Content Categories by Upstream Volume 2023 – APAC
+
+Content Category
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+% US Vol
+
+Sub. Volume
+
+File Delivery
+
+37%
+
+569 MB
+
+On-Demand Streaming
+
+21%
+
+320 MB
+
+Browsing
+
+7%
+
+112 MB
+
+Live Streaming
+
+7%
+
+111 MB
+
+Video Call
+
+7%
+
+101 MB
+
+Voice Call
+
+4%
+
+68 MB
+
+Game Play
+
+4%
+
+61 MB
+
+Messaging
+
+2%
+
+39 MB
+
+Machine to Machine
+
+0.02%
+
+369 KB
+
+11%
+
+177 MB
+
+AR/VR
+Other
+
+Top Apps by Upstream Volume 2023 – APAC
+
+Downstream Volume
+Sub. Volume
+
+File Sharing
+
+Table 43
+
+Top Apps by Downstream Volume 2023 – APAC
+
+% US Vol
+
+Sub. Volume
+
+Upstream Volume
+
+Content Category
+
+Other
+
+% US Vol
+
+Table 41
+
+Top Content Categories by Downstream Volume 2023 – APAC
+
+Upstream Volume
+% DS Vol
+
+% DS Vol
+
+Downstream Volume
+
+Top Apps by Upstream Volume 2023 – Europe
+
+Downstream Volume
+
+Upstream Volume
+
+Table 40
+
+Table 31
+
+Top Apps by Downstream Volume 2023 – Europe
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Sub. Volume
+
+Upstream Volume
+
+On-Demand Streaming
+
+Application
+
+% US Vol
+
+Top Content Categories by Upstream Volume 2023 – Europe
+
+Downstream Volume
+
+Top App Categories by Upstream Volume 2023 – APAC
+
+Downstream Volume
+
+Table 29
+
+Top Content Categories by Downstream Volume 2023 – Europe
+
+Table 39
+
+Top App Categories by Downstream Volume 2023 – APAC
+
+Upstream Volume
+
+21
+
+Regional Phenomena Europe
+
+Upstream Volume
+% DS Vol
+
+Sub. Volume
+
+YouTube
+
+16%
+
+2.488 GB
+
+Netflix
+
+14%
+
+2.231 GB
+
+Facebook
+
+8%
+
+1.309 GB
+
+Xbox Live
+
+8%
+
+1.220 GB
+
+Playstation Downloads
+
+8%
+
+1.215 GB
+
+Disney+
+
+6%
+
+874 MB
+
+Tik Tok
+
+5%
+
+749 MB
+
+iTunes Store
+
+2%
+
+391 MB
+
+Amazon Prime
+
+2%
+
+388 MB
+
+Instagram
+
+2%
+
+340 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+% US Vol
+
+Sub. Volume
+
+iCloud
+
+11%
+
+159 MB
+
+Playstation Downloads
+
+6%
+
+84 MB
+
+YouTube
+
+5%
+
+78 MB
+
+Facebook
+
+5%
+
+74 MB
+
+Netflix
+
+5%
+
+65 MB
+
+Xbox Live
+
+4%
+
+56 MB
+
+Google
+
+4%
+
+55 MB
+
+FaceTime
+
+4%
+
+51 MB
+
+Google Cloud Storage
+
+3%
+
+49 MB
+
+Google Photos
+
+3%
+
+44 MB
+
+We started this year’s Report
+acknowledging that the internet is a
+phenomenon that is difficult to
+quantify or measure. We are the first
+to attempt an extrapolation of its
+“size” across Fixed and Mobile
+networks. As Sandvine CEO, Lyn
+Cantor explained in his intro on page
+6, we did this by multiplying an
+average per-sub, per-day volume of
+4.2 GB across 6.4 billion Mobile
+subscriptions and 1.4 billion Fixed
+connections, bringing the total volume
+of internet traffic to approximately 33
+Exabytes (EB) per day.
+We didn’t stop there, as every subscriber,
+every person, experiences the digital
+universe in very individual ways, through
+their own collection of applications.
+In our AppLogic tables and insights, we
+convey how different types of
+engagement across applications affect
+downstream and upstream traffic, and
+hence, network resources.
+The enhanced AI-driven observability of
+AppLogic reveals whether traffic is
+generated by Video, Social Media,
+Communications, File Sharing or other
+categories of apps, and which content
+within those apps is shaping the volume
+and impact of apps on internet traffic. We
+see the dynamics of traffic differ among
+On-Demand Streaming, Live Streaming,
+Game Play, Video Calls, Messaging, and
+other types of content.
+
+With this new baseline of data, we will be
+able to detect ongoing trends in persubscriber App Volume; App User Volume;
+and App Popularity. For example:
+• Will there be an increase or decline in
+the 4.2 GB per day per user, per day
+volume? If so, can we impart whether
+it’s attributable mostly to Streaming
+Video, or some other category that may
+rise in the ranks, like Gaming, AR/VR,
+or M2M Communications?
+• Will the average Video consumption
+per user change from the current 1.4
+GB of video per day, and what will
+contribute to that change, such as
+video embedded in Social Media, in
+Communications, Video Calls,
+Streaming TV, Operator Content, or
+something else?
+• Will Social Media Content continue to
+grow in popularity over Mobile
+networks, and what will be the nature
+of that content?
+• What changes will we see in upstream
+traffic, with more content creators
+uploading videos, more smart devices
+coming online, more frequent and
+sizable gaming updates, and greater
+numbers of photos and videos
+uploaded to the cloud?
+• As the world gets more connected, and
+the Digital Divide closes, what
+phenomena and trends will emerge?
+
+To answer these questions, we will
+continue growing our library of application
+signatures and traffic signatures. Our goal
+is to keep up with transport layer
+advancements that obfuscate traffic, and
+subsequently, to improve AppLogic’s
+Application Classification and Content
+Categorization.
+We strive to remain the gold standard in
+AppQoE-focused analytics, empowering
+operators around the world with datadriven analyses that prepare them to “be
+ready” for what’s to come in new business
+models, and possible network arbitrage
+with some of the world’s biggest
+generators of internet traffic.
+That means we will continually evolve and
+improve to keep up with changes
+in internet phenomena so that our
+customers can stay a step ahead of
+customer expectations, while also
+reducing costs and building sustainable
+business models
+
+22
+
+23
+
+Conclusion: Why Internet Phenomena Matter
+
+Visit www.sandvine.com and read our
+blog at www.sandvine.com/blog to learn
+more about our App QoE portfolio.
+Resources
+See our Resources page for a wide
+range of videos, webinars, and
+whitepapers:
+www.sandvine.com/resources
+
+Top App Categories by Downstream Volume 2023 Fixed
+
+Top App Categories by Upstream Volume 2023 Fixed
+
+Downstream Volume
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Sub. Volume
+
+Video
+
+39%
+
+5.7 GB
+
+Social Media
+
+18%
+
+2.6 GB
+
+Television
+
+11%
+
+1.6 GB
+
+File Sharing
+
+9%
+
+1.3 GB
+
+Device Gaming
+
+7%
+
+1.1 GB
+
+General Web Apps
+
+6%
+
+889 MB
+
+Communication
+
+2%
+
+249 MB
+
+VPN
+
+2%
+
+234 MB
+
+Audio
+
+0.7%
+
+98 MB
+
+Conferencing
+
+0.3%
+
+47 MB
+
+Cloud Gaming
+
+0.07%
+
+11 MB
+
+IoT
+
+0.03%
+
+4 MB
+
+Peer To Peer
+
+0.03%
+
+4 MB
+
+Other Apps
+
+5%
+
+753 MB
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Top Content Categories by Downstream Volume 2023 Fixed
+
+Application
+
+% US Vol
+
+Sub. Volume
+
+File Sharing
+
+28%
+
+319 MB
+
+Video
+
+13%
+
+153 MB
+
+Communication
+
+12%
+
+134 MB
+
+General Web Apps
+
+11%
+
+128 MB
+
+Social Media
+
+9%
+
+107 MB
+
+VPN
+
+5%
+
+61 MB
+
+Device Gaming
+
+4%
+
+52 MB
+
+Conferencing
+
+2%
+
+27 MB
+
+Television
+
+2%
+
+25 MB
+
+IoT
+
+1%
+
+15 MB
+
+Peer To Peer
+
+0.3%
+
+4 MB
+
+Audio
+
+0.3%
+
+3 MB
+
+Cloud Gaming
+
+0.03%
+
+312 KB
+
+Other Apps
+
+11%
+
+125 MB
+
+Sub. Volume
+
+On-Demand Streaming
+
+54%
+
+7.9 GB
+
+Live Streaming
+
+14%
+
+2.0 GB
+
+File Delivery
+
+13%
+
+2.0 GB
+
+Browsing
+
+3%
+
+441 MB
+
+Game Play
+
+3%
+
+398 MB
+
+Video Call
+
+2%
+
+300 MB
+
+Messaging
+
+0.6%
+
+81 MB
+
+Voice Call
+
+0.5%
+
+74 MB
+
+Machine to Machine
+
+0.01%
+
+2 MB
+
+AR/VR
+
+0.00%
+
+18 KB
+
+Other
+
+10%
+
+1.4 GB
+
+Top Apps by Downstream Volume 2023 Fixed
+
+Top Content Categories by Upstream Volume 2023 Fixed
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Downstream Volume
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+YouTube
+
+16%
+
+1.9 GB
+
+Netflix
+
+12%
+
+1.4 GB
+
+Facebook
+
+9%
+
+1.0 GB
+
+Tik Tok
+
+7%
+
+859 MB
+
+Operator Content
+
+7%
+
+850 MB
+
+Amazon Prime
+
+6%
+
+722 MB
+
+Disney+
+
+5%
+
+610 MB
+
+Xbox Live
+
+5%
+
+573 MB
+
+Instagram
+
+3%
+
+370 MB
+
+Snapchat
+
+2%
+
+231 MB
+
+Sub. Volume
+
+Social Media
+
+35%
+
+558 MB
+
+Video
+
+31%
+
+493 MB
+
+Device Gaming
+
+7%
+
+117 MB
+
+File Sharing
+
+7%
+
+112 MB
+
+General Web Apps
+
+5%
+
+72 MB
+
+Communication
+
+4%
+
+57 MB
+
+VPN
+
+2%
+
+28 MB
+
+Television
+
+1%
+
+22 MB
+
+Audio
+
+0.9%
+
+14 MB
+
+Conferencing
+
+0.2%
+
+3 MB
+
+Cloud Gaming
+
+0.06%
+
+885 KB
+
+IoT
+
+0.02%
+
+238 KB
+
+Peer To Peer
+
+0.01%
+
+132 KB
+
+Other Apps
+
+6%
+
+98 MB
+
+Top Content Categories by Downstream Volume 2023 Mobile
+
+Application
+
+% US Vol
+
+Sub. Volume
+
+File Delivery
+
+29%
+
+330 MB
+
+On-Demand Streaming
+
+19%
+
+222 MB
+
+Browsing
+
+9%
+
+99 MB
+
+Video Call
+
+7%
+
+85 MB
+
+Live Streaming
+
+7%
+
+85 MB
+
+Voice Call
+
+5%
+
+62 MB
+
+Game Play
+
+3%
+
+30 MB
+
+Messaging
+
+1%
+
+17 MB
+
+Machine to Machine
+
+0.06%
+
+731 KB
+
+AR/VR
+
+0.00%
+
+2 KB
+
+Other
+
+19%
+
+224 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Sub. Volume
+
+iCloud
+
+9%
+
+101 MB
+
+FaceTime
+
+5%
+
+56 MB
+
+Google Cloud Storage
+
+4%
+
+47 MB
+
+Google
+
+4%
+
+46 MB
+
+YouTube
+
+4%
+
+46 MB
+
+BitTorrent
+
+4%
+
+46 MB
+
+Tik Tok
+
+3%
+
+40 MB
+
+Facebook
+
+3%
+
+31 MB
+
+Discord
+
+2%
+
+28 MB
+
+Amazon AWS
+
+2%
+
+25 MB
+
+% US Vol
+
+Sub. Volume
+
+Social Media
+
+23%
+
+29 MB
+
+Communication
+
+16%
+
+20 MB
+
+File Sharing
+
+15%
+
+20 MB
+
+General Web Apps
+
+12%
+
+16 MB
+
+Video
+
+10%
+
+12 MB
+
+Device Gaming
+
+4%
+
+5 MB
+
+VPN
+
+4%
+
+5 MB
+
+Conferencing
+
+1%
+
+1 MB
+
+Audio
+
+0.4%
+
+509 KB
+
+Television
+
+0.3%
+
+393 KB
+
+IoT
+
+0.2%
+
+234 KB
+
+Cloud Gaming
+
+0.04%
+
+54 KB
+
+Peer To Peer
+
+0.00%
+
+3 KB
+
+Other Apps
+
+15%
+
+19 MB
+0.1 GB
+
+Top Content Categories by Upstream Volume 2023 Mobile
+
+% DS Vol
+
+Sub. Volume
+
+On-Demand Streaming
+
+57%
+
+900 MB
+
+Live Streaming
+
+11%
+
+173 MB
+
+File Delivery
+
+7%
+
+107 MB
+
+Browsing
+
+5%
+
+75 MB
+
+Game Play
+
+5%
+
+73 MB
+
+Video Call
+
+2%
+
+38 MB
+
+Messaging
+
+2%
+
+29 MB
+
+Voice Call
+
+1%
+
+19 MB
+
+Machine to Machine
+
+0.00%
+
+68 KB
+
+AR/VR
+
+0.00%
+
+1 KB
+
+Other
+
+10%
+
+160 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+% US Vol
+
+Sub. Volume
+
+On-Demand Streaming
+
+20%
+
+26 MB
+
+File Delivery
+
+16%
+
+21 MB
+
+Voice Call
+
+13%
+
+17 MB
+
+Browsing
+
+8%
+
+10 MB
+
+Live Streaming
+
+7%
+
+9 MB
+
+Messaging
+
+5%
+
+7 MB
+
+Video Call
+
+4%
+
+5 MB
+
+Game Play
+
+3%
+
+4 MB
+
+Machine to Machine
+
+0.03%
+
+33 KB
+
+AR/VR
+
+0.00%
+
+82
+
+Other
+
+23%
+
+29 MB
+
+Top Apps by Upstream Volume 2023 Mobile
+
+Downstream Volume
+% US Vol
+
+Application
+
+Upstream Volume
+
+Top Apps by Downstream Volume 2023 Mobile
+
+Upstream Volume
+Sub. Volume
+
+% DS Vol
+
+Downstream Volume
+
+Top Apps by Upstream Volume 2023 Fixed
+
+% DS Vol
+
+Application
+
+1.6 GB
+
+Upstream Volume
+% DS Vol
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Upstream Volume
+
+1.2 GB
+
+Downstream Volume
+
+Top App Categories by Upstream Volume 2023 Mobile
+
+Downstream Volume
+
+14.5 GB
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+Top App Categories by Downstream Volume 2023 Mobile
+
+Upstream Volume
+% DS Vol
+
+Application
+
+24
+
+25
+
+Downstream versus Upstream over Fixed and Mobile
+
+Upstream Volume
+% DS Vol
+
+Sub. Volume
+
+YouTube
+
+21%
+
+233 MB
+
+Facebook
+
+18%
+
+199 MB
+
+Tik Tok
+
+15%
+
+175 MB
+
+Instagram
+
+7%
+
+82 MB
+
+Snapchat
+
+7%
+
+76 MB
+
+Netflix
+
+6%
+
+73 MB
+
+Disney+
+
+2%
+
+25 MB
+
+WhatsApp
+
+2%
+
+24 MB
+
+Telegram
+
+1%
+
+15 MB
+
+X (Twitter)
+
+1%
+
+14 MB
+
+Application
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+% US Vol
+
+Sub. Volume
+
+Tik Tok
+
+8%
+
+10 MB
+
+Facebook Messenger
+
+8%
+
+10 MB
+
+Snapchat
+
+6%
+
+7 MB
+
+Amazon AWS
+
+6%
+
+7 MB
+
+YouTube
+
+5%
+
+6 MB
+
+Facebook
+
+5%
+
+6 MB
+
+iCloud
+
+5%
+
+6 MB
+
+Google
+
+4%
+
+5 MB
+
+WhatsApp
+
+4%
+
+5 MB
+
+Instagram
+
+3%
+
+4 MB
+
+If you are not getting these types
+of insights about your customers’
+application consumption on your
+network, don’t you think you should?
+Engage with us and we can show you
+how AppLogic turns confusion into
+clarity to help your business.
+Lyn Cantor, CEO, Sandvine
+
+For more information visit https://www.sandvine.com
+or follow Sandvine on Twitter @Sandvine.
+
+USA
+5800 Granite Parkway
+Suite 170
+Plano, TX 75024
+USA
+
+EUROPE
+Neptunigatan 1
+211 20 Malmö,
+Skåne
+Sweden
+T. +46 340.48 38 00
+
+CANADA
+410 Albert Street,
+Suite 201, Waterloo,
+Ontario N2L 3V3,
+Canada
+T. +1 519.880.2600
+
+ASIA
+RMZ Ecoworld,
+Building-1, Ground Floor,
+East Wing Devarabeesanahalli,
+Bellandur, Outer Ring Road,
+Bangalore 560103, India
+T. +91 80677.43333
+
+Copyright ©2024 Sandvine Corporation. All rights reserved. Any unauthorized reproduction prohibited. All other trademarks are the property of their respective owners.
+This documentation, including all documentation incorporated by reference herein such as documentation provided or made available on the Sandvine website, are provided or made accessible “AS IS” and “AS
+AVAILABLE” and without condition, endorsement, guarantee, representation, or warranty of any kind by Sandvine Corporation and its affiliated companies (“Sandvine”), and Sandvine assumes no responsibility for any
+typographical, technical, or other inaccuracies, errors, or omissions in this documentation. In order to protect Sandvine proprietary and confidential information and/or trade secrets, this documentation may describe
+some aspects of Sandvine technology in generalized terms. Sandvine reserves the right to periodically change information that is contained in this documentation; however, Sandvine makes no commitment to provide
+any such changes, updates, enhancements, or other additions to this documentation to you in a timely manner or at all.
+v20240213
+
+

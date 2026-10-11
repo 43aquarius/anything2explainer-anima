@@ -1,0 +1,140 @@
+{{Short description|American web infrastructure company}}
+{{Infobox company
+| name = Fastly, Inc.
+| logo = Fastly logo.svg
+| caption = 
+| founded = {{Start date and age|2011|03}}
+| type = [[Public company|Public]]
+| traded_as = {{ubl|{{NASDAQ|FSLY}} (Class A)}}
+| founder = {{Unbulleted list
+ | Artur Bergman
+ | Simon Wistow
+}}
+| hq_location = {{nowrap|[[San Francisco, California]], U.S.}}
+| key_people = {{plainlist|
+* Kip Compton ([[Chief executive officer|CEO]])
+* [[David Hornik]] ([[Chairman]])
+* Artur Bergman ([[Chief technical officer|CTO]])
+* Richard Wong ([[Chief financial officer|CFO]])}}
+ Joan Jenkins ([[Chief marketing officer|CMO]])
+| industry = [[Internet]]
+| services = {{Plainlist|
+* [[Content delivery network]]
+* [[Security as a service]]
+* [[Serverless computing]]
+* Website performance}}
+| website = {{URL|fastly.com/}}
+| revenue = {{increase}} {{US$|624.0 million|link=yes}} (2025)
+| operating_income = {{increasenegative}} {{US$|−119.0 million}} (2025)
+| net_income = {{increasenegative}} {{US$|−121.7 million}} (2025)
+| assets = {{increase}} {{US$|1.499 billion}} (2025)
+| equity = {{decrease}} {{US$|929.6 million}} (2025)
+| num_employees = 1,140 (2025)
+| footnotes = <ref name=10K>{{cite web |url=https://www.sec.gov/ix?doc=/Archives/edgar/data/0001517413/000151741325000063/fsly-20241231.htm |title=US SEC: Form 10-K Fastly, Inc. |publisher=[[U.S. Securities and Exchange Commission]] |date=26 February 2025}}</ref>
+| module = {{infobox network service provider|child=yes|asn=54113}}
+}}
+
+'''Fastly, Inc.''' is an American company based in San Francisco, which describes itself as a [[cloud computing]] company.<ref>{{cite web |title=S-1 Registration Statement, Fastly Inc |url=https://www.sec.gov/Archives/edgar/data/1517413/000119312519111675/d702138ds1.htm |access-date=2024-10-11 |work=www.sec.gov}}</ref> Fastly provides [[content delivery network]] services, image optimization, and load balancing services.<ref name="computerworld" /> Fastly's cloud security services include [[denial-of-service attack protection]], bot mitigation, and a web application [[firewall (computing)|firewall]].<ref name="tc20170601">{{cite web |title=Discontent and disruption in the world of content delivery networks |url=https://techcrunch.com/2017/06/01/discontent-and-disruption-in-the-world-of-content-delivery-networks/ |work=TechCrunch |date=June 2017}}</ref>
+
+==History==
+
+=== Founding and IPO (2011–2019) ===
+Fastly was founded in 2011 by the [[Swedish-American]] entrepreneur Artur Bergman, previously chief technical officer at [[Wikia]] (now Fandom).<ref name="vb20140916">{{cite web|last=Novet|first=Jordan|date=September 16, 2014|title=Fastly grabs $40M on its quest to build a big, cool content-delivery network|url=https://venturebeat.com/2014/09/16/fastly-funding/|access-date=December 23, 2020|work=VentureBeat}}</ref><ref>{{Cite web |url=https://open.nytimes.com/open-questions-a-conversation-with-fastly-ceo-artur-bergman-9c5e023baf57 |title=Open Questions: A Conversation with Fastly CEO Artur Bergman |date=2018-09-07 |access-date=2022-05-30 |website=[[The New York Times]] |last=Rockwell |first=Nick}}</ref> In June 2013, Fastly raised $10 million in [[Series B funding]].<ref>{{Cite web |date=June 6, 2013|title=Fastly Raises $10M for Content Delivery Network Built for Mobile, Real-Time World|url=https://techcrunch.com/2013/06/05/fastly-raises-10m-for-content-delivery-network-built-for-mobile-real-time-world/|access-date=December 23, 2020|website=TechCrunch }}</ref> In April 2014, the company announced that it had acquired CDN Sumo, a CDN add-on for [[Heroku]].<ref>{{Cite web|last=Richards|first=Ryan|date=April 16, 2014|title=Ruby on Rails on Fastly|url=https://www.fastly.com/blog/ruby-on-rails-on-fastly|url-status=live|archive-url=https://web.archive.org/web/20201223092344/https://www.fastly.com/blog/ruby-on-rails-on-fastly|archive-date=December 23, 2020|access-date=December 23, 2020|website=www.fastly.com}}</ref> In September 2014, Fastly raised a further $40 million in Series C funding,<ref>{{Cite web|last=Miller|first=Ron|date=September 16, 2014|title=Fastly Growing Quickly Snags $40M As VCs Give Generously|url=https://techcrunch.com/2014/09/16/fastly-growing-quickly-snags-40m-as-vcs-give-generously/|access-date=December 23, 2020|website=TechCrunch}}</ref> followed by a $75 million Series D round in August 2015.<ref>{{Cite web|last=Lardinois|first=Frederic|date=August 5, 2015|title=Fastly Raises $75M For Its Real-Time CDN|url=https://techcrunch.com/2015/08/05/fastly-raises-75m-series-d-round-for-its-real-time-cdn/|access-date=December 23, 2020|website=TechCrunch}}</ref>
+
+In September 2015, [[Google]] partnered with Fastly and other content delivery network providers to offer services to its users.<ref name="tc20150909">{{cite web|url=https://techcrunch.com/2015/09/09/google-partners-with-cloudflare-fastly-level-3-and-highwinds-to-help-developers-push-google-cloud-content-to-users-faster/|title=Google Partners With CloudFlare, Fastly, Level 3 And Highwinds To Help Developers Push Google Cloud Content To Users Faster|work=TechCrunch|date=9 September 2015 }}</ref> In April 2017, Fastly launched its edge cloud platform along with image optimization, load balancing, and a [[web application firewall]].<ref name="computerworld">{{cite web | last=Kepes | first=Ben | title=In the need for speed, Fastly goes all the way to the edge | website=[[Computerworld]] | date=April 18, 2017 | url=https://www.computerworld.com/article/3189666/internet/in-the-need-for-speed-fastly-goes-all-the-way-to-the-edge.html | access-date=October 10, 2017 | archive-date=April 19, 2017 | archive-url=https://web.archive.org/web/20170419130323/http://computerworld.com/article/3189666/internet/in-the-need-for-speed-fastly-goes-all-the-way-to-the-edge.html | url-status=dead }}</ref><ref name="bizety20170418">{{cite web|url=https://www.bizety.com/2017/04/18/fastly-releases-edge-cloud-platform/|title=Fastly Releases Edge Cloud Platform|work=Bizty}}</ref>
+
+Fastly raised $50 million in funding in May 2017,<ref>{{Cite web|title=Fastly raises another $50 million for its content delivery networking technology|url=https://techcrunch.com/2017/05/23/marching-to-pied-pipers-fictional-tune-fastly-raises-50-million/|access-date=December 23, 2020|website=TechCrunch |date=23 May 2017 }}</ref> and another $40 million in July 2018.<ref>{{Cite web|last=Dillet|first=Romain|date=July 17, 2018|title=Fastly raises another $40 million before an IPO|url=https://techcrunch.com/2018/07/16/fastly-raises-another-40-million-before-an-ipo/|access-date=December 23, 2020|website=TechCrunch }}</ref> The company filed for an [[initial public offering]] (IPO) in April 2019 and debuted on the [[New York Stock Exchange]] on May 17, 2019.<ref>{{Cite web|last=Shieber|first=Jonathan|date=April 20, 2019|title=Fastly, the content delivery network, files for an IPO|url=https://techcrunch.com/2019/04/19/fastly-the-content-delivery-network-files-for-an-ipo/|access-date=December 23, 2020|website=TechCrunch }}</ref><ref>{{Cite web|last=Novet|first=Jordan|date=May 17, 2019|title=Fastly shares rocket as much as 60% in IPO debut|url=https://www.cnbc.com/2019/05/17/fastly-starts-trading-on-nyse.html|access-date=December 23, 2020|website=CNBC }}</ref>
+
+=== Joshua Bixby as CEO (2020–2022) ===
+In February 2020, Bergman stepped down as CEO and assumed the role of chief architect and executive chairperson; Joshua Bixby took over the CEO role.<ref>{{Cite web|last=Hernbroth|first=Megan|date=February 23, 2020|title='I like being in the trenches': Fastly CEO steps down after disappointing market debuts, citing his 'true strengths and passions' as a developer instead of company leader|url=https://www.businessinsider.com/fastly-ceo-artur-bergman-stepping-down-joshua-bixby-2020-2|access-date=December 23, 2020|website=Business Insider Australia}}</ref>
+
+In August 2020, Fastly announced it was acquiring cybersecurity company Signal Sciences for $775 million ($200 million in cash and $575 million in stock).<ref>{{Cite web|last=Shieber|first=Jonathan|date=August 27, 2020|title=LA gets a big SaaS exit as Fastly nabs the Culver City-based Signal Sciences for $775M|url=https://techcrunch.com/2020/08/27/la-gets-a-big-saas-exit-as-fastly-nabs-the-culver-city-based-signal-sciences-for-775m/|access-date=December 23, 2020|website=TechCrunch}}</ref>
+
+In June 2021, Ronald W. Kisling, previously employed by [[Alphabet Inc.|Alphabet]] as the CFO of the [[Fitbit]] division, was hired to serve as Fastly's CFO, succeeding Adriel Lares. He assumed the position in August 2021.<ref>{{Cite news|last=Maurer|first=Mark|date=2021-06-29|title=Cloud-Services Firm Fastly Hires Google Executive as CFO|language=en-US|work=Wall Street Journal|url=https://www.wsj.com/articles/cloud-services-firm-fastly-hires-google-executive-as-cfo-11625009576|access-date=2021-07-07|issn=0099-9660}}</ref>
+
+On 8 June 2021, a [[software bug]] in Fastly's CDN, triggered by a valid customer configuration change, temporarily disrupted access to major websites, including [[Reddit]], [[Twitch (service)|Twitch]], [[Amazon (company)|Amazon]], [[gov.uk|GOV.UK]], ''[[The New York Times]]'', ''[[The Guardian]]'', and the [[BBC]].<ref>{{Cite web |last1=Singh |first1=Manish |last2=Dillet |first2=Romain |date=8 June 2021 |title=Twitch, Pinterest, Reddit and more go down in Fastly CDN outage |url=https://techcrunch.com/2021/06/08/numerous-popular-websites-are-facing-an-outage/ |access-date=2021-06-08 |website=[[TechCrunch]] |language=en-US}}</ref><ref>{{Cite web |last=Wodinsky |first=Shoshana |date=9 June 2021 |title=How One Fastly Customer Broke the Internet |url=https://gizmodo.com/how-one-fastly-customer-broke-the-internet-1847061755 |website=[[Gizmodo]] |language=en-US}}</ref><ref name="Fastly-outage-CNBC">{{Cite news |last1=Browne |first1=Ryan |last2=Shead |first2=Sam |date=8 June 2021 |title=What is Fastly and why did it just take a bunch of major websites offline? |url=https://www.cnbc.com/2021/06/08/fastly-outage-internet-what-happened.html |work=[[CNBC]]}}</ref> According to Fastly, 95% of its network was operating normally within 49 minutes.<ref>{{Cite web |last=Rockwell |first=Nick |date=8 June 2021 |title=Summary of June 8 outage |url=https://www.fastly.com/blog/summary-of-june-8-outage |website=Fastly}}</ref> The incident prompted discussion about the internet's reliance on a small number of CDN providers.<ref name="Fastly-outage-CNBC" /><ref>{{Cite news |last=Meyer |first=David |date=8 June 2021 |title=From WhiteHouse.gov to Reddit: Fastly CDN outage knocks out sites and services around the world |url=https://fortune.com/2021/06/08/fastly-outage-cdn-services-internet/ |work=[[Fortune (magazine)|Fortune]]}}</ref><ref>{{Cite web |last=Haskell-Dowland |first=Paul |title=Fastly global internet outage: why did so many sites go down — and what is a CDN, anyway? |url=https://theconversation.com/fastly-global-internet-outage-why-did-so-many-sites-go-down-and-what-is-a-cdn-anyway-162371 |website=[[The Conversation (website)|The Conversation]]}}</ref>
+
+In May 2022, Fastly announced it had acquired [[Glitch, Inc.|Glitch]], a web coding platform with more than 1.8 million developers.<ref>{{Cite web |last=Kastrenakes |first=Jacob |date=2022-05-19 |title=Glitch acquired by cloud service provider Fastly |url=https://www.theverge.com/2022/5/19/23126349/glitch-fastly-acquired-coding-anil-dash-fog-creek |access-date=2022-05-20 |website=The Verge |language=en}}</ref><ref>{{Cite web |last=Robison |first=Kylie |title=$1.3 billion cloud company Fastly is acquiring popular developer startup Glitch in a push to help coders build bigger, better apps |url=https://www.businessinsider.com/fastly-acquire-glitch-no-code-developers-cloud-computing-2022-5 |access-date=2024-07-23 |website=Business Insider |language=en-US}}</ref>
+
+=== Todd Nightingale as CEO (2022-2025) ===
+In August 2022, Todd Nightingale, previously an executive VP at [[Cisco Systems Inc.|Cisco]], was hired to serve as Fastly's CEO, succeeding Joshua Bixby.<ref>{{Cite web|date=2022-08-03|title=Cisco Networking And Cloud Leader Todd Nightingale to join Fastly as CEO|url=https://www.crn.com/news/networking/cisco-networking-and-cloud-leader-todd-nightingale-to-join-fastly-as-ceo|access-date=2022-08-03|work=[[CRN (magazine)|CRN]] |first=Gina |last=Narcisi}}</ref>
+
+In March 2023, Fastly made all of its network services and web application security products available to its partners. Previously, some of the company's partners had only been able to sell specific Fastly products, such as its [[web application firewall]].<ref name="CRNPartnerProgram">{{Cite web |last=Dee |first=Katie |date=2023-03-27 |title=Fastly Revamps Partner Program To Harness 'Huge Untapped Potential' In The Channel |url=https://www.crn.com/news/channel-programs/fastly-revamps-partner-program-to-harness-huge-untapped-potential-in-the-channel |access-date=2024-05-29 |website=CRN |publisher=The Channel Company}}</ref> Also in March 2023, Fastly announced an [[Oblivious HTTP]] relay service to enable clients, such as [[Google Chrome]], to improve anonymity of end users while gathering data.<ref>{{Cite web |last=Thompson |first=Zach |date=2023-03-17 |title=Fastly enters Google agreement to operate OHTTP Relay |url=https://itbrief.com.au/story/fastly-enters-google-agreement-to-operate-ohttp-relay |access-date=2025-09-20 |website=IT Brief Australia}}</ref>
+
+In August 2023, Fastly announced that it had acquired the domain status [[API]] provider, Domainr.<ref name=":0">{{Cite web |date=2023-08-17 |title=Fastly acquires Domainr and launches new TLS Certification Authority |url=https://siliconangle.com/2023/08/17/fastly-acquires-domainr-launches-new-tls-certification-authority/ |access-date=2023-08-18 |website=SiliconANGLE |language=en-US}}</ref> 
+
+In August of 2024, Fastly laid off 11% of its work force.<ref>{{Cite web |last=Datta |first=Tiyashi |date=2024-08-08 |title=Fastly to reduce global headcount by 11% (NYSE:FSLY) {{!}} Seeking Alpha |url=https://seekingalpha.com/news/4137719-fastly-to-reduce-global-headcount-by-11 |access-date=2024-11-05 |website=seekingalpha.com |language=en}}</ref> Later in December 2024, Fastly issued $150 million in convertible senior notes due in 2028, carrying an annual interest rate of 7.75%.<ref>{{Cite web |date=2024-12-05 |title=Fastly, Inc.: Form 8-K |url=https://www.sec.gov/Archives/edgar/data/1517413/000151741324000244/fsly-20241202.htm |website=U.S. Securities and Exchange Commission}}</ref>.<ref>{{cite web | url=https://www.ainvest.com/news/fastly-s-debt-restructuring-an-analytical-study-24121010f4b7d08bd246b512/ | title=Fastly's Debt Restructuring: An Analytical Study }}</ref>
+
+=== Kip Compton as CEO (2025–present) ===
+In June 2025, Kip Compton was appointed CEO.<ref name=":1" /> Kip was formerly Chief Product Officer,<ref>{{Cite web |title=Fastly CEO plots course through AI and security {{!}} Computer Weekly |url=https://www.computerweekly.com/news/366630332/Fastly-CEO-plots-course-through-AI-and-security |access-date=2025-11-07 |website=ComputerWeekly.com |language=en}}</ref> and previously held leadership roles at Cisco and [[Comcast]].<ref name=":1">{{Cite web |title=Fastly Welcomes Kip Compton as CEO to Accelerate Business Strategy {{!}} The Software Report |url=https://www.thesoftwarereport.com/fastly-welcomes-kip-compton-as-ceo-to-accelerate-business-strategy/ |access-date=2025-11-07 |language=en-US}}</ref>
+
+In November 2025, Fastly announced that it would transfer its stock exchange listing from the New York Stock Exchange to the Nasdaq Global Select Market. The company began trading on Nasdaq under the ticker symbol FSLY in December 2025.<ref>{{cite web |date=2025-11-26 |title=Fastly Announces Listing Transfer to Nasdaq |url=https://investors.fastly.com/news/news-details/2025/Fastly-Announces-Listing-Transfer-to-Nasdaq/default.aspx |access-date=2026-04-09 |website=Fastly Investor Relations}}</ref>
+
+In March 2026, Fastly appointed Joan Jenkins as chief marketing officer.<ref>{{cite web |date=2026-03-31 |title=Fastly Appoints Joan Jenkins as Chief Marketing Officer to Accelerate Growth and Market Leadership |url=https://investors.fastly.com/news/news-details/2026/Fastly-Appoints-Joan-Jenkins-as-Chief-Marketing-Officer-to-Accelerate-Growth-and-Market-Leadership/default.aspx |access-date=2026-04-09 |website=Fastly Investor Relations}}</ref>
+
+== Products and services ==
+Fastly provides content delivery, edge computing, security, and observability services.<ref name="Fastly2025Form10K">{{cite web |title=Fastly Form 10-K for the year ended December 31, 2025 |url=https://www.sec.gov/Archives/edgar/data/1517413/000151741326000053/fsly-20251231.htm |access-date=2026-10-02 |website=U.S. Securities and Exchange Commission}}</ref>
+
+=== Content delivery ===
+Fastly operates a [[content delivery network]] (CDN) that caches web content, delivers live and on-demand video, and serves [[application programming interface]] (API) responses through geographically distributed [[Point of presence|points of presence]]. Its CDN follows a [[Reverse proxy|reverse-proxy]] model, routing requests through Fastly's servers. Content is retrieved from customers' origin servers and cached to reduce the time required for users to access it.<ref name="Fastly2025Form10K" /><ref name="trreview22">{{Cite news |last=Williams |first=Mike |date=15 February 2021 |title=Fastly review |url=https://www.techradar.com/uk/reviews/fastly |work=[[TechRadar]]}}</ref> Fastly also offers [[Semantic equivalence (computing)|semantic]] caching through its AI Accelerator, which caches responses to similar AI prompts to reduce latency and API calls.<ref name="SiliconAngleAI">{{cite web |last=Dotson |first=Kyt |date=2024-06-13 |title=Fastly releases global cloud AI accelerator to help developers reduce costs and boost performance |url=https://siliconangle.com/2024/06/13/fastly-releases-global-cloud-ai-accelerator-help-developers-reduce-costs-boost-performance/ |access-date=2026-10-02 |website=SiliconANGLE}}</ref>
+
+The platform supports static and dynamic content delivery, configurable caching rules, and instant purging, which allows customers to invalidate cached content across the network. According to Fastly, its mean global cache purge time was less than 150 milliseconds as of December 31, 2025.<ref name="trreview22" /><ref name="FastlyNetworkMap">{{cite web |title=Fastly network map |url=https://www.fastly.com/network-map |access-date=2026-10-02 |website=Fastly}}</ref>
+
+Fastly supports the [[User Datagram Protocol|UDP]]-based [[HTTP/3]] protocol, as well as [[digital rights management]] (DRM)-enabled content, encryption, and secure tokens to restrict media access.<ref name="trreview22" /> Its caching infrastructure uses a heavily modified version of [[Varnish (software)|Varnish]].<ref name="FastlyVarnish">{{cite web |title=Fastly Help Guides |url=https://docs-archive.fastly.com/snapshots/static/2017-12-31-guides-aio.pdf |access-date=2026-10-02 |website=Fastly Documentation}}</ref> Fastly's network map listed 622 Tbps of connected global capacity as of June 30, 2026.<ref name="FastlyNetworkMap" />
+
+=== Edge computing ===
+Fastly Compute, formerly called Compute@Edge, is a [[Serverless computing|serverless]] [[edge computing]] platform that runs application code on Fastly's distributed network.<ref name="FastlyComputeRename">{{cite web |title=Rust SDK 0.9.9 |url=https://www.fastly.com/documentation/reference/changes/2023/11/rust-sdk-0.9.9/ |access-date=2026-10-02 |website=Fastly Documentation}}</ref><ref name="FastlyComputeGuide">{{cite web |title=Getting started with Compute |url=https://www.fastly.com/documentation/guides/compute/getting-started-with-compute/ |access-date=2026-10-02 |website=Fastly Documentation}}</ref> It uses a [[WebAssembly]] (Wasm) runtime based on Wasmtime to execute code in isolated sandboxed environments close to end users. By default, each request starts a new sandbox.<ref name="FastlyComputeGuide" />
+
+Fastly also co-founded the [[Bytecode Alliance]], an organization supporting the development of WebAssembly technologies.<ref name="BytecodeAlliance2019">{{cite web |last=Clark |first=Lin |date=2019-11-12 |title=Announcing the Bytecode Alliance: Building a secure by default, composable future for WebAssembly |url=https://bytecodealliance.org/articles/announcing-the-bytecode-alliance |access-date=2026-10-02 |website=Bytecode Alliance}}</ref>
+
+Developers can write Compute applications in languages including [[JavaScript]], [[Rust (programming language)|Rust]], [[C++]], and [[Go (programming language)|Go]].<ref name="FastlyComputeProduct">{{cite web |title=Edge Compute |url=https://www.fastly.com/products/edge-compute |access-date=2026-10-02 |website=Fastly}}</ref> Support for other languages depends on compatibility with WebAssembly and the platform's interfaces.<ref name="FastlyComputeSDKs">{{cite web |title=Compute language SDKs |url=https://www.fastly.com/documentation/reference/compute/sdks/ |access-date=2026-10-02 |website=Fastly Documentation}}</ref>
+
+Fastly provides key-value and object storage services for applications using its platform, alongside Fanout for real-time [[Publish–subscribe pattern|publish-subscribe]] messaging.<ref name="Fastly2025Form10K" /> 
+
+=== Security ===
+Fastly provides web application security, API discovery and enforcement, bot management, and protection against [[Distributed denial-of-service attack|distributed denial-of-service]] (DDoS) attacks.<ref name="Fastly2025Form10K" /><ref>{{Cite web |title=About API Enforcement |url=https://www.fastly.com/documentation/guides/security/api-security/api-enforcement/about-api-enforcement/ |website=Fastly Documentation}}</ref> Its Next-Gen [[web application firewall]] (WAF) is based on technology from Signal Sciences, which Fastly acquired in 2020.<ref name="SignalSciencesSecurityWeek">{{cite news |date=August 2020 |title=Fastly to Acquire Web Application Security Firm Signal Sciences for $775 Million |url=https://www.securityweek.com/fastly-acquire-web-application-security-firm-signal-sciences-775-million/ |access-date=2026-10-02 |work=SecurityWeek}}</ref><ref name="SignalSciencesDarkReading">{{cite news |date=2020-08-28 |title=Fastly to Acquire Signal Sciences for $775M |url=https://www.darkreading.com/cloud-security/fastly-to-acquire-signal-sciences-for-775m |access-date=2026-10-02 |work=Dark Reading}}</ref><ref name="SignalSciencesTechCrunch">{{Cite web |last=Shieber |first=Jonathan |date=August 27, 2020 |title=LA gets a big SaaS exit as Fastly nabs the Culver City-based Signal Sciences for $775M |url=https://techcrunch.com/2020/08/27/la-gets-a-big-saas-exit-as-fastly-nabs-the-culver-city-based-signal-sciences-for-775m/ |access-date=December 23, 2020 |website=TechCrunch}}</ref><ref name="FastlySignalSciencesIntegration">{{cite web |title=Fastly annual report |url=https://investors.fastly.com/static-files/92e092cd-e0d7-4070-b11f-7bdeed3e5651 |access-date=2026-10-02 |website=Fastly Investor Relations}}</ref> The firewall analyzes HTTP requests and applies detection signals and rules to identify and block attacks such as [[SQL injection]] and [[cross-site scripting]].<ref name="FastlyWAFDetection">{{cite web |title=Next-Gen WAF Detection & Blocking |url=https://quic.fastly.com/resources/datasheets/fastly-next-gen-waf-detection-and-blocking-datasheet |access-date=2026-10-02 |website=Fastly}}</ref>
+
+
+In 2024, Fastly introduced Bot Management, which classifies automated traffic at the network edge and provides controls to allow, challenge, or block bots.<ref name="FastlyBotManagement2024">{{cite web |date=2024-04-02 |title=Fastly Unveils New Bot Management Solution to Help Detect and Block Threats at the Edge |url=https://investors.fastly.com/news-releases/news-release-details/fastly-unveils-new-bot-management-solution-help-detect-and-block |access-date=2026-10-02 |website=Fastly Investor Relations}}</ref> Fastly also offers API Security, Client-Side Protection, and DDoS Protection.<ref name="Fastly2025Form10K" />
+
+In 2025, Fastly reported that its Next-Gen WAF and Bot Management products protected more than 130,000 applications and APIs and inspected over 6.5 trillion requests per month.<ref name="FastlyAICrawlersRegister2025">{{cite news |last=Halfacree |first=Gareth |date=2025-08-21 |title=AI crawlers and fetchers are blowing up websites, with Meta and OpenAI the worst offenders |url=https://www.theregister.com/2025/08/21/ai_crawler_traffic/ |access-date=2026-10-02 |work=The Register}}</ref>
+
+=== Observability ===
+Fastly provides [[Observability (software)|observability]] tools for monitoring traffic, performance, and security events on its network. These include real-time log streaming to external analytics platforms and [[security information and event management]] (SIEM) systems.<ref name="Fastly2025Form10K" /><ref name="FastlyLoggingPlatforms">{{cite web |title=Log management and observability platforms |url=https://quic.fastly.com/documentation/guides/integrations/logging-endpoints/log-management-and-observability/ |access-date=2026-10-02 |website=Fastly Documentation}}</ref> Its monitoring tools include Custom Dashboards, Log Explorer & Insights, Domain Inspector, and Origin Inspector.<ref>{{Cite web |title=Real-Time Observability & Edge Visibility Platform |url=https://www.fastly.com/products/observe |website=Fastly}}</ref>
+
+=== Research ===
+Fastly publishes security research based on traffic observed through its services, including analyses of AI crawlers and other automated requests. A 2025 report attributed 95% of the AI crawler traffic in its dataset to Meta, Google, and OpenAI.<ref name="FastlyAICrawlersRegister2025" /><ref name="FastlyAICrawlersComputerworld2025">{{cite news |date=2025-08-21 |title=Rise of AI crawlers and bots causing web traffic havoc |url=https://www.computerworld.com/article/4044127/rise-of-ai-crawlers-and-bots-causing-web-traffic-havoc.html |access-date=2026-10-02 |work=Computerworld}}</ref> A report published in 2026 found that bots accounted for 49% of the requests analyzed during January of that year and classified 99% of that bot traffic as unwanted or unverifiable.<ref name="FastlyBotsSCMedia2026">{{cite news |last=French |first=Laura |date=2026-04-17 |title=Bot traffic makes up 49% of online activity, but 99% of bots unwanted |url=https://www.scworld.com/news/report-99-of-bot-traffic-is-unwanted-as-bots-make-up-49-of-traffic |access-date=2026-10-02 |work=SC Media}}</ref><ref name="FastlyBotsResearch2026">{{cite web |date=2026-04-16 |title=Nearly Half the Web Isn't Human: Inside Fastly's Threat Insight Report |url=https://www.fastly.com/blog/nearly-half-the-web-isnt-human-inside-fastlys-threat-insight-report |access-date=2026-10-02 |website=Fastly}}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Official website}}
+{{Finance links
+| name = Fastly, Inc.
+| symbol = FSLY
+| bloomberg = FSLY:US
+| sec_cik = 1517413
+| yahoo = FSLY
+| google = FSLY:NYSE
+}}
+
+{{Glitch navbox}}
+
+{{Authority control}}
+
+[[Category:2011 establishments in California]]
+[[Category:2019 initial public offerings]]
+[[Category:American companies established in 2011]]
+[[Category:Cloud computing providers]]
+[[Category:Cloud platforms]]
+[[Category:Companies based in San Francisco]]
+[[Category:Companies listed on the New York Stock Exchange]]
+[[Category:Computer security companies]]
+[[Category:Content delivery networks]]
+[[Category:DDoS mitigation companies]]
+[[Category:Internet properties established in 2011]]
+[[Category:Internet security]]
+[[Category:Software companies based in the San Francisco Bay Area]]
+[[Category:Software companies established in 2011]]
+[[Category:Software companies of the United States]]

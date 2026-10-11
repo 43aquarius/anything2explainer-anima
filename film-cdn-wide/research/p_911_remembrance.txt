@@ -1,0 +1,63 @@
+URL: https://groups.cs.umass.edu/ramesh/9-11-a-personal-remembrance-by-prof-ramesh-sitaraman/
+
+University of Massachusetts Amherst
+
+Search Google Appliance
+
+Enter the terms you wish to search for.
+
+Links to common UMass Amherst services and features College of Information and Computer Sciences
+
+-   Go.UMass
+-   Email
+-   SPIRE
+-   Moodle
+-   Blackboard Learn
+-   UDrive
+-   People Finder
+
+Toggle navigation
+
+Ramesh K. Sitaraman
+
+Distinguished University Professor of Computer Science
+
+ 
+
+ramesh@cs.umass.edu
+
+Phone: 413-545-3279
+
+Google Scholar LinkedIn
+
+Room 310, 140 Governor’s Dr, UMass Amherst, MA 01003
+
+Current Research: Distributed systems and infrastructure for AI/ML
+
+-   Home
+-   LIDS Lab
+-   Publications
+-   Real-World Systems
+-   Teaching
+-   Press
+-   Code/Data
+
+9/11: A Personal Remembrance by Prof. Ramesh Sitaraman
+
+Sun September 11, 2011
+
+9/11 was perhaps the most eventful day in my life. Time is a great healer. But, ten long years have done little to erase the indelible memories that will likely stay with me forever.
+On that fateful day, I was in Boston working at a company called Akamai. Akamai was founded by my friends and colleagues from MIT, Tom Leighton and his graduate student Danny  Lewin. A short while after its founding, I took time off from academia and joined my colleagues to help build Akamai’s technology that relied on fault-tolerant distributed networks that was my area of expertise. Like many startups in the Internet bubble era, our ambitions were sky high and was nothing short of reinventing the way the Internet worked. We hoped that the technology we were building would help revolutionize the Internet by making it faster and more reliable even during the most catastrophic events.  But, on the eve of 9/11 the company was not doing well. The euphoria of the bubble had swept us to great imaginary heights like a giant tsunami wave. But, when the bubble burst, it cast us on the rocky shore to dizzying lows. As Internet businesses (Akamai’s customers) went broke one by one, the writing was on the wall. The vultures were circling the sky and the days were numbered.
+Shortly after I walked into work that day, there was a sudden commotion. And, all eyes seemed transfixed on their desktop monitors with images of a plane flying into the twin towers and bursting into flames. And, then someone said “Did you hear that Danny was on that plane?”. My heart skipped a beat. Danny was no ordinary person. There aren’t many true visionaries in this world, but Danny was one by any measure. Danny was inspirational in any thing he did. At a very young age, he had worked his way up into the Sayeret Matkal, the elite Israeli defense force well known for Operation Entebbe. At MIT, he was a star in algorithmic research. And, his drive to recreate a better Internet was infectitous and motivated everyone around him. Needless to say, he was the heart and soul of Akamai. Back in those days, I was architecting a new network that could disseminate video streams on the Internet much more effectively than was currently possible. My discussions with Danny several days earlier on some new architectural ideas came rushing back into my head. Danny had liked those ideas but had characteristically reminded me that I was “way behind”. And, now he was suddenly gone.
+A few minutes later, my wife called. She was working in the 46th floor of the Hancock tower on the other side of town. There were some rumors that another plane was headed towards one of the taller towers in Boston and her building was being evacuated. I pinched myself. All this really couldn’t be happening! Having lived a sheltered existence all these years, this was new to me. Terrorism is what you read in newspapers. Not what could happen to you or your friends, or even your friends friends. Not able to take too much more emotional overload, I slumped into my chair.
+And, that is when the phones at Akamai started to ring off the hook! Major media companies wanted to get the news of 9/11 out to the public, but the Internet was unable to take the overload and was grinding to a halt. Airlines wanted to put out the latest status and passenger lists, but their web servers were melting with the crushing load of people suddenly attempting to access the information.  Prior to 9/11, most major enterprises did not view the Internet as a mission-critical medium for communication. In fact, the Internet was never architected for that purpose! But, 9/11 changed all that in an instant. That day the Internet appeared to be only way to communicate quickly to a global audience. And, on that day the future of the Internet was changed forever.
+Enterprises that wanted to use the Internet but were crushed by the load started to call in large numbers, since they had heard that Akamai builds technology that would help in just such a situation. For most of us, emotionally drained and blurry eyed from the events of the day, this was a pick-me-upper. Wouldn’t Danny have wanted us to work as hard as possible and help these people in need? Energized by this new mission, everyone rededicated themselves to bringing as many enterprises on board to the Akamai platform, enabling their websites and media streams to come back to life again.
+As I walked back home that night tired from the day’s events, I knew nothing will ever be the same again. My heart went out to the families of the bereaved, whose untold grief I could not begin to fathom. The untimely death of a friend and colleague in his prime weighed heavily in my heart. I couldn’t help imagine how much more he could have achieved if he were still alive. But, I could also feel a small sense of relief tinged with irony. The technology that we had worked so hard to develop actually worked as it was supposed to and helped millions of people keep abreast of the happenings that day. Danny’s far reaching vision for a better Internet took a major leap forward that day, though at a cost too dear to comprehend.  And, when I closed my eyes for a much needed rest, I was relieved that the day that changed the world was finally over.
+
+-   Home
+-   LIDS Lab
+-   Publications
+-   Real-World Systems
+-   Teaching
+-   Press
+-   Code/Data

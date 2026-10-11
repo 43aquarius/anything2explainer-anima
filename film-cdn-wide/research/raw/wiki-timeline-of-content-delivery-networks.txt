@@ -1,0 +1,5 @@
+# Wikipedia article: Timeline of content delivery networks
+# URL: https://en.wikipedia.org/wiki/Timeline_of_content_delivery_networks
+# Fetched: 2026-10-11 via MediaWiki API (explaintext)
+# Length: 0 chars
+

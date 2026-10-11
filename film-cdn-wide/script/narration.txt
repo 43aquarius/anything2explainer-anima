@@ -1,0 +1,40 @@
+# CDN — Why Your Video Never Buffers — narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 The Distance Problem
+Friday night, eight o'clock.|You press play on a two-gigabyte movie.
+The origin server sits on another continent —|eight thousand kilometers away.
+Light itself needs real time to cross that.|Fiber carries it at two-thirds of c.
+Even on a perfect 100-megabit line,|two gigabytes would take about three minutes.
+Yet your movie starts in one second.
+The data didn't come that far.|It was already waiting in your city.
+## gap 20
+
+# CHAPTER 2 The Edge Network
+Bandwidth can be bought.|The speed of light cannot.
+The fix is not a faster network —|it's a shorter one.
+A CDN puts copies of the content|in hundreds of cities —|points of presence, edge nodes.
+When you press play,|you're not talking to the origin.|You're talking to the nearest shelf.
+The trick that routes you there|is called anycast:|one address, announced from everywhere.|The network itself picks the closest copy.
+## gap 15
+And the first question of your request|is answered by DNS —|the name you type|points to the edge,|not to the origin.
+# CHAPTER 3 The Cache Hit
+Most requests never reach the origin at all.|The edge answers from its cache —|a cache hit.
+The content lives there|until its TTL expires;|then the edge pulls one fresh copy|from the origin — a cache miss —|and the timer starts again.
+This is why most of what you stream|never crosses an ocean.|Video is more than half of all traffic now,|and nearly all of it|is served from someone's edge.
+## gap 15
+
+# CHAPTER 4 The Invisible Half
+The idea predates the web boom.
+In the nineties at MIT,|a hard question circulated:|if the whole world hits one server,|that server will melt.
+Akamai, spun out of MIT in 1998,|became the answer —|today its platform carries|a meaningful share of the internet's traffic.
+Others followed:|open appliances inside ISPs,|edges in three hundred-plus cities.
+## gap 15
+
+And the failure mode flipped.
+In 2021, one bad config at an edge provider|took down roughly a tenth of the internet|for forty-nine minutes.
+The trick that beat distance|also concentrates trust:|the edge became a single point of failure|for everyone at once.
+## gap 15
+
+So — Friday night, your movie.
+One second in, it plays.|Not because the network is fast —|because the copy was close.
+The internet isn't fast.|It's close.
+## gap 25

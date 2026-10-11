@@ -1,0 +1,3494 @@
+A cooperative approach
+to content delivery
+
+01
+
+A cooperative approach
+to content delivery
+A Netflix briefing paper
+2021
+
+We would like to thank Robert Kenny of Communications
+Chambers for providing helpful comments on this briefing paper.
+Cover illustration by Bratislav Milenkovic.
+
+A Netflix briefing paper
+2021
+
+3
+
+A cooperative approach
+to content delivery
+
+Foreword
+When the COVID-19 pandemic forced us to recede into a
+global quarantine, the ways in which many of us connect with
+each other - through work, school, and entertainment - ceased
+in their typical forms. Where possible, we moved the essential
+functions of society online using our internet connections.
+
+Online work, school, and entertainment have
+
+necessary, Netflix and other video streaming
+
+long been complements to their physical
+
+services reduced the bandwidth of streams to
+
+counterparts. But with no other option, basic
+
+decrease traffic volume, and ISPs around the
+
+needs were met for many of us with these not
+
+world quickly grew capacity to ensure continued
+
+always perfect replacements. The pandemic
+
+connectivity for internet users. To get content
+
+highlighted how robust online alternatives can
+
+to consumers more efficiently, Netflix and ISPs
+
+be, as many quickly scaled to meet the demand
+
+worked together to deploy additional servers into
+
+for interpersonal connection. Internet networks
+
+ISPs’ networks as well as increase capacity in our
+
+had to adapt to meet the growing demand for
+
+backbone network and at local internet exchange
+
+high speed broadband, by leveraging their
+
+sites in order to fulfill the growing demands for
+
+existing capacity for a massively increased load.
+
+Netflix content.
+
+The increased demands during the pandemic
+
+An internet that can meet the needs of
+
+highlight the importance of cooperation.
+
+a globally connected population - during a
+
+Together, content providers and networks have
+
+pandemic and beyond - depends on such
+
+been meeting people’s needs. Without both, our
+
+cooperation between ISPs and content providers
+
+ability to sustain human connection, distanced
+
+to best provide the services they offer to
+
+productivity, or continuous learning is challenged.
+
+their customers.
+
+Both must be fostered in a sustainable way.
+We saw examples of this cooperation in its
+
+Humanity will move beyond the pandemic.
+But we should take the lessons we have learned
+
+finest form during the pandemic. Where the
+
+about the need for a collaborative approach to
+
+exceptional nature of the pandemic made it
+
+online content delivery forward long into the future.
+
+Gina Haspilaire
+Vice-President, Content Delivery
+Netflix
+
+Contents
+Executive summary
+
+5
+
+Content & network:
+The need for cooperation
+
+8
+
+Cooperation in practice:
+Netflix Open Connect
+
+1 2
+Threats to the ecosystem:
+Understanding traffic charges
+
+3
+
+27
+
+15
+
+Conclusion
+
+36
+
+Glossary of terms
+
+37
+
+Appendix:
+Transit and peering
+
+38
+
+A Netflix briefing paper
+2021
+
+5
+
+A cooperative approach
+to content delivery
+
+Executive
+summary
+Consumers buy internet access from ISPs in order to reach
+content and applications. Without content, consumers
+would have less need for internet access. Likewise, without a
+connected population, content providers would have no ability
+to service consumer requests. Put simply, online services and
+internet networks depend upon each other.
+
+This complementary relationship between
+
+costs associated with building out connectivity,
+
+content providers and networks has resulted in a
+
+leaving ISPs unable to upgrade and expand
+
+model of content delivery based on cooperation
+
+broadband networks.
+
+- a model which has promoted a virtuous circle
+
+Against this backdrop, this report demonstrates
+
+of innovation, whereby the improvements in
+
+that Netflix and other content providers are
+
+networks inspire new forms of content, and this
+
+investing significantly in content delivery
+
+in turn drives uptake of higher speed broadband
+
+infrastructure and video streaming technology
+
+plans. This model has also encouraged greater
+
+to deliver content more efficiently. Further, it
+
+connectivity and the wider societal benefits that
+
+shows that an approach built on cooperation,
+
+occur when consumers and businesses have
+
+rather than traffic charges imposed on content
+
+improved access to information and services.
+
+providers by ISPs, is good for ISPs, content
+
+However, despite its strengths, there have been
+
+providers, consumers, and society as a whole.
+
+threats to this model. In some countries, proposals
+have been made that could place a tollbooth in
+
+Chapter one of the report explores the
+
+front of the entrance to networks, blocking traffic
+
+complementary relationship between ISPs
+
+requested by consumers unless content providers
+
+and content providers and shows how this
+
+agree to pay to lift the gate. These proposals have
+
+relationship generates significant benefits
+
+often been a response to the myth that content
+
+for both. For content providers, largely
+
+and application providers do not contribute to the
+
+frictionless connectivity to a huge user base
+
+A Netflix briefing paper
+2021
+
+6
+
+A cooperative approach
+to content delivery
+
+has underpinned the uptake and usage of those
+
+In addition, in markets where fixed broadband
+
+services. For networks, consumers purchase
+
+adoption is high, video traffic is a key reason for
+
+internet access to reach such services.
+
+customers to retain a fixed internet connection
+
+Online entertainment services like Netflix
+
+rather than going mobile-only.
+
+invest significantly in content to engage and
+
+This complementary relationship incentivizes
+
+delight their customers. Netflix alone spent more
+
+ISPs and content providers to work together
+
+than $12.5B on content in 2020. Reaching
+
+to focus on the best technical approach for
+
+such content is a substantial portion of what
+
+consumers and this, in turn, generates value
+
+consumers do with their internet connection and
+
+for ISPs, content providers and consumers.
+
+may prompt them to upgrade their broadband
+connection, generating incremental revenue
+
+Chapter two of the report explains how Netflix
+
+for ISPs. Empirical evidence suggests that
+
+efficiently delivers its content. Netflix’s Open
+
+broadband customers who use Netflix are more
+
+Connect Content Delivery Network (CDN) moves
+
+likely to be on higher speed (and more expensive)
+
+content closer to consumers using a distributed
+
+broadband connections. For example, a study
+
+network of local servers at the edge of, or within,
+
+of broadband users in Italy in 2017 found that of
+
+an ISP’s network.
+
+those on ADSL (Asymmetric Digital Subscriber
+
+This benefits ISPs by reducing the distance
+
+Line) connections, 12% were Netflix users, while
+
+they must go to fetch traffic, and thus their costs.
+
+for those with FTTH (Fiber To The Home), 18%
+
+For our ISP partners that have opted to deploy
+
+were. In the UK, 77% of those with standard
+
+servers within their own networks, this cost
+
+broadband were users of subscription video-on-
+
+saving is estimated to be $1.2B in 2020.
+
+demand services (such as Netflix), compared
+
+Moving content closer also frees up long
+
+to 86% and 90% respectively of those with
+
+haul network infrastructure for the other types
+
+superfast broadband and ultrafast broadband.1
+
+of traffic for which those links are essential - for
+
+In markets where broadband adoption has
+
+example, live video streaming or voice calls over
+
+not reached saturation, online services can
+
+the internet which cannot be stored locally.
+
+encourage broadband deployment and uptake.
+
+This can reduce congestion, resulting in a
+higher quality service for consumers.
+
+$1.2B
+
+Netflix also invests in improving encoding
+and video compression to deliver high quality
+content without using unnecessary bandwidth.
+
+on estimated savings for our ISP
+
+As a result, the number of hours a Netflix
+
+partners that have opted to deploy
+
+member can stream per GB of data has increased
+
+servers within their own networks
+
+by more than 200%2 over the last five years.
+
+200%
+
+1
+
+increase in the number of
+hours a Netflix member can
+stream over the last five years
+
+2
+
+Ofcom, Technology Tracker 2021, 17 December 2020.
+Standard broadband is defined as providing a download
+speed of less than 30 Mbps, superfast broadband between
+30 Mbps and 300 Mbps and ultrafast broadband more than
+300 Mbps.
+Based on the latest encoding profile.
+
+A Netflix briefing paper
+2021
+
+7
+
+A cooperative approach
+to content delivery
+
+Chapter three concludes with an assessment
+
+the content provider. This congestion represents
+
+of why traffic charges imposed on content
+
+powerful leverage for the ISP to force the content
+
+providers by ISPs will be harmful to consumers.
+
+provider to accept the demanded cost to connect
+
+It considers the key arguments cited by those
+
+directly, and thus the ISP has little incentive to
+
+who support traffic charges: that ISPs need funds
+
+remedy the congestion.
+
+from content providers for investment and that
+
+Furthermore, allowing payments may
+
+content providers do not contribute to the costs
+
+discourage content providers from investing
+
+of delivering content.
+
+in moving content closer to consumers,
+
+It also discusses the main risks associated
+with traffic charges.
+Traffic charges pose problems because
+
+to the detriment of ISPs and consumers alike.
+There is no requirement to move content closer
+to consumers. An uncongested long haul
+
+there are no alternative routes to the end user.
+
+connection can still deliver high quality video.
+
+A consumer’s chosen ISP has complete control
+
+If an ISP imposes charges, the content provider
+
+over what content can travel over the connection.
+
+may choose to deliver their traffic from
+
+This creates a ‘terminating access monopoly’
+
+a jurisdiction where payments are not required.
+
+which can pose multiple risks when combined
+
+For the ISP, this will likely mean that it is now
+
+with traffic charges.
+
+paying to receive the traffic, since it may need
+
+Traffic charges can lead to double-charging
+where ISPs seek to charge content providers for
+
+to invest in international capacity to carry it back
+to their consumers from that jurisdiction.
+
+the carriage of traffic that their customers have
+
+Consumers invariably lose in this situation.
+
+already paid for. Customers pay for an internet
+
+They will be exposed to the risk of congestion
+
+connection on the understanding that it will allow
+
+along the path to more remote content, with
+
+them to reach all content available on the entire
+
+possible degradation of their user experience.
+
+internet, not just from those content providers
+
+There is also a risk that consumers will lose
+
+who have agreed to their ISP’s traffic fees. The
+
+access to the plurality of voices and applications
+
+problem of double charging is exacerbated when
+
+that have enabled the internet to thrive.
+
+the speeds required for the content being delivered
+
+Thus traffic charges are a backward step,
+
+are well under the speeds paid for by consumers.
+
+with the potential to disrupt a highly productive
+
+Traffic charges may also allow ISPs to leverage
+
+partnership between ISPs and content providers
+
+their own video offers. Many ISPs compete
+
+that has been the bedrock of the internet’s
+
+directly with streaming video services, either
+
+success to date.
+
+because they are themselves a cable TV operator,
+
+Looking ahead, a cooperative model will only
+
+or a telco with an IPTV offering. Any degradation
+
+be sustained under two conditions. Firstly if
+
+of quality for other video providers strengthens the
+
+content providers and ISPs continue to recognize
+
+competitive position of an ISP’s own TV service,
+
+the complementary nature of networks and
+
+disturbing a level playing field.
+
+content. Secondly, if governments acknowledge
+
+Traffic charges can lead to perverse
+
+the important role that content providers play in
+
+incentives. The only way for an ISP to force a
+
+stimulating demand for broadband services and
+
+content provider to pay for traffic charges is
+
+establish supporting policy frameworks which
+
+to ensure congestion otherwise limits an ISP’s
+
+restrict the imposition of charges by ISPs on
+
+customers from receiving requested traffic from
+
+content providers.
+
+A Netflix briefing paper
+2021
+
+A cooperative approach
+to content delivery
+
+8
+
+Content
+& network
+
+1
+
+The need
+for cooperation
+The complementary nature
+of content and networks
+
+9
+
+Investments in video create
+demand for connectivity
+
+11
+
+Efficiency benefits
+of a cooperative model
+
+14
+
+A Netflix briefing paper
+2021
+
+9
+
+A cooperative approach
+to content delivery
+
+The complementary nature
+of content and networks
+
+The very essence of the internet is that it is a
+
+And as those applications become more advanced,
+
+‘network of networks’ - not a monolithic single
+
+demand for bandwidth has grown. The networks
+
+network, but many separate interconnected
+
+have found great value in providing access to
+
+networks of completely different types.
+
+information, entertainment, and each other.
+
+The internet, for the most part, has allowed
+
+The relationship between content providers
+
+3
+
+anyone online to communicate with anyone else
+
+and networks is complementary and the
+
+online. This flexibility has been transformative.
+
+complementary relationship between ISPs and
+
+A consumer who purchases internet access
+
+providers of video content is particularly strong.
+
+can reach nearly any type of content from nearly
+
+Services like Netflix rely on networks to distribute
+
+any public network, anywhere around the world.
+
+content to consumers and ISPs benefit from
+
+Consumers can access a plethora of information
+
+increased demand for connectivity.
+
+and services and ultimately choose which
+businesses are successful. As of 2020, there
+were 4.7B people online.4 There are 192M
+active websites globally,5 and 3M apps available
+in the Google Play store.6
+For content providers, largely frictionless
+connectivity to a huge user base has created
+
+3
+
+incentives for investment in applications, and
+
+4
+
+underpinned the uptake and usage of those
+
+5
+
+applications. This in turn has led to an explosion
+7
+
+of innovation and competition.
+For networks, consumers purchase internet
+access to reach such content and applications.
+
+6
+7
+
+For example, some governments block access to certain
+sites in other countries, and many ISPs block illegal content.
+Statistica, Worldwide Population as of October 2020,
+Statistica 2021.
+Netcraft, September 2020 Web Server Survey,
+23 September 2020.
+AppBrain, Number of Android apps on Google Play,
+14 October 2020.
+See, for instance, Plum, The open internet – a platform for
+growth, 2011; TRPC, Fostering an Open Internet in Asia,
+January 2017.
+
+A Netflix briefing paper
+2021
+
+A cooperative approach
+to content delivery
+
+10
+
+12.5
+
+$
+
+B
+
+spent on content in
+2020, driving demand
+for high speed internet
+connections
+
+A Netflix briefing paper
+2021
+
+11
+
+A cooperative approach
+to content delivery
+
+Investments in video create
+demand for connectivity
+Streaming entertainment - which is often
+
+that will appeal to the widest audience during
+
+on-demand, personalized, and available on
+
+times likely to attract the most viewers. But online
+
+any screen - is expanding rapidly. Consumers
+
+business models, such as Netflix’s, depend on
+
+appreciate the freedom, flexibility, and rapid
+
+consumers consistently finding exciting content
+
+innovation streaming entertainment services
+
+to watch, not just at prime time, but whenever the
+
+afford. Access to high speed and reliable internet
+
+consumer wants. This gives streaming service
+
+and internet connected devices have enabled
+
+customers the opportunity to discover new
+
+these streaming services to become popular.
+
+content and enables streaming services to make
+
+Watching video is now a substantial portion
+
+significant investments in innovative programming
+
+of what many consumers do with their high
+
+from creators that historically may have had
+
+speed broadband connection. Video streaming
+
+difficulty reaching a global audience.
+
+represents 58% of traffic. (YouTube is 16
+
+Netflix is not the only company investing in
+
+percentage points of this, and Netflix 11 points).8
+
+video content. Unlike traditional broadcasters,
+
+This high level of usage is only brought about
+
+which were reliant on exclusive access to
+
+because of substantial investments in content
+
+spectrum or dedicated cables, streaming
+
+that consumers want to watch.
+
+services are able to offer their service via an
+
+Investment in video content
+
+internet connection. These lower barriers to
+entry for content delivery mean that diverse and
+
+Netflix is one of the world’s leading entertainment
+
+competitive players can offer innovative and
+
+services. The strength of our global content offer
+
+compelling content. We, like other major providers
+
+is fundamental to our success. Great content
+
+of online entertainment services, are all operating
+
+grows engagement among our members, which
+
+in a dynamic and thriving sector where a wide
+
+we believe drives word-of-mouth, improves
+
+range of players are incentivized to continually
+
+retention and grows memberships. In 2020,
+
+innovate and invest in their services and the
+
+we spent over $12.5B on streamed content.
+
+audiovisual ecosystem in order to win consumer
+
+We invested in both Netflix originals and
+
+attention. Many other major entertainment
+
+9
+
+second-run movies and TV shows across
+many different genres (scripted series, films,
+documentaries, comedy, unscripted TV, kids
+
+8
+
+and family, anime, etc). These movies and TV
+shows come from producers all around the world,
+and their stories are shared with the world.
+Historically, television has been bound by a
+linear program schedule and often a reliance on
+advertising, which put a premium on airing content
+
+9
+
+Sandvine, The Global Internet Phenomena Report, May
+2020. Note that these figures relate to a period when many
+were at home due to COVID-19. However, figures for total
+streaming and for Netflix were broadly similar in 2019,
+though YouTube was lower (9%).
+See Netflix 2020 Quarterly Earnings Fourth Quarter
+Earnings, Financial Statements. Cash spending on content
+can be derived from the cash flow statement. The sum of
+Additions to Streaming Content Assets and the Change in
+Streaming Content Liabilities equates to cash spending on
+streaming content.
+
+A Netflix briefing paper
+2021
+
+12
+
+A cooperative approach
+to content delivery
+
+companies like Disney and NBCUniversal are
+
+FTTH usage rates for YouTube, suggesting
+
+investing in their own streaming services, as
+
+that it is not simply streaming video that drives
+
+are Amazon and Apple, in order to compete
+
+purchase of higher speed connections, but rather
+
+with providers of user generated content, video
+
+HD and UHD video like that provided by Netflix).
+
+games, and other online services for a share of
+
+In the UK, 77% of those with standard broadband
+
+consumers’ time and spending.
+
+were users of subscription video-on-demand
+services (such as Netflix), compared to 86%
+
+Creating demand
+for faster broadband
+
+and 90% respectively of those with superfast
+and ultrafast broadband.14
+
+Video - and in particular higher definition
+
+Thus video on demand, in common with other
+
+video - prompts consumers to upgrade their
+
+forms of entertainment (such as gaming and
+
+broadband connection, generating incremental
+
+streaming live sports) is a key driver of demand
+
+revenue for ISPs. The FTTH Council, for
+
+for higher speed broadband.
+
+instance, has seen video growth as a driver of
+the UK’s communications regulator, has found
+
+Encouraging broadband uptake
+and broadband deployment
+
+that: The main drivers of residential demand
+
+In markets where broadband adoption has not
+
+for higher speeds have been an increase in the
+
+reached saturation, video streaming services
+
+fibre to the home (FTTH) adoption.10 Ofcom,
+
+use of video-on-demand and gaming, and the
+
+can help to encourage uptake, with benefits
+
+simultaneous use in a home of multiple devices.
+
+11
+
+to domestic users (who can now interact
+
+A report for BEREC (the association of
+
+with the new users) and to businesses (who
+
+European regulators) made a direct link to
+
+can implement new processes). According
+
+revenue: Content developers and providers
+
+to the Commonwealth Telecommunications
+
+of Over The Top (OTT) services such as the
+
+Organisation: OTT applications stimulate
+
+various third-party video streaming services ...
+
+broadband adoption and thus economic
+
+are important [in] driving increased demand for
+
+growth and tax receipts.15
+
+bandwidth but are not typically directly involved
+in the delivery of that bandwidth, but ... could
+certainly influence the operators’ ARPU.12
+And operators quite explicitly use video
+streaming to persuade customers to take
+higher speed plans, as the examples on
+the next page show.
+There is empirical evidence that broadband
+customers who use Netflix, for example, are more
+likely to be on higher speed (more expensive)
+connections. A study of broadband users in
+Italy in 2017 found that of those on ADSL
+connections, 12% were Netflix users, while for
+those with FTTH, 18% were13. (Note that there
+was no material difference between ADSL and
+
+10 IDATE for FTTH, FTTH Forecast for EUROPE, March 2019.
+11 Ofcom, Promoting competition and investment in fibre
+networks: Wholesale Fixed Telecoms Market Review 202126. Volume 2: Market assessment, 8 January 2020
+12 Decision Analysis, SPC Network, Strategy Dynamics &
+Greenwood Strategic Advisors for BEREC, Study on the
+determinants of investment in VHCN – a System Dynamics
+approach. Volume 1: Technical Report, November 2019
+13 Those using Netflix at least once per week. Trevisan, Martino
+et al., Five years at the edge: watching internet from the ISP
+network, April 2020.
+14 Ofcom, Technology Tracker 2021, 17 December 2020.
+Survey participants were asked which of these fixed
+broadband services does your household have: standard
+broadband (download speed of less than 30 Mbps);
+superfast broadband (download speed is 30 Mbps or
+higher and less than 300 Mbps); ultrafast broad broadband
+(download speed is 300 Mbps or higher).
+15 CTO, Over The Top (OTT) Applications & the Internet Value
+Chain, 22 May 2020.
+
+A Netflix briefing paper
+2021
+
+13
+
+A cooperative approach
+to content delivery
+
+ISPs using streaming as a prompt to upgrade to higher speeds16
+
+Maxis Fibre
+
+Maxis Fibre
+
+30 Mbps
+
+100 Mbps
+
+RECOMMENDED FOR:
+
+RECOMMENDED FOR:
+
+• Light browsing & streaming video
+
+• Full HD streaming & browsing
+
+• Single user on up to 2 devices
+
+• 2-3 users on up to 5 devices
+
+• Single storey or condominium
+
+• Double storey or condominium
+
+Standard Fibre Unlimited
+
+Superfast Unlimited
+
+30 Mbps
+
+75 Mbps
+
+RECOMMENDED FOR:
+
+RECOMMENDED FOR:
+
+• For doing all that you love
+
+• Ideal
+
+for homes where
+
+online without any data worries
+
+streaming the latest Netflix
+series is the perfect night in
+
+Standard Fibre Unlimited
+
+Superfast Unlimited
+
+18 Mbps
+
+25 Mbps
+
+RECOMMENDED FOR:
+
+RECOMMENDED FOR:
+
+• HD video streaming
+
+• Streaming
+
+on multiple devices
+
+• Sharing videos and photos
+
+• Sharing videos and photos
+
+• Online gaming
+
+• Online gaming
+
+Standard Evening Speed
+
+Standard Plus Evening Speed
+
+25 Mbps
+
+50 Mbps
+
+RECOMMENDED FOR:
+
+RECOMMENDED FOR:
+
+• 1-3 people browsing
+
+• 5-7 people streaming in HD
+
+• Streaming in SD
+
+• Responsive online gaming
+
+• Online gaming
+
+16 ISP websites [accessed 20 October 2020]. This is a brief summary of broadband
+packages offered by third parties and not a detailed breakdown.
+
+A Netflix briefing paper
+2021
+
+14
+
+A cooperative approach
+to content delivery
+
+The ITU has reported that: Demand for OTTs
+
+substantially to improve the availability of
+
+results in both new subscribers for broadband
+
+broadband, believing in its economic and social
+
+services and existing subscribers upgrading their
+
+benefits. But by itself, availability has no value - it
+
+subscriptions for greater speed and bandwidth.17
+
+is consumer uptake that matters. If online content
+
+In addition, in markets where fixed broadband
+
+providers drive uptake of beneficial broadband,
+
+adoption is high, video traffic is a key reason for
+
+then that helps realise the value of governments’
+
+customers to retain a fixed internet connection
+
+investment in availability.
+
+rather than going mobile-only.
+Increased uptake of broadband, and higher
+speed broadband in particular, is clearly good for
+ISPs but it also has spillover benefits to society
+as a whole. Many governments have invested
+
+Efficiency benefits
+of a cooperative model
+This complementary relationship incentivizes
+
+This cooperative model works best
+
+ISPs and content providers to work together
+
+when neither side seeks to charge the other.
+
+to focus on the best technical approach for
+
+For instance, Netflix (like many other online
+
+consumers and this, in turn, generates value
+
+content providers) does not try to charge ISPs.
+
+for ISPs, content providers and consumers.
+
+Similarly, the vast majority of ISPs around the
+
+In addition, capabilities of the network inspire
+
+world do not charge content providers for delivery
+
+new forms of content, which in turn encourage
+
+of their traffic, though as discussed in Chapter 3,
+
+uptake of faster and more robust broadband.
+
+a few wish to change this.
+
+Video, for example, is a key reason for users to
+
+Today’s approach is the result of decades of
+
+upgrade their fixed broadband speed or take
+
+thoughtful development by content providers
+
+fixed broadband in the first place.
+
+and ISPs. It is also an approach that ultimately
+
+In the vast majority of cases, this virtuous
+circle results in a cooperative model of
+deployment where content providers and
+
+provides benefits for consumers.
+We now turn to a description of how Netflix
+(and others) deliver their content.
+
+networks work hand-in-hand to deliver content
+more efficiently, reducing costs for both parties.
+As we discuss in the next section, Netflix invests
+substantially to deliver its traffic in such a way as
+to make it easier for ISPs.
+
+17 International Telecommunication Union, Economic
+impact of OTTs on national telecommunication/ICT
+markets, 15 June 2020.
+
+A Netflix briefing paper
+2021
+
+A cooperative approach
+to content delivery
+
+15
+
+Cooperation
+in practice
+
+2
+
+Netflix
+Open Connect
+Moving content closer
+
+16
+
+Description of Netflix Open Connect
+
+20
+
+Benefits for ISPs from Open Connect
+
+23
+
+Encoding
+
+25
+
+A Netflix briefing paper
+2021
+
+16
+
+A cooperative approach
+to content delivery
+
+Moving content closer
+
+In the early days of the internet, content would
+
+to all other networks on the internet, and their
+
+typically sit on a single server, and then travel
+
+associated customers.
+
+over multiple networks to reach consumers. ISPs
+
+The second type is direct interconnection
+
+either had to build out significant infrastructure
+
+whereby two parties connect to one another,
+
+to reach the content, or else they relied on
+
+but only for the purposes of exchanging traffic
+
+arrangements to enable the exchange of traffic
+
+destined for their respective networks (as
+
+across different networks.
+
+opposed to all of the possible end points on
+
+Two types of arrangements evolved.
+
+the internet that can be provided by transit).
+
+The first type is transit, a paid connection
+
+Interconnection may be settlement-free or
+
+through a network to the parts of the internet
+
+paid. In settlement-free interconnection, based
+
+not available via a direct connection. Like
+
+on a mutual benefit, no money is exchanged
+
+internet access purchased by end users, a
+
+between the parties. This was the basis of all
+
+transit provider can link (directly or indirectly)
+
+interconnection in the early days of the internet,
+and is still the most common arrangement.
+
+90%
+
+In these cases, there could be vast distances
+between content and the user requesting it.
+Therefore, as the internet grew and became
+
+of internet traffic destined for
+
+more international, some of these arrangements
+
+consumers is carried by CDNs
+
+became less practical for a number of reasons.
+First, building and maintaining international
+
+$75B
+
+networks is costly, as it involves laying infrastructure
+
+is invested annually into infrastructure
+
+and would need to be built from scratch. In other
+
+by online service providers to bring
+
+cases, delivering traffic to a location will require
+
+content closer to consumers
+
+passing through multiple networks.
+
+over long distances - overland and underwater.
+In some cases, this connectivity doesn’t exist
+
+A Netflix briefing paper
+2021
+
+17
+
+A cooperative approach
+to content delivery
+
+Second, remote content must travel through
+
+Many companies now operate such CDNs.
+
+more routers (the internet’s switches) on its
+
+Large content providers operate their own
+
+journey to the consumer. Each one of these
+
+in-house CDNs. Smaller content providers make
+
+routers has a chance of being congested by
+
+use of independent CDNs such as Akamai, Fastly
+
+high traffic loads, which can lead to packet
+
+and Lumen (formerly Level 3). Using a CDN
+
+loss - the discarding of certain elements of
+
+provides the ability to quickly and efficiently
+
+the data being transmitted. Packet loss above a
+
+deliver traffic across the internet and is an
+
+certain level results in a poor experience for the
+
+important enabler of market entry and innovation.
+
+consumer, for example in the form of buffering
+
+CDNs are very widely and heavily used, and
+
+and/or degraded video quality. In extreme cases
+
+one study found they carry approximately 90%
+
+it may render the service unusable.
+
+of internet traffic destined for consumers.22
+
+18
+
+Third, geographic distance leads to delay
+
+Analysys Mason estimate that in the period
+
+(latency) in the time it takes a packet of data to
+
+2014-17 online service providers invested
+
+reach the consumer. This is less of an issue for
+
+$75bn annually in infrastructure that brings
+
+video streaming (where there is less interaction
+
+content closer to consumers.23 These
+
+and the data flows steadily19 down to the
+
+investments reduce costs for ISPs.
+
+consumer). However, it can significantly degrade
+
+Netflix initially relied on independent
+
+other applications. Loading a web page may
+
+CDNs, but today operates its own CDN,
+
+involve multiple round trips for data between
+
+called ‘Open Connect’.
+
+the consumer and the server with the content.
+The solution to these problems is to move
+a copy of the content in question closer to the
+consumer, using a distributed network of local
+servers, i.e. a Content Delivery Network (CDN).
+This reduces the geographic distance content
+must be carried, shrinking an ISP’s costs.
+CDNs also minimize the number of routers and
+networks content must travel through, minimizing
+opportunities for congestion.
+According to UK regulator Ofcom: The local
+
+delivery of content can result in better delivery
+times to the consumer, which may translate to
+a better quality of experience, and so is often
+a preferred option for content providers. This
+
+approach further reduces transit or backhaul
+connectivity costs,20 and can also improve the
+customer experience by reducing the
+likelihood of data congestion in these parts
+of the network.21
+
+18 A data packet is a small unit of data.
+19 Strictly speaking, video is served in chunks, which fill a buffer
+at the user end. As the user watches the video and depletes
+the buffer, a new chunk will be sent. However, this is all
+invisible to the user.
+20 These are costs for the long-haul distribution of traffic,
+which may be borne by an ISP and/or a content provider
+21 Ofcom, Connected Nations 2016, 16 December 2016
+22 Craig Labovitz, Internet Traffic 2009-2019, 26 February
+2019. A range of 60-80% was reported for Brazil in 2018:
+NIC.br, A importância dos Sistemas Autônomos e dos
+Internet Exchanges/PTTs, 23 August 2018. An earlier
+Ofcom study reported 83% of fixed network traffic came
+from CDNs in 2017. Ofcom, Connected Nations 2017
+- Data analysis, 15 December 2017.
+23 Analysys Mason, Infrastructure Investment by online service
+providers, December 2018.
+
+A Netflix briefing paper
+2021
+
+18
+
+A cooperative approach
+to content delivery
+
+The long haul
+Why the early structure of the internet could not scale
+to meet the demands of today’s internet usage
+
+SINGLE SOURCE
+
+When a user requested
+video content, it was served
+from a single location
+
+HUGE EXPENSE
+
+CONGESTED DELIVERY
+
+Securing global connectivity
+would come at a high cost
+to Internet Service Providers
+(ISPs) who would have to
+purchase or build these
+backhaul connections
+
+This server may have been a huge
+geographical distance from the user
+and traffic growth would mean
+expanding this long distance capacity
+
+Long way round
+Data would be forced
+to travel through many
+routers and networks
+
+Traffic jams
+Each router could
+be congested by
+high traffic volumes
+
+Lost in transit
+Congestion would lead
+to ‘packet loss’, causing
+quality to degrade
+
+A Netflix briefing paper
+2021
+
+19
+
+A cooperative approach
+to content delivery
+
+1.2
+
+$
+
+B
+
+The amount of money
+Open Connect saved
+ISPs in 2020
+
+A Netflix briefing paper
+2021
+
+20
+
+A cooperative approach
+to content delivery
+
+Description of
+Netflix Open Connect
+
+As of early 2021, Netflix has over 200 million
+
+file versioning to reduce the size of video files,
+
+paying customers around the world, using tens
+
+which we discuss later.
+
+of thousands of combinations of device and
+
+Open Connect CDN is a combination of local
+
+network configurations. Open Connect is a key
+
+servers (called Open Connect Appliances -
+
+part of ensuring that these customers can reliably
+
+OCAs) and backbone infrastructure. Since the
+
+access high-quality video streams as efficiently
+
+launch of Open Connect in 2011, Netflix has
+
+as possible. Netflix also uses other techniques,
+
+spent over US$1B to develop and deploy over
+
+such as sophisticated video compression and
+
+14,000 OCAs across 142 countries.
+
+Illustration of Open Connect architecture
+
+Wider internet
+OCA content refreshes
+every night
+
+OCA
+IXP
+
+OCAs can sit at IXPs or
+within ISP networks
+
+ISP
+OCA
+
+Broadband
+access
+
+Users
+
+Origin
+server
+
+A Netflix briefing paper
+2021
+
+21
+
+A cooperative approach
+to content delivery
+
+In order to bring content as close as possible
+
+This investment by Netflix can have spillover
+
+to the consumer, OCAs are either deployed
+
+benefits when a content provider like Netflix
+
+within ISP networks or at public Internet
+
+builds out its CDN to an IXP, ISPs and other
+
+Exchange Points (IXPs), physical locations
+
+content providers may be encouraged to also
+
+where many networks come together to
+
+have a presence at that IXP. Multiple content
+
+exchange traffic. Each OCA deployment stores
+
+providers and ISPs coming together at a single
+
+nearly all of the Netflix catalogue, including each
+
+IXP location can generate significant efficiencies
+
+title in the various formats and video qualities.
+
+for all concerned.
+
+Content is refreshed overnight as new content
+is released or becomes more popular.
+Open Connect will directly interconnect with
+any ISP to hand off traffic at one or multiple IXPs.
+The interconnection predominantly supports
+the flow of traffic from Netflix to the ISP, with
+
+Cost savings calculation
+
+each side upgrading the capacity as needed
+to support user requests for content. Unlike
+interconnection among ISPs, where traffic is
+exchanged in both directions, traffic is primarily
+content destined for the ISP’s users that have
+
+Estimate of costs per year
+Volume
+x Distance
+of traffic
+traveled
+
+=
+
+Price per
+x unit
+of traffic
+
+requested it, so it is flowing in one direction.
+OCAs within an ISP’s network are provided
+
+In turn the price per unit of traffic
+
+by Netflix to the ISP free of charge on a
+
+depends upon the cost of leasing
+
+non-discriminatory basis. In most cases,
+
+long haul capacity.
+
+the ISP takes full ownership and control of the
+
+The cost savings estimate reflects
+
+equipment. Installing an OCA within the ISP’s
+
+the savings that ISPs that take OCAs
+
+network allows the ISP to place it wherever in its
+
+within their networks realize as a result
+
+network is most beneficial, avoiding costs that
+
+of significant localization via the Open
+
+might otherwise be incurred fetching content
+
+Connect Appliances and the resulting
+
+over long distances to bring it into its network.
+
+reduction in long haul internet backbone
+
+To date, over 1,000 ISPs have taken ownership
+
+costs. It is important to note that even
+
+of and installed OCAs. For our ISP partners that
+
+partners that are unable or unwilling
+
+have opted to deploy servers within their own
+
+to take OCAs within their network still
+
+networks, the cost savings for 2020 is estimated
+
+realize savings as a result of localization
+
+to be approximately $1.2B.
+
+of content within IX sites. Without the
+
+If an OCA is hosted at an IXP, then Netflix
+
+Content Delivery Network (CDN) content
+
+retains ownership and pays for its own power
+
+would be handed off at the source of the
+
+consumption, colocation fees, cross-connect
+
+data (a handful of cloud storage regions)
+
+fees and so on. Netflix has placed OCAs in more
+
+and the ISP would then carry the content
+
+than 80 IXP locations in over 25 countries,
+
+to their end users.
+
+where Netflix will peer with any ISP.
+
+A Netflix briefing paper
+2021
+
+22
+
+A cooperative approach
+to content delivery
+
+Bringing content closer
+Netflix’s investment in a new world of content delivery
+
+OPEN CONNECT
+Netflix now stores its content close to every member
+- no matter where in the world they are.
+Open Connect is Netflix’s Content Delivery Network.
+It’s made of more than 14,000 Open Connect
+Appliances (OCAs) spread across 142 countries.
+
+KEY
+Netflix headquarters
+in California, USA
+
+Note: Data as of 2020
+
+Netflix OCAs
+Located within public
+Internet Exchange Points
+
+OCAs gifted to Internet
+Exchange Points
+(ISPs)
+
+25
+100
+
+Number of content
+caches per server
+
+A Netflix briefing paper
+2021
+
+23
+
+A cooperative approach
+to content delivery
+
+Benefits for ISPs
+from Open Connect
+
+Cost savings
+
+Second, if an ISP hosts multiple OCAs, it
+
+Having content delivered by Open Connect
+
+also avoids some cost for their own core network
+
+provides various cost savings to ISPs.
+
+capacity. Traffic can be delivered to the consumer
+
+First, they avoid ‘transit charges’. While many
+
+from a nearby server, rather than having to travel
+
+ISPs will freely exchange traffic with other ISPs
+
+across the ISP’s core. UK broadband provider
+
+in their own region by directly interconnecting
+
+Sky has cited CDN caching as a key source of
+
+with each other, to exchange traffic with more
+
+cost saving as video demand grows.27
+
+24
+
+distant networks they generally rely on (and pay)
+transit providers. Further, they have to ‘meet’ the
+transit provider at an overseas location if transit is
+
+Case study: Brisanet
+
+unavailable in their own country. In this case, the
+
+Brisanet is a regional ISP that operates
+
+ISP will need to pay not only the transit charge,
+
+in the Northeast region of Brazil. Netflix
+
+but also the costs of expensive international
+
+traffic represents about one fifth of
+
+backhaul capacity to reach the transit provider.
+
+Brisanet total traffic.
+
+However, Open Connect allows ISPs to avoid
+
+Localizing the traffic has helped
+
+these costs, by passing the traffic directly to the
+
+the company to significantly reduce
+
+ISP rather than via a transit link.
+
+transport traffic within Brisanet’s
+
+According to TeleGeography: While the
+
+network and thus reduces costs for
+
+increase in broadband users and access rates
+
+augmenting transport capacity.
+
+will continue to drive traffic growth in access
+
+Localizing traffic has also improved
+
+networks, much of this growth may be managed
+
+the quality of experience for consumers.
+
+locally within a network and may not lead to
+
+After installing Open Connect servers,
+
+proportional increases in traffic on international
+
+Brisanet has received very positive
+
+links. Thus, CDNs and caching will continue to
+
+feedback from their customers via
+
+have a localizing effect on traffic patterns and
+
+their call center.
+
+dampen international internet traffic growth.
+
+25
+
+French ISP Altice has noted that embedded
+Open Connect OCAs have: Advantages both
+
+for the ISP and Netflix, minimizing the Internet
+traffic, while improving the quality experienced
+by customers, respectively.26
+
+24
+25
+26
+27
+
+See the appendix for a more detailed discussion.
+TeleGeography, The State of the Network, February 2020.
+Altice Labs, InnovAction #2, January 2018.
+Sky, Sky Core Network - Positioning for Massive Video
+Demand, 20 Feb 2018.
+
+A Netflix briefing paper
+2021
+
+24
+
+A cooperative approach
+to content delivery
+
+Netflix Open Connect is uniquely able to help
+
+A survey of broadband users found that slow
+
+ISPs take advantage of these benefits because
+
+speed/buffering and poor stability were the two
+
+we have a defined, limited catalogue of content.
+
+main reasons that would influence broadband
+
+Netflix is able to better optimize the upload
+
+consumers to change their supplier.28
+
+content to OCAs during off-peak hours, which
+
+Network operators recognise the quality
+
+avoids burdening the ISP or other parts of the
+
+and cost benefits of CDNs. According to UK
+
+internet during periods of the day where there is
+
+ISP TalkTalk: Caching helps manage capacity,
+
+the highest usage. This means the connectivity
+
+customer experience and costs … Netflix, for
+
+needed to fill these servers is often without any
+
+example, is located at over 60 locations around
+
+cost to the ISP, as network capacity is built (or
+
+the UK, avoiding bandwidth costs in the core
+
+acquired) for peak capacity. Netflix is uniquely
+
+network and serving content to end customers
+
+able to pre-position copies of all content in
+
+with lower latency response times.29
+
+advance. Many content providers store a copy
+
+GSMA, the global association of mobile
+
+of a file only after it has been requested by
+
+operators, has said: By having content closer
+
+a user, which may occur during peak hours.
+
+to the subscribers (using CDNs), the expected
+
+Furthermore, because the volume of Netflix
+
+delays are shorter, and this means better quality
+
+traffic is limited, an OCA deployment can offload
+
+of experience. Also, by having visibility on the
+
+up to 100% of traffic from a single location.
+
+services and the locations where those services
+
+Increased revenue from consumers
+
+are being used, the operator can spend less
+on network optimisation, prioritising the most
+
+Aside from these immediate cost benefits,
+
+important areas of high-value services. Users
+
+the improved quality of experience for the
+
+with better QoE [Quality of Experience] directly
+
+consumer has benefits for ISPs. Consumers who
+
+translates to less churn.30
+
+are happy with their experience of the services
+
+In addition to these advantages, CDNs are
+
+they receive over their broadband connection
+
+more resilient, since if one element fails, traffic
+
+are unlikely to change their broadband supplier.
+
+can be redirected to other servers, reducing the
+
+By preventing buffering and instability, CDNs
+
+risk of downtime.
+
+help broadband networks retain their customers.
+
+Case study: Telecentro
+Telecentro is an ISP in Argentina.
+Thanks to Open Connect, the company
+was able to significantly reduce its costs
+for international transit and improve
+performance. Because of that, their
+customer base grew faster as they
+were perceived as a very high quality
+broadband ISP in the market.
+
+28 Huawei / Strategy Analytics, Unlocking Value for Residential
+Broadband Services with Quality Broadband Network,
+October 2017.
+29 TalkTalk, Capital Markets Day, 5 March 2019.
+30 GSMA, América Móvil and VIAVI Solutions – Creating
+Business Value through Content Delivery and Analytics, 17
+December 2019. Text in brackets added for purposes of
+clarification.
+
+A Netflix briefing paper
+2021
+
+25
+
+A cooperative approach
+to content delivery
+
+Greater control
+
+their network. ISPs can fully determine which
+
+Open Connect provides ISPs with unparalleled
+
+of their customers are served from which OCA,
+
+control over how they receive Netflix traffic.
+
+enabling better network planning and resilience.
+
+Video-on-demand traffic has a largely predictable
+
+ISPs are also able to determine when the
+
+daily pattern, rising to a maximum in the evening.
+
+content on OCAs is refreshed with the latest
+
+This allows content providers and ISPs to better
+
+Netflix films and series. This allows them to
+
+predict and account for peak traffic. ISPs have full
+
+ensure content is refreshed at off-peak times,
+
+control over where they receive traffic, whether
+
+so it does not contribute to peak capacity needs.
+
+at one of the many IXP locations where Netflix is
+
+This can help to minimize costs and provide
+
+present or through placement of OCAs within
+
+greater network stability.
+
+Encoding
+Open Connect is not the only tool Netflix uses
+
+devices (including legacy ones) and the available
+
+to ensure a good user experience. It also seeks
+
+bandwidth on a member’s internet connection.
+
+to use the least amount of data to deliver a
+
+The multiple encoding versions adapt to the
+
+given picture quality.
+
+device and available bandwidth automatically,
+
+Delivering quality video to Netflix’s members
+
+allowing the resolution to go up depending on
+
+without using unnecessary bandwidth allows
+
+what a device is capable of and/or congestion
+
+a good experience even on intermittent
+
+on the broadband connections to viewers’
+
+connections or those with limited bandwidth.
+
+homes. This is efficient since there is no benefit
+
+But efficient encoding is applied to all Netflix’s
+
+to sending a heavy, ultra high definition video
+
+streams, and this has a benefit for ISPs too,
+
+stream to a device with a lower resolution screen
+
+since it minimises the traffic flowing across
+
+or an internet connection that can not handle it.
+
+their networks.
+There are also benefits to members beyond
+
+The second is a drive to improve video
+compression. Successive generations of video
+
+just picture quality. If less of a household’s
+
+compression formats allow the same quality of
+
+broadband capacity or wifi capacity is used for
+
+visual image to be delivered with less and less
+
+a given Netflix stream, then the freed capacity
+
+bandwidth. Netflix invests continually to deploy
+
+can instead be used for other applications.
+
+the most effective compression. It also optimises
+
+There are two aspects to creating more
+
+compression for different content types - using
+
+efficient video streams. The first is that Netflix
+
+less data to deliver less complex video. For
+
+encodes multiple versions of the same video
+
+example, a video of a news anchor can be encoded
+
+file, customised to the capabilities of different
+
+using significantly less bandwidth than a car chase.
+
+A Netflix briefing paper
+2021
+
+26
+
+A cooperative approach
+to content delivery
+
+In the past five years, Netflix’s encoding has more
+than doubled the data efficiency of streaming
+It once took 4GB to
+stream 11 hours of content
+
+2015 CBE1-AVCMain
+
+Netflix
+members now
+stream 25 hours
+for 4GB
+
+2018 AL1-AVCHigh
+2019 AL1-VP9
+2020 CE4-DO-HEVC
+2020 AV1
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+Hours of streaming per 4GB of data
+
+As a result of these efforts, Netflix streams are
+
+ISPs may see significant reductions in transit
+
+increasingly efficient. The number of hours a Netflix
+
+costs from moving content closer and ISPs who
+
+member can stream per GB of data has increased
+
+deploy servers in multiple locations may also
+
+by more than 200%31 over the last five years.
+
+see a reduction in the need for infrastructure
+
+Netflix is also working alongside a number
+
+to connect those locations. Maintaining
+
+of companies including Samsung, Intel, Cisco,
+
+international connectivity is costly as it involves
+
+and Hulu in the Alliance for Open Media, a
+
+infrastructure that spans long distances. Long
+
+collaborative effort to offer open, royalty-free
+
+distance connections have more opportunity to
+
+and interoperable solutions to make media
+
+become congested by high traffic loads, which
+
+technology more efficient. These solutions seek
+
+can lead to a poor experience for the consumer.
+
+to provide superior quality for all users, on all
+
+Delivery through Open Connect “opens up
+
+devices, and on all platforms. The Alliance’s
+
+the pipes” of an ISP to reduce the chances of
+
+efforts have resulted in the launch of video
+
+congestion impacting Netflix or other application
+
+encoding technologies that have dramatically
+
+quality. The increased quality of video delivered
+
+improved the efficiency of high quality video
+
+via a CDN can lead to reduced churn for the ISP.
+
+streaming across the industry.
+
+Conclusion
+These encoding improvements and deployment
+of Open Connect offer substantial benefits to
+ISPs, including cost savings, the stability of
+services they provide, and increased revenues.
+
+31
+
+Based on the latest encoding profile.
+
+A Netflix briefing paper
+2021
+
+A cooperative approach
+to content delivery
+
+27
+
+Threats to
+the ecosystem
+
+3
+
+Understanding
+traffic charges
+The case for traffic charges
+
+28
+
+Dangers of traffic charges
+
+31
+
+A Netflix briefing paper
+2021
+
+28
+
+A cooperative approach
+to content delivery
+
+In recent years, one of the key changes to which the
+internet has adapted has been the increase in video traffic.
+Improving access networks, rapidly falling
+
+consumers may prompt a content provider to stay
+
+costs of transmission and substantial investment
+
+further away. However, this would cause additional
+
+in CDNs by video providers now enable
+
+costs for the ISP, and increase the likelihood of
+
+subscribers to reliably watch high quality
+
+congestion on back-haul networks.
+
+video on a range of devices.
+
+It is important not to inadvertently create
+
+As we have seen, the growth in video
+
+incentives that would undo the cooperative
+
+(supported by CDNs) has had benefits for
+
+approach that has led to the investments in
+
+consumers, content providers, ISPs and society
+
+moving content closer by way of Content Delivery
+
+as a whole.
+
+Networks. Despite these risks, some governments
+
+However, these benefits rely on a somewhat
+
+and ISPs have considered charging content
+
+unstable equilibrium of mutual cooperation to
+
+providers for access to networks. This is likely
+
+invest in efficient delivery. There is no requirement
+
+to harm consumers, through double charges for
+
+to move content closer to consumers. An
+
+connectivity, less competition, and ultimately
+
+uncongested long haul connection can still
+
+poorer performance. In this chapter we consider
+
+deliver high quality video.32 Thus a relatively
+
+the (flawed) case made for traffic charges,
+
+small disincentive to bringing content closer to
+
+and then turn to the damage they may cause.
+
+The case for traffic charges
+The most frequent argument in favor of traffic
+
+players (Over the Top players ‐ OTT) who are
+
+charges is that ISPs are in urgent need of further
+
+not contributing to network investment. Traffic
+
+funds for investment to support increasing traffic
+
+and revenue flows need to be realigned in
+
+volumes and to fund wider broadband deployment.
+
+order to assure the economic viability of
+
+Past claims that traffic charges are
+essential have proven unfounded
+
+infrastructure investment and the sustainability
+of the whole ecosystem.33
+
+These arguments are not new. For example,
+in 2012, ETNO, the European association of
+incumbent telecoms operators, argued that:
+
+Today there is a huge disproportion amongst
+revenues and a clear shift of value towards
+
+32 Latency may be increased if there is an international leg, but
+this is relatively unimportant for video. However, if the transit
+link is congested, then there is a risk of packet loss and lower
+quality video.
+33 ETNO, ETNO paper on Contribution to WCIT,
+7 September 2012.
+
+A Netflix briefing paper
+2021
+
+29
+
+A cooperative approach
+to content delivery
+
+ETNO went on to propose the end of
+
+would be a poor mechanism. This is because any
+
+settlement-free interconnection (the collaborative
+
+payments received by ISPs would be ‘untied’
+
+exchange of internet traffic between ISPs and
+
+- that is, there would be no requirement for the
+
+content providers) and the introduction of a
+
+funds to be spent on broadband infrastructure.
+
+‘sending party network pays’ principle - that is,
+
+ISPs may have many uses for their cash - the
+
+traffic charges. This proposal was not adopted,
+
+purchase of sports rights for an IPTV service,
+
+but even so the internet continued to function
+
+acquisitions, returning cash to shareholders and
+
+perfectly well - traffic charges were not necessary
+
+so on. These are all perfectly legitimate - but
+
+for investment or sustainability.
+
+funds received from traffic charges may be spent
+
+In the US there has been a ‘natural experiment’
+in the significance of charges to content providers
+for investment. When Charter Communications
+
+on these, rather than on the broadband upgrade
+that was the purported purpose.
+
+merger was subject to a number of conditions,
+
+Better interventions are
+available to support widespread
+broadband deployment
+
+including an obligation to offer settlement free
+
+While traffic charges are not an appropriate
+
+interconnection with video providers.
+
+tool to support network investment, we are not
+
+(a US cable operator) merged with Time Warner
+Cable and Bright House Networks in 2016, the
+
+34
+
+While this restriction has since been removed,
+
+suggesting there is never a case for external
+
+we might have expected to see a degradation
+
+support. For example, there is a clear social
+
+in the performance of Charter’s broadband,
+
+case for supporting the provision of good-
+
+relative to other ISPs that were not restricted to
+
+quality broadband in rural areas where it may be
+
+settlement-free interconnection over the time
+
+commercially unviable to deploy. However, there
+
+period in which payments were prohibited. In
+
+are many available interventions to support rural
+
+fact, Charter has had one of the best performing
+
+broadband, and indeed many countries already
+
+cable broadband networks in the US, according
+
+have such interventions in place. For example,
+
+to the FCC and the ISP Speed Index. The lack
+
+in the United States some states are providing
+
+of paid interconnection (charges by an ISP to a
+
+funding to support broadband deployment in
+
+content provider for a direct connection) has not
+
+unserved and underserved areas through grant
+
+fed through to poor performance for consumers.
+
+programs that fund a portion of the cost of
+
+35
+
+36
+
+Thus both in the case of ETNO members
+and of Charter, traffic charges have not been
+necessary to fund improved broadband.
+Indeed, in recent years there has been a surge
+
+deployment in these communities.37
+Traffic charges would be an untargeted and
+inefficient way to support rural broadband.
+They also carry significant dangers.
+
+in investment in fibre broadband globally. Much
+of this has been purely commercial, and has not
+needed traffic charges as a justification.
+
+Traffic charges are a poor
+mechanism to support investment
+Even if new sources of funds were necessary to
+support broadband investment, traffic charges
+
+34 US Department of Justice, Justice Department Allows
+Charter’s Acquisition of Time Warner Cable and Bright
+House Networks to Proceed with Conditions, 25 April 2016.
+35 FCC, Ninth Measuring Broadband America Fixed
+Broadband Report, 3 August 2020
+36 https://ispspeedindex.netflix.net/country/us
+37 The Pew Charitable Trusts, How States Are Expanding
+Broadband Access, February 2020
+
+A Netflix briefing paper
+2021
+
+30
+
+A cooperative approach
+to content delivery
+
+200
+
+%
+
+The number of hours a Netflix
+member can stream per GB
+of data has increased over
+the last five years
+
+A Netflix briefing paper
+2021
+
+31
+
+A cooperative approach
+to content delivery
+
+Dangers of traffic charges
+
+The termination monopoly
+
+reach any content of their choice is not impacted
+
+The termination of traffic - final delivery to a
+
+by that ISP. However, if ISPs charge for the
+
+consumer - is the last great telecom monopoly.
+
+termination of internet traffic then consumers’
+
+If a given user requests a video stream while
+
+ability to reach content may be restricted to
+
+connected to a particular ISP, the video provider
+
+those content providers that are able to pay.
+
+has no option but to send that stream via that ISP.
+
+Furthermore, restricting consumers to only
+
+This remains true even if the user has access
+
+a subset of content, not a broad spectrum of
+
+to other networks. It is clearly not possible for
+
+content they might not otherwise encounter,
+
+the video provider to request that the user
+
+deprives society of a rich content portfolio.
+
+disconnect from their home wifi and switch to
+4G, to watch the video in question.
+
+The risk of a termination monopoly is
+exacerbated in markets where consumers
+
+The danger of termination monopolies is one
+
+face challenges switching ISPs - either due to
+
+of the reasons regulators have been so active in
+
+limited competition, long-term contracts, or high
+
+the regulation of voice termination rates on both
+
+switching costs. But even in markets where there
+
+fixed and mobile networks over many decades.
+
+is competition among ISPs, a content provider can
+
+Without this regulation, there would have been
+
+only reach consumers through their chosen ISP.
+
+a real risk of excessive pricing by telcos.
+The termination monopoly for internet traffic
+is relatively benign if a consumer’s ability to
+
+Theoretical alternate routes to the consumer
+Traffic from content
+provider via transit
+Transit
+provider
+Content
+provider
+
+ISP
+User
+
+Traffic from content
+provider via peering
+
+A Netflix briefing paper
+2021
+
+32
+
+A cooperative approach
+to content delivery
+
+Alternate routes to consumer
+often not realistic in practice
+
+As we have seen, Netflix alone might represent
+
+It is sometimes argued that such termination
+
+switch its traffic to transit from Open Connect,
+
+monopolies are unproblematic because content
+
+16% of the relevant ISP’s traffic would be flowing
+
+providers have various routes to a given ISP.
+
+through circuits designed for 5%. (Even this
+
+For example, the content provider might have
+
+assumes that routes are available through all
+
+a direct connection to the ISP via peering and
+
+the ISPs’ transit connections, which is far from
+
+an indirect connection via transit, as shown on
+
+certain). This would lead to massive congestion
+
+the previous page. (Alternatively, they might
+
+and consequently a catastrophic degradation
+
+have CDN servers on-net - that is within the
+
+of quality for Netflix’s services. Netflix’s
+
+ISP - and transit).
+
+competitors, likely still delivered via CDNs within
+
+11% of an ISP’s traffic. Thus if Netflix were to
+
+38
+
+39
+
+However, this is often more the illusion
+
+the ISP’s network, would be largely unaffected.
+
+of choice than the reality. The ISP ultimately
+
+This congestion would also create some
+
+controls all of these routes into its network
+
+problems for the ISP, since other services arriving
+
+and can modulate the quality and potentially
+
+via transit would also be affected.
+
+the pricing of both these routes. (The ISP
+might charge the transit provider for paid
+interconnection, for example). Thus, this
+apparent choice of route for the content
+provider invariably leads back to the access
+provider, who is at best competing with itself.
+Further, transit links are unlikely to have the
+capacity to absorb traffic redirected from direct
+interconnection or a CDN. Ofcom (in 2017) found
+that for UK fixed networks, transit represented
+just 5% of their traffic,40 and transit capacity is
+presumably provisioned accordingly.
+
+38 See, for instance, Laure Jaunaux & Marc Lebourges
+(Orange Regulatory Department). Externalities between
+on-line contents drive telecom operators’ incentives to
+provide quality open internet through neutral network,
+14 January 2019.
+39 Peering refers to a direct connection to exchange traffic
+between two networks, generally at zero cost.
+40 Ofcom, Connected Nations 2017
+- Data analysis, 15 December 2017.
+
+A Netflix briefing paper
+2021
+
+A cooperative approach
+to content delivery
+
+Fast times
+As broadband speeds get faster, Netflix streams take up less and less
+of a member’s purchased bandwidth. Netflix recommendsjust 5 Mbps
+to stream a high-definition movie on Netflix on a fixed line connection.
+That means a Netflix member with a high speed broadband connection
+has enough bandwidth to stream multiple HD videos at the same time
+
+25 Mbps
+
+5 films
+
+100 Mbps
+
+20 films
+
+1000 Mbps
+
+200 films
+
+33
+
+A Netflix briefing paper
+2021
+
+34
+
+A cooperative approach
+to content delivery
+
+Potential for leveraging
+into video markets
+
+needed to watch video. A Netflix member should
+
+The threat of this termination monopoly is not
+
+HD streams (of 5 Mbps each) with a connection
+
+simply a matter of the price paid for termination.
+
+of this speed.
+
+theoretically be able to watch 17 simultaneous
+
+Many ISPs compete directly with streaming video
+services, either because they are themselves
+
+Perverse incentives
+
+a cable TV operator, or a telco with an IPTV
+
+The only way for an ISP to force a content
+
+offering. By 2024, 45% of Western European
+
+provider to pay for traffic charges is to ensure
+
+households are expected to take TV from a
+
+congestion otherwise limits an ISP’s customers
+
+telco or cable operator. ETNO has noted
+
+from receiving requested traffic from the content
+
+that “Operators supplying traditional pay-TV
+
+provider. This congestion represents powerful
+
+within Western Europe continue facing strong
+
+leverage for the ISP to force the content provider
+
+competitive pressures from OTT services
+
+to accept the demanded cost to connect directly,
+
+[such as Netflix and Amazon].”
+
+and thus the ISP has little incentive to remedy
+
+41
+
+42
+
+Thus for any ISP with its own TV service, any
+degradation of quality for other video providers
+
+the congestion.
+This potential leverage has caused concern
+
+strengthens the competitive position of that TV
+
+to regulators in the context of ISP mergers,45
+
+service. This risks providing an incentive to take
+
+and, in the past, ISPs have been known to use
+
+advantage of the terminating monopoly in a way
+
+congestion in this way.46
+
+that is detrimental to consumers.43
+
+Potential for double charging
+ISPs seeking to charge content providers for
+the carriage of traffic have almost universally
+already charged their consumers for carriage
+of that same traffic. Both mobile and fixed
+broadband products include data allowances
+(often ‘unlimited’ for fixed). Consumers have paid
+for these data allowances on the understanding
+that it will allow them to reach the entire internet,
+not just those sites that have agreed to pay to
+be distributed by their ISP. Further, if consumers
+have paid for traffic, to also charge content
+providers would appear to be a double-charge.
+This problem is best illustrated when the
+speeds required for the content being delivered
+is well under the speeds paid for by consumers.
+The average global fixed line broadband speed
+is 87.84 Mbps44 and this is much more than is
+
+41 Digital TV Europe, Rise of IPTV to benefit Telcos,
+23 May 2019.
+42 ETNO, The state of digital communications 2020,
+28 January 2020.
+43 For a detailed discussion of these issues, see David Evans,
+Comcast’s Acquisition of Time Warner Cable Would Result
+in an Economically Significant Increase in the Magnitude of
+Terminating Access Fees for Online Video Distributors,
+6 April 2015.
+44 Speed Test Global Index, https://www.speedtest.net/globalindex, Accessed on 3 December 2020. The global average
+download speed for October 2020 was 87.84 Mbps.
+45 See for example ¶550 onwards of European Commission,
+Case M.7000 - LIBERTY GLOBAL / ZIGGO, 30 May 2018
+46 A number of such interconnection disputes are discussed
+in Daniel A. Lyons, “An Antitrust-Informed Approach to
+Regulating Internet Interconnection.” Journal of Science
+& Technology Law 24, no.2 (2018): 229-276
+
+A Netflix briefing paper
+2021
+
+35
+
+A cooperative approach
+to content delivery
+
+Transit price CAGR, 2017-20 47
+
+Johannesburg
+Sao Paulo
+Miami
+London
+Singapore
+Sydney
+Mumbai
+-50%
+
+-40%
+
+-30
+
+-20
+
+-10
+
+CAGR
+
+If an ISP does impose charges for
+
+Avoiding such costs is one of the key reasons
+
+interconnection or on-net CDNs, then this
+
+more than 7,000 ISPs around the world use
+
+gives content providers two choices: pay those
+
+Open Connect to receive traffic. Larger ISPs
+
+charges, or deliver their traffic via offshore
+
+may tolerate these increased costs in order to
+
+methods (e.g. via transit or non-localised
+
+force through traffic charges, but there is still
+
+interconnection). Transit prices have had a
+
+risk to consumers.
+
+long-run trend of brisk decline, so in financial
+
+Consumers invariably lose in this situation.
+
+terms this can be an attractive option for content
+
+They will be exposed to the risk of congestion in
+
+providers. This would result in backbone and
+
+transit links, with possible degradation of their
+
+transit links being used for content that can be
+
+user experience. Increased latency may also
+
+more efficiently delivered, both in terms of cost
+
+cause problems (though less so for streamed
+
+and capacity, by means of local content servers.
+
+video, which is not latency-sensitive). There is
+
+While traffic charges by an ISP may force
+
+also a risk that consumers will lose access to
+
+such an outcome, it is clearly suboptimal. For the
+
+the plurality of voices and applications that have
+
+ISP itself, it will likely mean that it is now paying
+
+enabled the internet to thrive.
+
+to receive the traffic, since it may need to pay
+transit charges to the relevant transit provider.
+Moreover, if the ISP is buying its transit at a
+remote location, then it will need to invest in
+international backhaul capacity also.
+
+47 TeleGeography, Global IP Transit Prices Keep
+Doing What They Do Best, 8 September 2020.
+
+0
+
+A Netflix briefing paper
+2021
+
+36
+
+A cooperative approach
+to content delivery
+
+Conclusion
+A cooperative model is win-win for consumers.
+At the heart of the internet’s value is the fact that it
+is an adaptable network of networks which enables
+the communication and sharing of information and
+content between people, irrespective of location.
+
+In recent years, one of the key changes to which
+
+revenues, greater broadband takeup - and for
+
+the internet has adapted has been the increase in
+
+many ISPs Open Connect has enabled them to
+
+video content. In order to support this increase in
+
+avoid the costs of expensive international transit.
+
+traffic, content providers like Netflix have worked
+
+It has also generated benefits to society. The
+
+hand in hand with ISPs.
+
+availability of high quality video gives consumers
+
+In Netflix’s case we invest significantly in
+
+a reason to go online in the first place and to
+
+content, which drives demand for broadband
+
+upgrade their broadband connections, promoting
+
+internet access. We invest in delivery infrastructure
+
+greater connectivity.
+
+(OCAs and backhaul infrastructure) and
+
+Looking to the future we are keen to continue
+
+compression technology. In both cases, we have
+
+to work in partnership with ISPs in this way to
+
+not only innovated on existing industry standards,
+
+ensure that content is delivered to our members
+
+but also actively participated in standardization
+
+in the most efficient way possible. However
+
+activities to ensure constantly improving efficiency
+
+a cooperative model will only be sustained
+
+across the industry as a whole.
+
+if content providers and ISPs continue to
+
+We have made these investments in
+
+recognize the complementary nature of networks
+
+delivery because we want to give our members
+
+and content. In addition, if governments
+
+the best experience possible no matter what
+
+acknowledge the important role that content
+
+the available bandwidth is or the capability
+
+providers play in stimulating demand for
+
+of their viewing device.
+
+broadband services and establish supporting
+
+And our investments have also reaped
+significant benefits for ISPs - increased
+
+policy frameworks which restrict the imposition
+of charges by ISPs on content providers.
+
+A Netflix briefing paper
+2021
+
+A cooperative approach
+to content delivery
+
+37
+
+Glossary of terms
+CAGR
+
+Latency
+
+Compound Annual Growth Rate
+
+The lag between a packet of data being
+
+Cache
+
+sent and reaching its destination
+
+A temporary local copy of information that
+
+OTT (Over The Top)
+
+originated elsewhere. Thus for CDNs, a copy
+
+Describes services delivered over another
+
+of files to be delivered to consumers, stored
+
+network without being integrated with it.
+
+in a local server
+
+YouTube, Facebook and Netflix are examples
+
+CDN (Content Delivery Network)
+A distributed system of servers, designed to
+
+(since they are not provided by telcos operating
+broadband networks)
+
+enable the efficient and reliable distribution of
+
+Packet loss
+
+content over the internet
+
+When a router is sent more data than it can
+
+CP (content provider)
+
+handle, it discards a certain amount of data.
+This is known as packet loss. Typically the
+
+An internet business whose focus is delivering
+
+data in question will then be requested again
+
+content (rather than - say - e-commerce)
+
+from the source server
+
+to consumers. Netflix, CNN and YouTube
+are examples
+
+FBB
+
+Router
+A switch on the internet, that receives packets
+of data and sends them onwards down the
+
+Fixed broadband
+
+appropriate link
+
+Hop
+
+Server
+
+One step in a packet of data’s journey
+
+A computer that stores and
+
+across multiple servers
+
+transmits content
+
+ISP (Internet Service Provider)
+
+TCP/IP
+
+A company providing internet connectivity
+
+Transmission control protocol and internet
+
+to consumers (consumers or businesses). May
+
+protocol. The two foundational standards for
+
+provide fixed broadband, mobile data or both
+
+data transmission that underpin the internet
+
+IXP (Internet Exchange Point)
+A location where many networks meet
+to exchange traffic, avoiding the need
+for multiple bilateral connections
+
+A Netflix briefing paper
+2021
+
+A cooperative approach
+to content delivery
+
+Appendix
+The Internet (TCP/IP) protocol enables easy physical
+interconnection between two networks that both
+use it. However, there is also a commercial aspect
+to interconnect - does money flow between the two
+parties and what extent of connectivity is provided?
+
+Transit
+and peering
+There are two primary categories of
+interconnection, namely transit and direct
+interconnection (with some variety under
+each heading). We discuss these below.
+
+38
+
+A Netflix briefing paper
+2021
+
+39
+
+A cooperative approach
+to content delivery
+
+Transit
+
+Transit is typically used by an ISP (or content
+
+Secondly, it may lead to inefficient traffic
+
+provider - CP) to reach the parts of the internet
+
+routing. An ISP may have to procure transit from
+
+not available to it via other types of connection,
+
+a provider that is not based in their own country,
+
+such as interconnection. The ISP buys transit
+
+but (say) in the US. If so, all traffic sent by the ISP
+
+from a transit provider, who in turn links (directly
+
+will have to travel to the US, even if it is destined
+
+or indirectly) to all other networks on the internet,
+
+for a consumer in the ISPs’ own country. This is
+
+and their associated consumers.
+
+known as traffic tromboning. It is expensive, since
+
+For destination ISPs and CPs on its own
+
+both the sending and the receiving provider must
+
+network, the transit provider passes the traffic
+
+pay for pricey international capacity. It is also
+
+on directly. For other destinations, it will connect
+
+technically poor, since the long journey introduces
+
+with other transit providers, who will in turn pass
+
+latency and the potential for packet loss.50
+
+the traffic on to the destination in question. Since
+essentially all ISPs and CPs are connected to at
+least one transit provider, connection via such
+providers enables universal connectivity.48
+While transit provides universality, it has two
+major disadvantages. Firstly, it comes at a cost.
+The ISP or CP must pay in relation to the amount
+of traffic carried via the transit link.49
+
+48 It is also possible to buy partial transit, where the transit
+provider offers connectivity only to certain destinations
+49 Transit is typically priced on a 95th percentile basis - that is,
+based on ‘near peak’ bandwidth demand, but setting aside
+the busiest 5% of periods
+50 While tromboning is becoming rare in larger internet markets,
+it remains a significant problem in some smaller markets.
+See, for instance, UN ESCAP, An In-Depth Study of the
+Asia-Pacific Information Superhighway in CLMV Countries,
+March 2020
+
+A Netflix briefing paper
+2021
+
+40
+
+A cooperative approach
+to content delivery
+
+Illustration of transit
+
+Content
+provider
+
+Transit
+provider
+
+Transit
+provider
+
+ISP
+
+ISP
+
+Cash flow
+
+Broadband
+access
+
+Broadband
+access
+
+User
+
+User
+
+Illustration of peering
+
+Peering
+
+Content
+provider
+
+ISP
+
+Broadband
+access
+
+ISP
+
+Broadband
+access
+
+User
+
+User
+
+A Netflix briefing paper
+2021
+
+41
+
+A cooperative approach
+to content delivery
+
+Direct
+interconnection
+The main alternative to transit is direct
+
+That said, networks often have certain criteria
+
+interconnection through peering. When two
+
+that they apply to certain peers, to avoid being
+
+networks peer, they connect, but only for traffic
+
+gamed. For example, a network with expensive
+
+destined for their respective networks. For
+
+international connectivity might be reluctant to
+
+example, ISPs X and Y might peer, and the
+
+peer with a purely local network, since it would
+
+traffic flowing over the link would be any traffic
+
+pick up the lion’s share of the cost of transmitting
+
+travelling from ISP X’s consumers to ISP Y’s
+
+traffic between the two networks’ customers.
+
+consumers, and vice versa.
+
+51
+
+ISPs may peer, but so too can ISPs and
+
+Sometimes networks only offer
+interconnection if traffic flows are roughly
+
+content providers. In this scenario the traffic
+
+balanced - that is, there is a similar volume of
+
+flowing would primarily be the content destined
+
+traffic flowing from peer X to peer Y as is flowing
+
+for the ISP’s users.
+
+in the opposite direction. This does ensure that
+
+There are a range of types of interconnection.
+
+the two parties are imposing similar traffic costs
+
+It may be public or private. Public interconnection
+
+on each other. However, this is not necessary for
+
+takes place via an Internet Exchange Point (IXP),
+
+settlement free interconnection to be merited.
+
+a physical location where many networks come
+
+Asymmetric traffic may create value for both
+
+together to exchange traffic. This is efficient for
+
+parties, even if costs are not balanced. For
+
+connecting with many different peers. Private
+
+instance, YouTube may send a lot of traffic to
+
+interconnection takes place via a direct physical
+
+a small ISP, but that ISP gets great value from
+
+connection between two networks. This may be
+
+making YouTube available to its consumers
+
+lower cost and more reliable if a large volume of
+
+While settlement-free interconnection is
+
+traffic is being exchanged.
+Peering may also be settlement-free or paid.
+
+common, there is also paid interconnection,
+where one party pays the other. This may arise
+
+In settlement-free interconnection, no money
+
+where one party gets much less value out of the
+
+is exchanged between the peers. This was the
+
+interconnection (and so requires compensation),
+
+basis of all interconnect in the early days of the
+
+or where one party has leverage, and can simply
+
+internet, and remains very common. Generally
+
+insist on payment.
+
+interconnection links are mutually beneficial,
+and so both parties gain even if they are unpaid.
+Further, if there is no payment then contracts can
+be far simpler. Indeed, interconnection based on
+a handshake (i.e. without a written contract) is
+very common.
+
+51 ‘Partial interconnection’ is also possible, where
+peers only agree to connect certain subsets of
+their customers, similar to partial transit
+
+

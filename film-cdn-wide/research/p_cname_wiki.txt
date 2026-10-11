@@ -1,0 +1,309 @@
+URL: https://en.wikipedia.org/wiki/CNAME_record
+
+Jump to content
+
+Main menu
+
+Main menu
+
+move to sidebar
+
+hide
+
+Navigation
+
+-   Main page
+-   Contents
+-   Current events
+-   Random article
+-   About Wikipedia
+-   Contact us
+
+Contribute
+
+-   Help
+-   Learn to edit
+-   Community portal
+-   Recent changes
+-   Upload file
+-   Special pages
+
+[] [Wikipedia] [The Free Encyclopedia]
+
+Search
+
+Search
+
+Appearance
+
+-   Donate
+-   Create account
+-   Log in
+
+Personal tools
+
+-    Donate
+-    Create account
+-    Log in
+
+Contents
+
+move to sidebar
+
+hide
+
+-   
+    (Top)
+-   
+    1 Details
+
+    Toggle Details subsection
+    -   
+        1.1 Possible confusion
+    -   
+        1.2 Constraints
+-   
+    2 DNAME record
+-   
+    3 ANAME record
+-   
+    4 See also
+-   
+    5 References
+-   
+    6 Further reading
+
+Toggle the table of contents
+
+CNAME record
+
+11 languages
+
+-   Català
+-   Dansk
+-   Deutsch
+-   Español
+-   Français
+-   Magyar
+-   日本語
+-   한국어
+-   Português
+-   Svenska
+-   中文
+
+Edit links
+
+-   Article
+-   Talk
+
+English
+
+-   Read
+-   Edit
+-   View history
+
+Tools
+
+Tools
+
+move to sidebar
+
+hide
+
+Actions
+
+-    Read
+-    Edit
+-    View history
+
+General
+
+-   What links here
+-   Related changes
+-   Upload file
+-   Permanent link
+-   Page information
+-   Cite this page
+-   Get shortened URL
+-   Switch to legacy parser
+
+Print/export
+
+-   Download as PDF
+-   Printable version
+
+In other projects
+
+-   Wikidata item
+
+Appearance
+
+move to sidebar
+
+hide
+
+From Wikipedia, the free encyclopedia
+
+Type of resource record in the Domain Name System (DNS)
+
+For RTCP CNAME records, see RTP Control Protocol.
+
+A CNAME record (for Canonical NAME) is a type of resource record in the Domain Name System (DNS) that maps one domain name (the alias) to another (the canonical name).^([1]: § 3.6.2 )
+
+This can prove convenient when running multiple services (like an FTP server and a web server, each running on different ports) from a single IP address. One can, for example, use CNAME records to point ftp.example.com and www.example.com to the DNS entry for example.com, which in turn has an A record which points to the IP address. Then, if the IP address ever changes, one only has to record the change in one place within the network: in the DNS A record for example.com.
+
+CNAME records must always point to another domain name, never directly to an IP address.
+
+Details
+
+[edit]
+
+DNS CNAME records are specified in RFC 1034^([1]) and clarified in Section 10 of RFC 2181.^([2])
+
+CNAME records are handled specially in the domain name system and have several restrictions on their use. When a DNS resolver encounters a CNAME record while looking for a regular resource record, it will restart the query using the canonical name instead of the original name. However, if the resolver is specifically told to look for CNAME records, the canonical name (righthand side) is returned, rather than restarting the query. The canonical name that a CNAME record points to can be anywhere in the DNS, whether local or on a remote server in a different DNS zone.
+
+    $ORIGIN example.com.
+    […]
+    bar.example.com.        3600  IN  CNAME     foo.example.com.
+    foo.example.com.        3600  IN  A         192.0.2.23
+
+Consider the DNS zone shown at right: when an A record lookup for bar.example.com is carried out, the resolver will see a CNAME record and restart the lookup for foo.example.com, eventually returning 192.0.2.23.
+
+Possible confusion
+
+[edit]
+
+With a CNAME record, one can point a name such as bar.example.com to foo.example.com. Because of this, during casual discussion, the lefthand (bar.example.com) side of a DNS entry can be incorrectly identified as the CNAME, however, this is inaccurate. The CNAME record stores the canonical (true) name of a host, making the righthand side the actual CNAME.
+
+    bar.example.com.        3600  IN  CNAME     foo.example.com.
+
+This confusion is specifically mentioned in RFC 2181, "Clarifications to the DNS Specification". The left-hand label is an alias for the right-hand side (the RDATA portion), which is (or should be) a canonical name.^([2]: § 10.1.1 ) In other words, consider the CNAME record shown at right. This may be read as saying that bar.example.com is an alias for the canonical name foo.example.com. A client will request bar.example.com and the answer will be foo.example.com.
+
+Constraints
+
+[edit]
+
+-   CNAME records must always be pointed to another domain name, never to an IP address.
+-   If a CNAME record is present at a node, no other data should be present; this ensures that the data for a canonical name and its aliases cannot be different.^([1]: 15 [3]) The exception is when DNSSEC is in use, in which case there can be DNSSEC-related records such as RRSIG, NSEC, etc.^([2]: § 10.1 )
+-   CNAME records that point to other CNAME records should be avoided due to their lack of efficiency, but are not an error.^([1]) It is possible, then, to create unresolvable loops with CNAME records, as in:
+        $ORIGIN example.com.
+        […]
+        foo.example.com.        3600  IN  CNAME     bar.example.com.
+        bar.example.com.        3600  IN  CNAME     foo.example.com.
+-   RFC 1034 also makes the presence of an SOA record at the zone apex an additional requirement,^([1]: § 4.2.1 ) presenting yet another barrier to placing a CNAME record appearing at the zone apex.
+-   CNAME records that are served by DNAME records may cause recursive loops in older resolvers.^([clarification needed])
+-   MX and NS records must never point to a CNAME alias.^([2]: § 10.3 ) So, for example, a zone must not contain constructs such as:
+        $ORIGIN example.com.
+        @                       3600  IN  SOA       ns1.example.com. hostmaster@example.com (
+                                                            zone-admin.example.com.
+                                                            […]                             )
+        @                       2400  IN  MX     0  foo.example.com.
+        foo.example.com.        3600  IN  CNAME     host.example.com.
+        host.example.com.       3600  IN  A         192.0.2.1
+-   Domains that are used in the Simple Mail Transfer Protocol MAIL and RCPT commands may not have a CNAME record.^([4]) In practice this may work, but can have different behavior with different mail servers, and can have undesired effects.^([5])
+
+DNAME record
+
+[edit]
+
+A DNAME record (for Delegation NAME) is defined by RFC 6672^([6]) (the earlier RFC 2672^([7]) now being obsolete). The DNAME record provides redirection (alias) for a subtree of the domain name tree in the DNS. That is, all names that end with a particular suffix are redirected to another part of the DNS. In contrast, the CNAME record creates an alias for a single name and not its subdomains. Like the CNAME record, the DNS lookup will continue by retrying the lookup with the new name. The name server synthesizes a CNAME record to actually apply the DNAME record to the requested name—CNAMEs for every node on a subtree have the same effect as a DNAME for the entire subtree.
+
+    $ORIGIN example.com.
+    […]
+    foo.example.com.        1200  IN  DNAME  bar.example.com.
+    bar.example.com.        3600  IN  A      192.0.2.23
+    xyzzy.bar.example.com.  3600  IN  A      192.0.2.24
+    *.bar.example.com.      3600  IN  A      192.0.2.25
+
+For example, if there is a DNS zone as seen at right, an A record lookup for foo.example.com will return no data because a DNAME is not a CNAME, and there is no A record defined for the foo host.
+
+However, a lookup for xyzzy.foo.example.com will be DNAME mapped and return the A record for xyzzy.bar.example.com, which is 192.0.2.24; if the DNAME record had been a CNAME record, this request would have returned name not found.
+
+Lastly, a request for foobar.foo.example.com would be DNAME mapped and return 192.0.2.25.
+
+ANAME record
+
+[edit]
+
+Several managed DNS platforms implement a non-standard ALIAS^([8]) or ANAME^([9]) record type. These pseudo records are managed by DNS administrators like CNAME records, but are published and resolved by (some) DNS clients like A records. ANAME records are typically configured to point to another domain, but when queried by a client, answer with an IP address. While ANAME record types were submitted for standardization,^([10]) there are other non-conforming implementations, so they can do whatever the owner of the DNS platform chooses, including existing at the apex of a zone and existing for domains that receive mail.
+
+The main advantage of ANAME records over CNAME records is that they can be used on a zone apex, while a standards-following resolver will not treat domain names with CNAME records as a zone apex.^([11]) Also, while a DNS client requires at least two queries to resolve a CNAME to an A record to an IP address, an ANAME will shift the second and subsequent query to the server. If the DNS server can resolve the A record and cache the requested IP address more efficiently and with less latency than its DNS clients can, then the DNS client can resolve the query faster.
+
+The ANAME record type was submitted as a draft standard to the IETF Domain Name System Operations (DNSOP) working group, however its most recent revision expired in January 2020,^([10]) having not found the consensus needed for a proposal. It has since been superseded by a series of drafts for two other new record types that resulted in RFC 9460, titled "Service Binding and Parameter Specification via the DNS (SVCB and HTTPS Resource Records)," being approved as a Proposed Standard in November 2023.^([12])
+
+See also
+
+[edit]
+
+-   ICANN
+-   Internet Assigned Numbers Authority
+-   List of DNS record types
+
+References
+
+[edit]
+
+1.  1 2 3 4 5 Mockapetris, Paul V. (November 1, 1987). Domain names - concepts and facilities. Internet Engineering Task Force. doi:10.17487/RFC1034. RFC 1034. Archived from the original on Aug 18, 2023. Retrieved Mar 16, 2019.
+2.  1 2 3 4 Elz, Robert & Bush, Randy (July 1, 1997). Clarifications to the DNS Specification. Internet Engineering Task Force. doi:10.17487/RFC2181. RFC 2181. Archived from the original on Aug 19, 2023. Retrieved Jun 30, 2026.
+3.  ↑ Barr, David (February 1, 1996). "CNAME records". Common DNS Operational and Configuration Errors. Internet Engineering Task Force. sec. 2.4. doi:10.17487/RFC1912. RFC 1912. Archived from the original on Aug 15, 2023. Retrieved Jul 4, 2026.
+4.  ↑ Braden, Robert T. (October 1, 1989). "Canonicalization". Requirements for Internet Hosts - Application and Support. Internet Engineering Task Force. sec. 5.2.2. doi:10.17487/RFC1123. STD 3. RFC 1123. Archived from the original on Sep 6, 2023. Retrieved Jul 23, 2020.
+5.  ↑ Bernstein, D. J. (2000). "CNAME records in mail". Internet mail infrastructure. Archived from the original on Mar 6, 2016. Retrieved Jun 3, 2011.
+6.  ↑ Rose, Scott & Wijngaards, Wouter (June 18, 2012). DNAME Redirection in the DNS. Internet Engineering Task Force. doi:10.17487/RFC6672. ISSN 2070-1721. RFC 6672. Archived from the original on Oct 31, 2024. Retrieved Jun 30, 2026.
+7.  ↑ Crawford, Matt (August 1, 1999). Non-Terminal DNS Name Redirection. Internet Engineering Task Force. doi:10.17487/RFC2672. RFC 2672. Archived from the original on Aug 18, 2024. Retrieved Jun 30, 2026.
+8.  ↑ "What is an ALIAS record?". DNSimple Help. 2013. Archived from the original on May 7, 2017. Retrieved Jul 26, 2019.
+9.  ↑ "ANAME Records". DNS Made Easy. 2015. Archived from the original on Nov 18, 2025. Retrieved Sep 24, 2022.
+10. 1 2 Finch, Tony; Hunt, Evan; van Dijk, Peter; Eden, Anthony & Mekking, Matthijs (July 8, 2019). Address-specific DNS aliases (ANAME). Internet Engineering Task Force. I-D draft-ietf-dnsop-aname-04. Archived from the original on Oct 3, 2023. Retrieved Jul 26, 2019.
+11. ↑ Goldlust, Suzanne; Almond, Cathy & Choules, Greg (July 31, 2024). "CNAME at the apex of a zone". ISC Open Source Knowledgebase. Internet Systems Consortium. Archived from the original on Feb 14, 2026. Retrieved Apr 8, 2023.
+12. ↑ Schwartz, Benjamin M.; Bishop, Mike & Nygren, Erik (November 6, 2023). Service Binding and Parameter Specification via the DNS (SVCB and HTTPS Resource Records). Internet Engineering Task Force. doi:10.17487/RFC9460. ISSN 2070-1721. RFC 9460. Archived from the original on Dec 3, 2025. Retrieved Jun 30, 2026.
+
+Further reading
+
+[edit]
+
+-   RFC 2219 – Use of DNS aliases for network services
+-   RFC 6672 – Mirroring a DNS zone subtree onto a second hostname
+-   RFC 9460 – Increasing network connection efficiency by publishing server configuration details in the DNS
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=CNAME_record&oldid=1363112694"
+
+Category:
+
+-   DNS record types
+
+Hidden categories:
+
+-   Articles with short description
+-   Short description matches Wikidata
+-   Use list-defined references from June 2026
+-   Use mdy dates from June 2026
+-   Wikipedia articles needing clarification from November 2017
+
+-   This page was last edited on 8 July 2026, at 03:08 (UTC).
+-   Page was rendered with Parsoid.
+-   Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+-   Privacy policy
+-   About Wikipedia
+-   Disclaimers
+-   Contact Wikipedia
+-   Legal & safety contacts
+-   Code of Conduct
+-   Developers
+-   Statistics
+-   Cookie statement
+-   Mobile view
+
+-   [Wikimedia Foundation]
+-   [Powered by MediaWiki]
+
+Search
+
+Search
+
+Toggle the table of contents
+
+CNAME record
+
+11 languages
+
+Add topic

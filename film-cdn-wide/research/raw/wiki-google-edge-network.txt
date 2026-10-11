@@ -1,0 +1,5 @@
+# Wikipedia article: Google edge network
+# URL: https://en.wikipedia.org/wiki/Google_edge_network
+# Fetched: 2026-10-11 via MediaWiki API (explaintext)
+# Length: 0 chars
+

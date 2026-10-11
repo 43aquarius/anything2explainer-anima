@@ -1,0 +1,5 @@
+# Wikipedia article: Dynamic adaptive streaming over HTTP
+# URL: https://en.wikipedia.org/wiki/Dynamic_adaptive_streaming_over_HTTP
+# Fetched: 2026-10-11 via MediaWiki API (explaintext)
+# Length: 0 chars
+

@@ -1,0 +1,130 @@
+Open Connect Overview
+What is Netflix Open Connect?
+Open Connect is the name of the global network that is responsible for delivering Netflix
+TV shows and movies to our members world-wide. This type of network is typically
+referred to as a “Content Delivery Network” or “CDN” because its job is to deliver
+internet-based content (via HTTP/HTTPS) efficiently by bringing the content that people
+watch close to where they’re watching it. The Open Connect network shares some
+characteristics with other CDNs, but also has some important differences.
+Netflix began the Open Connect initiative in 2011, as a response to the ever-increasing
+scale of Netflix streaming. We started the program for two reasons:
+1)​ As Netflix grew to be a significant portion of overall traffic on consumer Internet
+Service Provider (ISP) networks, it became important to be able to work with
+those ISPs in a direct and collaborative way.
+2)​ Creating a content delivery solution customized for Netflix allowed us to design a
+proactive, directed caching solution that is much more efficient than the standard
+demand-driven CDN solution, reducing the overall demand on upstream network
+capacity by several orders of magnitude.
+Several years in, we are constantly learning - adjusting and evolving the program to
+ensure that our members continue to have a consistently high quality video experience
+from wherever they are in the world.
+The overall mission of the program is to enable ISPs to provide a great Netflix
+experience for our mutual customers. We further this goal by localizing Netflix traffic as
+close as possible to our members, limiting the network and geographical distances that
+our video bits must travel during playback. This of course benefits Netflix members, but
+it also benefits ISPs and internet users in general. In short, we invest in efficiency
+
+innovations and increasing the capacity of the internet to support playback requests for
+Netflix content - so that others don’t have to.
+
+Open Connect Appliances
+The building blocks of the Open Connect infrastructure are our suite of purpose-built
+cache appliances, called Open Connect Appliances (referred to as ‘OCAs’, ‘appliances’,
+or, for convenience, ‘servers’). These appliances temporarily store encoded video/image
+files and make these files available via HTTP/HTTPS to client devices (for example: set
+top boxes, mobile devices, or smart TVs) through ISP networks. OCAs have the sole
+responsibility of storing playable bits to make content available to client devices as
+efficiently as possible.
+As with all facets of the Open Connect program, appliance design continues to expand
+and improve over time to keep up with our current and future needs. We are involved in
+the development of all layers of the software stack, and we make both the hardware
+design and the software available via open source for others to benefit from.
+
+Our global network of thousands of OCAs are deployed in two ways:
+
+1.​ We install OCAs within internet exchange points (referred to as IXs or IXPs) in
+significant Netflix markets throughout the world. These OCAs are interconnected
+with mutually-present ISPs via settlement-free public or private peering (SFI).
+Peering alone can be very beneficial to our ISP partners.
+
+2.​ We provide OCAs free of charge to qualifying ISPs. These OCAs, with the same
+capabilities as the OCAs that are in the IXPs, are deployed directly inside ISP
+networks. We provide the server hardware and the ISPs provide power, space,
+and connectivity. ISPs directly control which of their customers are routed to their
+embedded OCAs. ISP partners with embedded OCAs also use peering for
+resiliency and to enable efficient nightly fill and updates, described later.
+
+Each individual OCA deployment site is custom tailored by the Open Connect team
+based on local network characteristics and other key capacity planning factors. After we
+deploy OCAs to a site, we constantly measure and analyze their performance and
+augment capacity as requirements evolve.
+
+Interaction with Client Devices and Netflix AWS Services
+OCAs do not store client data (for example - viewing history, DRM info, or member
+data). Essentially, OCA servers only do the following two things:
+●​ Report their status to the Open Connect control plane services in Amazon Web
+Services (AWS). For example, they report health metrics, BGP routes they have
+learned from the BGP peer (router or switch) they have a configured BGP
+session with, and what files they have stored on disk.
+●​ Serve content via HTTP/HTTPS when it is requested by a client device.
+The control plane services in AWS take the data that the OCAs report and use it to steer
+clients via URL to the most optimal OCAs given their file availability, health, and network
+
+proximity to the client. The control plane services also control fill behavior (adding new
+files to OCAs nightly), compute optimal behavior for such things as file storage/hashing,
+and handle the storage and interpretation of relevant telemetry about the playback
+experience.
+Open Connect also partners extensively with Netflix client teams to ensure that the
+content that is served by the OCAs is optimized dynamically by each client device
+based on its specific needs and the current network conditions.
+
+The following diagram illustrates how the playback process works:
+
+1.​ OCA’s periodically report health, routes they have learned, and content (file)
+availability to the cache control services in AWS.
+2.​ A user on a client device requests playback of a title (TV show or movie) from the
+Netflix application in AWS.
+3.​ The playback application services in AWS check user authorization and
+licensing, then determine which specific files are required to handle the playback
+request - taking individual client characteristics and current network conditions
+into account.
+
+4.​ The steering service in AWS uses the information stored by the cache control
+service to pick OCAs that the requested files should be served from, generates
+URLs for these OCAs, and hands the URLs over to the playback application
+services.
+5.​ The playback application services hand over URLs of the appropriate OCAs to
+the client device, and the OCA begins to serve the requested files.
+
+Monitoring, Maintenance, and Updates
+All of our OCA deployments, whether in IXPs or embedded in ISP networks, are
+constantly monitored by the Open Connect Operations team to ensure reliability and
+efficiency. We troubleshoot and proactively fix most issues remotely with minimal input
+required from our ISP partners. If partners wish to monitor their own embedded OCAs’
+status and performance, we provide a Partner Portal where they can do so. If hardware
+performance degrades to the point where a server is no longer functioning in the range
+of our quality standards, we simply replace it - at no cost to our partners.
+We have the somewhat unique benefit of being able to deploy the majority of our
+content and software updates proactively during off-peak fill windows. Because we can
+predict with high accuracy what our members will watch and what time of day they will
+watch it, we make use of non-peak bandwidth to download the vast majority of content
+updates to the OCAs in our network during these configurable time windows. OCAs can
+also download updates from each other - minimizing significant usage of internet
+“backbone” capacity during the update cycle.
+We use ever-evolving popularity algorithms and storage techniques in the control plane
+services to ensure that our content is distributed in ways that maximize offload efficiency
+and quality of experience, while minimizing churn in the form of updates to the content
+that is stored on the appliances.
+
+More Information
+For more information about Open Connect, see:
+●​ The Open Connect website
+●​ Open Connect articles on the Netflix Tech Blog
+●​ Open Connect articles on the Netflix Media Center
+Copyright © 2016, 2019, 2026 by Netflix, Inc. All rights reserved. No part of this document may be
+reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying
+
+and recording, or by any information storage or retrieval system, without express permission from Netflix,
+Inc.
+
+

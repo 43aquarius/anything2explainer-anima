@@ -1,0 +1,180 @@
+# Wikipedia article: Cloudflare
+# URL: https://en.wikipedia.org/wiki/Cloudflare
+# Fetched: 2026-10-11 via MediaWiki API (explaintext)
+# Length: 31918 chars
+
+Cloudflare, Inc., is an American technology company headquartered in San Francisco, California, that provides a range of internet services, including content delivery network (CDN) services, cloud cybersecurity, DDoS mitigation, and ICANN-accredited domain registration. The company's services act primarily as a reverse proxy between website visitors and a customer's hosting provider, improving performance and protecting against malicious traffic.
+Cloudflare was founded in 2009 by Matthew Prince, Lee Holloway, and Michelle Zatlyn. The company went public on the New York Stock Exchange in 2019 under the ticker symbol NET. Cloudflare has since expanded its offerings to include edge computing through its Workers platform, a public DNS resolver (1.1.1.1), and a VPN-like service known as WARP. In recent years, the company has integrated artificial intelligence into its infrastructure, acquiring companies such as Replicate and launching tools to manage AI bots and scrapers. According to W3Techs, Cloudflare is used by approximately 21.3% of all websites on the Internet as of January 2026.
+The company has been the subject of controversy regarding its policy of content neutrality. While Cloudflare executives have historically advocated for remaining a neutral infrastructure provider, the company has terminated services for specific high-profile websites associated with hate speech and violence, including The Daily Stormer, 8chan, and Kiwi Farms, following significant public pressure. Cloudflare has also faced criticism and litigation regarding copyright infringement by websites using its services, notably losing a lawsuit against Japanese publishers in 2025. The company experienced significant global outages in late 2025 which disrupted services for major platforms internationally.
+
+
+== History ==
+Cloudflare was founded on July 26, 2009, by Matthew Prince, Lee Holloway, and Michelle Zatlyn. Prince and Holloway had previously collaborated on Project Honey Pot, a product of Unspam Technologies that partly inspired the basis of Cloudflare. In 2009, the company was venture-capital funded. On August 15, 2019, Cloudflare submitted its S-1 filing for an initial public offering on the New York Stock Exchange under the stock ticker NET. It opened for public trading on September 13, 2019, at $15 per share.
+According to the company, the name 'Cloudflare' was chosen, over the initial 'WebWall', because it best described what they were trying to do: build a "firewall in the cloud".
+In 2020, Cloudflare co-founder and COO Michelle Zatlyn was named president.
+Cloudflare has acquired web-services and security companies, including StopTheHacker (February 2014), CryptoSeal (June 2014), Eager Platform Co. (December 2016), Neumob (November 2017), S2 Systems (January 2020), Linc (December 2020), Zaraz (December 2021), Vectrix (February 2022), Area 1 Security (February 2022), Nefeli Networks (March 2024), BastionZero (May 2024), Kivera (October 2024), Replicate (November 2025), and Human Native (January 2026).
+
+Since at least 2017, Cloudflare has used a wall of lava lamps at its San Francisco headquarters as a source of randomness for encryption keys, alongside double pendulums at its London offices and a Geiger counter at its Singapore offices. The lava lamp installation implements the Lavarand method, where a camera transforms the unpredictable shapes of the "lava" blobs into a digital image.
+In Q4 2022, Cloudflare provided paid services to 162,086 customers.
+In October 2024, Cloudflare won a lawsuit against patent troll Sable Networks. Sable paid Cloudflare $225,000, granted it a royalty-free license to its patent portfolio, and dedicated its patents to the public by abandoning its patent rights.
+In November 2025, it was announced Cloudflare had agreed to acquire Replicate, a San Francisco–based platform that enables software developers to run, fine-tune, and deploy open-source machine-learning models via an API without managing infrastructure.
+In January 2026, Cloudflare released an analysis regarding BGP routing leaks observed from the Venezuelan state-owned ISP CANTV (AS8048), which occurred on January 2 coincides with the arrest of Nicolás Maduro. While some security researchers had speculated that the outages were linked to U.S. cyber operations, Cloudflare's data indicated that the anomalies were consistent with a pattern of "insufficient routing export and import policies" by the ISP rather than malicious external interference.
+In January 2026, Cloudflare acquired Human Native, an AI data marketplace that brokers transactions between developers and content creators, for an undisclosed amount.
+On January 16, 2026, Cloudflare acquired The Astro Technology Company, the developers behind the open-source web framework Astro.
+In May 2026, Cloudflare announced the elimination of approximately 1,100 positions, around 20 percent of its workforce, in a restructuring the company attributed to the rapid adoption of artificial intelligence tools. The announcement coincided with the company's first-quarter 2026 earnings, which reported a record $639.8 million in quarterly revenue, a 34 percent year-over-year increase. CEO Matthew Prince stated the cuts were not driven by performance concerns but reflected roles made obsolete by AI, and that Cloudflare expected to employ more people by the end of 2027 than at any point during 2026.
+In June 2026, Cloudflare acquired VoidZero, the open-source company behind the JavaScript tool Vite and related developer tools including Vitest, Rolldown, and Oxc. Cloudflare said the acquisition would integrate VoidZero's tooling into its Workers developer platform to support AI-assisted application development, while committing $1 million to an independent Vite ecosystem fund and continuing to maintain the projects as open source.
+
+
+== Products ==
+Cloudflare provides network and security products for consumers and businesses, utilizing edge computing, reverse proxies for web traffic, data center interconnects, and a content distribution network to serve content across its network of servers. It supports transport layer protocols TCP, UDP, QUIC, and many application layer protocols such as DNS over HTTPS, SMTP, and HTTP/2 with support for HTTP/2 Server Push. As of 2023, Cloudflare handles an average of 45 million HTTP requests per second.
+As of 2024, Cloudflare servers are powered by AMD EPYC 9684X processors.
+Cloudflare also provides analysis and reports on large-scale outages, including Verizon's October 2024 outage.
+In April 2026, Cloudflare released an open-source CMS called EmDash, intended to align with serverless and edge-based architecture.
+
+
+=== Artificial intelligence ===
+In 2023, Cloudflare launched "Workers AI", a framework allowing for use of Nvidia GPU's within Cloudflare's network.
+In 2024, Cloudflare launched a tool that prevents bots from scraping websites. To build automatic bot detector models, the company analyzed "AI" bots and crawler traffic. The company also launched an "AI" assistant to generate charts based on queries by leveraging "Workers AI". Cloudflare announced plans in September 2024 to launch a marketplace where website owners can sell "AI" model providers access to scrape their site's content.
+In March 2025, Cloudflare announced a new feature called "AI Labyrinth", which combats unauthorized "AI" data scraping by serving fake "AI"-generated content to LLM bots. In July, the company rolled out a permission-based setting to allow websites to automatically block online bots from scraping data and content.
+Cloudflare released AutoRAG into beta in 2025. AutoRAG (retrieval augmented generation) creates a vector database of a website's unstructured content to identify relationships between concepts. It is part of an initiative with Microsoft, alongside their NLWeb standard, to make websites easier for people and automated systems to query.
+Cloudflare and GoDaddy partnered in April 2026 to enable AI Crawl Control features on GoDaddy hosted websites. This would allow site owners to decide how AI bot crawlers interact with their content.
+
+
+=== DDoS mitigation ===
+Cloudflare provides free and paid DDoS mitigation services that protect customers from distributed denial of service (DDoS) attacks. Cloudflare received media attention in June 2011 for providing DDoS mitigation for the website of LulzSec, a black hat hacking group.
+In March 2013, The Spamhaus Project was targeted by a DDoS attack that Cloudflare reported exceeded 300 gigabits per second (Gbit/s). Patrick Gilmore, of Akamai, stated that at the time it was "the largest publicly announced DDoS attack in the history of the Internet". While trying to defend Spamhaus against the DDoS attacks, Cloudflare ended up being attacked as well; Google and other companies eventually came to Spamhaus' defense and helped it to absorb the unprecedented amount of attack traffic.
+In 2014, Cloudflare began providing free DDoS mitigation for artists, activists, journalists, and human rights groups under the name "Project Galileo". In 2017, it extended the service to electoral infrastructure and political campaigns under the name "Athenian Project". By 2025, more than 2,900 users and organizations were participating in Project Galileo, including 31 US states.
+In February 2014, Cloudflare claimed to have mitigated an NTP reflection attack against an unnamed European customer, which it stated peaked at 400 Gbit/s. In November 2014, it reported a 500 Gbit/s DDoS attack in Hong Kong. In July 2021, the company claimed to have absorbed a DDoS attack three times larger than any it had previously recorded, which its corporate blog implied was over 1.2 Tbit/s in total. In February 2023, Cloudflare reported blocking a 71 million request-per-second DDoS attack which "the company says was the largest HTTP DDoS attack on record".
+Cloudflare blocked the then largest publicly recorded DDoS attack in August 2025, with volumetric attacks peaking at 11.5 terabits per second (tbps). This was surpassed in December 2025 when an Aisuru botnet launched a 31.4 tbps attack, with a requests-per-second rate exceeding 200 million, against multiple companies in the telecommunications sector, a campaign Cloudflare dubbed "The Night Before Christmas".
+In April 2026, Cloudflare released a system designed to let users implement their own custom DDoS mitigation logic, using protocols built on User Datagram Protocol (UDP).
+
+
+=== Edge computing ===
+In 2017, Cloudflare launched Cloudflare Workers, a serverless computing platform for creating new applications, augmenting existing ones, without configuring or maintaining infrastructure. It has expanded to include Workers KV, a low-latency key-value data store; Cron Triggers, for scheduling Cron jobs; and additional tooling for developers to deploy and scale their code across the globe.
+In 2020, Cloudflare released a JAMstack platform for developers to deploy websites on Cloudflare's Edge infrastructure, under the name "Pages".
+In 2022, Cloudflare announced an Edge SQL database, D1, which is built on SQLite.
+In August 2023, Cloudflare and IBM announced a partnership providing bot management capabilities to protect IBM Cloud customers from malicious bots and automated threats. The same month, Cloudflare was hired by SpaceX to boost the performance of Starlink. In September, the company launched Cloudflare Fonts as a competitor to Google Fonts.
+
+
+=== Internet security ===
+In April 2020, Cloudflare announced it was moving away from using reCAPTCHA in favor of hCaptcha. In September 2022, Cloudflare began to test Turnstile – an alternative to CAPTCHA. The product, instead of presenting a visual CAPTCHA for the user to solve, automatizes the verification process by conducting JavaScript-based checks inside the browser to determine whether the user is a real person or an automated entity. The algorithm reportedly uses machine learning to optimize the process.
+Through a contract with the Cybersecurity and Infrastructure Security Agency, Cloudflare provides registry and authoritative DNS services to the .gov top-level domain. Cloudflare also launched Cloudflare for Campaigns in 2020, to offer free cybersecurity tools to political campaigns. Those tools expanded to include secure email systems in 2025.
+In November 2020, Cloudflare announced Cloudflare for Teams, consisting of a DNS resolver and web gateway called "Gateway", and a zero-trust authentication service called "Access".
+Cloudflare released an Oblivious HTTP relay service in 2022, called Privacy Gateway.
+Cloudflare announced a partnership with PhonePe in January 2023 to secure its mobile payment system. In February, Cloudflare launched Wildebeest to allow Mastodon users to set up and run their own instances on Cloudflare's infrastructure.
+In August 2023, Cloudflare started the Project Cybersafe Schools program as part of a $20 million grant program from Amazon Web Services, making 70 percent of public school districts in the United States eligible for no-cost cybersecurity services.
+In March 2024, it announced Firewall for AI to defend applications running large language models (LLMs). In September, Cloudflare announced Ephemeral IDs, which identifies fraudulent activity by linking behavior to a client through a short-lived, generated ID, rather than the traditional means of using an IP address. The same month, the company also announced all ISP and equipment manufacturers could use its DNS resolvers for free.
+Cloudflare introduced the Cloudforce One threat events platform in March 2025, offering real-time insights into cyberattacks using data gathered from Cloudflare's network.
+
+
+=== SASE ===
+Cloudflare's overarching secure access service edge (SASE) platform debuted in October 2020.
+Cloudflare announced the acquisition of Area 1 Security in February 2022, a company who developed a product designed to combat phishing email attacks.
+Cloudflare acquired Nefeli Networks in March 2024, a cloud networking company, co-founded by computer scientist Sylvia Ratnasamy.
+
+
+=== WARP ===
+In 2019, Cloudflare released a VPN-like service called WARP, and open sourced the custom underlying WireGuard implementation written in Rust.
+
+
+=== Other services ===
+In January 2021, the company began providing its "Waiting Room" digital queue product for free for COVID-19 vaccination scheduling under the title "Project Fair Shot". Project Fair Shot later won a Webby People's Choice Award in 2022 for Event Management under the Apps & Software category.
+In March 2023, Cloudflare announced post-quantum cryptography will be made freely and forever available to cloud services, applications and Internet connections.
+Cloudflare released the Speed Brain and Instant Purge features in September 2024, to significantly reduce page load latency by prefetching content, and invalidating cached content in under 150ms.
+In 2024, Cloudflare announced plans to launch a new payment method, called Stripe Link, which went into beta in the fall.
+Since 2010, Cloudflare has collaborated with the National Center for Missing & Exploited Children to provide data, files, and supplemental investigation from abuse reports observed on its network. Cloudflare designed a new NCMEC reporting system in 2024, updating it in 2025 by integrating Cloudflare Workflows and making the CSAM scanning tool accessible globally.
+
+
+== Outages and issues ==
+
+
+=== Intrusions ===
+On June 1, 2012, the hacker group UGNazi compromised some of Cloudflare CEO Matthew Prince's accounts and redirected visitors of the website 4chan to a Twitter account belonging to UGNazi. They allegedly used social engineering to trick AT&T support staff into giving them access to Prince's voicemail, then exploited a vulnerability in Cloudflare's use of Google's two-factor authentication system. Once in control of Prince's email account, UGNazi was able to redirect the 4chan domain through Cloudflare's database.
+
+
+=== 2016–2017 data leak ===
+
+From September 2016 until February 2017, a Cloudflare bug nicknamed Cloudbleed leaked sensitive data, including passwords and authentication tokens, from customer websites by sending extra data in response to web requests.
+
+
+=== November–December 2025 outage ===
+On November 18, 2025, Cloudflare suffered a major global outage that caused widespread 500 errors, slowing down many platforms, making them unreachable or completely down for users around the world.
+Affected services included Twitter, Spotify, Letterboxd, Uber, DoorDash, Indeed, Canva, Grindr, IKEA, Archive of Our Own, Wplace, news websites including Axios and Politico, AI and LLM services such as ChatGPT, Sora, and Microsoft Copilot, online games such as League of Legends, and any service relying on Cloudflare's security challenge software Turnstile. Access to WARP, Cloudflare's VPN service, was also briefly disabled in London. During the outage, a spokesperson for Cloudflare said the company had seen a "spike in unusual traffic", causing some traffic passing through its network to experience errors.
+At 14:23 UTC, The Guardian reported that Cloudflare had released a fix. It also reported that maintenance was due at various locations, though this is not known to have caused the outages. At 14:42 UTC, Cloudflare informed users on its status page that the fix had been implemented and that it would take some time for remaining post-deployment issues to be fixed.
+A technical postmortem of the incident was released the day following the outage. Cloudflare attributed the outage to a change in the configuration of a database, which caused an invalid file to be sent to all servers on the network.
+On December 5, Cloudflare suffered another global outage, which began at 09:00 AM UTC. This was the second such outage in three weeks to affect Cloudflare's services.
+
+
+=== ACME WAF bypass ===
+In January 2026, security researchers disclosed a vulnerability in Cloudflare's Web application firewall (WAF) that allowed attackers to bypass security rules and access origin servers directly. The flaw existed in the handling of ACME challenge requests; the logic disabled WAF protections for requests targeting the /.well-known/acme-challenge/ path without sufficiently verifying if the token matched an active validation attempt. Cloudflare patched the vulnerability in October 2025, stating that the issue was a logic flaw rather than a code execution vulnerability and that there was no evidence of exploitation.
+
+
+=== Universal SSL CAA issue ===
+In July 2026, Cloudflare published CVE-2026-14440, describing a vulnerability in Universal SSL reported by independent researcher David Zurabovich Osipov. On affected Universal SSL zones, Cloudflare's authoritative DNS servers can return a CAA record set automatically managed by Universal SSL instead of the stricter CAA records configured by the domain owner. Consequently, a certificate authority evaluating that record set does not see the domain owner's RFC 8657 accounturi or validationmethods parameters, so the associated account-binding and validation-method-binding protections are not enforced end-to-end. The CVE record describes exploitation as non-trivial, but states that successful exploitation could result in the issuance of a browser-trusted TLS certificate to an attacker, potentially enabling a man-in-the-middle attack.
+
+
+== Controversies ==
+Cloudflare has established a content neutrality policy and opposes the policing of its customers on the basis of free speech unless said customers break the law. The company has faced criticism for not banning hate speech websites and websites allegedly connected to terrorism groups. Cloudflare has maintained that no law enforcement agency has asked the company to discontinue these services and it closely monitors its obligations under U.S. laws.
+In 2022, a research paper by Stanford University found that Cloudflare was a prominent CDN provider, among several other providers, that are disproportionately responsible for serving misinformation websites. Cloudflare has come under pressure due to its services being utilized to access far-right content.
+
+
+=== Service terminations ===
+
+
+==== The Daily Stormer ====
+Cloudflare provided DNS routing and DDoS protection for the white supremacist and neo-Nazi website The Daily Stormer. In 2017, after previously refusing to take any action against the website, Cloudflare stopped providing its services to The Daily Stormer after an announcement on the website asserted that Cloudflare executives were privately supporting its ideology.
+In a statement to Business Insider, Cloudflare CEO Matthew Prince said that he was repulsed by The Daily Stormer's content while expressing regret at the fact that his decision to suspend services had taken the website offline: "The ability of somebody to single-handedly choose to knock content offline doesn't align with core ideas of due process or justice. Whether that's a national government launching attacks or an individual launching attacks."
+As a self-described "free speech absolutist", Prince claimed he did not want to repeat the decision, and sought out protections for the company should they be faced with a similar situation in the future. Prince further addressed the dangers of large companies deciding what is allowed to stay online, a concern shared by a number of civil liberties groups and privacy experts. The Electronic Frontier Foundation, a US digital rights group, said that services such as Cloudflare should not be deciding what speech is acceptable and that illegal content should be handled through the legal system.
+
+
+==== Mass shootings and 8chan ====
+In 2019, Cloudflare was criticized for providing services to the far-right discussion and imageboard 8chan. The message board has been linked to mass shootings in the United States and the Christchurch mosque shootings in New Zealand. In addition, a number of news organizations including The Washington Post and The Daily Dot have reported on the existence of child pornography and child sexual abuse discussion boards. A Cloudflare representative said that the platform "does not host the referenced websites, cannot block websites, and is not in the business of hiding companies that host illegal content". Cloudflare did not terminate service to 8chan until public and legal pressure mounted in the wake of the 2019 El Paso shooting, in which the associated manifesto was published to 8chan. In an interview with The Guardian immediately after the shooting, CEO Matthew Prince defended Cloudflare's support of 8chan, saying that he had a "moral obligation" to keep 8chan online.
+On August 5, 2019, two days after Prince's interview with The Guardian, Cloudflare terminated service to 8chan. Cloudflare explained that 8chan "have proven themselves to be lawless and that lawlessness has caused multiple tragic deaths. Even if 8chan may not have violated the letter of the law in refusing to moderate their hate-filled community, they have created an environment that revels in violating its spirit." Prince condemned the El Paso shooting as "abhorrent in every possible way", removing 8chan from the Internet was "the right thing to do".
+
+
+==== Kiwi Farms ====
+
+Cloudflare provided DDoS mitigation and acted as a reverse proxy for Kiwi Farms. The site often engages in harassment and doxxing of targets and has been implicated in the suicides of at least three people. Kiwi Farms also has a reputation for transphobic content, and its users have been accused of swatting vulnerable individuals. Although Cloudflare was not the primary website host, it did perform critical services to keep Kiwi Farms on-line, both protecting the site from denial-of-service attacks and optimizing content delivery.
+In 2022, a campaign was launched by transgender activist Clara Sorrenti, who has previously been targeted by the forum, to pressure Cloudflare into terminating service for Kiwi Farms. Cloudflare responded by issuing a statement on its abuse policies and saying it didn't want to set precedent for speech on the internet with its "extraordinary" decision.
+The company also released a blog post and likened its services to that of a public utility, emphasizing that it does not believe in shutting down security services based on content it finds objectionable. They acknowledged that while it might be more popular to remove sites that the Cloudflare team finds offensive, it stood by its decision not to do so. The company also defended its decision by saying that it donated all earnings from anti-LGBTIQ+ sites to an organization that advocated for LGBTIQ+ rights. The blog post mentioned Cloudflare's terms of use agreement, which allows them to terminate service due to "content that discloses sensitive personal information, [and] incites or exploits violence against people" but, according to The Guardian, the statement did not address how Kiwi Farms users' doxxing behavior did not violate these terms.
+On September 3, 2022, Cloudflare blocked Kiwi Farms, citing urgent escalating rhetoric against targets of Kiwi Farms, stating that there is an "unprecedented emergency and immediate threat to human life". According to The Washington Post, there was a "surge in credible violent threats stemming from the site" and CEO Matthew Prince said that Cloudflare believes "there is an imminent danger, and the pace at which law enforcement is able to respond to those threats we don't think is fast enough to keep up".
+
+
+==== Switter ====
+Switter was a social media network for the sex worker community, built by Australia-based company Assembly Four on Mastodon's open-source software, before Cloudflare dropped Switter as a client and ceased services in April 2018, citing terms of service violations. This occurred shortly after the passage of FOSTA/SESTA, a set of bills criminalizing websites that facilitate or support sex trafficking in 2018. SESTA weakened protections for Internet infrastructure companies and was criticized on free speech grounds due to concerns about disproportionate impact and disruptions to the lives of sex workers.
+Cloudflare said the move was "related to our attempts to understand FOSTA, which is a very bad law and [sets] a very dangerous precedent". Assembly Four said that "Given Cloudflare's previous stances of privacy and freedom, as well as fighting alongside the EFF, we had hoped they would take a stand against FOSTA/SESTA".
+
+
+=== Terrorism ===
+In 2015, testimony to the United States House Committee on Foreign Affairs, it was reported that two of the top three online chat forums and nearly forty other web sites belonging to the Islamic State of Iraq and the Levant (ISIL) were guarded by Cloudflare.
+In 2018, The Huffington Post documented that Cloudflare provided services for "at least 7 terrorist groups", as designated by the United States Department of State including Al-Shabaab, the Taliban, the Popular Front for the Liberation of Palestine, the al-Quds Brigades, the Kurdistan Workers' Party (PKK), the al-Aqsa Martyrs' Brigades, and Hamas. At the time, Cloudflare's general counsel, Doug Kramer, told The Huffington Post that he couldn't comment on specific cases in which Cloudflare was told about possible terrorist organizations using its services, but that Cloudflare does work with government agencies to be in compliance with its legal obligations.
+In September 2019, Cloudflare reported in their Form S-1 filing that their technology was "used by, or for the benefit of, certain individuals or entities" that were blacklisted due to United States economic and trade sanctions regulations", including "entities identified in OFAC’s counter-terrorism and counter-narcotics trafficking sanctions programs, or affiliated with governments currently subject to comprehensive U.S. sanctions".
+
+
+=== Crime ===
+Cloudflare has been cited in reports by The Spamhaus Project, an international spam tracking organization, for the high numbers of cybercriminal botnet operations hosted by Cloudflare. An October 2015 report found that Cloudflare provisioned 40% of the SSL certificates used by typosquatting phishing sites, which use deceptive domain names resembling those of banks and payment processors to compromise Internet users' banking and other transactions. Cloudflare has been criticized for having a conflict of interest by providing DDoS protection to both the operators and victims of "stresser" services.
+In 2018, Cloudflare was identified by the European Union's Counterfeit and Piracy Watch List as a "notorious market" which engages in, facilitates, or benefits from counterfeiting and piracy. The report noted that Cloudflare hides and anonymizes the operators of 40% of the world's pirate sites, and 62% of the 500 largest such sites, and "does not follow due diligence when opening accounts for websites to prevent illegal sites from using its services".
+In 2020, an Italian court ruled Cloudflare had to block current and future domain names and IP addresses of the pirate IPTV service "IPTV THE BEST" for infringing on Lega Serie A intellectual property. At the time, Cloudflare was already blocking 22 domain names in Italy. German courts have similarly found that "Cloudflare and its anonymization services attract structurally copyright infringing websites."
+Following the December 2024 court ruling, the Spanish LaLiga requested that telephone operators block Cloudflare's IP address ranges in February 2025. Cloudflare hosted websites that illegally broadcast soccer matches. As a result, the pirate platform DuckVision was shut down before the derby between Real Madrid and Atlético Madrid. The platform had 200,000 users and was backed by Cloudflare. The blocks affected major legitimate websites, including X, Vimeo, Steam, GitHub, and the Royal Spanish Academy.
+
+
+=== Response to the Russian invasion of Ukraine ===
+After Russia invaded Ukraine in late February 2022, Ukrainian Vice Prime Minister, Minister of Digital Transformation Mykhailo Fedorov and others called on Cloudflare to stop providing its services in the Russian market amidst reports that Russia-linked websites spreading disinformation were using the company's content delivery network services. Cloudflare CEO Matthew Prince responded that the company decided to remain providing services to Russian people to counter Russia's attempts to raise a 'digital iron curtain'. Prince shared that "Indiscriminately terminating service would do little to harm the Russian government but would both limit [Russian citizens'] access to information outside the country and make significantly more vulnerable those who have used us to shield themselves as they have criticized the government." The company later said it had minimal sales and commercial activity in Russia and had "terminated any customers we have identified as tied to sanctioned entities".
+Cloudflare's Project Galileo, launched in 2014, offers DDoS protection to NGOs for free. In 2022, they extended free protection to Ukrainian government and telecoms.
+
+
+=== Copyright lawsuit ===
+In 2022, Japanese publishers Shueisha, Kodansha, Shogakukan, and Kadokawa Shoten filed a copyright lawsuit against Cloudflare, alleging that the service was distributing data to manga piracy sites and sought an injunction and ¥460 million (US$4 million) in damages. On November 19, 2025, a judge ruled in favor of the publishers. While the ruling recognized approximately ¥3.6 billion (US$24 million) in damages, Cloudflare was ordered to pay a total amount of ¥500 million (US$3.6 million), as the publishers claimed that Cloudflare was only partially responsible for the damages.
+
+
+== See also ==
+List of CDNs in Content delivery network § Content delivery service and technology providers
+
+
+== References ==
+
+
+== External links ==
+Official website 
+Cloudflare on LittleSis, a website that publishes data on who-knows-who between government, donors and business 
+Business data for Cloudflare, Inc.:

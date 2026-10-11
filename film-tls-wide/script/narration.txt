@@ -1,0 +1,59 @@
+# TLS — The Little Lock — narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 The Open Postcard
+It's a coffee shop.|You connect to the free Wi-Fi and log in.
+The person at the next table|is running a packet capture.
+They can see every site you visit,|every request you send —|in plain text.
+HTTP is a postcard.|Anyone on the path can read it as it passes by.
+In 2010, a Firefox extension|called Firesheep made this a one-click game —|log in as someone else,|sitting right next to them.
+## gap 30
+
+The problem was old.
+In 1994, Netscape needed people|to trust a credit-card number|to an open network.
+Their answer was SSL —|a lock on the envelope.
+It grew up, survived its mistakes,|and became TLS.
+Today's version, TLS 1.3,|was published in 2018.
+
+# CHAPTER 2 The Handshake
+Under the lock, the first move|is a handshake that takes a single round trip.
+Your browser sends a ClientHello —|its list of ciphers and a key-share.
+The server answers with its own hello|and its certificate.
+Then something strange happens:|both sides compute the same secret —|without either one sending it.
+## gap 25
+
+From here on, everything is|symmetric encryption, AES-GCM.|Fast, stream-like, sealed.
+The person at the next table|still sees every packet.
+The handshake itself is public.|The envelopes still fly,|addressed and timed.
+But the letters inside|have become noise.
+## gap 20
+
+# CHAPTER 3 The Magic Trick
+How do two strangers agree on a secret|on a channel everyone can read?
+This is the Diffie-Hellman trick,|published in 1976 —|fifty years ago.
+Each side mixes a private color|into a public one.
+Anyone watching sees the mixes —|and cannot un-mix them.
+The math version|relies on one-way doors:|multiplying is easy,|undoing it is not.
+## gap 15
+
+That gives TLS a property|worth saying out loud:|forward secrecy.
+If the server's private key|is stolen tomorrow,|the recordings from yesterday|still cannot be decrypted.
+The past stays sealed.
+TLS 1.3 makes this mandatory.|No exceptions, no weak suites —|five cipher suites, down from thirty-one.
+## gap 15
+
+# CHAPTER 4 The Chain of Trust
+One question is left:|who vouches that this server|really is shop.example?
+A certificate —|a stamp from a Certificate Authority.
+Your browser ships with|about a hundred and twenty|of these authorities built in.|Trust, pre-installed.
+A man-in-the-middle attack fails here:|the fake certificate isn't stamped|by anyone your browser believes.
+In 2015, Let's Encrypt|made certificates free and automatic.|HTTPS stopped being a luxury.
+## gap 15
+
+Today, more than four out of five|page loads travel over TLS.|The little lock is just... normal.
+And the lock keeps being re-forged:|encrypted ClientHello is now standard,|and post-quantum key exchange|already protects most browser traffic.
+
+So — the coffee shop.
+The person at the next table|captured thousands of envelopes.
+They can see who you talked to,|when, and how much.
+But every letter they open|is noise.
+Everyone can see the envelope.|No one can read the letter.
+## gap 30
