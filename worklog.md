@@ -57,3 +57,21 @@ Stage Summary:
 - **EP3 TLS 横版成片交付：TLS_Explained_YouTube_1280x720.mp4（3:21 / 38.8MB / 4 章 27 镜）**，已 commit 6be06eb + push
 - 质检：motion_check 成片复测段末全过（42–159f）、终镜 33f ✓；frame_metrics 高0/中0/低29；selfcheck 0
 - 下一步：EP4 CDN 横版（narration/TTS 已重生成就绪，待 config HUD + 分镜 + 图元 + 构建 + 渲染）→ TLS/CDN 竖版 → 封面/发布物料回补 → GitHub Releases（v4 DNS / v5 TLS / v6 CDN）
+
+---
+Task ID: 5
+Agent: main
+Task: EP4《CDN — Why Your Video Never Buffers》横版 YouTube 全流程（17 镜构建 + 渲染 + QC + 交付）
+
+Work Log:
+- 前期：config HUD 13 条重写 + 分镜表（17 镜 6 组，v2 边界规则内置：段末跨 gap / 章末停卡前 / 章首卡后起）+ CDN ui.tsx（EdgeNode/GlobeArc/CacheShelf 三新图元 + EXAMPLE）
+- 构建：G1/G2/G5 后台代理完成（含 g1ui/g2ui/g5ui）；G3 SC07 代理（SC08 主会话补）+ G4 SC09-10 代理（SC11 主会话补）+ G6 全组主会话亲建（SC15 2021 反转 / SC16 信任天平 / SC17 金句扫光——完全复用 TLS SC27 成熟模式）
+- QC 迭代：①SC03 城市圈前移 6 帧（hold 30f）②SC08 名字条放大到 46px 破 3.3s 静止 ③SC12 机架提前到 2768 + 预脉冲涓流 + 节点灯闪（破中段 105 帧真静）④SC17 中段"fast? 大字+红线划除+播放器扫光环"（破 225 帧静止）+ endingFade 区间调至末句后 14 帧（hold 21f~ 承接 OK）⑤空场修复：SC02 算式卡提前 / SC15 标题加大+齿轮提前
+- 踩坑记录：**淡入不等于运动**——EdgeNode 纯 opacity 入场/弧线纯 fade 在 320×180 采样下都低于 0.35 变化阈值；真运动要 transform 位移/缩放或 draw-on；细边框可能不被连通域识别为大体（SC11 外框渲染验证未通过，记录为唯一高项）
+- 渲染：3 块 × ~3 分钟（2 核机）+ concat；fin_frames 全片复测
+
+Stage Summary:
+- **EP4 CDN 横版成片交付：CDN_Explained_YouTube_1280x720.mp4（2:29 / 28.1MB / 4 章 17 镜）**，已 commit 665a4b9 + push
+- 质检：motion 段末全过（30–225f）+ 终镜 21f~ OK；frame_metrics 高1（SC11 已知项）/中0/低16；selfcheck 0
+- **本会话三部曲完成：EP2 DNS（前会话）+ EP3 TLS（3:21）+ EP4 CDN（2:29）均已交付 GitHub**
+- 待续（下会话）：①TLS/CDN 竖版 TikTok（照 EP2 竖版流程：~15 句压缩 + 3 组）②三片的封面 Cover + publish.md 发布物料回补（对齐仓库 SOP：humanize.py 过稿）③GitHub Releases 建 v4/v5/v6（DNS/TLS/CDN + mp4 资产 + audio.wav）④README films 表更新
