@@ -48,7 +48,7 @@ export const SC27: React.FC = () => {
   const L2 = N - 5885; // 提前 6 帧（节拍容差内），给末拍稳定期留预算
   const sub = N - 5893;
   // 小信封飞越（5891 起 32px/帧）
-  const fly2 = Math.max(0, N - 5891);
+  const fly2 = Math.max(0, N - 5860);
 
   return (
     <CameraRig N={N} keys={[{f: F0, x: 640, y: 360, s: 1}]}>
@@ -107,17 +107,17 @@ export const SC27: React.FC = () => {
 
         {/* 行 2：No one can read the letter.（SoftIn + 紫硬投影——DNS SC33 同款"双 glitch 减一"） */}
         {L2 >= 0 ? (
-          <SoftIn N={N} f0={5885}>
+          <SoftIn N={N} f0={5885} len={3}>
             <div style={{...abs(0, 0, 1280, 720)}}>
               <CText cx={640} cy={420} size={78} weight={400} family={FONT_WIDE} color={WHITE} letterSpacing={1}
-                style={{WebkitTextStroke: `4px ${PURPLE_LIGHT}`, paintOrder: 'stroke fill', textShadow: '0 0 22px rgba(161,117,241,.55), 0 0 5px rgba(161,117,241,.5)', transform: `scale(${emphasisPulse(L2, {peak: 1.08})})`}}>
+                style={{WebkitTextStroke: `4px ${PURPLE_LIGHT}`, paintOrder: 'stroke fill', textShadow: '0 0 22px rgba(161,117,241,.55), 0 0 5px rgba(161,117,241,.5)'}}>
                 No one can read the letter.</CText>
             </div>
           </SoftIn>
         ) : null}
 
         {/* 小信封飞越（两行之间，20px/帧右行出画；持续动作直到压黑） */}
-        {N >= 5885 ? (
+        {N >= 5860 ? (
           <div style={{...abs(0, 0, 1280, 720)}}>
             <PacketIcon cx={200 + 20 * fly2} cy={360} w={54} h={38} opacity={0.85} />
           </div>
@@ -125,7 +125,7 @@ export const SC27: React.FC = () => {
 
         {/* 小灰字 */}
         {sub >= 0 ? (
-          <SoftIn N={N} f0={5901}>
+          <SoftIn N={N} f0={5885} len={3}>
             <CText cx={640} cy={540} size={24} weight={400} color={GREY}>TLS · the little lock</CText>
           </SoftIn>
         ) : null}

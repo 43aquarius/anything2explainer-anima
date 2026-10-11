@@ -65,7 +65,7 @@ export const SC23: React.FC = () => {
             </GlitchIn>
           ) : null}
           <div style={{...abs(0, 0, 1280, 720), opacity: lockIn, filter: `drop-shadow(0 0 ${Math.min(24, 6 + N / 60)}px rgba(102,45,248,.45))`}}>
-            <LockSeal cx={LOCK.cx} cy={LOCK.cy} w={170} h={210} glow openK={openK} />
+            <LockSeal cx={LOCK.cx} cy={LOCK.cy - 20} w={200} h={250} glow openK={openK} />
           </div>
 
           {/* 价签 $0 */}

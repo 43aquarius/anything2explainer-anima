@@ -52,5 +52,5 @@ export const VIDEO = {
    *  例：{steps: ['第一步', '第二步', '第三步'], switchS: ['S12', 'S14', 'S16'], fromS: 'S12', toS: 'S18'} */
   rails: [{steps: ['ClientHello', 'ServerHello', 'same secret', 'sealed'], switchS: ['S12', 'S13', 'S14', 'S15'], fromS: 'S11', toS: 'S18'}] as RailSpec[],
   /** 片头帧数（tts_build 的 LEAD+CHAPTER_GAP 决定，通常 85）与片尾压黑 */
-  endingFade: 6, // v2: 30 会在 S56 语音结束前压黑吃掉结尾大字（S56 仅 36 帧）；6 = 语音完即速压，字幕层在压黑之上仍可读到 9475
+  endingFade: 2, // v3: 终镜压黑延后（5924 起），金句停留拉满；2 帧速压，字幕层在压黑之上仍可读
 };

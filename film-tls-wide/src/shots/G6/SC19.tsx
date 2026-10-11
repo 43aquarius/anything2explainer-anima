@@ -38,9 +38,9 @@ export const SC19: React.FC = () => {
   // 旧墙其余淡出（4012 起 16 帧 → 只剩 20% 轮廓）
   const oldFade = N >= 4012 ? Math.max(0.2, 1 - clamp01((N - 4012) / 16) * 0.8) : 1;
   // 计数器：31 SoftIn（4009）→ 滚动 31→5（4013–4029）→ `5` 落定 + 橙光晕
-  const cntOp = clamp01((N - 4009) / 6);
-  const roll = clamp01((N - 4013) / 16);
-  const val = Math.round(31 - 26 * (1 - Math.pow(1 - roll, 2)));
+  const cntOp = clamp01((N - 3838) / 6);
+  const roll = clamp01((N - 3934) / 16);
+  const val = Math.round(31 - 26 * (1 - Math.pow(1 - roll, 2))); // c2 先示 31，c3 滚到 5
   const landed = roll >= 1;
   // 新架 5 枚 Pill 依次紫光点亮（4029 + i*6）
   const newOn = (i: number) => clamp01((N - (4029 + i * 6)) / 8);
@@ -67,6 +67,8 @@ export const SC19: React.FC = () => {
             </div>
           );
         })}
+        {/* 旧墙连体外框（c1 起就有大主体） */}
+        <div style={{position: 'absolute', left: 140, top: 186, width: 648, height: 332, border: `2.5px solid ${GREY_MID}`, borderRadius: 12, opacity: clamp01((N - 3838) / 8)}} />
         <CText cx={450} cy={166} size={24} weight={600} color={GREY}>TLS 1.2</CText>
         <SoftIn N={N} f0={3838}>
           <Pill x={620} y={140} w={190} h={44} fontSize={24} text="mandatory" color={PURPLE_LIGHT} stroke={PURPLE_LIGHT} />
@@ -75,15 +77,15 @@ export const SC19: React.FC = () => {
         {/* 中：计数器（31 → 5） */}
         {cntOp > 0 ? (
           <div style={{...abs(0, 0, 1280, 720), opacity: cntOp}}>
-            <CText cx={640} cy={392} size={84} weight={700} family={FONT_ORB} color={landed ? ORANGE : GREY} letterSpacing={2}
+            <CText cx={640} cy={392} size={100} weight={700} family={FONT_ORB} color={landed ? ORANGE : GREY} letterSpacing={2}
               style={landed ? {textShadow: '0 0 42px rgba(243,95,69,.65), 0 0 12px rgba(243,95,69,.5)', transform: `scale(${emphasisPulse(N - 4029, {peak: 1.11})})`} : undefined}>
               {landed ? '5' : val}
             </CText>
             <Svg bloom={false}>
-              {roll > 0 ? <line x1={560} y1={392} x2={560 + 60 * clamp01(roll)} y2={392} stroke={GREY} strokeWidth={3} strokeLinecap="round" /> : null}
-              <line x1={516} y1={392} x2={548} y2={392} stroke={GREY} strokeWidth={3} strokeLinecap="round" />
+              {roll > 0 ? <line x1={584} y1={392} x2={584 + 60 * clamp01(roll)} y2={392} stroke={GREY} strokeWidth={3} strokeLinecap="round" /> : null}
+              <line x1={540} y1={392} x2={572} y2={392} stroke={GREY} strokeWidth={3} strokeLinecap="round" />
             </Svg>
-            {!landed ? <CText cx={492} cy={392} size={48} weight={700} family={FONT_ORB} color={GREY}>31</CText> : null}
+            {!landed ? <CText cx={500} cy={392} size={100} weight={700} family={FONT_ORB} color={GREY}>31</CText> : null}
             {landed ? <CText cx={640} cy={448} size={24} weight={500} color={GREY}>cipher suites</CText> : null}
           </div>
         ) : null}
@@ -94,12 +96,14 @@ export const SC19: React.FC = () => {
           const on = newOn(i);
           return on <= 0.02 ? null : (
             <div key={s} style={{...abs(0, 0, 1280, 720), opacity: on}}>
-              <div style={{position: 'absolute', left: 860, top: y, width: 310, height: 50, borderRadius: 8, border: `2px solid ${PURPLE_LIGHT}`, background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: `0 0 ${(10 * breathe(i)).toFixed(0)}px rgba(102,45,248,.4)`, opacity: breathe(i)}}>
+              <div style={{position: 'absolute', left: 860, top: y, width: 310, height: 56, borderRadius: 8, border: `2px solid ${PURPLE_LIGHT}`, background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: `0 0 ${(10 * breathe(i)).toFixed(0)}px rgba(102,45,248,.4)`, opacity: breathe(i)}}>
                 <span style={{fontFamily: FONT_MONO, fontSize: 21, color: WHITE}}>{s}</span>
               </div>
             </div>
           );
         })}
+        {/* 新架连体外框（计数器 c2 起点亮时同步出现） */}
+        {cntOp > 0 ? <div style={{position: 'absolute', left: 846, top: 196, width: 340, height: 348, border: `2.5px solid ${PURPLE_LIGHT}`, borderRadius: 12, opacity: 0.85 * cntOp, boxShadow: '0 0 24px 8px rgba(102,45,248,.25)'}} /> : null}
         <CText cx={1015} cy={166} size={24} weight={600} color={PURPLE_LIGHT}>TLS 1.3</CText>
         <SoftIn N={N} f0={4050}>
           <CText cx={640} cy={478} size={22} weight={400} color={GREY}>no exceptions · no weak suites</CText>

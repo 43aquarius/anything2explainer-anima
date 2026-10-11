@@ -19,7 +19,7 @@ export const SC17: React.FC = () => {
   const exit = exitOp(N, TO, 8);
 
   // 聚光梯形（3468 展开 14 帧；之后 ±8% 呼吸）
-  const spotP = clamp01((N - 3468) / 14);
+  const spotP = clamp01((N - 3464) / 10);
   const breathe = 1 + 0.08 * Math.sin((N / 30) * Math.PI * 2);
   const spotW = 520 * spotP * breathe;
   const spotH = 620 * spotP;
@@ -27,9 +27,9 @@ export const SC17: React.FC = () => {
   // 两侧小钥匙（3474 起 21 帧缩入）
   const keyIn = slideIn(N - 3474, 21);
 
-  // 大字：forward（3562 GlitchIn）+ secrecy（3570 SoftIn）
-  const fN = N - 3562;
-  const sN = N - 3570;
+  // 大字：forward（c2+4=3520 GlitchIn，"worth saying out loud" 时预告主角）+ secrecy（c3=3562 SoftIn）
+  const fN = N - 3520;
+  const sN = N - 3562;
 
   return (
     <CameraRig N={N} keys={[{f: F0, x: 640, y: 360, s: 1}, {f: 3556, x: 640, y: 360, s: 1.05}]}>
@@ -42,8 +42,8 @@ export const SC17: React.FC = () => {
 
         {/* 两侧小钥匙 */}
         <div style={{...abs(0, 0, 1280, 720), opacity: keyIn}}>
-          <KeyIcon cx={230} cy={410} size={80} opacity={0.9} />
-          <KeyIcon cx={1050} cy={410} size={80} opacity={0.9} />
+          <KeyIcon cx={195} cy={395} size={320} opacity={0.95} glow />
+          <KeyIcon cx={1085} cy={395} size={320} opacity={0.95} glow />
         </div>
 
         {/* 顶部小字 */}
@@ -56,9 +56,9 @@ export const SC17: React.FC = () => {
 
         {/* 两行大字（主角） */}
         {fN >= 0 ? (
-          <GlitchIn N={N} f0={3562} rgbSplit={6}>
+          <GlitchIn N={N} f0={3520} rgbSplit={6}>
             <div style={{...abs(0, 0, 1280, 720)}}>
-              <CText cx={640} cy={330} size={96} weight={900} color={WHITE} letterSpacing={2}
+              <CText cx={640} cy={322} size={120} weight={900} color={WHITE} letterSpacing={2}
                 style={{WebkitTextStroke: '2.5px rgba(161,117,241,0.95)', paintOrder: 'stroke fill'}}>forward</CText>
             </div>
           </GlitchIn>
@@ -66,7 +66,7 @@ export const SC17: React.FC = () => {
         {sN >= 0 ? (
           <SoftIn N={N} f0={3570}>
             <div style={{...abs(0, 0, 1280, 720)}}>
-              <CText cx={640} cy={448} size={96} weight={900} color={WHITE} letterSpacing={2}
+              <CText cx={640} cy={452} size={120} weight={900} color={WHITE} letterSpacing={2}
                 style={{WebkitTextStroke: '2.5px rgba(161,117,241,0.95)', paintOrder: 'stroke fill', textShadow: '0 0 24px rgba(161,117,241,.4)'}}>secrecy</CText>
             </div>
           </SoftIn>

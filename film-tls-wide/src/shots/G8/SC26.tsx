@@ -55,7 +55,8 @@ export const SC26: React.FC = () => {
           </div>
         </div>
 
-        {/* 左：信封墙（主角） */}
+        {/* 左：信封墙（主角，加连体边框让墙成为单一主体） */}
+        <div style={{...abs(WALL.x + 6, WALL.y + 150, WALL.w - 12, 376), border: `2px solid ${GREY_MID}`, borderRadius: 10, opacity: clamp01((N - 5570) / 10)}} />
         {Array.from({length: COLS * ROWS}).map((_, i) => {
           const on = wallOn(i);
           if (on <= 0.02) return null;

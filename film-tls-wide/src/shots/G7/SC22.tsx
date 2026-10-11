@@ -104,7 +104,9 @@ export const SC22: React.FC = () => {
         {/* 大红 Cross（旋转盖下）+ 白闪 */}
         {crossP > 0 ? (
           <div style={{...abs(0, 0, 1280, 720), opacity: crossP, transform: `rotate(${(1 - crossP) * 24 + sway}deg) scale(${1.3 - 0.3 * crossP})`}}>
-            <Cross cx={certX + 86} cy={certY + 56} size={110} sw={6} />
+            <div style={{position: 'absolute', left: 0, top: 0, filter: 'drop-shadow(0 0 22px rgba(236,8,31,.55))'}}>
+              <Cross cx={certX + 86} cy={certY + 56} size={110} sw={6} />
+            </div>
             {flash ? <div style={{position: 'absolute', left: certX + 20, top: certY - 20, width: 140, height: 160, background: 'rgba(255,255,255,.45)', borderRadius: 10}} /> : null}
           </div>
         ) : null}

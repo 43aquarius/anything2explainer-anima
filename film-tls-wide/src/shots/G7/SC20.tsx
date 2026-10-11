@@ -23,11 +23,11 @@ export const SC20: React.FC = () => {
   const kx = 180 + 60 * handT, ky = 560 - 440 * handT;
 
   // 门牌（4205 slideUp Δ80/18 帧）
-  const pn = N - 4205;
+  const pn = N - 4150;
   const plateDy = 80 * Math.pow(1 - clamp01(pn / 18), 2.5);
 
   // 大 ?（4210 起 21 帧缩入 + 呼吸）
-  const qn = N - 4210;
+  const qn = N - 4162;
   const qS = 0.5 + 0.5 * slideIn(qn, 21);
   const breathe = 1 + 0.08 * Math.sin((N / 30) * Math.PI * 2);
 
@@ -56,7 +56,7 @@ export const SC20: React.FC = () => {
         {/* 大 ?（紫描边 + 呼吸） */}
         {qn >= 0 ? (
           <div style={{...abs(0, 0, 1280, 720), opacity: fadeIn(qn, 4), transform: `scale(${(qS * breathe).toFixed(3)})`}}>
-            <CText cx={640} cy={208} size={130} weight={700} family={FONT_ORB} color={WHITE} letterSpacing={5}
+            <CText cx={640} cy={208} size={150} weight={700} family={FONT_ORB} color={WHITE} letterSpacing={5}
               style={{WebkitTextStroke: `3px ${PURPLE_LIGHT}`, paintOrder: 'stroke fill', textShadow: '0 0 26px rgba(161,117,241,.55), 0 0 60px rgba(102,45,248,.35)'}}>?</CText>
           </div>
         ) : null}
