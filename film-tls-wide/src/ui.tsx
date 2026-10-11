@@ -499,24 +499,28 @@ export const RepoCard: React.FC<{x: number; y: number; w?: number; h?: number; n
 
 /** 贯穿示例语境常量（全片唯一一套，各组不得自造） */
 export const EXAMPLE = {
-  url: 'shop.example/checkout',
-  apiHost: 'api.shop.example',
-  clientIp: '198.51.100.24',   // TEST-NET-2 文档段（示意）
-  serverIp: '203.0.113.10',   // TEST-NET-3 文档段（示意）
-  port: 443,
-  logLine: 'POST /checkout 200 \u00b7 60 ms',
-  pageLoad: '9.0 s',
-  requestMs: '60 ms',
-  fixedMs: '0.9 s',
-  /** Wireshark 列表示意行（SC24/29 用，字段以事实清单为准） */
-  wsRows: [
-    {no: 806, t: '4.104', src: '198.51.100.24', dst: '203.0.113.10', proto: 'TLSv1.3', info: 'Application Data'},
-    {no: 807, t: '4.351', src: '198.51.100.24', dst: '203.0.113.10', proto: 'TLSv1.3', info: 'Application Data'},
-    {no: 808, t: '4.352', src: '203.0.113.10', dst: '198.51.100.24', proto: 'TLSv1.3', info: 'Application Data'},
-    {no: 812, t: '9.010', src: '198.51.100.24', dst: '203.0.113.10', proto: 'TCP', info: '[TCP Retransmission] 57 bytes'},
-    {no: 813, t: '11.03', src: '198.51.100.24', dst: '203.0.113.10', proto: 'TCP', info: '[TCP Retransmission] 57 bytes'},
-    {no: 814, t: '15.06', src: '198.51.100.24', dst: '203.0.113.10', proto: 'TCP', info: '[TCP Retransmission] 57 bytes'},
+  /** TLS 片贯穿示例（The Invisible Internet EP3） */
+  domain: 'shop.example',
+  url: 'https://shop.example/checkout',
+  httpUrl: 'http://shop.example/login',
+  pw: 'cafe2026',               // 示意密码（明文展示用，交付说明标"示意"）
+  yearDH: '1976', yearSSL: '1994', yearSheep: '2010', yearLE: '2015', year13: '2018',
+  suites: '5', suitesOld: '31',
+  caCount: '\u2248120',
+  share: '4 in 5',
+  pqShare: '\u224870%',
+  cipher: 'AES-128-GCM',
+  curve: 'X25519',
+  rfc: 'RFC 8446',
+  /** 邻桌明文抓包行（SC01–SC03 用，示意） */
+  capRows: [
+    {t: '0.000', src: 'you', dst: 'shop.example', info: 'GET /login'},
+    {t: '0.041', src: 'you', dst: 'shop.example', info: 'POST /login user=you pw=cafe2026'},
+    {t: '0.103', src: 'you', dst: 'shop.example', info: 'GET /cart'},
+    {t: '0.155', src: 'you', dst: 'shop.example', info: 'GET /checkout'},
   ],
+  /** 密文行（SC12/SC27 用，示意） */
+  cipherRow: '8f3a 9c2e 41db 07e5 ...',
 };
 
 /** 信封（= packet 的全片视觉母题）：白描边矩形 + 中线折角 + 封口线；accent 时描边变紫（副本/当前重点） */
@@ -533,127 +537,6 @@ export const PacketIcon: React.FC<{cx: number; cy: number; w?: number; h?: numbe
     </div>
   );
 };
-
-/** 浏览器窗口 mock：顶栏（三点 + 地址栏 url）+ 骨架线 + 顶部载入条（progress 0–1，barColor 可改） */
-export const BrowserMock: React.FC<{x: number; y: number; w?: number; h?: number; url?: string; skeleton?: number; progress?: number; barColor?: string; opacity?: number; dim?: boolean}> = ({x, y, w = 470, h = 380, url = EXAMPLE.url, skeleton = 6, progress = 1, barColor = PURPLE, opacity = 1, dim = false}) => (
-  <div style={{...abs(x, y, w, h), opacity}}>
-    <div style={{position: 'absolute', inset: 0, background: '#000', border: `3px solid ${WHITE}`, borderRadius: 10, filter: dim ? undefined : BLOOM_SOFT}} />
-    <div style={{position: 'absolute', left: 3, top: 3, width: w - 6, height: 46, background: '#101013', borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottom: `2px solid ${GREY_LINE}` }}>
-      {[0, 1, 2].map((i) => <div key={i} style={{position: 'absolute', left: 14 + i * 18, top: 17, width: 9, height: 9, borderRadius: 5, background: GREY_MID, opacity: 0.8}} />)}
-      <div style={{position: 'absolute', left: 74, top: 10, width: w - 100, height: 26, borderRadius: 13, border: `2px solid ${GREY_LINE}`, background: '#000', display: 'flex', alignItems: 'center', paddingLeft: 12 }}>
-        <span style={{fontFamily: FONT_MONO, fontSize: 22, color: GREY_LIGHT, lineHeight: 1, whiteSpace: 'nowrap'}}>{url}</span>
-      </div>
-    </div>
-    <div style={{position: 'absolute', left: 3, top: 49, width: (w - 6) * Math.min(1, Math.max(0, progress)), height: 4, background: barColor}} />
-    {Array.from({length: skeleton}, (_, i) => {
-      const lw = (i === 0 ? 0.9 : 0.55 + 0.3 * (((i * 7) % 5) / 5)) * (w - 60);
-      const top = 80 + i * ((h - 110) / Math.max(1, skeleton - 1));
-      return <div key={i} style={{position: 'absolute', left: 30, top, width: lw, height: i === 0 ? 10 : 6, background: dim ? GREY_LINE : GREY_LIGHT, opacity: i === 0 ? 0.9 : 0.5}} />;
-    })}
-  </div>
-);
-
-/** 服务器日志卡：标题 Pill + 等宽日志行（rows 传行数，第 highlight 行的 ms 橙显） */
-export const LogCard: React.FC<{x: number; y: number; w?: number; h?: number; title?: string; rows?: number; highlight?: number; opacity?: number; dim?: boolean; glow?: boolean}> = ({x, y, w = 600, h = 320, title = 'server log', rows = 4, highlight = -1, opacity = 1, dim = false, glow = false}) => (
-  <div style={{...abs(x, y, w, h), opacity}}>
-    <div style={{position: 'absolute', inset: 0, background: '#000', border: `3px solid ${WHITE}`, borderRadius: 12, filter: glow ? GLOW_PURPLE : BLOOM_SOFT}} />
-    <div style={{position: 'absolute', left: 24, top: 18, fontFamily: FONT_MONO, fontSize: 24, fontWeight: 700, color: GREY_LIGHT, lineHeight: 1}}>{title}</div>
-    <div style={{position: 'absolute', left: 24, top: 62, width: w - 48, height: 2, background: GREY_LINE}} />
-    {Array.from({length: rows}, (_, i) => (
-      <div key={i} style={{position: 'absolute', left: 24, top: 84 + i * ((h - 108) / Math.max(1, rows - 0.2)), display: 'flex', alignItems: 'center', gap: 14}}>
-        <div style={{width: 10, height: 10, borderRadius: 5, background: GREEN, opacity: 0.85}} />
-        <span style={{fontFamily: FONT_MONO, fontSize: 24, color: dim ? GREY : WHITE, opacity: dim ? 0.55 : 1, lineHeight: 1, whiteSpace: 'nowrap'}}>
-          {EXAMPLE.logLine.split('60 ms').map((seg, j) => j === 0 ? seg : (i === highlight ? <span key={j} style={{color: ORANGE}}>{'60 ms'}</span> : <span key={j}>{'60 ms'}</span>))}
-        </span>
-      </div>
-    ))}
-  </div>
-);
-
-/** 网络交换机：扁长盒 + 端口方块（lit 个数点亮）+ 上行/下行指示灯（blink 由 N 决定） */
-export const SwitchBox: React.FC<{cx: number; cy: number; w?: number; h?: number; ports?: number; lit?: number; N?: number; label?: string; labelSize?: number; opacity?: number; accent?: boolean}> = ({cx, cy, w = 560, h = 140, ports = 6, lit = 2, N = 0, label, labelSize = 24, opacity = 1, accent = false}) => (
-  <div style={{...abs(cx - w / 2, cy - h / 2, w, h + (label ? labelSize + 12 : 0)), opacity}}>
-    <div style={{position: 'absolute', left: 0, top: 0, width: w, height: h, background: '#000', border: `3px solid ${accent ? PURPLE_LIGHT : WHITE}`, borderRadius: 8, filter: BLOOM_SOFT}} />
-    {Array.from({length: ports}, (_, i) => {
-      const pw = (w - 60) / ports - 10;
-      const on = i < lit;
-      const blink = on && N > 0 ? (Math.floor(N / 8 + i) % 2 === 0) : true;
-      return (
-        <div key={i} style={{position: 'absolute', left: 30 + i * ((w - 60) / ports), top: 26, width: pw, height: h - 52, background: '#0c0c0e', border: `2px solid ${GREY_LINE}`, borderRadius: 3}}>
-          <div style={{position: 'absolute', left: pw / 2 - 3, top: 10, width: 6, height: 6, borderRadius: 3, background: on && blink ? GREEN : GREY_LINE}} />
-          <div style={{position: 'absolute', left: pw / 2 - 3, top: h - 68, width: 6, height: 6, borderRadius: 3, background: on && !blink ? GREEN : GREY_LINE}} />
-        </div>
-      );
-    })}
-    {label ? <CText cx={w / 2} cy={h + labelSize / 2 + 6} size={labelSize} weight={600} color={GREY} dy={-1}>{label}</CText> : null}
-  </div>
-);
-
-/** 分路器 TAP：粗线缆中的一个小盒 + 内部分光三角 + 下引线 */
-export const TapBox: React.FC<{cx: number; cy: number; w?: number; h?: number; label?: string; opacity?: number; accent?: boolean}> = ({cx, cy, w = 180, h = 120, label = 'TAP', opacity = 1, accent = true}) => (
-  <div style={{...abs(cx - w / 2, cy - h / 2, w, h), opacity}}>
-    <div style={{position: 'absolute', left: 0, top: 0, width: w, height: h, background: '#000', border: `3px solid ${accent ? PURPLE_LIGHT : WHITE}`, borderRadius: 6, filter: accent ? GLOW_PURPLE_S : BLOOM_SOFT}} />
-    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{position: 'absolute', left: 0, top: 0}}>
-      <path d={`M${w * 0.2},${h * 0.72} L${w * 0.5},${h * 0.24} L${w * 0.8},${h * 0.72} Z`} fill="none" stroke={PURPLE_LIGHT} strokeWidth={2.5} strokeLinejoin="round" />
-      <path d={`M${w * 0.5},${h * 0.72} V${h * 0.88}`} stroke={PURPLE_LIGHT} strokeWidth={2.5} />
-    </svg>
-    <div style={{position: 'absolute', left: 10, top: 8, fontFamily: FONT_ORB, fontSize: 22, fontWeight: 700, color: accent ? PURPLE_LIGHT : WHITE, lineHeight: 1}}>{label}</div>
-  </div>
-);
-
-/** 网卡 NIC：水平板卡 + 走线 + 主控芯片（chipGlow 时紫光）；mode='normal'|'promisc' 控制芯片色 */
-export const NICIcon: React.FC<{cx: number; cy: number; w?: number; h?: number; chipGlow?: boolean; label?: string; opacity?: number}> = ({cx, cy, w = 420, h = 180, chipGlow = false, label, opacity = 1}) => (
-  <div style={{...abs(cx - w / 2, cy - h / 2, w, h + (label ? 34 : 0)), opacity}}>
-    <div style={{position: 'absolute', left: 0, top: 0, width: w, height: h, background: '#000', border: `3px solid ${WHITE}`, borderRadius: 8, filter: BLOOM_SOFT}} />
-    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{position: 'absolute', left: 0, top: 0}}>
-      {[0.3, 0.5, 0.7].map((t, i) => <path key={t} d={`M${w * 0.08},${h * t} H${w * 0.38} L${w * 0.52},${h * (0.3 + i * 0.2)} H${w * 0.92}`} fill="none" stroke={GREY_LINE} strokeWidth={2} />)}
-      <rect x={w * 0.38} y={h * 0.3} width={w * 0.2} height={h * 0.4} fill="#000" stroke={chipGlow ? PURPLE_LIGHT : GREY_MID} strokeWidth={3} style={chipGlow ? {filter: 'drop-shadow(0 0 12px rgba(102,45,248,.75))'} : undefined} />
-      {Array.from({length: 8}, (_, i) => <rect key={i} x={w * 0.06} y={h * 0.22 + i * (h * 0.08)} width={w * 0.05} height={4} fill={GREY_MID} />)}
-    </svg>
-    <div style={{position: 'absolute', left: w * 0.38 + 8, top: h * 0.3 + 8, fontFamily: FONT_ORB, fontSize: 22, fontWeight: 700, color: chipGlow ? PURPLE_LIGHT : GREY, lineHeight: 1}}>NIC</div>
-    {label ? <CText cx={w / 2} cy={h + 18} size={24} weight={600} color={GREY} dy={-1}>{label}</CText> : null}
-  </div>
-);
-
-/** Wireshark 窗口框（chrome）：外框 + 标题栏 + 三区占位（children 会绘制在各区之上）；paneLit 0/1/2 当前紫光区 */
-export const WSWindow: React.FC<{x: number; y: number; w?: number; h?: number; title?: string; opacity?: number; children?: React.ReactNode; paneBorders?: [boolean, boolean, boolean]}> = ({x, y, w = 1040, h = 460, title = 'Wireshark', opacity = 1, children, paneBorders = [false, false, false]}) => {
-  const panes = [[0.42, 0.46], [0.38, 0.74], [0.2, 0.98]];
-  return (
-    <div style={{...abs(x, y, w, h), opacity}}>
-      <div style={{position: 'absolute', inset: 0, background: '#000', border: `3px solid ${WHITE}`, borderRadius: 10}} />
-      <div style={{position: 'absolute', left: 3, top: 3, width: w - 6, height: 44, background: '#101013', borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottom: `2px solid ${GREY_LINE}`, display: 'flex', alignItems: 'center', gap: 12 }}>
-        {[0, 1, 2].map((i) => <div key={i} style={{width: 11, height: 11, borderRadius: 6, background: GREY_MID, marginLeft: i === 0 ? 12 : 0}} />)}
-        <span style={{fontFamily: FONT_HEAVY, fontSize: 24, fontWeight: 700, color: WHITE, lineHeight: 1}}>{title}</span>
-      </div>
-      {panes.map(([rel, hFrac], i) => {
-        const top = 49 + h * panes.slice(0, i).reduce((a, [_, f]) => a + f, 0);
-        return <div key={i} style={{position: 'absolute', left: 3, top, width: w - 6, height: (h - 49) * hFrac, background: 'rgba(255,255,255,0.015)', borderTop: i === 0 ? undefined : `2px solid ${GREY_LINE}`, borderLeft: `2px solid ${paneBorders[i] ? PURPLE_LIGHT : 'transparent'}`, borderRight: `2px solid ${paneBorders[i] ? PURPLE_LIGHT : 'transparent'}`}} />;
-      })}
-      {children}
-    </div>
-  );
-};
-
-/** Wireshark 列表行（packet list）：等宽字段（No./Time/Source/Dst/Proto/Info）；active → 紫底光行 */
-export const WSRow: React.FC<{x: number; y: number; w?: number; row?: {no: number; t: string; src: string; dst: string; proto: string; info: string}; active?: boolean; dim?: boolean; opacity?: number}> = ({x, y, w = 1040, row = EXAMPLE.wsRows[0], active = false, dim = false, opacity = 1}) => (
-  <div style={{...abs(x, y, w, 52), opacity, background: active ? 'rgba(102,48,248,.16)' : 'transparent', borderBottom: `2px solid ${GREY_LINE}`, display: 'flex', alignItems: 'center', padding: '0 18px', gap: 10, boxShadow: active ? 'inset 0 0 24px rgba(102,45,248,.25)' : undefined}}>
-    <span style={{fontFamily: FONT_MONO, fontSize: 24, color: active ? PURPLE_LIGHT : GREY, width: 64, lineHeight: 1}}>{row.no}</span>
-    <span style={{fontFamily: FONT_MONO, fontSize: 24, color: active ? WHITE : GREY_LIGHT, width: 96, lineHeight: 1}}>{row.t}</span>
-    <span style={{fontFamily: FONT_MONO, fontSize: 24, color: active ? WHITE : GREY_LIGHT, width: 220, lineHeight: 1}}>{row.src}</span>
-    <span style={{fontFamily: FONT_MONO, fontSize: 24, color: active ? WHITE : GREY_LIGHT, width: 220, lineHeight: 1}}>{row.dst}</span>
-    <span style={{fontFamily: FONT_MONO, fontSize: 24, color: active ? PURPLE_LIGHT : GREY_LIGHT, width: 130, lineHeight: 1}}>{row.proto}</span>
-    <span style={{fontFamily: FONT_MONO, fontSize: 24, color: row.info.startsWith('[TCP') ? ORANGE : active ? WHITE : GREY_LIGHT, flex: 1, lineHeight: 1, whiteSpace: 'nowrap'}}>{row.info}</span>
-  </div>
-);
-
-/** 过滤条：圆角条 + 左端状态点（dotColor）+ 等宽文本（cursor 光标闪烁用 N） */
-export const FilterBar: React.FC<{x: number; y: number; w?: number; h?: number; text?: string; shown?: number; dotColor?: string; opacity?: number; glowColor?: string}> = ({x, y, w = 880, h = 64, text = 'tcp port 443', shown = text.length, dotColor = GREEN, opacity = 1, glowColor}) => (
-  <div style={{...abs(x, y, w, h), opacity}}>
-    <div style={{position: 'absolute', inset: 0, background: '#000', border: `3px solid ${glowColor ?? dotColor}`, borderRadius: h / 2, filter: glowColor ? `drop-shadow(0 0 14px rgba(102,45,248,.5))` : undefined}} />
-    <div style={{position: 'absolute', left: 22, top: h / 2 - 7, width: 14, height: 14, borderRadius: 8, background: dotColor}} />
-    <span style={{position: 'absolute', left: 52, top: h / 2 - 15, fontFamily: FONT_MONO, fontSize: 28, color: WHITE, lineHeight: 1.2, whiteSpace: 'nowrap'}}>{text.slice(0, Math.max(0, shown))}</span>
-  </div>
-);
 
 /** 小时钟（等待/计时母题）：表盘 + 秒针（N 驱动旋转） */
 export const ClockIcon: React.FC<{cx: number; cy: number; r?: number; N?: number; accent?: string; opacity?: number}> = ({cx, cy, r = 60, N = 0, accent = ORANGE, opacity = 1}) => {
@@ -672,3 +555,220 @@ export const ClockIcon: React.FC<{cx: number; cy: number; r?: number; N?: number
     </div>
   );
 };
+
+
+// ===================== TLS 片专用图元（跨组共用；风格：白描边 2–3px + 黑填充 + BLOOM_SOFT）=====================
+
+/** 保留的 DNS 段图元：PostcardIcon / StampSeal / EyeGlyph / BrowserWin（HTTP=明信片、CA 邮戳、窥视之眼、浏览器） */
+
+/** 山羊座 Firesheep（2010 劫持插件）：蓬身 + 头 + 腿 + 耳；白描边黑填充 */
+export const SheepIcon: React.FC<{cx: number; cy: number; w?: number; h?: number; color?: string; opacity?: number; glow?: boolean; dim?: boolean}> = ({cx, cy, w = 200, h = 150, color = WHITE, opacity = 1, glow = false, dim = false}) => (
+  <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity, filter: (glow ? BLOOM : 'none') + (dim ? ' saturate(0.4)' : '')}}>
+    <svg width={w} height={h} viewBox="0 0 200 150" style={{position: 'absolute', inset: 0}}>
+      <g stroke={color} strokeWidth={3} fill="#000" strokeLinejoin="round" strokeLinecap="round">
+        {/* 蓬蓬身 */}
+        <path d="M52 96 Q30 92 32 72 Q34 54 58 52 Q66 30 96 32 Q124 34 132 54 Q156 56 158 76 Q160 94 138 98 L138 116 L124 116 L124 104 Q108 108 92 104 L92 116 L78 116 L78 100 Q66 102 52 96 Z" />
+        {/* 头 */}
+        <path d="M132 54 Q156 44 164 60 Q170 72 158 78 L146 76" fill="#000" />
+        {/* 耳 */}
+        <path d="M150 56 L164 46" strokeWidth={2.5} />
+        {/* 眼 */}
+        <circle cx={148} cy={62} r={3} fill={color} stroke="none" />
+        {/* 尾 */}
+        <path d="M34 74 Q22 70 24 82" strokeWidth={2.5} fill="none" />
+      </g>
+    </svg>
+  </div>
+);
+
+/** 挂锁（全片核心象征物 "The Little Lock"）：锁体 + 锁梁；openK 0→1 时锁梁弹开（锁定感/解锁感动画） */
+export const LockSeal: React.FC<{cx: number; cy: number; w?: number; h?: number; color?: string; openK?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number; tilt?: number}> = ({cx, cy, w = 120, h = 150, color = WHITE, openK = 0, opacity = 1, glow = false, label, labelSize = 22, tilt = 0}) => (
+  <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity, transform: `rotate(${tilt}deg)`, filter: glow ? BLOOM : 'none'}}>
+    <svg width={w} height={h} viewBox="0 0 120 150" style={{position: 'absolute', inset: 0}}>
+      <g stroke={color} strokeWidth={3.5} fill="#000" strokeLinejoin="round">
+        {/* 锁梁：openK 0=扣合 1=弹开（右端抬起） */}
+        <path d={`M34 62 L34 44 Q34 20 60 20 Q86 20 86 ${44 - 14 * Math.min(1, Math.max(0, openK))} L86 ${62 - 18 * Math.min(1, Math.max(0, openK))}`} fill="none" strokeLinecap="round" />
+        {/* 锁体 */}
+        <rect x={20} y={60} width={80} height={72} rx={10} fill="#000" />
+        {/* 锁孔 */}
+        <circle cx={60} cy={88} r={7} fill={color} stroke="none" />
+        <rect x={55} y={92} width={10} height={22} rx={3} fill={color} stroke="none" />
+      </g>
+    </svg>
+    {label && <div style={{position: 'absolute', left: 0, right: 0, top: h + 10, textAlign: 'center', fontFamily: FONT_TECH, fontSize: labelSize, color}}>{label}</div>}
+  </div>
+);
+
+/** 颜料桶（Diffie-Hellman 颜料混合演示）：梯形桶 + 提梁 + 可动画液位/颜色；fillK 0→1 灌入 */
+export const PaintPot: React.FC<{cx: number; cy: number; w?: number; h?: number; fill?: string; fillK?: number; color?: string; opacity?: number; label?: string; labelSize?: number}> = ({cx, cy, w = 170, h = 140, fill = '#F2C94C', fillK = 1, color = WHITE, opacity = 1, label, labelSize = 22}) => {
+  const k = Math.min(1, Math.max(0, fillK));
+  const fh = (h - 26) * k;
+  const cid = `potclip_${Math.round(cx)}_${Math.round(cy)}`;
+  return (
+    <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity}}>
+      <svg width={w} height={h} viewBox="0 0 170 140" style={{position: 'absolute', inset: 0}}>
+        {/* 提梁 */}
+        <path d="M35 30 Q85 -6 135 30" stroke={color} strokeWidth={2.5} fill="none" />
+        <g stroke={color} strokeWidth={3} fill="none" strokeLinejoin="round">
+          {/* 桶身（上宽下窄） */}
+          <path d="M18 30 L28 128 L142 128 L152 30 Z" fill="#000" />
+        </g>
+        {/* 液体（clip 到桶内） */}
+        <clipPath id={cid}>
+          <path d="M18 30 L28 128 L142 128 L152 30 Z" />
+        </clipPath>
+        <g clipPath={`url(#${cid})`}>
+          <rect x={14} y={128 - fh} width={142} height={fh + 4} fill={fill} opacity={0.92} />
+          <rect x={14} y={128 - fh} width={142} height={2.5} fill="#fff" opacity={0.35} />
+        </g>
+      </svg>
+      {label && <div style={{position: 'absolute', left: 0, right: 0, top: h + 8, textAlign: 'center', fontFamily: FONT_TECH, fontSize: labelSize, color}}>{label}</div>}
+    </div>
+  );
+};
+
+/** 证书卡：卡头域名 + 密钥摘要线 + CA 圆形邮戳角（stamped 0→1 邮戳盖下） */
+export const CertCard: React.FC<{x: number; y: number; w?: number; h?: number; domain?: string; ca?: string; stamped?: number; opacity?: number; accent?: boolean}> = ({x, y, w = 330, h = 230, domain = 'shop.example', ca = 'CA', stamped = 1, opacity = 1, accent = false}) => {
+  const st = Math.min(1, Math.max(0, stamped));
+  return (
+    <div style={{...abs(x, y, w, h), opacity}}>
+      <div style={{position: 'absolute', inset: 0, background: '#000', border: `2.5px solid ${accent ? PURPLE_LIGHT : WHITE}`, borderRadius: 8}} />
+      {/* 卡头 */}
+      <div style={{position: 'absolute', left: 18, top: 14, fontFamily: FONT_HEAVY, fontSize: 27, color: WHITE}}>{domain}</div>
+      <div style={{position: 'absolute', left: 18, top: 50, fontFamily: FONT_TECH, fontSize: 19, color: GREY}}>certificate</div>
+      {/* 摘要线 */}
+      {[0, 1, 2].map(i => <div key={i} style={{position: 'absolute', left: 18, top: 84 + i * 26, width: w - 36 - (i === 2 ? 60 : 0), height: 0, borderTop: `1.5px dashed ${GREY_LINE}`}} />)}
+      {/* 公钥小块 */}
+      <div style={{position: 'absolute', left: 18, top: 160, width: 150, height: 44, border: `1.5px solid ${GREY_LINE}`, borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT_MONO, fontSize: 16, color: GREY_LIGHT}}>public key</div>
+      {/* CA 邮戳 */}
+      <div style={{position: 'absolute', right: 14, top: h - 96, width: 78, height: 78, borderRadius: '50%', border: `2.5px solid ${st > 0.1 ? PURPLE_LIGHT : GREY_LINE}`, transform: `rotate(-14deg) scale(${1.35 - 0.35 * st})`, opacity: 0.35 + 0.65 * st, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT_ORB, fontSize: 22, color: st > 0.1 ? PURPLE_LIGHT : GREY_MID, boxShadow: st > 0.5 ? '0 0 18px rgba(102,45,248,.35)' : 'none'}}>{ca}</div>
+    </div>
+  );
+};
+
+/** 钥匙（私钥/会话密钥）：圆环头 + 杆 + 齿；broken 0→1 折断（前向保密的销毁感） */
+export const KeyIcon: React.FC<{cx: number; cy: number; size?: number; color?: string; broken?: number; opacity?: number; glow?: boolean; tilt?: number}> = ({cx, cy, size = 150, color = WHITE, broken = 0, opacity = 1, glow = false, tilt = 0}) => {
+  const bk = Math.min(1, Math.max(0, broken));
+  const gap = 10 * bk;
+  return (
+    <div style={{position: 'absolute', left: cx - size / 2, top: cy - size / 2, width: size, height: size, opacity, transform: `rotate(${tilt + 8 * bk}deg)`, filter: glow ? BLOOM : 'none'}}>
+      <svg width={size} height={size} viewBox="0 0 150 150" style={{position: 'absolute', inset: 0}}>
+        <g stroke={color} strokeWidth={3.5} fill="#000" strokeLinejoin="round" strokeLinecap="round">
+          {/* 环头 */}
+          <circle cx={38} cy={75} r={22} />
+          {/* 杆 */}
+          <path d={`M60 75 L128 75 L128 ${75 + gap} L124 ${75 + gap} L124 75`} fill="none" />
+          {/* 齿 */}
+          <path d={`M112 75 L112 90 M124 75 L124 96`} fill="none" />
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** 原子（后量子 ML-KEM 象征）：核 + 3 条椭圆轨道；spin 为轨道旋转角 */
+export const AtomIcon: React.FC<{cx: number; cy: number; size?: number; color?: string; spin?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, size = 160, color = WHITE, spin = 0, opacity = 1, glow = false, label, labelSize = 22}) => (
+  <div style={{position: 'absolute', left: cx - size / 2, top: cy - size / 2, width: size, height: size, opacity, filter: glow ? BLOOM : 'none'}}>
+    <svg width={size} height={size} viewBox="0 0 160 160" style={{position: 'absolute', inset: 0, transform: `rotate(${spin}deg)`}}>
+      <g stroke={color} strokeWidth={2.5} fill="none">
+        <ellipse cx={80} cy={80} rx={72} ry={30} />
+        <ellipse cx={80} cy={80} rx={72} ry={30} transform="rotate(60 80 80)" />
+        <ellipse cx={80} cy={80} rx={72} ry={30} transform="rotate(120 80 80)" />
+        <circle cx={80} cy={80} r={9} fill={color} stroke="none" />
+        <circle cx={146} cy={80} r={4.5} fill={PURPLE_LIGHT} stroke="none" />
+        <circle cx={44} cy={117} r={4.5} fill={PURPLE_LIGHT} stroke="none" />
+      </g>
+    </svg>
+    {label && <div style={{position: 'absolute', left: 0, right: 0, top: size + 6, textAlign: 'center', fontFamily: FONT_TECH, fontSize: labelSize, color}}>{label}</div>}
+  </div>
+);
+
+/** 密文噪声场：seeded 随机小块阵列按帧闪烁（"letters have become noise" 的主角）；密度/亮度随 N 变化 */
+export const NoiseField: React.FC<{x: number; y: number; w: number; h: number; N?: number; cols?: number; rows?: number; seed?: number; opacity?: number; hot?: boolean}> = ({x, y, w, h, N = 0, cols = 18, rows = 9, seed = 7, opacity = 1, hot = false}) => {
+  const cells: React.ReactElement[] = [];
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      const ph = ((seed * 131 + r * 37 + c * 17 + Math.floor(N / 3) * 29) % 97) / 97;
+      const on = ph > 0.42;
+      const s = 4 + ((seed * 13 + r * 7 + c * 3) % 5);
+      cells.push(<div key={`${r}-${c}`} style={{position: 'absolute', left: (c + 0.5) * (w / cols) - s / 2, top: (r + 0.5) * (h / rows) - s / 2, width: s, height: s, background: WHITE, opacity: on ? 0.25 + 0.65 * ((ph * 7) % 1) : 0.06}} />);
+    }
+  }
+  return <div style={{...abs(x, y, w, h), opacity, outline: hot ? `1.5px solid ${PURPLE_LIGHT}` : 'none', borderRadius: 4, overflow: 'hidden', boxShadow: hot ? '0 0 24px 8px rgba(102,45,248,.45)' : 'none'}}>{cells}</div>;
+};
+
+/** 明信片（plaintext 比喻）：横卡 + 右上邮票框 + 左侧行文线 + 波浪分隔 */
+export const PostcardIcon: React.FC<{x: number; y: number; w?: number; h?: number; lines?: string[]; stampText?: string; opacity?: number; dim?: boolean}> = ({x, y, w = 300, h = 210, lines = ['Dear shop.example,', 'what are you selling today?'], stampText = 'UDP', opacity = 1, dim = false}) => (
+  <div style={{...abs(x, y, w, h), opacity, filter: dim ? 'saturate(0.35)' : undefined}}>
+    <div style={{position: 'absolute', inset: 0, background: '#000', border: `2.5px solid ${WHITE}`, borderRadius: 6}} />
+    {/* 邮票 */}
+    <div style={{position: 'absolute', right: 14, top: 14, width: 56, height: 68, border: `2px dashed ${ORANGE}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT_ORB, fontSize: 16, color: ORANGE}}>{stampText}</div>
+    {/* 邮戳 */}
+    <div style={{position: 'absolute', right: 20, top: 30, width: 78, height: 78, border: `2px solid ${GREY}`, borderRadius: '50%', opacity: 0.6, transform: 'rotate(-12deg)'}} />
+    {/* 行文线 */}
+    <div style={{position: 'absolute', left: 16, top: 18, width: w * 0.55}}>
+      {lines.map((l, i) => <div key={i} style={{fontFamily: FONT_HEAVY, fontSize: 21, color: WHITE, opacity: 0.9, whiteSpace: 'nowrap', overflow: 'hidden'}}>{l}</div>)}
+      {[0, 1].map(i => <div key={i} style={{marginTop: 8, height: 0, borderTop: `1.5px dashed ${GREY_LINE}`}} />)}
+    </div>
+    {/* 中缝 */}
+    <div style={{position: 'absolute', left: w * 0.62, top: 12, bottom: 12, borderLeft: `1.5px solid ${GREY_LINE}`}} />
+    {/* 地址行 */}
+    <div style={{position: 'absolute', left: w * 0.62 + 14, top: 100, right: 90}}>
+      <div style={{height: 0, borderTop: `1.5px dashed ${GREY_LINE}`}} />
+      <div style={{height: 0, borderTop: `1.5px dashed ${GREY_LINE}`, marginTop: 22}} />
+    </div>
+  </div>
+);
+
+/** 圆章（DNSSEC 签名 / 证明）：双圈 + 内部字母；p 驱动盖下缩放 */
+export const StampSeal: React.FC<{cx: number; cy: number; r?: number; text?: string; p?: number; color?: string; opacity?: number}> = ({cx, cy, r = 40, text = 'OK', p = 1, color = PURPLE_LIGHT, opacity = 1}) => {
+  if (p <= 0) return null;
+  const s = 1 + (1 - p) * 0.4;
+  return (
+    <div style={{...abs(cx - r, cy - r, r * 2, r * 2), opacity, transform: `scale(${s}) rotate(${(1 - p) * -20}deg)`, filter: BLOOM_SOFT}}>
+      <Svg bloom>
+        <circle cx={r} cy={r} r={r - 2} fill="none" stroke={color} strokeWidth={3}/>
+        <circle cx={r} cy={r} r={r - 9} fill="none" stroke={color} strokeWidth={1.5}/>
+        <line x1={r * 0.5} y1={r} x2={r * 1.5} y2={r} stroke={color} strokeWidth={1.2} opacity={0.5} transform={`rotate(-30 ${r} ${r})`}/>
+        <line x1={r * 0.5} y1={r} x2={r * 1.5} y2={r} stroke={color} strokeWidth={1.2} opacity={0.5} transform={`rotate(30 ${r} ${r})`}/>
+      </Svg>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT_HEAVY, fontSize: r * 0.62, color, fontWeight: 900}}>{text}</div>
+    </div>
+  );
+};
+
+/** 眼睛（"沿路谁都读得到"）：眼框 + 瞳孔；open 驱动睁/闭（0..1） */
+export const EyeGlyph: React.FC<{cx: number; cy: number; w?: number; open?: number; color?: string; opacity?: number}> = ({cx, cy, w = 56, open = 1, color = WHITE, opacity = 1}) => {
+  const h = w * 0.6 * Math.max(0.06, open);
+  return (
+    <div style={{...abs(cx - w / 2, cy - w * 0.3, w, w * 0.6), opacity}}>
+      <Svg bloom>
+        <ellipse cx={w / 2} cy={w * 0.3} rx={w / 2 - 1} ry={h / 2} fill="#000" stroke={color} strokeWidth={2.5}/>
+        <circle cx={w / 2} cy={w * 0.3} r={Math.min(h / 2.6, 7)} fill={color} opacity={open > 0.25 ? 1 : 0}/>
+      </Svg>
+    </div>
+  );
+};
+
+/** 轻量浏览器窗口（DNS 片通用）：窗口框 + 顶栏三点 + 地址栏（可打字/可发光）+ 骨架线 */
+export const BrowserWin: React.FC<{x: number; y: number; w?: number; h?: number; url?: string; typed?: number; skeleton?: number; skelLit?: number; skelOpacity?: number; barColor?: string; barP?: number; opacity?: number; dim?: boolean}> = ({x, y, w = 470, h = 380, url = EXAMPLE.domain, typed = url.length, skeleton = 5, skelLit = 0, skelOpacity, barColor = PURPLE, barP = 0, opacity = 1, dim = false}) => (
+  <div style={{...abs(x, y, w, h), opacity, filter: dim ? 'saturate(0.3)' : undefined}}>
+    <div style={{position: 'absolute', inset: 0, background: '#000', border: `2.5px solid ${WHITE}`, borderRadius: 10, overflow: 'hidden'}} />
+    {/* 顶栏 */}
+    <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 42, borderBottom: `1.5px solid ${GREY_LINE}`}} />
+    {[[0, 0], [1, 0], [2, 0]].map(([i], k) => <div key={k} style={{position: 'absolute', left: 14 + (k as number) * 18, top: 15, width: 9, height: 9, borderRadius: '50%', border: `1.5px solid ${GREY_MID}`}} />)}
+    {/* 地址栏 */}
+    <div style={{position: 'absolute', left: 74, right: 12, top: 9, height: 24, borderRadius: 12, border: `1.5px solid ${GREY_LINE}`, background: '#0d0d10', display: 'flex', alignItems: 'center', paddingLeft: 12}}>
+      <span style={{fontFamily: FONT_MONO, fontSize: 16, color: GREY_LIGHT, whiteSpace: 'nowrap'}}>{url.slice(0, Math.round(typed))}</span>
+      <span style={{width: 7, height: 15, background: barColor, opacity: typed < url.length ? 1 : 0, marginLeft: 1}} />
+    </div>
+    {/* 载入条 */}
+    {barP > 0 && <div style={{position: 'absolute', left: 0, top: 42, height: 4, width: (w - 4) * Math.min(1, barP), background: barColor, boxShadow: `0 0 8px ${barColor}`}} />}
+    {/* 骨架线 */}
+    {Array.from({length: skeleton}).map((_, i) => (
+      <div key={i} style={{position: 'absolute', left: 22, top: 70 + i * 42, height: 22, width: (w - 44) * (i === 0 ? 0.9 : 0.55 + ((i * 37) % 30) / 100), background: '#18181c', border: `1px solid ${GREY_LINE}`, borderRadius: 3, opacity: skelLit > i ? (skelOpacity ?? 1) : 0.45, transition: 'none'}} />
+    ))}
+  </div>
+);
+
+

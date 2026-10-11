@@ -30,29 +30,27 @@ export const VIDEO = {
   builtBy: 'built with Anything2Explainer',
   /** 章节英文副标（顺序对应 narration 的 CHAPTER 1..n；章节卡从第 2 章起显示；英文片可留空 '' 不渲染）。
    *  和章名一样是「说清讲什么」的标签，不是第二个创意标题；写这章的英文关键词或步骤序列（`Build · Run · Trace`）。 */
-  chapterTech: ['', 'coffee shop \u00b7 postcard \u00b7 Firesheep \u00b7 1994', 'one round trip \u00b7 key-share \u00b7 AES-GCM', 'Diffie-Hellman \u00b7 one-way doors \u00b7 forward secrecy'],
+  chapterTech: ['', 'one round trip \u00b7 key-share \u00b7 AES-GCM', 'Diffie-Hellman \u00b7 one-way doors \u00b7 forward secrecy', 'certificate \u00b7 CA stamps \u00b7 Let\u2019s Encrypt'],
   /** 顶部 HUD 胶囊（当前小节名）：按句 id 区间；相邻条目之间自动无空档；跨章节卡自动淡出。下面两条对应模板 narration.txt 的两句，按本片重写。
    *  text 是导航标签：写「这一小节讲什么」的名词短语（`知识库构建` / `混合检索`），不要评价句或比喻（`感觉还行` / `两把尺子` 观众猜不出内容）。
    *  tech 是胶囊下面那行英文副标（灰色 22px 小字，`TechSub`）：英文片不适用，留空。 */
   hud: [
-    {fromS: 'S01', toS: 'S03', text: 'The symptom'},
-    {fromS: 'S04', toS: 'S08', text: 'What a packet is'},
-    {fromS: 'S09', toS: 'S12', text: 'Packet capture'},
-    {fromS: 'S13', toS: 'S15', text: 'The tools'},
-    {fromS: 'S16', toS: 'S19', text: 'Vantage points'},
-    {fromS: 'S20', toS: 'S21', text: 'Promiscuous mode'},
-    {fromS: 'S22', toS: 'S24', text: 'Capture stack'},
-    {fromS: 'S25', toS: 'S29', text: 'The pcap file'},
-    {fromS: 'S30', toS: 'S33', text: 'Three panes'},
-    {fromS: 'S34', toS: 'S37', text: 'Filters'},
-    {fromS: 'S38', toS: 'S44', text: 'The reveal'},
-    {fromS: 'S45', toS: 'S48', text: 'Encryption'},
-    {fromS: 'S49', toS: 'S51', text: 'Permission'},
-    {fromS: 'S52', toS: 'S56', text: 'The resolution'},
+    {fromS: 'S01', toS: 'S02', text: 'The caf\u00e9'},
+    {fromS: 'S03', toS: 'S05', text: 'The postcard'},
+    {fromS: 'S06', toS: 'S08', text: 'The first lock'},
+    {fromS: 'S09', toS: 'S10', text: 'SSL to TLS 1.3'},
+    {fromS: 'S11', toS: 'S14', text: 'The handshake'},
+    {fromS: 'S15', toS: 'S18', text: 'Sealed letters'},
+    {fromS: 'S19', toS: 'S23', text: 'The trick'},
+    {fromS: 'S24', toS: 'S27', text: 'Forward secrecy'},
+    {fromS: 'S28', toS: 'S30', text: 'Chain of trust'},
+    {fromS: 'S31', toS: 'S32', text: 'Let\u2019s Encrypt'},
+    {fromS: 'S33', toS: 'S34', text: 'The new lock'},
+    {fromS: 'S35', toS: 'S39', text: 'The last look'},
   ] as HudEntry[],
   /** 流程轨（可选，只给真有先后顺序步骤的章；一章最多一条，五步以内）：y118–162，当前步紫、已过灰底、未到灰边；有轨的章内容主区 y175–620。
    *  例：{steps: ['第一步', '第二步', '第三步'], switchS: ['S12', 'S14', 'S16'], fromS: 'S12', toS: 'S18'} */
-  rails: [] as RailSpec[],
+  rails: [{steps: ['ClientHello', 'ServerHello', 'same secret', 'sealed'], switchS: ['S12', 'S13', 'S14', 'S15'], fromS: 'S11', toS: 'S18'}] as RailSpec[],
   /** 片头帧数（tts_build 的 LEAD+CHAPTER_GAP 决定，通常 85）与片尾压黑 */
   endingFade: 6, // v2: 30 会在 S56 语音结束前压黑吃掉结尾大字（S56 仅 36 帧）；6 = 语音完即速压，字幕层在压黑之上仍可读到 9475
 };
