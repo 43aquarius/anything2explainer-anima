@@ -56,7 +56,7 @@ export const SC02: React.FC = () => {
   const dotX = (i: number) => 104 + ((travel(N, 385) + i * 87) % TUBE.len);
 
   // ---- 算式卡（518 slideUp）----
-  const cn = N - 518;
+  const cn = N - 368; // v2：c1 期即入（填开场空场）
   const cardDy = 100 * powOutRemain(cn, 18, 2.5);
   const cardOp = fadeIn(cn, 6);
 

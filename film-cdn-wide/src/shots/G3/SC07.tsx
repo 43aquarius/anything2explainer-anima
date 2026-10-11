@@ -1,7 +1,7 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {GlitchIn, clamp01, easeOutCubic, easeInOutPow, FONT_ORB} from '../../common';
-import {CText, TechText, PersonIcon, PURPLE_LIGHT, GREY, GREY_MID, WHITE, softOp, firstOp, exitOp, glowOffK, abs} from '../../ui';
+import {CText, TechText, PersonIcon, PURPLE, PURPLE_LIGHT, GREY, GREY_MID, WHITE, softOp, firstOp, exitOp, glowOffK, abs} from '../../ui';
 import {CameraRig, GlowBlob} from '../../fx';
 
 /**

@@ -4,7 +4,7 @@ import {clamp01, kf, easeInOutPow, GlitchIn} from '../../common';
 import {CameraRig, HeroGlow} from '../../fx';
 import {
   RackIcon, Pill, Svg, CText, abs, exitOp, glowOffK, mixHex, softOp, firstOp, scaleIn,
-  GREY_MID, GREY_LINE, PURPLE_LIGHT, ORANGE, RED_DEEP,
+  GREY_MID, GREY_LINE, PURPLE_LIGHT, ORANGE, RED_DEEP, WHITE,
 } from '../../ui';
 import {YearRoll, SeaMapMini} from './g5ui';
 
@@ -49,10 +49,10 @@ export const SC12: React.FC = () => {
   const miniOp = firstOp(N - 2724, 6) * kf(N, [[2852, 1], [2868, 0]]);
 
   // ---- 服务器组入场 ----
-  const rackN = N - 2864;
+  const rackN = N - 2768; // v3：再提前到 2768（年份数字落下时机架就开始成形）
   const rackK = clamp01(rackN / 21);
-  const nodeOn = (i: number) => clamp01((N - (2866 + i * 2)) / 12);
-  const lineP = (i: number) => clamp01((N - (2870 + i * 2)) / 20);
+  const nodeOn = (i: number) => clamp01((N - (2772 + i * 3)) / 12);
+  const lineP = (i: number) => clamp01((N - (2778 + i * 4)) / 20);
 
   // ---- 过热（2986）----
   const heatN = N - 2986;
@@ -60,6 +60,10 @@ export const SC12: React.FC = () => {
   const heatRamp = clamp01(heatN / 8); // 热浪/烟点强度入场
   const freezeK = 1 - clamp01((N - 3006) / 10); // 循环动作离场前衰减冻结（3016 归 0）
 
+  // ---- 预脉冲光点（2830 起沿线流动，密度渐增到正式脉冲）----
+  const prePh = (i: number) => N < 2830 ? -1 : (((N - 2830 + i * 13) % 26) / 26);
+  // ---- 节点灯循环（2772 起常闪）----
+  const nodeLed = (i: number) => (Math.floor((N - 2772) / 14 + i * 0.33) % 2 === 0 ? 1 : 0.35);
   // ---- 流量脉冲（2922 起，密度渐增；2950 起双发）----
   const pulseT = N - 2922;
 
@@ -72,6 +76,10 @@ export const SC12: React.FC = () => {
         {/* 承接海图缩微 */}
         <SeaMapMini N={N} x={mx} y={my} s={ms} opacity={miniOp} />
 
+        {/* 年份下时代弧（2766–2786 draw-on，破前段静止） */}
+        <Svg bloom={false}>
+          {N >= 2766 ? <path d={`M180 268 Q300 232 420 ${268 - 36 * clamp01((N - 2766) / 20)}`} fill="none" stroke={GREY_MID} strokeWidth={2.5} strokeDasharray={`${(180 * clamp01((N - 2766) / 20)).toFixed(0)} 400`} strokeLinecap="round" /> : null}
+        </Svg>
         {/* 左列：1990s + MIT */}
         <YearRoll N={N} f0={2747} cx={330} cy={232} from={1999} to={1990} suffix="s"
           shadow={`0 0 20px rgba(255,255,255,${(0.28 + 0.12 * Math.sin((N / 30) * Math.PI * 2)).toFixed(2)})`} />
@@ -98,10 +106,12 @@ export const SC12: React.FC = () => {
         {NODES.map(([nx, ny], i) => {
           const on = nodeOn(i);
           if (on <= 0.01) return null;
+          const led = on >= 1 ? nodeLed(i) : 1;
           return <div key={i} style={{...abs(nx - 5, ny - 5, 10, 10), borderRadius: '50%', opacity: on,
             background: mixHex('#0a0a0a', '#2e1206', heatK),
             border: `2px solid ${mixHex('#C9C9C9', ORANGE, heatK * 0.9)}`,
-            transform: `scale(${(0.6 + 0.4 * on).toFixed(2)})`}} />;
+            boxShadow: led > 0.5 ? '0 0 8px rgba(255,255,255,.55)' : 'none',
+            transform: `scale(${(0.6 + 0.4 * on + (led > 0.5 ? 0.15 : 0)).toFixed(2)})`}} />;
         })}
 
         {/* 机柜（21 帧缩入；描边灰→橙；主角光） */}
@@ -111,6 +121,16 @@ export const SC12: React.FC = () => {
           <RackIcon cx={SX} cy={SY} w={130} h={200} units={6} lit={6}
             color={mixHex('#C9C9C9', ORANGE, heatK * 0.9)} accent={mixHex(PURPLE_LIGHT, ORANGE, heatK)} sw={2.6} />
         </div>
+
+        {/* 预脉冲光点（2830 起沿线流动——正式脉冲前的涓流，填静止段） */}
+        {NODES.map(([nx, ny], i) => {
+          const ph = prePh(i);
+          if (ph < 0 || pulseT >= 0) return null;
+          const [ex, ey] = lineEnd(nx, ny);
+          const u = ph;
+          const px = nx + (ex - nx) * u, py = ny + (ey - ny) * u;
+          return <div key={`pre-${i}`} style={{...abs(px - 3, py - 3, 6, 6), borderRadius: '50%', background: WHITE, opacity: 0.8, boxShadow: '0 0 6px rgba(255,255,255,.5)'}} />;
+        })}
 
         {/* 流量脉冲（全世界砸向一台服务器，持续涌入） */}
         {NODES.map(([nx, ny], i) => {

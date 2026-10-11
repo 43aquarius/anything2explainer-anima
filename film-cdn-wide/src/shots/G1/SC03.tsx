@@ -40,20 +40,20 @@ export const SC03: React.FC = () => {
   const arcOp = 1 - 0.3 * grey;
 
   // ---- 你的城市圆圈（792 快弹缩放入场）----
-  const cs = 0.45 + 0.55 * BEZ_SCALE_IN(clamp01((N - 792) / 8));
-  const circOp = fadeIn(N - 792, 5);
-  const nodeK = clamp01((N - 794) / 8); // EdgeNode 紫光渐亮
-  const lineP = clamp01((N - 792) / 10); // 本地线 draw-on
+  const cs = 0.45 + 0.55 * BEZ_SCALE_IN(clamp01((N - 786) / 8));
+  const circOp = fadeIn(N - 786, 5);
+  const nodeK = clamp01((N - 788) / 8); // EdgeNode 紫光渐亮
+  const lineP = clamp01((N - 786) / 10); // 本地线 draw-on
 
-  // 光点沿线跑（798 起，持续动作）
-  const dotT = (i: number) => (((N - 798) * 0.016 + i * 0.33) % 1 + 1) % 1;
+  // 光点沿线跑（790 起，持续动作；末拍元素前挂 −6 拍内落位）
+  const dotT = (i: number) => (((N - 790) * 0.016 + i * 0.33) % 1 + 1) % 1;
 
   // 机架指示灯（持续闪，承接 SC01）
   const ledPh = N % 30;
   const ledOn = ledPh < 10 || (ledPh >= 14 && ledPh < 17);
 
   return (
-    <CameraRig N={N} keys={[{f: F0, x: 640, y: 360, s: 1}, {f: 758, x: 640, y: 360, s: 1}, {f: 791, x: 640, y: 410, s: 1.12}]}>
+    <CameraRig N={N} keys={[{f: F0, x: 640, y: 360, s: 1}, {f: 758, x: 640, y: 360, s: 1}, {f: 785, x: 640, y: 410, s: 1.12}]}>
       <div style={abs(0, 0, 1280, 720)}>
         <div style={{...abs(0, 0, 1280, 720), opacity: exit}}>
           {/* ---- 世界简图（0.55× 居左，SC01 同一套路径）---- */}
@@ -127,9 +127,9 @@ export const SC03: React.FC = () => {
             </Svg>
             <EdgeNode cx={725} cy={395} w={130} h={152} lit label="edge" labelSize={24} glow />
             {/* 信封堆（早就等着的副本：顶上一枚高亮紫 = 那部电影） */}
-            <PacketIcon cx={800} cy={500} w={56} h={38} opacity={clamp01((N - 794) / 8)} />
-            <PacketIcon cx={838} cy={492} w={56} h={38} opacity={clamp01((N - 796) / 8)} />
-            <PacketIcon cx={818} cy={524} w={56} h={38} accent opacity={clamp01((N - 798) / 8)} />
+            <PacketIcon cx={800} cy={500} w={56} h={38} opacity={clamp01((N - 786) / 5)} />
+            <PacketIcon cx={838} cy={492} w={56} h={38} opacity={clamp01((N - 788) / 5)} />
+            <PacketIcon cx={818} cy={524} w={56} h={38} accent opacity={clamp01((N - 790) / 5)} />
           </div>
         </div>
       </div>
