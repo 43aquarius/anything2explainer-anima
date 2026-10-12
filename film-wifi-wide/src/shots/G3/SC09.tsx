@@ -2,7 +2,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {clamp01, easeOutCubic, GlitchIn, FONT_ORB} from '../../common';
 import {CameraRig} from '../../fx';
-import {Cross, CText, GREY, RED_DEEP, WHITE, abs, softOp, Svg} from '../../ui';
+import {Cross, CText, GREY, GREY_LIGHT, PURPLE_LIGHT, RED_DEEP, WHITE, abs, softOp, Svg} from '../../ui';
 import {DeviceGlyph, NoiseFlower, quadPt, RouterGlyph, STAGE, WallGlyph, WEXAMPLE} from './shared';
 
 /**
@@ -62,6 +62,15 @@ export const SC09: React.FC = () => {
     const u2 = u * u * (3 - 2 * u) * 0.94 + 0.03;
     return quadPt(u2, A.p0, A.c, A.p1);
   };
+  // ---- 待机流动点（1877 起，破 1818–1914 静止段：弧上往返微光点） ----
+  const idleDot = (side: 0 | 1): {u: number; op: number} | null => {
+    if (N < T_RARC + 14 || N >= T_FIRE) return null;
+    const ph = ((N - T_RARC - 14) % 26) / 26;
+    const u = ph < 0.5 ? ph * 2 : (1 - ph) * 2; // 0→1→0 往返
+    return {u: u * 0.94 + 0.03, op: 0.55 * (1 - Math.abs(ph - 0.5) * 0.8)};
+  };
+  const idleA = idleDot(0);
+  const idleB = idleDot(1);
 
   // ---- LED：绿呼吸 → 红三闪 → 红稳态低幅 ----
   const ledRed = N >= T_HIT;
@@ -87,7 +96,7 @@ export const SC09: React.FC = () => {
   const tintOp = N >= T_HIT ? 0.16 * Math.pow(1 - clamp01((N - T_HIT) / 22), 1.5) : 0;
 
   return (
-    <CameraRig N={N} keys={[{f: F0, x: 640, y: 360, s: 1}, {f: 1910, x: 640, y: 360, s: 1}, {f: 1943, x: 640, y: 320, s: 1.12}]}>
+    <CameraRig N={N} keys={[{f: F0, x: 640, y: 360, s: 1}, {f: 1836, x: 640, y: 360, s: 1}, {f: 1921, x: 648, y: 348, s: 1.06}, {f: 1943, x: 640, y: 320, s: 1.12}]}>
       <div style={{...abs(0, 0, 1280, 720)}}>
         {/* 撞点红晕一拍 */}
         {tintOp > 0.005 ? (
@@ -140,6 +149,27 @@ export const SC09: React.FC = () => {
                 pathLength={100} strokeDasharray={100} strokeDashoffset={100 * (1 - p)}
                 filter={arcGlow > 0.05 ? 'url(#g3s9-arc)' : undefined} />
             );
+          })}
+          {/* 待机行进虚线（1877–1921：两弧上流动的亮段，宽幅真运动破静止段） */}
+          {N >= T_RARC + 14 && N < T_FIRE ? (
+            <path d={`M${STAGE.arcL.p0[0]},${STAGE.arcL.p0[1]} Q${STAGE.arcL.c[0]},${STAGE.arcL.c[1]} ${STAGE.arcL.p1[0]},${STAGE.arcL.p1[1]}`}
+              fill="none" stroke={WHITE} strokeWidth={4.5} strokeLinecap="round" opacity={0.85}
+              pathLength={100} strokeDasharray="7 93" strokeDashoffset={-((N - T_RARC - 14) * 3.1) % 100}
+              filter="drop-shadow(0 0 5px rgba(255,255,255,.7))" />
+          ) : null}
+          {N >= T_RARC + 20 && N < T_FIRE ? (
+            <path d={`M${STAGE.arcR.p0[0]},${STAGE.arcR.p0[1]} Q${STAGE.arcR.c[0]},${STAGE.arcR.c[1]} ${STAGE.arcR.p1[0]},${STAGE.arcR.p1[1]}`}
+              fill="none" stroke={PURPLE_LIGHT} strokeWidth={4.5} strokeLinecap="round" opacity={0.85}
+              pathLength={100} strokeDasharray="7 93" strokeDashoffset={-((N - T_RARC - 20) * 3.1) % 100}
+              filter="drop-shadow(0 0 5px rgba(161,117,241,.7))" />
+          ) : null}
+          {/* 待机流动点（1877–1921：弧上往返微光，破中段静止段） */}
+          {[idleA, idleB].map((id, side) => {
+            if (!id) return null;
+            const A = side === 0 ? STAGE.arcL : STAGE.arcR;
+            const [ix, iy] = quadPt(id.u, A.p0, A.c, A.p1);
+            return <circle key={`idle-${side}`} cx={ix.toFixed(1)} cy={iy.toFixed(1)} r={7} fill={WHITE}
+              opacity={(id.op * 0.95).toFixed(2)} filter="drop-shadow(0 0 5px rgba(255,255,255,.75))" />;
           })}
           {/* 齐射脉冲点（白，末波同时到点） */}
           {([0, 1] as const).map((side) => [0, 1, 2].map((k) => {

@@ -11,6 +11,12 @@ Original motion-graphics explainer films built as [Remotion](https://remotion.de
 | **TCP & UDP — Two Ways to Travel** | `film-tcpudp-wide/` | 1280×720 (YouTube) | 5 min 45 s | 4 chapters / 37 shots, incl. real Commons photos |
 | | `film-tcpudp-vert/` | 720×1280 (TikTok) | 61 s | 12 shots |
 
+| **BGP — The Internet's Diplomats** | `film-bgp-wide/` | 1280×720 (YouTube) | 2 min 18 s | 4 chapters / 16 shots |
+| **NTP — Why Every Clock Agrees** | `film-ntp-wide/` | 1280×720 (YouTube) | 1 min 58 s | 4 chapters / 16 shots |
+| **WiFi — The Conversation in the Air** | `film-wifi-wide/` | 1280×720 (YouTube) | 1 min 40 s | 4 chapters / 14 shots |
+
+EP5–EP7 form an informal "courtesy of the internet" trilogy: BGP (the map drawn by strangers talking), NTP (the time kept by crowd cross-checking), WiFi (the air that takes turns).
+
 Both TCP/UDP films share one story spine — a video call where you send a photo mid-call: voice and photo share one wire but need opposite guarantees → IP promises almost nothing (RFC 791) → TCP the courier (handshake, sequence numbers, doubling retransmits) vs UDP the postcard (8-byte header, late = dead) → QUIC rebuilds it all above the wire → "TCP never loses. UDP never waits."
 
 Production workflow for all films: see [`docs/制作流程.md`](docs/制作流程.md) (a distilled SOP: research → narration → TTS timeline → storyboard → parallel shot-building → chunked rendering → rhythm QC with `motion_check.py` → progress-bar pixel verification → delivery).

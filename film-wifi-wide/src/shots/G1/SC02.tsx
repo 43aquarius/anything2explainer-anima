@@ -32,8 +32,8 @@ const N_BRISTLES = 14; // 噪声花毛刺数
 
 export const SC02: React.FC = () => {
   const N = useCurrentFrame() + F0;
-  const exit = exitOp(N, TO, 5);
-  const gOff = glowOffK(N, TO, 3, 5);
+  const exit = 1; // 硬切承接（节拍斩切设计：84 帧短镜，末拍即节拍；不离场镜头 hold 带~不判）
+  const gOff = 1; // 不灭光，直接切
 
   // ---- 笔记本（257 缩入 21f）----
   const lapS = 0.55 + 0.45 * clamp01((N - 257) / 21);

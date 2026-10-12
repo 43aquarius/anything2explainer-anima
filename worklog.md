@@ -113,3 +113,18 @@ Work Log:
 Stage Summary:
 - **G3 交付：SC08（1504–1842）stratum 金字塔高光镜头完成**——src/shots/G3/{SC08.tsx,index.ts,BUILD_NOTES.md}；全项校验通过（tsc 0 错 / motion hold 39f / VLM 16 PASS）
 - 需主会话裁定：①public/fonts 已由本组恢复，请确认入 git（其他并行组同样需要）②刻度尺"均匀数量轴"与信封"右坡飞行"两处分镜表解读偏差（BUILD_NOTES 有记录）③SC08 塔尖读数 ≈11px 图标级微文本（原子钟主场在 SC05，沿用缩微件先例）
+
+---
+Task ID: 6
+Agent: main
+Task: EP6《NTP — Why Every Clock Agrees》+ EP7《WiFi — The Conversation in the Air》横版 YouTube 全流程（三期新视频任务的第二、三部）
+
+Work Log:
+- EP6 NTP：调研（RFC 5905/闰秒 27 次/UTC-TAI 37s/石英 ±1–100ppm/池）→ 32 句 285 词 → TTS 1:57.5/3524 帧 → 16 镜 7 组分镜（尾部时序硬规则烧入分镜——BGP 教训前置化）→ 图元 ClockFace/QuartzCrystal/AtomClock/SatGlyph/StratumTier/DriftLine → G3 代理同步返回（史上首次），G1/G2/G4–G6 后台写盘 + 主会话补终镜 → 2 镜 hold 轻调 → 渲染 3 块 → motion 16/16 过 / frame_metrics 高3（问句导入段小主体，记已知项）→ 交付 commit ead092d + push
+- EP7 WiFi：调研（802.11-1997/CSMA-CA 先听后说/随机退避/隐藏节点/RTS-CTS/信道 1-6-11）→ 27 句 253 词 → TTS 1:40/2997 帧 → 14 镜 5 组分镜 → 图元 RouterGlyph/AirPulse/DeviceGlyph/ChannelBand/BackoffRing → 四组并行派发（G1 代理中途死亡由主会话补 SC03 + G3 接线 + 自建 SC10；并发双写 ui.tsx 冲突一次——保留代理版签名去重）→ SC01/02 弧循环镜改硬切承接（hold~ 不判）；SC09 中段静止用相机慢推 1836–1921 破除（行进虚线在 320×180 采样下不可见的教训）→ 渲染 → motion 14/14 过 / VLM 7/7 过 → 交付
+- 三片均：selfcheck 0 / tsc 0 / VLM PASS / 分块渲染 + concat
+
+Stage Summary:
+- **三期新视频全部交付并推送 GitHub（43aquarius）**：EP5 BGP（2:18）/ EP6 NTP（1:57.5）/ EP7 WiFi（1:40）——"互联网的礼貌"三部曲
+- 本会话工程记忆：①后台 nohup 渲染会被环境杀掉——一切渲染走前台分块 ②ffmpeg 抽帧写完文件后挂起，超时杀掉不影响产物（mtime 验证）③320×180 采样下 <30px 元素的运动不可测——破静止段用相机慢推 ④并发代理共写 ui.tsx 会双份声明——主会话先落图元再派单 ⑤motion hold 数学：末拍簇 ≤ TO−45 + exitOp5 + glowOffK(3,5) 从分镜烧入可一次通过
+- 遗留（下会话可选）：三片竖版 TikTok、封面/publish 物料、GitHub Releases、SC06/SC10 类版式已知项

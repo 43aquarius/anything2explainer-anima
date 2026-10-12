@@ -32,8 +32,8 @@ const DEVICES: Array<{x: number; y: number}> = [
 
 export const SC01: React.FC = () => {
   const N = useCurrentFrame() + F0;
-  const exit = exitOp(N, TO, 5);
-  const gOff = glowOffK(N, TO, 3, 5);
+  const exit = 1; // 硬切承接（弧循环即本镜生命，不离场则 hold~ 不判——与 SC02 同判）
+  const gOff = 1;
 
   // ---- 屋子轮廓（80 wipe 16f：地板 + 墙角短竖线 + 沙发 + 茶几）----
   const roomP = clamp01((N - 80) / 16);
@@ -104,7 +104,7 @@ export const SC01: React.FC = () => {
             );
           })}
           {DEVICES.map((d, i) => (
-            <AirPulse key={`p${i}`} cx={d.x} cy={d.y} N={Math.max(0, N - (198 + i))} r={26} speed={10} arcs={4} maxR={88} color={i % 2 === 0 ? WHITE : GREY_LIGHT} opacity={arcOp(i) * exit} glow />
+            <AirPulse key={`p${i}`} cx={d.x} cy={d.y} N={Math.min(Math.max(0, N - (198 + i)), 204)} r={26} speed={10} arcs={4} maxR={88} color={i % 2 === 0 ? WHITE : GREY_LIGHT} opacity={arcOp(i) * exit} glow />
           ))}
 
           {/* ---- 灰字（中央上方）---- */}
