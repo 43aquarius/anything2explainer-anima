@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**PASS**\n\nThe frame meets all specified criteria:\n1.  **No text overlap:** All elements (top HUD, central graphic, main text, bottom band) are well-spaced.\n2.  **No edge cutoffs:** All content is fully contained within the canvas boundaries.\n3.  **Legibility:** Text is large, clear, and sharp.\n4.  **Safe zones:** The bottom subtitle band (y637-690) is clear of major elements; the top HUD area is properly utilized for the title.\n5.  **Color rules:** The design correctly uses **purple** for focus/text (\"The map draws itself\", \"no boss\"), **white/grey** for the line art and background grid, and **red** (functioning as the warning/metric color) for the \"X\" mark. No unauthorized colors are present.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791776068,
+  "id": "202610121134242c6f894387534708",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610121134242c6f894387534708",
+  "usage": {
+    "completion_tokens": 177,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1168,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1345
+  }
+}

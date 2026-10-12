@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**PASS**\n\nThe frame passes all checks:\n1.  **No text overlap:** The \"AS\" label and \"54512\" number are clearly separated. The IP address, ownership line, and quote are well-spaced.\n2.  **No edge cutoffs:** All elements (top title, left node, center box, bottom subtitle) are fully contained within the canvas boundaries with adequate margins.\n3.  **Text legibility:** All text is large, sharp, and high-contrast (white or purple on black).\n4.  **Safe zones:** The main content is centered. The bottom subtitle band (y637-690) is correctly reserved for the narration text (\"signs: 'these routes are mine.'\").\n5.  **Color rules:** The palette strictly follows the specified rules:\n    *   **Purple (#A855F7):** Used for the focus elements (RPKI badges, AS node border/text, checkmark stamp).\n    *   **Grey (#9CA3AF):** Used for inactive/secondary text (\"owned by\", \"AS64512\" inside the box).\n    *   **White:** Used for primary structural lines and the main narration text.\n    *   **No unauthorized colors** (no orange or green) are present.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791777910,
+  "id": "2026101212050362dc540ddd0e4035",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026101212050362dc540ddd0e4035",
+  "usage": {
+    "completion_tokens": 265,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1168,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1433
+  }
+}

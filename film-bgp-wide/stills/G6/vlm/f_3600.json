@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**PASS**\n\nThe frame meets all specified criteria:\n1.  **No text overlaps:** All elements (AS numbers, IP address, labels, and subtitles) are clearly separated.\n2.  **No edge cutoffs:** The \"Proof\" button, the central diagram, and the side AS boxes are fully contained within the canvas.\n3.  **Text legibility:** Text is crisp and appropriately sized for an explainer graphic.\n4.  **Safe zones:** The bottom subtitle band (y637-690) is clear of any overlapping UI elements.\n5.  **Color rules:** The palette correctly uses purple for focus/active states (Proof button, AS54512), grey for inactive/ignored states (\"ignored\", AS5500), and white for primary line art/text. No unauthorized colors are present.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791777921,
+  "id": "2026101212051750cf79f9a86b4943",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026101212051750cf79f9a86b4943",
+  "usage": {
+    "completion_tokens": 168,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1168,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1336
+  }
+}

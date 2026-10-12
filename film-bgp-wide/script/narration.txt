@@ -1,0 +1,45 @@
+# BGP — The Internet's Diplomats — narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 The Vanishing
+October fourth, twenty twenty-one.|The internet forgets Facebook.
+Instagram, WhatsApp — gone.|Everywhere at once.
+Not a hack. Not a cable cut.|The address itself... vanished.
+The internet has no map.|No one holds the master list.
+Every network announces where things are —|and every other network believes it.
+## gap 20
+
+# CHAPTER 2 A Network of Networks
+The internet isn't one network.|It's about a hundred thousand of them:
+ISPs, clouds, universities —|each one an autonomous system, an AS.
+Each has a number, and speaks|for its own corner of the map — a diplomat.
+These diplomats trade notes|with a protocol called BGP:
+"I can reach this address block,|through these networks." Pass it on.
+Your packet hops from AS to AS —|a chain of strangers,|each trusting the last.
+Stitch every announcement together,|and the map draws itself.
+No boss. No central brain.|Just a hundred thousand voices agreeing.
+## gap 20
+
+# CHAPTER 3 Trust Has No Locks
+But a spoken map can lie.
+Nineteen ninety-seven:|one small provider announced|more than it owned —
+and the internet believed it.|Large parts of the net went dark.
+Two thousand eight:|Pakistan blocked YouTube at home.
+The block leaked —|and the world's YouTube traffic|went with it.
+BGP trusts the more specific claim:|name the exact address, and you win.
+No signature. No password.|Just a voice in the dark.
+## gap 15
+
+That October day, Facebook withdrew|its own routes, by mistake, from inside.
+Within minutes, the map stopped|knowing Facebook's name.
+For almost six hours,|billions of people hit reload.
+## gap 15
+
+# CHAPTER 4 Signing the Map
+The fix is arriving:|cryptography for the map itself.
+With RPKI, the real owner of an address|signs: "these routes are mine."
+A false announcement can be checked —|and simply ignored.
+Trust, replaced by proof.
+And the map still redraws itself,|every few seconds,
+a hundred thousand diplomats|saying where everything is.
+It works because they keep talking.
+The internet has no map.|It remembers one — out loud.
+## gap 25

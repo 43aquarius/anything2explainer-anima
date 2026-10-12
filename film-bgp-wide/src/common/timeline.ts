@@ -1,0 +1,42 @@
+// 自动生成：scripts/tts_build.py。帧号 1 起含端点。
+export const TOTAL_FRAMES = 4143;
+export const CHAPTER_STARTS: Array<{n: number; title: string; from: number}> = [
+  {n: 1, title: "The Vanishing", from: 86},
+  {n: 2, title: "A Network of Networks", from: 740},
+  {n: 3, title: "Trust Has No Locks", from: 1940},
+  {n: 4, title: "Signing the Map", from: 3206},
+];
+export type Sentence = {id: string; chapter: number; from: number; to: number; text: string};
+export const SENTENCES: Sentence[] = [
+  {id: "S01", chapter: 1, from: 86, to: 206, text: "October fourth, twenty twenty-one. The internet forgets Facebook."},
+  {id: "S02", chapter: 1, from: 217, to: 315, text: "Instagram, WhatsApp — gone. Everywhere at once."},
+  {id: "S03", chapter: 1, from: 326, to: 447, text: "Not a hack. Not a cable cut. The address itself... vanished."},
+  {id: "S04", chapter: 1, from: 458, to: 553, text: "The internet has no map. No one holds the master list."},
+  {id: "S05", chapter: 1, from: 564, to: 684, text: "Every network announces where things are — and every other network believes it."},
+  {id: "S06", chapter: 2, from: 760, to: 872, text: "The internet isn't one network. It's about a hundred thousand of them:"},
+  {id: "S07", chapter: 2, from: 883, to: 1062, text: "ISPs, clouds, universities — each one an autonomous system, an AS."},
+  {id: "S08", chapter: 2, from: 1073, to: 1196, text: "Each has a number, and speaks for its own corner of the map — a diplomat."},
+  {id: "S09", chapter: 2, from: 1207, to: 1315, text: "These diplomats trade notes with a protocol called BGP:"},
+  {id: "S10", chapter: 2, from: 1326, to: 1444, text: "\"I can reach this address block, through these networks.\" Pass it on."},
+  {id: "S11", chapter: 2, from: 1455, to: 1622, text: "Your packet hops from AS to AS — a chain of strangers, each trusting the last."},
+  {id: "S12", chapter: 2, from: 1633, to: 1744, text: "Stitch every announcement together, and the map draws itself."},
+  {id: "S13", chapter: 2, from: 1755, to: 1884, text: "No boss. No central brain. Just a hundred thousand voices agreeing."},
+  {id: "S14", chapter: 3, from: 1960, to: 2004, text: "But a spoken map can lie."},
+  {id: "S15", chapter: 3, from: 2015, to: 2139, text: "Nineteen ninety-seven: one small provider announced more than it owned —"},
+  {id: "S16", chapter: 3, from: 2150, to: 2252, text: "and the internet believed it. Large parts of the net went dark."},
+  {id: "S17", chapter: 3, from: 2263, to: 2352, text: "Two thousand eight: Pakistan blocked YouTube at home."},
+  {id: "S18", chapter: 3, from: 2363, to: 2462, text: "The block leaked — and the world's YouTube traffic went with it."},
+  {id: "S19", chapter: 3, from: 2473, to: 2622, text: "BGP trusts the more specific claim: name the exact address, and you win."},
+  {id: "S20", chapter: 3, from: 2633, to: 2739, text: "No signature. No password. Just a voice in the dark."},
+  {id: "S21", chapter: 3, from: 2785, to: 2939, text: "That October day, Facebook withdrew its own routes, by mistake, from inside."},
+  {id: "S22", chapter: 3, from: 2950, to: 3043, text: "Within minutes, the map stopped knowing Facebook's name."},
+  {id: "S23", chapter: 3, from: 3054, to: 3150, text: "For almost six hours, billions of people hit reload."},
+  {id: "S24", chapter: 4, from: 3221, to: 3321, text: "The fix is arriving: cryptography for the map itself."},
+  {id: "S25", chapter: 4, from: 3332, to: 3478, text: "With RPKI, the real owner of an address signs: \"these routes are mine.\""},
+  {id: "S26", chapter: 4, from: 3489, to: 3576, text: "A false announcement can be checked — and simply ignored."},
+  {id: "S27", chapter: 4, from: 3587, to: 3638, text: "Trust, replaced by proof."},
+  {id: "S28", chapter: 4, from: 3649, to: 3751, text: "And the map still redraws itself, every few seconds,"},
+  {id: "S29", chapter: 4, from: 3762, to: 3866, text: "a hundred thousand diplomats saying where everything is."},
+  {id: "S30", chapter: 4, from: 3877, to: 3924, text: "It works because they keep talking."},
+  {id: "S31", chapter: 4, from: 3935, to: 4042, text: "The internet has no map. It remembers one — out loud."},
+];
