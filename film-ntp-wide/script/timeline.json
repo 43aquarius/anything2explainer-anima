@@ -1,0 +1,670 @@
+{
+ "fps": 30,
+ "total_frames": 3524,
+ "engine": "edge",
+ "voice": "en-US-AndrewNeural",
+ "rate": "+0%",
+ "gap": 10,
+ "para_gap": 20,
+ "chapter_gap": 45,
+ "lead": 40,
+ "tail": 90,
+ "lang": "en",
+ "chapters": [
+  {
+   "n": 1,
+   "title": "The Drift",
+   "from": 86
+  },
+  {
+   "n": 2,
+   "title": "The Pyramid",
+   "from": 979
+  },
+  {
+   "n": 3,
+   "title": "The Cross-Check",
+   "from": 1896
+  },
+  {
+   "n": 4,
+   "title": "The Committee",
+   "from": 2670
+  }
+ ],
+ "sentences": [
+  {
+   "id": "S01",
+   "chapter": 1,
+   "from": 86,
+   "to": 140,
+   "text": "Your clock is wrong. Right now.",
+   "para": false,
+   "subs": [
+    {
+     "from": 86,
+     "to": 122,
+     "text": "Your clock is wrong."
+    },
+    {
+     "from": 123,
+     "to": 140,
+     "text": "Right now."
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "chapter": 1,
+   "from": 151,
+   "to": 265,
+   "text": "Not broken — just drifting. A quartz crystal counts the seconds,",
+   "para": false,
+   "subs": [
+    {
+     "from": 151,
+     "to": 204,
+     "text": "Not broken — just drifting."
+    },
+    {
+     "from": 205,
+     "to": 265,
+     "text": "A quartz crystal counts the seconds,"
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "chapter": 1,
+   "from": 276,
+   "to": 349,
+   "text": "and quartz drifts a few of them every single day.",
+   "para": false,
+   "subs": [
+    {
+     "from": 276,
+     "to": 298,
+     "text": "and quartz drifts"
+    },
+    {
+     "from": 299,
+     "to": 349,
+     "text": "a few of them every single day."
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "chapter": 1,
+   "from": 360,
+   "to": 469,
+   "text": "For a wristwatch, that's fine. For the internet, it's a problem.",
+   "para": false,
+   "subs": [
+    {
+     "from": 360,
+     "to": 418,
+     "text": "For a wristwatch, that's fine."
+    },
+    {
+     "from": 419,
+     "to": 469,
+     "text": "For the internet, it's a problem."
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "chapter": 1,
+   "from": 480,
+   "to": 552,
+   "text": "Login codes expire in thirty seconds.",
+   "para": false,
+   "subs": [
+    {
+     "from": 480,
+     "to": 552,
+     "text": "Login codes expire in thirty seconds."
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "chapter": 1,
+   "from": 563,
+   "to": 665,
+   "text": "Certificates are valid only between two exact moments.",
+   "para": false,
+   "subs": [
+    {
+     "from": 563,
+     "to": 601,
+     "text": "Certificates are valid"
+    },
+    {
+     "from": 602,
+     "to": 665,
+     "text": "only between two exact moments."
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "chapter": 1,
+   "from": 676,
+   "to": 787,
+   "text": "A database told the same thing writes it down in a different order.",
+   "para": false,
+   "subs": [
+    {
+     "from": 676,
+     "to": 730,
+     "text": "A database told the same thing"
+    },
+    {
+     "from": 731,
+     "to": 787,
+     "text": "writes it down in a different order."
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "chapter": 1,
+   "from": 798,
+   "to": 923,
+   "text": "On a network, wrong time isn't a nuisance. It's a contradiction.",
+   "para": true,
+   "subs": [
+    {
+     "from": 798,
+     "to": 825,
+     "text": "On a network,"
+    },
+    {
+     "from": 826,
+     "to": 891,
+     "text": "wrong time isn't a nuisance."
+    },
+    {
+     "from": 892,
+     "to": 923,
+     "text": "It's a contradiction."
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "chapter": 2,
+   "from": 999,
+   "to": 1037,
+   "text": "So who has the right time?",
+   "para": false,
+   "subs": [
+    {
+     "from": 999,
+     "to": 1037,
+     "text": "So who has the right time?"
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "chapter": 2,
+   "from": 1048,
+   "to": 1170,
+   "text": "Atomic clocks do — the world's best, run by national labs.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1048,
+     "to": 1088,
+     "text": "Atomic clocks do —"
+    },
+    {
+     "from": 1089,
+     "to": 1124,
+     "text": "the world's best,"
+    },
+    {
+     "from": 1125,
+     "to": 1170,
+     "text": "run by national labs."
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "chapter": 2,
+   "from": 1181,
+   "to": 1318,
+   "text": "GPS satellites each carry one, and whisper the time down to earth.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1181,
+     "to": 1262,
+     "text": "GPS satellites each carry one,"
+    },
+    {
+     "from": 1263,
+     "to": 1318,
+     "text": "and whisper the time down to earth."
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "chapter": 2,
+   "from": 1329,
+   "to": 1402,
+   "text": "But your laptop can't afford an atomic clock.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1329,
+     "to": 1369,
+     "text": "But your laptop can't afford"
+    },
+    {
+     "from": 1370,
+     "to": 1402,
+     "text": "an atomic clock."
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "chapter": 2,
+   "from": 1413,
+   "to": 1501,
+   "text": "So it asks a server — and that server asks another,",
+   "para": false,
+   "subs": [
+    {
+     "from": 1413,
+     "to": 1459,
+     "text": "So it asks a server —"
+    },
+    {
+     "from": 1460,
+     "to": 1501,
+     "text": "and that server asks another,"
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "chapter": 2,
+   "from": 1512,
+   "to": 1565,
+   "text": "each one a little further from the source.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1512,
+     "to": 1538,
+     "text": "each one a little further"
+    },
+    {
+     "from": 1539,
+     "to": 1565,
+     "text": "from the source."
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "chapter": 2,
+   "from": 1576,
+   "to": 1645,
+   "text": "NTP calls each layer a stratum:",
+   "para": false,
+   "subs": [
+    {
+     "from": 1576,
+     "to": 1645,
+     "text": "NTP calls each layer a stratum:"
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "chapter": 2,
+   "from": 1656,
+   "to": 1840,
+   "text": "stratum one talks to the atom; stratum two asks stratum one — and so on, down to fifteen.",
+   "para": true,
+   "subs": [
+    {
+     "from": 1656,
+     "to": 1710,
+     "text": "stratum one talks to the atom;"
+    },
+    {
+     "from": 1711,
+     "to": 1778,
+     "text": "stratum two asks stratum one —"
+    },
+    {
+     "from": 1779,
+     "to": 1840,
+     "text": "and so on, down to fifteen."
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "chapter": 3,
+   "from": 1916,
+   "to": 2002,
+   "text": "But networks lie a little. Every answer arrives late.",
+   "para": false,
+   "subs": [
+    {
+     "from": 1916,
+     "to": 1958,
+     "text": "But networks lie a little."
+    },
+    {
+     "from": 1959,
+     "to": 2002,
+     "text": "Every answer arrives late."
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "chapter": 3,
+   "from": 2013,
+   "to": 2083,
+   "text": "So your laptop asks four servers at once.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2013,
+     "to": 2045,
+     "text": "So your laptop asks"
+    },
+    {
+     "from": 2046,
+     "to": 2083,
+     "text": "four servers at once."
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "chapter": 3,
+   "from": 2094,
+   "to": 2161,
+   "text": "Their answers disagree — of course they do.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2094,
+     "to": 2133,
+     "text": "Their answers disagree —"
+    },
+    {
+     "from": 2134,
+     "to": 2161,
+     "text": "of course they do."
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "chapter": 3,
+   "from": 2172,
+   "to": 2253,
+   "text": "The trick: trust the ones that agree with each other.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2172,
+     "to": 2217,
+     "text": "The trick: trust the ones"
+    },
+    {
+     "from": 2218,
+     "to": 2253,
+     "text": "that agree with each other."
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "chapter": 3,
+   "from": 2264,
+   "to": 2353,
+   "text": "The odd one out gets dropped. The crowd keeps the time.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2264,
+     "to": 2313,
+     "text": "The odd one out gets dropped."
+    },
+    {
+     "from": 2314,
+     "to": 2353,
+     "text": "The crowd keeps the time."
+    }
+   ]
+  },
+  {
+   "id": "S22",
+   "chapter": 3,
+   "from": 2364,
+   "to": 2444,
+   "text": "And here's the gentle part: no sudden jumps.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2364,
+     "to": 2411,
+     "text": "And here's the gentle part:"
+    },
+    {
+     "from": 2412,
+     "to": 2444,
+     "text": "no sudden jumps."
+    }
+   ]
+  },
+  {
+   "id": "S23",
+   "chapter": 3,
+   "from": 2455,
+   "to": 2538,
+   "text": "The clock just speeds up, or slows down a little,",
+   "para": false,
+   "subs": [
+    {
+     "from": 2455,
+     "to": 2504,
+     "text": "The clock just speeds up,"
+    },
+    {
+     "from": 2505,
+     "to": 2538,
+     "text": "or slows down a little,"
+    }
+   ]
+  },
+  {
+   "id": "S24",
+   "chapter": 3,
+   "from": 2549,
+   "to": 2614,
+   "text": "until it walks quietly back into step.",
+   "para": true,
+   "subs": [
+    {
+     "from": 2549,
+     "to": 2593,
+     "text": "until it walks quietly back"
+    },
+    {
+     "from": 2594,
+     "to": 2614,
+     "text": "into step."
+    }
+   ]
+  },
+  {
+   "id": "S25",
+   "chapter": 4,
+   "from": 2685,
+   "to": 2747,
+   "text": "Who runs all this? Volunteers.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2685,
+     "to": 2721,
+     "text": "Who runs all this?"
+    },
+    {
+     "from": 2722,
+     "to": 2747,
+     "text": "Volunteers."
+    }
+   ]
+  },
+  {
+   "id": "S26",
+   "chapter": 4,
+   "from": 2758,
+   "to": 2880,
+   "text": "A public pool, thousands of servers, lending the internet their time.",
+   "para": false,
+   "subs": [
+    {
+     "from": 2758,
+     "to": 2834,
+     "text": "A public pool, thousands of servers,"
+    },
+    {
+     "from": 2835,
+     "to": 2880,
+     "text": "lending the internet their time."
+    }
+   ]
+  },
+  {
+   "id": "S27",
+   "chapter": 4,
+   "from": 2891,
+   "to": 3014,
+   "text": "Since nineteen eighty-five, NTP has kept the world's computers agreeing —",
+   "para": false,
+   "subs": [
+    {
+     "from": 2891,
+     "to": 2952,
+     "text": "Since nineteen eighty-five, NTP"
+    },
+    {
+     "from": 2953,
+     "to": 3014,
+     "text": "has kept the world's computers agreeing —"
+    }
+   ]
+  },
+  {
+   "id": "S28",
+   "chapter": 4,
+   "from": 3025,
+   "to": 3156,
+   "text": "across borders, across vendors, across twenty-seven leap seconds.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3025,
+     "to": 3095,
+     "text": "across borders, across vendors,"
+    },
+    {
+     "from": 3096,
+     "to": 3156,
+     "text": "across twenty-seven leap seconds."
+    }
+   ]
+  },
+  {
+   "id": "S29",
+   "chapter": 4,
+   "from": 3167,
+   "to": 3236,
+   "text": "It isn't one perfect clock ruling them all.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3167,
+     "to": 3210,
+     "text": "It isn't one perfect clock"
+    },
+    {
+     "from": 3211,
+     "to": 3236,
+     "text": "ruling them all."
+    }
+   ]
+  },
+  {
+   "id": "S30",
+   "chapter": 4,
+   "from": 3247,
+   "to": 3358,
+   "text": "It's thousands of ordinary ones, checking each other — forever.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3247,
+     "to": 3306,
+     "text": "It's thousands of ordinary ones,"
+    },
+    {
+     "from": 3307,
+     "to": 3358,
+     "text": "checking each other — forever."
+    }
+   ]
+  },
+  {
+   "id": "S31",
+   "chapter": 4,
+   "from": 3369,
+   "to": 3393,
+   "text": "Time isn't kept.",
+   "para": false,
+   "subs": [
+    {
+     "from": 3369,
+     "to": 3393,
+     "text": "Time isn't kept."
+    }
+   ]
+  },
+  {
+   "id": "S32",
+   "chapter": 4,
+   "from": 3404,
+   "to": 3423,
+   "text": "It's agreed.",
+   "para": true,
+   "subs": [
+    {
+     "from": 3404,
+     "to": 3423,
+     "text": "It's agreed."
+    }
+   ]
+  }
+ ],
+ "chars": 1269,
+ "words": 285,
+ "speech_sec": 94.62
+}

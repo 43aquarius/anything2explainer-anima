@@ -1,0 +1,44 @@
+# NTP — Why Every Clock Agrees — narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 The Drift
+Your clock is wrong.|Right now.
+Not broken — just drifting.|A quartz crystal counts the seconds,
+and quartz drifts|a few of them every single day.
+For a wristwatch, that's fine.|For the internet, it's a problem.
+Login codes expire in thirty seconds.
+Certificates are valid|only between two exact moments.
+A database told the same thing|writes it down in a different order.
+On a network,|wrong time isn't a nuisance.|It's a contradiction.
+## gap 20
+
+# CHAPTER 2 The Pyramid
+So who has the right time?
+Atomic clocks do —|the world's best,|run by national labs.
+GPS satellites each carry one,|and whisper the time down to earth.
+But your laptop can't afford|an atomic clock.
+So it asks a server —|and that server asks another,
+each one a little further|from the source.
+NTP calls each layer a stratum:
+stratum one talks to the atom;|stratum two asks stratum one —|and so on, down to fifteen.
+## gap 20
+
+# CHAPTER 3 The Cross-Check
+But networks lie a little.|Every answer arrives late.
+So your laptop asks|four servers at once.
+Their answers disagree —|of course they do.
+The trick: trust the ones|that agree with each other.
+The odd one out gets dropped.|The crowd keeps the time.
+And here's the gentle part:|no sudden jumps.
+The clock just speeds up,|or slows down a little,
+until it walks quietly back|into step.
+## gap 15
+
+# CHAPTER 4 The Committee
+Who runs all this?|Volunteers.
+A public pool, thousands of servers,|lending the internet their time.
+Since nineteen eighty-five, NTP|has kept the world's computers agreeing —
+across borders, across vendors,|across twenty-seven leap seconds.
+It isn't one perfect clock|ruling them all.
+It's thousands of ordinary ones,|checking each other — forever.
+Time isn't kept.
+It's agreed.
+## gap 25

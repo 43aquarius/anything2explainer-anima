@@ -1,21 +1,23 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {PacketIcon, ClockIcon, EXAMPLE, CText, RackIcon, PersonIcon, BrowserWin, EdgeNode, GlobeArc, CacheShelf} from './ui';
+import {FONT_ORB} from './common/lib';
+import {CText, ClockFace, QuartzCrystal, AtomClock, SatGlyph, StratumTier, DriftLine, EXAMPLE, WHITE, GREY, PURPLE_LIGHT} from './ui';
 
-/** 探针合成：一帧看全部 CDN 新图元（派构建组之前先确认风格与尺寸） */
+/** 探针：一帧渲染全部 NTP 新图元（镜头构建前用 still 检查分区/压线/光效） */
 export const ProbeIcons: React.FC = () => {
-  const N = useCurrentFrame() + 1;
+  const N = useCurrentFrame();
   return (
-    <div style={{position: 'absolute', inset: 0}}>
-      <BrowserWin x={60} y={110} w={420} h={330} url="player" barP={1} />
-      <EdgeNode cx={640} cy={220} w={130} h={150} glow label="edge node" />
-      <GlobeArc cx={980} cy={240} r={150} glow centerText="one IP" centerSize={48} />
-      <CacheShelf cx={300} cy={540} w={340} h={300} litRow={1} glow label="edge cache" />
-      <div style={{position: 'absolute', left: 560, top: 480}}><RackIcon cx={80} cy={80} w={140} h={200} lit={2} label="origin" /></div>
-      <PersonIcon cx={820} cy={540} size={120} label="you" />
-      <PacketIcon cx={960} cy={540} w={72} h={50} accent glow />
-      <ClockIcon cx={1100} cy={540} r={56} N={N} />
-      <CText cx={640} cy={690} size={24} color="#888">probe: cdn primitives (EdgeNode/GlobeArc/CacheShelf + BrowserWin/RackIcon/PersonIcon)</CText>
+    <div style={{position: 'absolute', inset: 0, background: '#000'}}>
+      <ClockFace cx={230} cy={220} r={120} N={N} glow label="your laptop" readout={EXAMPLE.readGood} />
+      <ClockFace cx={230} cy={480} r={70} N={N} rate={0.5} ghost readout="11:59:52" />
+      <QuartzCrystal cx={520} cy={140} N={N} label="quartz" />
+      <AtomClock cx={640} cy={330} N={N} glow label="stratum 0" />
+      <SatGlyph cx={950} cy={170} N={N} label="GPS" />
+      <StratumTier cx={950} y={330} w={330} n={4} label="stratum 2" lit />
+      <StratumTier cx={950} y={400} w={330} n={6} dim />
+      <DriftLine x={120} y={610} w={500} k={0.55} label={EXAMPLE.driftDay} />
+      <CText cx={640} cy={40} size={30} weight={700} family={FONT_ORB} color={WHITE}>NTP probe — all primitives</CText>
+      <CText cx={640} cy={690} size={22} weight={400} color={GREY}>frame {N}</CText>
     </div>
   );
 };

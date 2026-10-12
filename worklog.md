@@ -75,3 +75,41 @@ Stage Summary:
 - 质检：motion 段末全过（30–225f）+ 终镜 21f~ OK；frame_metrics 高1（SC11 已知项）/中0/低16；selfcheck 0
 - **本会话三部曲完成：EP2 DNS（前会话）+ EP3 TLS（3:21）+ EP4 CDN（2:29）均已交付 GitHub**
 - 待续（下会话）：①TLS/CDN 竖版 TikTok（照 EP2 竖版流程：~15 句压缩 + 3 组）②三片的封面 Cover + publish.md 发布物料回补（对齐仓库 SOP：humanize.py 过稿）③GitHub Releases 建 v4/v5/v6（DNS/TLS/CDN + mp4 资产 + audio.wav）④README films 表更新
+
+---
+Task ID: 5
+Agent: main
+Task: EP5《BGP — The Internet's Diplomats》横版 YouTube 全流程（调研→解说词→TTS→分镜→7 组构建→QC→渲染→交付）
+
+Work Log:
+- 主题自拟第 5 期：BGP（避开已用的 PCAP/TCP-UDP/APK/DNS/TLS/CDN）
+- 调研（curl 直抓一手源，全部存 research/）：RFC 4271 原文、Cloudflare 2021-10-04 FB 断网博文（15:40 UTC 撤回/30x DNS 洪峰/≈6h/ASN 32934）、Wikipedia BGP hijacking（1997 AS7007 + 2008 巴基斯坦）、Wikipedia ASN（2025 已分配 ~120,000）
+- 解说词 31 句 317 词（4 章叙事：消失之夜→网络之网→信任无锁→给地图签名；金句 "The internet has no map. It remembers one — out loud."）
+- TTS edge AndrewNeural：138.1s / 4143 帧 / 章界 86/740/1940/3206；逐句缓存入库
+- config（18 条 HUD）+ 分镜表 16 镜 7 组（v2 边界规则；G7 金句主会话亲建，G1–G6 后台代理构建——父调用超时但写盘成功，与工作日志预案一致）
+- 图元：AsChip/RouteNote/MapFrame/SigSeal/VoiceDot 五新件 + 探针 VLM 一遍过
+- QC 迭代：①G4/SC10 语法错误（div style 少一个 }）——esbuild 定位修复 ②分镜表两处令牌笔误（章首镜应 Cn-8 起）③motion hold 修 5 镜（SC10 脉冲前移/SC15 齐声波提前+拉远前移/SC14 末拍全簇前挂/SC02 glitch 前挂/SC04 轮闪降幅+网格波次压缩）④frame_metrics 修 4 镜（SC10 年份 96px/SC05 卡片 120px/SC13 顶部文字 46px+封蜡虚影/SC11 光晕加亮）
+- 渲染：3 块 + concat；fin_frames 全量复测 motion 16/16 过；frame_metrics 高1(SC11 设计性已知项)/中1/低17
+- 金句第二行 Audiowide 74→66px（textW 1153px 实测防溢出）
+
+Stage Summary:
+- **EP5 BGP 横版成片交付：BGP_Explained_YouTube_1280x720.mp4（2:18 / 28.4MB / 4 章 16 镜）**，commit 9a7c0bb + push（43aquarius）
+- 工程记忆新增：ffmpeg 抽帧在文件全部写完后有"退出挂起"，超时杀掉不影响产物（比对 mtime 即可）；motion hold 数学：末拍簇需在离场前留 ≥36f 安静（含 6f 灭光扣除）；子代理构建的最大风险是 JSX 属性少括号——esbuild 单文件定位最快
+- 待续：EP6 NTP + EP7 WiFi（同管线），三片竖版 TikTok 与封面/publish 物料回补
+
+---
+Task ID: ntp-G3
+Agent: subagent
+Task: EP6《NTP — Why Every Clock Agrees》G3 组构建（SC08 stratum 金字塔高光镜头）
+
+Work Log:
+- 必读顺序完成（BUILD_RULES_NTP → agent-build-rules → 分镜表 G3 段 → timeline S14–S16 → research → BGP G3/SC07 draw-on 节奏对照）
+- 节拍映射修正：分镜表 SC08 行的 1656/1711 两拍是旧节拍集；按 timeline S16 三字幕块（1656/1711/1779）对齐——1576 术语标签（S15）、1656 塔尖点亮（stratum one talks to the atom）、1711 二三层+上行信封（stratum two asks stratum one）、1779 波次到底+刻度逐亮+大字（down to fifteen）
+- SC08 构建：塔尖 AtomClock（占位轮廓 draw-on → 1539 源头显现 → 1656 白闪+GlowBlob 紫光）+ 4 层 StratumTier（8f/层链式 wipe 级联、lit 切换+亮度闪光、向下渐灰）+ 2 ghost 渐隐层 + 层间短连线 + 右缘刻度尺 1–15（独立数量轴、末三个渐隐）+ 底部 `stratum 1–15` 大字 GlitchIn rgbSplit 6（本镜唯一 glitch）+ 右坡上行信封 ×2（层缝 7px 放不下"上行小点"，改沿坡 quad 飞行 150px，视觉等价已记录）
+- 尾部时序硬规则全守：末拍 1779 ≤ TO−45=1797；exitOp(N,1842,5)+glowOffK(3,5)；相机末 key 1777 ≤ TO−50；低幅呼吸（GlowBlob 内建+大字紫晕 10%）
+- 【环境灾难修复】public/fonts/ 四字体全缺失（渲染 404 + fallback sans-serif）——从 film-bgp-wide/public/fonts/ 复制恢复（静态资产，未动共用代码）；修复后 rm build_dev_g3 重出
+- QC：tsc 0 错；test_render 3.5s/30f（≈8.5fps）；motion_check G3 最长静止 1.4s / hold 39f / 0 failing；still 15 帧 + 组界 2 帧，z-ai vision 16/16 PASS（f_1800 内容核验通过；末帧归零用像素审计替代：亮像素 24889→947）；2 次 VLM 追问遇 429（按规则处理后记录，非必需项）
+
+Stage Summary:
+- **G3 交付：SC08（1504–1842）stratum 金字塔高光镜头完成**——src/shots/G3/{SC08.tsx,index.ts,BUILD_NOTES.md}；全项校验通过（tsc 0 错 / motion hold 39f / VLM 16 PASS）
+- 需主会话裁定：①public/fonts 已由本组恢复，请确认入 git（其他并行组同样需要）②刻度尺"均匀数量轴"与信封"右坡飞行"两处分镜表解读偏差（BUILD_NOTES 有记录）③SC08 塔尖读数 ≈11px 图标级微文本（原子钟主场在 SC05，沿用缩微件先例）

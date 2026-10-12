@@ -1,0 +1,39 @@
+# WiFi — The Conversation in the Air — narration v1 (| splits subtitles only; EN block <=48 chars)
+# CHAPTER 1 The Shared Air
+You can't see your WiFi.|You can't hear it.
+But the air in this room|is full of conversations.
+Radios can't talk and listen|at the same time.
+Your laptop, your phone, your TV —|they take turns on the same air.
+One talker at a time.|That is the whole rule.
+## gap 20
+
+# CHAPTER 2 Taking Turns
+So how does everyone|not talk over each other?
+Before speaking,|your device listens first.
+If the air is busy,|it stays quiet and waits.
+When it finally talks,|it waits a random extra beat —
+just in case someone else|had the same idea.
+That little pause|is why your network works.
+No referee. No schedule.|Just good manners,|built into the radio itself.
+## gap 20
+
+# CHAPTER 3 The Crowd
+Move into an apartment,|and the air gets crowded.
+In the two-point-four gigahertz band,|only three channels don't overlap:|one, six, and eleven.
+You and your neighbors share them,|like it or not.
+And there's a trickier trap:
+two devices that can't hear each other,|but both can reach the router.
+Both talk at once —|and neither is heard.
+So the router lets them|announce themselves first:
+a small request, a small reply —|then the floor is theirs.
+## gap 15
+
+# CHAPTER 4 The Promise
+This all began in nineteen ninety-seven —|two megabits, if the air was kind.
+Today, the same air carries movies.
+Faster radios. Wider bands.|The engineering never stops.
+But when your video stalls for a breath,|then plays —
+that's not the network failing.|That's the air, taking turns.
+One sky.
+One voice at a time.
+## gap 25

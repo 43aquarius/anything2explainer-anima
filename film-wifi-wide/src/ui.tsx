@@ -499,24 +499,21 @@ export const RepoCard: React.FC<{x: number; y: number; w?: number; h?: number; n
 
 /** 贯穿示例语境常量（全片唯一一套，各组不得自造） */
 export const EXAMPLE = {
-  /** CDN 片贯穿示例（The Invisible Internet EP4） */
-  movieGb: '2 GB',
-  distanceKm: '8,000 km',       // 示意大洲距离
-  fiberC: '2/3 c',
-  speed: '100 Mb/s',            // 示意带宽
-  mathTime: '\u2248 3 min',
-  playTime: '1 s',
-  ttl: '60 s',
-  content: 'movie.mp4',
-  hitPill: 'hit',
-  missPill: 'miss',
-  year90s: '1990s', yearAkamai: '1998', yearOutage: '2021',
-  cities: '300+ cities',
-  outageShare: '~1/10',
-  outageMin: '49 min',
-  finale1: 'The internet isn\u2019t fast.',
-  finale2: 'It\u2019s close.',
-  credit: 'CDN \u00b7 why your video never buffers',
+  /** WiFi 片贯穿示例（The Invisible Internet EP7） */
+  laptop: 'your laptop',
+  phone: 'your phone',
+  tv: 'your TV',
+  router: 'the router',
+  netA: 'net A', netB: 'net B', you: 'you',
+  year: '1997',
+  rate: '2 Mbit/s',
+  chan16911: '1  6  11',
+  request: 'request',
+  reply: 'reply',
+  movie: 'a movie',
+  finale1: 'One sky.',
+  finale2: 'One voice at a time.',
+  credit: 'WiFi \u00b7 the conversation in the air',
 };
 
 /** 信封（= packet 的全片视觉母题）：白描边矩形 + 中线折角 + 封口线；accent 时描边变紫（副本/当前重点） */
@@ -554,56 +551,7 @@ export const ClockIcon: React.FC<{cx: number; cy: number; r?: number; N?: number
 
 
 
-// ===================== CDN 片专用图元（跨组共用；风格：白描边 2–3px + 黑填充 + BLOOM_SOFT）=====================
-
-/** 边缘节点（城市节点）：小塔 + 天线 + 信号弧 */
-export const EdgeNode: React.FC<{cx: number; cy: number; w?: number; h?: number; lit?: boolean; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, w = 120, h = 140, lit = true, opacity = 1, glow = false, label, labelSize = 22}) => (
-  <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity, filter: glow ? BLOOM : 'none'}}>
-    <svg width={w} height={h} viewBox="0 0 120 140" style={{position: 'absolute', inset: 0}}>
-      <g stroke={WHITE} strokeWidth={3} fill="#000" strokeLinejoin="round">
-        <rect x={38} y={70} width={44} height={56} rx={4} />
-        <line x1={60} y1={70} x2={60} y2={30} strokeWidth={3} />
-        <circle cx={60} cy={24} r={6} fill={lit ? PURPLE_LIGHT : GREY_MID} stroke="none" />
-        <path d="M78 30 Q86 22 78 14" fill="none" strokeWidth={2.5} opacity={0.8} />
-        <line x1={30} y1={126} x2={90} y2={126} strokeWidth={3} />
-        {[0, 1, 2].map(i => <rect key={i} x={44 + i * 12} y={82} width={7} height={7} fill={lit && i < 2 ? PURPLE_LIGHT : '#333'} stroke="none" />)}
-      </g>
-    </svg>
-    {label && <div style={{position: 'absolute', left: 0, right: 0, top: h + 4, textAlign: 'center', fontFamily: FONT_TECH, fontSize: labelSize, color: GREY}}>{label}</div>}
-  </div>
-);
-
-/** 地球弧（任播）：圆环 + 环上节点由镜头层叠加 */
-export const GlobeArc: React.FC<{cx: number; cy: number; r?: number; opacity?: number; glow?: boolean; centerText?: string; centerSize?: number}> = ({cx, cy, r = 200, opacity = 1, glow = false, centerText, centerSize = 72}) => (
-  <div style={{position: 'absolute', left: cx - r, top: cy - r, width: 2 * r, height: 2 * r, opacity, filter: glow ? BLOOM : 'none'}}>
-    <svg width={2 * r} height={2 * r} viewBox="0 0 400 400" style={{position: 'absolute', inset: 0}}>
-      <g stroke={WHITE} strokeWidth={3} fill="none">
-        <circle cx={200} cy={200} r={192} />
-        <ellipse cx={200} cy={200} rx={192} ry={72} opacity={0.35} />
-        <line x1={8} y1={200} x2={392} y2={200} opacity={0.35} />
-      </g>
-    </svg>
-    {centerText && <div style={{position: 'absolute', left: 0, right: 0, top: r - centerSize / 2, textAlign: 'center', fontFamily: FONT_ORB, fontWeight: 700, fontSize: centerSize, color: WHITE, WebkitTextStroke: '3px #A175F1', paintOrder: 'stroke fill', letterSpacing: 2}}>{centerText}</div>}
-  </div>
-);
-
-/** 缓存货架（边缘内容副本）：3 层隔板 + 内容块；litRow 高亮层 */
-export const CacheShelf: React.FC<{cx: number; cy: number; w?: number; h?: number; litRow?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, w = 340, h = 320, litRow = -1, opacity = 1, glow = false, label, labelSize = 24}) => (
-  <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity, filter: glow ? BLOOM : 'none'}}>
-    <svg width={w} height={h} viewBox="0 0 340 320" style={{position: 'absolute', inset: 0}}>
-      <g stroke={WHITE} strokeWidth={3} fill="none" strokeLinejoin="round">
-        <rect x={8} y={8} width={324} height={304} rx={8} />
-        {[0, 1, 2].map(i => <line key={i} x1={8} y1={112 + i * 100} x2={332} y2={112 + i * 100} strokeWidth={2.5} />)}
-      </g>
-      {[0, 1, 2].map(row => [0, 1, 2].map(col => (
-        <rect key={`${row}-${col}`} x={28 + col * 100} y={130 + row * 100} width={80} height={56} rx={5}
-          fill={row === litRow ? 'rgba(102,48,248,0.28)' : '#0d0d10'} stroke={row === litRow ? PURPLE_LIGHT : GREY_LINE} strokeWidth={2} />
-      )))}
-      <text x={170} y={70} textAnchor="middle" fill={GREY} fontSize={24} fontFamily="monospace">edge cache</text>
-    </svg>
-    {label && <div style={{position: 'absolute', left: 0, right: 0, top: h + 8, textAlign: 'center', fontFamily: FONT_TECH, fontSize: labelSize, color: GREY}}>{label}</div>}
-  </div>
-);
+// ===================== WiFi 片专用图元（跨组共用；风格：白描边 2–3px + 黑填充 + BLOOM_SOFT）=====================
 
 /** 轻量浏览器窗口（DNS 片通用）：窗口框 + 顶栏三点 + 地址栏（可打字/可发光）+ 骨架线 */
 export const BrowserWin: React.FC<{x: number; y: number; w?: number; h?: number; url?: string; typed?: number; skeleton?: number; skelLit?: number; skelOpacity?: number; barColor?: string; barP?: number; opacity?: number; dim?: boolean}> = ({x, y, w = 470, h = 380, url = 'about:blank', typed = url.length, skeleton = 5, skelLit = 0, skelOpacity, barColor = PURPLE, barP = 0, opacity = 1, dim = false}) => (
@@ -626,3 +574,99 @@ export const BrowserWin: React.FC<{x: number; y: number; w?: number; h?: number;
   </div>
 );
 
+
+
+/** 路由器（= 接入点母题）：机盒 + 双天线 + 状态 LED；lit 时紫光 */
+export const RouterGlyph: React.FC<{cx: number; cy: number; s?: number; lit?: boolean; leds?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, s = 1, lit = true, leds = 3, opacity = 1, glow = false, label, labelSize = 22}) => (
+  <div style={{position: 'absolute', left: cx - 90 * s, top: cy - 55 * s, width: 180 * s, height: 110 * s, opacity, filter: glow ? BLOOM : 'none'}}>
+    <svg width={180 * s} height={110 * s} viewBox="0 0 180 110" style={{position: 'absolute', inset: 0}}>
+      <g stroke={WHITE} strokeWidth={3 / Math.sqrt(s)} fill="#000" strokeLinejoin="round">
+        <rect x={44} y={58} width={92} height={40} rx={6} />
+        <line x1={60} y1={58} x2={46} y2={14} />
+        <line x1={120} y1={58} x2={134} y2={14} />
+        <circle cx={46} cy={11} r={4} fill={lit ? PURPLE_LIGHT : GREY_MID} stroke="none" />
+        <circle cx={134} cy={11} r={4} fill={lit ? PURPLE_LIGHT : GREY_MID} stroke="none" />
+        {Array.from({length: leds}, (_, i) => <circle key={i} cx={62 + i * 26} cy={78} r={4.5} fill={lit ? PURPLE_LIGHT : GREY_LINE} stroke="none" />)}
+      </g>
+    </svg>
+    {label ? <div style={{position: 'absolute', left: 0, right: 0, top: 110 * s + 4, textAlign: 'center', fontFamily: "'Exo 2',sans-serif", fontSize: labelSize, color: GREY}}>{label}</div> : null}
+  </div>
+);
+
+/** 信号弧（= 设备说话的视觉母题）：同心弧波循环外扩；up 时弧朝上；sw 可调线宽 */
+export const AirPulse: React.FC<{cx: number; cy: number; N: number; r?: number; speed?: number; arcs?: number; maxR?: number; color?: string; opacity?: number; up?: boolean; glow?: boolean; sw?: number}> = ({cx, cy, N, r = 24, speed = 14, arcs = 3, maxR = 110, color = WHITE, opacity = 1, up = true, glow = false, sw = 3}) => (
+  <div style={{position: 'absolute', left: cx - maxR, top: cy - maxR, width: 2 * maxR, height: 2 * maxR, opacity, filter: glow ? BLOOM_SOFT : 'none'}}>
+    <svg width={2 * maxR} height={2 * maxR} viewBox={`0 0 ${2 * maxR} ${2 * maxR}`} style={{position: 'absolute', inset: 0}}>
+      <circle cx={maxR} cy={maxR} r={r * 0.4} fill={color} />
+      {Array.from({length: arcs}, (_, i) => {
+        const ph = (((N % speed) + i * (speed / arcs)) % speed) / speed;
+        const rr = r + ph * (maxR - r);
+        const a0 = up ? -140 : 40, a1 = up ? -40 : 140;
+        const x0 = maxR + rr * Math.cos((a0 * Math.PI) / 180), y0 = maxR + rr * Math.sin((a0 * Math.PI) / 180);
+        const x1 = maxR + rr * Math.cos((a1 * Math.PI) / 180), y1 = maxR + rr * Math.sin((a1 * Math.PI) / 180);
+        return <path key={i} d={`M${x0.toFixed(1)} ${y0.toFixed(1)} A${rr.toFixed(1)} ${rr.toFixed(1)} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`} fill="none" stroke={color} strokeWidth={sw * (1 - ph) + 1} opacity={0.8 * (1 - ph)} />;
+      })}
+    </svg>
+  </div>
+);
+
+/** 设备（笔记本/手机/电视）：dim 灰化静默；accent 紫色高亮 */
+export const DeviceGlyph: React.FC<{cx: number; cy: number; kind?: 'laptop' | 'phone' | 'tv'; w?: number; h?: number; opacity?: number; dim?: boolean; accent?: boolean; label?: string; labelSize?: number}> = ({cx, cy, kind = 'laptop', w = 110, h = 84, opacity = 1, dim = false, accent = false, label, labelSize = 22}) => {
+  const st = dim ? GREY_MID : accent ? PURPLE_LIGHT : WHITE;
+  const body = kind === 'phone'
+    ? <rect x={w * 0.28} y={0} width={w * 0.44} height={h * 0.92} rx={6} fill="#000" stroke={st} strokeWidth={3} />
+    : kind === 'tv'
+      ? <><rect x={0} y={0} width={w} height={h * 0.72} rx={5} fill="#000" stroke={st} strokeWidth={3} /><line x1={w / 2 - 14} y1={h * 0.72} x2={w / 2} y2={h * 0.9} stroke={st} strokeWidth={3} /><line x1={w / 2} y1={h * 0.9} x2={w / 2 + 14} y2={h * 0.72} stroke={st} strokeWidth={3} /></>
+      : <><rect x={w * 0.08} y={0} width={w * 0.84} height={h * 0.68} rx={4} fill="#000" stroke={st} strokeWidth={3} /><path d={`M0 ${h * 0.84} L${w} ${h * 0.84} L${w * 0.9} ${h * 0.98} L${w * 0.1} ${h * 0.98} Z`} fill="#000" stroke={st} strokeWidth={3} strokeLinejoin="round" /></>;
+  return (
+    <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity}}>
+      <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{position: 'absolute', inset: 0}}>{body}</svg>
+      {label ? <div style={{position: 'absolute', left: 0, right: 0, top: h + 5, textAlign: 'center', fontFamily: "'Exo 2',sans-serif", fontSize: labelSize, color: GREY, whiteSpace: 'nowrap'}}>{label}</div> : null}
+    </div>
+  );
+};
+
+/** 2.4GHz 频谱带：信道 1–11 小峰（重叠虚线弧帽），lit 数组（默认 [1,6,11]）绿框高亮 */
+export const ChannelBand: React.FC<{x: number; y: number; w?: number; h?: number; lit?: number[]; opacity?: number; showTicks?: boolean}> = ({x, y, w = 860, h = 200, lit = [1, 6, 11], opacity = 1, showTicks = true}) => {
+  const chans = Array.from({length: 11}, (_, i) => i + 1);
+  const bw = w / 12.5;
+  return (
+    <div style={{position: 'absolute', left: x, top: y, width: w, height: h, opacity}}>
+      <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{position: 'absolute', inset: 0}}>
+        <line x1={0} y1={h - 34} x2={w} y2={h - 34} stroke={GREY_LINE} strokeWidth={2} />
+        {chans.map((c) => {
+          const cxp = bw * (c + 0.5);
+          const big = lit.includes(c);
+          const col = big ? GREEN : GREY_MID;
+          return (
+            <g key={c}>
+              <path d={`M${cxp - bw * 0.55} ${h - 35} Q${cxp} ${big ? 26 : 66} ${cxp + bw * 0.55} ${h - 35}`} fill="none" stroke={col} strokeWidth={big ? 3.2 : 2.2} strokeDasharray={big ? undefined : '5 5'} />
+              <circle cx={cxp} cy={h - 34} r={4.5} fill={col} />
+              {showTicks ? <text x={cxp} y={h - 10} textAnchor="middle" fontFamily="'Orbitron',sans-serif" fontSize={18} fill={big ? GREEN : GREY_MID}>{c}</text> : null}
+              {big ? <rect x={cxp - bw * 0.62} y={12} width={bw * 1.24} height={h - 26} rx={8} fill="rgba(143,247,64,0.06)" stroke={GREEN} strokeWidth={2} /> : null}
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+};
+
+/** 随机退避环：一圈倒计环（N 或显式 prog 驱动进度）+ 环心骰子点（dots 1–5） */
+export const BackoffRing: React.FC<{cx: number; cy: number; N: number; r?: number; dots?: number; opacity?: number; glow?: boolean; prog?: number}> = ({cx, cy, N, r = 95, dots = 3, opacity = 1, glow = false, prog}) => {
+  const p = prog !== undefined ? prog : (N % 36) / 36;
+  const circ = 2 * Math.PI * (r - 8);
+  return (
+    <div style={{position: 'absolute', left: cx - r, top: cy - r, width: 2 * r, height: 2 * r, opacity, filter: glow ? BLOOM : 'none'}}>
+      <svg width={2 * r} height={2 * r} viewBox={`0 0 ${2 * r} ${2 * r}`} style={{position: 'absolute', inset: 0}}>
+        <circle cx={r} cy={r} r={r - 8} fill="#000" stroke={GREY_LINE} strokeWidth={2.5} />
+        <circle cx={r} cy={r} r={r - 8} fill="none" stroke={WHITE} strokeWidth={5} strokeLinecap="round"
+          strokeDasharray={`${(circ * p).toFixed(1)} ${circ.toFixed(1)}`} transform={`rotate(-90 ${r} ${r})`} />
+        {Array.from({length: dots}, (_, i) => {
+          const ang = -Math.PI / 2 + (dots === 1 ? 0 : (i / (dots - 1) - 0.5) * Math.PI * 0.9);
+          return <circle key={i} cx={r + Math.cos(ang) * r * 0.36} cy={r + Math.sin(ang) * r * 0.36} r={7} fill={PURPLE_LIGHT} />;
+        })}
+      </svg>
+    </div>
+  );
+};

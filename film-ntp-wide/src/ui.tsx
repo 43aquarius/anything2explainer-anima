@@ -499,24 +499,27 @@ export const RepoCard: React.FC<{x: number; y: number; w?: number; h?: number; n
 
 /** 贯穿示例语境常量（全片唯一一套，各组不得自造） */
 export const EXAMPLE = {
-  /** CDN 片贯穿示例（The Invisible Internet EP4） */
-  movieGb: '2 GB',
-  distanceKm: '8,000 km',       // 示意大洲距离
-  fiberC: '2/3 c',
-  speed: '100 Mb/s',            // 示意带宽
-  mathTime: '\u2248 3 min',
-  playTime: '1 s',
-  ttl: '60 s',
-  content: 'movie.mp4',
-  hitPill: 'hit',
-  missPill: 'miss',
-  year90s: '1990s', yearAkamai: '1998', yearOutage: '2021',
-  cities: '300+ cities',
-  outageShare: '~1/10',
-  outageMin: '49 min',
-  finale1: 'The internet isn\u2019t fast.',
-  finale2: 'It\u2019s close.',
-  credit: 'CDN \u00b7 why your video never buffers',
+  /** NTP 片贯穿示例（The Invisible Internet EP6） */
+  laptop: 'your laptop',
+  server: 'time.example',
+  totp: '30 s',
+  code: '493 021',                 // 示意一次性登录码
+  driftDay: 'a few seconds a day', // ±1–100 ppm（Wikipedia Clock drift）
+  reads: ['11:59:58', '11:59:59', '12:00:01', '11:59:52'], // 四台示意读数（D 台偏差）
+  readGood: '12:00:00',
+  strata: 'stratum 1\u201315',
+  yearStart: '1985',               // NTP 首版 RFC 958 年（Wikipedia）
+  rfc: 'RFC 958 \u2192 5905',
+  leapCount: '27 leap seconds',    // 1972 以来（Wikipedia Leap second）
+  lastLeap: '2016',                 // 末次闰秒 2016-12-31
+  utcTai: '37 s',                  // UTC\u2013TAI 当前差
+  noJumps: 'no jumps',             // SC12 slew 不跳变（分镜表事实清单）
+  trueTime: 'true time',           // SC12 速率轨灰标（真时间）
+  yourClock: 'your clock',         // SC12 速率轨白标（你的钟）
+  inStep: 'in step',               // SC12 双针同步标注
+  finale1: 'Time isn\u2019t kept.',
+  finale2: 'It\u2019s agreed.',
+  credit: 'NTP \u00b7 why every clock agrees',
 };
 
 /** 信封（= packet 的全片视觉母题）：白描边矩形 + 中线折角 + 封口线；accent 时描边变紫（副本/当前重点） */
@@ -554,56 +557,7 @@ export const ClockIcon: React.FC<{cx: number; cy: number; r?: number; N?: number
 
 
 
-// ===================== CDN 片专用图元（跨组共用；风格：白描边 2–3px + 黑填充 + BLOOM_SOFT）=====================
-
-/** 边缘节点（城市节点）：小塔 + 天线 + 信号弧 */
-export const EdgeNode: React.FC<{cx: number; cy: number; w?: number; h?: number; lit?: boolean; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, w = 120, h = 140, lit = true, opacity = 1, glow = false, label, labelSize = 22}) => (
-  <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity, filter: glow ? BLOOM : 'none'}}>
-    <svg width={w} height={h} viewBox="0 0 120 140" style={{position: 'absolute', inset: 0}}>
-      <g stroke={WHITE} strokeWidth={3} fill="#000" strokeLinejoin="round">
-        <rect x={38} y={70} width={44} height={56} rx={4} />
-        <line x1={60} y1={70} x2={60} y2={30} strokeWidth={3} />
-        <circle cx={60} cy={24} r={6} fill={lit ? PURPLE_LIGHT : GREY_MID} stroke="none" />
-        <path d="M78 30 Q86 22 78 14" fill="none" strokeWidth={2.5} opacity={0.8} />
-        <line x1={30} y1={126} x2={90} y2={126} strokeWidth={3} />
-        {[0, 1, 2].map(i => <rect key={i} x={44 + i * 12} y={82} width={7} height={7} fill={lit && i < 2 ? PURPLE_LIGHT : '#333'} stroke="none" />)}
-      </g>
-    </svg>
-    {label && <div style={{position: 'absolute', left: 0, right: 0, top: h + 4, textAlign: 'center', fontFamily: FONT_TECH, fontSize: labelSize, color: GREY}}>{label}</div>}
-  </div>
-);
-
-/** 地球弧（任播）：圆环 + 环上节点由镜头层叠加 */
-export const GlobeArc: React.FC<{cx: number; cy: number; r?: number; opacity?: number; glow?: boolean; centerText?: string; centerSize?: number}> = ({cx, cy, r = 200, opacity = 1, glow = false, centerText, centerSize = 72}) => (
-  <div style={{position: 'absolute', left: cx - r, top: cy - r, width: 2 * r, height: 2 * r, opacity, filter: glow ? BLOOM : 'none'}}>
-    <svg width={2 * r} height={2 * r} viewBox="0 0 400 400" style={{position: 'absolute', inset: 0}}>
-      <g stroke={WHITE} strokeWidth={3} fill="none">
-        <circle cx={200} cy={200} r={192} />
-        <ellipse cx={200} cy={200} rx={192} ry={72} opacity={0.35} />
-        <line x1={8} y1={200} x2={392} y2={200} opacity={0.35} />
-      </g>
-    </svg>
-    {centerText && <div style={{position: 'absolute', left: 0, right: 0, top: r - centerSize / 2, textAlign: 'center', fontFamily: FONT_ORB, fontWeight: 700, fontSize: centerSize, color: WHITE, WebkitTextStroke: '3px #A175F1', paintOrder: 'stroke fill', letterSpacing: 2}}>{centerText}</div>}
-  </div>
-);
-
-/** 缓存货架（边缘内容副本）：3 层隔板 + 内容块；litRow 高亮层 */
-export const CacheShelf: React.FC<{cx: number; cy: number; w?: number; h?: number; litRow?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, w = 340, h = 320, litRow = -1, opacity = 1, glow = false, label, labelSize = 24}) => (
-  <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity, filter: glow ? BLOOM : 'none'}}>
-    <svg width={w} height={h} viewBox="0 0 340 320" style={{position: 'absolute', inset: 0}}>
-      <g stroke={WHITE} strokeWidth={3} fill="none" strokeLinejoin="round">
-        <rect x={8} y={8} width={324} height={304} rx={8} />
-        {[0, 1, 2].map(i => <line key={i} x1={8} y1={112 + i * 100} x2={332} y2={112 + i * 100} strokeWidth={2.5} />)}
-      </g>
-      {[0, 1, 2].map(row => [0, 1, 2].map(col => (
-        <rect key={`${row}-${col}`} x={28 + col * 100} y={130 + row * 100} width={80} height={56} rx={5}
-          fill={row === litRow ? 'rgba(102,48,248,0.28)' : '#0d0d10'} stroke={row === litRow ? PURPLE_LIGHT : GREY_LINE} strokeWidth={2} />
-      )))}
-      <text x={170} y={70} textAnchor="middle" fill={GREY} fontSize={24} fontFamily="monospace">edge cache</text>
-    </svg>
-    {label && <div style={{position: 'absolute', left: 0, right: 0, top: h + 8, textAlign: 'center', fontFamily: FONT_TECH, fontSize: labelSize, color: GREY}}>{label}</div>}
-  </div>
-);
+// ===================== NTP 片专用图元（跨组共用；风格：白描边 2–3px + 黑填充 + BLOOM_SOFT）=====================
 
 /** 轻量浏览器窗口（DNS 片通用）：窗口框 + 顶栏三点 + 地址栏（可打字/可发光）+ 骨架线 */
 export const BrowserWin: React.FC<{x: number; y: number; w?: number; h?: number; url?: string; typed?: number; skeleton?: number; skelLit?: number; skelOpacity?: number; barColor?: string; barP?: number; opacity?: number; dim?: boolean}> = ({x, y, w = 470, h = 380, url = 'about:blank', typed = url.length, skeleton = 5, skelLit = 0, skelOpacity, barColor = PURPLE, barP = 0, opacity = 1, dim = false}) => (
@@ -626,3 +580,136 @@ export const BrowserWin: React.FC<{x: number; y: number; w?: number; h?: number;
   </div>
 );
 
+/** 大钟面（= NTP 全片视觉母题）：白面盘 + 刻度 + N 驱动时分秒针 + 盘下数字读数；rate 可微调（漂移/追齐），offsetDeg 为落后角度 */
+export const ClockFace: React.FC<{cx: number; cy: number; r?: number; N?: number; rate?: number; offsetDeg?: number; ghost?: boolean; readout?: string; readoutSize?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, r = 110, N = 0, rate = 1, offsetDeg = 0, ghost = false, readout, readoutSize = 26, opacity = 1, glow = false, label, labelSize = 22}) => {
+  const sec = ((N * 6 * rate + offsetDeg) % 360 + 360) % 360;
+  const min = ((N * 0.1 * rate + offsetDeg / 12) % 360 + 360) % 360;
+  const c = ghost ? GREY_MID : WHITE;
+  const hand = (ang: number, len: number, w: number, col: string) => (
+    <line x1={r} y1={r} x2={r + Math.cos((ang - 90) * Math.PI / 180) * len} y2={r + Math.sin((ang - 90) * Math.PI / 180) * len} stroke={col} strokeWidth={w} strokeLinecap="round" />
+  );
+  return (
+    <div style={{position: 'absolute', left: cx - r, top: cy - r, width: 2 * r, height: 2 * r, opacity, filter: glow ? BLOOM : 'none'}}>
+      <svg width={2 * r} height={2 * r} viewBox="0 0 200 200" style={{position: 'absolute', inset: 0}}>
+        <circle cx={100} cy={100} r={96} fill="#000" stroke={c} strokeWidth={3.5} />
+        {Array.from({length: 12}, (_, i) => {
+          const a = (i / 12) * Math.PI * 2;
+          return <circle key={i} cx={100 + Math.cos(a) * 84} cy={100 + Math.sin(a) * 84} r={i % 3 === 0 ? 3.2 : 2} fill={ghost ? GREY_LINE : GREY} />;
+        })}
+        {hand(min, 58, 4, c)}
+        {hand(sec, 74, 2.6, ghost ? GREY : PURPLE_LIGHT)}
+        <circle cx={100} cy={100} r={4} fill={c} />
+      </svg>
+      {readout ? <div style={{position: 'absolute', left: 0, right: 0, top: 2 * r + 8, textAlign: 'center', fontFamily: FONT_MONO, fontSize: readoutSize, color: c, whiteSpace: 'nowrap'}}>{readout}</div> : null}
+      {label ? <div style={{position: 'absolute', left: 0, right: 0, top: 2 * r + (readout ? 40 : 8), textAlign: 'center', fontFamily: "'Exo 2',sans-serif", fontSize: labelSize, color: GREY, whiteSpace: 'nowrap'}}>{label}</div> : null}
+    </div>
+  );
+};
+
+/** 石英晶体（音叉晶振）：胶囊体 + 两引脚 + N 驱动微颤（±amp px 交替） */
+export const QuartzCrystal: React.FC<{cx: number; cy: number; w?: number; h?: number; N?: number; amp?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, w = 130, h = 74, N = 0, amp = 1.5, opacity = 1, glow = false, label, labelSize = 22}) => {
+  const jit = Math.sin(N * 2.1) * amp;
+  return (
+    <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h + (label ? 30 : 0), opacity, filter: glow ? BLOOM : 'none'}}>
+      <svg width={w} height={h} viewBox="0 0 130 74" style={{position: 'absolute', inset: 0, transform: `translateY(${jit.toFixed(2)}px)`}}>
+        <g stroke={WHITE} strokeWidth={3} fill="none" strokeLinejoin="round">
+          <ellipse cx={65} cy={37} rx={44} ry={26} />
+          <line x1={21} y1={37} x2={8} y2={37} />
+          <line x1={109} y1={37} x2={122} y2={37} />
+        </g>
+        <text x={65} y={44} textAnchor="middle" fontFamily="'Orbitron',sans-serif" fontSize={15} fill={GREY} letterSpacing={1}>32 768</text>
+      </svg>
+      {label ? <div style={{position: 'absolute', left: 0, right: 0, top: h + 6, textAlign: 'center', fontFamily: "'Exo 2',sans-serif", fontSize: labelSize, color: GREY}}>{label}</div> : null}
+    </div>
+  );
+};
+
+/** 原子钟（stratum 0 源头）：立柜 + 原子轨道符号（三椭圆 + 核心脉冲）+ 底部读数末位翻动 */
+export const AtomClock: React.FC<{cx: number; cy: number; w?: number; h?: number; N?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number; small?: boolean}> = ({cx, cy, w = 190, h = 210, N = 0, opacity = 1, glow = false, label, labelSize = 22, small = false}) => (
+  <div style={{position: 'absolute', left: cx - w / 2, top: cy - h / 2, width: w, height: h, opacity, filter: glow ? BLOOM : 'none'}}>
+    <svg width={w} height={h} viewBox="0 0 190 210" style={{position: 'absolute', inset: 0}}>
+      <g stroke={WHITE} strokeWidth={3} fill="#000" strokeLinejoin="round">
+        <rect x={18} y={30} width={154} height={164} rx={10} />
+        <line x1={18} y1={58} x2={172} y2={58} strokeWidth={2} opacity={0.6} />
+        <rect x={78} y={8} width={34} height={22} rx={4} strokeWidth={2.4} />
+      </g>
+      {/* 原子轨道 */}
+      <g stroke={PURPLE_LIGHT} strokeWidth={2.2} fill="none" opacity={0.9}>
+        <ellipse cx={95} cy={118} rx={54} ry={20} />
+        <ellipse cx={95} cy={118} rx={54} ry={20} transform="rotate(60 95 118)" />
+        <ellipse cx={95} cy={118} rx={54} ry={20} transform="rotate(-60 95 118)" />
+      </g>
+      <circle cx={95} cy={118} r={6 + 1.6 * (0.5 + 0.5 * Math.sin(N / 7))} fill={WHITE} />
+      {/* 读数（末位翻动） */}
+      <text x={95} y={178} textAnchor="middle" fontFamily="'JetBrains Mono',monospace" fontSize={small ? 13 : 16} fill={WHITE}>12:00:0{Math.floor(N / 10) % 10}</text>
+    </svg>
+    {label ? <div style={{position: 'absolute', left: 0, right: 0, top: h + 6, textAlign: 'center', fontFamily: "'Exo 2',sans-serif", fontSize: labelSize, color: GREY}}>{label}</div> : null}
+  </div>
+);
+
+/** GPS 卫星：本体方框 + 两侧太阳翼 + 底部信号弧（N 驱动弧线相位） */
+export const SatGlyph: React.FC<{cx: number; cy: number; s?: number; N?: number; opacity?: number; glow?: boolean; label?: string; labelSize?: number}> = ({cx, cy, s = 1, N = 0, opacity = 1, glow = false, label, labelSize = 20}) => (
+  <div style={{position: 'absolute', left: cx - 70 * s, top: cy - 40 * s, width: 140 * s, height: 80 * s, opacity, filter: glow ? BLOOM : 'none'}}>
+    <svg width={140 * s} height={80 * s} viewBox="0 0 140 80" style={{position: 'absolute', inset: 0}}>
+      <g stroke={WHITE} strokeWidth={2.6 / s} fill="#000" strokeLinejoin="round">
+        <rect x={52} y={18} width={36} height={36} rx={4} />
+        <rect x={62} y={26} width={16} height={10} fill={PURPLE_LIGHT} stroke="none" opacity={0.85} />
+        <g stroke={GREY_MID} strokeWidth={2 / s}>
+          <line x1={52} y1={36} x2={28} y2={36} /><line x1={88} y1={36} x2={112} y2={36} />
+          <rect x={4} y={24} width={24} height={24} /><rect x={112} y={24} width={24} height={24} />
+          {[0, 1, 2].map(i => <line key={i} x1={4 + i * 8} y1={24} x2={4 + i * 8} y2={48} strokeWidth={1.2 / s} />)}
+          {[0, 1, 2].map(i => <line key={'r' + i} x1={112 + i * 8} y1={24} x2={112 + i * 8} y2={48} strokeWidth={1.2 / s} />)}
+        </g>
+      </g>
+      {/* 信号弧 */}
+      <g stroke={PURPLE_LIGHT} strokeWidth={2 / s} fill="none" opacity={0.8}>
+        {[0, 1, 2].map(i => {
+          const ph = ((N / 14 + i * 0.33) % 1);
+          return <path key={i} d={`M70 58 Q${70 - 26 - i * 8} ${64 + i * 6} 70 ${70 + ph * 6}`} />;
+        })}
+      </g>
+    </svg>
+    {label ? <div style={{position: 'absolute', left: 0, right: 0, top: 80 * s + 4, textAlign: 'center', fontFamily: "'Exo 2',sans-serif", fontSize: labelSize, color: GREY}}>{label}</div> : null}
+  </div>
+);
+
+/** stratum 层条（金字塔一层）：横条 + 内嵌小服务器芯片数枚 + 层标签；lit 时紫光 */
+export const StratumTier: React.FC<{cx: number; y: number; w: number; h?: number; n?: number; label?: string; lit?: boolean; dim?: boolean; opacity?: number}> = ({cx, y, w, h = 54, n = 3, label, lit = false, dim = false, opacity = 1}) => {
+  const sw = 26, gap = Math.min(18, (w - 40 - n * sw) / Math.max(1, n - 1));
+  return (
+    <div style={{position: 'absolute', left: cx - w / 2, top: y, width: w, height: h, opacity, filter: lit ? BLOOM : 'none'}}>
+      <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{position: 'absolute', inset: 0}}>
+        <rect x={2} y={2} width={w - 4} height={h - 4} rx={8} fill={lit ? 'rgba(102,48,248,0.16)' : '#000'} stroke={dim ? GREY_LINE : lit ? PURPLE_LIGHT : WHITE} strokeWidth={2.4} />
+        {Array.from({length: n}, (_, i) => {
+          const x0 = (w - (n * sw + (n - 1) * gap)) / 2 + i * (sw + gap);
+          return (
+            <g key={i} stroke={dim ? GREY_LINE : GREY_MID} strokeWidth={1.6} fill="none">
+              <rect x={x0} y={10} width={sw} height={h - 20} rx={3} />
+              <line x1={x0 + 4} y1={h / 2 - 4} x2={x0 + sw - 4} y2={h / 2 - 4} />
+              <line x1={x0 + 4} y1={h / 2 + 4} x2={x0 + sw - 4} y2={h / 2 + 4} />
+              <circle cx={x0 + sw / 2} cy={h - 7} r={2.4} fill={lit ? PURPLE_LIGHT : GREY_MID} stroke="none" />
+            </g>
+          );
+        })}
+      </svg>
+      {label ? <div style={{position: 'absolute', left: -4, top: -24, fontFamily: "'Orbitron',sans-serif", fontSize: 20, color: dim ? GREY_MID : PURPLE_LIGHT, whiteSpace: 'nowrap'}}>{label}</div> : null}
+    </div>
+  );
+};
+
+/** 漂移双线：真时间（灰，直）vs 你的钟（白，随 k 渐弯离距 gapPx）；两端刻度端子 */
+export const DriftLine: React.FC<{x: number; y: number; w: number; k?: number; gapPx?: number; opacity?: number; label?: string; labelSize?: number}> = ({x, y, w, k = 0, gapPx = 46, opacity = 1, label, labelSize = 22}) => {
+  const sag = k * gapPx;
+  const path = `M0 ${y} Q${w * 0.55} ${y} ${w} ${y + sag}`;
+  return (
+    <div style={{position: 'absolute', left: x, top: 0, width: w, height: 720, opacity}}>
+      <svg width={w} height={720} viewBox={`0 0 ${w} 720`} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+        <line x1={0} y1={y} x2={w} y2={y} stroke={GREY_MID} strokeWidth={2} strokeDasharray="2 6" />
+        <circle cx={0} cy={y} r={4} fill={GREY_MID} /><circle cx={w} cy={y} r={4} fill={GREY_MID} />
+        <path d={path} fill="none" stroke={WHITE} strokeWidth={3} filter="drop-shadow(0 0 4px rgba(255,255,255,.35))" />
+        <circle cx={w} cy={y + sag} r={4.5} fill={PURPLE_LIGHT} />
+      </svg>
+      {label ? <div style={{position: 'absolute', left: w * 0.62, top: y + sag / 2 - 10, fontFamily: "'Exo 2',sans-serif", fontSize: labelSize, color: GREY, whiteSpace: 'nowrap'}}>{label}</div> : null}
+    </div>
+  );
+};
